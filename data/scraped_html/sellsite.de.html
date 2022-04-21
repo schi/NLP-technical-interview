@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="https://oxomi.com/assets/frontend/oxomi.css" media="all"><script src="/faces/javax.faces.resource/jsf.js?ln=javax.faces" type="text/javascript"></script><script src="/faces/javax.faces.resource/icepush.js?rand=1782495088" type="text/javascript"></script><script src="/faces/javax.faces.resource/bridge.js?rand=1782495088" type="text/javascript"></script><script src="/faces/javax.faces.resource/compat.js" type="text/javascript"></script><script src="/faces/javax.faces.resource/icefaces-compat.js" type="text/javascript"></script>
+    <title> bnb Shop  - bnb Shop</title>
+    <meta content="telephone=no" name="format-detection">
+    
+
+    <meta content="IE=9,chrome=IE9" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="/plugins/scireum/sellsite-frontend/favicon.ico" rel="SHORTCUT ICON" type="image/x-icon">
+    <link href="/plugins/scireum/sellsite-frontend/appIcon-iPad2.png" rel="apple-touch-icon">
+    <link href="/plugins/scireum/sellsite-frontend/appIcon-iPad2.png" rel="icon" sizes="192x192">
+
+    
+
+    
+    <script src="/plugins/scireum/sellsite-frontend/jQuery/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/jQuery/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/jquery/jquery.safeEnter.1.0.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/jquery/jquery.jsPlumb-1.3.8-all-min.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/autocomplete.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/shadowbox/shadowbox.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/bootstrap/js/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/bootstrap/js/bootstrap-datepicker-scireum.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/view/bootstrap/js/locales/bootstrap-datepicker.de.js" type="text/javascript"></script>
+    <script language="javascript" src="/plugins/scireum/view/fileupload/fileuploader.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/chosen/chosen.jquery.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/eu-cookie-law-popup/js/jquery-eu-cookie-law-popup.js" type="text/javascript"></script>
+    <script src="/plugins/scireum/sellsite-frontend/slick-slider/slick.min.js" type="text/javascript"></script>
+
+    <link href="/plugins/scireum/view/fileupload/fileuploader.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/autocomplete.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/shadowbox/shadowbox.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/view/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/view/bootstrap/css/bootstrap-responsive-wide.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/view/bootstrap/css/bootstrap-fixes.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/view/bootstrap/css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/view/fonts/OpenSans/opensans.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/eu-cookie-law-popup/css/jquery-eu-cookie-law-popup.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/slick-slider/slick.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/slick-slider/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="/script/shop.css" rel="stylesheet" type="text/css">
+    <link href="/script/custom.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/scireum/sellsite-frontend/chosen/chosen.min.css" rel="stylesheet" type="text/css">
+    <link href="/script/print.css" media="print" rel="stylesheet" type="text/css"><!--[if IE 9]><link media="all" href="/script/ie9.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 9]><link media="all" href="/script/ie8.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link media="all" href="/script/ie7.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 9]><link media="all" href="/script/custom_ie8.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link media="all" href="/script/custom_ie7.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link media="all" href="/plugins/scireum/view/icn-font/icn-font-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <script src="/script/shop.js?noCache=true" type="text/javascript"></script>
+    <script src="/script/custom.js?noCache=true" type="text/javascript"></script>
+        <script type="text/javascript">
+            var system_url = "https://oxomi.com/";
+            var oxomi_server = system_url.slice(system_url.indexOf(":") + 3, system_url.length - 1);
+            setTimeout(function() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = (window.location.protocol == 'https:' ? 'https:' : 'http:') + "//"
+                        + oxomi_server
+                        + "/assets/frontend/oxomi.js";
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }, 0);
+
+            function infoplayItemLookup(infoplayData, next) {
+                jQuery.getJSON(
+                        '/service/json/Item',
+                        {
+                            slimResponse: true,
+                            matchCode: infoplayData.itemNumber
+                        },
+                        function (json) {
+                            if (json.error) {
+                                addError(json.error);
+                            } else {
+                                // Were multiple results shown?
+                                multipleResults = false;
+                                for (i = 0; i < json.items.length; i++) {
+                                    var item = json.items[i];
+                                    if (item.itemNumber != "DIV") {
+                                        if (json.items.length == 1) {
+                                            var newItem = {
+                                                itemNumber: item.itemNumber,
+                                                itemUrl: '/produkt/' + item.itemNumber,
+                                                shortText: item.shortText,
+                                                previewImageUrl: item.imageURL,
+                                                quantity: item.quantity,
+                                                additionalSections: []
+                                            };
+                                            newItem.additionalSections.push({
+                                                fields: [
+                                                    {name: "Preis", value: item.itemNetPriceString},
+                                                    {name: "Preismenge", value: item.itemPriceQuantityString},
+                                                    {name: "Min. Bestellmenge", value: item.minOrderQuantityString},
+                                                    {name: "Bestellschritt", value: item.orderStepString},
+                                                    {name: "Verfügbarkeit", value: item.inStockString, span: true},
+                                                ]
+                                            });
+                                        
+                                        } else {
+                                            multipleResults = true;
+                                            var newItem = {
+                                                itemNumber: item.itemNumber,
+                                                itemUrl: '/produkt/' + item.itemNumber,
+                                                shortText: item.shortText,
+                                                previewImageUrl: item.imageURL,
+                                                reresolve: true
+                                            };
+                                        }
+                                        infoplayData.items.push(newItem);
+                                    }
+                                }
+                            
+                                next(infoplayData);
+                            }
+                        }
+                );
+            }
+
+            function getInfoplayShortTextAndPreviewIcon(infoplayData, next, item) {
+                jQuery.getJSON(
+                        system_url + 'service/json/item/masterdata',{
+                            portal: '1532544',
+                            accessToken: '4ca3fe7031239dd1b4a52738777802ad',
+                            user: 'sellsite',
+                            roles: '',
+                            item: infoplayData.itemNumber,
+                            supplierNumber: infoplayData.supplierNumber,
+                        },
+                        function (json) {
+                            if (!json.error && json.items.length == 1) {
+                                item.shortText = json.items[0].shortText;
+                                item.previewImageUrl = json.items[0].previewImageUrl;
+                            }
+                        }
+                ).always(function () {
+                    infoplayData.items.push(item);
+                    next(infoplayData);
+                });
+            }
+
+            
+
+
+            var infoplayBasket = null;
+            var infoplayExternalBasket = null;
+
+
+            
+            infoplayBasket = addItemToBasket;
+            
+
+
+            function oxomi_ready() {
+                oxomi.init({
+                            portal: '1532544',
+                            accessToken: '4ca3fe7031239dd1b4a52738777802ad',
+                            user: 'sellsite',
+                            roles: '',
+                            infoplayItemLookup: infoplayItemLookup,
+                            
+                            infoplayEnabled: true,
+                            infoplayBasketHandler: infoplayBasket,
+                            infoplayMenuTitle : "Zum Warenkorb hinzufügen...",
+                            forceHTML5: true
+                });
+            }
+        </script>
+
+    <script id="oxomi_main" type="x-jquery-tmpl">
+        {{if $data.type == "CATALOGS_BY_TYPE" || $data.type == "CATALOGS_BY_PRODUCT_LINE"}}
+        {{tmpl($data) "#catalogs"}}
+        {{else}}
+        {{if $data.type == "PAGES_BY_CATALOG"}}
+        {{tmpl($data) "#pages"}}
+        {{else}}
+        {{tmpl($data) "#brands"}}
+        {{/if}}
+        {{/if}}
+    </script>
+    <script id="brands" type="x-jquery-tmpl">
+        <div class="row brands">
+            {{each result}}
+            <div class="span2 fancy_box catalogBox ${name}" onClick="boxClickBrand('${brandId}','${cpsInstanceNr}')" onMouseOut="removeClassMouseOver(this)" onMouseOver="addClassMouseOver(this)">
+                <a class="thumbnail thumbnailCategories">
+                    <div class="img">
+                        <img src="${icon}" title="${name}" />
+                    </div>
+                    <div class="title"><h5>${name}</h5></div>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    <script id="catalogs" type="x-jquery-tmpl">
+        {{each result}}
+        {{if $data.groupByType}}
+        <div class="type ${name}">
+            <h3 class="oxomi_type">${namePlural}</h3>
+
+            <div class="catalogs row">
+                {{else}}
+                <div class="catalogs row">
+                    {{/if}}
+                    {{each catalogs}}
+                    <div class="span2 {{if $data.useLargePreview}}largeCatalogBox{{else}}fancy_box catalogBox{{/if}} ${name}" onClick="boxClickCatalog('${catalogId}','${cpsInstanceNr}')" onMouseOut="removeClassMouseOver(this)" onMouseOver="addClassMouseOver(this)">
+                        <a class="thumbnail {{if $data.useLargePreview}}thumbnailCatalog{{else}}thumbnailCategories{{/if}}">
+                            <div class="{{if $data.useLargePreview}}catalog{{else}}img {{/if}}">
+                                <img src="{{if $data.useLargePreview}}${mediumURL}{{else}}${previewURL}{{/if}}" title="${catalogName}" />
+                            </div>
+                            {{if !$data.useLargePreview}}
+                            <div class="title"><h5>${catalogName}</h5></div>
+                            {{/if}}
+                        </a>
+                    </div>
+                    {{/each}}
+                    {{if $data.groupByType}}
+                </div>
+            </div>
+            {{else}}
+        </div>
+        {{/if}}
+        {{/each}}
+    </script>
+    <script id="catalogWithPDF" type="x-jquery-tmpl">
+        {{each result}}
+        {{if $data.groupByType}}
+        <div class="type ${name}">
+            <h3 class="oxomi_type">${namePlural}</h3>
+
+            <div class="catalogs row">
+                {{else}}
+                <div class="catalogs row">
+                    {{/if}}
+                    {{each catalogs}}
+                    <div class="span2 catalogWithPDF {{if $data.useLargePreview}}largeCatalogBox{{else}}fancy_box catalogBox{{/if}} ${name}" onMouseOut="removeClassMouseOver(this)" onMouseOver="addClassMouseOver(this)">
+                        <span class="thumbnail {{if $data.useLargePreview}}thumbnailCatalog{{else}}thumbnailCategories{{/if}}">
+                            <div class="{{if $data.useLargePreview}}catalog{{else}}img {{/if}}">
+                                <img src="{{if $data.useLargePreview}}${mediumURL}{{else}}${previewURL}{{/if}}" title="${catalogName}" />
+                            </div>
+                            {{if !$data.useLargePreview}}
+                            <div class="title">
+                                <h5>${catalogName}</h5>
+                                <span><small><b><i class="icon-page-curl"></i> <a onClick="boxClickPage('${catalogId}','${number}','${cpsInstanceNr}')"> Bl&#228;tterversion</a></b></small></span> <br />
+                                <span><small><b><i class="icon-download"></i><a href="${catalogURL}&amp;name=${catalogName}.pdf&amp;isInline=true"> PDF</a></b></small></span>
+                            </div>
+                            {{/if}}
+                            {{if $data.useLargePreview}}
+                            <div class="catalogPDFLinks">
+                                <span><small><b><i class="icon-page-curl"></i> <a onClick="boxClickPage('${catalogId}','${number}','${cpsInstanceNr}')"> Bl&#228;tterversion</a></b></small></span> <br />
+                                <span><small><b><i class="icon-download"></i><a href="${catalogURL}&amp;name=${catalogName}.pdf&amp;isInline=true"> PDF</a></b></small></span>
+                            </div>
+                            {{/if}}
+                        </span>
+                    </div>
+                    {{/each}}
+                    {{if $data.groupByType}}
+                </div>
+            </div>
+            {{else}}
+        </div>
+        {{/if}}
+        {{/each}}
+    </script>
+    <script id="pages" type="x-jquery-tmpl">
+        <div class="row">
+            {{each result}}
+            {{each pages}}
+            <div class="span2 largeCatalogBox" onClick="boxClickPage('${catalogId}','${number}','${cpsInstanceNr}')" onMouseOut="removeClassMouseOver(this)" onMouseOver="addClassMouseOver(this)">
+                <a class="thumbnail thumbnailCatalog">
+                    <div class="catalog">
+                        <img src="${mediumURL}" title="${catalogName}" />
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+            {{/each}}
+        </div>
+    </script>
+    
+    <script type="text/javascript" src="https://oxomi.com/assets/frontend/oxomi.js"></script></head><body style="">
+    <div id="page" style="margin-top: 40px">
+        <div class="container">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+        <h2></h2>
+    <ul class="nav ">
+                    <li>
+                            <a href="/"><span>Start</span></a>
+                    </li>
+                    <li>
+                            <a href="/katalog/BASICS"><span>BASIC's</span></a>
+                    </li>
+                    <li>
+                            <a href="/aktionen"><span>Aktionen</span></a>
+                    </li>
+                    <li>
+                            <a href="/markenwelt"><span>Markenwelt</span></a>
+                    </li>
+                    <li>
+                            <a href="javascript:openPortal()"><span>Katalogportal</span></a>
+                    </li>
+                    <li>
+                            <a href="/kontakt"><span>Kontakt</span></a>
+                    </li>
+                    <li>
+                            <a href="/registrieren"><span>Registrieren</span></a>
+                    </li>
+    </ul>
+                </div>
+            </div>
+        </div>
+
+    <div class="imgLog row">
+
+        <div class="span12 placeholderHeader" style="background-color: none">
+            <div class="row">
+                        <div class="span7 headerBanner headerBannerLong">
+                            <a href="/">
+                                <img border="0" src="/public/PROVIDER-24/design/bnb.png">
+                            </a>
+                        </div>
+        <div class="userInfoBox span5">
+            <div class="well well-low-radius innerBox">
+                <form action="#" class="form-search" id="loginform" method="POST">
+                        <h4>
+                            Anmelden oder
+                            <a href="/registrieren">Registrieren</a>
+                        </h4>
+
+                    <div class="clear"></div>
+                    <div class="input-prepend">
+                        <span class="add-on">
+                            <i class="icon-user"></i>
+                        </span>
+                        <input class=".focusField field span2 userPlaceholder" id="FRONTEND_USERNAME" name="FRONTEND_USERNAME" placeholder="Benutzername">
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on">
+                            <i class="icon-lock"></i>
+                        </span>
+                        <input class=".focusField field span2 pwPlaceholder" id="FRONTEND_PASSWORD" name="FRONTEND_PASSWORD" type="password" placeholder="Passwort">
+                    </div>
+
+                    <div class="loginHint">
+                        <small class="muted"><i class="icon-info-sign"></i> Wurde kein Benutzername angegeben, entspricht dieser Ihrer eMail-Adresse</small>
+                    </div>
+
+                    <div class="loginWrapper form-inline">
+
+                        <div class="loginAction">
+
+                            <a class="loginBtnBar btn btn-primary" onclick="jQuery('#loginform').submit()">Anmelden
+                            </a>
+
+
+                            <div class="keepLogged">
+                                <label class="checkbox">
+                                    <input name="FRONTEND_SAVE_LOGIN" type="checkbox" value="true">
+                                    Angemeldet bleiben
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                    <script type="text/javascript">
+                        jQuery('#FRONTEND_USERNAME')
+                                .listenForEnter()
+                                .bind('pressedEnter', function () {
+                                    if (jQuery('#FRONTEND_PASSWORD').val()) {
+                                        jQuery('#loginform').submit();
+                                    }
+                                });
+                        jQuery('#FRONTEND_PASSWORD')
+                                .listenForEnter()
+                                .bind('pressedEnter', function () {
+                                    jQuery('#loginform').submit();
+                                });
+
+                        jQuery(document).ready(function(){
+                            jQuery(".userPlaceholder").attr("placeholder", "Benutzername");
+                        });
+
+                        jQuery(document).ready(function(){
+                            jQuery(".pwPlaceholder").attr("placeholder", "Passwort");
+                        });
+
+                    </script>
+                </form>
+<form action="/faces/artifacts/start.xhtml" enctype="application/x-www-form-urlencoded" id="pwForm" method="post" name="pwForm">
+<input name="pwForm" type="hidden" value="pwForm">
+<input name="ice.window" type="hidden" value="33jbgmibke"><input name="ice.view" type="hidden" value="vth920gev3x"><script id="pwForm:pwForm_captureSubmit" type="text/javascript">ice.captureSubmit('pwForm',false);ice.captureEnterKey('pwForm');</script>
+                    <div class="pwForgotten"><a href="#" id="pwForm:_t1602" onclick="jsf.util.chain(this,event,'jQuery(\'#loginModal\').modal(\'hide\');','mojarra.jsfcljs(document.getElementById(\'pwForm\'),{\'pwForm:_t1602\':\'pwForm:_t1602\'},\'\')');return false">Passwort vergessen?
+                        </a>
+                    </div><span id="pwFormhdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form>
+            </div>
+        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contentBox">
+<form action="/faces/artifacts/start.xhtml" enctype="application/x-www-form-urlencoded" id="s2content" method="post" name="s2content">
+<input name="s2content" type="hidden" value="s2content">
+<input name="ice.window" type="hidden" value="33jbgmibke"><input name="ice.view" type="hidden" value="vth920gev3x"><script id="s2content:s2content_captureSubmit" type="text/javascript">ice.captureSubmit('s2content',false);ice.captureEnterKey('s2content');</script>
+                <div class="row searchBasket">
+                    <div class="span7" id="search">
+
+                        <div class="clear row">
+                            <div class="span6"><input autocomplete="off" class="searchField input-block-level searchPlaceholder" id="s2content:_t494" name="s2content:_t494" onfocus="this.select()" style="" type="text" placeholder="Produktsuche">
+                            </div>
+                            <div class="span1"><a class="searchBtn span1 btn btn-primary" href="#" id="s2content:_t496" onclick="mojarra.jsfcljs(document.getElementById('s2content'),{'s2content:_t496':'s2content:_t496'},'');return false" style="">Suche</a>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="searchFilter">
+                        </div>
+                    </div>
+        <div class="span5 box" id="basket">
+            <div class="well well-low-radius">
+                <a href="/warenkorb">
+                    <i class="icon-shopping-cart"></i>
+                </a>
+                <h4>
+                    <a href="/warenkorb">Warenkorb</a>
+                </h4>
+
+                <div class="basketGrid">
+
+                    Positionen:  <b id="numBasketPositions">0</b>
+                        <b id="basketNetSum" style="float:right">0,00 EUR</b>
+
+                </div>
+            </div>
+        </div>
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                    jQuery(".searchPlaceholder").attr("placeholder", "Produktsuche");
+                    });
+                    jQuery(document).ready(function(){
+                        jQuery(".dhSearchPlaceholder").attr("placeholder", "Bestellartikelsuche");
+                    });
+                </script>
+
+            <div class="messagesPanel"></div>
+
+            <div id="breadcrumbs">
+                <div class="breadcrumb breadcrumb-flat" style="background-color: #0a6db0">
+                    <a href="/">Start</a>
+                </div>
+            </div>
+
+            <div id="content">
+        <div class="row">
+            <div class="span8">
+    <div class="image-element">
+
+        <div class="thumbnails-start  row">
+            <div class="span8 VALUE MAP: [null]">
+                <a class="thumbnail thumbnailCatalog gaClickEvent" data-gacategory="image" data-galabel=" - ">
+                    <span class="catalog fakediv">
+                        <img src="/public/PROVIDER-24/Basics2.jpg">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="elements-divider"></div>
+    <div class="categories-element">
+
+        <div class="thumbnails  row">
+
+                    <div class="span1_5 fancy_box categoryNoTitle B01">
+                            <a class="thumbnail thumbnailCategories " href="/produkte/B01">
+                                <span class="img fakediv">
+                                    <img alt="B01 - Umwelt" src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/items/BASICs_Umwelt.jpg">
+                                </span>
+                            </a>
+                    </div>
+
+                    <div class="span1_5 fancy_box categoryNoTitle B02">
+                            <a class="thumbnail thumbnailCategories " href="/produkte/B02">
+                                <span class="img fakediv">
+                                    <img alt="B02 - Lager" src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/items/BASICs_Lager.jpg">
+                                </span>
+                            </a>
+                    </div>
+
+                    <div class="span1_5 fancy_box categoryNoTitle B03">
+                            <a class="thumbnail thumbnailCategories " href="/produkte/B03">
+                                <span class="img fakediv">
+                                    <img alt="B03 - Transport" src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/items/BASICs_Transport.jpg">
+                                </span>
+                            </a>
+                    </div>
+
+                    <div class="span1_5 fancy_box categoryNoTitle B04">
+                            <a class="thumbnail thumbnailCategories " href="/produkte/B04">
+                                <span class="img fakediv">
+                                    <img alt="B04 - Betrieb" src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/items/BASICs_Betrieb.jpg">
+                                </span>
+                            </a>
+                    </div>
+
+                    <div class="span1_5 fancy_box categoryNoTitle B05">
+                            <a class="thumbnail thumbnailCategories " href="/produkte/B05">
+                                <span class="img fakediv">
+                                    <img alt="B05 - Büro" src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/items/BASICs_Buero.jpg">
+                                </span>
+                            </a>
+                    </div>
+        </div>
+    </div>
+    <div class="elements-divider"></div>
+    &nbsp;
+
+            </div>
+                <div class="span4">
+    <div class="persons-element">
+            <h2></h2>
+
+        <div class="thumbnails  row">
+                    <div class="span4 fancy_box contactInfo">
+                        <div class="thumbnail ">
+
+                            <div class="dateItem row">
+                                <div class="span1">
+                                    <img src="/public/PROVIDER-24/dennis-schaefer.jpg" style="margin-bottom: 10px">
+                                </div>
+                                <div class="profile span3-20">
+                                    <h3>Dennis Schäfer</h3>
+                                        <h5 class="pos">Vertrieb Betriebseinrichtung </h5>
+                                    <dl class="dl-horizontal">
+                                            <div class="phone">
+                                                <dt>Telefon:</dt>
+                                                <dd>0 27 73 / 74 18 04 - 33 ,  0151 / 432 04 222 (Mobil)</dd>
+                                            </div>
+                                            <div class="phone fax">
+                                                <dt>Fax:</dt>
+                                                <dd>0 27 73 / 874 99 87</dd>
+                                            </div>
+                                            <div class="email"><a href="mailto:schaefer@bnb-ohg.de">schaefer@bnb-ohg.de</a></div>
+                                    </dl>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="elements-divider"></div>
+        <div class="offers-element">
+
+            <div class=" thumbnails  row">
+                    <div class="span1 7029">
+                        <div class="catalog-wrapper">
+                            <a class="thumbnail thumbnailCatalog" href="/katalog/7029">
+                                <span class="catalog fakediv">
+                                    <img src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/catalogs/Teaser_12_Dezember.jpg">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="span1 7028">
+                        <div class="catalog-wrapper">
+                            <a class="thumbnail thumbnailCatalog" href="/katalog/7028">
+                                <span class="catalog fakediv">
+                                    <img src="https://shop.bnb-ohg.de/public/PROVIDER-2/images/catalogs/Teaser_11_November.jpg">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="elements-divider"></div>
+        <div class="catalogs-element">
+
+            <div class="thumbnails-start  row">
+                        <div class="span1 8712">
+                            <div class="catalog-wrapper">
+                                <a class="thumbnail thumbnailCatalog" href="/katalog/8712">
+                                    <span class="catalog fakediv">
+                                        <img src="https://shop.bnb-ohg.de/public/PROVIDER-24/images/catalogs/871210149.jpg">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+            </div>
+            <div class="elements-divider"></div>
+        </div>
+    &nbsp;
+
+    &nbsp;
+
+                </div>
+        </div>
+
+            </div><span id="s2contenthdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form>
+    </div>
+<form action="/faces/artifacts/start.xhtml" enctype="application/x-www-form-urlencoded" id="footerForm" method="post" name="footerForm">
+<input name="footerForm" type="hidden" value="footerForm">
+<input name="ice.window" type="hidden" value="33jbgmibke"><input name="ice.view" type="hidden" value="vth920gev3x"><script id="footerForm:footerForm_captureSubmit" type="text/javascript">ice.captureSubmit('footerForm',false);ice.captureEnterKey('footerForm');</script>
+        <div class="footerBar" style="clear: both; background-color: #888888">
+			<span id="footerText"><span id="footerForm:_t872">bnb Vertriebs GmbH &amp; Co. KG | Horstraße 5 | 35708 Haiger | Tel.: 0 27 73 / 74 18 04 - 0 | Mitglied der E.I.S.-Gruppe</span>
+			</span>
+
+            <div id="footerLinks">
+						<span>
+                                <a href="/agb"><span>AGB</span></a>
+						</span>
+						<span>
+                                <a href="/datenschutz"><span>Datenschutz</span></a>
+						</span>
+						<span>
+                                <a href="/impressum"><span>Impressum</span></a>
+						</span>
+						<span>
+                                <a href="/infos"><span>Infos</span></a>
+						</span>
+						<span>
+                                <a href="http://www.bnb-ohg.de/" target="_blank"><span>Homepage</span></a>
+						</span>
+            </div>
+        </div>
+        <div class="brandMark"><a href="http://www.scireum.de/sellsite" target="_blank">SellSite © scireum GmbH</a>
+        </div><span id="footerFormhdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form>
+        </div>
+    </div><span class="messagesContainer" id="messagesPanel" style="visibility: hidden"></span>
+<form action="/faces/artifacts/start.xhtml" enctype="application/x-www-form-urlencoded" id="messageDialog" method="post" name="messageDialog">
+<input name="messageDialog" type="hidden" value="messageDialog">
+<input name="ice.window" type="hidden" value="33jbgmibke"><input name="ice.view" type="hidden" value="vth920gev3x"><script id="messageDialog:messageDialog_captureSubmit" type="text/javascript">ice.captureSubmit('messageDialog',false);ice.captureEnterKey('messageDialog');</script><div class="icePnlPop panelPopup modal" id="messageDialog:msgDlg" name="messageDialog:msgDlg" style="z-index:999; left: 25%; width: 350px; position:absolute;display:none;"><table cellpadding="0" cellspacing="0"><tbody><tr id="messageDialog:msgDlg-tr"><td class="icePnlPopBody panelPopupBody modalBody" colspan="2">
+                <div>
+                    <div class="modal-header">
+                        <h3><span id="messageDialog:_t918">Frage</span></h3>
+                    </div>
+                    <div class="modal-body"><span id="messageDialog:_t920"></span>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div></td></tr></tbody></table><script id="messageDialog:msgDlgscript" type="text/javascript">Ice.modal.stop('messageDialog:msgDlg');; Ice.autoPosition.stop('messageDialog:msgDlg');; Ice.autoCentre.stop('messageDialog:msgDlg');; Ice.iFrameFix.start('messageDialog:msgDlg','/xmlhttp/blank');</script></div><span id="messageDialoghdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form>
+<form action="/faces/artifacts/start.xhtml" enctype="application/x-www-form-urlencoded" id="queryDialog" method="post" name="queryDialog">
+<input name="queryDialog" type="hidden" value="queryDialog">
+<input name="ice.window" type="hidden" value="33jbgmibke"><input name="ice.view" type="hidden" value="vth920gev3x"><script id="queryDialog:queryDialog_captureSubmit" type="text/javascript">ice.captureSubmit('queryDialog',false);ice.captureEnterKey('queryDialog');</script><div class="icePnlPop panelPopup modal" id="queryDialog:j_idt931" name="queryDialog:j_idt931" style="z-index:999; left: 25%; width: 350px; position:absolute;display:none;"><table cellpadding="0" cellspacing="0"><tbody><tr id="queryDialog:j_idt931-tr"><td class="icePnlPopBody panelPopupBody modalBody" colspan="2">
+                <div>
+                    <div class="modal-header">
+                        <h3><span id="queryDialog:_t933">Eingabe</span></h3>
+                    </div>
+                    <div class="modal-body"><span id="queryDialog:_t935"></span>
+
+                        <div class="answer"><input class="textInput" id="queryDialog:_t937" name="queryDialog:_t937" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer"><a class="btn" href="#" id="queryDialog:_t939" onclick="mojarra.jsfcljs(document.getElementById('queryDialog'),{'queryDialog:_t939':'queryDialog:_t939'},'');return false">
+                            Abbrechen
+                        </a><a class="btn btn-primary" href="#" id="queryDialog:_t941" onclick="mojarra.jsfcljs(document.getElementById('queryDialog'),{'queryDialog:_t941':'queryDialog:_t941'},'');return false">
+                            Ok
+                        </a>
+                    </div>
+                </div></td></tr></tbody></table><script id="queryDialog:j_idt931script" type="text/javascript">Ice.modal.stop('queryDialog:j_idt931');; Ice.autoPosition.stop('queryDialog:j_idt931');; Ice.autoCentre.stop('queryDialog:j_idt931');; Ice.iFrameFix.start('queryDialog:j_idt931','/xmlhttp/blank');</script></div><span id="queryDialoghdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form><span id="vth920gev3x_icefaces_config"><script>ice.setupBridge('vth920gev3x_icefaces_config', 'vth920gev3x', '33jbgmibke', {deltaSubmit: false,standardFormSerialization: false,blockUIOnSubmit: false});</script></span>
+<form action="/faces/artifacts/start.xhtml" id="vth920gev3x" method="post" name="vth920gev3x">
+<input name="vth920gev3x" type="hidden" value="vth920gev3x">
+<span id="vth920gev3xhdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value=""></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="2071417416238861452:-3364000024810347395" autocomplete="off">
+</form><span id="vth920gev3x_icepush"><script type="text/javascript">ice.push.configuration.uri="/faces/javax.faces.resource/listen.icepush";</script></span><script type="text/javascript">ice.DefaultIndicators({blockUI: false,connectionLostRedirectURI: null,sessionExpiredRedirectURI: null,connection: { context: '/'},messages: {sessionExpired: 'User Session Expired',connectionLost: 'Network Connection Interrupted',serverError: 'Server Internal Error',description: 'To reconnect click the Reload button on the browser or click the button below',buttonText: 'Reload'}}, document.body);</script><span id="dynamic-code-compat"><script type="text/javascript"></script></span>
+<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>ladend</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Schließen" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Nächste" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Abspielen" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Vorige" onclick="Shadowbox.previous()"></a></div></div></div></div></div><script type="text/javascript" src="/plugins/scireum/view/update.js"></script></body></html>

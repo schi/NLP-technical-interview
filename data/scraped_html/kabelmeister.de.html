@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html dir="ltr" lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+
+<meta name="generator" content="(c) by xt:Commerce v3.0.4 SP2.1 , http://www.xt-commerce.com">
+<meta name="robots" content="index,follow">
+<meta name="language" content="de">
+<meta name="author" content="">
+<meta name="publisher" content="">
+<meta name="company" content="">
+<meta name="page-topic" content="shopping">
+<meta name="reply-to" content="xx@xx.com">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="14">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Kabelmeister</title>
+<base href="http://www.kabelmeister.de/">
+<link rel="stylesheet" type="text/css" href="templates/div15/stylesheet.css">
+<script type="text/javascript"><!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+//--></script>
+
+<script type="text/javascript"><!--
+
+
+
+
+// Template Javascript
+function changeInputs(){
+var els = document.getElementsByTagName('input');
+var elsLen = els.length;
+var i = 0;
+for ( i=0;i<elsLen;i++ ){
+
+	if ( els[i].getAttribute('type') ){
+		if ( els[i].getAttribute('type') == "text" )
+		els[i].className =  els[i].getAttribute('type');
+		else
+		if ( els[i].getAttribute('type') == "password" )
+		els[i].className = 'password';
+		else
+		if ( els[i].getAttribute('type') == "image" )
+		els[i].className = 'image';
+		else
+		els[i].className = 'button';
+		}
+
+	}
+}
+window.onload = function() { changeInputs(); }
+// EOF Template Javascript
+//--></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- include scripts -->
+  <script src="templates/div15/javascript/jquery/jquery-1.2.3.pack.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- modTabs -->
+	<script src="templates/div15/javascript/jquery/modTabs/ui.tabs.pack.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="templates/div15/javascript/jquery/modTabs/ui.tabs.css">
+	
+	<!-- modLightbox -->
+	<script src="templates/div15/javascript/jquery/modLightbox/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="templates/div15/javascript/jquery/modLightbox/modLightbox.css">
+  <!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="templates/div15/ie6.css" />
+<![endif]-->
+
+</head>
+<body>
+
+
+
+
+
+<br>
+<div class="siteBg">
+  <div id="SITE">
+
+    <div id="Header" class="clearfix">
+
+      <a style="float: left; vertical-align: bottom;" href=""><h1 id="logo"><span>Kabelmeister</span></h1></a>
+
+      <div class="topSearch">
+<form id="quick_find" action="http://www.kabelmeister.de/advanced_search_result.php" method="get"><input type="hidden" name="XTCsid" value="ibigpv0c3ht68k4dl31dspv0o6" class="button">
+ <input type="text" name="keywords" size="23" maxlength="30" id="quickSearch" value="Suche im Katalog nach Volltext, Herstellernummer, EAN Code" onfocus="if(this.value=='Suche im Katalog nach Volltext, Herstellernummer, EAN Code')this.value=''" onblur="if(this.value=='')this.value='Suche im Katalog nach Volltext, Herstellernummer, EAN Code'" class="text"> <input type="image" src="templates/div15/buttons/german/button_quick_find.gif" alt="Suche im Katalog nach Volltext, Herstellernummer, EAN Code" title=" Suche im Katalog nach Volltext, Herstellernummer, EAN Code " class="image"> 
+   <a class="advancedSearch" href="http://www.kabelmeister.de/advanced_search.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Erweiterte Suche »</a>
+</form></div>
+      
+      
+      
+      <!--<div class="hotline"><a href="mailto:info@kabelmeister.de">info@kabelmeister.de</a><br />HOTLINE: 01805 376936*<br /></div>
+      <div class="hotlinesmall">*0,14 Euro pro Minute aus dem Festnetz, maximal 0,42 Euro pro Minute aus den Mobilfunknetzen</div>-->
+     
+      <div class="ts">
+
+       <form name="formSiegel" method="post" action="https://www.trustedshops.de/de/tshops/seal_de.php3" target="_blank">
+                  <input name="shop_id" value="XB9E49917B1D26817B4F032B55900E0B9" type="hidden" class="button">
+                   <input src="templates/div15/img/global/trusted_shops.gif" title="Trusted Shops Gütesiegel - Bitte hier Gültigkeit prüfen!" name="I1" align="middle" border="0" height="70" type="image" class="image">
+                   </form>
+     	</div>
+        
+        
+        <div class="10J">
+      <img src="templates/div15/img/global/10J_km.gif">
+		</div>        
+      
+      
+      
+
+            <a class="logging" id="login" href="http://www.kabelmeister.de/login.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">login</a>
+                  
+      
+     </div>
+
+
+    <!-- TOPNAVI & CART -->
+    <ul class="topNavi">
+      <li class="rightCorner"><!-- right corner !don`t remove! --></li>
+      <li class="leftCorner"><!-- left corner !don`t remove! --></li>
+      <li class="navi">
+              <a class="tab active" id="home" href=""><span>Home</span></a>
+        <span class="spacer"></span>
+        <a class="tab " id="productsNew" href="http://www.kabelmeister.de/products_new.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Neue Artikel</a>
+        <span class="spacer"></span>
+        <a class="tab " id="angebote" href="http://www.kabelmeister.de/specials.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Angebote</a>
+        <span class="spacer"></span>
+                  <a class="tab " title="Ihr Konto" href="https://www.kabelmeister.de/account.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Ihr Konto</a>
+        <span class="spacer"></span>
+                <a class="tab " title="Warenkorb" href="https://www.kabelmeister.de/shopping_cart.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Warenkorb</a>
+        <span class="spacer"></span>
+        <a class="tab " title="Kasse" href="https://www.kabelmeister.de/checkout_shipping.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">
+          Kasse
+        </a>
+        <span class="spacer"></span>
+        <a style="float: right;" class="tab " id="contact" href="http://www.kabelmeister.de/shop_content.php?coID=7&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><span>Kontakt</span></a>
+            </li>
+    </ul>
+
+   <span class="clear"></span>
+
+          <div id="navtrail">
+        <a href="http://www.kabelmeister.de" class="headerNavigation">Startseite</a> » <a href="http://www.kabelmeister.de/index.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6" class="headerNavigation">Katalog</a>
+      </div>
+    
+    <div class="bgWrap">
+      <div id="ContentBody">
+
+        <div id="NaviRight">
+                  
+   
+    <!-- cart has no content --> 
+    <div class="infoBox boxCart boxGreenWhite">
+      <div class="infoBoxHeading_right">
+        Warenkorb
+      </div>
+      <div class="boxText">
+        <strong>
+                    keine Produkte im Warenkorb
+                  </strong>
+      </div>
+    </div>
+  <div class="boxSpacer"></div>
+          
+          		  
+
+<div class="infoBox_right boxLanguages boxBlueWhite">
+
+  <div class="infoBoxHeading_right">LOGIN</div>
+  <div class="boxText" style="text-align:center;">
+
+<form id="loginbox" method="post" action="https://www.kabelmeister.de/login.php?action=process&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">
+	<div class="boxText" style="text-align:left;">
+  <label for="email_address">Email oder Kundennummer:</label>
+  <input type="text" id="email_address" name="email_address" size="20" maxlength="50" class="text">
+
+  <label for="password">Passwort:</label><br>
+  <input type="password" id="password" name="password" size="20" maxlength="30" class="password">
+
+  </div>
+  <input type="image" src="templates/div15/buttons/german/button_login_small.gif" alt="Anmelden" title=" Anmelden " class="image">
+
+
+  <div class="boxText" style="text-align:center;">
+  <a href="https://www.kabelmeister.de/password_double_opt.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Passwort vergessen?</a>
+  </div>
+
+
+</form>
+
+    </div>
+  <span class="clear"></span>
+
+</div>
+<div class="boxSpacer"></div>
+          <table width="165" height="163" border="0" background="templates/div15/img/bg_haendler.jpg" cellspacing="7" cellpadding="0">
+  			<tbody><tr>
+   				<td align="center" valign="top" style="margin-top:20px;"><b><font color="#FFFFFF">Händler oder Industrie?</font></b><br><br>
+ 			Sie haben Anfragen für <strong>größere Mengen</strong> oder <strong>Sonderkabel</strong>?<br>Wir können Ihnen gezielt für jeden Artikel günstige Konditionen anbieten! <br>
+ 			<br><a href="mailto:b2b@kabelmeister.de"><img src="templates/div15/buttons/german/anfrage.gif"></a>            </td></tr></tbody></table>
+
+		  <br>
+           <img src="templates/div15/img/global/box_zahlen.jpg">
+           <br>
+           <br>
+           <img src="templates/div15/img/global/box_versand.jpg">
+           <br>
+           <br>
+           
+                </div>
+
+        <div id="NaviLeft">
+                  
+
+<div class="infoBox boxCategories boxBlue">
+
+  <div class="infoBoxHeading">
+    Kategorien
+  </div>
+  <div class="boxText"><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c6398_Good-Connections--in-Polybags.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Good Connections® in Polybags</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5626_Adapter.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Adapter</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5794_Batterien---Akkus.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Batterien &amp; Akkus</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c6098_Beleuchtung.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Beleuchtung</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5529_Kabel.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Kabel</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5559_Komponenten.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Komponenten</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5563_Netzwerk.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Netzwerk</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c6405_Multimedia.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Multimedia</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c6502_Peripherie.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Peripherie</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5568_SAT---TV.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">SAT &amp; TV</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5572_Sonstiges.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Sonstiges</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5574_Stromversorgung.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Stromversorgung</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5575_Telekommunikation.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Telekommunikation</a><a class="kategorie" href="http://www.kabelmeister.de/index.php?cat=c5496_Zubehoer.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Zubehör</a></div>
+  
+</div>
+<div class="boxSpacer"></div>
+          
+<div class="boxBlue infoBox boxManufacturers">
+
+  <div class="infoBoxHeading">
+  	Hersteller
+  </div>
+  <div class="boxText"><form id="manufacturers" action="http://www.kabelmeister.de/index.php" method="get"><select name="manufacturers_id" onchange="this.form.submit();" size="1"><option value="" selected="selected">Bitte wählen</option><option value="162">3R</option><option value="86">42 degrees</option><option value="37">AeroCool</option><option value="47">Akasa</option><option value="52">Antec</option><option value="70">Aplus</option><option value="201">Apple®</option><option value="7">Arctic Cooling</option><option value="95">Arctic Silver</option><option value="65">Astak</option><option value="85">Asus</option><option value="8">Aten</option><option value="130">AVM</option><option value="154">Avox</option><option value="34">Be Quiet!</option><option value="97">Casetek</option><option value="46">Chieftec</option><option value="208">Clicktronic</option><option value="98">Coba</option><option value="29">Coolink</option><option value="32">D-Link</option><option value="185">Dätwyler</option><option value="173">Deepcool</option><option value="9">Delock</option><option value="193">Delock Lighting</option><option value="129">Devolo</option><option value="45">Digitus</option><option value="178">DRAKA</option><option value="90">DrayTek</option><option value="176">Duracell</option><option value="171">DYNATRON</option><option value="203">EFB-Elektronik ..</option><option value="63">EKL</option><option value="10">Enermax</option><option value="84">Equip</option><option value="124">Evercase</option><option value="179">Everki</option><option value="11">EXSYS</option><option value="205">fixPoint</option><option value="164">Fractal Design</option><option value="105">fUnc</option><option value="209">Goobay</option><option value="64">Good Connection..</option><option value="88">Heatkiller</option><option value="161">HKC</option><option value="165">Hyperglides</option><option value="13">Ichbinleise</option><option value="78">ICY BOX</option><option value="50">ICY DOCK</option><option value="71">innovatek</option><option value="152">IOCELL</option><option value="147">iriver</option><option value="167">JCP</option><option value="188">Kabelmeister</option><option value="14">Keysonic</option><option value="15">KMP</option><option value="38">LevelOne</option><option value="80">Lian Li</option><option value="111">LICS</option><option value="75">Lobos</option><option value="166">LogiLight</option><option value="69">Logilink</option><option value="54">Logitech</option><option value="16">Longshine</option><option value="92">Manhattan</option><option value="67">Maxell</option><option value="58">Microsoft</option><option value="160">MS-TECH</option><option value="48">Navilock</option><option value="28">Noctua</option><option value="112">Noiseblocker</option><option value="44">NorthQ</option><option value="183">Online USV</option><option value="170">Panasonic</option><option value="17">Papst</option><option value="155">PinPoint</option><option value="61">Platinum</option><option value="91">Pleiades</option><option value="195">Powertraveller</option><option value="153">QNAP</option><option value="141">RackMax</option><option value="87">RaidMax</option><option value="68">Rasurbo</option><option value="40">Razer</option><option value="72">REV</option><option value="148">Revo</option><option value="18">Revoltec</option><option value="132">Roccat</option><option value="197">S-KROSS</option><option value="128">Samsung</option><option value="146">SANYO</option><option value="57">Scythe</option><option value="133">Seasonic</option><option value="26">Sharkoon</option><option value="135">ShiverPeaks</option><option value="134">SilverPower</option><option value="120">SilverStone</option><option value="51">Sinan</option><option value="43">Smartcooler</option><option value="39">Speed-Link</option><option value="83">Spire</option><option value="172">Sweex</option><option value="49">Tagan</option><option value="33">Tecxus</option><option value="361">Telekom</option><option value="187">Tenda</option><option value="156">Teslanol</option><option value="174">Testboy</option><option value="59">Thermalright</option><option value="22">Titan</option><option value="177">TP-Link</option><option value="175">VARTA</option><option value="126">ViPowER</option><option value="151">WowPen</option><option value="41">Xilence</option><option value="25">Zalman</option><option value="136">Zweibrüder</option></select><input type="hidden" name="XTCsid" value="ibigpv0c3ht68k4dl31dspv0o6" class="button"></form></div>
+  
+</div>
+<div class="boxSpacer"></div>
+
+
+          
+          
+
+<div class="infoBox boxInformation boxBlueWhite">
+
+  <div class="infoBoxHeading">Informationen</div>
+  <div class="boxText"><a href="http://www.kabelmeister.de/shop_content.php?coID=600&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Über kabelmeister</a><a href="http://www.kabelmeister.de/shop_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Versandkosten</a><a href="http://www.kabelmeister.de/shop_content.php?coID=10&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Rücksendung von Ware</a><a href="http://www.kabelmeister.de/shop_content.php?coID=200&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Garantie / Qualität</a><a href="http://www.kabelmeister.de/shop_content.php?coID=300&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Werbepartner</a><a href="http://www.kabelmeister.de/shop_content.php?coID=11&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Batterieverordnung</a><a href="http://www.kabelmeister.de/shop_content.php?coID=555&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Verpackungsverordnung</a><a href="http://www.kabelmeister.de/shop_content.php?coID=400&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Händler</a><a href="http://www.kabelmeister.de/shop_content.php?coID=8&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Sitemap</a></div>
+  
+</div>
+<div class="boxSpacer"></div>
+          
+          
+          <a href="http://www.kabelmeister.de/news1.php?XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="templates/div15/img/grafischeHeader/german/buttonNewsletter.gif"></a>
+          
+          <br><br>
+           
+           <a href="https://www.kabelmeister.de/schrankkonfigurator"><img src="templates/div15/buttons/german/schrankkonfigurator_button.gif"></a>
+           
+           <br><br>
+           
+           <img src="templates/div15/img/global/saarland.jpg">
+           
+           <br><br>
+           
+           <!--  billiger.de Partner button -->
+<div style="width:130px;">
+<link type="text/css" href="//www.billiger.de/css/partnerbutton.css" rel="stylesheet">
+<div id="bde_shopreview"><a href="https://www.billiger.de/" target="_blank"><img src="//img.billiger.de/billiger/partner/billigerde_pb.png" width="88" height="59" border="0" alt="billiger.de - der Preisvergleich" title="billiger.de - der Preisvergleich"></a>
+</div></div>
+<!--  / billiger.de Partner button -->
+           
+
+
+                </div>
+
+        <div id="MainContent">
+          <div class="clearFloater">
+          <!-- START TEASER 
+                                    <img id="startTeaser" src="templates/div15/img/grafischeHeader/german/startTeaser.jpg" />
+                      			-->
+          
+
+
+
+<div style="margin: 10px 0 20px 0;">
+  <h1 class="contentsTopics">Herzlich willkommen bei kabelmeister.de</h1>
+  <p></p><table width="580" cellspacing="5" cellpadding="0" border="0" align="center">
+    <tbody>
+        <tr>
+            <td colspan="2" valign="middle" align="left">
+            <table width="100%" cellspacing="10" cellpadding="0" border="0">
+                <tbody>
+                    <tr>
+                        <td><font size="3">
+                        <p><strong>Kabelmeister, the Cable Company!</strong></p>
+                        <p>Kabelmeister ist ein Spezialanbieter für Kabel aller Art aus den Bereichen <strong>Netzwerk, Computer, Audio/Video und Home Entertainment</strong>, spezialisiert auf eine große Auswahl an Längen und Farben und ist seit über 12 Jahren erfolgreich am Markt vertreten.</p>
+                        <p>Unser Sortiment wird abgerundet von den entsprechenden <strong>Adaptern</strong>, wie auch diversem <strong>Zubehör und Komponenten</strong> für den Computer und das Netzwerk. Sie sind auf der Suche nach einem bestimmten Kabel, das Sie bei uns nicht finden? Fragen Sie uns! Wir finden mit Sicherheit das richtige Kabel für Sie. Nicht umsonst heißen wir Kabelmeister ;-) </p>
+                        </font></td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><img alt="" src="https://www.kabelmeister.de/bilder/banner/zahlmoeglichkeiten.jpg"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><a href="http://efb-typo3.efb-elektronik.de/index.php?id=1974"><img alt="" src="https://www.kabelmeister.de/bilder/banner/nw_schrank_konfigurator.jpg"></a></td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="middle" align="center"><br><br><img alt="" src="https://www.kabelmeister.de/bilder/kabelmeister_reklame.jpg" usemap="#Map" border="0"><br></td>
+        </tr>
+    </tbody>
+</table>
+<map name="Map2">
+<area shape="rect" coords="42,14,94,47" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34535+or+SO-34546+or+SO-34532+or+SO-34536+or+SO-36209+or+SO-34538+or+SO-34541+or+SO-34543+or+SO-36210+or+SO-34545+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=52&amp;y=8">
+<area shape="rect" coords="42,58,93,91" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34561+or+SO-36212++or+SO-34559+or+SO-34556+or+SO-34555+or+SO-36211+or+SO-34552+or+SO-34549+or+SO-34563+or+SO-34551&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=74&amp;y=3">
+<area shape="rect" coords="41,102,94,136" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34566+or+SO-34579++or+SO-34564+or+SO-34569+or+SO-36213+or+SO-34570+or+SO-34572++or+SO-34575+or+SO-36214+or+SO-34577&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="41,145,94,181" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-36216+or+SO-36224+or+SO-36215+or+SO-36217+or+SO-36218+or+SO-36219+or+SO-36220+or+SO-36221+or+SO-36222+or+SO-36223&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=47&amp;y=7">
+<area shape="rect" coords="39,190,94,223" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34583+or+SO-34595+or+SO-34581+or+SO-34585+or+SO-36225+or+SO-34586+or+SO-34589+or+SO-34591+or+SO-36226+or+SO-34592&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="42,234,93,268" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34598+or+SO-34611+or+SO-34597+or+SO-34601+or+SO-36227+or+SO-34603+or+SO-34604+or+SO-34606+or+SO-36228+or+SO-34609+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=36&amp;y=2">
+<area shape="rect" coords="40,278,93,312" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34615+or+SO-34626+or+SO-34612+or+SO-34617+or+SO-36229+or+SO-34618+or+SO-34620+or+SO-34622+or+SO-36230+or+SO-34625+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=64&amp;y=3">
+<area shape="rect" coords="165,15,219,47" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34646+or+SO-34658+or+SO-34645+or+SO-34649+or+SO-36234+or+SO-34651+or+SO-34652+or+SO-34655+or+SO-36235+or+SO-34656++&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="163,58,216,93" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34663+or+SO-34675+or+SO-34661+or+SO-34665+or+SO-36236+or+SO-34666+or+SO-34669+or+SO-34670+or+SO-36237+or+SO-34672+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="164,101,214,135" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34678+or+SO-34690+or+SO-34677+or+SO-34681+or+SO-36238+or+SO-34683+or+SO-34685+or+SO-34687+or+SO-36239+or+SO-34688&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=48&amp;y=9">
+<area shape="rect" coords="165,145,217,180" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-35793+or+SO-35796+or+SO-35792+or+SO-35794+or+SO-36240+or+SO-35589+or+SO-35795++or+SO-35588+or+SO-36241+or+SO-35587+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="164,189,215,224" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-34695+or+SO-34706+or+SO-34692+or+SO-34697+or+SO-36242+or+SO-34698+or+SO-34701+or+SO-34703+or+SO-36243+or+SO-34704&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=0&amp;y=0">
+<area shape="rect" coords="164,233,215,269" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-35798+or+SO-35804+or+SO-35797+or+SO-35799+or+SO-35800+or+SO-35801+or+SO-35802+or+SO-35803&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=48&amp;y=4">
+<area shape="rect" coords="164,279,214,312" href="http://www.kabelmeister.de/advanced_search_result.php?keywords=SO-35806+or+SO-35812+or+SO-35805+or+SO-35807+or+SO-35808+or+SO-35809+or+SO-35810+or+SO-35811+&amp;categories_id=&amp;inc_subcat=1&amp;manufacturers_id=&amp;pfrom=&amp;pto=&amp;x=41&amp;y=12">
+<area shape="rect" coords="332,14,385,47" href="http://www.kabelmeister.de/index.php?cPath=5529_5564_5722_8501_8504&amp;sort=&amp;multisort=name_asc">
+<area shape="rect" coords="334,59,383,92" href="http://www.kabelmeister.de/index.php?cat=c8507_Gelb.html">
+<area shape="rect" coords="332,102,384,135" href="http://www.kabelmeister.de/index.php?cat=c8505_Gruen.html">
+<area shape="rect" coords="331,144,383,180" href="http://www.kabelmeister.de/index.php?cat=c8506_Blau.html">
+<area shape="rect" coords="330,188,381,224" href="http://www.kabelmeister.de/index.php?cat=c8509_Orange.html">
+<area shape="rect" coords="415,10,466,47" href="http://www.kabelmeister.de/index.php?cat=c8600_Violett.html&amp;sort=&amp;XTCsid=4icdi1eu1teff097u13j7dj1s0&amp;filter_id=188">
+<area shape="rect" coords="414,56,462,91" href="http://www.kabelmeister.de/index.php?cat=c8599_Magenta.html&amp;sort=&amp;XTCsid=4icdi1eu1teff097u13j7dj1s0&amp;filter_id=188">
+<area shape="rect" coords="414,99,465,136" href="http://www.kabelmeister.de/index.php?cat=c8508_Grau.html&amp;sort=&amp;XTCsid=4icdi1eu1teff097u13j7dj1s0&amp;filter_id=188">
+<area shape="rect" coords="414,146,464,178" href="http://www.kabelmeister.de/index.php?cat=c8502_Wei-.html&amp;sort=&amp;XTCsid=4icdi1eu1teff097u13j7dj1s0&amp;filter_id=188">
+<area shape="rect" coords="411,189,466,224" href="http://www.kabelmeister.de/index.php?cat=c8503_Schwarz.html&amp;sort=&amp;XTCsid=4icdi1eu1teff097u13j7dj1s0&amp;filter_id=188"> </map><p></p>
+</div>
+
+<div class="section"> 
+
+<ul class="productListing">
+      
+  <li class="ContentBox ContentBoxLeft">
+    <span class="preis">  10,45 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p124211_Patchkabel-LWL-Duplex-OM1--Multimode--62-5-125--SC-SC--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Patchkabel LWL Duplex OM1 (Multimode, 62,5/125) SC/SC, 1m, Good Connections®" href="images/product_images/popup_images/124211_0__LW-601SC.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p124211_Patchkabel-LWL-Duplex-OM1--Multimode--62-5-125--SC-SC--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p124211_Patchkabel-LWL-Duplex-OM1--Multimode--62-5-125--SC-SC--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Patchkabel LWL Duplex OM1 (Multimode, 62,5/125) SC/SC, 1m, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p124211_Patchkabel-LWL-Duplex-OM1--Multimode--62-5-125--SC-SC--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/124211_0__LW-601SC.jpg" alt="Patchkabel LWL Duplex OM1 (Multimode, 62,5/125) SC/SC, 1m, Good Connections®"></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxMiddle">
+    <span class="preis">  9,57 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p118358_Anschlusskabel-DisplayPort-1-2--Stecker-inkl--Verriegelungsschutz--schwarz--3m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Anschlusskabel DisplayPort 1.2, Stecker inkl. Verriegelungsschutz, schwarz, 3m, Good Connections®" href="images/product_images/popup_images/118358_0__4810-010_a.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p118358_Anschlusskabel-DisplayPort-1-2--Stecker-inkl--Verriegelungsschutz--schwarz--3m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p118358_Anschlusskabel-DisplayPort-1-2--Stecker-inkl--Verriegelungsschutz--schwarz--3m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Anschlusskabel DisplayPort 1.2, Stecker inkl. Verriegelungsschutz, schwarz, 3m, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p118358_Anschlusskabel-DisplayPort-1-2--Stecker-inkl--Verriegelungsschutz--schwarz--3m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/118358_0__4810-010_a.jpg" alt="Anschlusskabel DisplayPort 1.2, Stecker inkl. Verriegelungsschutz, schwarz, 3m, Good Connections®"></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxLast">
+    <span class="preis">  946,89 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p127066_Verlegekabel--Cat--7--S-FTP--PiMF--1000MHz--DUPLEX--orange--500m-Rolle--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Verlegekabel, Cat. 7, S/FTP, PiMF, 1000MHz, DUPLEX, orange, 500m Rolle, Good Connections®" href="images/product_images/popup_images/127066_0__vl-7501d.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p127066_Verlegekabel--Cat--7--S-FTP--PiMF--1000MHz--DUPLEX--orange--500m-Rolle--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p127066_Verlegekabel--Cat--7--S-FTP--PiMF--1000MHz--DUPLEX--orange--500m-Rolle--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Verlegekabel, Cat. 7, S/FTP, PiMF, 1000MHz, DUPLEX, orange, 500m Rolle, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p127066_Verlegekabel--Cat--7--S-FTP--PiMF--1000MHz--DUPLEX--orange--500m-Rolle--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/127066_0__vl-7501d.jpg" alt="Verlegekabel, Cat. 7, S/FTP, PiMF, 1000MHz, DUPLEX, orange, 500m Rolle, Good Connections®"></a>
+        
+        
+  </li>
+  
+  </ul><div class="clear"></div><ul class="productListing">      
+  <li class="ContentBox ContentBoxLeft">
+    <span class="preis">  2,57 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p240478_Anschlusskabel-USB-2-0-Stecker-A-an-Stecker-Micro-B--gruen--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Anschlusskabel USB 2.0 Stecker A an Stecker Micro B, grün, 1m, Good Connections®" href="images/product_images/popup_images/240478_0__2510-MB01G.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p240478_Anschlusskabel-USB-2-0-Stecker-A-an-Stecker-Micro-B--gruen--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p240478_Anschlusskabel-USB-2-0-Stecker-A-an-Stecker-Micro-B--gruen--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Anschlusskabel USB 2.0 Stecker A an Stecker Micro B, grün, 1m, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p240478_Anschlusskabel-USB-2-0-Stecker-A-an-Stecker-Micro-B--gruen--1m--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/240478_0__2510-MB01G.jpg" alt="Anschlusskabel USB 2.0 Stecker A an Stecker Micro B, grün, 1m, Good Connections®"></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxMiddle">
+    <span class="preis">  1,43 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p118376_Y-Stromversorgungskabel--2-x-5-25---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Y-Stromversorgungskabel, 2 x 5,25" ,="" good="" connections®"="" href="images/product_images/popup_images/118376_0__5021.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p118376_Y-Stromversorgungskabel--2-x-5-25---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p118376_Y-Stromversorgungskabel--2-x-5-25---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Y-Stromversorgungskabel, 2 x 5,25", Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p118376_Y-Stromversorgungskabel--2-x-5-25---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/118376_0__5021.jpg" alt="Y-Stromversorgungskabel, 2 x 5,25" ,="" good="" connections®"=""></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxLast">
+    <span class="preis">  10,29 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p122996_Home-Cinema-HDMI-19pol-Anschlusskabel-St-an-St--1m.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Home Cinema HDMI 19pol Anschlusskabel St an St, 1m" href="images/product_images/popup_images/122996_0__HC-30010_1.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p122996_Home-Cinema-HDMI-19pol-Anschlusskabel-St-an-St--1m.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p122996_Home-Cinema-HDMI-19pol-Anschlusskabel-St-an-St--1m.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Home Cinema HDMI 19pol Anschlusskabel St an St, 1m</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p122996_Home-Cinema-HDMI-19pol-Anschlusskabel-St-an-St--1m.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/122996_0__HC-30010_1.jpg" alt="Home Cinema HDMI 19pol Anschlusskabel St an St, 1m"></a>
+        
+        
+  </li>
+  
+  </ul><div class="clear"></div><ul class="productListing">      
+  <li class="ContentBox ContentBoxLeft">
+    <span class="preis">  1,80 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p118414_Stromadapterkabel-S-ATA-Stecker-an-5-25--Buchse--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="Stromadapterkabel S-ATA Stecker an 5,25" buchse,="" good="" connections®"="" href="images/product_images/popup_images/118414_0__5021-ide.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p118414_Stromadapterkabel-S-ATA-Stecker-an-5-25--Buchse--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p118414_Stromadapterkabel-S-ATA-Stecker-an-5-25--Buchse--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>Stromadapterkabel S-ATA Stecker an 5,25" Buchse, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p118414_Stromadapterkabel-S-ATA-Stecker-an-5-25--Buchse--Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/118414_0__5021-ide.jpg" alt="Stromadapterkabel S-ATA Stecker an 5,25" buchse,="" good="" connections®"=""></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxMiddle">
+    <span class="preis">  3,17 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p118178_High-Speed-HDMI--Kabel--vergoldete-Stecker--2m--wei---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="High-Speed-HDMI®-Kabel, vergoldete Stecker, 2m, weiß, Good Connections®" href="images/product_images/popup_images/118178_0__4510-02W.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p118178_High-Speed-HDMI--Kabel--vergoldete-Stecker--2m--wei---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p118178_High-Speed-HDMI--Kabel--vergoldete-Stecker--2m--wei---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>High-Speed-HDMI®-Kabel, vergoldete Stecker, 2m, weiß, Good Connections®</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p118178_High-Speed-HDMI--Kabel--vergoldete-Stecker--2m--wei---Good-Connections-.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/118178_0__4510-02W.jpg" alt="High-Speed-HDMI®-Kabel, vergoldete Stecker, 2m, weiß, Good Connections®"></a>
+        
+        
+  </li>
+  
+        
+  <li class="ContentBox  ContentBoxLast">
+    <span class="preis">  6,90 EUR<a class="button" href="http://www.kabelmeister.de/product_info.php?info=p240321_kabelmeister--SSD-Einbau-SparSet---Einbaurahmen---SATA-Kabel---SATA-Stromkabel.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"></a></span>
+    <span class="thisShippingLink">incl. 19 % UST exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://www.kabelmeister.de/popup_content.php?coID=1&XTCsid=ibigpv0c3ht68k4dl31dspv0o6', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://www.kabelmeister.de/popup_content.php?coID=1&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></span>
+    
+    <div class="bottomBar">
+      <!--<span class="button"><a href="#"><img width="18" src="templates/div15/img/module/productlist/button_cart.gif" /> Warenkorb</a></span>-->
+              <span class="button"><a class="thickbox blue" rel="kabelmeister® SSD Einbau SparSet - Einbaurahmen + SATA Kabel + SATA Stromkabel" href="images/product_images/popup_images/240321_0__so-19208.jpg"><img src="templates/div15/img/module/productlist/button_lupe.gif"> Vergrößern</a></span>
+            <span class="button"><a href="http://www.kabelmeister.de/product_info.php?info=p240321_kabelmeister--SSD-Einbau-SparSet---Einbaurahmen---SATA-Kabel---SATA-Stromkabel.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img width="18" src="templates/div15/img/module/productlist/button_details.gif"> Details</a></span>
+      <div class="clear"></div>
+    </div>
+    <a class="name" href="http://www.kabelmeister.de/product_info.php?info=p240321_kabelmeister--SSD-Einbau-SparSet---Einbaurahmen---SATA-Kabel---SATA-Stromkabel.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><strong>kabelmeister® SSD Einbau SparSet - Einbaurahmen + SATA Kabel + SATA Stromkabel</strong></a>
+    
+        	<a class="ProductImage" href="http://www.kabelmeister.de/product_info.php?info=p240321_kabelmeister--SSD-Einbau-SparSet---Einbaurahmen---SATA-Kabel---SATA-Stromkabel.html&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6"><img src="images/product_images/thumbnail_images/240321_0__so-19208.jpg" alt="kabelmeister® SSD Einbau SparSet - Einbaurahmen + SATA Kabel + SATA Stromkabel"></a>
+        
+        
+  </li>
+  
+  </ul><div class="clear"></div><ul class="productListing">  </ul></div>
+
+<!--<div class="section">
+
+<table class="list">
+  <tr> 
+    <th colspan="2" align="left" style=" border:0;">In K&uuml;rze bei uns Verf&uuml;gbar!</th>
+  </tr>
+    <tr class="row1">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p146366_Patchkabel-LWL-Duplex-OS2--Singlemode--9-125--LC-DIN--20m--Good-Connections-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Patchkabel LWL Duplex OS2 (Singlemode, 9/125) LC/DIN, 20m, Good Connections®</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row2">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p271496_Adapter-FAKRA-Z-Buchse-an-FME-Stecker--Delock---88927-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Adapter FAKRA Z Buchse an FME Stecker, Delock® [88927]</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row1">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p273235_Steckdosenleiste-6-fach-Schutzkontakt-mit-Einzelschaltern-und-Hauptschalter--schwarz--1-5m.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Steckdosenleiste 6-fach Schutzkontakt mit Einzelschaltern und Hauptschalter, schwarz, 1,5m</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row2">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p160403_Papier-CD-Huelle--50-Stueck--LogiLink---NB0057-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Papier CD-Hülle, 50 Stück, LogiLink® [NB0057]</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row1">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p240678_Patchkabel--Cat--6--U-UTP--FLACHKABEL--orange--1-5m--Good-Connections-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Patchkabel, Cat. 6, U/UTP, FLACHKABEL, orange, 1,5m, Good Connections®</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row2">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p124647_Cat-5e-Crossover-Adapter-RJ45-Buchse-an-Stecker--Good-Connections-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Cat 5e Crossover Adapter RJ45 Buchse an Stecker, Good Connections®</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row1">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p268384_KFZ-USB-Ladeadapter--2-Port--2-1-A--inkl--Anschlusskabel-Apple-Lightning-Connector-an-USB-A-Stecker--schwarz--1m.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">KFZ USB-Ladeadapter, 2-Port, 2,1 A, inkl. Anschlusskabel Apple Lightning Connector an USB A Stecker, schwarz, 1m</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row2">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p146604_Patchkabel-LWL-Duplex-OM4--Multimode--50-125--LC-LC--7-5m--Good-Connections-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Patchkabel LWL Duplex OM4 (Multimode, 50/125) LC/LC, 7,5m, Good Connections®</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row1">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p272936_Python--Series-RJ45-Patchkabel-mit-Cat--7-Rohkabel--Rastnasenschutz--RNS---und-Nylongeflecht--S-FTP--PiMF--halogenfrei--500MHz--OFC--wei---15m.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Python® Series RJ45 Patchkabel mit Cat. 7 Rohkabel, Rastnasenschutz (RNS®) und Nylongeflecht, S/FTP, PiMF, halogenfrei, 500MHz, OFC, weiß, 15m</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+    <tr class="row2">
+    <td><a href="http://www.kabelmeister.de/product_info.php?info=p265175_Kabelfuehrungspanel-19---mit-5-Metallbuegeln--1HE--lichtgrau-RAL7035--Good-Connections-.html&XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Kabelführungspanel 19", mit 5 Metallbügeln, 1HE, lichtgrau RAL7035, Good Connections®</a></td>
+    <td width="1"><div align="right"></div></td>
+  </tr>
+  </table>
+</div>-->
+
+
+          </div>
+        </div>
+        <span class="clear"></span>
+
+
+      </div>
+    </div>
+
+    <div id="Footer">
+
+      <div id="navtrail">
+        
+
+<a href="http://www.kabelmeister.de/shop_content.php?coID=4&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Impressum</a><a href="http://www.kabelmeister.de/shop_content.php?coID=7&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Kontakt</a><a href="http://www.kabelmeister.de/shop_content.php?coID=3&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Unsere AGB</a><a href="http://www.kabelmeister.de/shop_content.php?coID=2&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Privatsphäre und Datenschutz</a><a href="http://www.kabelmeister.de/shop_content.php?coID=21&amp;XTCsid=ibigpv0c3ht68k4dl31dspv0o6">Widerrufsrecht</a>
+
+      </div>
+
+    </div>
+
+    
+
+  </div>
+</div>
+<div id="subFooter">
+  <div class="content">
+  
+    <div class="clb"></div>
+    <a class="designlink" title="xt-Commerce Shop Templates Design Squidio.de" href="https://www.squidio.de">
+      XT-Commerce Design <span style="display:none;">xt-Commerce Shop Template Design Squidio.de</span>      </a>
+    © Kabelmeister alle Rechte vorbehalten
+  </div>
+ <br>
+</div>
+
+
+
+<div class="copyright">eCommerce Engine © 2006 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce Shopsoftware</a></div><div class="copyright">eCommerce Engine © 2006 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce Shopsoftware</a></div><div class="parseTime">Parse Time: 0.324s</div></body></html>

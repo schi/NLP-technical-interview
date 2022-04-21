@@ -1,0 +1,1403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html lang="de" ng-app="MauveShopApp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+<title>Startseite - Profi-Tack</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="imagetoolbar" content="false">
+<meta http-equiv="content-language" content="de">
+<meta name="page-type" content="information">
+<meta name="doc-type" content="Web Page">
+<meta name="distribution" content="global">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="3 Days">
+<meta name="resource-type" content="document">
+<meta name="siteinfo" content="robots.txt">
+<meta name="language" content="de">
+<meta name="generator" content="Mauve Webshopsystem 3">
+<link rel="icon" href="/templates/classic/p/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/templates/classic/p/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/templates/classic/p/css/shop.css" charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/templates/classic/p/css/search.min.css" charset="UTF-8">
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="/templates/classic/p/js/jquery.jcarousel.js" type="text/javascript" charset="UTF-8"></script>
+<script src="/templates/classic/p/js/jquery.teasers.js" type="text/javascript" charset="UTF-8"></script>
+
+
+</head>
+<body class="ng-scope" ng-controller="searchController">
+<div class="wacg-search__overlay ng-hide" ng-show="showResultContainer"></div>
+<div id="sitebody">
+  <div id="header">
+    <div id="head-1">
+    	<span>Bestell- &amp; Beratungshotline +49 4206 - 447919    Mo. - Fr. 8.30 - 18.00 Uhr </span>
+    	
+    </div>
+    <div id="head-2">
+      <a class="homeLink" href="https://www.profi-tack.de/" title="Startseite"></a>
+    </div>
+    <div id="head-2b">
+    	      <div id="module_cart" style="cursor: pointer;" onclick="self.location.href='/checkout/cart.html';">
+        <div class="header">
+         <a href="/checkout/cart.html" title="zum Warenkorb"> <h2>Warenkorb</h2></a>
+        </div>
+        <div class="content">
+          <p>Ihr Warenkorb ist noch leer.</p>
+        </div>
+        <div class="action">
+          <p style="cursor: pointer;" onclick="self.location.href='/checkout/cart.html';"><a class="cart-goto" href="/checkout/cart.html" title="zum Warenkorb">zum Warenkorb</a></p>
+        </div>
+              </div>    </div>
+    <div id="head-3">
+        <div style="position: absolute; top: 40px; margin-left: 275px">
+            <form name="shopsearch" method="GET" class="navbar-form ng-pristine ng-valid" action="/search.html">
+                <input id="searchtextbox" type="text" name="searchtext" autocomplete="off" class="livesearchtextbox textbox width140 ng-pristine ng-untouched ng-valid" placeholder="Suchbegriff/Artikelnummer" value="" autofocus="" ng-model="searchPhrase" ng-keyup="performSearch($event, searchPhrase)">
+                <input name="searchfield_submit" id="searchfield_submit" value="1" type="hidden">
+                <button class="livesearchsubmit icon-search" tabindex="-1" value="" type="submit">
+                    <span> &gt;&gt;&gt;  </span>
+                </button>
+                <!-- Search Results -->
+                <div class="wacg-search__results ng-hide" ng-show="showResultContainer">
+
+    <div class="wacg-search__results__actions">
+        <span tabindex="3" class="wacg-search__results__close"><abbr title="schließen">×</abbr></span>
+    </div>
+
+    <div class="wacg-search__results__container">
+
+        <div class="colorMainColor1 wacg-search__results__no-results" ng-show="!(products.length || productGroups.length || suggestions.length || manufacturers.length)">
+            Keine Ergebnisse
+        </div>
+
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="col__inside result_padding">
+                    <div class="wacg-search__result__products ng-hide" ng-show="products.length">
+                        <span class="h3 colorMainColor1">Produktvorschläge</span>
+                        <ul>
+                            <!-- ngRepeat: product in products -->
+                        </ul>
+
+                        <button class="result_all_products" type="submit">Alle Ergebnisse anzeigen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="col__inside padding-right">
+
+                    <div class="wacg-search__result__manufacturers ng-hide" ng-show="manufacturers.length">
+                        <ul>
+                            <span class="h3 colorMainColor1">Hersteller</span>
+                            <!-- ngRepeat: manufacturer in manufacturers -->
+                        </ul>
+                    </div>
+
+                    <div class="wacg-search__result__productGroups ng-hide" ng-show="productGroups.length">
+                        <ul>
+                            <span class="h3 colorMainColor1">Kategorien</span>
+                            <!-- ngRepeat: productGroup in productGroups -->
+                        </ul>
+                    </div>
+
+                    <div class="wacg-search__result__suggestions ng-hide" ng-show="suggestions.length">
+                        <span class="h3 colorMainColor1">Vorschläge</span>
+                        <ul>
+                            <!-- ngRepeat: suggestion in suggestions -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+                <!-- /Search Results -->
+            </form>
+        </div>
+      <div id="headerLinks" style="margin-left: 215px">
+      	<a href="https://www.profi-tack.de/" title="Startseite">Startseite</a>
+<span class="pipe">|</span>
+<a href="/myshop/dashboard.html" title="Mein Konto">Mein Konto</a> 
+<span class="pipe">|</span>
+<a href="/notepad.html" title="Merkzettel">Merkzettel</a>      	
+<span class="pipe">|</span> 
+      <a href="/content/versandkosten-lieferzeiten.4.html" title="Versandkosten/Lieferzeiten">Versandkosten/Lieferzeiten</a> 
+      <span class="pipe">|</span>
+  
+      <a href="/content/zahlungsweisen.16.html" title="Zahlungsweisen">Zahlungsweisen</a> 
+      <span class="pipe">|</span>
+    	
+ 
+<a href="/newsletter.html" title="Newsletter">Newsletter</a>
+<span class="pipe">|</span>  
+<a href="/contact.html" title="Kontakt">Kontakt</a>  	      </div>
+          </div>
+  </div>
+  <div id="contentbody">
+
+    <div id="column-left">
+
+      <div class="box navigation">
+                <div class="content">
+          <ul class="navigation-list">
+ 
+            <li>
+              <p><a href="/ProductGroupController/DisplayProductGroup/product_group_id:289.html" title=""></a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/animal-und-funny-prints.145.html" title="Animal und Funny Prints">Animal und Funny Prints</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/ausreiten.121.html" title="Ausreiten">Ausreiten</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/back-on-track.141.html" title="Back on Track">Back on Track</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/bauch-sattelgurte.79.html" title="Bauch+Sattelgurte">Bauch+Sattelgurte</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/beinschutz-und-hufschutz.9.html" title="Beinschutz und Hufschutz">Beinschutz und Hufschutz</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/decken-sleazies-hoods.3.html" title="Decken / Sleazies / Hoods">Decken / Sleazies / Hoods</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/emiko.292.html" title="EMIKO">EMIKO</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/fuer-den-reiter.25.html" title="Für den Reiter">Für den Reiter</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/gebisse-bits.37.html" title="Gebisse / Bits">Gebisse / Bits</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/geschenk-ideen-home-decor.85.html" title="Geschenk-Ideen / Home Decor">Geschenk-Ideen / Home Decor</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/halfter-und-stricke.45.html" title="Halfter und Stricke">Halfter und Stricke</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/hilfszuegel-martingals-co.44.html" title="Hilfszügel / Martingals &amp; Co.">Hilfszügel / Martingals &amp; Co.</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/horsemanship-parelli-longieren.77.html" title="Horsemanship / Parelli / Longieren">Horsemanship / Parelli / Longieren</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/hunde-belcanis.322.html" title="Hunde - Belcanis">Hunde - Belcanis</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/hundebesitzer-belcanis.368.html" title="Hundebesitzer - BelCanis">Hundebesitzer - BelCanis</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/hunter-equipment.109.html" title="Hunter Equipment">Hunter Equipment</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/insekten-ekzemerschutz.81.html" title="Insekten- / Ekzemerschutz">Insekten- / Ekzemerschutz</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/kalender-buecher-videos.2.html" title="Kalender - Bücher - Videos">Kalender - Bücher - Videos</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/kopfstuecke-trensen.33.html" title="Kopfstücke - Trensen">Kopfstücke - Trensen</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/lammfell-produkte.84.html" title="Lammfell-Produkte">Lammfell-Produkte</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/pads-sattelunterlagen.18.html" title="Pads / Sattelunterlagen">Pads / Sattelunterlagen</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/pferdeernaehrung.258.html" title="Pferdeernährung">Pferdeernährung</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/pflege-und-gesundheit.48.html" title="Pflege und Gesundheit">Pflege und Gesundheit</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/roping-roping-zubehoer.82.html" title="Roping / Roping-Zubehör">Roping / Roping-Zubehör</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/saettel.64.html" title="Sättel">Sättel</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/sattel-zubehoer.60.html" title="Sattel - Zubehör">Sattel - Zubehör</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/show-und-turnier.36.html" title="Show und Turnier">Show und Turnier</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/sonderaktion.1.html" title="Sonderaktion">Sonderaktion</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/sporen-und-sporenriemen.31.html" title="Sporen und Sporenriemen">Sporen und Sporenriemen</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/stall-und-drumherum.35.html" title="Stall und Drumherum">Stall und Drumherum</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/steigbuegel.78.html" title="Steigbügel">Steigbügel</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/tail-extension.133.html" title="Tail Extension">Tail Extension</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/transport.96.html" title="Transport">Transport</a></p>
+            </li>
+ 
+            <li>
+              <p><a href="/category/zuegel-reins.73.html" title="Zügel / Reins">Zügel / Reins</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<a class="salesLink" href="/category/sale.142.html" title="extrem reduzierte
+ Sonderangebote ">extrem reduzierte
+<span>Sonderangebote</span></a>
+
+    </div>
+    <div id="column-middle">
+    <div id="print">
+      <table width="100%">
+        <tbody><tr>
+          <td width="200">&nbsp;</td>
+          <td align="right">
+            <table>
+          		<tbody><tr>
+          			<td><b>Mauve Webshop System</b></td>
+          		</tr>
+          		<tr>
+          			<td>http://www.mauve.eu</td>
+          		</tr>
+          		<tr>
+          			<td>info@mauve.eu</td>
+          		</tr>
+          		<tr>
+          			<td>Tel. +49 (201) 437918-0</td>
+          		</tr>
+          	</tbody></table>
+          </td>
+        </tr>
+      </tbody></table><br><hr><br>
+    </div>
+<div class="TeaserMainContainer">
+    	<div class="TeaserContainer">
+    		<img src="templates/classic/p/img/design/home_teaser.jpg">
+    	</div>
+<div class="TeaserMenu">
+			<a href="/category/sattel-zubehoer.60.html" id="Teaser1">Sattel - Zubehör</a>
+				<a href="/category/ausreiten.121.html" id="Teaser2">Ausreiten</a>
+				<a href="/category/pflege-und-gesundheit.48.html" id="Teaser3">Pflege und Gesundheit</a>
+				<a href="/category/saettel.64.html" id="Teaser4">Sättel</a>
+				<a href="/ProductGroupController/DisplayProductGroup/product_group_id:289.html" id="Teaser5"></a>
+	</div>
+</div>
+
+
+<div class="containerHeaderOrange">
+	<a href="/category/newsletter-angebote.146.html">Newsletter-Angebote »</a>
+</div>
+<div class="specialOfferBox">
+	<div class="left">
+		<a href="/product/pt-santa-goes-western-tasse-in-4-motiven.40649.html" title="Details"><img src="/documents/products/Detailansicht/HD-085D.jpg" title="PT Santa goes Western Tasse in 4 Motiven" alt="PT Santa goes Western Tasse in 4 Motiven"></a>
+	</div>
+	<div class="right">
+		<div class="price">
+			    			jetzt nur<br>
+    			<span>
+    				8,99&nbsp;€
+    			</span>
+					</div>
+		<div class="header">
+			<h4>Sonderangebot</h4>
+			<h2><a href="/product/pt-santa-goes-western-tasse-in-4-motiven.40649.html" title="Details">PT Santa goes Western Tasse in 4 Motiven</a></h2>
+		</div>
+		<div class="footer">
+			                      inkl. MwSt.
+                        <br>ggf. zzgl. <a rel="modal-content" href="/content/versandkosten-lieferzeiten.4.html" target="_blank">Versandkosten</a>
+		</div>
+	</div>
+</div>
+<div class="articleContainer">
+	<div class="containerHeaderBlue">
+		<a href="/category/neue-produkte.154.html">Neue Produkte bei Profi-Tack »</a>
+	</div>
+	<div class="clear"></div>
+	        <div class="articleBox">
+        	<div class="header">
+        		<h2><a href="/product/charme-denim-real-jeans-arizona.44850.html" title="Details">Charme Denim Real Jeans Arizona</a></h2>
+        	</div>
+        	<div class="content">
+        		<div class="image">
+        			<a href="/product/charme-denim-real-jeans-arizona.44850.html" title="Details"><img src="/documents/products/Listenansicht/Neues Verzeichnis L/J-207L.jpeg" title="Charme Denim Real Jeans Arizona" alt="Charme Denim Real Jeans Arizona"></a>
+        		</div>
+        		<div class="price">
+        			69,00&nbsp;€<p></p>
+                            		</div>
+        		<div class="vat-info">
+        			                              inkl. MwSt.
+                                        <br>ggf. zzgl. <a rel="modal-content" href="/content/versandkosten-lieferzeiten.4.html" target="_blank">Versandkosten</a>
+        		</div>
+        	</div>
+        	<div class="footer">
+        		<a href="/product/charme-denim-real-jeans-arizona.44850.html" title="Details">Details</a>
+        	</div>
+        </div>
+            <div class="articleBox">
+        	<div class="header">
+        		<h2><a href="/product/leovet-huflab-hufoel.44654.html" title="Details">Leovet Huflab Huföl</a></h2>
+        	</div>
+        	<div class="content">
+        		<div class="image">
+        			<a href="/product/leovet-huflab-hufoel.44654.html" title="Details"><img src="/documents/products/Listenansicht/Neues Verzeichnis L/P-534L.jpg" title="Leovet Huflab Huföl" alt="Leovet Huflab Huföl"></a>
+        		</div>
+        		<div class="price">
+        			15,95&nbsp;€<p></p>
+                            		</div>
+        		<div class="vat-info">
+        			                              inkl. MwSt.
+                                        <br>ggf. zzgl. <a rel="modal-content" href="/content/versandkosten-lieferzeiten.4.html" target="_blank">Versandkosten</a>
+        		</div>
+        	</div>
+        	<div class="footer">
+        		<a href="/product/leovet-huflab-hufoel.44654.html" title="Details">Details</a>
+        	</div>
+        </div>
+            <div class="articleBox last">
+        	<div class="header">
+        		<h2><a href="/product/classic-equine-classic-fit-front-boots.45320.html" title="Details">Classic Equine Classic Fit Front Boots</a></h2>
+        	</div>
+        	<div class="content">
+        		<div class="image">
+        			<a href="/product/classic-equine-classic-fit-front-boots.45320.html" title="Details"><img src="/documents/products/Listenansicht/Neues Verzeichnis L/BO-271aL.jpg" title="Classic Equine Classic Fit Front Boots" alt="Classic Equine Classic Fit Front Boots"></a>
+        		</div>
+        		<div class="price">
+        			75,00&nbsp;€<p></p>
+                            		</div>
+        		<div class="vat-info">
+        			                              inkl. MwSt.
+                                        <br>ggf. zzgl. <a rel="modal-content" href="/content/versandkosten-lieferzeiten.4.html" target="_blank">Versandkosten</a>
+        		</div>
+        	</div>
+        	<div class="footer">
+        		<a href="/product/classic-equine-classic-fit-front-boots.45320.html" title="Details">Details</a>
+        	</div>
+        </div>
+    </div>
+<div class="clear"></div>
+    </div>
+    <div id="column-right">
+	    	    	<a class="regLink" href="/account/register.html" title="Registrieren"><img src="/templates/classic/p/img/design/reg_banner.png" alt="Registrieren"></a>
+	    	
+				      <div class="box login">
+                <div class="content">
+          <form action="/account/login.html" method="post" class="ng-pristine ng-valid">
+            <p><label for="box_login_username">Benutzername</label></p>
+            <p><input type="text" value="" name="login[Username]" id="box_login_username" class="textbox width150"></p>
+            <p><label for="box_login_password">Passwort</label></p>
+            <p><input type="password" value="" name="login[Password]" id="box_login_password" class="textbox width150"></p>
+            <p><input type="submit" value="Login" title="Login" id="box_login_submit" name="login_submit"></p>
+             
+            <p><a href="/account/forgotpassword.html" title="Passwort vergessen">» Passwort vergessen</a></p>
+            <p><a href="/account/register/resend.html" title="Überprüfungs-E-Mail zusenden">» Überprüfungs-E-Mail zusenden</a></p>
+          </form>
+        </div>
+      </div>
+		
+				
+		      
+      <a class="newsletterLink" href="/newsletter.html" title="Newsletter"><img src="/templates/classic/p/img/design/newsletter_banner.png" alt="Newsletter"></a>		
+		
+	  <div class="containerHeaderBlue">
+		Unsere Bestseller
+	  </div>
+	  <div class="clear"></div>
+      <div class="bestsellerBoxes">
+		        <div class="bestsellerBox">
+			<div class="left">
+				<img src="/documents/products/Listenansicht/p-204.jpg" title="SHOW SHEEN by ABSORBINE 1,19 L" alt="SHOW SHEEN by ABSORBINE 1,19 L">
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+            				<a href="/product/show-sheen-by-absorbine-1-19-l.13045.html">SHOW SHEEN by ABSORBINE 1,19 L</a>
+            				<a class="deeplink" href="/product/show-sheen-by-absorbine-1-19-l.13045.html" title="Details">Details »</a>
+            			</td>
+            		</tr>
+            	</tbody></table>			
+			</div>
+			<div class="clear"></div>
+		</div>
+        		        <div class="bestsellerBox">
+			<div class="left">
+				<img src="/documents/products/Listenansicht/F-17-neu-L.jpg" title="Natursalz-Leckstein 2,0 - 3,0 KG" alt="Natursalz-Leckstein 2,0 - 3,0 KG">
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+            				<a href="/product/natursalz-leckstein-2-0-3-0-kg.10222.html">Natursalz-Leckstein 2,0 - 3,0 KG</a>
+            				<a class="deeplink" href="/product/natursalz-leckstein-2-0-3-0-kg.10222.html" title="Details">Details »</a>
+            			</td>
+            		</tr>
+            	</tbody></table>			
+			</div>
+			<div class="clear"></div>
+		</div>
+        		        <div class="bestsellerBox">
+			<div class="left">
+				<img src="/documents/products/Listenansicht/p-94.jpg" title="Veterinary Liniment Gel original ABSORBINE" alt="Veterinary Liniment Gel original ABSORBINE">
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+            				<a href="/product/veterinary-liniment-gel-original-absorbine.13174.html">Veterinary Liniment Gel original ABSORBINE</a>
+            				<a class="deeplink" href="/product/veterinary-liniment-gel-original-absorbine.13174.html" title="Details">Details »</a>
+            			</td>
+            		</tr>
+            	</tbody></table>			
+			</div>
+			<div class="clear"></div>
+		</div>
+        		        <div class="bestsellerBox">
+			<div class="left">
+				<img src="/documents/products/Listenansicht/SP-226-L.jpg" title="Splinte Sporenrädchen" alt="Splinte Sporenrädchen">
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+            				<a href="/product/splinte-sporenraedchen.37962.html">Splinte Sporenrädchen</a>
+            				<a class="deeplink" href="/product/splinte-sporenraedchen.37962.html" title="Details">Details »</a>
+            			</td>
+            		</tr>
+            	</tbody></table>			
+			</div>
+			<div class="clear"></div>
+		</div>
+              </div>
+
+		<p>&nbsp;</p>
+		<a class="facebookLink" href="https://www.facebook.com/pages/Profi-Tack/117854188244564?ref=sgm" target="_blank" title="Zu unserem Facebook-Profil"><img src="/templates/classic/p/img/design/facebook.png" alt="Zu unserem Facebook-Profil"></a>
+		<p>&nbsp;</p>
+		<a href="http://www.belcanis-shop.de/" target="_blank"><img src="/documents/products/Statisch/Belcanis.jpg" width="150" height="150"></a>
+  </div>
+  
+  </div>
+  	  <div class="containerHeaderBlue marginRight">
+		zuletzt gekaufte Artikel
+	  </div>
+      <div class="lastPurchasedBoxes">
+		<div class="lastPurchasedBox">
+			<div class="left">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<img src="/documents/products/Listenansicht/B-100v.jpg" title="A.F. Performance Show Bit - SS Hinged Ball Correction" alt="A.F. Performance Show Bit - SS Hinged Ball Correction">
+						</td>
+					</tr>		
+				</tbody></table>
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<a href="/product/a-f-performance-show-bit-ss-hinged-ball-correction.8209.html" title="Details">A.F. Performance Show Bit - SS Hinged Ball Correction</a>
+							<a class="deeplink" href="/product/a-f-performance-show-bit-ss-hinged-ball-correction.8209.html" title="Details">Details »</a>
+						</td>	
+					</tr>
+				</tbody></table>
+			</div>
+		</div>	
+		<div class="lastPurchasedBox">
+			<div class="left">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<img src="/documents/products/Listenansicht/Neues Verzeichnis L/BO-270L.jpg" title="Bandagen Cowgirl Up" alt="Bandagen Cowgirl Up">
+						</td>
+					</tr>		
+				</tbody></table>
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<a href="/product/bandagen-cowgirl-up.44765.html" title="Details">Bandagen Cowgirl Up</a>
+							<a class="deeplink" href="/product/bandagen-cowgirl-up.44765.html" title="Details">Details »</a>
+						</td>	
+					</tr>
+				</tbody></table>
+			</div>
+		</div>	
+		<div class="lastPurchasedBox">
+			<div class="left">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<img src="/documents/products/Listenansicht/ZB-169.jpg" title="Cashel Earplugs" alt="Cashel Earplugs">
+						</td>
+					</tr>		
+				</tbody></table>
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<a href="/product/cashel-earplugs.14695.html" title="Details">Cashel Earplugs</a>
+							<a class="deeplink" href="/product/cashel-earplugs.14695.html" title="Details">Details »</a>
+						</td>	
+					</tr>
+				</tbody></table>
+			</div>
+		</div>	
+		<div class="lastPurchasedBox">
+			<div class="left">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<img src="/documents/products/Listenansicht/ZB-0265-L.jpg" title="Blocker Tie Ring" alt="Blocker Tie Ring">
+						</td>
+					</tr>		
+				</tbody></table>
+			</div>
+			<div class="right">
+				<table height="100%" width="100%">
+					<tbody><tr>
+						<td valign="middle">
+							<a href="/product/blocker-tie-ring.32200.html" title="Details">Blocker Tie Ring</a>
+							<a class="deeplink" href="/product/blocker-tie-ring.32200.html" title="Details">Details »</a>
+						</td>	
+					</tr>
+				</tbody></table>
+			</div>
+		</div>	
+		<div class="lastPurchasedInfoBox">
+			<h5>Beliebt.</h5>
+Bei anderen Kunden
+		</div>
+      </div>
+ 
+  
+    <div class="containerHeaderOrange brands">
+    	<a href="/category/alle-marken.148.html">alle Marken »</a>
+    </div>
+    
+  	<div class=" jcarousel-skin-profitack"><div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;"><div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;"><ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 14200px;">
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" jcarouselindex="1" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/5-star-equine.195.html"><img src="/documents/product_groups/FotoKlein/5 Star Equine Logo kl.jpg" title="5 Star Equine" alt="5 Star Equine"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal" jcarouselindex="2" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/absorbine.152.html"><img src="/documents/product_groups/FotoKlein/Absorbine.jpg" title="Absorbine" alt="Absorbine"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" jcarouselindex="3" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/alamo-saddlery.203.html"><img src="/documents/product_groups/FotoKlein/Alamo Saddlery Logo kl.jpg" title="Alamo Saddlery" alt="Alamo Saddlery"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal" jcarouselindex="4" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/alpenheat.230.html"><img src="/documents/product_groups/FotoKlein/Alpenheat Logo kl.jpg" title="Alpenheat" alt="Alpenheat"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal" jcarouselindex="5" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/ariat.187.html"><img src="/documents/product_groups/FotoKlein/Ariat-Logo kl.jpg" title="Ariat" alt="Ariat"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal" jcarouselindex="6" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/back-2-back.241.html"><img src="/documents/product_groups/FotoKlein/Back2Back Logo kl.jpg" title="Back 2 Back" alt="Back 2 Back"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal" jcarouselindex="7" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/back-on-track.209.html"><img src="/documents/product_groups/FotoKlein/Back on Track Logo kl.jpg" title="Back on Track" alt="Back on Track"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal" jcarouselindex="8" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bailey-hats.461.html"><img src="/documents/product_groups/FotoKlein/Bailey logo kl.jpg" title="Bailey Hats" alt="Bailey Hats"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal" jcarouselindex="9" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/ballistol.251.html"><img src="/documents/product_groups/FotoKlein/Ballistol Lgog kl.jpg" title="Ballistol" alt="Ballistol"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-10 jcarousel-item-10-horizontal" jcarouselindex="10" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bense-eicke.234.html"><img src="/documents/product_groups/FotoKlein/Bense Eicke Logo kl.jpg" title="Bense &amp; Eicke" alt="Bense &amp; Eicke"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-11 jcarousel-item-11-horizontal" jcarouselindex="11" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bickmore.204.html"><img src="/documents/product_groups/FotoKlein/Bickmore Logo kl.jpg" title="Bickmore" alt="Bickmore"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-12 jcarousel-item-12-horizontal" jcarouselindex="12" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/big-d.421.html"><img src="/documents/product_groups/FotoKlein/Big-D logo kl.jpg" title="Big " d""="" alt="Big "></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-13 jcarousel-item-13-horizontal" jcarouselindex="13" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bobs.246.html"><img src="/documents/product_groups/FotoKlein/Bobs Logo kl.jpg" title="Bob's" alt="Bob's"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-14 jcarousel-item-14-horizontal" jcarouselindex="14" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bremsenbremse.222.html"><img src="/documents/product_groups/FotoKlein/Bremsenbremse Logo kl.jpg" title="Bremsenbremse" alt="Bremsenbremse"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-15 jcarousel-item-15-horizontal" jcarouselindex="15" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/bucas.149.html"><img src="/documents/product_groups/FotoKlein/Bucas_Logo_kl.jpg" title="bucas" alt="bucas"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-16 jcarousel-item-16-horizontal" jcarouselindex="16" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/buckaroo.183.html"><img src="/documents/product_groups/FotoKlein/Buckaroo Logo kl.JPG" title="Buckaroo" alt="Buckaroo"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-17 jcarousel-item-17-horizontal" jcarouselindex="17" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cactus.182.html"><img src="/documents/product_groups/FotoKlein/Logo Cactus kl.jpg" title="Cactus" alt="Cactus"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-18 jcarousel-item-18-horizontal" jcarouselindex="18" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/carr-day-martin.215.html"><img src="/documents/product_groups/FotoKlein/Carr Day Martin Logo kl.jpg" title="Carr &amp; Day &amp; Martin" alt="Carr &amp; Day &amp; Martin"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-19 jcarousel-item-19-horizontal" jcarouselindex="19" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cashel.150.html"><img src="/documents/product_groups/FotoKlein/Cashel Logo kl.jpg" title="Cashel" alt="Cashel"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-20 jcarousel-item-20-horizontal" jcarouselindex="20" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cattlemans.248.html"><img src="/documents/product_groups/FotoKlein/Cattlemans Logo kl.jpg" title="Cattleman's" alt="Cattleman's"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-21 jcarousel-item-21-horizontal" jcarouselindex="21" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cdvet.323.html"><img src="/documents/product_groups/FotoKlein/Cdvet Logo kl.jpg" title="cdVet" alt="cdVet"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-22 jcarousel-item-22-horizontal" jcarouselindex="22" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cheval-vital.231.html"><img src="/documents/product_groups/FotoKlein/Cheval Vital Logo kl.jpg" title="Cheval Vital" alt="Cheval Vital"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-23 jcarousel-item-23-horizontal" jcarouselindex="23" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cinch.198.html"><img src="/documents/product_groups/FotoKlein/Cinch Logo kl.jpg" title="Cinch" alt="Cinch"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-24 jcarousel-item-24-horizontal" jcarouselindex="24" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/classic-equine.185.html"><img src="/documents/product_groups/FotoKlein/Classic-Equine kl.jpg" title="Classic Equine" alt="Classic Equine"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-25 jcarousel-item-25-horizontal" jcarouselindex="25" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cowboy-magic.207.html"><img src="/documents/product_groups/FotoKlein/CowboyMagic Logo kl.jpg" title="Cowboy Magic" alt="Cowboy Magic"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-26 jcarousel-item-26-horizontal" jcarouselindex="26" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cowgirl-tuff.429.html"><img src="/documents/product_groups/FotoKlein/Logo_CowgirlTuff_kl.jpg" title="Cowgirl Tuff" alt="Cowgirl Tuff"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-27 jcarousel-item-27-horizontal" jcarouselindex="27" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/cruel-girl.197.html"><img src="/documents/product_groups/FotoKlein/Cruel Girl Logo kl.jpg" title="Cruel Girl" alt="Cruel Girl"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-28 jcarousel-item-28-horizontal" jcarouselindex="28" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/davis.205.html"><img src="/documents/product_groups/FotoKlein/Davis Logo kl.jpg" title="Davis" alt="Davis"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-29 jcarousel-item-29-horizontal" jcarouselindex="29" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/diamond-wool-pads.410.html"><img src="/documents/product_groups/FotoKlein/Diamond Wool Logo kl.jpg" title="Diamond Wool Pads" alt="Diamond Wool Pads"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-30 jcarousel-item-30-horizontal" jcarouselindex="30" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/double-diamond-halters.423.html"><img src="/documents/product_groups/FotoKlein/Logo Doublediamond kl.jpg" title="Double Diamond Halters" alt="Double Diamond Halters"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-31 jcarousel-item-31-horizontal" jcarouselindex="31" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/dri-duck.240.html"><img src="/documents/product_groups/FotoKlein/Dri Duck Logo kl.jpg" title="Dri Duck" alt="Dri Duck"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-32 jcarousel-item-32-horizontal" jcarouselindex="32" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/effol-effax.327.html"><img src="/documents/product_groups/FotoKlein/Effol Logo kl.jpg" title="Effol/Effax" alt="Effol/Effax"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-33 jcarousel-item-33-horizontal" jcarouselindex="33" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/engel-lammfelle.235.html"><img src="/documents/product_groups/FotoKlein/Engel Logo kl.jpg" title="Engel Lammfelle" alt="Engel Lammfelle"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-34 jcarousel-item-34-horizontal" jcarouselindex="34" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/equinatura.224.html"><img src="/documents/product_groups/FotoKlein/Equinatura Logo.jpg" title="Equinatura" alt="Equinatura"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-35 jcarousel-item-35-horizontal" jcarouselindex="35" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/farnam.190.html"><img src="/documents/product_groups/FotoKlein/Farnam Logo kl.jpg" title="Farnam" alt="Farnam"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-36 jcarousel-item-36-horizontal" jcarouselindex="36" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/ferrini.462.html"><img src="/documents/product_groups/FotoKlein/Ferrini logo kl.jpg" title="Ferrini" alt="Ferrini"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-37 jcarousel-item-37-horizontal" jcarouselindex="37" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/fg-collection.219.html"><img src="/documents/product_groups/FotoKlein/FG Collection Logo.jpg" title="FG Collection" alt="FG Collection"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-38 jcarousel-item-38-horizontal" jcarouselindex="38" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/fiebings.188.html"><img src="/documents/product_groups/FotoKlein/Fiebings Logo kl.jpg" title="Fiebing's" alt="Fiebing's"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-39 jcarousel-item-39-horizontal" jcarouselindex="39" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/fly-armor.255.html"><img src="/documents/product_groups/FotoKlein/Fly Armor Logo kl.jpg" title="Fly Armor" alt="Fly Armor"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-40 jcarousel-item-40-horizontal" jcarouselindex="40" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/for-horses.196.html"><img src="/documents/product_groups/FotoKlein/For Horses Logo kl.jpg" title="For Horses" alt="For Horses"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-41 jcarousel-item-41-horizontal" jcarouselindex="41" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/gera.242.html"><img src="/documents/product_groups/FotoKlein/Gera Logo kl.jpg" title="Gera" alt="Gera"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-42 jcarousel-item-42-horizontal" jcarouselindex="42" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/good-ride-life-apparel.454.html"><img src="/documents/product_groups/FotoKlein/Logo_GoodRide_kl.jpg" title="Good Ride Life Apparel" alt="Good Ride Life Apparel"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-43 jcarousel-item-43-horizontal" jcarouselindex="43" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/greg-darnall.233.html"><img src="/documents/product_groups/FotoKlein/Greg Darnall Logo kl.jpg" title="Greg Darnall" alt="Greg Darnall"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-44 jcarousel-item-44-horizontal" jcarouselindex="44" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/haas-manufaktur.225.html"><img src="/documents/product_groups/FotoKlein/Haas Logo kl.jpg" title="Haas Manufaktur" alt="Haas Manufaktur"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-45 jcarousel-item-45-horizontal" jcarouselindex="45" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/hamilton.199.html"><img src="/documents/product_groups/FotoKlein/Hamilton Logo kl.jpg" title="Hamilton" alt="Hamilton"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-46 jcarousel-item-46-horizontal" jcarouselindex="46" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/harris-leather.412.html"><img src="/documents/product_groups/FotoKlein/Harris Leather Logo kl.jpg" title="Harris Leather" alt="Harris Leather"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-47 jcarousel-item-47-horizontal" jcarouselindex="47" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/horseware.191.html"><img src="/documents/product_groups/FotoKlein/Horseware Logo kl.jpg" title="Horseware" alt="Horseware"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-48 jcarousel-item-48-horizontal" jcarouselindex="48" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/huebeli-stud.206.html"><img src="/documents/product_groups/FotoKlein/Huebeli Logo kl.jpg" title="Huebeli Stud" alt="Huebeli Stud"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-49 jcarousel-item-49-horizontal" jcarouselindex="49" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/impact-gel.200.html"><img src="/documents/product_groups/FotoKlein/Impact Gel Logo kl.jpg" title="Impact Gel" alt="Impact Gel"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-50 jcarousel-item-50-horizontal" jcarouselindex="50" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/justin-boots.451.html"><img src="/documents/product_groups/FotoKlein/Logo_Justin_kl.jpg" title="Justin Boots" alt="Justin Boots"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-51 jcarousel-item-51-horizontal" jcarouselindex="51" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/lami-cell.220.html"><img src="/documents/product_groups/FotoKlein/Lamicell Logo kl.jpg" title="Lami-Cell" alt="Lami-Cell"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-52 jcarousel-item-52-horizontal" jcarouselindex="52" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/leistner-buersten.226.html"><img src="/documents/product_groups/FotoKlein/Leistner Logo kl.jpg" title="Leistner Bürsten" alt="Leistner Bürsten"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-53 jcarousel-item-53-horizontal" jcarouselindex="53" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/leovet.249.html"><img src="/documents/product_groups/FotoKlein/Leovet Logo kl.jpg" title="Leovet" alt="Leovet"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-54 jcarousel-item-54-horizontal" jcarouselindex="54" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/liberty-wear.427.html"><img src="/documents/product_groups/FotoKlein/Logo_Liberty_kl.jpg" title="Liberty Wear" alt="Liberty Wear"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-55 jcarousel-item-55-horizontal" jcarouselindex="55" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/mattes-lammfelle.236.html"><img src="/documents/product_groups/FotoKlein/Mattes Logo kl.jpg" title="Mattes Lammfelle" alt="Mattes Lammfelle"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-56 jcarousel-item-56-horizontal" jcarouselindex="56" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/mayatex.210.html"><img src="/documents/product_groups/FotoKlein/Mayatex Logo kl.jpg" title="Mayatex" alt="Mayatex"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-57 jcarousel-item-57-horizontal" jcarouselindex="57" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/metalab.221.html"><img src="/documents/product_groups/FotoKlein/Metalab Logo kl.jpg" title="Metalab" alt="Metalab"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-58 jcarousel-item-58-horizontal" jcarouselindex="58" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/mirianapet.333.html"><img src="/documents/product_groups/FotoKlein/Miriana Pet Logo kl.jpg" title="MirianaPet" alt="MirianaPet"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-59 jcarousel-item-59-horizontal" jcarouselindex="59" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/miss-me.394.html"><img src="/documents/product_groups/FotoKlein/Miss Me Logo kl.jpg" title="Miss Me" alt="Miss Me"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-60 jcarousel-item-60-horizontal" jcarouselindex="60" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/montana-silversmith.202.html"><img src="/documents/product_groups/FotoKlein/Montana Silversmith Logo kl.jpg" title="Montana Silversmith" alt="Montana Silversmith"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-61 jcarousel-item-61-horizontal" jcarouselindex="61" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/mountain-horse.218.html"><img src="/documents/product_groups/FotoKlein/Mountainhorse Logo kl.jpg" title="Mountain-Horse" alt="Mountain-Horse"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-62 jcarousel-item-62-horizontal" jcarouselindex="62" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/muck-boots.201.html"><img src="/documents/product_groups/FotoKlein/Muck Boot Logo kl.jpg" title="Muck Boots" alt="Muck Boots"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-63 jcarousel-item-63-horizontal" jcarouselindex="63" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/mustang.193.html"><img src="/documents/product_groups/FotoKlein/Mustang Logo kl.jpg" title="Mustang" alt="Mustang"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-64 jcarousel-item-64-horizontal" jcarouselindex="64" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/myler-bits.239.html"><img src="/documents/product_groups/FotoKlein/Myler_Logo_kl.jpg" title="Myler Bits" alt="Myler Bits"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-65 jcarousel-item-65-horizontal" jcarouselindex="65" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/noleaf.326.html"><img src="/documents/product_groups/FotoKlein/No Leaf Logo kl.jpg" title="NoLeaf" alt="NoLeaf"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-66 jcarousel-item-66-horizontal" jcarouselindex="66" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/old-sorrel.189.html"><img src="/documents/product_groups/FotoKlein/Old Sorrel Logo kl.jpg" title="Old Sorrel" alt="Old Sorrel"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-67 jcarousel-item-67-horizontal" jcarouselindex="67" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/olewo.228.html"><img src="/documents/product_groups/FotoKlein/Olewo Logo kl.jpg" title="Olewo" alt="Olewo"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-68 jcarousel-item-68-horizontal" jcarouselindex="68" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/oster.213.html"><img src="/documents/product_groups/FotoKlein/Oster Logo kl.jpg" title="Oster" alt="Oster"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-69 jcarousel-item-69-horizontal" jcarouselindex="69" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/pernaturam.415.html"><img src="/documents/product_groups/FotoKlein/Pernaturam Logo kl.jpg" title="PerNaturam" alt="PerNaturam"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-70 jcarousel-item-70-horizontal" jcarouselindex="70" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/pro-equine.211.html"><img src="/documents/product_groups/FotoKlein/Pro Equine Logo kl.jpg" title="Pro Equine" alt="Pro Equine"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-71 jcarousel-item-71-horizontal" jcarouselindex="71" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/professionals-choice.194.html"><img src="/documents/product_groups/FotoKlein/Prof-Choice Logo kl.jpg" title="Professional's Choice" alt="Professional's Choice"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-72 jcarousel-item-72-horizontal" jcarouselindex="72" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/qualcraft.245.html"><img src="/documents/product_groups/FotoKlein/Qualcraft Logo kl.jpg" title="Qualcraft" alt="Qualcraft"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-73 jcarousel-item-73-horizontal" jcarouselindex="73" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/ray-holes.208.html"><img src="/documents/product_groups/FotoKlein/Ray Holes Logo kl.jpg" title="Ray Holes" alt="Ray Holes"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-74 jcarousel-item-74-horizontal" jcarouselindex="74" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/reinsman.453.html"><img src="/documents/product_groups/FotoKlein/Logo_Reinsman_kl.jpg" title="Reinsman" alt="Reinsman"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-75 jcarousel-item-75-horizontal" jcarouselindex="75" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/resistol.420.html"><img src="/documents/product_groups/FotoKlein/Resistol Logo kl.jpg" title="Resistol" alt="Resistol"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-76 jcarousel-item-76-horizontal" jcarouselindex="76" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/rockmount.464.html"><img src="/documents/product_groups/FotoKlein/Rockmount Logo kl.jpg" title="Rockmount" alt="Rockmount"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-77 jcarousel-item-77-horizontal" jcarouselindex="77" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/rodeo-king.216.html"><img src="/documents/product_groups/FotoKlein/Rodeo King Logo kl.jpg" title="Rodeo King" alt="Rodeo King"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-78 jcarousel-item-78-horizontal" jcarouselindex="78" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/roeckl.459.html"><img src="/documents/product_groups/FotoKlein/Roeckl Logo kl.jpg" title="Roeckl" alt="Roeckl"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-79 jcarousel-item-79-horizontal" jcarouselindex="79" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/saddlesmiths.247.html"><img src="/documents/product_groups/FotoKlein/Saddlesmith Logo kl.jpg" title="Saddlesmith's" alt="Saddlesmith's"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-80 jcarousel-item-80-horizontal" jcarouselindex="80" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/schutz-brothers.184.html"><img src="/documents/product_groups/FotoKlein/Schutz Logo.jpg" title="Schutz Brothers" alt="Schutz Brothers"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-81 jcarousel-item-81-horizontal" jcarouselindex="81" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/schwenkel-handschuhe.237.html"><img src="/documents/product_groups/FotoKlein/Schwenkel Logo kl.jpg" title="Schwenkel Handschuhe" alt="Schwenkel Handschuhe"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-82 jcarousel-item-82-horizontal" jcarouselindex="82" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/sendra.227.html"><img src="/documents/product_groups/FotoKlein/Sendra Logo kl.jpg" title="Sendra" alt="Sendra"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-83 jcarousel-item-83-horizontal" jcarouselindex="83" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/shapleys.186.html"><img src="/documents/product_groups/FotoKlein/Shapleys Logo kl.jpg" title="Shapley's" alt="Shapley's"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-84 jcarousel-item-84-horizontal" jcarouselindex="84" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/sonnenreiter.217.html"><img src="/documents/product_groups/FotoKlein/Sonnenreiter Logo kl.jpg" title="Sonnenreiter" alt="Sonnenreiter"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-85 jcarousel-item-85-horizontal" jcarouselindex="85" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/ss4horses.244.html"><img src="/documents/product_groups/FotoKlein/SS4Horses Logo kl.jpg" title="SS4Horses" alt="SS4Horses"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-86 jcarousel-item-86-horizontal" jcarouselindex="86" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/stiefel.336.html"><img src="/documents/product_groups/FotoKlein/Stiefel Logo kl.jpg" title="Stiefel" alt="Stiefel"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-87 jcarousel-item-87-horizontal" jcarouselindex="87" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/tough-1.192.html"><img src="/documents/product_groups/FotoKlein/Tough1 Logo kl.jpg" title="Tough 1" alt="Tough 1"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-88 jcarousel-item-88-horizontal" jcarouselindex="88" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/weatherbeeta.243.html"><img src="/documents/product_groups/FotoKlein/Weatherbeeta Logo kl.jpg" title="Weatherbeeta" alt="Weatherbeeta"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-89 jcarousel-item-89-horizontal" jcarouselindex="89" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/weaver.238.html"><img src="/documents/product_groups/FotoKlein/Weaver Logo kl.jpg" title="Weaver" alt="Weaver"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-90 jcarousel-item-90-horizontal" jcarouselindex="90" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/willard-ropes.229.html"><img src="/documents/product_groups/FotoKlein/Williard Logo kl.jpg" title="Willard Ropes" alt="Willard Ropes"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-91 jcarousel-item-91-horizontal" jcarouselindex="91" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/won-pad.232.html"><img src="/documents/product_groups/FotoKlein/WONPAD Logo kl.jpg" title="Won Pad" alt="Won Pad"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-92 jcarousel-item-92-horizontal" jcarouselindex="92" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/wrangler.151.html"><img src="/documents/product_groups/FotoKlein/Wrangler Logo kl.jpg" title="Wrangler" alt="Wrangler"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-93 jcarousel-item-93-horizontal" jcarouselindex="93" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/yucca.212.html"><img src="/documents/product_groups/FotoKlein/Yucca Logo kl.jpg" title="Yucca" alt="Yucca"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  		<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-94 jcarousel-item-94-horizontal" jcarouselindex="94" style="float: left; list-style: none;">
+  			<table width="100%" height="100%">
+  				<tbody><tr>
+  					<td valign="middle"><a href="/category/zedan.223.html"><img src="/documents/product_groups/FotoKlein/Zedan Logo kl.jpg" title="Zedan" alt="Zedan"></a></td>
+  				</tr>
+  			</tbody></table>
+  		</li>
+  	  	</ul></div><div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block;"></div><div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div></div></div>
+  
+  <div class="contentBoxes">
+  	<div class="contentBox">
+  		<p>Wir akzeptieren folgende Zahlungssysteme</p>
+  		<div class="payments_banner"></div>
+  	</div>
+  	<div class="contentBox">
+  		<div class="contentBox2">
+  			<h3>Wir von Profi-Tack</h3>
+  			                        	<a href="/content/erreichbarkeit.13.html" title="Erreichbarkeit">Erreichbarkeit</a>
+                        	<a href="/content/mitarbeiter.14.html" title="Mitarbeiter">Mitarbeiter</a>
+                        	<a href="/content/karriere.15.html" title="Karriere">Karriere</a>
+                        	<a href="/content/pt-road-show.22.html" title="PT-Road-Show">PT-Road-Show</a>
+                          		</div>
+  	</div>
+  	<div class="contentBox">
+  		<div class="pt_store_banner"></div>
+  		<div class="contentBox3">
+  			<h3>PT Store</h3>
+  			                        	<a href="/content/infos-zum-store.17.html" title="Infos zum Store">Infos zum Store</a>
+                        	<a href="/content/anfahrt.18.html" title="Anfahrt">Anfahrt</a>
+                          		</div>
+  	</div>
+  	<div class="contentBox last">
+  		<div class="pt_stock_banner"></div>
+  		<div class="contentBox3">
+  			<h3>PT Stock</h3>
+  			                        	<a href="/content/infos-zum-lager.20.html" title="Infos zum Lager">Infos zum Lager</a>
+                        	<a href="/content/anfahrt.21.html" title="Anfahrt">Anfahrt</a>
+                          		</div>
+  	</div>
+  	<p class="clear"></p>
+  </div>
+</div>
+<div id="footerbody">
+	<div id="footer1">
+		<div id="footerLogo">&nbsp;</div>
+		<div class="footerText">Sie haben Fragen? Rufen Sie uns an - <span class="orange">04206 - 447919</span> oder <span class="orange">schreiben Sie uns eine Mail!</span></div>
+	</div>
+	<div id="footer2">
+		<div class="info">
+			<h3>Kontakt zu Profi-Tack</h3>
+			<p>Profi-Tack</p>
+<p>
+Eggeseer Straße 25<br>
+28816 Stuhr
+</p>
+<p>
+Tel 0049 4206 447919<br>
+Fax 0049 4206 447939
+</p>
+<p>service@profi-tack.de</p>
+
+		</div>    
+		<div class="info">
+			<h3>Allgemeine Informationen</h3>
+			<p>
+    			                                                      <a href="/content/agb.1.html" title="AGB">AGB</a>
+                                                                      <a href="/content/widerrufsrecht.5.html" title="Widerrufsrecht">Widerrufsrecht</a>
+                                                                      <a href="/content/datenschutz.3.html" title="Datenschutz">Datenschutz</a>
+                                                                      <a href="/content/versandkosten-lieferzeiten.4.html" title="Versandkosten/Lieferzeiten">Versandkosten/Lieferzeiten</a>
+                                                                      <a href="/content/impressum.2.html" title="Impressum">Impressum</a>
+                                                                      <a href="/content/faq.6.html" title="FAQ">FAQ</a>
+                                            </p>
+		</div>  
+		<div class="info">
+			<h3>Newsletter</h3>
+			<p>Immer aktuelle Informationen<br>
+und Angebote per Mail.</p>
+<p>Jetzt den kostenlosen</p> 
+			<a class="underline" href="/newsletter.html" title="Profi-Tack-Newsletter abonnieren">Profi-Tack-Newsletter abonnieren</a>
+			<a class="underline" href="/newsletter.html" title="Newsletter abbestellen">Newsletter abbestellen</a>
+		</div>  
+    </div>
+    <div id="footer3">
+    	Copyright © 2011 Profi-Tack - Alles für den Western- und Freizeitsport! 	
+    </div>
+</div>
+<script src="/templates/classic/p/js/search.min.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+//<![CDATA[
+$(document).ready(function() {
+jQuery(document).ready(function() {
+
+            jQuery('#mycarousel').jcarousel({
+
+            	wrap: 'circular'
+
+            });
+
+        });
+  $('.social-bookmarks a').attr('title', '');
+  $('.social-bookmarks a').hover(function() {
+    $(this).find('img').each(function() {
+	  $(this).attr('title', '');
+	  $('span.social-bookmark-name').html($(this).attr('alt'));
+     });
+  },function() {
+    var social_bookmarks_tip = $('span.social-bookmark-name');
+    social_bookmarks_tip.html(social_bookmarks_tip.attr('title'));
+  });
+});
+//]]>
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1255649-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<noscript>
+                    &lt;div id="javaScriptWarning" style="width: 100%; position:fixed; bottom: 0; left:0;z-index:1000;"&gt;
+                        &lt;div style="background-color: #222;opacity:0.9;color: #FFFFFF;font-size: 13px;margin: 0 auto;padding: 8px;text-align: center;line-height:18px;"&gt;
+                            PLEASE_ACTIVATE_JAVA_SCRIPT
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </noscript>
+                    
+</body></html>

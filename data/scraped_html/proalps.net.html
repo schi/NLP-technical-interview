@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.lyon4aDFbFk.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w/cb=gapi.loaded_1" async=""></script><script type="text/javascript" src="//m.addthisedge.com/live/boost/xa-4edf7b391915fa14/_ate.track.config_resp"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- 
+	————————————————————————————————————————————————————————————————
+	  |                                                              |
+	  | TYPO3 Solutions - Programming by web-crossing GmbH           |
+	  |                                                              |
+	  ————————————————————————————————————————————————————————————————
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2015 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="http://www.proalps.net/">
+<link rel="shortcut icon" href="http://www.proalps.net/fileadmin/templates/images/favicon.ico">
+<link rel="icon" href="http://www.proalps.net/fileadmin/templates/images/favicon.ico">
+
+<meta name="generator" content="TYPO3 4.5 CMS">
+<meta name="keywords" content="Proalps">
+<meta name="description" content="Abenteuerhotels und Aktivurlaub in Südtirol - Rafting, Canyoning, Bergtouren, Rundflüge, Ballonfahrten und vieles mehr">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="language" content="de">
+
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/t3s_jslidernews/res/css/style5.css?1317298566" media="all" title="stylesheet">
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_c7f02ced49.css?1395743474" media="all">
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/wt_directory/css/default.css?1359118369" media="all">
+
+
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/de_DE/all.js#xfbml=1"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.lyon4aDFbFk.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w/cb=gapi.loaded_0" async=""></script><script src="uploads/tx_t3jquery/jquery-1.6.x-1.8.x-1.2.6-dev.js?1328777147" type="text/javascript"></script>
+<script src="typo3conf/ext/t3s_jslidernews/res/js/jslidernews.js?1317295582" type="text/javascript"></script>
+<script src="typo3temp/javascript_a708894199.js?1317193318" type="text/javascript"></script>
+
+
+<script src="http://sitescripts.como-services.com/sitescripts/site/f70ed5a0-21f1-4fa8-a349-088ed0a69ec5/?appId=da9deae1-bea1-4319-95eb-42cf6c47f9be" type="text/javascript"></script><meta name="google-site-verification" content="OLNrjFwBqL67rQlmY3iy_PcDKpUdUJuRWAyWI_VcQCg">
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/css/main.css">
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/css/shop.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/css/superfish.css">
+  <link rel="stylesheet" type="text/css" href="fileadmin/templates/css/superfish-navbar.css">
+  
+  <script type="text/javascript" src="fileadmin/templates/scripts/hoverIntent.js"></script>
+  <script type="text/javascript" src="fileadmin/templates/scripts/superfish.js"></script>
+  <script type="text/javascript" src="fileadmin/templates/scripts/main.js"></script>
+  <script type="text/javascript"> 
+    jQuery(document).ready(function(){
+      jQuery("a[href^='http:']").not("[href*='www.proalps.net']").click(function() {
+        var url = $(this).attr("href");
+        _gaq.push(["_trackEvent", "Link", "Externer Link", url]);
+      });
+
+      jQuery(".custom_powermail_date").datepicker();
+      jQuery("#uid5").datepicker();
+      jQuery("#uid41").datepicker();
+      jQuery("#uid55").datepicker();
+      jQuery("#uid57").datepicker();
+      jQuery("#uid64").datepicker();
+      jQuery("#uid10").datepicker();
+      jQuery("#uid119").datepicker();
+      jQuery("#uid124").datepicker();
+      jQuery("#uid129").datepicker();
+      jQuery("#uid138").datepicker();
+      jQuery("#uid11").datepicker();
+      jQuery("#uid122").datepicker();
+      jQuery("#uid127").datepicker();
+      jQuery("#uid133").datepicker();
+      jQuery("#uid141").datepicker();
+      
+      jQuery("dt.wtdirectory_all_name").remove();
+      jQuery("dd.wtdirectory_all_name h2").unwrap();
+      jQuery(".wtdirectory_all_www a").attr("target","_blank");
+           jQuery("ul.sf-menu").superfish({    // slide-down effect without fade-in 
+        delay:     1200,               // 1.2 second delay on mouseout 
+        speed:   'fast',
+        pathClass:  'current' 
+      }); 
+      /*jQuery.supersized({
+          //Background image
+          slides  :  [ { image : 'fileadmin/templates/images/bg_main.jpg' } ]          
+        });*/
+      jQuery("#gallery h4").after("<br />");
+      jQuery("#gallery .lof-description h4").each(function(i){
+        if(i%2 != 0)
+          jQuery(this).css("margin-left","10px");
+      });
+      jQuery("#fragen, #hotelmonats, #newsletter, #content, #soc_lang, #header, #clickpath, #cmain h1, #cmain h2").addClass("shadow");
+      jQuery(".news-list-item h3:first").css("border","none");
+      jQuery(".tags").wrap('<div class="tags" />');
+      jQuery(".wtdirectory_pagebrowser a").each(function(){ 
+        var page = jQuery(this).html(); 
+        page = page.replace("Seite ","",page);
+        jQuery(this).html(page);
+      });
+      var products = "";
+      jQuery(".product a").each(function(){
+        products = products + jQuery(this).html() + ", ";
+      });
+      jQuery("input[name^=item_name]").attr("value", products);
+      jQuery(".wtdirectory_filter_div_city select").change(function(){
+        jQuery(".wtdirectory_filter_div_region select option").attr('selected', false);
+      });
+      jQuery(".wtdirectory_filter_div_region select").change(function(){
+        jQuery(".wtdirectory_filter_div_city select option").attr('selected', false);
+      });
+      jQuery(".wtdirectory_filter_div_name select").change(function(){
+        jQuery(".wtdirectory_filter_div_region select option").attr('selected', false);
+        jQuery(".wtdirectory_filter_div_city select option").attr('selected', false);
+        jQuery(".wtdirectory_filter_div_tx_wcsearchdirectory_type select option").attr('selected', false);
+      });
+    }); 
+
+  </script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js" gapi_processed="true">
+  {lang: 'de'}
+</script>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-17559863-1']);
+   _gaq.push(['_setAllowLinker', true]);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+     var ga = document.createElement('script'); ga.type = 
+'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; 
+s.parentNode.insertBefore(ga, s);
+   })();
+
+</script>
+
+<title>Aktivurlaub in Südtirol &amp; den Dolomiten&nbsp; - ProAlps</title><script language="javascript" src="typo3conf/ext/kiwi_accordion/res/js/kiwi_accordion.js" type="text/javascript"></script><script language="javascript" type="text/javascript">var tx_kiwiaccordion_exclusive =1;var tx_kiwiaccordion_effect = "fade";</script><script type="text/javascript" src="typo3temp/pmkshadowbox/base-de-DE-flv-html-iframe-img-qt-swf-wmp-sizzle/shadowbox.js"></script><link type="text/css" media="all" rel="stylesheet" href="typo3temp/pmkshadowbox/base-de-DE-flv-html-iframe-img-qt-swf-wmp-sizzle/shadowbox.css"><script type="text/javascript">
+		/* <![CDATA[ */			function shadowBoxInit() {
+				Shadowbox.init({
+					animate: 1,
+					animateFade: 1,
+					animSequence: 'sync',
+					autoplayMovies: 1,
+					continuous: 0,
+					counterLimit: 10,
+					counterType: 'default',
+					displayCounter: 1,
+					displayNav: 1,
+					enableKeys: 1,
+					fadeDuration: 0.35,
+					flashParams: {bgcolor:"#000000",allowfullscreen:"true"},
+					flashVars: {},
+					flashVersion: '9.0.0',
+					handleOversize: 'resize',
+					handleUnsupported: 'link',
+					initialHeight: 160,
+					initialWidth: 320,
+					modal: 0,
+					onChange: function() {},
+					onClose: function() {},
+					onFinish: function() {},
+					onOpen: function() {},
+					overlayColor: '#000000',
+					overlayOpacity: 0.5,
+					resizeDuration: 0.35,
+					showOverlay: 1,
+					showMovieControls: 1,
+					skipSetup: 0,
+					slideshowDelay: 0,
+					viewportPadding: 20,
+					preserveAspectWhileResizing: 0
+				});
+			}
+Shadowbox.path = 'typo3temp/pmkshadowbox/base-de-DE-flv-html-iframe-img-qt-swf-wmp-sizzle/';shadowBoxInit();;/* ]]> */
+		</script>
+<link type="text/css" media="screen" rel="stylesheet" href="typo3conf/ext/rzautocomplete/res/css/jquery.autocomplete.css">
+	<title></title>
+	
+        <meta property="og:title" content="">
+		<meta name="keywords" content="">
+      
+	
+	
+    
+      
+      
+    
+	
+	
+    
+        <meta property="og:description" content="">
+		<meta name="description" content="">
+      
+    
+
+
+<meta name="DC.title" content="Aktivurlaub in Südtirol &amp; den Dolomiten">
+<meta name="description" content="Abenteuerhotels und Aktivurlaub in Südtirol - Rafting, Canyoning, Bergtouren, Rundflüge, Ballonfahrten und vieles mehr">
+<meta name="DC.Description" content="Abenteuerhotels und Aktivurlaub in Südtirol - Rafting, Canyoning, Bergtouren, Rundflüge, Ballonfahrten und vieles mehr">
+<meta http-equiv="content-language" content="de">
+<meta name="DC.Language" scheme="NISOZ39.50" content="de">
+<meta name="date" content="2015-08-16T18:34:32+02:00">
+<meta name="DC.date" content="2015-08-16T18:34:32+02:00">
+<meta name="robots" content="index,follow">
+<link rel="start" href="http://www.proalps.net/">
+<link rel="canonical" href="http://www.proalps.net/">
+
+
+
+
+			<link rel="stylesheet" href="/typo3conf/ext/wc_weather/pi3/style.css" type="text/css" media="screen">
+<style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_stumbleupon_badge,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!important}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-button{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.e3d988d72a52909fc67d44f2acde830e.js"></script></head>
+<body>
+
+
+
+<div id="bgtop">
+<div class="bg_cont">
+<div id="banner"></div>  
+    <div id="page">
+    
+        <div id="headmenu">
+            <div id="logo"><a href="http://www.proalps.net/?L=" title="Start"><img src="/fileadmin/templates/images/logo.png" alt="Start"></a></div>
+            <div id="menu"><ul class="sf-menu sf-vertical sf-navbar sf-js-enabled sf-shadow"><li><a href="erlebnisse/" onfocus="blurLink(this);" class="sf-with-ul">Erlebnisse<span class="sf-sub-indicator"> »</span></a><ul style="display: none; visibility: hidden;"><li><div class="menuitem"><a href="erlebnisse/erlebniskategorie/aktivitaeten-im-winter-in-suedtirol-und-den-dolomiten/" target="_top" onfocus="blurLink(this);">Feuer und Eis</a></div><div class="menuitem"><a href="erlebnisse/erlebniskategorie/wasser/" target="_top" onfocus="blurLink(this);">Wasser</a></div><div class="menuitem"><a href="erlebnisse/erlebniskategorie/erde/" target="_top" onfocus="blurLink(this);">Erde</a></div><div class="menuitem"><a href="erlebnisse/erlebniskategorie/luft/" target="_top" onfocus="blurLink(this);">Luft</a></div><div class="clear"></div></li></ul></li><li><a href="hotels/hotel-in-suedtirol-die-aufregendsten-hotels-in-suedtirol/" onfocus="blurLink(this);">Hotels</a></li><li><a href="gruppen/" onfocus="blurLink(this);" class="sf-with-ul">Gruppen<span class="sf-sub-indicator"> »</span></a><ul style="display: none; visibility: hidden;"><li><div class="menuitem"><a href="gruppen/incentive/" onfocus="blurLink(this);">Incentive</a></div><div class="clear"></div></li></ul></li><li><a href="shop/" onfocus="blurLink(this);" class="sf-with-ul">Shop<span class="sf-sub-indicator"> »</span></a><ul style="display: none; visibility: hidden;"><li><div class="menuitem"><a href="shop/warenkorb/" onfocus="blurLink(this);">Warenkorb</a></div><div class="clear"></div></li></ul></li><li><a href="angebote/" target="_top" onfocus="blurLink(this);">Angebote</a></li><li><a href="service/anreise/" onfocus="blurLink(this);" class="sf-with-ul">Service<span class="sf-sub-indicator"> »</span></a><ul style="display: none; visibility: hidden;"><li><div class="menuitem"><a href="service/anreise/" onfocus="blurLink(this);">Anreise</a></div><div class="menuitem"><a href="service/videos/" onfocus="blurLink(this);">Videos</a></div><div class="menuitem"><a href="service/events/" onfocus="blurLink(this);">Events</a></div><div class="menuitem"><a href="service/gopro-verleih/" onfocus="blurLink(this);">GoPro Verleih</a></div><div class="clear"></div></li></ul></li><li><a href="ueber-uns/" onfocus="blurLink(this);">Über uns</a></li></ul><div class="clear"></div></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="header" class="shadow">
+        	<div id="gallery"><div id="c16" class="csc-default"><div class="tx-t3sjslidernews-pi1">
+		
+<div id="lofslidecontent16" class="lof-slider_5" style="height:490px; width:884px">
+  <div class="lof-wrapper lof-css3">
+ 	<div class="preload" style="display: none;"><div style="width:884px; height:490px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:884px; height:490px;">
+    <div onclick="return false" class="lof-previous">Previous</div>
+  	<div class="lof-main-wapper lof-opacity">
+	  
+   		<div class="lof-item" style="opacity: 1; z-index: 0;">
+        <a href="angebote/" title="Aktivitäten Pakete" target="_top" class="imagelink"><img src="typo3temp/pics/Pakete_cf2e69a7bb.jpg" width="884" height="490" border="0" alt=""></a>    
+        <div class="lof-description lof-description_black" style="width: 864px; bottom: 0px; left: 0px; display: block;">
+          <p> <span class="date">Donnerstag 27.11.2014 - 09:08</span></p>
+          <h3 class="lof-title" style="font-size:120%;"><a href="angebote/" title="Aktivitäten Pakete" target="_top">Aktivitäten Pakete</a></h3>
+          <p> </p>      
+        </div>   
+      </div> 
+ 	  
+   		<div class="lof-item" style="opacity: 0; z-index: 4;">
+        <a href="gruppen/" title="Unternehmens Erlebnisse" class="imagelink"><img src="typo3temp/pics/proalps_incentive-training_slider_d6bc6c95f2.jpg" width="884" height="490" border="0" alt=""></a>    
+        <div class="lof-description lof-description_black" style="width: 864px; bottom: 0px; left: 0px; display: none;">
+          <p> <span class="date">Donnerstag 13.11.2014 - 12:15</span></p>
+          <h3 class="lof-title" style="font-size:120%;"><a href="gruppen/" title="Unternehmens Erlebnisse">Unternehmens Erlebnisse</a></h3>
+          <p> </p>      
+        </div>   
+      </div> 
+ 	  
+   		<div class="lof-item" style="opacity: 0; z-index: 0;">
+        <a href="erlebnisse/erlebniskategorie/aktivitaeten-im-winter-in-suedtirol-und-den-dolomiten/" title="Spannende Winter Aktivitäten" target="_top" class="imagelink"><img src="typo3temp/pics/FireIce_01_3291ae6e5e.jpg" width="884" height="490" border="0" alt=""></a>    
+        <div class="lof-description lof-description_black" style="width: 864px; bottom: 0px; left: 0px; display: none;">
+          <p> <span class="date">Donnerstag 24.11.2011 - 12:00</span></p>
+          <h3 class="lof-title" style="font-size:120%;"><a href="erlebnisse/erlebniskategorie/aktivitaeten-im-winter-in-suedtirol-und-den-dolomiten/" title="Spannende Winter Aktivitäten" target="_top">Spannende Winter Aktivitäten</a></h3>
+          <p><b><br></b> </p>      
+        </div>   
+      </div> 
+ 	  
+   		<div class="lof-item" style="opacity: 0; z-index: 0;">
+        <a href="erlebnisse/erlebniskategorie/luft/" title="Erlebnisse Luft" target="_top" class="imagelink"><img src="typo3temp/pics/Air_01_94f6721e1c.jpg" width="884" height="490" border="0" alt=""></a>    
+        <div class="lof-description lof-description_black" style="width: 864px; bottom: 0px; left: 0px; display: none;">
+          <p> <span class="date">Donnerstag 24.11.2011 - 12:00</span></p>
+          <h3 class="lof-title" style="font-size:120%;"><a href="erlebnisse/erlebniskategorie/luft/" title="Erlebnisse Luft" target="_top">Erlebnisse Luft</a></h3>
+          <p><b><br></b> </p>      
+        </div>   
+      </div> 
+ 	  
+  </div>
+  <div onclick="return false" class="lof-next">Next</div>
+  </div>
+  </div>
+</div>
+
+	</div>
+	</div></div>
+            <div id="anfrage">
+            	<div class="bgleft">
+            		<div class="bgright">
+           				<img src="fileadmin/templates/images/h1_anfrage.png" alt=""> <div id="c128" class="csc-default"><div class="tx-powermail-pi1">
+		
+	<div class="tx-powermail-pi1_formwrap tx-powermail-pi1_formwrap_12">
+		<form action="anfrage/anfrage-gross/" method="post" enctype="multipart/form-data" novalidate="novalidate">
+			
+			<div class="fieldsets">
+				
+					<fieldset class=" tx-powermail-pi1_fieldset tx-powermail-pi1_fieldset_anfrage tx-powermail-pi1_fieldset_1" id="tx-powermail-pi1_fieldset_1">
+						<legend>anfrage</legend>
+						
+	<div id="powermaildiv_custom_uid1" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_text tx_powermail_pi1_fieldwrap_html_1 even style1">
+		<label for="custom_uid1">Name:<span class="powermail_mandatory">*</span></label>
+		<input type="text" name="tx_powermail_pi1[uid1]" value="" class="powermail_anfrageform powermail_text powermail_custom_uid1" id="custom_uid1" tabindex="1" required="required">
+	</div>
+
+	<div id="powermaildiv_custom_uid2" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_text tx_powermail_pi1_fieldwrap_html_2 odd style1">
+		<label for="custom_uid2">E-Mail:<span class="powermail_mandatory">*</span></label>
+		<input type="email" name="tx_powermail_pi1[uid2]" value="" class="powermail_anfrageform powermail_text powermail_custom_uid2" id="custom_uid2" tabindex="2" required="required">
+	</div>
+
+	<div id="powermaildiv_custom_uid3" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_text tx_powermail_pi1_fieldwrap_html_3 even style1">
+		<label for="custom_uid3">Tel. Nr.:</label>
+		<input type="text" name="tx_powermail_pi1[uid3]" value="" class="powermail_anfrageform powermail_text powermail_custom_uid3" id="custom_uid3" tabindex="3">
+	</div>
+
+					</fieldset>
+				
+					<fieldset class=" tx-powermail-pi1_fieldset tx-powermail-pi1_fieldset_anfrage2 tx-powermail-pi1_fieldset_2" id="tx-powermail-pi1_fieldset_2">
+						<legend>anfrage2</legend>
+						
+	<div id="powermaildiv_custom_uid4" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_select tx_powermail_pi1_fieldwrap_html_4 odd style1">
+		<label for="custom_uid4">Erlebnis:<span class="powermail_mandatory">*</span></label>
+		<input type="text" name="tx_powermail_pi1[uid4]" id="custom_uid4" class="powermail_anfrageform powermail_text powermail_custom_uid4" tabindex="4" required="required">
+		 
+		 		
+	</div>
+
+	<div id="powermaildiv_custom_uid5" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_text tx_powermail_pi1_fieldwrap_html_5 even style1">
+		<label for="custom_uid5">Datum:<span class="powermail_mandatory">*</span></label>
+		<input type="text" id="custom_uid5" name="tx_powermail_pi1[uid5]" autocomplete="on" class="powermail_anfrageform custom_powermail_date powermail_custom_uid5 hasDatepicker" tabindex="5" required="required">
+	</div>
+
+	<div id="powermaildiv_custom_uid6" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_text tx_powermail_pi1_fieldwrap_html_6 odd style1">
+		<label for="custom_uid6">Teilnehmer:<span class="powermail_mandatory">*</span></label>
+		<input type="text" name="tx_powermail_pi1[uid6]" value="" class="powermail_anfrageform powermail_text powermail_custom_uid6" id="custom_uid6" tabindex="6" required="required">
+	</div>
+
+					</fieldset>
+				
+					<fieldset class=" tx-powermail-pi1_fieldset tx-powermail-pi1_fieldset_anfrage3 tx-powermail-pi1_fieldset_3" id="tx-powermail-pi1_fieldset_3">
+						<legend>anfrage3</legend>
+						
+	<div id="powermaildiv_custom_uid7" class="tx_powermail_pi1_fieldwrap_html tx_powermail_pi1_fieldwrap_html_submit tx_powermail_pi1_fieldwrap_html_7 even style1">
+		<input type="submit" value="Jetzt Anfragen" class="powermail_anfrageform powermail_submit powermail_submit_uid7" tabindex="7">
+	</div>
+
+					</fieldset>
+				
+				<div class="clear"></div>
+			</div>
+			
+			
+            
+		</form>
+	</div>
+
+	</div>
+	</div>
+                         <div class="clear"></div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        <div id="soc_lang" class="shadow">
+        	<div id="social">  <a href="http://de-de.facebook.com/ProAlps" target="_blank"><img src="fileadmin/templates/images/icon_facebook.png" alt=""></a>
+  <a href="http://twitter.com/#!/proalps" target="_blank"><img src="fileadmin/templates/images/icon_twitter.png" alt=""></a>
+  <img src="fileadmin/templates/images/icon_rss.png" alt="">
+</div>
+            <div id="language"><div class="tx-bblanguageselect-pi1">
+		<a class="current" href="">de</a>&nbsp;|&nbsp;<a class="" href="it/">it</a>&nbsp;|&nbsp;<a class="" href="en/">en</a>
+	</div>
+	</div>
+            <div class="clear"></div>
+        </div>
+        
+		<div id="pagesearch"><form method="post" action="suche/">
+  <input type="hidden" name="tx_indexedsearch[_sections]" value="0">
+  <input type="hidden" name="tx_indexedsearch[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_">
+  <input type="hidden" name="tx_indexedsearch[pointer]" id="tx_indexedsearch_pointer" value="0">
+  <input type="hidden" name="tx_indexedsearch[ext]" value="">
+  <input type="hidden" name="tx_indexedsearch[type]" value="1">
+  <input type="hidden" name="tx_indexedsearch[defOp]" value="0">
+  <input type="hidden" name="tx_indexedsearch[media]" value="-1">
+  <input type="hidden" name="tx_indexedsearch[order]" value="rank_flag">
+  <input type="hidden" name="tx_indexedsearch[group]" value="flat">
+  <input type="hidden" name="tx_indexedsearch[lang]" value="0">
+  <input type="hidden" name="tx_indexedsearch[desc]" value="0">
+  <input type="hidden" name="tx_indexedsearch[results]" value="10">
+  <input type="text" name="tx_indexedsearch[sword]" id="tx_indexedsearch[sword]" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Aktivitäten, Hotels &amp; Geschenkgutscheine':this.value;" value="Aktivitäten, Hotels &amp; Geschenkgutscheine">
+  <input type="image" src="fileadmin/templates/images/btn_suche.png">
+</form>
+</div>
+		
+        <!-- TYPO3SEARCH_begin -->
+        <div id="content" class="shadow">
+            <div id="cmain"><div id="c138" class="csc-default"><h1 class="shadow">Willkommen bei ProAlps - Urlaub wird zum Abenteuer</h1><p><b>ProAlps</b>&nbsp;organisiert&nbsp;<b>Abenteuerurlaub in Südtirol</b>! Wir bieten viele verschiedene Abenteuer und&nbsp;<b><a href="http://www.proalps.net/erlebnisse/" target="_top" class="external-link" title="Aktivitäten">Aktivitäten</a></b>&nbsp;in den Bereichen&nbsp;<b>Sport</b>&nbsp;und&nbsp;<b>Kultur</b>&nbsp;in&nbsp;<b>Südtirol</b>, den&nbsp;<b>Dolomiten</b>&nbsp;und den&nbsp;<b>Alpen</b>. Werfen Sie zudem einen Blick auf unsere&nbsp;<b><a href="http://www.proalps.net/hotels/hotels-in-suedtirol-alpen-dolomiten/" title="Hotels in Südtirol" target="_blank" class="internal-link">Hotels in Südtirol</a></b>&nbsp;und finden Sie Ihre bevorzugte Unterkunft! Wir geben Ihnen die Möglichkeit, aus&nbsp;<b>unserer breiten Auswahl an Hotels in Südtirol</b>&nbsp;zu wählen. Verbringen Sie Ihren&nbsp;<b>Aktivurlaub in ausgewählten&nbsp;</b><b>Abenteuerhotels</b>! Ob Romantik Hotel, Bike Hotel, Familienhotel oder Designhotel - wir haben&nbsp;für jeden&nbsp;<b>die passende Unterkunft.&nbsp;</b>Von der Raftingtour über eine&nbsp;<b>Skisafari</b>, eine&nbsp;<b>Ballonfahrt</b>&nbsp;und viele weitere Abenteuer, bietet ProAlps&nbsp;<b>unvergessliche Erlebnisse</b>&nbsp;sowie spannenden Urlaub und Freizeit.</p></div><div id="c2071" class="csc-default" style="margin-top:30px;margin-bottom:30px;"><div class="nested2Col">
+	<div class="nested2ColLeft shadow"><div id="c2407" class="csc-default"><h3>  Südtirol by ProAlps App!</h3><div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:240px;"><a href="http://www.proalps.net.mobapp.at" target="_blank" title="Wetter, Freizeitideen, direkte Buchung und Geschenkgutscheine"><img src="typo3temp/pics/10950711_10153574994258222_472908966805594812_n_0cae38d668.jpg" width="240" height="125" border="0" alt="Wetter, Freizeitideen, direkte Buchung und Geschenkgutscheine" longdesc="Wetter, Freizeitideen, direkte Buchung und Geschenkgutscheine"></a></div><div class="csc-textpic-text"><p class="align-center"><a href="http://www.proalps.net.mobapp.at" title="Die App auf die alle Südtirol Fans gewartet haben!" target="_blank" class="external-link-new-window">Die App auf die alle Südtirol Fans gewartet haben!</a>&nbsp;</p>
+<p class="align-center">Verlässliche Wettervorhersage, Freizeitangebot mit Anreise, Geschenkgutscheine u.v.m.</p></div></div><div class="csc-textpic-clear"><!-- --></div><div class="clear"></div></div></div>
+	<div class="nested2ColRight shadow"><div id="c2081" class="csc-default"><h3>Firmenausflüge und Gruppenreisen</h3><div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:240px;"><a href="gruppen/" target="_self" title="Firmenausflüge und Gruppenreisen"><img src="typo3temp/pics/GoKart-_1__14_8389a33129.jpg" width="240" height="180" border="0" alt="Firmenausflüge und Gruppenreisen"></a></div><div class="csc-textpic-text"><p class="align-center"><a href="gruppen/" title="Erlebnisse die verbinden" target="_self" class="internal-link">Erlebnisse die verbinden</a></p></div></div><div class="csc-textpic-clear"><!-- --></div><div class="clear"></div></div></div>
+	<div class="clear"></div>
+</div></div><div id="c2091" class="csc-default"><h2 class="shadow">Wasser</h2>
+<div class="news-list-box">
+
+	
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3 style="border: none;"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelyacht-wochenende/" title="Segelyacht Wochenende">Segelyacht Wochenende</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelyacht-wochenende/" title="Segelyacht Wochenende"><img src="typo3temp/GB/proalps_segelyacht_005_d0a762e7d2_582c84a446.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 275,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelyacht-trip/" title="Segelyacht Trip">Segelyacht Trip</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelyacht-trip/" title="Segelyacht Trip"><img src="typo3temp/GB/proalps_segelyacht_001_3779fdc429_7a4a633c1b.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 109,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/river-boating/" title="River Boating">River Boating</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/river-boating/" title="River Boating"><img src="typo3temp/GB/proalps-river-boating_001_c4fca2e916_4bcf862699.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 69,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/flyboard/" title="Flyboard">Flyboard</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/flyboard/" title="Flyboard"><img src="typo3temp/GB/Flyboard_kurse_01_ab7ab3c5c6_0ea7987208.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 169,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/kitesurf/" title="Kitesurf">Kitesurf</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/kitesurf/" title="Kitesurf"><img src="typo3temp/GB/Kitesurf_01_aec4b5ef8d_38ce4dcff4.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 109,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/canyoning/" title="Canyoning">Canyoning</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/canyoning/" title="Canyoning"><img src="typo3temp/GB/Canyoning_01_d60c0ca504_2ae6c34543.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 60,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/hydrospeed/" title="Hydrospeed">Hydrospeed</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/hydrospeed/" title="Hydrospeed"><img src="typo3temp/GB/Hydrospeed_ae62fbe2e7_1298823ac6.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 60,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/rafting/" title="Rafting">Rafting</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/rafting/" title="Rafting"><img src="typo3temp/GB/Rafting_05_1802071d92_9b5350d49d.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 43,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/kajak/" title="Kajak">Kajak</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/kajak/" title="Kajak"><img src="typo3temp/GB/Kayaking-_1__02_3eb0bfd52b_d7ac97e83b.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 40,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/windsurf/" title="Windsurf">Windsurf</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/windsurf/" title="Windsurf"><img src="typo3temp/GB/Windsurf_01_a888b4b17e_7413eb3cfe.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 79,00</div>
+            </div>
+		
+    <div class="clear"></div>
+
+</div>
+</div><div id="c2096" class="csc-default"><h2 class="shadow">Luft</h2>
+<div class="news-list-box">
+
+	
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/rundflug-im-flugzeug/" title="Rundflug im Flugzeug">Rundflug im Flugzeug</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/rundflug-im-flugzeug/" title="Rundflug im Flugzeug"><img src="typo3temp/GB/airplaine-flight-001_364046f5d6_d7f628d4fc.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 70,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelfliegen/" title="Segelfliegen">Segelfliegen</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segelfliegen/" title="Segelfliegen"><img src="typo3temp/GB/proalps_gliding_001_252b2b6eed_01a862e60f.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 120,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/riesenschaukel/" title="Riesenschaukel">Riesenschaukel</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/riesenschaukel/" title="Riesenschaukel"><img src="typo3temp/GB/schaukeln_979db24426_a32b90e061.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 15,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/fallschirmspringen/" title="Fallschirmspringen">Fallschirmspringen</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/fallschirmspringen/" title="Fallschirmspringen"><img src="typo3temp/GB/Skydive-Link_01_bd67cd556c_9276552fa2.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 170,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/bungee-jumping-europabruecke/" title="Bungee Jumping Europabrücke">Bungee Jumping Europabrücke</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/bungee-jumping-europabruecke/" title="Bungee Jumping Europabrücke"><img src="typo3temp/GB/Bungy_03_6f5432d3af_622797d32e.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 179,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/zipline/" title="Zipline">Zipline</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/zipline/" title="Zipline"><img src="typo3temp/GB/Zipline-Ferdi_01_7ca83ea59b_7974df0f4f.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 65,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/ballonfahrt/" title="Ballonfahrt">Ballonfahrt</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/ballonfahrt/" title="Ballonfahrt"><img src="typo3temp/GB/proalps_ballonfahrt_ballooning_alpen_alps_f8cde38a38_8689333467.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 320,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/paragleiten/" title="Paragleiten">Paragleiten</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/paragleiten/" title="Paragleiten"><img src="typo3temp/GB/Tandemparagliding-_2__179369b14c_4fa588e56a.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 90,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/hochseilgarten/" title="Hochseilgarten">Hochseilgarten</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/hochseilgarten/" title="Hochseilgarten"><img src="typo3temp/GB/Hochseilgarten_e2fd63c0c2_bd4094c623.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 21,00</div>
+            </div>
+		
+    <div class="clear"></div>
+
+</div>
+</div><div id="c2101" class="csc-default"><h2 class="shadow">Erde</h2>
+<div class="news-list-box">
+
+	
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountain-buggy-adventure/" title="Mountain Buggy Adventure">Mountain Buggy Adventure</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountain-buggy-adventure/" title="Mountain Buggy Adventure"><img src="typo3temp/GB/buggy-suedtirol-passeier_004_forweb_4537c3f8d6_4f96775644.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 150,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/survivaltraining/" title="Survivaltraining">Survivaltraining</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/survivaltraining/" title="Survivaltraining"><img src="typo3temp/GB/proalps_survivaltraining_suedtirol_ueberleben_002_a003af25b2_2cb5c8a699.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 130,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountaincart/" title="Mountaincart">Mountaincart</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountaincart/" title="Mountaincart"><img src="typo3temp/GB/IMG_7157_34b796c8c1_9abf58d0f0.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 29,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/klettern/" title="Klettern">Klettern</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/klettern/" title="Klettern"><img src="typo3temp/GB/Klettern_02_3fd02df3eb_086b62444a.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 44,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/golf/" title="Golf">Golf</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/golf/" title="Golf"><img src="typo3temp/GB/golf_09_84bca0b686_c2f8b2ccf8.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 43,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mtb-downhill-freeride/" title="MTB Downhill / Freeride">MTB Downhill / Freeride</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mtb-downhill-freeride/" title="MTB Downhill / Freeride"><img src="typo3temp/GB/downhill_01_120b22639f_c85ed60451.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 29,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segway/" title="Segway">Segway</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/segway/" title="Segway"><img src="typo3temp/GB/Segway-_6__49955865e7_0b5f52becd.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 34,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountainbiketour/" title="Mountainbiketour">Mountainbiketour</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/mountainbiketour/" title="Mountainbiketour"><img src="typo3temp/GB/Mountainbike-_-Racingbike-_1__03_81fa4df16b_4a9ab3d098.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 45,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/bergtouren/" title="Bergtouren">Bergtouren</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/bergtouren/" title="Bergtouren"><img src="typo3temp/GB/smg01395heri_4ebfe17be0_b461725e7e.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 50,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/reiten/" title="Reiten">Reiten</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/reiten/" title="Reiten"><img src="typo3temp/GB/Horsebackriding-_1__01_05697e1779_d91503dc2d.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 35,00</div>
+            </div>
+		
+    <div class="clear"></div>
+
+</div>
+</div><div id="c2106" class="csc-default"><h2 class="shadow">Feuer und Eis</h2>
+<div class="news-list-box">
+
+	
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/alpin-bob-merano-2000/" title="Alpin Bob Merano 2000">Alpin Bob Merano 2000</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/alpin-bob-merano-2000/" title="Alpin Bob Merano 2000"><img src="typo3temp/GB/Meran-2000-Alpin-Bob-001_c92e1f578d_39a806dceb.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 4,50</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/winter-eisbaden/" title="Winter- Eisbaden">Winter- Eisbaden</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/winter-eisbaden/" title="Winter- Eisbaden"><img src="typo3temp/GB/proalps-eisbaden-007_cd7865182a_3a4ab7f4cb.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 59,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/eco-quad-adventure/" title="Eco-Quad Adventure"> Eco-Quad Adventure </a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/eco-quad-adventure/" title="Eco-Quad Adventure"><img src="typo3temp/GB/proalps_eco-quad_002_94ebbc0525_4b9a005d48.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 35,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/biathlon-workshop/" title="Biathlon Workshop">Biathlon Workshop</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/biathlon-workshop/" title="Biathlon Workshop"><img src="typo3temp/GB/proalps_biathlon_002_fa885364d3_313add0ae0.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 45,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/paintball/" title="Paintball">Paintball</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/paintball/" title="Paintball"><img src="typo3temp/GB/paintball_57a58e890e_9e2a03b3bb.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 40,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/airboard/" title="Airboard">Airboard</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/airboard/" title="Airboard"><img src="typo3temp/GB/proalps_airboard_holiday_south_tyrol_3317765755_bc36fb4d07.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 35,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/ski-doo/" title="Ski-Doo">Ski-Doo</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/ski-doo/" title="Ski-Doo"><img src="typo3temp/GB/Skidoo-_2__0cf0afa271_af33804181.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 25,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/snowkiten-1/" title="Snowkiten">Snowkiten</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/snowkiten-1/" title="Snowkiten"><img src="typo3temp/GB/Snowkiting-_3__7ae848ffd2_2cc9e4ba78.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 99,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/iglu-bauen/" title="Iglu bauen">Iglu bauen</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/iglu-bauen/" title="Iglu bauen"><img src="typo3temp/GB/proalps_erwin_reiter_iglu_75486ce6d7_f4b08e95f2.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 109,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/skitouren/" title="Skitouren">Skitouren</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/skitouren/" title="Skitouren"><img src="typo3temp/GB/Guided-Mountain-Tours-_-Nordic-Walking-Tours-_2__ee83905ff3_425e2ab336.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 50,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/schneeschuhwanderung/" title="Schneeschuhwanderung">Schneeschuhwanderung</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/schneeschuhwanderung/" title="Schneeschuhwanderung"><img src="typo3temp/GB/Snoshoeing-und-Airboard_02_28088cfe89_0f29db5195.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 50,00</div>
+            </div>
+		
+			 <div class="news-list-item shadow">
+                 <div class="h1"><h3><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/eisklettern/" title="Eisklettern">Eisklettern</a></h3></div>
+                 <div class="image"><a href="erlebnisse/erlebniskategorie/erlebnis/artikel/eisklettern/" title="Eisklettern"><img src="typo3temp/GB/Eisklettern__TV_Ahrntal_21738ccdc9_e397683bce.png" width="160" height="100" border="0" alt=""></a></div>
+                 <div class="price">ab EUR 12,00</div>
+            </div>
+		
+    <div class="clear"></div>
+
+</div>
+</div><div id="c2111" class="csc-default" style="margin-top:40px;"><p>Winter, Frühling, Sommer oder Herbst - keine Jahreszeit ist ein Hindernis, wenn es um <b>Spaß und Abenteuer in Südtirol</b> geht. Jede Saison hat ihre eigene Schönheit und ihren Charme. <b>Abenteuersportbegeisterte</b> werden hier sicher einiges erleben. Ob der Schnee im Winter, das Wasser im Sommer oder die Berge im Herbst - Ihr <b>Urlaub in Südtirol</b> wird Sie verzaubern. Seien Sie ein Teil dieser schönsten Berge der Welt und genießen Sie Ihren <b>Aktivurlaub in den Dolomiten</b> und den Alpen. Erleben Sie die Natur in ihrer reinsten Form und spielen Sie mit den Elementen. <br><b>Kommen Sie nach Südtirol!</b></p></div></div>
+            <div id="cright"> <div id="fragen" class="shadow"><img src="fileadmin/templates/images/h1_fragen.png" class="rotateh1" alt=""><div id="c8" class="csc-default"><script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+
+
+<p>E-Mail:<br><a href="mailto:info@proalps.net">info(at)proalps.net</a></p>
+<p>SMS/Tel.:<br><b>+39 3459128138</b></p>
+</div></div> <div id="shopteaser"><div id="c122" class="csc-default"><div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap csc-textpic-single-image"><a href="include/footermenu/erlebnisse/geschenk-gutscheine/" target="_self"><img src="typo3temp/pics/teaser_gutschein_acd393b022.png" width="220" height="129" border="0" alt=""></a></div></div><div class="csc-textpic-clear"><!-- --></div></div></div> <div id="hotelmonats" class="shadow"><img src="fileadmin/templates/images/h1_hotelmonats.png" class="rotateh1" alt=""><div id="c21" class="csc-default"><div class="tx-wcrandomhotel-pi1">
+		
+<h2>Alpinhotel Keil </h2>
+<div class="randomHotelContainer">
+	<div class="randomHotelImage"><a href="http://www.alpinhotel.it" target="_blank"><img src="typo3temp/pics/Alpinhotel_Keil__Sommer__03_9deb192e25.jpg" width="200" height="150" border="0" alt="Alpinhotel Keil" title="Alpinhotel Keil"></a></div>
+	<div class="randomHotelDetails"><p class="align-justify">Das Alpinhotel Keil ist ein Mountainbike- und Motorradhotel ...</p></div>
+	<div class="randomHotelMore"><a href="http://www.alpinhotel.it" target="_blank">mehr</a></div>
+</div><div class="clear"></div><br>
+
+	</div>
+	</div></div> <div id="c1308" class="csc-default"><div class="tx-wcweather-pi3">
+		<div class="wceathersingle">	<img src="fileadmin/templates/images/headline_wetter.png">	<div class="image"><img src="http://www.provinz.bz.it/wetter/imgsource/wetter/icon_1.png"></div>	<div class="todaydate">Mo, 19.06.2017 </div>	<div class="temp">14 - 30 ° C</div>	<div class="link"><a href="wetter-suedtirol/"><img src="fileadmin/templates/images/btn_prognose.png"></a></div></div>
+	</div>
+	</div><div id="c966" class="csc-default" style="margin-top:20px;"><div class="tx-itawyoutoubeembed-pi1">
+		
+	       <object width="221" height="">
+	       <param name="movie" value="http://www.youtube.com/v/4ZzqhFBRNFQ"> 
+	       <embed src="http://www.youtube.com/v/4ZzqhFBRNFQ" type="application/x-shockwave-flash" width="221" height=""> 
+	       </object>
+	    
+	</div>
+	</div><div id="c1162" class="csc-default" style="margin-top:20px;"><iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fproalps&amp;width=221&amp;height=290&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true&amp;appId=167514029949904" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:221px; height:290px;" allowtransparency="true"></iframe></div><div id="c1185" class="csc-default" style="margin-top:20px;"><div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:221px;"><a href="http://www.live-style.it/de/trentino-suedtirol/sendevent/" target="_blank"><img src="uploads/pics/banner-proalps-DE.png" width="221" height="199" border="0" alt="Events in Südtirol"></a></div></div><div class="csc-textpic-clear"><!-- --></div></div><div id="c1416" class="csc-default"></div></div>
+            <div class="clear"></div>
+            <div class="socialshare">  <!-- AddThis Button BEGIN -->
+  <div class="addthis_toolbox addthis_default_style ">
+  <a class="addthis_button_facebook_like at300b" fb:like:layout="button_count"><div class="fb-like fb_iframe_widget" data-layout="button_count" data-show_faces="false" data-share="false" data-action="like" data-width="90" data-height="25" data-font="arial" data-href="http://www.proalps.net/" data-send="false" style="height: 25px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;font=arial&amp;height=25&amp;href=http%3A%2F%2Fwww.proalps.net%2F&amp;layout=button_count&amp;locale=de_DE&amp;sdk=joey&amp;send=false&amp;share=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f34555f320a2bc8" width="90px" height="25px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2d18c34fd4f80c%26domain%3Dwww.proalps.net%26origin%3Dhttp%253A%252F%252Fwww.proalps.net%252Ff2416e354bd2d58%26relation%3Dparent.parent&amp;container_width=0&amp;font=arial&amp;height=25&amp;href=http%3A%2F%2Fwww.proalps.net%2F&amp;layout=button_count&amp;locale=de_DE&amp;sdk=joey&amp;send=false&amp;share=false&amp;show_faces=false&amp;width=90" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div></a>
+  <a class="addthis_button_tweet at300b"><div class="tweet_iframe_widget" style="width: 62px; height: 25px;"><span><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.proalps.net/#.WjvLUsaiuVE.twitter" data-counturl="http://www.proalps.net/" data-count="horizontal" data-text="Aktivurlaub in Südtirol &amp; den Dolomiten&nbsp; - ProAlps:" data-related="" data-hashtags="" data-width="62" data-twitter-extracted-i1513868125862739957="true">Tweet</a></span></div></a>
+  <a class="addthis_button_google_plusone at300b" g:plusone:size="medium"><div class="google_plusone_iframe_widget" style="width: 90px; height: 25px;"><span><div id="___plusone_1" style="position: absolute; width: 450px; left: -10000px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1513868119421" name="I0_1513868119421" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;hl=en-US&amp;origin=http%3A%2F%2Fwww.proalps.net&amp;url=http%3A%2F%2Fwww.proalps.net%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.lyon4aDFbFk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1513868119421&amp;_gfid=I0_1513868119421&amp;parent=http%3A%2F%2Fwww.proalps.net&amp;pfname=&amp;rpctoken=19775963" data-gapiattached="true"></iframe></div><g:plusone size="medium" lang="null" href="http://www.proalps.net/" callback="_at_plusonecallback" data-gapiscan="true" data-gapistub="true"></g:plusone></span></div></a>
+  <div class="atclear"></div></div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4edf7b391915fa14"></script>
+  <!-- AddThis Button END -->
+</div>
+        </div>    
+        <!-- TYPO3SEARCH_begin -->
+       
+        
+        <div id="clickpath" class="shadow"></div>
+        <div class="clear"></div>
+	</div>
+     
+    </div>
+    <div id="bgfooter">
+        <div id="footer">
+        	<div class="container1">
+            	<div id="footermenu"></div>
+            </div>
+            <div class="container2">
+            	<div id="social2">  <div id="socialicons">
+    <a href="http://de-de.facebook.com/ProAlps" target="_blank"><img src="fileadmin/templates/images/icon_facebook.png" alt=""></a>
+    <a href="http://twitter.com/#!/proalps" target="_blank"><img src="fileadmin/templates/images/icon_twitter.png" alt=""></a>
+    <img src="fileadmin/templates/images/icon_rss.png" alt="">
+  </div>
+  <div id="plusbutton">
+    <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px; background-position: initial initial; background-repeat: initial initial;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1513868114628" name="I0_1513868114628" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;hl=de&amp;origin=http%3A%2F%2Fwww.proalps.net&amp;url=http%3A%2F%2Fwww.proalps.net%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.lyon4aDFbFk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1513868114628&amp;_gfid=I0_1513868114628&amp;parent=http%3A%2F%2Fwww.proalps.net&amp;pfname=&amp;rpctoken=85147691" data-gapiattached="true" title="G+"></iframe></div>
+  </div>
+  <div id="fbbutton">
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://staticxx.facebook.com/connect/xd_arbiter/r/lY4eZXm_YWu.js?version=42#channel=f2416e354bd2d58&amp;origin=http%3A%2F%2Fwww.proalps.net" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/lY4eZXm_YWu.js?version=42#channel=f2416e354bd2d58&amp;origin=http%3A%2F%2Fwww.proalps.net" style="border: none;"></iframe></div></div></div>
+    <div class="fb-like" data-href="www.proalps.net" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+  </div>
+</div>
+				<div id="paypal">  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="QV2TSAXALMV6J">
+    <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+</div>
+                <div id="wetter"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div id="bgfooterctext"> 
+        <div id="footerctext">
+        	<div id="footermenu2"><a href="footermenu2/partner/" onfocus="blurLink(this);">Partner</a>&nbsp;|&nbsp;<a href="wetter-suedtirol/" onfocus="blurLink(this);">Wetter</a>&nbsp;|&nbsp;<a href="footermenu2/presse/" onfocus="blurLink(this);">Presse</a>&nbsp;|&nbsp;<a href="footermenu2/jobs/" onfocus="blurLink(this);">Jobs</a>&nbsp;|&nbsp;<a href="footermenu2/agb/" onfocus="blurLink(this);">AGB</a>&nbsp;|&nbsp;<a href="footermenu2/impressum/" onfocus="blurLink(this);">Impressum</a>&nbsp;|&nbsp;<a href="footermenu2/partner-werden/" onfocus="blurLink(this);">Partner werden</a></div>
+        	<div id="ctext"><div id="c2" class="csc-default"><p>Copyright © 2010-15 ProAlps, Brennerstrasse 5, 39055 Leifers&nbsp;(BZ), Italien | IVA: 02645450210 | Alle Rechte vorbehalten</p></div></div>
+        </div>
+     </div>  
+ 
+</div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh708" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;"></iframe></div><style id="service-icons-0"></style>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-17559863-1']);
+
+
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/* JavaScript for EXT t3s_jslidernews CE-16 */
+jQuery(document).ready(function(){var buttons={previous:jQuery('#lofslidecontent16 .lof-previous'),next:jQuery('#lofslidecontent16 .lof-next')};$obj=jQuery('#lofslidecontent16').lofJSidernews({interval:6000,easing:'easeInOutExpo',maxItemDisplay:3,duration:2000,auto:true,mainWidth:884,direction:'opacity',buttons:buttons});});
+/*]]>*/
+</script>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>ladend</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Schließen" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Nächste" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Abspielen" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Vorige" onclick="Shadowbox.previous()"></a></div></div></div></div></div><div id="skypedetectioncontainer" style="position: absolute; width: 5px; height: 5px; top: 0px; left: -10px; visibility: visible;"></div><iframe name="oauth2relay1931815255" id="oauth2relay1931815255" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fwww.proalps.net&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.lyon4aDFbFk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w#rpctoken=796444810&amp;forcesecure=1" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.eaf4b750247dd4d0c4a27df474e7e934.html?namespace=twttr%3Acookies&amp;origin=http%3A%2F%2Fwww.proalps.net" style="display: none;"></iframe></body></html>

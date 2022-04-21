@@ -1,0 +1,1596 @@
+<!DOCTYPE html><html ng-app="angcmsv2" class="ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+		<base href="/">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107475335-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-107475335-1');
+		</script>
+		<meta name="p:domain_verify" content="45eaac54ce014f3b940fe1c212d4b402">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/jquery-ui-dist/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/ngdropzone/dist/ng-dropzone.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/dropzone/dist/min/dropzone.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/angucomplete-alt/angucomplete-alt.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/ng-tags-input/build/ng-tags-input.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/ng-wig/dist/css/ng-wig.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-bootstrap-colorpicker/css/colorpicker.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-moment-picker/dist/angular-moment-picker.min.css">
+		<link rel="stylesheet" type="text/css" href="external_modules/TiltHoverEffects/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="external_modules/TiltHoverEffects/css/pater.css">
+		<link rel="stylesheet" type="text/css" href="external_modules/TiltHoverEffects/css/component.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/dropzone/dist/dropzone.js"></script>
+		<script type="text/javascript" src="node_modules/mathjs/dist/math.min.js"></script>
+		<script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
+		<script type="text/javascript" src="node_modules/moment/min/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-aria/angular-aria.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-ui-sortable/dist/sortable.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-lazy-img/dist/angular-lazy-img.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-dragdrop/src/angular-dragdrop.min.js"></script>
+		<script type="text/javascript" src="node_modules/angucomplete-alt/dist/angucomplete-alt.min.js"></script>
+		<script type="text/javascript" src="node_modules/ng-tags-input/build/ng-tags-input.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-moment-picker/dist/angular-moment-picker.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-bootstrap-contextmenu/contextMenu.js"></script>
+		<script type="text/javascript" src="node_modules/jspdf/dist/jspdf.min.js"></script>
+		<script type="text/javascript" src="node_modules/ngdropzone/dist/ng-dropzone.min.js"></script>
+		<script type="text/javascript" src="node_modules/ng-wig/dist/ng-wig.min.js"></script>
+		<script type="text/javascript" src="node_modules/ng-wig/dist/plugins/formats.ngWig.min.js"></script>
+		<script type="text/javascript" src="node_modules/ng-wig/dist/plugins/clear-styles.ngWig.js"></script>
+		<script type="text/javascript" src="node_modules/ng-wig/dist/plugins/forecolor.ngWig.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.min.js"></script>
+		<script type="text/javascript" src="external_modules/angular-parallax/scripts/angular-parallax.js"></script>
+		<script type="text/javascript" src="external_modules/TiltHoverEffects/js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="external_modules/TiltHoverEffects/js/anime.min.js"></script>
+ 		<script type="text/javascript" src="external_modules/TiltHoverEffects/js/main.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/service.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+		<script type="text/javascript" src="js/directives.js"></script>
+		<script type="text/javascript" src="js/filters.js"></script>
+		<script type="text/javascript" src="js/router.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+	</head>
+	<body ng-controller="MainController as mainController" ng-init="mainController.get('api/live/getEnv', 'response')" class="  ">
+		<!-- ngIf: mainController.response.session.loggedin -->
+		<!-- ngInclude: 'templates/messages/messages.html' --><div class="toasts ng-scope" ng-include="'templates/messages/messages.html'" style=""><div class="messages ng-scope" ng-controller="AlertController as alertController">
+	<!-- ngRepeat: alert in mainController.response.render.messages -->
+</div>
+</div>
+		<!-- ngView: --><div class="routes ng-scope" ng-view="" style=""><div class="main-content ng-scope" ng-controller="MainController as liveController" ng-init="liveController.get('api/live/loadPage' + mainController.path, 'page')">
+	<!-- ngIf: !liveController.modal --><div ng-if="!liveController.modal" chapters="" class="chapters-nav ng-scope">
+	</div><!-- end ngIf: !liveController.modal -->
+
+	<div class="navigation-menu dropdown" uib-dropdown="">
+		<div class="menu-content " ng-click="mainController.navigation.active = !mainController.navigation.active" role="button" tabindex="0">
+			<div class="menu-content-scroll-container">
+				<ul>
+					<!-- ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope" style="">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Le Val d’Or | Gourmetrestaurant</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Die Stromburg | Hotel</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Bistro d'Or | Restaurant</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Magazine</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Advents-Matinee</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Magazine</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Lafer – Das Beste</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Sendetermine</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Catering &amp; Events</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Heligourmet</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">News</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Newsletter</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Lernen &amp; Genießen</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Table d’Or | Kochschule</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu btn-menu-submenu" ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Rezepte</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Shop</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu --><li ng-repeat="module in liveController.page.render.data.modules | orderBy:liveController.sortMenu" class="ng-scope">
+						<!-- ngIf: module.fields.menu_entry --><button class="btn btn-no-outline menu-item btn-menu " ng-click="mainController.scrollTo('module-' + module.uniqid)" ng-if="module.fields.menu_entry">Kontakt</button><!-- end ngIf: module.fields.menu_entry -->
+					</li><!-- end ngRepeat: module in liveController.page.render.data.modules | orderBy:liveController.sortMenu -->
+				</ul>
+			</div>
+		</div>
+		<a role="button" class="btn" ng-click="mainController.toggle_menu()" ng-attr-style="width:34px;height:34px;" style="width:34px;height:34px;">
+			<img ng-src="assets/burger_menu.png" width="34" height="34" ng-attr-style="position:absolute;z-index:999999;width:auto;right:-10px;{{ (mainController.has_scrollbar() &amp;&amp; mainController.navigation.active) ? 'padding-right:' + mainController.scrollbar_width + 'px' : '' }}" src="assets/burger_menu.png" style="position:absolute;z-index:999999;width:auto;right:-10px;">
+		</a>
+	</div>
+
+	<!-- ngIf: mainController.response.session.level < 2 && liveController.savingPage === 'true' -->
+
+	<!-- ngIf: mainController.response.session.level < 2 -->
+
+	<!-- ngIf: mainController.response.session.level < 2 -->
+	<ul id="header_top" class="modules sortable ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable ng-not-empty" ui-sortable="liveController.sortableOptions" ng-model="liveController.page.render.data.modules" aria-invalid="false" style="">
+		<!-- ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader header module" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3bf052c37f" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth wrapper headermodule ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }}; color: {{ module.fields.font_color }}; padding-top: {{ module.fields.padding_top }}; padding-bottom: {{ module.fields.padding_bottom }};">
+
+	<!-- ngIf: module.fields.is_animated !== '1' -->
+
+	<!-- ngIf: module.fields.is_animated === '1' --><div tilt-hover="" ng-if="module.fields.is_animated === '1'" class="ng-scope">
+		<a href="#" class="tilter tilter--1 header-image ng-scope" ng-attr-style="padding-top:0;" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" style="padding-top:0;">
+			<figure class="tilter__figure" ng-attr-style="background-color: {{ module.fields.button_color }}; overflow: hidden;" style="background-color: #161110; overflow: hidden;">
+				<div class="header-image header-image-fade tilter__image" ng-attr-style="background-image: url('/assets/img/{{ imageController.mobile ? imageController.image[module.uniqid].render.images[0].name_xs : imageController.image[module.uniqid].render.images[0].name_md }}'); {{ imageController.image[module.uniqid].render.images[0].avgColor ? 'background-color: ' + imageController.image[module.uniqid].render.images[0].avgColor + ';' : '' }} background-attachment: {{ module.fields.is_static === '1' ? 'fixed' : 'static' }};" style="background-image: url('/assets/img/59c3bf052c37f_5a2561f4797e9_md.jpg'); background-color: #221d22; background-attachment: static;">
+					 </div>
+				<div class="tilter__deco tilter__deco--shine"><div></div></div>
+				<figcaption class="tilter__caption big-button-outer" ng-attr-style="width:100%;height:100%;padding:0;padding-top:12px;" style="width:100%;height:100%;padding:0;padding-top:12px;">
+					<h3 class="image-caption-container">
+						<div class="image-caption" ng-attr-style="width: 40%; margin: auto;background-image: url('/assets/lafer-logo.png'); background-attachment: static; background-size: 100% auto; background-repeat: no-repeat; padding-top: 8.78273%;" style="width: 40%; margin: auto;background-image: url('/assets/lafer-logo.png'); background-attachment: static; background-size: 100% auto; background-repeat: no-repeat; padding-top: 8.78273%;">
+						</div>
+						<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption -->
+						<!-- ngIf: imageController.image[module.uniqid].render.images[0].text -->
+					</h3>
+				</figcaption>
+				<div class="tilter__deco tilter__deco--lines">
+					<div class="box"></div>
+					<div class="image-line"></div>
+				</div>
+			</figure>
+		</a>
+		<!-- ngIf: module.fields.button_text --><div ng-if="module.fields.button_text" class="module halfwidth wrapper bigbuttonmodule bigbutton-header-container ng-scope" ng-attr-style="color: {{ module.fields.font_color }};">
+			<div class="big-button" ng-attr-style="background-color: {{ module.fields.button_color }};" style="background-color: #161110;">
+				<a class="big-button-outer static-outline" target="_blank" href="http://www.lafer.de/nc/die-stromburg/geschenkgutscheine/">
+					<div class="big-button-text-container ng-binding">Jetzt Gutschein bestellen</div>
+				</a>
+			</div>
+		</div><!-- end ngIf: module.fields.button_text -->
+
+	</div><!-- end ngIf: module.fields.is_animated === '1' -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a32c4d6d9565" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 200px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a3a7810bbd9f">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 250px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59ca266e4c2f5" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59ca266e4c2f5" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.25" lazy-img="assets/img/59ca266e4c2f5_59ca3cc442618_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(71, 54, 53); padding-top: 100%; transform: translate(0px, 149.50390625px); background-image: url(http://johannlafer.de/assets/img/59ca266e4c2f5_59ca3cc442618_md.png);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ddcccb);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.15" lazy-img="assets/img/59ca266e4c2f5_59ca2ced90e1a_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(90, 84, 80); padding-top: 100%; transform: translate(0px, 77.43046875px); background-image: url(http://johannlafer.de/assets/img/59ca266e4c2f5_59ca2ced90e1a_md.jpg);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #f0eae6);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.2" lazy-img="assets/img/59ca266e4c2f5_59ca3c4106cff_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(211, 206, 204); padding-top: 100%; transform: translate(0px, 111.40937500000001px); background-image: url(http://johannlafer.de/assets/img/59ca266e4c2f5_59ca3c4106cff_md.jpg);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59ca2880520a2" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Zur Person</div>
+		<div class="headline ng-binding">Johann Lafer</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Johann Lafer blickt auf eine über 40jährige einzigartige kulinarische Karriere zurück. Als gebürtiger Steirer lernte er bereits in der Kindheit auf dem Bauernhof seiner Eltern, die Produkte der Natur zu schätzen und achtsam zu verarbeiten. Nach Lehrjahren bei den besten Köchen wie Eckart Witzigmann und Jörg und Dieter Müller erwarb er zusammen mit seiner Frau Silvia die Stromburg nahe Bingen. In zahlreichen erfolgreichen TV-Serien, Büchern, Magazinen und in seinem Restaurant Val d’Or auf der Stromburg beweist der beliebte Sternekoch Johann Lafer seit Jahren, dass er ein Meister seines Faches ist.</div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59ca288052120">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 270px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: 0;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c2991e1746e">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59c2991e1746e" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.2" lazy-img="assets/img/59c2991e1746e_59c8e9b396af2_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(170, 163, 156); padding-top: 100%; transform: translate(0px, 254.925px); background-image: url(http://johannlafer.de/assets/img/59c2991e1746e_59c8e9b396af2_md.jpg);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.15" lazy-img="assets/img/59c2991e1746e_59c4d4e1b658c_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(201, 195, 192); padding-top: 100%; transform: translate(0px, 178.921875px); background-image: url(http://johannlafer.de/assets/img/59c2991e1746e_59c4d4e1b658c_md.png);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.25" lazy-img="assets/img/59c2991e1746e_59c4d4e744ffd_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(207, 207, 195); padding-top: 100%; transform: translate(0px, 308.4140625px); background-image: url(http://johannlafer.de/assets/img/59c2991e1746e_59c4d4e744ffd_md.png);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3f0aeae378">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Gourmetrestaurant</div>
+		<div class="headline ng-binding">Le Val d'Or</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Genießen Sie außergewöhnliche Geschmackserlebnisse in den frisch renovierten Räumen des Gourmetrestaurants Le Val d’Or auf der Stromburg. <br><br>Unser Chef de Cuisine Marcus Noack und das Lafer-Team freuen sich darauf, unsere Gäste verwöhnen zu dürfen.</div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4e31232458">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 25px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3d56720c07" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: 150; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><!-- ngIf: imageController.image[module.uniqid].render.images.length > 1 --><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 --><div class="imagecontainer ripple" ng-if="imageController.image[module.uniqid].render.images.length &lt; 2" style="">
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) --><div ng-if="imageController.image[module.uniqid].render.images[0].is_360 !== '1' &amp;&amp; (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') &gt; -1)" lazy-img="/assets/img/59c3d56720c07_59ca32c0761ff_md.jpg" ng-style="{ 'padding-top': imageController.image[module.uniqid].render.images[0].aspectRatio * 100 + '%', 'background-color': imageController.image[module.uniqid].render.images[0].avgColor }" class="imageframe ng-scope" style="padding-top: 55.650929899857005%; background-color: rgb(67, 62, 57);"></div><!-- end ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mp4') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mov') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.webm') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.ogv') > -1 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption || imageController.image[module.uniqid].render.images[0].text -->
+		</div><!-- end ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4e3137ac57">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3d34e43daf" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-503-8439-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-503-8439-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="">
+						Öffnungszeiten <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-503-8439-panel" aria-labelledby="accordiongroup-503-8439-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="" ng-bind-html="module.fields.text | trustedHTML">Das Le Val d’Or hat für Sie geöffnet:<br><br>Mittwoch bis Sonntag <br>ab 18.00 Uhr<br><br>An Feiertagen <br>ab 12.00 - 14.00 Uhr sowie <br>ab 18.00 - 22.00 Uhr<br><br>Eine Reservierung ist unbedingt erforderlich.<br>Je nach Witterung verwöhnen wir Sie auch auf der ruhigen Ostterrasse. <br></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3d4352025e">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-505-3641-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-505-3641-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="">
+						Kontakt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-505-3641-panel" aria-labelledby="accordiongroup-505-3641-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="" ng-bind-html="module.fields.text | trustedHTML">Tel.: +49 67 24 - 93 10-0 <br>Fax: +49 67 24 - 93 10-90<br>E-Mail: <a href="mailto:stromburghotel@lafer.de">stromburghotel@lafer.de</a><p></p></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3d4582c2b7">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-507-5630-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-507-5630-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="">
+						Anfahrt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-507-5630-panel" aria-labelledby="accordiongroup-507-5630-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="" ng-bind-html="module.fields.text | trustedHTML">Johann Lafers Stromburg<br>Schloßberg 1<br>55442 Stromberg bei Bingen<br><br><br>HINWEIS: Bitte geben Sie in Ihrem Navigationsgerät die Michel-Obentraut-Straße als Ziel ein.<br><p></p></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c45717e53e0" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/die-stromburg/die-restaurants/le-val-dor/">
+				<div class="medium-button-text-container ">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader big button" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c3d35f19244" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper bigbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<!-- ngIf: module.fields.is_animated !== '1' --><div class="big-button ng-scope" ng-if="module.fields.is_animated !== '1'" ng-attr-style="background-color: {{ module.fields.button_color }};" style="background-color: #161110;">
+			<a class="big-button-outer static-outline" target="_blank" href="https://www.opentable.de/johann-lafers-le-val-dor-reservations-stromberg?restref=10482">
+				<div class="big-button-text-container ng-binding">
+					Tisch online reservieren
+				</div>
+			</a>
+		</div><!-- end ngIf: module.fields.is_animated !== '1' -->
+
+		<!-- ngIf: module.fields.is_animated === '1' -->
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59ca30a70cacf">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: ;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8f9e164e97">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 125px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader news" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4ca0ddc73f" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="news-module-outer ">
+	<div class="module fullwidth" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: rgba(255,255,255,1);">
+		<div class="module halfwidth wrapper newsmodule " ng-attr-style="color: {{ module.fields.font_color }};">
+
+			<!-- ngIf: module.fields.headline -->
+
+			<div class="news-content">
+				<div class="headline ng-binding"></div>
+				<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"></div>
+
+
+				<!-- ngIf: module.fields.youtube_url -->
+
+				<div ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" class="ng-scope">
+					<!-- ngRepeat: (k,img) in imageController.image[module.uniqid].render.images -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4f303c6234">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4d98893b28">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59c4d98893b28" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.2" lazy-img="assets/img/59c4d98893b28_59ca337c6ec42_md.jpg" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(25, 7, 19); padding-top: 100%; transform: translate(0px, 519.4093750000001px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #180612);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.15" lazy-img="assets/img/59c4d98893b28_59c4d9a27758f_md.png" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(45, 45, 44); padding-top: 100%; transform: translate(0px, 377.28515625px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #2c2c2b);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.3" lazy-img="assets/img/59c4d98893b28_59ca3cff769e9_md.jpg" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="padding-top: 100%; transform: translate(0px, 766.8234375px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #200cc);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4da0419de5">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<div class="module halfwidth wrapper textmodule inverted">
+		<div class="meta-headline ng-binding">Das Hotel</div>
+		<div class="headline ng-binding">Die Stromburg</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Das Lafer-Team will Sie auch in unserem Hotel auf Sterne-Niveau verwöhnen. Unsere Zimmer sollen Ihnen Entspannung und einen Standard auf modernstem Niveau bieten. Daher stecken wir alle Kraft und Zeit in die Renovierung. <br></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader important text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4da046ad9e" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper importanttextmodule inverted" ng-attr-style="color: {{ module.fields.font_color }};">
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Unsere Zimmer stehen Ihnen in neuem Glanz voraussichtlich ab März 2018 wieder zur Verfügung.</div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4566b43632">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-509-7478-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-509-7478-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="inverted">
+						Kontakt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-509-7478-panel" aria-labelledby="accordiongroup-509-7478-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="inverted" ng-bind-html="module.fields.text | trustedHTML">Tel.: +49 67 24 - 93 10-0 <br>Fax: +49 67 24 - 93 10-90<br>E-Mail: <a href="mailto:stromburghotel@lafer.de">stromburghotel@lafer.de</a><p><br></p></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5141c0b764">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/index.php?id=127">
+				<div class="medium-button-text-container inverted">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5141c872f4">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c4e7b229ad2">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 125px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: rgba(255,255,255,1);"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c542081d984">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 150px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5141f2d422">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: rgba(255,255,255,1);">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59c5141f2d422" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.25" lazy-img="assets/img/59c5141f2d422_59c515293c7b6_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(214, 214, 214); padding-top: 100%; transform: translate(0px, 855.1640625px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #d7d7d7);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.1" lazy-img="assets/img/59c5141f2d422_59c5153ea7145_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(214, 214, 214); padding-top: 100%; transform: translate(0px, 333.88437500000003px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #d7d7d7);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.35" lazy-img="assets/img/59c5141f2d422_59c51554b0b3b_md.png" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(214, 214, 214); padding-top: 100.40322580645%; transform: translate(0px, 1183.065625px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #d7d7d7);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5185f9068f">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Restaurant</div>
+		<div class="headline ng-binding">Bistro d'Or</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><br></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader important text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5185f2f4ea">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper importanttextmodule " ng-attr-style="color: {{ module.fields.font_color }};">
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Das Bistro d’Or wird auch renoviert und voraussichtlich Ende 2018 mit neuer Optik und neuem Konzept eröffnet. Lassen Sie sich überraschen!</div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a256fce17f1e">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-511-513-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-511-513-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="">
+						Kontakt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-511-513-panel" aria-labelledby="accordiongroup-511-513-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="" ng-bind-html="module.fields.text | trustedHTML">Tel.: +49 67 24 - 93 10-0 <br>Fax: +49 67 24 - 93 10-90<br>E-Mail: <a href="mailto:stromburghotel@lafer.de">stromburghotel@lafer.de</a><p><br></p></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5186301e5e">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/die-stromburg/die-restaurants/bistro-dor/">
+				<div class="medium-button-text-container ">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c518fc5178d">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a25681021729">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52ab9df013">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">JOHANN LAFER</div>
+		<div class="headline ng-binding">News</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><br><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a2569e23f2ef">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><!-- ngIf: imageController.image[module.uniqid].render.images.length > 1 --><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 --><div class="imagecontainer ripple" ng-if="imageController.image[module.uniqid].render.images.length &lt; 2" style="">
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) --><div ng-if="imageController.image[module.uniqid].render.images[0].is_360 !== '1' &amp;&amp; (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') &gt; -1)" lazy-img="/assets/img/5a2569e23f2ef_5a2a54f2b92a8_md.jpg" ng-style="{ 'padding-top': imageController.image[module.uniqid].render.images[0].aspectRatio * 100 + '%', 'background-color': imageController.image[module.uniqid].render.images[0].avgColor }" class="imageframe ng-scope" style="padding-top: 34.166666666667%; background-color: rgb(98, 88, 87);"></div><!-- end ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mp4') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mov') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.webm') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.ogv') > -1 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption || imageController.image[module.uniqid].render.images[0].text -->
+		</div><!-- end ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader news" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a2563bd6d7d9">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="news-module-outer ">
+	<div class="module fullwidth" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+		<div class="module halfwidth wrapper newsmodule " ng-attr-style="color: {{ module.fields.font_color }};">
+
+			<!-- ngIf: module.fields.headline -->
+
+			<div class="news-content">
+				<div class="headline ng-binding">Advents-Matinee</div>
+				<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><div>Das vorweihnachtliche Programm gestalten der weltberühmten Wagner-Tenor Stefan Vinke und seine Frau Sabine Vinke (Sopran) aus Hargesheim, sowie das Pianistenpaar Yuki Nagatsuka und Gerhard Wöllstein aus Merxheim.<br></div><div><br></div><div>Karten für das Konzerterlebnis am <b>Sonntag, den 17. Dezember</b>&nbsp;im Rosensaal der Stromburg können zum Preis von 25 Euro (Schüler und Studenten zahlen nur 20 Euro) bestellt werden. Anschließend bieten Lafers ein Genießer-Menü zum Preis von 55 Euro (zzgl. Getränke) an. Kartenbestellungen und/oder Menü-Reservierung unter Telefon 06724/93100 oder per E-Mail an hotel@stromburg.com.</div><p></p></div>
+
+
+				<!-- ngIf: module.fields.youtube_url -->
+
+				<div ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" class="ng-scope">
+					<!-- ngRepeat: (k,img) in imageController.image[module.uniqid].render.images -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a25709abf2a0">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 18px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader news" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a256f507d591">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="news-module-outer ">
+	<div class="module fullwidth" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+		<div class="module halfwidth wrapper newsmodule " ng-attr-style="color: {{ module.fields.font_color }};">
+
+			<!-- ngIf: module.fields.headline -->
+
+			<div class="news-content">
+				<div class="headline ng-binding">Das neue Magazin "Lafer"</div>
+				<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Das Magazin ist überall im Zeitschriftenhandel und bei uns am Empfang auf der Stromburg erhältlich.<br><p></p></div>
+
+
+				<!-- ngIf: module.fields.youtube_url -->
+
+				<div ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" class="ng-scope">
+					<!-- ngRepeat: (k,img) in imageController.image[module.uniqid].render.images --><div class="image-container ng-scope" ng-repeat="(k,img) in imageController.image[module.uniqid].render.images" style="">
+						<!-- ngIf: !(img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1) --><div class="image ng-scope" ng-if="!(img.name.toLowerCase().indexOf('mp4') &gt; -1 || img.name.toLowerCase().indexOf('mov') &gt; -1 || img.name.toLowerCase().indexOf('webm') &gt; -1 || img.name.toLowerCase().indexOf('ogv') &gt; -1)" lazy-img="/assets/img/5a256f507d591_5a256fc4ded34_md.png" ng-attr-style="{{ img.avgColor ? 'background-color: ' + img.avgColor + ';' : '' }} background-attachment: static; padding-top: {{ img.aspectRatio * (60) }}%;" style=" background-attachment: static; padding-top: 51.2158808933004%;">
+							<!-- ngIf: img.description -->
+						</div><!-- end ngIf: !(img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1) -->
+						<!-- ngIf: img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1 -->
+					</div><!-- end ngRepeat: (k,img) in imageController.image[module.uniqid].render.images -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader big button" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8f678f2b73">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper bigbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<!-- ngIf: module.fields.is_animated !== '1' --><div class="big-button ng-scope" ng-if="module.fields.is_animated !== '1'" ng-attr-style="background-color: {{ module.fields.button_color }};" style="background-color: #161110;">
+			<a class="big-button-outer static-outline" target="_blank" href="http://shop.jalag.de/lafer/">
+				<div class="big-button-text-container ng-binding">
+					Magazin bestellen
+				</div>
+			</a>
+		</div><!-- end ngIf: module.fields.is_animated !== '1' -->
+
+		<!-- ngIf: module.fields.is_animated === '1' -->
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a25709abf666">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 24px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader news" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8de38eeb48">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="news-module-outer ">
+	<div class="module fullwidth" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+		<div class="module halfwidth wrapper newsmodule " ng-attr-style="color: {{ module.fields.font_color }};">
+
+			<!-- ngIf: module.fields.headline -->
+
+			<div class="news-content">
+				<div class="headline ng-binding">NEU: Lafer – Das Beste</div>
+				<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><b>Die besten Rezepte von Johann Lafer.<br></b>Dieses Buch bietet alles, was Sie aus Lafers Meisterküche immer schon einmal wissen wollten.<br><br>Das Buch ist im Handel und bei uns am Empfang auf der Stromburg erhältlich.<br><p></p></div>
+
+
+				<!-- ngIf: module.fields.youtube_url -->
+
+				<div ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" class="ng-scope">
+					<!-- ngRepeat: (k,img) in imageController.image[module.uniqid].render.images --><div class="image-container ng-scope" ng-repeat="(k,img) in imageController.image[module.uniqid].render.images" style="">
+						<!-- ngIf: !(img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1) --><div class="image ng-scope" ng-if="!(img.name.toLowerCase().indexOf('mp4') &gt; -1 || img.name.toLowerCase().indexOf('mov') &gt; -1 || img.name.toLowerCase().indexOf('webm') &gt; -1 || img.name.toLowerCase().indexOf('ogv') &gt; -1)" lazy-img="/assets/img/59c8de38eeb48_59c8e750a32d0_md.jpg" ng-attr-style="{{ img.avgColor ? 'background-color: ' + img.avgColor + ';' : '' }} background-attachment: static; padding-top: {{ img.aspectRatio * (60) }}%;" style="background-color: #a8b4b2; background-attachment: static; padding-top: 76.37755102041%;">
+							<!-- ngIf: img.description -->
+						</div><!-- end ngIf: !(img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1) -->
+						<!-- ngIf: img.name.toLowerCase().indexOf('mp4') > -1 || img.name.toLowerCase().indexOf('mov') > -1 || img.name.toLowerCase().indexOf('webm') > -1 || img.name.toLowerCase().indexOf('ogv') > -1 -->
+					</div><!-- end ngRepeat: (k,img) in imageController.image[module.uniqid].render.images -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader big button" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c527ab1aa41">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper bigbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<!-- ngIf: module.fields.is_animated !== '1' --><div class="big-button ng-scope" ng-if="module.fields.is_animated !== '1'" ng-attr-style="background-color: {{ module.fields.button_color }};" style="background-color: #161110;">
+			<a class="big-button-outer static-outline" target="_blank" href="https://lafer-shop.de/Lafer-Das-Beste-Kochbuch">
+				<div class="big-button-text-container ng-binding">
+					Buch bestellen
+				</div>
+			</a>
+		</div><!-- end ngIf: module.fields.is_animated !== '1' -->
+
+		<!-- ngIf: module.fields.is_animated === '1' -->
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8fbac5ae31">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader date list" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c525647be58" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper datelistmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+		<div class="headline ng-binding">Sendetermine</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><ul><li>20.11. bis 24.11. – Küchenschlacht | ZDF</li><li>02.12. – Kerners Köche | ZDF</li><li>09.12. – DAS! | NDR</li><li>23.12. – Kerners Köche: Festtagsmenü | ZDF</li><li>15.01. bis 18.01. – Küchenschlacht: 10 Jahre Küchenschlacht | ZDF</li></ul><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c92278a9166">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 50px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a2563bd6e2a5">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 50px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a2563bd6e3dd">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">JOHANN LAFER</div>
+		<div class="headline ng-binding">Newsletter</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><br>Sie möchten regelmäßige Tipps rund ums Genießen und Essen sowie über aktuelle Termine informiert werden?<br style="font-family: SourceSans-Regular;"><br style="font-family: SourceSans-Regular;">Melden Sie sich doch einfach bei unserem Newsletter an.<br><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader iframe" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c92e6dae777" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module halfwidth iframemodule ng-scope">
+	<div class="headline ng-binding"></div>
+	<iframe ng-src="http://scnem.com/art_resource.php?sid=10iku.19mc7fp,f=20" width="190" height="280" frameborder="0" src="http://scnem.com/art_resource.php?sid=10iku.19mc7fp,f=20"></iframe>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8f7f068d3b">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 200px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: rgba(255,255,255,1);"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c51b5be0c54">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59c51b5be0c54" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.25" lazy-img="assets/img/59c51b5be0c54_59c9176d1f556_md.jpg" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(98, 93, 99); padding-top: 100%; transform: translate(0px, 1729.546875px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #f8f3f9);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.15" lazy-img="assets/img/59c51b5be0c54_59c916ccab828_md.jpg" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(37, 37, 37); padding-top: 100%; transform: translate(0px, 1025.45625px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #242424);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.2" lazy-img="assets/img/59c51b5be0c54_59c92259ecfef_md.jpg" class="imageframe inverted-shadow offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(117, 108, 97); padding-top: 100%; transform: translate(0px, 1375.4437500000001px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #fffff7);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c51c46de8f6">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<div class="module halfwidth wrapper textmodule inverted">
+		<div class="meta-headline ng-binding">Bankettservice</div>
+		<div class="headline ng-binding">Catering &amp; Events</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Johann Lafer kocht für Sie auch auswärts. Ob für 20 oder 2000 Gäste, wir organsieren für Sie das Catering der besonderen Art.</div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c900ffe5223">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: ;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52174b20de">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-513-4366-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-513-4366-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="inverted">
+						Kontakt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-513-4366-panel" aria-labelledby="accordiongroup-513-4366-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="inverted" ng-bind-html="module.fields.text | trustedHTML">Tel.: +49 67 24 - 93 10-24<br>Fax: +49 67 24 - 93 10-90<br>E-Mail: <a href="mailto:events@lafer.de">events@lafer.de</a></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c8fbac5b2ec">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/kochen/catering-events/">
+				<div class="medium-button-text-container inverted">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52e6d82cbd">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 85px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c545b0a0892">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><!-- ngIf: imageController.image[module.uniqid].render.images.length > 1 --><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 --><div class="imagecontainer ripple" ng-if="imageController.image[module.uniqid].render.images.length &lt; 2" style="">
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) --><div ng-if="imageController.image[module.uniqid].render.images[0].is_360 !== '1' &amp;&amp; (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') &gt; -1)" lazy-img="/assets/img/59c545b0a0892_59c54606a436b_md.png" ng-style="{ 'padding-top': imageController.image[module.uniqid].render.images[0].aspectRatio * 100 + '%', 'background-color': imageController.image[module.uniqid].render.images[0].avgColor }" class="imageframe ng-scope" style="padding-top: 34.166666666667%; background-color: rgb(117, 115, 77);"></div><!-- end ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mp4') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mov') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.webm') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.ogv') > -1 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption || imageController.image[module.uniqid].render.images[0].text -->
+		</div><!-- end ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52e6b33b12">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<div class="module halfwidth wrapper textmodule inverted">
+		<div class="meta-headline ng-binding"></div>
+		<div class="headline ng-binding"></div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><h2>Heligourmet</h2>Das besondere Geschenk: Mit dem Helikopter über die Stromburg fliegen und an einem romantischen Ort im Freien dinieren.<br><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52e6cc9bb4">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/kochen/heli-gourmet/heli-gourmet/">
+				<div class="medium-button-text-container inverted">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52175e28de">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #4F4D4D;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52ab967da3">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 50px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a2563bd6f2d4">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Kochkurse</div>
+		<div class="headline ng-binding">Lernen &amp; Genießen</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c544098da5a">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><!-- ngIf: imageController.image[module.uniqid].render.images.length > 1 --><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 --><div class="imagecontainer ripple" ng-if="imageController.image[module.uniqid].render.images.length &lt; 2" style="">
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) --><div ng-if="imageController.image[module.uniqid].render.images[0].is_360 !== '1' &amp;&amp; (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') &gt; -1)" lazy-img="/assets/img/59c544098da5a_59c5442c510d3_md.png" ng-style="{ 'padding-top': imageController.image[module.uniqid].render.images[0].aspectRatio * 100 + '%', 'background-color': imageController.image[module.uniqid].render.images[0].avgColor }" class="imageframe ng-scope" style="padding-top: 34.166666666667%; background-color: rgb(145, 133, 137);"></div><!-- end ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mp4') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mov') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.webm') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.ogv') > -1 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption || imageController.image[module.uniqid].render.images[0].text -->
+		</div><!-- end ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52abc31063">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding"></div>
+		<div class="headline ng-binding"></div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><h2>Table d'Or – Kochen lernen&nbsp; mit modernster Technik</h2>Bei uns lernen Sie von und mit Johann Lafer persönlich. Es wird gemeinsam gekocht und gespeist, ein kulinarisches Erlebnis in entspannter Atmosphäre!<p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader accordion" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52abadd7a6">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper accordionmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<uib-accordion close-others="oneAtATime" template-url="templates/bootstrap/accordion/accordion.html"><div role="tablist" class="panel-group container" ng-transclude="">
+			<div uib-accordion-group="" class="panel-default ng-scope ng-isolate-scope panel" is-open="status.open" template-url="templates/bootstrap/accordion/accordion-group.html"><div role="tab" id="accordiongroup-515-1328-tab" aria-selected="" class="panel-heading caption-container" ng-keypress="toggleOpen($event)">
+  <h4 class="panel-title caption ">
+    <a role="button" data-toggle="collapse" href="" aria-expanded="" aria-controls="accordiongroup-515-1328-panel" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle=""><span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding">
+					<div class="">
+						Kontakt <img ng-src="assets/accordion_btn_arrow.png" class="pull-right icon" src="assets/accordion_btn_arrow.png">
+					</div>
+				</span></a>
+  </h4>
+</div>
+<div id="accordiongroup-515-1328-panel" aria-labelledby="accordiongroup-515-1328-tab" aria-hidden="true" role="tabpanel" class="panel-collapse text-container collapsing" uib-collapse="!isOpen" aria-expanded="false" style="height: 0px;">
+  <div class="panel-body text-container-inner" ng-transclude="">
+				<uib-accordion-heading class="ng-scope"></uib-accordion-heading>
+				<div class="" ng-bind-html="module.fields.text | trustedHTML">Tel.: +49 67 07 - 94 95 0 <br>Fax: +49 67 07 - 94 95 45 <br>E-Mail: <a href="mailto:tabledor@lafer.de">tabledor@lafer.de</a></div>
+			</div>
+</div>
+</div>
+
+	</div>
+</uib-accordion></div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c527adb675a">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/kochen/table-dor/table-dor/">
+				<div class="medium-button-text-container ">Weitere Informationen<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52e6aacb41">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 90px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550f815">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52f785effb">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 150px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader imagecloud" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c52e6e0ad9f">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="imagecloud offset-to-top" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="slider-wrapper" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }};" style="max-height: none;">
+		<ul class="imagecloudlist" id="59c52e6e0ad9f" ng-init="distTop = imageController.getTopOffset(module.uniqid);">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);" style="">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.25" lazy-img="assets/img/59c52e6e0ad9f_59c90a44cf4e8_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(218, 215, 190); padding-top: 100%; transform: translate(0px, 2170.32421875px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.15" lazy-img="assets/img/59c52e6e0ad9f_59c910dd3f89b_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(213, 212, 206); padding-top: 100%; transform: translate(0px, 1271.17265625px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images --><li class="slide right" ng-repeat="slide in imageController.image[module.uniqid].render.images" ng-init="imgsrc = 'assets/img/' + (imageController.mobile ? slide.name_xs : slide.name_md);">
+				<div parallax="" parallax-vertical-offset="" parallax-ratio="-0.2" lazy-img="assets/img/59c52e6e0ad9f_59c90a9fe4d41_md.jpg" class="imageframe  offset-to-top" ng-attr-style="background-color: {{ slide.avgColor }}; padding-top:{{ slide.aspectRatio * 100 }}%;" style="background-color: rgb(208, 194, 181); padding-top: 100%; transform: translate(0px, 1703.0656250000002px);">
+					<div class="background-gradient" ng-attr-style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, {{ imageController.lightenColor(slide.avgColor, slide.lighten ? slide.lighten : 150) }});" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #ffffff);">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</ul>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c531620e9b8">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Service</div>
+		<div class="headline ng-binding">Rezepte</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML">Hier finden Sie Köstlichkeiten und Rezepte aus Johann Lafers Rezeptdatenbank.<p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c5347507622">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="http://www.lafer.de/index.php?id=170">
+				<div class="medium-button-text-container ">Zu den Rezepten<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c53ec939270">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #F3F3F3;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550fb1a">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 70;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550fb9d">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding">Online-Shop</div>
+		<div class="headline ng-binding">Genuss-Boutique</div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550f682">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images --><!-- ngIf: imageController.image[module.uniqid].render.images.length > 1 --><!-- end ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 --><div class="imagecontainer ripple" ng-if="imageController.image[module.uniqid].render.images.length &lt; 2" style="">
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) --><div ng-if="imageController.image[module.uniqid].render.images[0].is_360 !== '1' &amp;&amp; (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') &gt; -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') &gt; -1)" lazy-img="/assets/img/5a0db3550f682_5a0db88fe7df3_md.jpg" ng-style="{ 'padding-top': imageController.image[module.uniqid].render.images[0].aspectRatio * 100 + '%', 'background-color': imageController.image[module.uniqid].render.images[0].avgColor }" class="imageframe ng-scope" style="padding-top: 34.166666666667%; background-color: rgb(122, 115, 119);"></div><!-- end ngIf: imageController.image[module.uniqid].render.images[0].is_360 !== '1' && (imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpeg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.jpg') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.gif') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.png') > -1) -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mp4') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.mov') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.webm') > -1 || imageController.image[module.uniqid].render.images[0].name.toLowerCase().indexOf('.ogv') > -1 -->
+			<!-- ngIf: imageController.image[module.uniqid].render.images[0].caption || imageController.image[module.uniqid].render.images[0].text -->
+		</div><!-- end ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550fc65">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;"></div>
+	<div class="module halfwidth wrapper textmodule ">
+		<div class="meta-headline ng-binding"></div>
+		<div class="headline ng-binding"></div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><h2>Kochen Sie mit Lebensmitteln von Johann Lafer!<br></h2>In unserem Online-Shop finden Sie Koch-Accessoires, Kochbücher und Gewürze.<p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550fd2d">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader mediumbutton" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550fe1d">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="module halfwidth wrapper mediumbuttonmodule" ng-attr-style="color: {{ module.fields.font_color }};">
+
+		<div class="medium-button" ng-attr-style="background-color: {{ module.fields.button_color }};">
+			<a class="medium-button-outer" target="_blank" href="https://www.lafer-shop.de/">
+				<div class="medium-button-text-container ">Zum Online-Shop<img src="assets/medium_btn_arrow.png" class="icon"></div>
+			</a>
+		</div>
+
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader image" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db3550febd">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="picturemodule module fullwidth ng-scope" ng-controller="ImageController as imageController" ng-init="imageController.getImagesWithModuleId(module.uniqid)" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: ;">
+	<div class="slider-wrapper module halfwidth" ng-attr-style="max-height: {{ module.fields.maxheight &amp;&amp; module.fields.maxheight || 'none' }}; overflow:hidden;" style="max-height: none; overflow:hidden;">
+		<!-- ngIf: module.fields.is_gallery !== '1' --><div ng-if="module.fields.is_gallery !== '1'" uib-carousel="" class="carousel slide ng-scope ng-isolate-scope" active="active" interval="module.fields.interval" no-wrap="module.fields.loop" template-url="node_modules/angular-ui-bootstrap/template/carousel/carousel.html" no-transition="false"><div class="carousel-inner" ng-transclude="">
+			<!-- ngRepeat: slide in imageController.image[module.uniqid].render.images -->
+		</div>
+<a role="button" href="" class="left carousel-control ng-hide" ng-click="prev()" ng-class="{ disabled: isPrevDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a role="button" href="" class="right carousel-control ng-hide" ng-click="next()" ng-class="{ disabled: isNextDisabled() }" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">next</span>
+</a>
+<ol class="carousel-indicators ng-hide" ng-show="slides.length &gt; 1" aria-hidden="true" style="">
+  <!-- ngRepeat: slide in slides | orderBy:indexOfSlide track by $index -->
+</ol>
+</div><!-- end ngIf: module.fields.is_gallery !== '1' -->
+		<!-- ngIf: imageController.image[module.uniqid].render.images.length < 2 -->
+		<!-- ngIf: module.fields.is_gallery === '1' -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader lafer links" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a3a7810bcf9f" style="">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope" ng-attr-style="background-color: #FFF" style="background-color: #FFF">
+	<div class="module halfwidth wrapper laferlinksmodule">
+
+		<div class="container_top">
+			<div class="illu-lafer" lazy-img="assets/illu-lafer.png"></div>
+		</div>
+		<div class="container_top">
+			<a href="https://www.facebook.com/johannlafer/" target="_blank"><div class="fb_follow" lazy-img="assets/fb_follow.png"></div></a>
+		</div>
+		<!--
+		<div>
+			<div class="container_bottom">
+				<div class="container_padding">
+					<div class="relais_chateaux" lazy-img="assets/relais_chateaux.png"></div>
+				</div>
+				<div class="container_padding">
+					<div class="guide_michelin" lazy-img="assets/guide-michelin.png"></div>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<!-- <div class="button_container">
+			<div class="button_top" ng-click="mainController.scrollTo('header_top')">
+				<img src="assets/arrow_to_top.svg">nach oben
+			</div>
+		</div> -->
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c53475f00d6">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #161110;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader text" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-59c534767d087">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="module fullwidth ng-scope">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #161110;"></div>
+	<div class="module halfwidth wrapper textmodule inverted">
+		<div class="meta-headline ng-binding"></div>
+		<div class="headline ng-binding"></div>
+		<div class="text-container">
+			<div class="text ng-binding" ng-bind-html="module.fields.text | trustedHTML"><a href="http://www.lafer.de/impressum/">Impressum &amp; Datenschutz</a><br><br>Kontakt:<br>Le Val d'Or Restaurant GmbH &amp; Co. KG<br>in Johann Lafers Stromburg<br><br>Schloßberg 1<br>55442 Stromberg bei Bingen<br>Deutschland<br><br>Tel.: +49 6724 - 93 10-0<br>Fax: +49 6724 - 93 10-90<br><br><br>© 2017 Johann Lafer. Alle Rechte vorbehalten<br><br>Fotografien: Michael Wissing; Reinhard Hunger; Peter Hönnemann<br>Styling: Christoph Himmel<br>Illustration: Alex Solmann<br><p></p></div>
+		</div>
+	</div>
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index --><li class="moduleloader seperator" ng-repeat="module in liveController.page.render.data.modules track by $index" id="module-5a0db355100db">
+			<!-- ngIf: mainController.response.session.level < 2 -->
+			<!-- ngInclude: module.template --><div class="moduleembed ng-scope" ng-include="module.template" ng-init="liveController.setMetaDescription()"><div class="seperator ng-scope" ng-attr-style="height: {{ module.fields.height }};" style="height: 35px;">
+	<div class="module-background-wrapper" ng-attr-style="background-color: {{ module.fields.background_color }};" style="background-color: #161110;"></div>
+	<!-- ngIf: module.fields.is_hr -->
+</div>
+</div>
+		</li><!-- end ngRepeat: module in liveController.page.render.data.modules track by $index -->
+	</ul>
+	<!-- ngIf: !mainController.response.session.level --><button ng-if="!mainController.response.session.level" class="glyphicon glyphicon-menu-up back-to-top btt-invisible" ng-click="mainController.scrollTo('header_top');"></button><!-- end ngIf: !mainController.response.session.level -->
+</div>
+</div>
+	
+
+</body></html>

@@ -1,0 +1,48 @@
+<html><head><title>[domain parked]</title><script language="JavaScript">
+<!--
+// browser test:
+agent = navigator.userAgent
+browserVer = 2
+if (agent.indexOf("a/3",6) != -1)
+    {browserVer = 1}
+else
+    {if (agent.indexOf("a/4",6) != -1)
+        browserVer = 1}
+// preload universal images:
+if (browserVer == 1) {
+pic1 = new Image(135,33);
+pic1.src = "http://www.publicompserver.de/intern/under-construction/mid_2.gif";
+pic2 = new Image(135,33);
+pic2.src = "http://www.publicompserver.de/intern/under-construction/mid.gif";
+}
+function ImgFunc(imgDocID,imgObjName) {
+if (browserVer == 1) {
+document.images[imgDocID].src = eval(imgObjName + ".src")
+}}
+// -->
+</script></head>
+
+<body bgcolor="White" link="#000000" vlink="#000000">
+<center>
+  <table border="0" height="95%">
+    <tbody><tr align="center" valign="middle"> 
+      <td> 
+        <p><img src="http://www.publicompserver.de/intern/under-construction/left.gif" width="159" height="225" border="0"><a href="index.html" onmouseover="ImgFunc('pic1','pic2')" onmouseout="ImgFunc('pic1','pic1')"><img name="pic1" src="http://www.publicompserver.de/intern/under-construction/mid.gif" width="169" height="225" border="0"></a><img src="http://www.publicompserver.de/intern/under-construction/right.gif" width="130" height="225" border="0"><img src="http://www.publicompserver.de/intern/under-construction/space.gif" width="29" height="225" border="0"></p>
+        <p align="center">
+        </p><p><font face="Arial, Helvetica, sans-serif" size="1">Für den Inhalt dieser 
+          Seite ist allein der Domaininhaber verantwortlich. </font></p>
+        <p> </p>
+        <p> </p>
+        <p>&nbsp;</p>
+		<p><small><font color="#000000" face="Arial"><small>Diese Seite wird 
+		gehostet von:</small></font></small> </p>
+		<p><a target="_blank" href="http://www.publicomp.de"><img border="0" src="http://www.publicompserver.de/intern/under-construction/logo.jpg" width="250" height="98"></a></p>
+        <font face="Arial, Helvetica, sans-serif" size="1">
+<p align="center">Postanschrift: publicompserver.de &amp; shop-hosting.info, Obere Bachgasse 22, D-92237 Sulzbach-Rosenberg, fon&amp;fax: +49 (0) 9661-8763388 +49 (0) 9661-8763389 
+</p>
+        </font>
+      </td>
+  </tr></tbody></table>
+</center>
+<p align="center"> </p>
+</body></html>

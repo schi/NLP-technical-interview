@@ -1,0 +1,287 @@
+<!--?xml version="1.0" encoding="ISO-8859-1" ?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+<title>Buchhai - die Bücher-Preissuchmaschine und Bücher-Preisvergleich für gebrauchte, vergriffene und neue Bücher, CDs, DVDs, BluRay</title>
+<meta name="google-site-verification" content="-wO3mCgjIqfcKIyIShKzbXqLYgQ2l1DFrrN4CKRNR4g">
+<meta name="google-site-verification" content="c9RPiP-g3so7xOTIw9MNYh2xomNhYymQ1OX4N5XbYgQ">
+<meta name="keywords" content="Buchhai, Buchpreise, Buch, Bücher, gebrauchte Bücher, Preisvergleich, Bücher Preisvergleich, Bücher Suchmaschine">
+<meta name="description" content="Preissuchmaschine und Preisvergleich für gebrauchte, vergriffene und neue Bücher, CDs, DVDs, BluRays">
+<meta name="robots" content="index, follow">
+
+<link href="css/my_layout_2col.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://www.buchhai.de/favicon.ico">
+
+<!--[if lte IE 7]>
+<link href="css/patches/patch_my_layout.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/NumberFormat154.js"></script>
+<script type="text/javascript" src="js/buchhai-min.js"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	options = { serviceUrl:'suggest.php' };
+	a = $('#sHeadKeyword').autocomplete(options);
+});
+//-->
+</script>
+<style type="text/css">
+<!--
+ul.apps {
+	margin: 0;
+	padding: 0;
+}
+
+ul.apps li {
+	display: inline;
+	padding-right: 20px;
+}
+-->
+</style>
+</head><body><div id="WzTtDiV" style="visibility: hidden; position: absolute; overflow: hidden; padding: 0px; width: 0px; left: 0px; top: 0px;"></div>
+  <script type="text/javascript" src="js/wz_tooltip.js"></script>
+  <div class="page_margins">
+    <div class="page">
+      <div id="main">
+        <div id="col1">
+          <div id="col1_content" class="clearfix">
+            <!-- add your content here -->
+            			<div id="header">
+				<div style="float: left; margin: -3px 0 0 -3px;"><a href="/"><img src="gfx/buchhai-logo.jpg"></a></div>
+	            <h2 style="padding: 0; margin: 0 0 -3px 125px; font-weight: bold;">Buchhai - Preisvergleich für Bücher</h2>
+	            <div style="font-size: 120%; margin-left: 126px; padding: 0; font-weight: bold; color: #222;">für gebrauchte, vergriffene und neue Bücher, CDs, DVDs (Beta)</div>
+		        <form action="/" class="yform" style="border: none; background-color: transparent; padding: 0px;" role="application" id="formfSearch">
+		        <div class="type-text float_left">
+					<input type="text" style="clear: left; width: 300px;" name="sHeadKeyword" id="sHeadKeyword" value="Suchbegriff..." onfocus="if (this.value.length==0||this.value=='Suchbegriff...'){this.style.color='#000'; this.value=''}" onblur="if (this.value.length==0){this.style.color='#444'; this.value='Suchbegriff...'}" autocomplete="off">
+				</div>
+				<div class="type-button float_left">
+					<input type="button" value="Suchen" id="fSearch" name="fSearch" style="padding: 3px 15px 3px 15px;">
+					<a href="/" id="searchView" class="orange">Erweiterte Suche</a>
+					<a href="/buecher.php" class="orange">Stöbern</a>
+				</div>
+				</form>
+			</div>		
+            <div id="content">
+            	<div id="emptyProductBar"><img src="gfx/blank.gif" height="20"></div>
+				<div id="productRecommendation">
+					<div id="productSearch"></div>
+				</div>
+				<div id="resultNavi">
+					<div class="sortBox">
+						<form method="post" id="changeSort">
+						<select id="sort" name="sort" class="smallSelect">
+							<option value="-1">Sortieren</option>
+							<option value="1">Autor A-Z</option>
+							<option value="2">Autor Z-A</option>
+							<option value="3">Titel A-Z</option>
+							<option value="4">Titel Z-A</option>
+							<option value="5">Preis aufsteigend</option>
+							<option value="6">Preis fallend</option>
+						</select>
+						</form>
+					</div>
+
+					<table cellspacing="0" cellpadding="0" border="0" width="790px">
+						<tbody><tr>
+							<td colspan="3" style="height: 20px; background: url('gfx/navi-bg.gif') no-repeat;">
+								<div id="navibar">
+									<div id="tabbed1_1" onmouseover="doHover('tabbed1',1)" onmouseout="doHover('tabbed1',2)" style="float: left; background: url('gfx/navi-start.gif') no-repeat; width: 10px; height: 20px;">&nbsp;</div>
+									<div id="tabbed1_2" onmouseover="doHover('tabbed1',1)" onmouseout="doHover('tabbed1',2)" style="float: left; background: url('gfx/navi-middle.gif') repeat-x; width: 120px; height: 20px; text-align: center;"><div style="padding-top: 2px;"><a href="#" id="portalView" class="naviLink" onfocus="this.blur()">Portalansicht</a></div></div>
+									<div id="tabbed1_3" onmouseover="doHover('tabbed1',1)" onmouseout="doHover('tabbed1',2)" style="float: left; background: url('gfx/navi-right.gif') no-repeat; width: 18px; height: 20px;">&nbsp;</div>
+									<div style="margin-left:-18px; float:left;">
+										<div id="tabbed2_1" onmouseover="doHover('tabbed2',1)" onmouseout="doHover('tabbed2',2)" style="float: left; background: url('gfx/navi-left.gif') no-repeat; width: 18px; height: 20px;"></div>
+									</div>
+									<div id="tabbed2_2" onmouseover="doHover('tabbed2',1)" onmouseout="doHover('tabbed2',2)" style="float: left; background: url('gfx/navi-middle-off.gif') repeat-x; width: 120px; height: 20px; text-align: center;"><div style="padding: 2px 0 0 6px;"><a href="#" id="listView" class="naviLinkOff" onfocus="this.blur()">Listenansicht</a></div></div>
+									<div id="tabbed2_3" onmouseover="doHover('tabbed2',1)" onmouseout="doHover('tabbed2',2)" style="float: left; background: url('gfx/navi-right-off.gif') no-repeat; width: 18px; height: 20px;"></div>
+								</div>
+							</td>
+						</tr>
+						 
+						<tr>
+							<td style="border-left: 1px solid #D0D0D0; padding-right: 10px;"><!-- linker Rand --></td>
+							<td>
+								<div id="query"></div>
+								<div id="pages"></div>
+							</td>
+							<td style="border-right: 1px solid #D0D0D0; padding-left: 10px;"><!-- rechter Rand --></td>
+						</tr>
+						<tr>
+							<td style="border-left: 1px solid #D0D0D0; padding-right: 10px;"><!-- linker Rand --></td>
+							<td>
+								<!-- Listenansicht -->
+								<div id="listings">
+									<div class="searchlist">
+										<div id="searchboxContent"><p align="center"><img src="gfx/book-loader.gif" width="31" height="31" border="0"></p></div>
+									</div>
+									
+									<div id="pages2"></div>
+								</div>
+								<!-- Listenansicht Ende -->
+								
+								<!-- Portalansicht -->
+								<div id="portals">
+                                                                        <!-- ZVAB -->
+									<div class="resArea">
+										<div id="zvaRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/zvab.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="zvaLoad" style="float: right; margin-right: 30px;"></div>ZVAB</div>
+										</div>
+										<div id="zva" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+                                                                        
+                                                                        <!-- Buchfreund -->
+									<div class="resArea">
+										<div id="bufRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/buchfreund.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="bufLoad" style="float: right; margin-right: 30px;"></div>Buchfreund</div>
+										</div>
+										<div id="buf" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+                                                                        
+                                                                        <!-- Abebooks -->
+									<div class="resArea">
+										<div id="abeRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/abebooks.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="abeLoad" style="float: right; margin-right: 30px;"></div>Abebooks</div>
+										</div>
+										<div id="abe" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+                                                                        
+                                                                        <!-- Achtung-Buecher -->
+                                                                        <div class="resArea">
+										<div id="abuRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/achtung-buecher.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="abuLoad" style="float: right; margin-right: 30px;"></div>Achtung-Bücher.de</div>
+										</div>
+										<div id="abu" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+                                                                        <!-- Booklooker -->
+									<div class="resArea">
+										<div id="bokRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/booklooker.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="bokLoad" style="float: right; margin-right: 30px;"></div>Booklooker</div>
+										</div>
+										<div id="bok" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+                                                                        
+                                                                        <!-- Amazon -->
+									<div class="resArea">
+										<div id="amaRes" class="resultsHead">
+											<div style="padding-top: 4px; padding-left: 10px;"><img src="gfx/amazon.gif" width="16" height="16" style="float: left; margin-right: 5px"><div id="amaLoad" style="float: right; margin-right: 30px;"></div>Amazon</div>
+										</div>
+										<div id="ama" class="searchbox">
+											<div class="searchboxContent"></div>
+										</div>
+									</div>
+									
+								</div>
+								<!-- Portalansicht Ende -->
+							</td>
+							<td style="border-right: 1px solid #D0D0D0; padding-left: 10px;"><!-- rechter Rand --></td>
+						</tr>
+						<tr>
+							<td style="border-left: 1px solid #D0D0D0; padding-right: 10px;"><!-- linker Rand --></td>
+							<td>&nbsp;</td>
+							<td style="border-right: 1px solid #D0D0D0; padding-left: 10px;"><!-- rechter Rand --></td>
+						</tr>
+						<tr>
+							<td colspan="3" style="border-top: 1px solid #D0D0D0;"><!-- oberer Rand --></td>
+						</tr>
+					</tbody></table>					
+				</div>
+				
+				<!-- Suchansicht -->
+				<div id="searches">
+					<div style="float: right; margin: 0 0 0 20px"><img src="gfx/buchhai.jpg"></div>
+					<form method="post" action="" class="yform" role="application" id="searchForm">
+					<input type="hidden" name="doSearch" value="1">
+										<fieldset>
+              			<legend>Erweiterte Suche</legend>
+              			<div class="type-text">
+			                <label for="titel">Titel</label>
+			                <input type="text" name="sTitle" id="sTitle" style="width: 90%" value="">
+			            </div>
+			            <div class="type-text">
+			                <label for="autor">Autor</label>
+			                <input type="text" name="sAuthor" id="sAuthor" style="width: 90%" value="">
+			            </div>
+			            <div class="type-text">
+			                <label for="volltext">Volltext</label>
+			                <input type="text" name="sKeyword" id="sKeyword" style="width: 90%" value="">
+			            </div>
+			            <div class="type-text">
+			                <label for="isbn">ISBN</label>
+			                <input type="text" name="sISBN" id="sISBN" style="width: 90%" value="">
+			            </div>
+			            <div class="type-button">
+							<input type="submit" value="Suchen" id="sButton" name="sButton" style="margin-left: 5px;">
+						</div>
+					</fieldset>
+					</form>
+				</div>
+				<!-- Suchansicht Ende -->
+
+					
+				<p>Alle Preisangaben verstehen sich inkl. Versandkosten innerhalb Deutschlands.</p>
+
+				<p><b>Neu:</b> Jetzt auch als Android-App verfügbar (durchsucht auch eBay!)</p>
+				<ul class="apps">
+					<li><a href="https://itunes.apple.com/de/app/buchhai/id1149377335?ls=1&amp;mt=8" target="_blank"><img border="0" title="Get it on iTunes" style="width: 150px;" alt="Get it on iTunes" src="/gfx/Download_on_the_App_Store_Badge_DE_Source_135x40.svg"></a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=de.whsoft.buchhai&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" target="_blank"><img border="0" title="Get it on Google Play" alt="Get it on Google Play" style="max-width: 150px;" src="https://play.google.com/intl/en_us/badges/images/apps/de-play-badge-border.png"></a></li>
+					<!-- <li><a href="http://www.amazon.de/gp/product/B019E7ICYA/ref=as_li_tl?ie=UTF8&camp=1638&creative=19454&creativeASIN=B019E7ICYA&linkCode=as2&tag=whmetasearch-21" target="_blank"><img border="0" title="Get it on Amazon App Store" alt="Get it on Amazon App Store" style="max-width: 150px;" src="/gfx/amazon-underground-app-de-black.png"></a></li> -->
+				</ul>
+			</div>
+          </div>
+        </div>
+        <div id="col3">
+          <div id="col3_content" class="clearfix">            
+            			<div id="rightNormal">
+            	
+				<div style="margin-left: -10px; float: left;"><img src="gfx/rechtoben2.gif"></div>
+				<div id="bun">
+					<div class="searchboxContent">
+							                                                            													</div>
+				</div>
+				<div id="rightMenue">
+					<div style="border-bottom: 1px solid #FFFFFF;"><b>Über Buchhai</b></div>
+					<ul class="rightUL">
+						<li><a href="buecher.php" class="orange">Stöbern</a></li>
+						<li><a href="buchsuchen.php" class="orange">Suchanfragen</a></li>
+						<li><a href="kontakt.php" class="orange">Kontakt</a></li>
+						<li><a href="impressum.php" class="orange">Impressum</a></li>
+						<li><a href="datenschutz.php" class="orange">Datenschutz</a></li>
+					</ul>
+					
+									</div>
+				
+			</div>          </div>
+          <div id="ie_clearing"> &nbsp; </div>
+        </div>
+      </div>
+      
+	<!-- begin: #footer -->
+      <div id="footer">
+      	Bücher-Preisvergleich by <a href="http://www.whsoft.de" target="_blank">w+h GmbH</a> © 2009 - 2017 mit freundlicher Unterstützung von <a href="http://www.buchfreund.de" target="_blank">Buchfreund</a> - Alle Rechte vorbehalten.
+      </div>
+    <!-- end: #footer -->    </div>
+  </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3415498-2");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-3415498-2";
+</script>
+
+
+<div id="AutocompleteContainter_fbba0" style="position: absolute; z-index: 9999; top: 96px; left: 148px;"><div class="autocomplete-w1"><div class="autocomplete" id="Autocomplete_fbba0" style="display: none; width: 299.7935175895691px; max-height: 300px;"></div></div></div></body></html>

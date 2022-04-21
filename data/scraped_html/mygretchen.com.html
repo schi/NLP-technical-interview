@@ -1,0 +1,1010 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html dir="ltr" lang="de"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+
+<script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20171212152908/recaptcha__en.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+<meta name="language" content="en">
+<meta name="author" content="Gretchen">
+<meta name="publisher" content="Gretchen">
+<meta name="company" content="MiAna GmbH &amp; Co. KG, Germany">
+<meta name="page-topic" content="">
+<meta name="reply-to" content="">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="7">
+<meta name="description" content="Gretchen Online Shop für stylische Ledertaschen - Abendtaschen, Umhängetaschen, Henkeltaschen &amp; Accessoires aus dem berliner Markenlabel">
+<meta name="keywords" content="Ledertaschen, Abendtaschen, Umhängetaschen, Schultertaschen, Henkeltaschen, Online Shop, Style, Fashion, Berlin, Mode, Taschen,">
+<title>Gretchen</title>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="templates/gretchen/stylesheet.css">
+
+<script src="templates/gretchen/javascript/dropdown.js" type="text/javascript"></script>
+
+<script src="templates/gretchen/javascript/google.js" type="text/javascript"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script src="templates/gretchen/javascript/accordion.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	<!--
+		ddaccordion.init({
+			headerclass: "blog_titel", //Shared CSS class name of headers group that are expandable ChangeHere
+			contentclass: "blog_items", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+			onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", "blog_active"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+			animatespeed: "slow", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+	//-->
+</script><style type="text/css">
+.blog_items{display: none}
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anythingslider/1.9.6/js/jquery.anythingslider.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+
+<script type="text/javascript" src="templates/gretchen/javascript/jquery.dcmegamenu.1.3.2.js"></script>
+
+<script type="text/javascript" src="templates/gretchen/javascript/auto_compl_off.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/simplemodal/1.4.4/jquery.simplemodal.min.js"></script>
+
+<script type="text/javascript" src="templates/gretchen/javascript/confirm.js"></script>
+
+	<script type="text/javascript">
+var xajaxRequestUri="http://www.mygretchen.com/shop/";
+var xajaxDebug=false;
+var xajaxStatusMessages=false;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_intelliSearch(){return xajax.call("intelliSearch", arguments, 0);}
+	</script>
+	<script type="text/javascript" src="templates/gretchen/javascript/xajax/xajax_js/xajax.js"></script>
+	<script type="text/javascript">
+window.setTimeout(function () { if (!xajaxLoaded) { alert('Error: the xajax Javascript file could not be included. Perhaps the URL is incorrect?\nURL: templates/gretchen/javascript/xajax/xajax_js/xajax.js'); } }, 6000);
+	</script>
+
+<script type="text/javascript">
+//PRODUKT LISTE
+$(document).ready(function(){
+
+
+	  $(".article_uebersicht_hover").hover(function() {
+	  $(this).stop().animate({ backgroundColor: "rgb(216,202,148)"}, 800);
+	  $(this).find(".prodok_name").stop().animate({ color: "#ffffff"}, 500);
+	  $(this).find(".prodok_price").stop().animate({ color: "#ffffff"}, 800);
+	  $(this).find(".prodok_border").stop().animate({ borderBottomColor: "#000000"}, 800);
+	  $(this).find(".prodok_info").stop().slideDown(10);
+
+	  },function() {
+	  $(this).stop().animate({ backgroundColor: "#ffffff"}, 1500);
+	  $(this).find(".prodok_name").stop().animate({ color: "#000000"}, 800);
+	  $(this).find(".prodok_price").stop().animate({ color: "#666666"}, 800);
+	  $(this).find(".prodok_border").stop().animate({ borderBottomColor: "#000000"}, 800);
+	  $(this).find(".prodok_info").stop().fadeOut(150);
+	  });
+
+	$('#mega-menu').dcMegaMenu({
+		rowItems: '1',
+		speed: 'fast',
+		effect: 'fade'
+	});
+
+	$('#slider').anythingSlider({
+		width               : 953,
+		height              : 432,
+		startStopped        : false,
+		easing              : "swing",
+		delay				: 5000,
+		buildArrows         : false,
+		buildNavigation     : false,
+		pauseOnHover        : false,
+		buildStartStop      : false
+	});
+
+	$('#slider2').anythingSlider({
+		width               : 339,
+		height              : 343,
+		startStopped        : false,
+		easing              : "swing",
+		delay				: 5000,
+		buildArrows         : false,
+		buildNavigation     : false,
+		pauseOnHover        : false,
+		buildStartStop      : false
+	});
+
+	$('#slider3').anythingSlider({
+		width               : 312,
+		height              : 343,
+		startStopped        : false,
+		easing              : "swing",
+		delay				: 5000,
+		buildArrows         : false,
+		buildNavigation     : false,
+		pauseOnHover        : false,
+		buildStartStop      : false
+	});
+
+	$('#slider4').anythingSlider({
+		width               : 329,
+		height              : 343,
+		startStopped        : false,
+		easing              : "swing",
+		delay				: 5000,
+		buildArrows         : false,
+		buildStartStop      : false,
+		pauseOnHover        : false,
+		buildNavigation     : false
+	});
+
+
+
+
+
+});
+</script>
+
+<script src="templates/gretchen/javascript/accordeon.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="templates/gretchen/css/MLmenu.css" type="text/css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="templates/gretchen/css/skins/tango/skin.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/anythingslider/1.9.6/css/anythingslider.min.css">
+
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="templates/gretchen/css/anythingslider-ie.css" />
+<![endif]-->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	var varx = ' ';
+
+	if (!$.browser.opera) {
+
+		// select element styling
+           $('select.select').each(function(){
+			var title = $(this).attr('title');
+			if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+			$(this)
+				.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+				.after('<span class="select">' + title + '</span>')
+				.change(function(){
+					val = $('option:selected',this).text();
+					$(this).next().text(val);
+					})
+		});
+        
+        /*
+		$('select.select').each(function(){
+            
+			var title = $(this).attr('title');
+
+			if(title != undefined) varx = title;
+            console.log(title);
+
+			if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+			$(this)
+				.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+				.after('<span class="select">' + varx +  '</span>')
+				.change(function(){
+					val = $('option:selected',this).text();
+					$(this).next().text(val);
+					})
+		});
+        */
+
+		// select element styling
+		$('select.select2').each(function(){
+			var title = $(this).attr('title');
+			if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+			$(this)
+				.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+				.after('<span class="select2">' + title + '</span>')
+				.change(function(){
+					val = $('option:selected',this).text();
+					$(this).next().text(val);
+					})
+		});
+
+		// select element styling
+		$('select.selectfilter').each(function(){
+			var title = $(this).attr('title');
+			if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+			$(this)
+				.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+				.after('<span class="selectfilter">' + title + '</span>')
+				.change(function(){
+					val = $('option:selected',this).text();
+					$(this).next().text(val);
+					})
+		});
+
+	};
+
+
+	
+});
+
+$(document).ready(function() {
+	$('#showfilter').click(function(){
+	$('div#hidefilter').slideToggle("slow");
+	});
+});
+
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+
+function popupWindow(url) {
+	window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+/*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26232661-1', 'mygretchen.com');
+  ga('send', 'pageview');
+*/
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    function check_form_term_condition(){
+        var term_condition = document.getElementsByName('conditions')[0].checked;
+        if (!term_condition){
+            if ($('#error_message').length < 1)
+            {
+                $('#middle').before( "<table id='error_message' style='background-color:red;width:100%;'><tbody><tr><td align='center' style='color:white;'>Please accept our terms & conditions and our privacy policy to make your purchase.</td></tr></tbody></table>" );
+            }
+            /*window.scrollTo(0, $("#error_message").offset().top);*/
+            $('html, body').animate({scrollTop: $("#error_message").offset().top}, 500);
+            return false;
+        }
+    }
+</script>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"Diese Webseite verwendet Cookies. Wenn Sie diese Webseite nutzen, akzeptieren Sie die Verwendung von Cookies.","dismiss":"OK","learnMore":"Weitere Informationen...","link":"https://www.mygretchen.com/shop/shop_content.php?coID=2","theme":"/shop/light_bottom.css"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+<script type="text/javascript">
+var key = "Z2ak3uPapaTOztze";
+var umsatz = "";
+var versandkosten = "";
+var artikelliste = "";
+</script>
+<script type="text/javascript" src="https://sales.fashion.de/syndic.js"></script><script async="" src="//static.hotjar.com/c/hotjar-118206.js?sv=5"></script><script async="" src="https://script.hotjar.com/modules-526d80f8c01454f84b75838f21c8706e.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><link rel="stylesheet" type="text/css" href="/shop/light_bottom.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/services" src="//sumome-140a.kxcdn.com/static/90dcb45c06e5fd85a3838ec48546a12a5ef7e6f4/client/js/services/services.js"></script><style>@-webkit-keyframes insQ_100 {  from {  outline: 1px solid transparent  } to {  outline: 0px solid transparent }  }
+#menufication-top { animation-duration: 0.001s; animation-name: insQ_100; -webkit-animation-duration: 0.001s; -webkit-animation-name: insQ_100;  } </style></head><body class="yui-skin-sam" style=""><div class="cc_banner-wrapper "><div class="cc_banner cc_container cc_container--open"><a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">OK</a><p class="cc_message">Diese Webseite verwendet Cookies. Wenn Sie diese Webseite nutzen, akzeptieren Sie die Verwendung von Cookies. <a data-cc-if="options.link" target="_self" class="cc_more_info" href="https://www.mygretchen.com/shop/shop_content.php?coID=2">Weitere Informationen...</a></p><a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a></div></div><iframe src="https://sales.fashion.de/?p=Z2ak3uPapaTOztze&amp;u=&amp;v=&amp;l=" width="1" height="1" style="visibility:hidden;" scrolling="no" frameborder="0"></iframe>
+
+<!-- Start Newsletter-bar-css -->
+<style type="text/css">
+.grid-2 {
+	width:20%;
+	float:left;
+}
+.grid-6 {
+	width:60%;
+	float:left;
+}
+.grid-2 {
+	width:20%;
+	float:left;
+	text-align:right;
+}
+.newsletter-btn {
+    background-color: #d8ca94;
+    border-color: #d8ca94;
+    color: #000;
+    border: 1px solid transparent;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 11px;	
+}
+.center {
+	margin:0 auto;
+	text-align:center;
+}
+#newsletterbar form input[type="text"] {
+	border: 1px solid #666666;
+}
+#close-button {
+	cursor:pointer;
+}
+#newsletterbar {
+	z-index: 9;
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	padding: 5px 0 5px 0;
+	width:100%;
+	background-color:#ad9861;
+	color:#fff;
+	font-family: "Century Gothic", sans-serif;
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+}
+@media (min-width: 1000px) {
+
+	#newsletterbar {
+		display:none;
+	}
+
+}
+</style>
+<!-- Start Newsletter-bar-js -->
+<script>
+$(document).ready(function(){
+		// no not display bar by default
+		$("#newsletterbar").css("display", 'none');
+		function checkCookie() {
+			if( document.cookie.includes("newsletterbarstatus") == false ) {			
+				$("#newsletterbar").css("display", 'block');
+			} 
+		}//function checkCookie()
+		checkCookie();
+		
+		function getLanguage() { 
+		   var metas = document.getElementsByTagName('meta'); 
+		   for (var i=0; i<metas.length; i++) { 
+			  if (metas[i].getAttribute("name") == "language" && metas[i].getAttribute("content") == "de") { 
+				 $("#newsletterbar_form").attr({action: "https://seu1.cleverreach.com/f/54881-191064/wcs/"});
+				 $(".itemname").text("Jetzt zum Gretchen Newsletter anmelden");
+				 $("#close-button").text("Hinweis Ausblenden");
+			  } 
+			  if (metas[i].getAttribute("name") == "language" && metas[i].getAttribute("content") == "en") { 
+				 $("#newsletterbar_form").attr({action: "https://seu1.cleverreach.com/f/54881-191063/wcs/"});
+				 $(".itemname").text("Register for Gretchen Newsletter");
+				 $("#close-button").text("Hide this message");
+			  } 
+		   } 
+			return "";
+		} //function getLanguage() {
+		getLanguage();
+		/* sets cookie  */
+		function setCookie() {
+			document.cookie = "newsletterbarstatus";			
+		}
+		
+		$("#close-button").click(function() {
+			setCookie();
+			$("#newsletterbar").remove();
+		});
+		
+		$("#newsletter-btn").click(function() {
+			setCookie();
+			setTimeout( delayToSendData, 2000);
+		});
+		
+		function delayToSendData() {
+			$("#newsletterbar").remove();	
+		}
+});
+
+</script>
+
+
+<div id="newsletterbar" style="display: block;">
+	  <div class="grid-2">
+		&nbsp;
+	</div>
+	<div class="grid-6" id="newsletter_form_code">  
+	<!-- custom -->
+	<form id="newsletterbar_form" action="https://seu1.cleverreach.com/f/54881-191063/wcs/" method="post" target="_blank">
+		<label for="text4009315" class="itemname">Register for Gretchen Newsletter</label> 
+		<input id="text4009315" name="email" value="" type="text" autocomplete="off">
+		<button type="submit" class="newsletter-btn" id="newsletter-btn">Anmelden</button>
+	</form>
+	</div>
+	<div class="grid-2">
+		<i id="close-button">Hide this message</i>
+	</div>
+</div>
+<!-- TTIDsplitPageResults Object
+(
+    [sql_query] => select DISTINCT p.products_id, pd.products_name,p.products_image, p.products_model, p.products_price, p.products_discount_allowed, p.products_weight, p.products_tax_class_id from products p, products_description pd  where p.products_status = '1' and pd.products_id = p.products_id and pd.language_id = '1' LIMIT 0, 1500
+    [number_of_rows] => 2837
+    [current_page_number] => 1
+    [number_of_pages] => 2
+    [number_of_rows_per_page] => 1500
+)
+--><!--this is for debug-->
+
+
+
+<script>
+
+$(document).ready(function() {
+
+$('#categorie_filter_box').change(function() {
+  var cat = $("#categorie_filter_box option:selected").text();
+  if (cat =='GENTS GLOVES- SUMMER' || cat =='CAR GLOVES' || cat =='GENTS GLOVES - WINTER' || cat =='LADIES GLOVES - WINTER' || cat =='LADIES GLOVES - SUMMER' || cat =='DAMEN HANDSCHUHE - SOMMER' || cat =='DAMEN HANDSCHUHE- WINTER'  || cat =='HERREN HANDSCHUHE - WINTER'  || cat =='HERREN HANDSCHUHE - SOMMER'  || cat =='AUTOHANDSCHUHE' )
+  {
+  
+  $('#size_box').empty();
+  
+  var content =
+  "<option value='undefined'>all size</option><option  value='6'>6</option><option  value='6,5'>6,5</option><option  value='7'>7</option><option  value='7,5'>7,5</option><option  value='8'>8</option><option  value='8,5'>8,5</option><option  value='9'>9</option><option  value='9,5'>9,5</option><option  value='10'>10</option><option  value='10,5'>10,5</option><option  value='11'>11</option>";
+
+  $('#size_box').html(content);
+  
+  }
+  else {
+   $('#size_box').empty();
+  var content =
+  "<option value='undefined' selected >all size</option>";
+
+  $('#size_box').text('all size');
+   $('#size_box').html(content);
+  
+  
+  }
+  console.log(cat);
+});
+
+});
+
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26232661-1', 'mygretchen.com');
+  ga('set', 'anonymizeIp', true); //added by SEOSharks.de
+  ga('send', 'pageview');
+
+</script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26232661-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	
+	
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Hotjar Tracking Code for http://www.mygretchen.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:118206,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="d11206427aa475f6d0ec056da667b05a3ac477f97572ccb62a49b63977421cc1" async="async"></script>
+
+<style>
+#logout_popCart {
+	position: absolute;
+	left: 50%;
+	height: 168px;
+	width: 280px;
+	margin-left: -137px;
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+	z-index: 100000;
+	display: none;
+	padding: 10px 10px 10px 10px;
+	-moz-box-shadow: 3px 4px 16px #000000;
+	-webkit-box-shadow: 3px 4px 16px #000000;
+	box-shadow: 3px 4px 16px #000000;
+	display:none;
+	
+}
+
+.popup_header {
+	text-align: center;
+	vertical-align:bottom;
+	padding: 3px 10px;
+	border: 1px solid #ccc;
+	margin: 0px auto;
+	width: 380px;
+}
+.no {
+ float: left;
+    width: 50%;
+}
+.yes{
+ float: left;
+    width: 50%;
+}
+#pop_buttons_box_logoff {
+text-align: center;
+width: 280px;
+height: 31px;
+top:113px;
+vertical-align: bottom;
+margin: 10px auto 0 auto;
+position:relative;
+}
+.messagetext{
+  font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 170px;
+}
+#hidefilter{
+width: 559px;
+height: 180px;
+background: #333;
+float: right;
+position: absolute;
+display: none;
+border-bottom: 1px solid #dddddd;
+border-left: 1px solid #dddddd;
+opacity: 1;
+z-index: 1000;
+top: 39px;
+left: -444px;
+}
+
+span.selectfilter{
+text-transform:uppercase !important;
+}
+#categorie_wrap span.selectfilter {
+width: 200px !important;
+background-position-x: 100px !important;
+background-color: #ffffff !important;
+background-position: 100px center !important;
+}
+
+.ftbox a:hover {
+color: rgb(216,202,148);
+}
+
+
+</style>
+<script type="text/javascript">
+jQuery(function ($) {
+	$('#logoff_button').click(function (e) {
+		e.preventDefault();
+
+		// example of calling the confirm function
+		// you must use a callback function to perform the "yes" action
+		msg = $('#logoff_msg').val();
+		confirm(msg, function () {
+			window.location.href = 'logoff.php';
+		});
+	});
+});
+</script>
+
+
+
+<div id="wrapper1">
+
+	<div id="wrapperx">
+
+		<div id="wrappHolder">
+
+			<div id="header2">
+
+
+				
+					
+				
+
+					<div id="h21" class="Left h21abst1">
+
+						
+														<a title="Login" class="menulink_header" href="https://www.mygretchen.com/shop/login.php?XTCsid=9p7ehajoc8m5hajvkljahqc9t2"><img style="margin-top: -5px;margin-right: 17px;" src="templates/gretchen/buttons/english/anmelden.png" alt="Login"></a>
+							
+						
+
+
+					</div>
+
+									
+
+<div id="h22" class="h22bgp1 paulman h22cl Left" onclick="location.href='shopping_cart.php'">
+
+
+	
+	
+	0  Article(s) in cart
+
+
+	
+
+
+	
+	
+
+</div>
+
+					
+				
+			</div>
+
+			<div id="header1">
+
+				<div id="h11" title="HOME" style="cursor: pointer;" onclick="location.href='https://www.mygretchen.com/shop/index.php'"></div>
+
+				<div class="paulman" id="h12" style="top: 24px;">
+
+ <a class="paulman  activeLang" href="https://www.mygretchen.com/shop/index.php?language=en&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">EN</a> |  <a class="paulman  alang" href="https://www.mygretchen.com/shop/index.php?language=de&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">DE</a>
+
+<div class="clear"></div></div>
+
+			</div>
+
+
+			<div class="header3" style="position: relative;left: -12px;">
+
+					<div class="Left" id="h31">
+
+						<ul id="mega-menu" class="mega-menu">
+
+						<li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/New.php" class="dc-mega">New<span class="dc-mega-icon"></span></a><div class="sub-container mega ml1" style="left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 119px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c28_New-in-Shop.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">New in Shop</a></li></ul></li></div></ul></div></li><li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/Bags.php" class="dc-mega">Bags<span class="dc-mega-icon"></span></a><div class="sub-container mega ml2" style="left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 168px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c8_Clutches.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Clutches</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c10_Shoulderbags.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Shoulderbags</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c9_Totes.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Totes</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c52_Backpacks.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Backpacks</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c11_Holdall---Shopper.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Holdall | Shopper</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c12_Laptop-bags.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Laptop bags</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c79_Bumbags.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Bumbags</a></li></ul></li></div></ul></div></li><li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/Purses--amp--More.php" class="dc-mega">Purses &amp; More<span class="dc-mega-icon"></span></a><div class="sub-container mega ml3" style="margin-left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 154px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c63_Wallets.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Wallets</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c42_Mobile---Tablet.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Mobile | Tablet</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c92_Keyrings.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Keyrings</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c89_Shoulderstraps.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Shoulderstraps</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c90_Voucher.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Voucher</a></li></ul></li></div></ul></div></li><li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/Gloves.php" class="dc-mega">Gloves<span class="dc-mega-icon"></span></a><div class="sub-container mega ml4" style="margin-left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 142px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c14_Ladies---Winter.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Ladies - Winter</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c16_Gents---Winter.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Gents - Winter</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c17_Car-gloves.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Car gloves</a></li></ul></li></div></ul></div></li><li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/Zeitgeist.php" class="dc-mega">Zeitgeist<span class="dc-mega-icon"></span></a><div class="sub-container mega ml5" style="margin-left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 100px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c48_All.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">All</a></li></ul></li></div></ul></div></li><li class="dc-mega-li"><a href="https://www.mygretchen.com/shop/Shoes.php" class="dc-mega">Shoes<span class="dc-mega-icon"></span></a><div class="sub-container mega ml6" style="margin-left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 110px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="https://www.mygretchen.com/shop/index.php?cat=c81_Boots.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Boots</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c85_Pumps.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Pumps</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c86_Ballerinas.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Ballerinas</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c87_Flat-Shoes.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Flat Shoes</a></li><li><a href="https://www.mygretchen.com/shop/index.php?cat=c88_Sandals.html&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Sandals</a></li></ul></li></div></ul></div></li>
+						<li style="margin-left: 46px;" class="dc-mega-li"><a href="#" class="underline dc-mega">Behind Gretchen<span class="dc-mega-icon"></span></a><div class="sub-container mega ml7" style="margin-left: 0px; top: 25px; z-index: 1000;"><ul class="sub" style="display: none;"><div class="row" style="width: 195px;"><li class="mega-unit mega-hdr last" style="height: auto;"><ul><li><a href="plan-international.php">Charity</a></li><li><a href="https://www.mygretchen.com/shop/our-corporate-social-responsibility-pledge.php?language=en">Social Responsibility</a></li><li><a href="https://www.mygretchen.com/shop/awards.php">Awards</a></li><li><a href="https://www.mygretchen.com/shop/behind-the-brand.php">Behind the Brand</a></li><li><a href="https://www.mygretchen.com/shop/handmade.php">Craftsmanship</a></li><li><a href="https://www.mygretchen.com/shop/collection.php">Collection</a></li><li><a href="https://www.mygretchen.com/shop/stores.php">Stores</a></li><!---<li><a href="https://www.mygretchen.com/shop/testimonials.php">Celebrities</a></li>---><li><a href="https://www.mygretchen.com/shop/press.php">Press</a></li><li><a href="https://www.mygretchen.com/shop/fairs-showrooms.php">Fairs &amp; Showrooms</a></li><li><a href="https://www.mygretchen.com/shop/opportunities.php">Jobs</a></li><li><a href="https://www.mygretchen.com/shop/contact.php">Contact us</a></li></ul></li></div></ul></div></li>	
+						</ul>
+
+					</div>
+<!-- search -->
+					<div class="Left" id="h32" style="position:relative;left: 100px;top:-6px;">
+							
+						<div style="float:right;">
+        	<img id="showfilter" class="img_menu" style="cursor:pointer;" src="templates/gretchen/buttons/english/button_add_quick.png">
+        </div>
+					<!--
+
+<form class="searchTopform" id="SearchForm" action="https://www.mygretchen.com/shop/advanced_search.php" method="get"><input type="hidden" name="XTCsid" value="cbfvuatrc4akk86h0ktd25qdq2" />
+
+	<div class="rAlign" id="h24"><input class="inputFeldTop" onblur="checkForm(2);" type="text" name="keywords" value="Search" style="width:128px;" maxlength="30" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;" onkeyup="xajax_intelliSearch(this.value);" /> <a title="Suchen" href="javascript:this.SearchForm.submit();"><img src="templates/gretchen/pix/lupe.png" border="0" /></a></div>
+
+</form>
+
+<div id="intelliSearchResult"></div>-->
+					<div id="hidefilter">
+                    <form action="index.php" id="form_filter" method="post">
+                        <div style="padding:8px 10px 0 15px; margin-bottom: 10px;">
+                        
+                        <div>
+                        
+                        	<div style="float:left; padding:0px 10px 0px 0px;">
+                                <div style="padding:5px 0px; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;font-size:11px;text-transform:uppercase;">CATEGORIES</div>
+                                
+                                <div id="categorie_wrap">
+                                    <select id="categorie_filter_box" class="selectfilter" onchange="$('#form_filter').attr('action', $(':selected', this).attr('name'));" name="categorie_filter" style="text-transform: uppercase; width: 200px !important; z-index: 10; opacity: 0;">
+                                      <option value="all" name="index.php">ALL</option>
+                                    <!--   <option  value="all" name="index.php?cat=c8_Clutches.html">ALL</option> -->
+                                      <option value="" name="index.php?cat=c8_Clutches.html">CLUTCHES</option>
+									 <option value="" name="index.php?cat=c10_Schultertaschen.html">SHOULDER BAGS</option>
+									  <option value="" name="index.php?cat=c9_Henkeltaschen.html">TOTES</option>
+									  <option value="" name="index.php?cat=c11_Extra-Gro-e-Modelle.html">WEEKENDER</option>
+									  <option value="" name="index.php?cat=c12_Akten---Laptoptaschen.html">LAPTOP BAGS</option>
+									  <option value="" name="index.php?cat=c63_Geldboersen.html">Purses</option>
+									  <option value="" name="index.php?cat=c42_HAndy---Tablet.html">MOBILE - TABLET</option>
+									  <option value="" name="index.php?cat=c14_Damen---Winter.html">LADIES GLOVES - WINTER</option>
+									  <option value="" name="index.php?cat=c13_Damen--Sommer.html">LADIES GLOVES - SUMMER</option>
+									  <option value="" name="index.php?cat=c16_Herren---Winter.html">GENTS GLOVES - WINTER</option>
+									  <option value="" name="index.php?cat=c15_Herren---Sommer.html">GENTS GLOVES- SUMMER</option>
+									  <option value="" name="index.php?cat=c17_Autohandschuhe.html">CAR GLOVES</option>
+									  <option value="" name="index.php?cat=c19_Guertel.html">BELTS</option>
+									  <option value="" name="index.php?cat=c46_Armbaender.html">BRACELETS</option>
+									  <option value="" name="index.php?cat=c21_Schluesselanhaenger.html">KEY RINGS</option>
+									  <option value="" name="index.php?cat=c48_Alle.html">ZEITGEIST</option>
+                                    </select><span class="selectfilter">ALL</span>
+                                </div>
+                                
+                            </div>
+							
+                            <div style="float:left; padding:0px 10px 0px 0px;">
+                                <div style="padding:5px 0px; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;font-size:11px;text-transform:uppercase;">COLOR</div>
+                                
+                                <div>
+                                    <select class="selectfilter" name="color" style="width: 100px; text-transform: uppercase; z-index: 10; opacity: 0;">
+                                      <option value="undefined">ALL COLOR</option>
+                                      <option value="beige">Beige</option>
+                                      <option value="black">Black</option>
+                                      <option value="blue">Blue</option>
+                                      <option value="brown">Brown</option>
+                                      <option value="gray">Gray</option>
+                                      <option value="green">Green</option>
+                                      <option value="Metallic">Metallic</option>
+                                      <option value="mud">Mud</option>
+                                      <option value="Multi">Multicolor</option>
+                                      <option value="orange">Orange</option>
+                                      <option value="pink">Pink</option>
+                                      <option value="red">Red</option>
+                                      <option value="violet">Violet</option>
+                                      <option value="white">White</option>
+                                      <option value="yellow">Yellow</option>
+                                    </select><span class="selectfilter">ALL COLOR</span>
+                                </div>
+                                
+                            </div>
+                            
+							<div style="float:left; padding:0px 10px 0px 0px;">
+                                <div style="padding:5px 0px; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;font-size:11px;text-transform:uppercase;">SIZE</div>
+                                
+                                <div>
+                                    <select id="size_box" class="selectfilter" name="size" style="width: 100px; text-transform: uppercase; z-index: 10; opacity: 0;">
+                                      <option value="undefined">ALL SIZE</option>
+                                    </select><span class="selectfilter">ALL SIZE</span>
+                                </div>
+                                
+                            </div>
+							
+                            <div style="float:left;">
+                                <div style="padding:5px 0px; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;font-size:11px;text-transform:uppercase;">PRICE</div>
+                                <div>
+                                    <select class="selectfilter" name="price_tt" style="width: 100px; text-transform: uppercase; z-index: 10; opacity: 0;">
+                                     <option value="0">ALL PRICES</option>
+                                     <option value="1">0-100 EUR</option>
+                                     <option value="2">100-200 EUR</option>
+                                     <option value="3">200-400 EUR</option>
+                                     <option value="4">400-1000 EUR</option>
+                                     <option value="5">&gt; 1000 EUR</option>
+                                    </select><span class="selectfilter">ALL PRICES</span>
+                                </div>
+                            </div>
+                            <div style="clear:left;"></div>
+                        </div>
+                        <div style="padding:10px 5px 0px 0px; float:left;"><button name="filter_tt" value="true" type="submit" style=" background:url(templates/gretchen/buttons/english/search_button.png) no-repeat;border:0px solid #8d8d8d; width:200px; height:24px; background-color:#FFF; font-size:11px;"></button></div>
+                        </div>
+                    </form>
+					<div style="clear: both; display: block; height: 10px; width: 100%;"></div>
+					<div style="border-top: 1px solid #656565; padding: 10px 10px 10px 15px;">
+						<form id="new_find" action="https://www.mygretchen.com/shop/advanced_search_result.php" method="get">
+							<input onblur="checkForm(2);" type="text" name="keywords" style="width: 199px; height: 22px; border: 0; margin: 0 0 10px 0;" maxlength="60" placeholder="Ihr Suchbegriff" autocomplete="off"><br>
+							<button type="submit" style="background:url(templates/gretchen/buttons/english/search_button_name.png) no-repeat;border:0px solid #8d8d8d; width:200px; height:24px; background-color:#FFF; font-size:11px;"></button>
+						</form>
+					</div>
+
+                  </div>
+
+				  
+
+					</div>
+<!-- search END -->
+
+					<div style="clear: both;"></div>
+
+			</div>
+
+			<div style="clear: both;"></div>
+
+			<div id="middle">
+
+			
+				
+				
+	<div id="startseite"><style>
+.homeGridCon{width: 953px; margin-left: auto; margin-right: auto;}
+.gridTop{float: none;}
+
+.gridTopOne{width:317px;}
+.gridTopTwo{width:255px;}
+.gridTopThree{width:165px;}
+.gridTopFour{width:210px;}
+
+.displayInlineBlock{ float:left;}
+
+.gridLeft{width:45%;}
+.gridRight{width:54%;}
+</style>
+<div class="homeGridCon">
+  <div class="gridTop">
+    <div class="gridTopOne displayInlineBlock">
+      <a href="https://www.mygretchen.com/shop/product_info.php?cPath=4_9&amp;info=p18901_Gretchen---Maple-Metal-Tote---Stone-Gray-Metallic.html">
+        <img src="https://mygretchen.com/cms/wp-content/uploads/Gretchen-Maple-Metal-Tote-Stone-Gray-Metallic.jpg">
+      </a>
+    </div>
+    <div class="gridTopTwo displayInlineBlock">
+      <a href="https://www.mygretchen.com/shop/product_info.php?cPath=4_9&amp;info=p18053_Gretchen---Maple-Metal-Midi-Tote---Oxblood-Red.html">
+        <img src="https://mygretchen.com/cms/wp-content/uploads/gretchen-loves-maple-metal1.jpg">
+      </a>
+    </div>
+    <div class="gridTopThree displayInlineBlock">
+      <a href="https://www.mygretchen.com/shop/product_info.php?cPath=4_52&amp;info=p8141_Gretchen---Maple-Metal-Backpack---Midnight-Black.html">
+        <img src="https://mygretchen.com/cms/wp-content/uploads/gretchen-loves-maple-metal2.jpg">
+      </a>
+    </div>
+    <div class="gridTopFour displayInlineBlock">
+      <a href="https://www.mygretchen.com/shop/product_info.php?cPath=4_9&amp;info=p4309_Gretchen---Maple-Metal-Tote---Midnight-Black.html">
+        <img src="https://mygretchen.com/cms/wp-content/uploads/gretchen-loves-maple-metal3.jpg">
+      </a>
+    </div>
+  </div>
+  <div class="gridBottom">
+    <div class="gridLeft displayInlineBlock">
+      <a href="https://www.mygretchen.com/shop/index.php?cat=c14_Damen---Winter.html">
+      <img src="https://mygretchen.com/cms/wp-content/uploads/modeische-handschuhe-fuer-warme-haende-gretchen-berlin.jpg">
+      </a>
+    </div>
+    <div class="gridRight displayInlineBlock">
+        <a href="https://www.mygretchen.com/shop/index.php?cat=c48_Alle.html">
+      <img src="https://mygretchen.com/cms/wp-content/uploads/zeitgeist-unikate-in-exotischen-ledern.jpg">
+      </a>
+    </div>
+  </div>
+</div></div>						
+			
+							
+
+
+			</div>
+
+
+			<div id="footer0">
+
+				<img src="templates/gretchen/buttons/english/footer_english.png" alt="Footer" usemap="#footermap">
+                <map name="footermap">
+                  <area shape="circle" coords="686,29,24" target="_blank" alt="Trusted Shops" href="https://www.trustedshops.com/shop/certificate.php?shop_id=X08A6EFE8A78A933398FA3A17B5485688">
+                  <area shape="circle" coords="756,29,24" target="_blank" alt="PCI DATA" href="https://pci.usd.de/compliance/1630-71CB-8645-8BBF-6CBB-0BBA/details_en.html">
+                </map>
+						
+				<div id="infos_text"><style>
+p {font-size:12px}
+</style><br>
+<p>
+<br>
+Buy timeless handbags, gloves, purses, smartphone-cases and many other small leather goods from Gretchen Berlin online at www.mygretchen.com.
+<br><br>
+<b>Exclusive leather goods from Gretchen made with best material and the highest craftmanship</b>
+<br><br>
+The Berlin based brand Gretchen was founded in 2006 by Anne-Christin and Michael Georg Schmitt.</p><p>
+</p><p>
+At Gretchen you can find the perfect leather bag for every occasion. Regardless if you want a bag for everyday life, a big handbag, a shoulder bag, a cross-over, a pouch, a clutch, or casual evening bag. The colorful collections, which are designed by Anne-Christin Schmitt, are elegant and timeless. The Gretchen product lines consist of matching gloves, purses, smartphone- and tablet cases and many other small leather goods.
+Gretchen only uses the most precious and exclusive leathers and fabrics. Every bag, glove and keyring from the designer Anne-Christin Schmitt is available worldwide at various department- and concept stores as well as in exclusive boutiques and shops - you can also get them in our Gretchen online shop here on www.mygretchen.com and as well as in one of our own Gretchen stores<br>
+Like Berlin, Gretchens leather goods and bags are designed with a charming purist and colorful appearance. A connection between artistic constructed elements and independent shapes and silhouettes form a unique modern and timeless coolness. Anne-Christin Schmitt keeps clear lines, remarkable shapes and balanced material combinations in her focus. 
+Design is only half of the equation. The other half is the material itself.
+Gretchen Berlin stands for highest quality by using the best leathers and fabrics with the most brilliant colors and an incomparable softness.  All Gretchen accessories are handcrafted by leather good craftsmen in traditional manufactories in Italy and Spain. We use exclusively real leather.<br> <br>
+<b>Modern minimalism and colorful designs, that is Gretchen!</b>
+<br><br>
+The unique Gretchen design of Anne-Christin Schmitt combines minimalism, color, shape and passion to outstanding one-of-a-kind pieces of art, which already won various design prices and recognitions as the Red Dot Award or the Sparks All American Award. Gretchen leather goods catch you with their precise cuts in combination with modern, artistic shapes. The classic, timeless and modern character of the Gretchen Berlin shoulder bags, cross-over handbags, evening pouches and clutches, gloves and further small leather goods derives from an interaction of the stick out soft leather, architectural constructions and colorful accents. Complex details are giving the bags, gloves, purses, phone and tablet cases their unique and particular charm. 
+All our Gretchen Berlin products are totally handmade with the most outstanding leathers and fabrics from the most admired tanneries and producers in the world. Gretchen is only made in traditional leather good manufactories, completely handcrafted from highly experienced craftsmen and craftswomen.<br> 
+Though this manufactory process every single Gretchen bag, Gretchen glove and Gretchen accessories, or other leather good gets its uniqueness and becomes a unique one of a kind piece that will last forever. 
+Gretchen Berlin handbags and exclusive leather goods as gloves, belts, iphone and ipad cases - are timeless and unique. Handbags for everyday life, big bags, shoulder bags, cross-over bags, pouches, clutches, or casual evening handbags, purses, smart phone cases, tablet covers and many more small leather goods belong to the Gretchen assortment.
+</p></div>			
+			
+						</div>
+
+			<div id="footer1">
+
+				<div class="Left ftbox" id="ft1">
+					<a href="https://www.facebook.com/Gretchen-7051611617/" target="_blank"><img src="https://www.mygretchen.com/cms/wp-content/uploads/facebook.png" style="margin-left: -126px;"></a>
+						<!--			
+					<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGretchen%2F7051611617&amp;width=200&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=false&amp;appId=303906679712283" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:62px;position: relative;
+left: -126px;" allowTransparency="true"></iframe>
+
+					<a href="http://www.facebook.com/pages/Gretchen-the-little-pearl/7051611617" target="_blank" onclick="recordOutboundLink(_blank, 'Outbound Links', 'www.facebook.com');return false;"><img class="img_menu" src="templates/gretchen/pix/facebook.gif" alt="Facebook" id="facebook"></a>
+					-->
+				</div>
+
+				<div class="Left ftbox" id="ft2">
+
+					
+
+<div><a href="https://www.mygretchen.com/shop/shop_content.php?coID=103&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Sizes</a><br><a href="https://www.mygretchen.com/shop/shop_content.php?coID=1&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Delivery charges</a><br><a href="https://www.mygretchen.com/shop/shop_content.php?coID=10&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Returns</a><br><a href="https://www.mygretchen.com/shop/shop_content.php?coID=0&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Return form</a></div>
+
+				</div>
+
+				<div class="Left ftbox" id="ft3">
+					<!--<a href="https://www.mygretchen.com/shop/shop_content.php?coID=3">AGBs</a><br>
+                    <a href="https://www.mygretchen.com/shop/shop_content.php?coID=2">Datenschutz</a><br>
+                    <a href="https://www.mygretchen.com/shop/shop_content.php?coID=11">Bestellvorgang</a>-->
+					
+
+<div><a href="https://www.mygretchen.com/shop/shop_content.php?coID=3&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Terms &amp; Conditions</a><br><a href="https://www.mygretchen.com/shop/shop_content.php?coID=2&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">Privacy Policy</a><br><a href="https://www.mygretchen.com/shop/shop_content.php?coID=102&amp;XTCsid=9p7ehajoc8m5hajvkljahqc9t2">FAQ</a></div>
+
+				</div>
+
+				<div style="clear: both;"></div>
+
+			</div>
+
+			<div id="footer">
+
+				<span class="pr5">© 2017 MiAna GmbH&amp;Co. KG - www.mygretchen.com</span> | <a class="fStyle" title="Imprint" href="https://www.mygretchen.com/shop/shop_content.php?coID=4">Imprint</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div style="clear: both;"></div>
+<div class="copyright">eCommerce Engine © 2006 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce Shopsoftware</a></div>
+<iframe id="sumome-jquery-iframe" title="Sumo Hidden Content" style="display: none;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><a href="javascript:void(0);" title="Sumo" style="background-color: rgb(0, 115, 183); border-top-left-radius: 3px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 3px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; position: fixed; z-index: 10000000000; padding: 0px; width: 44px; height: 40px; text-indent: -10000px; opacity: 1; display: block !important; top: 40px; right: -40px;"><span style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; border-top-left-radius: 3px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 3px; margin-left: 4px; margin-right: 0px;">Sumo</span><span style="display: block; width: 40px; height: 40px; background-color: white; margin-left: 4px; border-top-left-radius: 3px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 3px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDQ3MUVFMDFFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3MUVFMDBFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MWQ0NjIyOGEtNzVmNi00ZGU0LThiY2MtYTg3NTY0ZDI2MWE1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8JtvywAAAKhQTFRFzOPxSJvLA3W4Mo7FBna5w97u8vj7EHy8a67VhbzdsdTpVaLPh73d9/v9C3m6QZfJbq/WXKbR3u32JIfB3ez1KorDir/eBHW4+/3+rtPoZarUG4K/LIvDDnu7ocvkf7nbdrTY9fr8E328WKPQO5PITJ3MPpXJstXptdbq+Pv9cbHXaq3VU6HOkMLgnMnjDHq62uv1/P3+6/T53Oz1cLDX/f7+AHO3////ptOZ5QAAADh0Uk5T/////////////////////////////////////////////////////////////////////////wA7XBHKAAAAmUlEQVR42sSRRxLCMAxFRSq9907ovebr/jdDMWYGxmZL3sIqbyFbJv4B/VlkVlerKALTD3G46Mx3AOR1UZ/TsDxW6W0gfYRNVfTCFu2AWpAMgMItMW+zQJU2UjWI29D0+e5KWNPMk+A9Om+B/UgOJyCuwMJCrpuziYkIsglfRByZ/XM3eXnBFEu1kpMpjq9dxQYp/OAXTwEGAB7Rc1xVnPemAAAAAElFTkSuQmCC); margin-right: 0px; background-position: 8px 8px; background-repeat: no-repeat no-repeat;"></span></a><iframe style="display: none;"></iframe><div style="position:fixed;top:0;left:0;overflow:hidden;"><label for="focus_retriever" style="position:absolute;left:-1000px;">Focus Retriever</label><input style="position:absolute;left:-1000px;" type="text" name="focus_retriever" value="" id="focus_retriever" readonly="true"></div></body></html>

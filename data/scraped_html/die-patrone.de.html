@@ -1,0 +1,1373 @@
+<!DOCTYPE html><html lang="de-DE"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Nosgroup Gmbh">
+	<meta name="robots" content="INDEX,FOLLOW">
+
+
+	<title>Die-Patrone</title>
+
+
+	<base href="/">
+	<style media="screen">
+		#ractive-container.container-fluid{
+			min-width:100%;
+			min-height:100%;
+		}
+
+		.loading-wheel{
+			width:100%;
+			text-align:center;
+			position:fixed;
+			top:0px;
+			left:0px;
+			height:100%;
+			background:rgba(255,255,255,0.6);
+			z-index:10000;
+			display:flex;
+			justify-content: center;
+			align-items: center
+		}
+		.loading-wheel img{
+			width:25%;
+			height:auto;
+			max-width:75px;
+		}
+	</style>
+	
+<script type="text/javascript" charset="utf-8" async="" src="//widgets.trustedshops.com/js/X9F2B2BB0A68049B4D3477885BDC4F8F7.js"></script><script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=www.die-patrone.de&amp;t=xo"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script></head>
+
+<body>
+	<div id="ractive-container" class="container-fluid">
+		<div class="container-fluid" id="site_body" lang="de">
+	<header role="banner">
+		<div class="row header-main">
+			<div class="container">
+				<div class="container" id="head" role="head">
+					
+		
+					<div class="top-bar row">
+						<div class="container block-group">
+							<nav class="top-bar--navigation block" role="menubar">
+								 <div class="dropdown pull-right">
+									  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i> Service/Hilfe <i class="glyphicon glyphicon-chevron-down"></i></button>
+									  <ul class="dropdown-menu service--list is--rounded" role="menu">
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="agb" title="AGB">
+												AGB
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="kontaktformular" title="Kontakt" target="_self">
+												Kontakt
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="defektes-produkt" title="Reklamation" target="_self">
+												Reklamation
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="versand-und-zahlung" title="Versand &amp; Zahlung">
+												Versand &amp; Zahlung
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="let-s-print-anleitung" title="Let's Print Anleitung">
+												Let's Print Anleitung
+											</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+
+
+					<div class="main-header row">
+						<div class="logo col-xs-12 col-md-3 col-lg-3">
+							<a class="logo--link internal_link" href="./de/home" title="die-patrone.de - Druckerpatronen und Druckerzubehör - zur Startseite wechseln">
+								<picture>
+                                    <img src="./die-patrone/images/startseite/logo_patrone.png" alt="die-patrone.de - Druckerpatronen und Druckerzubehör - zur Startseite wechseln">
+								</picture>
+							</a>
+						</div>
+						<div class="search col-xs-12 col-md-4 col-lg-5">
+							
+		<div class="box-serach-wapper">
+
+	<div class="advanced-search">
+
+		<div class="search-text-box">
+
+			<input class="input" id="searchfield" placeholder="Suchwort eingeben" type="search" value="" name="nosshop_search__searchword" style="padding-left: 5px;">
+			<button class="btn-search" type="button" onclick="NOS.Logic.search.start_search()"><span class="flaticon-magnifying-glass34"></span></button>
+
+		</div>
+
+	</div>
+</div>
+
+	
+						</div>
+						<div class="merkzettel col-xs-12 col-md-5 col-lg-4">
+							<div class="row">
+								<div class="col-xs-12 col-md-5">
+									<div class="row">
+										<div class="user col-xs-12 col-md-9" id="my_account_menu_outer">
+											<a class="btn is--icon-left entry--link account--link" href="javascript:void(0);" onclick="NOS.Logic.webuser.open_account_menu();" title="Mein Konto">
+												<i class="glyphicon glyphicon-user"></i>
+												<span class="account--display"> Mein Konto</span>
+											</a>
+											<div id="webuser_account" style="display: none; z-index: 50;">
+												<ul>
+													<li>
+														<a class="service--link internal_link" href="login_or_register" title="Registrieren">
+															<i class="fa fa-user-plus" aria-hidden="true"></i> Konto erstellen / Anmelden
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="search col-xs-12 col-md-7">
+									
+		<div class="mini-wk darken"></div>
+<div class="mini-cart">
+	<div id="div_article_basket_info_block">
+		<a class="cart-link">
+			<span class="menu-icon icon flaticon-shopping-cart6"></span>
+			<span class="count">0</span>
+			<span class="text">Artikel</span>
+			<span class="kak">-</span>
+			<span class="subtotal">0,00 €</span>
+			<span class="count_pos">0 Positionen</span>
+		</a>
+		<div class="mini-cart-content">
+		</div>
+	</div>
+</div>
+
+	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="navrow row">
+						<nav id="top_menu" role="navigation">
+							<div class="main-menu-wapper navbar navbar-inverse"><div class="navbar-header"><button class="navbar-toggle" aria-controls="top_menu_navbar" aria-expanded="true" data-target="#top_menu_navbar" data-toggle="collapse" type="button"><span class="sr-only">main menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button></div> <div class="navbar-collapse collapse" id="top_menu_navbar" aria-expanded="true"><ul class="nav navbar-nav"><li><span style="white-space: nowrap;"><span><a class="internal_link" href="./de/home">Home</a></span></span></li><li class="dropdown"><span style="white-space: nowrap;"><span><a class="internal_link" href="./de/Druckerpatronen+und+Toner">Druckerpatronen und Toner</a></span></span></li><li class="dropdown"><span style="white-space: nowrap;"><span><a class="internal_link" href="./de/Buero+und+Schulbedarf">Büro und Schulbedarf</a></span></span></li><li class="dropdown"><span style="white-space: nowrap;"><span><a class="internal_link" href="./de/Technikartikel">Technikartikel</a></span></span></li></ul></div></div>
+						</nav>
+					</div>
+
+	
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="module-content" role="main">
+		<div class="row" id="outer_main_row">
+			<div class="container" id="main">
+				
+		<div class="breadcrumb-list">
+		<span class="breadcrumb_crumb">
+			
+			<a class="breadcrumb_link internal_link" href=""><h1></h1></a>
+		</span>
+</div>
+
+	
+				
+	
+	<div class="home-row">
+		<div class="col-xs-12 col-sm-9 pull-right">
+			<div class="row">
+				<div class="home-big-image">
+					<a class="internal_link" href="./de/Druckerpatronen+und+Toner/fuer+Canon"><img class="home-img" alt="Patrone Canon Banner" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-3 pull-left">
+			<div class="row">
+				<div class="start_top_grid__padding_bottom start_top_grid__padding_right">
+					<a class="internal_link" href="./de/Druckerpatronen+und+Toner/fuer+Canon"><img class="home-img" alt="Canon Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+				</div>
+				<div class="start_top_grid__padding_bottom start_top_grid__padding_right">
+					<a class="internal_link" href="./de/Druckerpatronen+und+Toner/fuer+Brother"><img class="home-img" alt="Brother Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+				</div>
+				<div class="start_top_grid__padding_right">
+					<a class="internal_link" href="./de/Druckerpatronen+und+Toner/fuer+Epson"><img class="home-img" alt="Epson Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="home-row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="row">
+				<div class="start_top_grid_second_row__padding_top start_top_grid_second_row__padding_right">
+					<a class="internal_link" href="./de/Druckerpatronen+und+Toner/fuer+HP"><img class="home-img" alt="HP Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<div class="row">
+				<div class="start_top_grid_second_row__padding_top start_top_grid_second_row__padding_left">
+					<a class="internal_link" href="./newsletter"><img class="home-img" alt="Die Patrone Newsletter" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="home-row remove-spacing">				
+		<div class="col-xs-12 col-sm-9 promotion-slider">
+			<div class="row hidden-xs slider-wrapper">
+				
+	<div class="promotion_article_slider__container" id="1513867978198">
+		<div class="promotion_article_slider__inner" style="left: 0%; top: 0%;">
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__D0749039001368699088A335">
+	<a class="internal_link" href="de/10-14-4256-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/10-14-4256-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt PGI550BK CLI551C/M/Y/BK XL mit CHIP</div>
+		<div class="promotion_article__price">18,19 €</div>
+	</a>
+</div>
+
+				</div>
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__0089070001280332224-42019">
+	<a class="internal_link" href="de/21-14-1244-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/21-14-1244-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt LC1100/ LC985/ LC980 Hohe Füllmenge C/M/Y/BK</div>
+		<div class="promotion_article__price">7,50 €</div>
+	</a>
+</div>
+
+				</div>
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__D0028288001363959991A488">
+	<a class="internal_link" href="de/14-14-4197-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/14-14-4197-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt 16XL T1631/2/3/4 C/M/Y/BK</div>
+		<div class="promotion_article__price">12,60 €</div>
+	</a>
+</div>
+
+				</div>
+		</div>
+	</div>
+
+			</div>
+			<div class="row visible-xs slider-wrapper">
+				
+	<div class="promotion_article_slider__container" id="1513867978200">
+		<div class="promotion_article_slider__inner" style="left: 0%; top: 0%;">
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__D0749039001368699088A335">
+	<a class="internal_link" href="de/10-14-4256-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/10-14-4256-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt PGI550BK CLI551C/M/Y/BK XL mit CHIP</div>
+		<div class="promotion_article__price">18,19 €</div>
+	</a>
+</div>
+
+				</div>
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__0089070001280332224-42019">
+	<a class="internal_link" href="de/21-14-1244-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/21-14-1244-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt LC1100/ LC985/ LC980 Hohe Füllmenge C/M/Y/BK</div>
+		<div class="promotion_article__price">7,50 €</div>
+	</a>
+</div>
+
+				</div>
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__D0028288001363959991A488">
+	<a class="internal_link" href="de/14-14-4197-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/14-14-4197-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt 16XL T1631/2/3/4 C/M/Y/BK</div>
+		<div class="promotion_article__price">12,60 €</div>
+	</a>
+</div>
+
+				</div>
+		</div>
+			<div class="promotion_article_slider__right">
+				&gt;
+			</div>
+	</div>
+
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-3" style="padding-left: 0.5em; padding-right: 0.5em;">
+		    <a class="internal_link" href="./de/Buero+und+Schulbedarf"><img class="home-img" alt="HP Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+		</div>
+	</div>
+	
+	
+	
+	<div class="row home-row">
+		<div class="col-xs-12">
+			<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="width: 100%; height: auto;">
+		</div>
+	</div>
+
+
+		
+	<div class="row remove-spacing">
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<div class="promotion_article" id="promotion_article__D0984527001432741959A1011">
+	<a class="internal_link" href="de/21-14-4899-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/uploads/5686dd563bb2a.png" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt LC223 C M Y BK</div>
+		<div class="promotion_article__price">29,40 €</div>
+	</a>
+</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<div class="promotion_article" id="promotion_article__D0682945001505320894A42">
+	<a class="internal_link" href="de/10-11-5216-23">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/uploads/1505326618__canon.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">Canon Drucker MX925 mit kompatiblen Patronen</div>
+		<div class="promotion_article__price">154,25 €</div>
+	</a>
+</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<a class="internal_link" href="./de/Druckerpatronen+und+Toner"><img class="home-img" alt="Canon Drucker Patronen" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="> </a>
+		</div>
+		<div class="col-xs-12 col-sm-3" style="padding-left: 0.5em; padding-right: 0.5em; padding-top: 1em;">
+			<div class="promotion_article" id="promotion_article__0125384001280332172-28282">
+	<a class="internal_link" href="de/14-14-753-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/14-14-753-9.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt T0715 C/M/Y/BK</div>
+		<div class="promotion_article__price">11,45 €</div>
+	</a>
+</div>
+
+		</div>
+		
+	</div>
+	
+	
+		
+	<div class="row remove-spacing">		
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<img class="home-img" alt="Drucker Patronen Sale" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+		</div>
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<div class="promotion_article" id="promotion_article__0389688001280332106-9477">
+	<a class="internal_link" href="de/20-14-1166-1">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/20-14-1166-1.gif" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Refilltoner ersetzt TN2000/ TN2005 Black</div>
+		<div class="promotion_article__price">14,64 €</div>
+	</a>
+</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<div class="promotion_article" id="promotion_article__0760101001280332249-47919">
+	<a class="internal_link" href="de/25-61-1390-22">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/data/erp/erp_article/article_pics/new/images_big/25-61-1390-22.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">Die Patrone Kopierpapier DIN A4 500 Blatt White</div>
+		<div class="promotion_article__price">5,50 €</div>
+	</a>
+</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-3 home-third-block">
+			<div class="row remove-spacing">
+				<div class="top-seller-headline">Top Seller</div>
+				
+	<div class="promotion_article_slider__container" id="topseller_slider">
+		<div class="promotion_article_slider__inner" style="left: 0%; top: 0%;">
+				<div class="promotion_article_slider__elem" style="padding-left: 0.5em; padding-right: 0.5em; float: left;">
+					<div class="promotion_article" id="promotion_article__D0327763001461339545A269">
+	<a class="internal_link" href="de/10-14-5016-9">
+		<img width="293" height="390" src="./sys/tools/phpthumb/phpThumb.php?&amp;w=264&amp;h=351&amp;bg=ffffff&amp;far=T&amp;f=jpeg&amp;q=88&amp;src=../../../die-patrone/uploads/1461766895__5inks.jpg" alt="" style="width: 100%; height: auto;">
+		<div class="promotion_article__name">NoName Patronenset ersetzt PGI570BK CLI571C/M/Y/BK XL mit CHIP</div>
+		<div class="promotion_article__price">39,90 €</div>
+	</a>
+</div>
+
+				</div>
+		</div>
+	</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row home-row">
+		<div class="col-xs-12">
+			<img class="home-img" alt="patrone longslider" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+		</div>
+	</div>
+
+	<div class="home-row row">
+		<div class="col-xs-12 seotext_startseite">
+			<h3>Die-Patrone.de - Ihr Shop für Druckerpatronen &amp; mehr!</h3>
+			<p>
+				Sie suchen kostengünstige Druckerpatronen für fast alle gängigen Druckermodelle? Kein Problem, denn bei uns finden Sie ein große Auswahl an Druckerpatronen und Toner - egal ob kompatibel oder orginal.  Wir legen bei unseren Produkten besonderen Wert auf die Qualität der Druckpatronen, was seit Jahren zu einem der führenden Onlineshops im Bereich Druckerzubehör macht. In unserem Sortiment finden Sie eine Vielzahl an originalen Druckerpatronen für Hersteller wie Epson, HP, Canon oder Brother zum Vorzugspreis. Besonders stark im Preis-Leistungs-Verhältnis sind unsere kompatiblen (nicht originalen) Patronen und Tonerkartuschen für Laserdrucker und Tintenstrahldrucker. Hier können Sie richtig sparen, Noch mehr können Sie sparen wenn Sie sich zu unserem Newsletter anmelden, denn hier haben wir Rabattcodes für Druckerpatronen und Toner sowie sämtliches Druckerzubehör mit bis zu 30%.
+			</p>
+			<p>
+				Wir bieten eine große Auswahl von an No-Name sowie original Patronen namhafter Hersteller. Natürlich finden Sie bei uns auch Patronen für Laserdrucker und Tintenstrahldrucker der Firmen Kyocera, Oki, Samsung, Konica-Minolta, Ricoh, Lexmark, Dell, Kodak, Olivetti, Dymao, Philips, Panasonic, Sharp, Telekom, Xerox und Odixion. Aber auch Reinigungssets, Bürobedarf, Speichermedien oder trendige Helfer für den Alltag gehören zu unserem Sortiment.
+			</p>
+		</div>
+	</div>
+<style type="text/css">
+.breadcrumb-list{
+	display:none;
+}	
+</style>
+
+
+
+	
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer-main" role="contentinfo">
+		<div class="row">
+			<div class="container" id="footer">
+				
+		<div class="footer--columns block-group">
+	<div class="footer--column column--hotline is--first block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Service Hotline</h5>
+		<div class="column--content">
+			<p class="column--desc"> <br>Dann rufen Sie uns an:<br><br><a class="footer--phone-link" href="tel:+494471958310">0 44 71 / 958 31 0</a><br>Mo-Fr, 09:00 - 15:00 Uhr</p>
+		</div>
+	</div>
+	<div class="footer--column column--menu block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Shop Service</h5>
+		<nav class="column--navigation column--content">
+			<ul class="navigation--list" role="menu">
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="agb" title="AGB">
+						AGB
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="defektes-produkt" title="Reklamation" target="_self">
+						Reklamation
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="widerrufsrecht" title="Widerrufsrecht">
+						Widerrufsrecht
+					</a>
+				</li>
+
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="datenschutz" title="Datenschutz">
+						Datenschutz
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="impressum" title="Impressum">
+						Impressum
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer--column column--menu block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Informationen</h5>
+		<nav class="column--navigation column--content">
+			<ul class="navigation--list" role="menu">
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="ueber-uns" title="Über uns">
+						Über uns
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="kontaktformular" title="Kontakt" target="_self">
+						Kontakt
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="versand-und-zahlung" title="Versand &amp; Zahlung">
+						Versand &amp; Zahlung
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="listing" title="Anleitung zum Nachfüllen">
+						Anleitung zum Nachfüllen
+					</a>
+				</li>
+
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="newsletter" title="Newsletter">
+						Newsletter
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer--column column--newsletter is--last block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Newsletter</h5>
+		<div class="column--content">
+			<p class="column--desc">
+				Abonnieren Sie unseren kostenlosen Newsletter und verpassen Sie keine Neuigkeiten oder Aktionen aus unserem Shop!
+			</p>
+			<input type="hidden" value="1" name="subscribeToNewsletter">
+			<input class="newsletter--field" type="email" placeholder="Mailadresse" title="Mailadresse" value="">
+			<button class="newsletter--button btn" type="button" onclick="javascript:NOS.Logic.newsletter.send_newsletter_formular()" title="speichern">
+				<i class="fa fa-envelope-o"></i>
+				<span class="button--text">Newsletter abonnieren</span>
+			</button>
+		</div>
+		<div style="float: right; padding-top: 5px; padding-bottom: 5px;">
+			<a class="facebooklink" href="https://de-de.facebook.com/DiePatronede" target="_blank" rel="nofollow"><img class="facebook" src="./die-patrone/images/mainsite/fb-icon.png" alt="Facebook"></a>
+		</div>
+		<div style="float: none; clear: both;"></div>
+	</div>
+</div>
+
+<div id="social">
+	<div id="icon_wrap">
+		<div class="row">
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/icon-vorkasse.png" alt="Vorkasse"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/icon-rechnung.png" alt="Rechnung"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/icon-lastschrift.png" alt="Lastschrift"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/paypal.png" alt="Paypal"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/visa.png" alt="Mastercard"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/mastercard.png" alt="Visa"></div>
+		    <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/Sofortueberweisung_Logo.gif" alt="Sofort Überweisung"></div>
+            <div class="col-xs-5 col-sm-3 col-md-2 col-lg-1 text-center" style="min-width: 12%;"><img class="footer_icon" src="./die-patrone/images/mainsite/dhl-logo.gif" alt="DHL Versand"></div>
+		</div>
+	</div>
+
+	<div class="footer--bottom">
+		<div class="footer--vat-info">
+			<p class="vat-info--text">
+				* Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a class="internal_link" title="Versandkosten" href="versand-und-zahlung">Versandkosten</a> und ggf. Nachnahmegebühren, wenn nicht anders beschrieben
+			</p>
+		</div>
+		<div class="footer--copyright">
+			©&nbsp;<a href="https://www.nosshop.de" target="_blank">NOSshop®</a>
+		</div>
+		<div class="footer--logo">
+			<i class="icon--shopware"></i>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', "UA-58426969-1"]);
+	_gaq.push(['_gat._anonymizeIp']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+
+<script async="" src="https://s3-eu-west-1.amazonaws.com/userlike-cdn-widgets/92e2df5b2850aa79f027154ba432b4789d3ad9b68dfe1c849990d4941e1973a4.js"></script> 
+	
+<script type="application/javascript">
+	(function () { 
+	var _tsid = 'X9F2B2BB0A68049B4D3477885BDC4F8F7'; 
+	_tsConfig = { 
+	'yOffset': '0', /* offset from page bottom */
+	'variant': 'reviews', /* default, reviews, custom, custom_reviews */
+	'customElementId': '', /* required for variants custom and custom_reviews */
+	'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+	'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+	'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+	'disableResponsive': 'false', /* deactivate responsive behaviour */
+	'disableTrustbadge': 'false' /* deactivate trustbadge */
+	};
+	var _ts = document.createElement('script');
+	_ts.type = 'text/javascript'; 
+	_ts.charset = 'utf-8'; 
+	_ts.async = true; 
+	_ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js'; 
+	var __ts = document.getElementsByTagName('script')[0];
+	__ts.parentNode.insertBefore(_ts, __ts);
+	})();
+</script>
+
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-58426969-2"></script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-58426969-2');
+</script>
+
+
+	
+			</div>
+		</div>
+		<div class="foot_place_holder">
+		</div>
+	</footer>
+</div>
+<clearer></clearer>
+
+
+	</div>
+
+
+
+	<script id="main_border_template" type="text/ractive">
+		<div id="site_body" class="container-fluid" lang="{{route.lang.toLowerCase()}}">
+
+
+{{#if nosword}}
+	<header role="banner">
+		<div class="row header-main">
+			<div class="container">
+				<div id="head" class="container" role="head">
+					{{> "head"}}
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main role="main" class="module-{{this.main_template.substring(0, this.main_template.indexOf('/'))}}">
+		<!-- aaa -->
+		<div class="row" id='outer_main_row'>
+			<div id="main" class="container">
+				{{>breadcrumb}}
+				{{>dynamical}}
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer-main" role="contentinfo">
+		<div class="row">
+			<div id="footer" class="container">
+				{{> "footer"}}
+			</div>
+		</div>
+		<div class="foot_place_holder">
+		</div>
+	</footer>
+{{else}}
+
+	<div class="loading-wheel word_waiter">
+		<img src="./sys/images/sysimages/loading_big.gif">
+	</div>
+{{/if}}
+</div>
+
+
+{{#each Messagebox:Messagebox_key}}
+	<Messagebox id="{{Messagebox_key}}"
+		title="{{this.title}}"
+		kind="{{this.kind}}"
+		active="{{this.active}}"
+		funk_bestaetigt={{this.funk_bestaetigt}}
+		funk_abbruch={{this.funk_abbruch}}
+		custom_key_binds={{this.custom_key_binds}}
+		initialisiert={{this.initialisiert}}
+		>
+	</Messagebox>
+{{/each}}
+
+<clearer />
+
+{{#if ajax_waiter}}
+	<div class="loading-wheel ajax_waiter_1">
+		<img src="./sys/images/sysimages/loading_big.gif">
+	</div>
+{{else}}
+{{/if}}
+
+{{#if ajax_waiter_2}}
+	<div class="loading-wheel ajax_waiter_2">
+		<img src="./sys/images/sysimages/loading_big.gif">
+	</div>
+{{else}}
+{{/if}}
+
+
+	</script>
+
+	<script id="Messagebox" type="text/ractive">
+		<div id="erp_message_abdunkler__{{this.id}}" name="erp_message_abdunkler" class="erp_message_abdunkler">
+	<div id="erp_message__{{this.id}}" name="erp_message" class="erp_message" style="top: {{fenster_top}}; left: {{fenster_left}};">
+		<div id="erp_message_inner_box__{{this.id}}" name="erp_message_inner_box" class="erp_message_inner_box" style="background: {{this.color}};">
+			<div id="erp_message_inner_box_header__{{this.id}}" name="erp_message_inner_box_header" class="erp_message_inner_box_header">
+				<div id="erp_message_inner_box_header__titel__{{this.id}}" name="erp_message_inner_box_header__titel" class="erp_message_inner_box_header__titel">
+					{{#if this.title}}{{ nosapp.replace_nosword_string(this.title) }}{{/if}}
+				</div>
+				<div id="erp_message_inner_box_header__button_box__{{this.id}}" name="erp_message_inner_box_header__button_box" class="erp_message_inner_box_header__button_box">
+					{{#if this.closebutton}}
+					<div id="erp_message_inner_box_header__close_button__{{this.id}}" name="erp_message_inner_box_header__close_button" class="erp_message_inner_box_header__close_button" on-click="@this.close()">
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</div>
+					{{/if}}
+				</div>
+			</div>
+			<div id="erp_message_inner_box_content__{{this.id}}" name="erp_message_inner_box_content" class="erp_message_inner_box_content no_dragg" style="">
+				{{#if this.msg}}{{{ nosapp.replace_nosword_string(this.msg) }}}{{/if}}
+				
+				{{#if ((this.kind == "confirm") || (this.kind == "done_with_ok"))}}
+					<div id="erp_message_confirm_area_button_box__n05lukwnt" name="erp_message_confirm_area_button_box" class="erp_message_confirm_area_button_box">
+						{{#if (this.kind == "confirm")}}
+							<button type="button" id="erp_message_confirm_area_abbort_button__{{this.id}}" name="erp_message_confirm_area_abbort_button" class="erp_message_confirm_area_abbort_button cms_button" on-click="@this.cancel()">abbrechen</button>
+						{{/if}}
+						<button type="button" id="erp_message_confirm_area_ok_button__{{this.id}}" name="erp_message_confirm_area_ok_button" class="erp_message_confirm_area_ok_button cms_button" on-click="@this.ok()">OK</button>
+					</div>
+				{{/if}}	
+			</div>
+		</div>
+	</div>
+</div>
+
+	</script>
+
+	<script id="dynamical" type="text/ractive">
+		{{#if this.main_template}}
+	<dynamicpartial partialname={{this.main_template}} partialname_old={{this.partialname_old}} data={{this}}></dynamicpartial>
+{{/if}}	
+
+	</script>
+
+	<script id="menu/top_menu" type="text/ractive">
+		<div class="main-menu-wapper navbar navbar-inverse">
+	<div class="navbar-header">
+		<button aria-controls="top_menu_navbar" aria-expanded="true" data-target="#top_menu_navbar" data-toggle="collapse" class="navbar-toggle" type="button">
+		    <span class="sr-only">main menu</span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+	</div>	  
+	<div id="top_menu_navbar" class="navbar-collapse collapse" aria-expanded="true">
+		<ul class="nav navbar-nav">
+		{{#each menu.renderd_top}}
+			<li class="{{#if this.sub}}dropdown{{/if}}{{#if this.top_open}} open{{/if}}">
+				
+				<span style="white-space:nowrap;"
+				
+					on-click="nosapp.menu.productmenu_open_top(@context)"
+				>
+					
+				
+					
+					
+					
+					<span>
+						<a class="internal_link" href="{{#if this.link}}./{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_list/categorie_id/{{this.id}}{{/if}}">{{this.text}}</a>
+					</span>	
+					
+					
+				</span>
+				
+				
+				
+				
+				
+			</li>
+		{{/each}}
+		</ul>
+
+	</div>	
+</div>
+
+
+	</script>
+
+	<script id="menu/top_menu_sub" type="text/ractive">
+		<ul class="dropdown-menu">
+{{#each this.sub}}
+	<li class="{{#if this.sub}}dropdown-submenu{{/if}}{{#if this.top_open}} open{{/if}}" style="">
+		<span style="white-space:nowrap;padding:5px;padding-left:0px;display: inline-block;width:100%;" 
+		{{#if this.top_open}}
+			on-click-touchend="nosapp.menu.productmenu_close_and_close_deeper_top(this.id)"
+		{{else}}
+			on-click-touchend="nosapp.menu.productmenu_open_top(@context)"
+		{{/if}}
+		>
+			
+		
+		<!--
+			<span>
+				{{#nosapp.categorie_bread(this.id)}}
+					<a class="internal_link" href="./attr/{{~/route.lang}}/article/interface/article_list/categorie_id/{{this.id}}">{{this.text}}</a> / 
+				{{/each}}
+			</span>
+		-->	
+			
+			
+			
+			<span>
+				<a class="internal_link" href="{{#if this.link}}./{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_list/categorie_id/{{this.id}}{{/if}}">{{this.text}}</a>
+			</span>	
+			
+			{{#if this.sub}}
+				<span>
+					<span class="caret"></span>
+				</span>	
+			{{/if}}	
+		</span>		
+		
+		
+		
+		
+		{{#if this.sub}}
+			{{#if this.top_open}}
+				{{> "menu/top_menu_sub"}}
+			{{/if}}
+		{{/if}}
+	</li>
+{{/each}}
+</ul>
+
+	</script>
+
+	<script id="menu/side_menu" type="text/ractive">
+		<ul class="nav navbar-inverse side-nav">
+{{#each nosapp.menu.get_menue_from_array(menu.left)}}
+	<li class="{{#if this.sub}}left-dropdown{{/if}}{{#if this.open}} open{{/if}}" style="padding-left:15px;">
+		
+		<span style="white-space:nowrap;padding:5px;padding-left:0px;display: inline-block;width:100%;"
+		{{#if this.open}}
+			on-click="nosapp.menu.productmenu_close_and_close_deeper(this.id)"
+		{{else}}
+			on-click="nosapp.menu.productmenu_open(@context)"
+		{{/if}}
+		>
+			
+		
+			
+			<span>
+				<a class="internal_link" href="{{#if this.link}}./{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_list/categorie_id/{{this.id}}{{/if}}">{{this.text}}</a>
+			</span>	
+			
+			
+			{{#if this.sub}}
+				<span>
+					<span class="caret"></span>
+				</span>	
+			{{/if}}	
+		</span>
+		
+		
+		
+		
+		
+		{{#if this.sub}}
+			{{#if this.open}}
+				{{> "menu/side_menu_sub"}}
+			{{/if}}
+		{{/if}}
+	</li>
+{{/each}}
+</ul>
+
+
+
+	</script>
+
+	<script id="menu/side_menu_sub" type="text/ractive">
+		<ul class="left-dropdown-menu">
+{{#each this.sub}}
+	<li class="{{#if this.sub}}left-dropdown-submenu{{/if}}{{#if this.open}} open{{/if}}" style="">
+		<span style="white-space:nowrap;padding:5px;padding-left:0px;display: inline-block;width:100%;" 
+		{{#if this.open}}
+			on-click="nosapp.menu.productmenu_close_and_close_deeper(this.id)"
+		{{else}}
+			on-click="nosapp.menu.productmenu_open(@context)"
+		{{/if}}
+		>
+			
+			<span>
+				<a class="internal_link" href="{{#if this.link}}./{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_list/categorie_id/{{this.id}}{{/if}}">{{this.text}}</a>
+			</span>	
+			
+			{{#if this.sub}}
+				<span>
+					<span class="caret"></span>
+				</span>	
+			{{/if}}	
+		</span>		
+		
+		
+		
+		
+		{{#if this.sub}}
+			{{#if this.open}}
+				{{> "menu/side_menu_sub"}}
+			{{/if}}
+		{{/if}}
+	</li>
+{{/each}}
+</ul>
+
+	</script>
+
+	<script id="search_field" type="text/ractive">
+		<div class="box-serach-wapper">
+
+	<div class="advanced-search">
+
+		<div class="search-text-box">
+
+			<input style="padding-left:5px;" class="input" id="searchfield" name="nosshop_search__searchword" value="{{search.searchword}}" placeholder="Suchwort eingeben" type="search">
+			<button class="btn-search" type="button" onclick="NOS.Logic.search.start_search()"><span class="flaticon-magnifying-glass34"></span></button>
+
+		</div>
+
+	</div>
+</div>
+
+	</script>
+
+	<script id="article_basket/basket_small" type="text/ractive">
+		<div class="mini-wk darken {{#if wk.wk_small_show}}wk_on{{/if}}"></div>
+<div class="mini-cart">
+	<div id="div_article_basket_info_block">
+		{{#if wk.redeemed_coupons.count > 0}}
+		<div class="coupon-container">
+			<a class="cart-link coupon-link" on-click="@this.toggle('coupon_visible')">
+				<i class="fa fa-percent" aria-hidden="true"></i>
+			</a>
+			<div class="redeemed-coupons {{#if coupon_visible}}{{else}}hidden{{/if}}">					
+				<h4>{{nosword.your_coupons}}</h4>
+				{{#each wk.redeemed_coupons.coupons}}
+				
+				<p>
+					<i class="fa fa-check line-starter" aria-hidden="true"></i> {{nosword.code}}: {{this.code}}<br />{{nosword.kind}}: {{this.kind}}
+				</p>
+				<hr />
+				{{/each}}
+				<p><small>
+					{{nosword.coupon_prerequisites_notice}}
+				</small></p>		
+			</div>
+		</div>
+		{{/if}}
+		<a class="cart-link {{#if wk.count > 0}}clickable{{/if}}" {{#if wk.wk_small_show || wk.count == 0}}on-click="@context.set('wk.wk_small_show', false)"{{else}}on-click="@context.set('wk.wk_small_show', true)"{{/if}}>
+			<span class="menu-icon icon flaticon-shopping-cart6"></span>
+			<span class="count">{{wk.count_article}}</span>
+			<span class="text">{{nosword.article}}</span>
+			<span class="kak">-</span>
+			<span class="subtotal">{{nosapp.priceFormat(wk.part_sum)}}</span>
+			<span class="count_pos">{{wk.count}} {{nosword.positions}}</span>
+		</a>
+		<div class="mini-cart-content {{#if wk.wk_small_show}}wk_on{{/if}}">
+			{{#if wk.wk_small_show}}
+				<div class="mini_wk__close">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i> <span class="buy-more">{{nosword.continue_shopping}}</span>
+				</div>
+				<div class="mini_wk__head cart_content_block">
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="mini_wk__top_text">{{nosword.you_have_formal}} <span class="count">{{wk.count_article}} {{nosword.article}}</span> {{nosword.in_your_cart_at}} <span class="count_pos">{{wk.count}} {{#if wk.count != 1}}{{nosword.positions}}{{else}}{{nosword.position}}{{/if}}</span></span>
+						</div>
+						<div class="col-xs-12">
+							<span class="mini_wk__top_text">
+								<b class="sumtext"><span>{{nosword.total_amount}}: </span><span class="amout">{{nosapp.priceFormat(wk.part_sum)}}</span></b>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="mini_wk__body">
+					{{#if wk.count > 0}}
+						<!--div style='text-align:right;' class="cart_content_block">
+						    <a href="./attr/{{~/route.lang}}/article_basket/interface/wk_page" class="button internal_link">zum Warenkorb</a>
+						</div-->
+						<ul class="list-item-cart">
+							{{#each wk.positions}}
+							<li class="item-cart cart_content_block">
+								<div class="thumb">
+									<a href="#">
+										{{#each this.media}}
+											{{#if (@index == 0)}}
+												<img width="35" height="35" src="./sys/tools/phpthumb/phpThumb.php?&w=35&h=35&bg=ffffff&far=1&f=jpeg&q=85&src=http://die-patrone.noserp.de/{{this.file}}">
+											{{/if}}
+										{{/each}}
+									</a>
+								</div>
+								<div class="product-info">
+									<a href="{{#if this.link}}{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_detail/article_id/{{this.article_id}}/categorie_id/{{this.cat_id}}{{/if}}" class="internal_link categories_name">{{nosapp.get_cat_name_by_id(this.cat_id)}}</a>
+									<a href="{{#if this.link}}{{this.link}}{{else}}./attr/{{~/route.lang}}/article/interface/article_detail/article_id/{{this.article_id}}/categorie_id/{{this.cat_id}}{{/if}}" class="internal_link products_name">{{#if nosapp.get_cat_name_by_id(this.cat_id)}}-{{/if}} {{this.name}}</a>
+									<br />
+									<span>{{this.quantity}} x {{nosapp.priceFormat(this.single_price.price)}} = {{nosapp.priceFormat(this.position_price.price)}}</span>
+								</div>
+								<a class="remove-item" href="javascript:NOS.Logic.article_basket.remove_row('{{this.article_id}}', '{{this.cat_id}}');"><i class="fa fa-close"></i></a>
+							</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+				</div>
+				<div class="mini_wk__foot">
+					<div class="cart_content_block">
+						<b class="sumtext"><span>{{nosword.total_amount}}: </span><span class="amout">{{nosapp.priceFormat(wk.part_sum)}}</span></b>
+						<a href="./attr/{{~/route.lang}}/article_basket/interface/wk_page" class="button internal_link"><i class="menu-icon icon flaticon-shopping-cart6" aria-hidden="true"></i> {{nosword.go_to_article_basket}}</a>
+					</div>
+					<div class="cart_content_block paypal-area">
+						<span>{{nosword.or}}</span> <PaypalExpressButton id="wk_small"/>
+					</div>
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</div>
+
+	</script>
+
+	<script id="footer" type="text/ractive">
+		<div class="footer--columns block-group">
+	<div class="footer--column column--hotline is--first block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Service Hotline</h5>
+		<div class="column--content">
+			<p class="column--desc">{{nosword.you_have_questions}} <br>Dann rufen Sie uns an:<br><br><a href="tel:+494471958310" class="footer--phone-link">0 44 71 / 958 31 0</a><br>Mo-Fr, 09:00 - 15:00 Uhr</p>
+		</div>
+	</div>
+	<div class="footer--column column--menu block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Shop Service</h5>
+		<nav class="column--navigation column--content">
+			<ul class="navigation--list" role="menu">
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="agb" title="AGB">
+						AGB
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="defektes-produkt" title="Reklamation" target="_self">
+						Reklamation
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="widerrufsrecht" title="Widerrufsrecht">
+						Widerrufsrecht
+					</a>
+				</li>
+
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="datenschutz" title="Datenschutz">
+						Datenschutz
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="impressum" title="Impressum">
+						Impressum
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer--column column--menu block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Informationen</h5>
+		<nav class="column--navigation column--content">
+			<ul class="navigation--list" role="menu">
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="ueber-uns" title="Über uns">
+						Über uns
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="kontaktformular" title="Kontakt" target="_self">
+						Kontakt
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="versand-und-zahlung" title="Versand &amp; Zahlung">
+						Versand &amp; Zahlung
+					</a>
+				</li>
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="listing" title="Anleitung zum Nachfüllen">
+						Anleitung zum Nachfüllen
+					</a>
+				</li>
+
+				<li class="navigation--entry" role="menuitem">
+					<a class="navigation--link internal_link" href="newsletter" title="Newsletter">
+						Newsletter
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer--column column--newsletter is--last block">
+		<h5 class="column--headline" onclick="(function(elem){jQuery(elem).parent().find('.column--content').show(0);})(this)">Newsletter</h5>
+		<div class="column--content">
+			<p class="column--desc">
+				Abonnieren Sie unseren kostenlosen Newsletter und verpassen Sie keine Neuigkeiten oder Aktionen aus unserem Shop!
+			</p>
+			<input value="1" name="subscribeToNewsletter" type="hidden">
+			<input type = 'email' placeholder='{{nosword.email}}' title='{{nosword.email}}' class="newsletter--field" value = '{{newsletter_form.email}}'>
+			<button type='button' onClick = "javascript:NOS.Logic.newsletter.send_newsletter_formular()" class="newsletter--button btn" title='{{nosword.save}}'>
+				<i class="fa fa-envelope-o"></i>
+				<span class="button--text">Newsletter abonnieren</span>
+			</button>
+		</div>
+		<div style="float:right;padding-top:5px;padding-bottom:5px;">
+			<a href="https://de-de.facebook.com/DiePatronede" target="_blank" rel="nofollow" class="facebooklink"><img src="./die-patrone/images/mainsite/fb-icon.png" class="facebook" alt="Facebook"></a>
+		</div>
+		<div style="float:none;clear:both;"></div>
+	</div>
+</div>
+
+<div id="social">
+	<div id="icon_wrap">
+		<div class='row'>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/icon-vorkasse.png" class="footer_icon" alt="Vorkasse"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/icon-rechnung.png" class="footer_icon" alt="Rechnung"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/icon-lastschrift.png" class="footer_icon" alt="Lastschrift"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/paypal.png" class="footer_icon" alt="Paypal"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/visa.png" class="footer_icon" alt="Mastercard"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/mastercard.png" class="footer_icon" alt="Visa"></div>
+		    <div class='col-xs-6 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/Sofortueberweisung_Logo.gif" class="footer_icon" alt="Sofort Überweisung"></div>
+            <div class='col-xs-5 col-sm-3 col-md-2 col-lg-1 text-center' style='min-width:12%;'><img src="./die-patrone/images/mainsite/dhl-logo.gif" class="footer_icon" alt="DHL Versand"></div>
+		</div>
+	</div>
+
+	<div class="footer--bottom">
+		<div class="footer--vat-info">
+			<p class="vat-info--text">
+				* Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <a title="Versandkosten" href="versand-und-zahlung" class="internal_link">Versandkosten</a> und ggf. Nachnahmegebühren, wenn nicht anders beschrieben
+			</p>
+		</div>
+		<div class="footer--copyright">
+			&copy;&nbsp;<a href='https://www.nosshop.de' target='_blank'>NOSshop&reg;</a>
+		</div>
+		<div class="footer--logo">
+			<i class="icon--shopware"></i>
+		</div>
+	</div>
+</div>
+
+{{>'system/footerscripts'}}
+
+	</script>
+
+	<script id="head" type="text/ractive">
+		
+					<div class="top-bar row">
+						<div class="container block-group">
+							<nav class="top-bar--navigation block" role="menubar">
+								 <div class="dropdown pull-right">
+									  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i> Service/Hilfe <i class="glyphicon glyphicon-chevron-down"></i></button>
+									  <ul class="dropdown-menu service--list is--rounded" role="menu">
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="agb" title="AGB">
+												AGB
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="kontaktformular" title="Kontakt" target="_self">
+												Kontakt
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="defektes-produkt" title="Reklamation" target="_self">
+												Reklamation
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="versand-und-zahlung" title="Versand &amp; Zahlung">
+												Versand &amp; Zahlung
+											</a>
+										</li>
+										<li class="service--entry" role="menuitem">
+											<a class="service--link internal_link" href="let-s-print-anleitung" title="Let's Print Anleitung">
+												Let's Print Anleitung
+											</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+
+
+					<div class="main-header row">
+						<div class="logo col-xs-12 col-md-3 col-lg-3">
+							<a class="logo--link internal_link" href="./de/home" title="die-patrone.de - Druckerpatronen und Druckerzubehör - zur Startseite wechseln">
+								<picture>
+									<!--<source srcset="http://www.die-patrone.de/media/image/32/c3/fd/logo_patrone_weiss558173c41f469.png" media="(min-width: 78.75em)">
+									<source srcset="http://www.die-patrone.de/media/image/32/c3/fd/logo_patrone_weiss558173c41f469.png" media="(min-width: 64em)">
+									<source srcset="http://www.die-patrone.de/media/image/b8/c8/cb/logo_patrone_weiss.png" media="(min-width: 48em)">
+									-->
+                                    <img src="./die-patrone/images/startseite/logo_patrone.png" alt="die-patrone.de - Druckerpatronen und Druckerzubehör - zur Startseite wechseln">
+								</picture>
+							</a>
+						</div>
+						<div class="search  col-xs-12 col-md-4 col-lg-5">
+							{{>search_field}}
+						</div>
+						<div class="merkzettel col-xs-12 col-md-5 col-lg-4">
+							<div class="row">
+								<div class="col-xs-12 col-md-5">
+									<div class="row">
+										<div id="my_account_menu_outer" class="user col-xs-12 col-md-9">
+											<a class="btn is--icon-left entry--link account--link" href="javascript:void(0);" onclick="NOS.Logic.webuser.open_account_menu();" title="{{nosword.my_account}}">
+												<i class="glyphicon glyphicon-user"></i>
+												<span class="account--display"> {{nosword.my_account}}</span>
+												{{#if user.id && (!user.no_account)}}
+												<br /><span class="account--your_name">
+													{{nosword.welcome}}, {{user.maindata.first_name.value}} {{user.maindata.last_name.value}}!
+												</span>
+												{{/if}}
+											</a>
+											<div id="webuser_account" style="display:none;z-index:50;">
+												<ul>
+													{{#if !user.id || user.no_account}}
+													<li>
+														<a class="service--link internal_link" href="login_or_register" title="Registrieren">
+															<i class="fa fa-user-plus" aria-hidden="true"></i> {{nosword.login_or_register}}
+														</a>
+													</li>
+													{{else}}
+													<li>
+														<a class="service--link internal_link" href="dashboard" title="{{nosword.my_data}}">
+															<i class="fa fa-user-circle-o" aria-hidden="true"></i> {{nosword.my_data}}
+														</a>
+													</li>
+													<li>
+														<a class="service--link internal_link" href="logout" title="{{nosword.logout}}">
+															<i class="fa fa-sign-out" aria-hidden="true"></i> {{nosword.logout}}
+														</a>
+													</li>
+													{{/if}}
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="search col-xs-12 col-md-7">
+									{{>article_basket/basket_small}}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="navrow row">
+						<nav id="top_menu" role="navigation">
+							<TopMenu data={{this}} />
+						</nav>
+					</div>
+
+	</script>
+
+	<script id="Combobox" type="text/ractive">
+		<div id="ractive_combobox_container__{{this.id}}">
+	{{#if this.use_combobox}}
+		<select id="ractive_combobox_select__{{this.id}}" value={{this.selected_value}} class="combobox_selecty visible-xs-inline-block" on-click="setActivated()">
+
+		{{#if activated}}
+			{{#each this.select_array}}
+				<option value="{{this.value}}">{{this.name}}</option>
+			{{/each}}
+		{{else}}
+			<option value="{{this.selected_value}}">{{this.for_view.value}}</option>
+		{{/if}}
+		</select>
+
+
+		<div id="ractive_combobox__{{this.id}}"  class="dropdown ractive_combobox hidden-xs {{open}}">
+		  <span class="btn btn-default dropdown-toggle" type="button" id="ractive_combobox_dropdown__{{this.id}}" on-click="setOpen()">
+		    <input id="ractive_combobox_input__{{this.id}}" name="ractive_combobox_input__{{this.id}}" value="{{this.for_view.value}}" class="{{#if this.mark=='red'}}mark_red{{/if}}">
+		    <span class="caret"></span>
+		  </span>
+		  <ul class="dropdown-menu">
+		  {{#if open}}
+		    {{#each get_visble_array()}}
+			    <li on-click="setSelectedValue(this.value)" class="{{#if this.value==~/.marked_val}}marked_combo_elem{{/if}}"><a href="javascript:void(0)">{{this.name}}</a></li>
+		     {{/each}}
+		  {{/if}}
+		  </ul>
+		</div>
+	{{else}}
+		<select id="ractive_combobox_select__{{this.id}}" value={{this.selected_value}} class="combobox_selecty">
+			{{#each this.select_array}}
+				<option value="{{this.value}}">{{this.name}}</option>
+			{{/each}}
+		</select>
+	{{/if}}
+</div>
+
+	</script>
+
+	<script id="Rangeslider" type="text/ractive">
+		<div id="rangeslider_{{this.id}}__for_slider"></div>
+<div id="rangeslider_{{this.id}}__for_display">{{this.value.min}} {{this.unit}} - {{this.value.max}} {{this.unit}}</div>
+<input type="hidden" id="rangeslider_{{this.id}}__value_min" name="rangeslider_{{this.id}}__value_min" value="{{this.value.min}}" />
+<input type="hidden" id="rangeslider_{{this.id}}__value_max" name="rangeslider_{{this.id}}__value_max" value="{{this.value.max}}" />
+
+
+
+	</script>
+
+	<script id="breadcrumb" type="text/ractive">
+		<div class="breadcrumb-list">
+	{{#each nosapp.get_breadcrumb() :i}}
+		<span class="breadcrumb_crumb">
+			{{#if (i > 0)}} <i class="glyphicon glyphicon-menu-right"></i>{{/if}}
+			<a href="{{this.link}}" class="breadcrumb_link internal_link">{{#if (i == nosapp.get_breadcrumb().length-1)}}<h1>{{nosapp.replace_nosword_string(this.text)}}</h1>{{else}}{{nosapp.replace_nosword_string(this.text)}}{{/if}}</a>
+		</span>
+	{{/each}}
+</div>
+
+	</script>
+
+
+	<script>
+	<!--
+		var HOST = "www.die-patrone.de";
+		var BASE = "/";
+		var NOSSHOP_PATH = "die-patrone";
+		var CHANNEL = "";
+		var CURRENT_REVISION = '1793217137';
+		var CURRENT_REVISION_PARAMETER = '?v='+CURRENT_REVISION;
+		
+
+		var INIT_LANG = 'de';
+		var TITLE_PREFIX = 'Die-Patrone';
+		var PAYPAL_EXPRESS_ENVIRONMENT = 'production';
+
+
+
+	-->
+	</script>
+
+
+	<div style="white-space:pre;"><!--
+	Array
+(
+    [use_customer_path] => die-patrone
+    [without_switch] => on
+)
+
+	--></div>
+
+	
+
+	<link rel="stylesheet" href="./sys/css/load_css.php?v=1793217137&amp;NOSSHOP_PATH=die-patrone">
+
+	<script src="./sys/js/load_all_js.php?v=1793217137&amp;NOSSHOP_PATH=die-patrone" async=""></script>
+
+
+
+
+
+</body></html>

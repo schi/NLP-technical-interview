@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+<base href="http://frey-software.de/">
+<title>Frey Software</title>
+<meta name="robots" content="index,follow">
+<meta name="language" content="de">
+<meta name="company" content="Frey Software, Manuel Frey">
+<meta name="author" content="Frey Software">
+<meta name="publisher" content="Frey Software">
+<meta name="reply-to" content="info@frey-software.de">
+<meta name="revisit-after" content="14">
+<meta name="description" content="Lernsoftware für Segler und Motorbootfahrer">
+<meta name="keywords" content="Segeln,Seefunk,Wassersport, Lernsoftware,SRC, Sportbootführerschein, Sbf, ">
+<meta name="generator" content="xt:Commerce VEYTON 4.0.13">
+<link rel="stylesheet" type="text/css" href="http://frey-software.de/templates/frey_custom/javascript/lightbox/css/jquery.lightbox-0.5.css" media="screen"><link rel="stylesheet" type="text/css" href="http://frey-software.de/templates/frey_custom/css/stylesheet.css">
+
+<script type="text/javascript" src="http://frey-software.de/templates/frey_custom/javascript/jquery.js"></script>
+<script type="text/javascript" src="http://frey-software.de/templates/frey_custom/javascript/lightbox/jquery.lightbox-0.5.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+
+	$('#showCart').click( function() {
+		$('#cartContent').slideToggle('fast');
+	});
+
+	$('.add2cart').mouseover( function() {
+	  var src = $(this).attr('src');
+	  src = src.replace('.gif', '_hover.gif');
+	  $(this).attr('src',src);
+	});
+	$('.add2cart').mouseout( function() {
+	  var src = $(this).attr('src');
+	  src = src.replace('_hover', '');
+	  $(this).attr('src',src);
+	});
+
+
+	$('.parent').mouseover( function() {
+	  $(this).addClass('hover');
+	});
+
+	$('.parent').mouseout( function() {
+	  $(this).removeClass('hover');
+	});
+
+	$('#navi span.parent').parent().hover(
+		function () {
+			$(this).children('.subcats').slideDown( 'fast' );
+		}, 
+		function () {
+			$(this).children('.subcats').slideUp( 'fast' );
+		}
+	);
+
+	/*
+	$('.sidenavi span.parent').click( function() {
+		if( $(this).next('.subcats').is(":visible") )
+		{
+			$(this).next('.subcats').slideUp( 'fast' );
+			$(this).removeClass('open');
+			$(this).addClass('closed');
+		}
+		else
+		{
+			$(this).next('.subcats').slideDown( 'fast' );
+			$(this).addClass('open');
+			$(this).removeClass('closed');
+		}
+	});
+	*/
+
+	$('form[name="add2Cart"]').submit(function() {
+		
+		var formData = $(this).serialize();
+
+		showDiv( '<div id="overlay" class="overlayBG"></div><div id="loader"></div>', '#loader' );
+
+		$.ajax({  
+			type: 'POST',  
+			url: 'http://frey-software.de/ajax.php',  
+			data: formData,  
+			success: function(){
+				refreshCart();
+			} 
+		});
+		return false;
+    });
+
+	$('a.lightbox').lightBox();
+});
+
+function refreshCart() {
+	
+	$.ajax({  
+		type: 'POST',  
+		url: 'http://frey-software.de/ajax.php',  
+		data: 'action=refreshCart', 
+		dataType: 'json',
+		success: function(data) {
+			$('#loader').remove();
+			showDiv( data.msgDiv, '#msg' );
+			$('#productCount').html( data.productCount );
+			$('#cartContent').html( data.cart );
+		} 
+	});
+}
+
+function showDiv( div, centerID )
+{
+	$('html').prepend( div );
+
+	if( centerID )
+	{
+		$( centerID ).css("position","absolute");
+		$( centerID ).css("top", ( $(window).height() - $( centerID ).height() ) / 2 + $(window).scrollTop() + "px");
+		$( centerID ).css("left", ( $(window).width() - $( centerID ).width() ) / 2 + $(window).scrollLeft() + "px");
+	}
+}
+
+function closeMsg()
+{
+	$('#msg').remove();
+	$('#overlay').remove();
+}
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+<body>
+﻿
+<div id="wrap">
+
+	<div id="header">
+
+    	<div id="logo">
+        	<a href="http://frey-software.de/"><img src="http://frey-software.de/templates/frey_custom/images/logo.gif" alt="Frey Software - Lernsoftware für Wassersportler"></a>
+        </div>
+
+		<div id="navi">
+            
+            
+
+            <ul>
+
+				<li><a href="http://frey-software.de/">Startseite</a></li>
+
+            <li class="level1"><a href="http://frey-software.de/de/Download.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Download</a></li>
+<li class="level1"><span class="parent">Support</span><ul class="subcats"><li class="level2"><a href="http://frey-software.de/de/Updates.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Updates</a></li>
+<li class="level2"><a href="http://frey-software.de/de/Registrierung.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Registrierung</a></li>
+<li class="level2"><a href="http://frey-software.de/de/FAQ.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">FAQ</a></li>
+</ul>
+</li>
+<li class="level1"><span class="parent">Über uns</span><ul class="subcats"><li class="level2"><a href="http://frey-software.de/de/Team.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Team</a></li>
+<li class="level2"><a href="http://frey-software.de/de/Referenzen.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Referenzen</a></li>
+<li class="level2"><a href="http://frey-software.de/de/Partner-werden.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Partner werden</a></li>
+<li class="level2"><a href="http://frey-software.de/de/Kontakt.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Kontakt</a></li>
+</ul>
+</li>
+<li class="level1"><a href="http://frey-software.de/de/AGB.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">AGB</a></li>
+
+                                            <li><a href="http://frey-software.de/de/customer/login.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Anmelden</a></li>
+                            
+            </ul>
+
+			<div id="cart">
+                
+
+    
+		<p style="margin-bottom: 7px;"><a href="javascript:;" id="showCart"><span id="productCount">0</span> Artikel im Warenkorb</a></p>
+        <div id="cartContent" style="display: none; position: absolute; background-color: #E9E9E9; text-align: right; padding: 6px; border: 1px solid #8d8d8d; border-top: none; width: 196px;">Ihr Warenkorb ist leer.</div>
+
+    
+
+            </div>
+
+			<div style="clear: both;"></div>
+
+        </div>
+
+    </div>
+
+	<div id="sidebar">
+        
+<div class="box">
+
+    <div class="head">
+        Kategorien
+    </div>
+
+    <div class="boxcontent">
+
+        <ul class="sidenavi">
+
+        <li class="level1"><a href="http://frey-software.de/de/Bodenseeschifferpatent.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Bodenseeschifferpatent</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Sbf-Binnen.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Sbf Binnen</a></li>
+<li class="level1"><a href="http://frey-software.de/de/SbF-See.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Sbf See</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Sportkuestenschifferschein.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Sportküstenschifferschein</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Sportseeschifferschein.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Sportseeschifferschein</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Seenotsignalmittel-FKN-/-SKN.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Seenotsignalmittel (FKN / SKN)</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Sporthochseeschifferschein.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Sporthochseeschifferschein</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Seefunk-SRC-LRC.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Seefunk (SRC, LRC)</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Binnenfunk-UBI.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Binnenfunk (UBI)</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Amateurfunk.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Amateurfunk</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Lernsoftware.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Lernsoftware</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Buecher.html?xbc0ee=p0q2qiihi22pv071fka29ajri3" class="parent">Bücher</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Navigationsartikel.html?xbc0ee=p0q2qiihi22pv071fka29ajri3" class="parent">Navigationsartikel</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Uebungsseekarten.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Übungsseekarten</a></li>
+<li class="level1"><a href="http://frey-software.de/de/Zubehoer.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Zubehör</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+		
+
+		
+		<div class="box">
+
+            <div class="head">
+                Informationen
+            </div>
+        
+            <div class="boxcontent">
+        
+                <ul class="sidenavi">
+                    
+                                            <li class="level1"><a href="http://frey-software.de/de/Privatsphaere-und-Datenschutz.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Privatsphäre und Datenschutz</a></li>
+                                            <li class="level1"><a href="http://frey-software.de/de/Widerrufsrecht.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Widerrufsrecht</a></li>
+                                            <li class="level1"><a href="http://frey-software.de/de/Liefer-und-Versandkosten.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Liefer- und Versandkosten</a></li>
+                                            <li class="level1"><a href="http://frey-software.de/de/Ueber-uns.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Über uns</a></li>
+                                            <li class="level1"><a href="http://frey-software.de/de/AGB.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">AGB</a></li>
+                                            <li class="level1"><a href="http://frey-software.de/de/Impressum.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">Impressum</a></li>
+                                    </ul>
+        
+            </div>
+
+		</div>
+
+		
+    </div>
+
+	<div id="content">
+
+        
+		<h1>Herzlich Willkommen bei Frey Software</h1>
+
+		<div id="main">
+            	            
+<div id="breadcrumb">
+    <ul>
+                <li><a class="pathway" href="http://frey-software.de/de/index.html?xbc0ee=p0q2qiihi22pv071fka29ajri3" title="Startseite">Startseite</a> &nbsp;</li>
+                </ul>
+    <div style="clear: left;"></div>
+</div> 
+                        <!--<h1></h1>-->
+<p>&nbsp;Zu unserer <a href="http://frey-software.de/de/Lernsoftware.html">Software</a>.
+
+<img src="media/images/popup/SoftwareHome.png" width="650">
+
+<br><br></p><h2><font size="3"><b>Unsere Software "SbF Binnen" und "SbF See" enthält die ab 1.6.2017 verwendeten neuen Fragenkataloge.</b></font></h2>Es
+ wurde zwar nur minimale Änderungen (z.B. neuer Name der Führerscheine 
+und neuer Name einzelner Ämter) vorgenommern, so dass auch die "alten" 
+Fragenkataloge bzw. Programme weiter verwendet werden können, aber 
+unsere Software ist bereits aktualisiert<br><br><h2>Neu: "UBI Tutor III" erhältlich!</h2><p>Ab sofort erhalten Sie neben dem <b>SRC Tutor III</b> (für SRC <u>und </u>UBI) auch den <b>UBI Tutor III</b>, die ideale Lernsoftware für die Vorbereitung auf die <b>komplette praktische und theoretische Prüfung zum UBI (Binnenfunk)</b>.</p><p>Ausführliche Informationen finden Sie bei der Rubrik "<a href="http://frey-software.de/de/Binnenfunk-UBI.html">Binnenfunk (UBI)</a>".</p><p><br></p>
+
+
+
+<h2>Frey Software reduziert die Preise</h2>Ab sofort bietet Frey Software die Fragenlernsoftware für<br><br><ul><li><div align="left"><b>Bodenseeschifferpatent</b> (<b>BSP</b>),&nbsp;<b> <br></b></div></li><li><b>Sportbootschifferschein Binnen</b> und <br></li><li><b>Sportbootführerschein See</b></li></ul>jeweils <b>mit Audio-Unterstützung (MP3)</b> an (d.h. Sie können die Fragen in beliebiger Anordnung auf einen USB-Stick kopieren und z.B. während dem Autofahren anhören).Diese Software kostet jetzt <b>nur </b>noch <b>14,90 EUR</b>.<br><br>Auch die anderen Fragenlersoftware ist im Preis reduziert<br><ul><li><b>Sportküstenschifferschein (SKS)</b> neuer Preis :<b>14,90 €</b>.</li><li><b>BSP Tutor</b> (Fragenkatalog mit integriertem Lehrbuch) <b>nur </b>noch <b>18,90 €.</b></li><li><b>Sbf See (Fragenkatalog mit Audio und ausdruckbaren Kartenaufgaben</b> und Lösungen)<b> nur 18,90 €</b>.<br></li></ul>
+
+
+<h2>Jetzt erhältlich: SRC-Tutor III (mit M423, M505, M503/DS100 &amp; M323)</h2>
+<table width="100%" border="0">
+<tbody><tr>
+<td valign="top">
+<a href="http://frey-software.de/de/SRC-Tutor-III.html">
+<img kasperskylab_antibanner="on" alt="SRC-Tutor III" src="media/images/popup/SRC-Tutor3.png" width="220"><br><br></a>
+</td>
+<td style="padding-left: 10px;" valign="top">
+<p style="padding-top: 8px;">
+Jetzt ist der neue SRC-Tutor III erhältlich.<br></p>
+<ul>
+<li>Simulation von 4 Funkgeräten (M423, M505, M503/DS100 und M323)</li><li>schrittweise Einführung in die Bedienung der Geräte und die Funkabwicklung</li><li>Übungsaufgaben für SRC und UBI</li>
+<li>Theorieteil für Seefunk (SRC) und Binnenfunk (UBI)</li>
+<li><a href="http://frey-software.de/de/Seefunk-SRC-LRC/Seefunk-2012-Fragenkatalog-mit-Audiounterstuetzung.html">Seefunk</a> und <a href="http://frey-software.de/de/Seefunk-SRC-LRC/Binnenfunk-2012-Fragenkatalog.html">Binnenfunk</a> Fragenkataloge mit Audiounterstützung inbegriffen</li>
+<li>viele weitere tolle Features ...</li>
+</ul>
+Ausführliche Beschreibung und weieter Informationen sowie mehr Videomaterial <a href="http://frey-software.de/de/SRC-Tutor-III.html">finden Sie hier</a>.
+<p><br>
+Falls Sie weitere Fragen haben, schicken Sie uns einfach eine kurze Nachricht: <a href="http://frey-software.de/de/Kontakt.html">Zum Kontaktformular</a><br>
+</p>
+</td>
+</tr>
+</tbody></table>
+
+
+<h2>November 2015: Komplette Unterstützung für Windows 10</h2>
+<p>
+Jede unsere Software läuft auch unter Windows 10 (32Bit oder 64Bit Version). Sollten Sie doch einmal Probleme mit Ihrem Betriebssystem haben, hilft Ihnen unser Support gerne weiter.
+</p>
+<br>
+
+
+<h2>Juni 2014: Amateurfunkzeugnis: Klasse A + Klasse E</h2>
+<table width="100%" border="0">
+<tbody><tr>
+<td valign="top">
+<img kasperskylab_antibanner="on" alt="Amateurfunkzeugnis Klasse A + Klasse E" src="media/images/popup/Amateurfunk.png" width="220">
+</td>
+<td style="padding-left: 10px;" valign="top">
+<p style="padding-top: 8px;">
+Für Fahrtensegler bietet der Amateurfunk eine sinnvolle Ergänzung zum Seefunk. Er ermöglicht nicht nur weltweite Sprechfunkverbindungen, sondern auch den Zugang zu zahlreichen Wetterinformationen, sowie über eine besondere Betriebsart den Empfang und Versand von E-Mails.</p>
+<p>
+Die Funkzeugnisse SRC und LRC sind hierfür nicht ausreichend, sondern es ist eine gesonderte Prüfung zum Amateurfunkzeugnis erforderlich. Als Unterstützung für Ihre Prüfungsvorbereitung bieten wir Ihnen ab sofort unsere Lernsoftware zum Amateurfunkzeugnis an. (inkl. Klasse A + Klasse E).
+</p>
+<a href="http://frey-software.de/de/Amateurfunkpruefung-Klasse-A-und-E.html">
+Amateurfunkzeugnis - Klasse A + Klasse E</a><br>
+<br>
+<br>
+</td>
+</tr>
+</tbody></table>
+
+
+
+<h2>April 2014: Sportbootführerschein See mit Karten zum Ausdrucken</h2>
+<table width="100%" border="0">
+<tbody><tr>
+<td valign="top">
+<img kasperskylab_antibanner="on" alt="Sportbootführerschein See mit Karten" src="media/files_public/bilder/SbfSee2012KartenAudioHome.jpg" width="220">
+</td>
+<td style="padding-left: 10px;" valign="top">
+<p style="padding-top: 8px;">
+Ergänzend zu unserer Lernsoftware Sportbootführerschein See bieten wir jetzt eine Version mit den offiziellen Seekartenausschnitten. Die Seekarten können direkt aus der Software heraus auf jedem beliebigen Farbdrucker ausgedruckt werden. Im Gegensatz zu der fertig gedruckten Fassung können Sie die Seekartenausschnitte für den persönlichen Gebrauch auch mehrmals ausdrucken, so können Sie die einzelnen Aufgaben mehrmals bearbeiten. Die zugehörigen Lösungen drucken Sie sich entweder gleich mit aus oder Sie zoomen direkt an Ihrem PC in die Lösung hinein.
+</p>
+<p>
+Selbstverständlich finden Sie bei unserer Software Sportbootführerschein See auch alle anderen Funktionen unserer Lernsoftware wie Fragenkatalog, Statistik, Druckfunkion, ...
+Wahlweise mit oder ohne MP3-Export.
+</p>
+<a href="http://frey-software.de/de/Sportbootfuehrerschein-See-2014-Fragenkatalog.html">Sportbootführerschein See mit Karten</a><br>
+<a href="http://frey-software.de/de/Sportbootfuehrerschein-See-2014-Fragenkatalog-mit-Audiounterstuetzung11.html">Sportbootführerschein See mit Karten und Audio</a><br>
+<br>
+</td>
+</tr>
+</tbody></table>
+
+<h2>11. November 2013:<br>BSP-Tutor - Das "Komplettpaket" für Ihre Theorieprüfung zum Bodenseeschifferpatent</h2>
+<table width="100%" border="0">
+<tbody><tr>
+<td valign="top">
+<a href="http://frey-software.de/de/Bodenseeschifferpatent/BSP-Tutor.html"><img kasperskylab_antibanner="on" alt="BSP-Tutor" src="media/images/popup/DVD-BSP-Tutor-Hlle.png" width="220"></a>
+<br></td>
+<td style="padding-left: 10px;" valign="top">
+<p style="padding-top: 8px;">
+BSP-Tutor bietet Ihnen mit dem Online-Lehrbuch alles, was Sie für die Theorieprüfung zum Bodenseeschifferpatent benötigen. Mit verständlichen Erklärungen und anschaulichen Skizzen bereiten Sie sich im Selbststudium auf die Prüfung vor. Durch eine praktische Verknüpfung von Fragenkatalog und Online-Lehrbuch erhalten Siie zu jeder Frage weiterführende ode erklärende Hinweise. Durch die Verlinkung mit dem Gesetzestext können Sie auch auf die "Originalquelle" zugreifen.
+</p>
+<p>
+Selbstverständlich finden Sie bei BSP-Tutor auch alle anderen Funktionen unserer Lernsoftware für das Bodenseeschifferpatent wie Fragenkatalog, Statistik, Druckfunkion, MP3-Export, ...
+</p>
+<a href="http://frey-software.de/de/Bodenseeschifferpatent/BSP-Tutor.html">BSP-Tutor - Das Komplettpaket für Ihre Theorieprüfung!</a><br>
+<br><br>
+</td>
+</tr>
+</tbody></table><br>
+
+<h2>11. November 2013: Kostenlose Vokabellernsoftware (für SRC-Tutor II Kunden)</h2>
+<p>
+Pünktlich zur Wintersaison 2012/2014 erhalten alle Kunden, die SRC-Tutor II 2nd Edition kaufen, die kostenlose Version unserer Vokabellernsoftware. Damit sind Sie für die englischen Texte noch besser vorbereitet, als Sie es mit SRC-Tutor ohnehin schon sind. Diese Vokabellernsoftware bietet die ideale Ergänzung zu Funksimulation, Übungsaufgaben am Gerät, Englischen Übungsdiktaten und Fragenlernsoftware.<br></p>
+<p>
+Dabei spielt es keine Rolle, wo und wann Sie SRC-Tutor II 2nd gekauft haben oder kaufen werden. Einfach folgendes Formular <a href="http://frey-software.de/de/Registrierung.html">ausfüllen</a> downloaden &amp; installieren, Lizenznummer von SRC-Tutor II 2nd Edition eingeben und gleich los legen!
+</p>
+<br>
+
+
+<h2>4. November 2013: Unterstützung für Windows 8 / 8.1</h2>
+<p>
+Jede unsere Software läuft auch unter Windows 8  / 8.1 (32Bit oder 64Bit Version). Sollten Sie doch einmal Probleme mit Ihrem Betriebssystem haben, hilft Ihnen unser Support gerne weiter.
+</p>
+<br>
+
+<h2>12. April 2013: SRC-Prüfung direkt am PC mit SRC-Tutor II</h2>
+<table width="100%" border="0">
+<tbody><tr>
+<td>
+<a href="http://www.frey-software.de/de/SRC-Pruefung-mit-Funksimulation"><img kasperskylab_antibanner="on" alt="SRC-Tutor II mit Handmikrofon" src="media/images/content/info/PruefungMitSrcTutorII.jpg" width="300"></a>
+<br></td>
+<td valign="top"><br>
+<p style="padding-top: 8px;">
+Warum legen Sie Ihre SRC-Prüfung in Deutschland nicht am PC mit SRC-Tutor II ab? Ermöglicht wird dies durch die Netzwerkfunktion sowie ein spezielles Handmikrofon zum Anschluss an den PC. Damit ist SRC-Tutor II wohl die erste Simulationssoftware an der die Prüfung zum SRC abgelegt werden kann.
+<br><br></p>
+<a href="http://www.frey-software.de/de/SRC-Pruefung-mit-Funksimulation">Weitere Infos finden Sie hier!</a>
+</td>
+</tr>
+</tbody></table><br>
+
+<p>
+Besuchen Sie uns auch auf <a href="https://plus.google.com/108252401400082116943" rel="publisher">Google+</a>.
+</p><p></p>
+
+
+<div class="sortbox">
+
+        
+        
+        
+    
+</div>
+
+
+
+<div class="productbox">
+
+    <div class="inner">
+
+                <div style="text-align: center; height: 155px;">
+            <a href="http://frey-software.de/de/Binnenfunk-UBI/CD:-UBI-Tutor-III.html?xbc0ee=p0q2qiihi22pv071fka29ajri3"><img src="http://frey-software.de/media/images/info/UBITutorIII.png" class="productImageBorder" alt="CD: UBI-Tutor III"></a>
+        </div>
+                <div style="height: 35px;">
+            <strong><a href="http://frey-software.de/de/Binnenfunk-UBI/CD:-UBI-Tutor-III.html?xbc0ee=p0q2qiihi22pv071fka29ajri3">CD: UBI-Tutor III</a></strong>
+        </div>
+
+		<div class="infoTeaser">
+			  UBI-Tutor III   Die Lernsoftware UBI-Tutor III ist als "kleiner" Bruder von SRC-Tutor III die ideale Lernsoftware für das   Selbststudium zum...
+		</div>
+
+<!--        -->
+
+        <div class="pricebox">
+                    
+            <p style="padding-bottom: 0;"><span class="price"> 24,95 EUR</span></p>
+            <p style="padding-bottom: 0;">incl. 19 % USt</p>
+                            <p><a href="http://frey-software.de/de/Liefer-und-Versandkosten.html?xbc0ee=p0q2qiihi22pv071fka29ajri3" target="_blank" rel="nofollow">zzgl. Versandkosten</a></p>
+                        
+                </div>
+
+		<div class="btnbox">
+                                            <form name="add2Cart">
+                <input type="hidden" name="action" value="add_product" id="action66">
+                <input type="hidden" name="product" value="377">
+                <input type="hidden" name="qty" value="1">
+                    <input type="image" class="btnOrderNow" src="http://frey-software.de/templates/frey_custom/img/buttons/de/order_now.gif">
+                </form>
+			            <p><a href="http://frey-software.de/de/Binnenfunk-UBI/CD:-UBI-Tutor-III.html?xbc0ee=p0q2qiihi22pv071fka29ajri3"><img src="http://frey-software.de/templates/frey_custom/img/buttons/de/product_details.gif"></a></p>
+        </div>
+
+		<div style="clear: both; height: 5px;"></div>
+
+    </div>
+
+</div>
+
+
+
+<div style="clear: both;"></div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+	<div style="clear: both;"></div>
+
+	<div id="footer"></div>
+
+</div>
+<div class="copyright">xt:Commerce VEYTON © 2010 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce GmbH</a></div>
+</body></html>

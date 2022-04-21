@@ -1,0 +1,871 @@
+<!DOCTYPE html><html xml:lang="de" lang="de" class="mod mod-layout skin-layout-content skin-layout-related"><!--
+ - UZH 1.5.1 (2017-11-15_10-24-04, 2017-11-15_10-24-04, n/a, n/a)
+--><head>
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"/>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<meta content="width=1024,initial-scale=1,user-scalable=yes" name="viewport" id="meta-viewport">
+<script type="text/javascript" async="" defer="" src="//www.uzh.ch/analytics/piwik/piwik.js"></script><script>
+    if (screen && (screen.width >= 768 || screen.height >= 768)) {
+        // force devices as ipad etc. to scale the viewport
+        document.getElementById("meta-viewport").setAttribute("content", "width=1024,initial-scale=1,user-scalable=yes");
+    }
+</script>
+
+<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+
+<meta name="keywords" content="Universität Zürich, UZH, Universität, Hochschule, Zürich, Studium, Studieren, Forschung, Wissenschaft">
+<meta name="description" content="Die Universität Zürich gehört zu den besten Forschungsuniversitäten Europas und bietet das breiteste Angebot an Studienfächern in der Schweiz.   ">
+
+<meta name="dc.modified" content="2017-12-21 09:21:48">
+<meta name="dc.title" content="">
+<meta name="dcterms.subject" content="Universität Zürich, UZH, Universität, Hochschule, Zürich, Studium, Studieren, Forschung, Wissenschaft">
+<meta name="dc.description" content="Die Universität Zürich gehört zu den besten Forschungsuniversitäten Europas und bietet das breiteste Angebot an Studienfächern in der Schweiz.   ">
+
+<meta name="dc.publisher" content="Universität Zürich">
+<meta name="dcterms.rights" content="Universität Zürich">
+
+<title>UZH -
+Universität Zürich
+
+</title>
+
+<link rel="shortcut icon" href="../terrific/assets/img/icon/favicon.ico" type="image/x-icon">
+<link href="http://idwcmslive02.uzh.ch/terrific/assets/img/icon/uzh_shortcut_icon_57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="http://idwcmslive02.uzh.ch/terrific/assets/img/icon/uzh_shortcut_icon_144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="http://idwcmslive02.uzh.ch/terrific/assets/img/icon/uzh_shortcut_icon_72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="http://idwcmslive02.uzh.ch/terrific/assets/img/icon/uzh_shortcut_icon_114.png" rel="apple-touch-icon" sizes="114x114">
+
+
+
+    <link rel="stylesheet" type="text/css" href="../terrific/2017-11-15_10-24-04/app.css">
+
+<script src="../terrific/assets/incl/jquery-1.11.2.min.js"></script>
+
+
+
+<script>
+
+$(document).ready(function () {
+        // add icon to code
+        add_icon();
+
+        // replace title attribute for social media links
+        replace_icontitle();
+	
+        // add link to top-image (f.e. for video)
+        // uncomment the following line if link is needed
+	link_topimage();
+	
+	// add links to UZH News teaser images
+	link_news_teaser();
+});
+
+function add_icon() {
+       $('.skin-social-home > ul').append('<li><a title="UZH auf Instagram" class="instagram" href="https://www.instagram.com/uzh.ch/">instagram  </a></li>');
+}
+
+function replace_icontitle () {
+	$('.skin-social-home li .facebook').attr('title','UZH auf Facebook');
+        $('.skin-social-home li .twitter').attr('title','UZH auf Twitter');
+        $('.skin-social-home li .youtube').attr('title','UZH auf YouTube');
+        $('.skin-social-home li .xing').attr('title','UZH auf Xing');
+        $('.skin-social-home li .linkedin').attr('title','UZH auf LinkedIn');
+        $('.skin-social-home li .issuu').attr('title','UZH auf Issuu');
+}
+
+function link_topimage () {
+	var tic_dest = '//www.uzh.ch/de/about/portrait/weihnachten.html';
+	$('.mod-top-image-rotator').css('cursor','pointer');
+	$('.mod-top-image-rotator').on('click', function () {
+		window.location.href = tic_dest;
+	});
+}
+
+function link_news_teaser () {
+	// find all items of UZH News RSS-Feed
+	var el = $('h2:contains("UZH News")').next().children();
+	
+	// add pointer to images
+	$(el).find('img').css('cursor','pointer');
+	
+	// add click-action to images
+	$(el).find('img').on('click', function () {
+		$(this).css('cursor','pointer');
+		var p = $(this).parents('li');
+		var url = $(p).find('a').attr('href');
+		window.location.href=url;
+	});
+}
+</script>
+
+
+<style>
+
+/* shows first teaser on mobile screens only*/
+
+
+@media only screen and (max-width: 750px) { 
+	.g-col-flex .mod-teaser:nth-child(2)  {
+		display:true !important;
+	}
+
+}
+@media only screen and (min-width: 751px) { 
+	.g-col-flex .mod-teaser:nth-child(2)   {
+		display:none !important;
+	}
+	}
+
+</style>
+
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.uzh.ch/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 13]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+</head>
+
+
+<body id="uzhCT01Home">
+
+<div id="wrapper" class="l-body l-body-corporate-home" role="document">
+
+    <header id="branding" role="banner" class="l-header">
+    <link rel="stylesheet" type="text/css" href="../dam/jcr:2e4eee13-3309-4647-9728-3ce720b3f300/public.css">
+<nav class="mod mod-screenreader" title="Willkommen auf der Webseite der Universität Zürch. Folgende Navigationspunkte stehen Ihnen zur Verfügung:" role="navigation">
+	<a accesskey="0" href="de.html#home">Home</a>
+	<a accesskey="1" href="de.html#firstlevel">Hauptnavigation</a>
+	<a accesskey="3" href="de.html#search">Suche</a>
+	<a accesskey="5" href="de.html#main">Direkt zum Inhalt</a>
+</nav>
+<div class="l-header-top">
+<form action="http://www.uzh.ch/de/search.html" accept-charset="UTF-8" method="get" class="mod mod-search" role="search">
+	<input id="search" class="search" aria-label="Google Suche" name="q" type="text" placeholder="Google Suche"><input aria-label="abschicken" class="submit" type="submit" value="»">
+</form>
+</div>
+
+<div class="l-header-bottom">
+    <div class="mod-header skin-header-corporate">
+
+        <div class="l-meta">
+<nav class="mod mod-sitefunctions" role="navigation">
+	<h2>Seitenfunktionen</h2>
+	<ul id="pagefunctions">
+		<li>
+			<a class="sprite service-print js-print" href="de.html#" title="Druckansicht">
+				Druckansicht
+			</a>
+		</li>
+		<li>
+			<a class="sprite service-font js-font" href="http://www.uzh.ch/de.html?fontsize=big" title="Schrift grösser/kleiner">
+				Schrift grösser/kleiner
+			</a>
+		</li>
+	</ul>
+</nav><div class="mod mod-metanavigation">
+	<h2>Service Navigation</h2>
+	<nav id="metanavigation" role="navigation">
+		<ul>
+			<li><a class="active" href="de.html" id="home">Home</a></li>
+            <li>
+                <a href="http://www.uzh.ch/de/contact.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="http://www.uzh.ch/de/sitemap.html">Sitemap</a>
+            </li>
+            <li>
+                <a href="http://www.uzh.ch/en.html">English</a>
+            </li>
+		</ul>
+	</nav>
+</div>
+        </div>
+<div class="mod-logo">
+
+    <!-- Associate Logo -->
+    
+
+    <ul>
+
+        <!-- UZH Logo -->
+        <li class="main-logo">
+           <a href="http://www.uzh.ch" class="svg">
+                <object data="../docroot/uzh_logo_d_pos.svg" type="image/svg+xml" width="232.128" height="80">
+                    <img alt="Universität Zürich" height="80" src="../terrific/modules/Logo/img/uzh_logo_d_pos_web_main.jpg">
+                </object>
+                <span>Universität Zürich</span>
+            </a>
+        </li>
+
+        <!-- Special Logo -->
+        
+
+        <!-- Partner Logos -->
+        
+    </ul>
+
+    
+</div>
+    </div>
+</div>
+    </header>
+
+    <div id="wrapper-2" class="l-wrapper">
+        <aside id="promos" class="l-related">
+
+	<div class="mod mod-teaser skin-teaser-news-all skin-teaser-title-grey"><h2>
+    
+    <a href="http://www.media.uzh.ch/de/medienmitteilungen/2017.html">Medienmitteilungen</a>
+</h2>
+
+<ul>
+	<li>
+		<h3>
+			<a href="http://www.media.uzh.ch/de/medienmitteilungen/2017/Partnerschaft-Prag.html">
+				<time itemprop="dateCreated" datetime="2017-12-21" class="date">21.12.2017</time>
+				<span>Universität Zürich und Karls-Universität Prag spannen zusammen</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li>
+		<h3><a href="http://www.media.uzh.ch/de/medienmitteilungen/2017.html" class="more">Alle Medienmitteilungen</a></h3>
+	</li>
+</ul>
+</div>
+
+
+	<div class="mod mod-teaser skin-teaser-news-all skin-teaser-title-grey"><h2>
+    
+    <a href="http://www.news.uzh.ch/de.html">UZH News</a>
+</h2>
+
+<ul>
+	<li>
+		<h3 class="nolink">
+			
+				
+				<span>Bücher fürs Leben</span>
+			
+		</h3>
+		<div class="topimage nolink">
+			<img src="http://www.news.uzh.ch/dam/news/articles/2017/Buecher/Buecher_Teaser.jpg" style="cursor: pointer;">
+		</div>
+		<div class="text-basics">
+			<div class="newslist-description">Manche Bücher vergisst man, kaum hat man sie ausgelesen. Andere lassen einen nie mehr los. Vier Angehörige der UZH verraten, welches ihr Buch fürs Leben ist. Die UZH-News-Redaktion wünscht Ihnen schöne Festtage!</div>
+			<p>
+				<a href="http://www.news.uzh.ch/de/articles/2017/Buecher.html" class="more">Mehr …</a>
+			</p>
+		</div>
+	</li>
+	<li>
+		<h3 class="nolink">
+			
+				
+				<span>Neuer Kredit für geplantes Chemiegebäude</span>
+			
+		</h3>
+		<div class="topimage nolink">
+			<img src="http://www.news.uzh.ch/dam/news/articles/2017/UZI5/UZI5_Teaser.jpg" style="cursor: pointer;">
+		</div>
+		<div class="text-basics">
+			<div class="newslist-description">Der Regierungsrat beantragt beim Kantonsrat einen neuen Kredit für das Chemiegebäude, das derzeit am Standort Irchel errichtet wird. Der Bau ist für die zukünftige Entwicklung der UZH von herausragender Bedeutung, wie Rektor Michael Hengartner im Interview erklärt.</div>
+			<p>
+				<a href="http://www.news.uzh.ch/de/articles/2017/Chemie.html" class="more">Mehr …</a>
+			</p>
+		</div>
+	</li>
+	<li>
+		<h3 class="nolink">
+			
+				
+				<span>Das Kino und seine Skandale</span>
+			
+		</h3>
+		<div class="topimage nolink">
+			<img src="http://www.news.uzh.ch/dam/news/articles/2017/skandalkino/teaser.jpg" style="cursor: pointer;">
+		</div>
+		<div class="text-basics">
+			<div class="newslist-description">Der UZH-Historiker Martin Bürgin forscht zu Kinofilmen, die für Aufruhr sorgten – und bringt die Streifen in einer Filmreihe auch auf die Leinwand.</div>
+			<p>
+				<a href="http://www.news.uzh.ch/de/articles/2017/skandalkino.html" class="more">Mehr …</a>
+			</p>
+		</div>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li>
+		<h3><a href="http://www.news.uzh.ch/de.html" class="more">Alle News</a></h3>
+	</li>
+</ul>
+</div>
+
+        </aside>
+        <main id="wrapper-3" class="l-content">
+<article id="main">
+<div class="mod mod-rubrics">
+    <div class="mod mod-top-image-rotator" data-images="/dam/jcr:c980f3a3-6b3a-4a4f-b7f5-8d98f5e38ea8/uzh-weihnachtsgif-920x590-play.gif" style="cursor: pointer;">
+    <img src="/dam/jcr:c980f3a3-6b3a-4a4f-b7f5-8d98f5e38ea8/uzh-weihnachtsgif-920x590-play.gif" class="js-activated">
+
+    <noscript>
+        &lt;img src="../dam/jcr:c980f3a3-6b3a-4a4f-b7f5-8d98f5e38ea8/uzh-weihnachtsgif-920x590-play.gif" alt="uzh-weihnachtsgif-920x590-play.gif" title=" " /&gt;
+    </noscript>
+</div>
+
+
+    <div class="links">
+        <h1>
+            <a href="http://www.uzh.ch/de/about.html">Universität</a>
+        </h1>
+        <ul>
+            <li>
+                <a href="http://www.uzh.ch/de/about.html">Allgemeine Informationen, Fakten, Geschichte und Organisation</a>
+            </li>
+        </ul>
+        <h1>
+            <a href="http://www.uzh.ch/de/research.html">Forschung</a>
+        </h1>
+        <ul>
+            <li>
+                <a href="http://www.uzh.ch/de/research.html">Forschungsprojekte und Schwerpunkte im nationalen und internationalen Umfeld</a>
+            </li>
+        </ul>
+        <h1>
+            <a href="http://www.uzh.ch/de/studies.html">Studium</a>
+        </h1>
+        <ul>
+            <li>
+                <a href="http://www.uzh.ch/de/studies.html">Das breiteste Angebot an Bachelor- und Masterstudiengängen in der Schweiz</a>
+            </li>
+        </ul>
+        <h1>
+            <a href="http://www.uzh.ch/de/outreach.html">Öffentlichkeit</a>
+        </h1>
+        <ul>
+            <li>
+                <a href="http://www.uzh.ch/de/outreach.html">Museen, Veranstaltungen, Bibliotheken, Weiterbildung und mehr </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="g-unit">
+        <div class="g-col g-1of4">
+<div class="mod mod-directlinks">
+
+	<h2>Direkteinstieg</h2>
+
+	<ul>
+		        <li>
+        <a href="http://www.uzh.ch/de/studies.html">für Studieninteressierte</a>
+        </li>
+        <li>
+        <a href="http://www.internationals.uzh.ch/de.html">für Internationals</a>
+        </li>
+        <li>
+        <a href="http://www.students.uzh.ch/de.html">für Studierende</a>
+        </li>
+        <li>
+        <a href="http://www.staff.uzh.ch/de.html">für Mitarbeitende</a>
+        </li>
+        <li>
+<a href="http://www.prof.uzh.ch/de.html" class="www" target="_blank">für Professorinnen und Professoren</a>
+        </li>
+        <li>
+        <a href="http://www.researchers.uzh.ch/de.html">für Forschende</a>
+        </li>
+        <li>
+        <a href="http://www.teachers.uzh.ch/de.html">für Lehre und Lehrentwicklung</a>
+        </li>
+        <li>
+        <a href="http://www.graduates.uzh.ch/de.html">für Doktorierende</a>
+        </li>
+        <li>
+<a href="http://www.alumni.uzh.ch" class="www" target="_blank">für Alumni</a>
+        </li>
+        <li>
+<a href="http://www.mediadesk.uzh.ch/" class="www" target="_blank">für Medien</a>
+        </li>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</ul>
+
+	<div class="mod mod-text skin-text-basics">
+		<div class="mod mod-text skin-text-basics"><form action="http://www.uzh.ch/static/locationhandler.php" method="post"><div class="relocator"><h3>Fakultäten und Institute:</h3><select name="location" onchange="window.location=this.options[this.selectedIndex].value"><option value="#">Bitte wählen...</option><option value="http://www.theologie.uzh.ch/">Theologische Fakultät</option><option value="http://www.ius.uzh.ch/">Rechtswissenschaftliche Fakultät</option><option value="http://www.oec.uzh.ch/">Wirtschaftswissenschaftliche Fakultät</option><option value="http://www.med.uzh.ch/">Medizinische Fakultät</option><option value="http://www.vet.uzh.ch/">Vetsuisse-Fakultät</option><option value="http://www.phil.uzh.ch/">Philosophische Fakultät</option><option value="http://www.mnf.uzh.ch/">Mathematisch-naturwissenschaftliche Fakultät</option><option value="http://www.orgdb.uzh.ch/liste.php">Alle Institute und Kliniken der UZH</option></select><input id="submit" type="submit" value="go!"></div></form></div>
+
+		
+	</div>
+
+	<div class="mod mod-text skin-text-basics">
+		<div class="mod mod-text skin-text-basics"><form action="http://www.uzh.ch/static/locationhandler.php" method="post"><div class="relocator"><h3>Quicklinks:</h3><select name="location" onchange="window.location=this.options[this.selectedIndex].value"><option value="#">Bitte wählen...</option><option value="http://www.phonebook.uzh.ch">Telefon-/E-Mail</option><option value="http://www.uzh.ch/contact.html">Adressen/Kontakt</option><option value="http://www.plaene.uzh.ch">Pläne und Orientierung</option><option value="#">---------</option><option value="http://www.uzh.ch/de/outreach/libraries.html">Bibliotheken</option><option value="http://www.uzh.ch/de/about/management/services.html">Zentrale Dienste</option>
+<option value="http://www.int.uzh.ch">Internationale Beziehungen</option>Media RelationsMensa
+<option value="http://www.uzh.ch/de/outreach/museums.html">Museen</option><option value="http://www.jobs.uzh.ch">Offene Stellen</option><option value="http://www.uzh.ch/de/studies/dates.html">Semesterdaten</option><option value="http://www.seniorenuni.uzh.ch">Senioren-Universität</option><option value="http://www.degrees.uzh.ch">Studiengänge</option><option value="http://www.uniterm.uzh.ch/">Terminologie-Datenbank</option><option value="http://www.uzh.ch/de/outreach/hospitals.html">Universitätsspitäler</option><option value="http://courses.uzh.ch">Vorlesungsverzeichnis</option><option value="http://www.weiterbildung.uzh.ch">Weiterbildung</option></select><input id="submit" type="submit" value="go!"></div></form></div>
+
+		
+	</div>
+
+</div>
+<nav class="mod mod-social skin-social-home" role="navigation">
+    <h2>UZH auf Social Media</h2>
+    <ul>
+        <li>
+            <a title="UZH auf Facebook" class="facebook" href="http://www.facebook.com/uzh.ch">
+            Facebook
+            </a>
+        </li>
+        <li>
+            <a title="UZH auf Twitter" class="twitter" href="http://twitter.com/uzh_news">
+            Twitter
+            </a>
+        </li>
+        <li>
+            <a title="UZH auf YouTube" class="youtube" href="http://youtube.com/uzhch">
+            YouTube
+            </a>
+        </li>
+        <li>
+            <a title="UZH auf Xing" class="xing" href="https://xing.com/companies/uzh">
+            Xing
+            </a>
+        </li>
+        <li>
+            <a title="UZH auf LinkedIn" class="linkedin" href="http://linkedin.com/company/uzh">
+            LinkedIn
+            </a>
+        </li>
+        <li>
+            <a title="UZH auf Issuu" class="issuu" href="http://issuu.com/uzhch">
+            issuu
+            </a>
+        </li>
+    <li><a title="UZH auf Instagram" class="instagram" href="https://www.instagram.com/uzh.ch/">instagram  </a></li></ul>
+</nav>
+<div class="mod mod-banner">
+    <a href="http://www.uzhfoundation.ch">
+        <img src="../dam/jcr:953ef122-451b-4e23-8b81-cdb9963e98ef/uzh_foundation_de.jpg" alt="UZH Foundation – Die Stiftung der Universität Zürich" title=" ">
+    </a>
+</div>
+<div class="mod mod-banner">
+    <a href="https://www.swissuniversities.ch/">
+        <img src="../dam/jcr:55c9e649-b88f-46c2-b94a-2b9763e136ab/swissuniversities.jpg" alt="Logo swissuniversities" title="swissuniversities">
+    </a>
+</div>
+<div class="mod mod-banner">
+    <a href="http://www.leru.org/">
+        <img src="../dam/jcr:a1a698ff-5d98-4ad0-a6b3-40cfe8f369a2/LERU_logo_neu-cut_breit.jpg" alt="LERU – League of European Research Universities" title=" LERU – League of European Research Universities">
+    </a>
+</div>
+<div class="mod mod-banner">
+    <a href="http://www.universitas21.com/">
+        <img src="../dam/jcr:d3601041-d6a6-4062-a1a4-0f8817f58cff/Universitas21-2.jpg" alt="Universitas 21 (Logo)" title=" Universitas 21 – The leading global network for research universities">
+    </a>
+</div>
+        </div>
+        <div class="g-col g-1of4">
+
+	<div class="mod mod-teaser skin-teaser-news-all skin-teaser-title-grey"><h2>
+    
+    <a href="http://www.agenda.uzh.ch">Agenda</a>
+</h2>
+
+<ul>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35526">
+				<time itemprop="dateCreated" datetime="2017-12-24" class="date">24.12.2017, 11:30</time>
+				<span>Führung im Zoologischen Museum «Tiere im Winter»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35534">
+				<time itemprop="dateCreated" datetime="2017-12-24" class="date">24.12.2017, 14:00</time>
+				<span>Familienworkshop im Zoologischen Museum «Die Sinne der Tiere» - Einführung zum Thema «schmecken»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35535">
+				<time itemprop="dateCreated" datetime="2017-12-24" class="date">24.12.2017, 15:00</time>
+				<span>Familienworkshop im Zoologischen Museum «Die Sinne der Tiere» - Einführung zum Thema «schmecken»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35527">
+				<time itemprop="dateCreated" datetime="2017-12-31" class="date">31.12.2017, 11:30</time>
+				<span>Führung im Zoologischen Museum «Eintauchen in die Meereswelt des Monte San Giorgio» (für Erwachsene)</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=36354">
+				<time itemprop="dateCreated" datetime="2017-12-31" class="date">31.12.2017, 14:00</time>
+				<span>Familienworkshop im Zoologischen Museum «Die Sinne der Tiere» - Einführung zum Thema «tasten»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35536">
+				<time itemprop="dateCreated" datetime="2017-12-31" class="date">31.12.2017, 14:00</time>
+				<span>Familienworkshop im Zoologischen Museum «Die Sinne der Tiere» - Einführung zum Thema «tasten»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	<li>
+		<h3>
+			<a href="http://www.agenda.uzh.ch/record.php?id=35537">
+				<time itemprop="dateCreated" datetime="2017-12-31" class="date">31.12.2017, 15:00</time>
+				<span>Familienworkshop im Zoologischen Museum «Die Sinne der Tiere» - Einführung zum Thema «tasten»</span>
+			</a>
+		</h3>
+		
+		
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li>
+		<h3><a href="http://www.agenda.uzh.ch" class="more">Alle öffentlichen Veranstaltungen</a></h3>
+	</li>
+</ul>
+</div>
+
+
+        </div>
+        <div class="g-col-flex">
+<div class="mod mod-teaser skin-teaser-title-only skin-teaser-overview">
+<h3>Hinweise</h3>
+</div>
+<div class="mod mod-teaser">
+	<div class="topimage">
+        <a href="http://www.uzh.ch/de/about/portrait/weihnachten.html">
+			<img src="../dam/jcr:8805ed2e-9b44-434c-bf25-1e3423ebfab7/uzh-weihnachten_400.gif" alt="Vorschau Weihnachtsvideo" title=" " width="200px">
+		</a>
+	</div>
+	<h3>Frohe Festtage</h3>
+	
+	<div class="text-basics"><p>Die UZH wünscht schöne Festtage und ein inspirierendes neues Jahr.</p>
+
+        
+        <ul>        <li>
+        <a href="http://www.uzh.ch/de/about/portrait/weihnachten.html">Zum Video</a>
+        </li>
+</ul>
+    </div>
+</div>
+
+<div class="mod mod-teaser">
+	<div class="topimage">
+        <a href="http://www.zm.uzh.ch/de/sonderausstellungen/2018wolf.html">
+			<img src="../dam/jcr:f04b25d8-1ffa-4215-94c0-40e59832c276/wolf_400.jpg" alt="Wolf" title=" " width="200px">
+		</a>
+	</div>
+	<h3>Wolf. Wieder unter uns</h3>
+	
+	<div class="text-basics"><p>Sind wir bereit, ihm einen Platz zu geben? Die Sonderausstellung des Zoologischen Museums widmet sich der Rückkehr der Wölfe in die Schweiz. Bis 10.6.18.</p>
+
+        
+        <ul>        <li>
+<a href="http://www.zm.uzh.ch/de/sonderausstellungen/2018wolf.html" class="www" target="_blank">Website zur Ausstellung</a>
+        </li>
+        <li>
+<a href="http://www.media.uzh.ch/de.html" class="www" target="_blank">Medienmitteilung</a>
+        </li>
+</ul>
+    </div>
+</div>
+
+<div class="mod mod-teaser">
+	<div class="topimage">
+        <a href="https://www.uzh.ch/cmsssl/musethno/de/ausstellungen/Derwische.html">
+			<img src="../dam/jcr:66a52118-d6fa-4a46-ad72-1b13c9318699/Derwisch.jpg" alt="Gemachte Bilder" title=" " width="200px">
+		</a>
+	</div>
+	<h3>Gemachte Bilder. Derwische als Orient-Chiffre und Faszinosum.</h3>
+	
+	<div class="text-basics"><p>Die Ausstellung im Völkerkunde­museum zeigt die Entstehung und Weitergabe von Bildern der religiösen Grenzgänger aus dem Islam.<br>
+Bis 28.1.18.</p>
+
+        
+        <ul>        <li>
+<a href="https://www.uzh.ch/cmsssl/musethno/de/ausstellungen/Derwische.html" class="www" target="_blank">Website zur Ausstellung</a>
+        </li>
+</ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article>
+        </main>
+    </div>
+
+<form action="http://www.uzh.ch/de/search.html" accept-charset="UTF-8" method="get" class="mod mod-search skin-search-mobile" role="search">
+    <input class="search" name="q" type="text" placeholder="Google Suche"><input class="submit" type="submit" value="»">
+</form>
+
+
+<div class="l-footer" id="footer"><div class="mod mod-footer">
+	<h2>Fusszeile</h2>
+
+	<p class="top">
+		<a href="de.html#top" title="#{web.footer.topLink}">top</a>
+	</p>
+
+	<p class="copyright language-switcher">
+		<a href="http://www.uzh.ch/en.html" class="first show-mobile">English</a>
+		
+		
+		
+	</p>
+
+	<p class="copyright">
+		<a class="first show-mobile" href="de.html">Home</a>
+		<a class="show-mobile" href="http://www.uzh.ch/de/contact.html">Kontakt</a>
+		<a class="show-mobile" href="http://www.uzh.ch/de/sitemap.html">Sitemap</a>
+
+		<span class="first">©&nbsp;Universität Zürich</span>
+		<span>21.12.2017</span>
+		<span></span>
+		<a href="http://www.uzh.ch/de/impressum.html">Impressum</a>
+		<a href="http://www.uzh.ch/de/accessibility.html">Accessibility</a>
+                                  
+                <a href="http://www.uzh.ch/de/privacy">Datenschutzerklärung</a>
+
+	</p>
+</div>
+</div>
+    <script src="../terrific/2017-11-15_10-24-04/app.js" type="text/javascript"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                var $page = $('html'),
+                        config = {
+                            basePath: '/terrific/2017-11-15_10-24-04/'
+                        },
+                        application = new Tc.Application($page, config);
+
+                application.registerModules();
+                application.start();
+            });
+        })(Tc.$);
+        $(document).ready(function()
+                {
+                    $("table.tablesorter").tablesorter();
+                }
+        );
+    </script>
+</div>
+<!-- end wrapper -->
+
+
+
+</body></html>

@@ -1,0 +1,6 @@
+jupyter
+pandas
+sklearn<0.24
+sklearn_crfsuite
+nltk
+ipysheet

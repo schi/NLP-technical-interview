@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="de"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GM24</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    [endif]-->
+  </head>
+  <body>
+    <div id="head">
+    	<div class="container">
+        	<img class="img-responsive" src="images/gm24_logo.png" alt="GM24-Logo">
+            <h1>Ab sofort präsentieren wir unsere brandneuen Reise-Angebote in Kooperation mit touriDat</h1>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <a href="http://touridat.com" style="border:0;background-color:#ffffff;"><img class="img-responsive" src="images/touriDat_logo.png" alt="touriDat-Logo"></a>
+            <hr>
+            <img class="img-responsive" src="images/devices.png" alt="Jetzt auch für iOS &amp; Android">
+            <h2>Entdecke tolle Reiseangebote zu kleinen Preisen und spare mit touriDat bis zu 70%!</h2>
+            <a href="http://partners.webmasterplan.com/click.asp?ref=740630&amp;site=13520&amp;type=text&amp;tnb=270&amp;diurl=https://www.touridat.com/&amp;pk_kwd=getmore24_web_21-12-2017" id="link">Jetzt zum Reiseshop</a>
+        </div>
+    </div>
+    <div id="bottom">
+    	<div class="container">
+        	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        		<img class="img-responsive" src="images/gm24_logo_small.png" alt="GM24-Logo">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        		<p><a href="" data-toggle="modal" data-target="#myModal">Impressum</a>Copyright&nbsp;©&nbsp;2015&nbsp;event&nbsp;im&nbsp;trend
+            </p></div>
+        </div>
+    </div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Impressum</h4>
+	      </div>
+	      <div class="modal-body">
+			<p>GM24 Inh. Rigo Scheibe<br>
+			An der Reitbahn 2c<br>
+			21218 Seevetal OT Hittfeld</p>
+			<p>Ust.-ID-Nr. DE225057090</p>
+			<p>Verantwortlich: Rigo Scheibe</p>
+			<p>Telefon: 040/4011988-51<br>
+			Fax: 04105-5 85 77 86</p>
+			<p>Kundentelefon: 040/4011988-51 (Normaler Festnetzanschluss ohne Zusatzgebühren)<br>
+			Kundenfax: 04105-5 85 77 86</p>
+			<p>Alle Kundenanfragen werden binnen 24 Stunden (an Werktagen) bearbeitet.</p>
+			<p>Mail: info@gm24.info<br>
+			Internet www.gm24.info</p>
+			<p><b>Haftungsausschluss für externe Links</b><br>
+			Mit dem Urteil vom 12. September 1999 - 312 O 85/99 - 'Haftung für Links' - hat das Landgericht Hamburg entschieden, daß man durch die Ausbringung eines Links die Inhalte der gelinkten Seite gegebenenfalls mit zu verantworten hat. Dieses kann - so das LG - nur dadurch verhindert werden, daß man sich ausdrücklich von diesen Inhalten distanziert. Hiermit distanzieren sich, die im Impressum Genannten, ausdrücklich von allen Inhalten verlinkter Seiten oder Grafiken und machen sich diese keinesfalls zu eigen. Sämtliche Verstöße gegen geltendes Recht, Sitte oder Moral, welche bekannt werden, haben die sofortige Löschung von Links, Beiträgen, Einträgen, Grafiken oder ähnlichem zur Folge.</p>
+	      </div>	      
+	    </div>
+	  </div>
+	</div>
+	<img src="http://banners.webmasterplan.com/view.asp?ref=740630&amp;site=13520&amp;type=text&amp;tnb=271" border="0" width="1" height="1">
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script>
+	/*
+	 * Date Format 1.2.3
+	 * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+	 * MIT license
+	 *
+	 * Includes enhancements by Scott Trenda <scott.trenda.net>
+	 * and Kris Kowal <cixar.com/~kris.kowal/>
+	 *
+	 * Accepts a date, a mask, or a date and a mask.
+	 * Returns a formatted version of the given date.
+	 * The date defaults to the current date/time.
+	 * The mask defaults to dateFormat.masks.default.
+	 */
+
+	var dateFormat = function () {
+	    var token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
+	        timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,
+	        timezoneClip = /[^-+\dA-Z]/g,
+	        pad = function (val, len) {
+	            val = String(val);
+	            len = len || 2;
+	            while (val.length < len) val = "0" + val;
+	            return val;
+	        };
+
+	    // Regexes and supporting functions are cached through closure
+	    return function (date, mask, utc) {
+	        var dF = dateFormat;
+
+	        // You can't provide utc if you skip other args (use the "UTC:" mask prefix)
+	        if (arguments.length == 1 && Object.prototype.toString.call(date) == "[object String]" && !/\d/.test(date)) {
+	            mask = date;
+	            date = undefined;
+	        }
+
+	        // Passing date through Date applies Date.parse, if necessary
+	        date = date ? new Date(date) : new Date;
+	        if (isNaN(date)) throw SyntaxError("invalid date");
+
+	        mask = String(dF.masks[mask] || mask || dF.masks["default"]);
+
+	        // Allow setting the utc argument via the mask
+	        if (mask.slice(0, 4) == "UTC:") {
+	            mask = mask.slice(4);
+	            utc = true;
+	        }
+
+	        var _ = utc ? "getUTC" : "get",
+	            d = date[_ + "Date"](),
+	            D = date[_ + "Day"](),
+	            m = date[_ + "Month"](),
+	            y = date[_ + "FullYear"](),
+	            H = date[_ + "Hours"](),
+	            M = date[_ + "Minutes"](),
+	            s = date[_ + "Seconds"](),
+	            L = date[_ + "Milliseconds"](),
+	            o = utc ? 0 : date.getTimezoneOffset(),
+	            flags = {
+	                d:    d,
+	                dd:   pad(d),
+	                ddd:  dF.i18n.dayNames[D],
+	                dddd: dF.i18n.dayNames[D + 7],
+	                m:    m + 1,
+	                mm:   pad(m + 1),
+	                mmm:  dF.i18n.monthNames[m],
+	                mmmm: dF.i18n.monthNames[m + 12],
+	                yy:   String(y).slice(2),
+	                yyyy: y,
+	                h:    H % 12 || 12,
+	                hh:   pad(H % 12 || 12),
+	                H:    H,
+	                HH:   pad(H),
+	                M:    M,
+	                MM:   pad(M),
+	                s:    s,
+	                ss:   pad(s),
+	                l:    pad(L, 3),
+	                L:    pad(L > 99 ? Math.round(L / 10) : L),
+	                t:    H < 12 ? "a"  : "p",
+	                tt:   H < 12 ? "am" : "pm",
+	                T:    H < 12 ? "A"  : "P",
+	                TT:   H < 12 ? "AM" : "PM",
+	                Z:    utc ? "UTC" : (String(date).match(timezone) || [""]).pop().replace(timezoneClip, ""),
+	                o:    (o > 0 ? "-" : "+") + pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+	                S:    ["th", "st", "nd", "rd"][d % 10 > 3 ? 0 : (d % 100 - d % 10 != 10) * d % 10]
+	            };
+
+	        return mask.replace(token, function ($0) {
+	            return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
+	        });
+	    };
+	}();
+
+	// Some common format strings
+	dateFormat.masks = {
+	    "default":      "ddd mmm dd yyyy HH:MM:ss",
+	    shortDate:      "m/d/yy",
+	    mediumDate:     "mmm d, yyyy",
+	    longDate:       "mmmm d, yyyy",
+	    fullDate:       "dddd, mmmm d, yyyy",
+	    shortTime:      "h:MM TT",
+	    mediumTime:     "h:MM:ss TT",
+	    longTime:       "h:MM:ss TT Z",
+	    isoDate:        "yyyy-mm-dd",
+	    isoTime:        "HH:MM:ss",
+	    isoDateTime:    "yyyy-mm-dd'T'HH:MM:ss",
+	    isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+	};
+
+	// Internationalization strings
+	dateFormat.i18n = {
+	    dayNames: [
+	        "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+	        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+	    ],
+	    monthNames: [
+	        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+	        "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+	    ]
+	};
+
+	// For convenience...
+	Date.prototype.format = function (mask, utc) {
+	    return dateFormat(this, mask, utc);
+		};
+	</script>
+		<script type="text/javascript">
+			var today = new Date();
+			var dateString = today.format("dd-mm-yyyy");
+			
+			$(document).ready(function(){
+				var link = $('#link').attr('href')+dateString;
+				$('#link').attr('href',link);
+			});
+		</script>
+  
+</body></html>

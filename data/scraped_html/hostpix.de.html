@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="bilder, hochladen, upload, imagehoster, imagehosting, webspeicher">
+<meta name="description" content="bei Hospix.de kann man, Bilder kostenlos und einfach hochladen um diese dann auf z.B. einer Website, Forum oder einer Auktion zu verlinken.">
+<title>hostpix.de: kostenlos Bilder hochladen mit Bilderhosting</title>
+<link href="http://www.hostpix.de/skin/default/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="default.css">
+<script src="https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-4784987888673786.js"></script><script type="text/javascript" src="http://www.hostpix.de/includes/js.js"></script>
+<script type="text/javascript" src="http://www.hostpix.de/box.js"></script>
+<script language="JavaScript">
+<!--
+var url = 'http://www.hostpix.de/edit.php';
+
+var max_files='8';
+var warn_exist_file="Datei wurde ausgewählt, wählen Sie eine weitere Datei aus!";
+function chServer(obj)
+{
+    document.myform.action=js_server_id[obj.options[obj.selectedIndex].value]+'/index.php';
+}
+function getexpirydate( nodays){
+   var UTCstring;
+   Today = new Date();
+   nomilli=Date.parse(Today);
+   Today.setTime(nomilli+nodays*24*60*60*1000);
+   UTCstring = Today.toUTCString();
+   return UTCstring;
+}
+function getcookie(cookiename) {
+   var cookiestring=""+document.cookie;
+   var index1=cookiestring.indexOf(cookiename);
+   if (index1==-1 || cookiename=="") return "";
+   var index2=cookiestring.indexOf(';',index1);
+   if (index2==-1) index2=cookiestring.length;
+   return unescape(cookiestring.substring(index1+cookiename.length+1,index2));
+}
+function setcookie(name,value)
+{
+   duration=30;
+
+   cookiestring=name+"="+escape(value)+";EXPIRES="+getexpirydate(duration);
+   document.cookie=cookiestring;
+
+}
+function delcookie(name)
+{
+   cookiestring=name+"="+escape('')+";EXPIRES="+getexpirydate(-1);
+   document.cookie=cookiestring;
+}
+function checkUploadFile(obj)
+{
+   sfile=obj.value;
+   sfile=sfile.toLowerCase();
+   last=sfile.lastIndexOf('.');
+   ext=sfile.substring(last+1);
+   filetype="jpg,jpeg,gif,png";
+   filetype=filetype.toLowerCase();
+   ok=filetype.search(ext.toLowerCase())
+   if(ok==-1)
+   {
+       alert("please upload file with extensions:jpg,jpeg,gif,png!");
+       if(obj.type=='file') canContinue=false;
+       delInput('idfilespan',obj.id.substring(8));
+       return false;
+   }
+   else
+   {
+       if(obj.type=='file')
+       canContinue=true;
+       //return true;
+   }
+   exist(obj.id,obj.type);
+}
+function checkUploadZipFile()
+{
+   var sfile=document.myform.uploadfile.value;
+   sfile=sfile.toLowerCase();
+   last=sfile.lastIndexOf('.');
+   ext=sfile.substring(last+1);
+   if(ext!='zip')
+   {
+      alert("please upload file with extensions:.zip!");
+      return false;
+   }
+   else
+   {
+      document.myform.submit();
+      document.myform.done.disabled=true;
+      return true;
+   }
+}
+function calsize(obj,str)
+{
+    var size=obj.value;
+    var unit = 'Byte';
+    if(size=='') size=0;
+    if(size>1024) { size=size/1024; unit='Kb'; }
+    if(size>1024) { size=size/1024; unit='Mb'; }
+    if(size>1024) { size=size/1024; unit='Gb'; }
+    size = Math.round(size*100)/100;
+
+    document.all[str].innerHTML=size+' '+unit;
+}
+//-->
+</script>
+<link rel="preload" href="https://adservice.google.de/adsid/integrator.js?domain=www.hostpix.de"><script type="text/javascript" src="https://adservice.google.de/adsid/integrator.js?domain=www.hostpix.de"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.hostpix.de"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.hostpix.de"></script></head>
+<body>
+<div class="main">
+
+	<div class="container">
+		<div class="gfx"><a href="index.php"><span></span></a></div>
+
+ <div id="links1">
+        <ul>
+          <li><a href="http://www.hostpix.de/index.php"><span>Bildupload</span></a></li>
+<li><a href="http://www.hostpix.de/popular.php"><span>Bildergalerie</span></a></li>
+<li><a href="http://www.hostpix.de/bilderhosting.php"><span>Bilderhosting</span></a></li>
+<li><a href="http://www.hostpix.de/login.php"><span>Login</span></a></li>
+        </ul>
+      </div>
+<div style="clear:both"></div>
+	<div class="content">
+			<div class="item">
+		
+	   <h1>Kostenlos Bilder hochladen</h1><p>Hier können Sie mit nur einem Klick Ihre Bilder online speichern. Einfach Ihr Bild auswählen und auf "Bild hochladen" klicken. Es eignet sich perfekt für Foren, Blogger, eBay Auktionen oder für Communities. Mit unserem Sofortupload können Sie ohne Anmeldung bis zu 5 Bilder uploaden.</p>
+				</div>
+			<div class="item" id="uplbox">
+
+        <h1>Dateiupload</h1>
+
+       
+
+<div class="modernbricksmenu">
+<ul>
+
+    <li id="current"><a href="?uploadmode=0" title="New">Datei hochladen</a></li>
+    <li><a href="?uploadmode=2" title="Revised">URL-Upload</a></li>
+    <li><a href="?uploadmode=1" title="Tools">Applet-Upload</a></li>
+
+</ul>
+
+</div>
+<div id="sexyBG"></div>
+<div id="sexyBOX" onmousedown="document.onclick=function();" onmouseup="setTimeout('sexyTOG()',1);"></div>
+<div class="modernbricksmenuline">&nbsp;</div>
+<div class="mycontainer">
+
+<form name="myform" action="http://hostpix.de/index.php" method="post" enctype="multipart/form-data" onsubmit="sexyBOX('Upload...','300'); return false;">
+<input type="hidden" name="code" value="4D413D3D">
+<input type="hidden" name="zipfile" value="">
+<input type="hidden" name="upload_mode" value="0">
+<input type="hidden" name="sess_id" value="fdfd9e493c7d5501272f1f9ae679db27">
+<input type="hidden" name="upload_session" value="fcf4d8ad10e4">
+
+<br>
+<a href="javascript:;" name="attach" id="attach" onclick="addItem('idfilespan','file');this.childNodes[0].nodeValue='Datei hinzufügen';" title="Datei hinzufügen">Datei hinzufügen</a>
+<br><span id="idfilespan">
+<input type="file" name="uploads_0" id="attachId0" size="30" onchange="checkUploadFile(this);"><input type="button" value="X" class="delbtn" id="idAttachOper0" onclick="return delInput('idfilespan','0')">
+<br id="idAttachBr0">
+</span>
+<br><span id="uploadbtn" style="display:block">
+<input type="submit" name="done" value="Hochladen" onclick="myform.submit();this.disabled=true">
+
+
+<input type="checkbox" name="private" value="1" onclick="if(this.checked) {setcookie('yab_private','1')};else{setcookie('yab_private','0');}">Bild öffentlich?
+</span>
+</form>
+</div>
+
+
+
+	   <br>
+			<table cellpadding="0" cellspacing="0" width="100%" id="uploadtip">
+    <tbody><tr>
+          <td class="tdrow3" colspan="2">
+		  <div class="tdrow3_l">Willkommen:&nbsp;GUEST</div>
+		  <div class="tdrow3_r">
+		 <a href="index.php?showlinks=1">Bilder anzeigen</a> </div>
+
+          </td>
+    </tr>
+    <tr>
+          <td class="tdrow1">Dateityp</td>
+          <td class="tdrow2">.jpg .jpeg .gif .png</td>
+    </tr>
+    <tr>
+          <td class="tdrow1">Dateigröße</td>
+          <td class="tdrow2">800.00 KB(819200 Byte)</td>
+    </tr>
+    <tr>
+          <td class="tdrow1">Dateien pro Upload</td>
+          <td class="tdrow2">8</td>
+    </tr>
+</tbody></table>
+
+	</div>
+
+
+				
+
+
+   
+   
+<div style="float:right">
+<script type="text/javascript"><!--
+google_ad_client = 'pub-4784987888673786';
+/* 120x600, hostpix */
+google_ad_slot = '3556057077';
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><iframe width="120" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:120px;height:600px;"></iframe></ins></ins>
+</div>
+<div class="item" style="float:left"><div class="item1"><h1>Jetzt anmelden und weitere kostenlose Features nutzen</h1> <div class="f1"><h2>Bilderhosting</h2><p><img src="img/bilderhosting.jpg" align="middle"><br>Dateigröße bis 1.5 MB<br>50 MB Webspace<br>500 MB Traffik</p></div><div class="f1"><h2>Bildgalerien</h2><p><img src="img/bilder-gallerien.jpg" width="99" height="71"><br>Kommentare <br>Bewertungen<br>Passwortgeschützte Galerien</p></div><div class="f1"><h2>Flash-Slideshows</h2> <p><img src="img/flash-slideshows.jpg" width="99" height="71"><br>unterschiedliche Styles<br>zahlreiche Effekte<br>Flipbook</p></div>
+<div style="clear:both"></div><div align="center"><span class="al"><a href="bilderhosting.php">Jetzt kostenlos anmelden</a></span> </div></div></div>
+		</div> <div style="clear:both"></div>
+
+
+
+
+
+
+
+
+
+<div style="clear:both"></div>
+<div class="footer" align="center">
+Copyright © 2009-2013 <a href="http://www.hostpix.de/index.php" title="hostpix bilder kostenlos hochladen">hostpix.de</a>. All
+rights reserved.<br><br>
+
+<a href="http://www.hostpix.de/syndicate.php">Uploadbox zum Einbau</a>
+|
+<a href="http://www.hostpix.de/new.php">Neue Bilder</a>
+|
+<a href="http://www.hostpix.de/popular.php">Populäre Bilder</a>
+|
+<a href="http://www.hostpix.de/top.php">Top Bewertet</a>
+|
+<a href="http://www.hostpix.de/faq.php">FAQ</a>
+|
+<a href="http://www.hostpix.de/rules.php">AGB</a>
+|
+<a href="http://www.hostpix.de/partner.php">Unsere Partner</a>
+|
+<a href="http://www.hostpix.de/contact.php">Impressum</a>
+|
+<a href="http://www.niftygallery.net/en" alt="free flash gallery">xml flash gallery</a>
+
+</div>
+ <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-775357-4";
+urchinTracker();
+</script>
+<script type="text/javascript" src="http://www.sponsorads.de/script.php?s=83626"></script><!-- 94.67140590245945--><script type="text/javascript" src="http://www.sponsorads.de/a_script.php?s=83626&amp;pref=&amp;ref=&amp;ck=1&amp;rndVal=94.67140590245945"></script><script type="text/javascript">
+var adUri = 'http://www.sponsorads.de/b_click.php?u=17670&s=83626&c=4544&h=6bc9134eb8b4ad3442a3a9f3513faf6d';
+var adName = 'http://www.sponsorads.de/b_click.php?u=17670&s=83626&c=4544&h=6bc9134eb8b4ad3442a3a9f3513faf6d';
+var upHeader = 'Effektiv werben mit Sponsorads.de ';
+var upLink ='http://sponsorads.de/index2.php?frame=sp';
+var downHeader = '';
+var lenght_x = 800;
+var lenght_y = 426;
+var layerId = 'sponsorads46554';
+var border = "#0c2958";
+var outerBorder = "#f0f0f0";
+var opened = 0;
+function show(div){
+if (opened == 0) {
+ opened = 1;
+ x=document.getElementById(div);
+ x.style.display='block';
+ centerize();
+ window.onresize=centerize;
+  }
+}
+function centerize(){
+ x=document.getElementById('sponsorads46554');
+ var w = document.body.clientWidth - parseInt(x.style.width)
+ var procent = Math.round((((w)/2)/document.body.clientWidth)*100);
+ x.style.marginLeft = procent + '%';
+}
+function closepop(){
+ x=document.getElementById('sponsorads46554');
+ //spFadeOut(x);
+ x.style.display='none';
+document.getElementById('sponsorads46554').innerHTML = "";
+}
+  function openpop(uri,mode){
+            var hasQ = uri.indexOf('?');
+            var connect = '&';
+            if (hasQ === -1) {
+                connect = '?';
+            }
+            var uri2 = uri + connect + "popup=1";
+            var WindowObjectReference = window.open(uri2,"_blank",'scrollbars=yes,menubar=yes,location=yes,toolbar=yes,status=yes,resizable=yes');
+            if(mode==0){
+                self.focus();
+                window.focus();
+            }
+            closepop();
+        }
+function addBookmark(title,url) {
+if (window.sidebar) {
+window.sidebar.addPanel(title, url,"");
+} else if( document.all ) {
+window.external.AddFavorite( url, title);
+} else if( window.opera && window.print ) {
+return true;
+}
+}
+function spSetOpacity(x, opacity)
+{
+  opacity = (opacity == 100)?99.999:opacity;
+  x.style.filter = "alpha(opacity:"+opacity+")";
+  x.style.khtmlopacity = opacity/100;
+  x.style.mozopacity = opacity/100;
+  x.style.opacity = opacity/100;
+  x.style.operacity = opacity/100;
+}
+function spFadeIn(x)
+{
+  spCurrentOpacity += 15;
+  spSetOpacity(x, spCurrentOpacity);
+  if(spCurrentOpacity < 100)
+      window.setTimeout('spFadeIn(x)', 1);
+}
+function spFadeOut(x)
+{
+  spCurrentOpacity -= 25;
+  spSetOpacity(x, spCurrentOpacity);
+  if(spCurrentOpacity > 0)
+      window.setTimeout('spFadeOut(x)', 1);
+  else
+      x.style.display = "none";
+}
+//imgtrack = new Image();imgtrack.src = "http://info-ad.de/popup.php";
+img1 = new Image();img1.src = "http://img.sponsorads.de/images/layer/i1.gif";
+img2 = new Image();img2.src = "http://img.sponsorads.de/images/layer/i2.gif";
+img3 = new Image();img3.src = "http://img.sponsorads.de/images/layer/i3.gif";
+img4 = new Image();img4.src = "http://img.sponsorads.de/images/layer/i4.gif";
+img5 = new Image();img5.src = "http://img.sponsorads.de/images/layer/i5.gif";
+img6 = new Image();img6.src = "http://img.sponsorads.de/images/layer/i6.gif";
+img1_hov = new Image();img1_hov.src =
+"http://img.sponsorads.de/images/layer/i1h.gif";
+img2_hov = new Image();img2_hov.src =
+"http://img.sponsorads.de/images/layer/i2h.gif";
+img3_hov = new Image();img3_hov.src =
+"http://img.sponsorads.de/images/layer/i3h.gif";
+img4_hov = new Image();img4_hov.src =
+"http://img.sponsorads.de/images/layer/i4h.gif";
+img5_hov = new Image();img5_hov.src =
+"http://img.sponsorads.de/images/layer/i5h.gif";
+img6_hov = new Image();img6_hov.src =
+"http://img.sponsorads.de/images/layer/i6h.gif";
+var dump = new Image();
+var dmptemp = decodeURIComponent(adUri);
+dmptemp = dmptemp.replace('&amp;','&').split('s=')[1].split('&c=');
+var dmptemp2 = dmptemp[1].split('&');
+function callStats(mode){
+       dump.src = 'http://www.sponsorads.de/b_click.php?t=buttonClick&type='+mode+'&s='+dmptemp[0]+'&cid='+dmptemp2[0]+'&h=6bc9134eb8b4ad3442a3a9f3513faf6d';
+}
+function swapOn(id,src){
+theImg=document.getElementById(id);
+theImg.setAttribute("src",src);
+}
+function swapOff(id,src){
+theImg=document.getElementById(id);
+theImg.setAttribute("src",src);
+}
+function popup(url,width,height){
+    document.write('<div id="sponsorads46554" style="');
+      var real_height = height+56;
+      var real_width = width+2;
+      document.write('width:'+real_width+'px !important;');
+      document.write('height:'+real_height+'px;');
+      document.write('position:fixed;');
+      document.write('_position:absolute;');
+      document.write('left:0px;');
+      document.write('top:0px;');
+      document.write('_top: expression(0+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop));');
+      document.write('display:none;');
+      document.write('background:#fff;');
+      document.write('border:1px solid #f0f0f0;');
+      document.write('z-index:10000;');
+      document.write('">');
+      document.write('<div style="border:1px solid #0C375F;">');
+      document.write('<div id="upbar" style="');
+      document.write('_width:'+width+'px !important;');
+      document.write('height:27px;');
+      document.write('background:url(http://img.sponsorads.de/images/layer/head-1.png) repeat-x;');
+      document.write('border-bottom:1px solid #0C375F;');
+      document.write('text-align:right;');
+      document.write('padding-right:0px;');
+      document.write('">');
+      document.write('<span id="uptitle" style="');
+      document.write('color:#fff;');
+      document.write('font-weight:normal;');
+      document.write('height:27px;');
+      document.write('_height:27px;');
+      document.write('float:left;');
+      document.write('padding-left:35px;');
+      document.write('margin-top:0px;');
+      document.write('font-size:11px;');
+      document.write('line-height:28px;');
+      document.write('font-family:Tahoma,Helvetica,Arial,sans-serif;');
+      document.write('background-repeat:no-repeat;');
+      document.write('background:url(http://img.sponsorads.de/images/layer/head-0.png) no-repeat;');
+      document.write('">');
+      document.write('<a style="text-decoration:none;color:#fff;font-weight:900;" href="'+upLink+'">'+upHeader+'</a>');
+      document.write('</span>');
+      document.write('<img src="http://img.sponsorads.de/images/layer/head-2.png" alt="" style="display:inline;"/>');
+    document.write('<a href="#" onclick="this.style.behavior=\'url(#default#homepage)\';this.setHomePage(adUri);return false;" title="Beim n&auml;chsten Start &ouml;ffnen">');
+    document.write('<img id="im1" style="display:inline;border:none;padding-right:00px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i1.gif" alt="Beim n&auml;chsten Start &ouml;ffnen" onmouseover="swapOn(\'im1\',img1_hov.src);" onmouseout="swapOff(\'im1\',img1.src);" />');
+    document.write('</a>');
+    document.write('<a href="#" onclick="addBookmark(adName,adUri); return false;" title="F&uuml;r sp&auml;ter merken">');
+    document.write('<img id="im2" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i2.gif" alt="F&uuml;r sp&auml;ter merken" onmouseover="swapOn(\'im2\',img2_hov.src);" onmouseout="swapOff(\'im2\',img2.src);" />'); ;
+    document.write('</a>');
+    document.write('<a href="#" onclick="callStats(\'close\');closepop(); return false;" title="Fenster schliessen">');
+    document.write('<img id="im3" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i3.gif" alt="Fenster schliessen" onmouseover="swapOn(\'im3\',img3_hov.src);" onmouseout="swapOff(\'im3\',img3.src);" />');
+    document.write('</a>');
+    document.write('<a href="#" onclick="callStats(\'background\');openpop(adUri,0);return false;" title="Sp&auml;ter ansehen - Im Hintergrund &ouml;ffnen">');
+    document.write('<img id="im4" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i4.gif" onmouseover="swapOn(\'im4\',img4_hov.src);" onmouseout="swapOff(\'im4\',img4.src);" />');
+    document.write('</a>');
+    document.write('</div>');
+    document.write('<iframe id = "iframeSponsorads" style="border:0;margin:0;padding:0;z-index:10001;width:'+width+';height:'+height+';" onload="show(\'sponsorads46554\')" frameborder="0" width="'+width+'"height="'+height+'" name="popWindow" src="'+url+'"></iframe>');
+    document.write('<div id="downbar" style="');
+    document.write('_width:'+width+'px !important;');
+      document.write('height:26px;');
+      document.write('background:#aaa url(http://img.sponsorads.de/images/layer/f0.gif) repeat-x;');
+      document.write('border-top:0px solid #0C375F;');
+      document.write('text-align:right;');
+    document.write('">');
+    document.write('<span id="downtitle" style="');
+       document.write('color:#2B3844;');
+      document.write('font-weight:normal;');
+      document.write('float:left;');
+      document.write('height:25px;');
+    document.write('">');
+    document.write('<a target ="_blank" href="http://sponsorads.de" title="SponsorAds - Das grosse Werbenetzwerk"><img style="border:none;" src="http://img.sponsorads.de/images/layer/frame_layer_teaser.gif" /></a>');
+    document.write('</span>');
+    document.write('<span id="newopen" style="');
+    document.write('">');
+    document.write('<img src="http://img.sponsorads.de/images/layer/f1.gif" alt="" style="display:inline;"/>');
+    document.write('<a href="#" onclick="openpop(adUri,1)" title="Seite im neuen Fenster &ouml;ffnen">');
+    document.write('<img id="im5" style="display:inline;border:none;" src="http://img.sponsorads.de/images/layer/i5.gif" onmouseover="swapOn(\'im5\',img5_hov.src);" onmouseout="swapOff(\'im5\',img5.src);" />');
+    document.write('</a>');
+    document.write('<a href="#" onclick="addBookmark(adName,adUri); return false;" title="F&uuml;r sp&auml;ter merken">');
+    document.write('<img id="im6" style="display:inline;border:none;" src="http://img.sponsorads.de/images/layer/i6.gif" onmouseover="swapOn(\'im6\',img6_hov.src);" onmouseout="swapOff(\'im6\',img6.src);" />');
+    document.write('</a>');
+    document.write('</span>');
+      document.write('</a>');
+      document.write('</span>');
+    document.write('</div>');
+    document.write('</div>');
+ document.write('</div>');
+}
+popup(adUri,lenght_x,lenght_y);
+window.setTimeout("show('sponsorads46554')", 6000);
+</script><div id="sponsorads46554" style="height: 482px; position: fixed; left: 0px; top: 0px; display: block; background-color: rgb(255, 255, 255); border: 1px solid rgb(240, 240, 240); z-index: 10000; width: 802px !important; margin-left: 11%; background-position: initial initial; background-repeat: initial initial;"><div style="border:1px solid #0C375F;"><div id="upbar" style="_width:800px !important;height:27px;background:url(http://img.sponsorads.de/images/layer/head-1.png) repeat-x;border-bottom:1px solid #0C375F;text-align:right;padding-right:0px;"><span id="uptitle" style="color:#fff;font-weight:normal;height:27px;_height:27px;float:left;padding-left:35px;margin-top:0px;font-size:11px;line-height:28px;font-family:Tahoma,Helvetica,Arial,sans-serif;background-repeat:no-repeat;background:url(http://img.sponsorads.de/images/layer/head-0.png) no-repeat;"><a style="text-decoration:none;color:#fff;font-weight:900;" href="http://sponsorads.de/index2.php?frame=sp">Effektiv werben mit Sponsorads.de </a></span><img src="http://img.sponsorads.de/images/layer/head-2.png" alt="" style="display:inline;"><a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(adUri);return false;" title="Beim nächsten Start öffnen"><img id="im1" style="display:inline;border:none;padding-right:00px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i1.gif" alt="Beim nächsten Start öffnen" onmouseover="swapOn('im1',img1_hov.src);" onmouseout="swapOff('im1',img1.src);"></a><a href="#" onclick="addBookmark(adName,adUri); return false;" title="Für später merken"><img id="im2" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i2.gif" alt="Für später merken" onmouseover="swapOn('im2',img2_hov.src);" onmouseout="swapOff('im2',img2.src);"></a><a href="#" onclick="callStats('close');closepop(); return false;" title="Fenster schliessen"><img id="im3" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i3.gif" alt="Fenster schliessen" onmouseover="swapOn('im3',img3_hov.src);" onmouseout="swapOff('im3',img3.src);"></a><a href="#" onclick="callStats('background');openpop(adUri,0);return false;" title="Später ansehen - Im Hintergrund öffnen"><img id="im4" style="display:inline;border:none;padding-right:0px;margin-top:0px;" src="http://img.sponsorads.de/images/layer/i4.gif" onmouseover="swapOn('im4',img4_hov.src);" onmouseout="swapOff('im4',img4.src);"></a></div><iframe id="iframeSponsorads" style="border:0;margin:0;padding:0;z-index:10001;width:800;height:426;" onload="show('sponsorads46554')" frameborder="0" width="800" height="426" name="popWindow" src="http://www.sponsorads.de/b_click.php?u=17670&amp;s=83626&amp;c=4544&amp;h=6bc9134eb8b4ad3442a3a9f3513faf6d"></iframe><div id="downbar" style="_width:800px !important;height:26px;background:#aaa url(http://img.sponsorads.de/images/layer/f0.gif) repeat-x;border-top:0px solid #0C375F;text-align:right;"><span id="downtitle" style="color:#2B3844;font-weight:normal;float:left;height:25px;"><a target="_blank" href="http://sponsorads.de" title="SponsorAds - Das grosse Werbenetzwerk"><img style="border:none;" src="http://img.sponsorads.de/images/layer/frame_layer_teaser.gif"></a></span><span id="newopen" style=""><img src="http://img.sponsorads.de/images/layer/f1.gif" alt="" style="display:inline;"><a href="#" onclick="openpop(adUri,1)" title="Seite im neuen Fenster öffnen"><img id="im5" style="display:inline;border:none;" src="http://img.sponsorads.de/images/layer/i5.gif" onmouseover="swapOn('im5',img5_hov.src);" onmouseout="swapOff('im5',img5.src);"></a><a href="#" onclick="addBookmark(adName,adUri); return false;" title="Für später merken"><img id="im6" style="display:inline;border:none;" src="http://img.sponsorads.de/images/layer/i6.gif" onmouseover="swapOn('im6',img6_hov.src);" onmouseout="swapOff('im6',img6.src);"></a></span></div></div></div>
+
+
+
+
+
+
+</div></div></body></html>

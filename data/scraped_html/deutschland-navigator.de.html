@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="de"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="msapplication-config" content="none">
+    <title>Deutschland-Navigator - Das Städteportal für Deutschland</title>
+    <link rel="icon" type="image/png" href="/bilder/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/bilder/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/start2.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker3.css">
+    <script src="/werbung.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <input class="start-search" id="suche" type="text" placeholder="Welchen Ort suchen Sie?" maxlength="50" autocomplete="off" onkeyup="myautocomplete()">
+          <img class="hidden-xs start-logo" src="/bilder/w438jg59n689.png" alt="">
+          <input type="hidden" id="autotyp" value="start">
+          <ul id="autores" class="ortssuche-start"></ul>
+          <div class="hidden-xs start-top6">
+            <div class="row"><div class="col-sm-4 col-md-2"><strong class="lead font-pro">Köln</strong><br><a href="/koeln-50000/karte.html">Stadtplan</a><br><a href="/koeln-50000/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-koeln-50000.html">Hotels</a><br></div><div class="col-sm-4 col-md-2"><strong class="lead font-pro">Frankfurt</strong><br><a href="/frankfurt-am-main-60000/karte.html">Stadtplan</a><br><a href="/frankfurt-am-main-60000/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-frankfurt-am-main-60000.html">Hotels</a><br></div><div class="col-sm-4 col-md-2"><strong class="lead font-pro">Leipzig</strong><br><a href="/leipzig-04XXX/karte.html">Stadtplan</a><br><a href="/leipzig-04XXX/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-leipzig-04XXX.html">Hotels</a><br></div><div class="col-sm-4 col-md-2"><strong class="lead font-pro">Hamburg</strong><br><a href="/hamburg-20000/karte.html">Stadtplan</a><br><a href="/hamburg-20000/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-hamburg-20000.html">Hotels</a><br></div><div class="col-sm-4 col-md-2"><strong class="lead font-pro">München</strong><br><a href="/muenchen-80000/karte.html">Stadtplan</a><br><a href="/muenchen-80000/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-muenchen-80000.html">Hotels</a><br></div><div class="col-sm-4 col-md-2"><strong class="lead font-pro">Stuttgart</strong><br><a href="/stuttgart-70XXX/karte.html">Stadtplan</a><br><a href="/stuttgart-70XXX/ortsinfo.html">Ortsinfos</a><br><a href="/hotels-in-stuttgart-70XXX.html">Hotels</a><br></div></div>
+            <div class="row hidden-sm"><div class="col-sm-4 col-md-4"><span class="lead font-pro">Unterkünfte an der Kieler Förde</span><br><a href="/hotel-stein-2142248.html">Steiner Strandappartements, Stein</a><br><a href="/hotel-heikendorf-324508.html">StrandHotel Seeblick, Heikendorf</a><br><a href="/hotel-holtenau-1901234.html">Kajüte Holtenau, Holtenau</a></div><div class="col-sm-4 col-md-4"><span class="lead font-pro">Unterkünfte im Berchtesgadener Land</span><br><a href="/hotel-berchtesgaden-570257.html">Bauernhof Vorderstiedler, Berchtesgaden</a><br><a href="/hotel-berchtesgaden-65122.html">Hotel Wittelsbach, Berchtesgaden</a><br><a href="/hotel-berchtesgaden-909064.html">Chalet in den Bergen, Berchtesgaden</a></div><div class="col-sm-4 col-md-4"><span class="lead font-pro">Unterkünfte auf dem Darß</span><br><a href="/hotel-prerow-ostseebad-1733379.html">Piratenhus, Prerow (Ostseebad)</a><br><a href="/hotel-born-1526159.html">Auster am Bodden, Born</a><br><a href="/hotel-wieck-2147011.html">Darßer Koje, Wieck</a></div></div>
+          </div>
+          <div class="start-footer">Copyright © 2017 deutschland-navigator.de - <a href="/impressum.html">Impressum</a> <a href="/datenschutz.html">Datenschutz</a></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/autocompleter.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-datepicker.de.min.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Unsere Website setzt Cookies ein, um Ihnen die Nutzung unserer Website so angenehm wie möglich zu machen. Indem Sie unsere Website weiter nutzen, stimmen Sie der Nutzung von Cookies zu.","dismiss":"Ich stimme zu","learnMore":"Weitere Infos","link":"/datenschutz.html","theme":"light-bottom"};
+        $(document).ready(function(){
+            $('.datepicker').datepicker({
+                language: "de",
+                orientation: "top left",
+                todayHighlight: true,
+                startDate: "21.12.2017",
+                useCurrent: false,
+                autoclose: true,
+                ignoreReadonly: true
+            });
+        });
+    </script>
+  
+
+</body></html>

@@ -1,0 +1,1959 @@
+<!DOCTYPE html><html lang="de"><head><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.echte-bewertungen.com/avis-clients/widget/d/1/6/d165151f-c40b-37b4-b9cd-2b1b02d22f87/widget3/widget04-205_jsonp.php?callback=netavjsonpwidget04_205&amp;_=1513869018311"></script>
+<base href="https://www.the-orange-horse.com/">
+<title>Reitartikel | Reitsport Zubehör | Reitsport Onlineshop</title>
+<meta name="robots" content="index,follow">
+<meta name="author" content="Reitsport Jade">
+<meta name="page-topic" content="shopping">
+<meta name="reply-to" content="shop@the-orange-horse.com">
+<meta name="revisit-after" content="14">
+<meta name="description" content="In unserem Reitsport-Onlineshop finden Sie erstklassige Reitartikel von renommierten Markenherstellern! Reithosen von Pikeur oder Cavallo, Trensen von Schumacher.">
+<meta name="keywords" content="reitartikel, reitsport zubehör, reitsport onlineshop, reitsportgeschäft oldenburg">
+<meta name="generator" content="xt:Commerce 4 - 4.1.10">
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PBP6VN"></script><script type="text/javascript" src="/ga.js"></script><link href="https://plus.google.com/115434629098592439108/" rel="publisher"> <link rel="stylesheet" type="text/css" href="plugins/xt_netreviews/css/avisverifies-style-front.css"><link rel="stylesheet" type="text/css" href="https://www.the-orange-horse.com/plugins/xt_master_slave/css/master_slave.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_listing_filter/css/wsmc_listing_filter.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_manufacturer_box/css/wsmc_manufacturer_box.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_gallery/css/wsmc_gallery.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_top_categories/css/wsmc-top-categories.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_livesuche/css/ajax_styles.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_specsheet_print/css/style.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_cheaper_box/css/wsmc_cheaper_box.css"><link rel="stylesheet" type="text/css" href="plugins/wsmc_startpage_teaser/css/wsmc_startpage_teaser.css"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript">//<![CDATA[
+function getSingleOptionSlave(product){
+var arr = new Array();
+if((jQuery("div[singleoption=SingleOption]")).size()>=1){
+jQuery.each(jQuery("div[singleoption=SingleOption]"),function(index,value){
+arr.push($(this).attr("value"));
+});
+jQuery.ajax({
+		type: "POST",
+		url: "/index.php?page=VARIANTEN_CONTROLLER", 
+		async: true,
+                dataType: "json",   
+		data: "id="+product+"&varianten="+arr,
+		
+		success: function(data){	
+                        if(data.slavePid && data.qty >0 && ((data.options != null && data.options.length ==2)|| data.options == null)){
+	         		$("#slave-product-id").val(data.slavePid);
+                                $("#slave-submit").removeAttr("disabled"); 
+                                $(".options-box h3").hide();                             
+           	         }else{
+                                $("#slave-submit").attr("disabled", "disabled");
+                                $(".options-box h3").show();
+                         }
+if(data.slavePid && data.qty>0 && ((data.options !=null && data.options.length ==2)|| data.options == null)){
+   $("#deliveryTime").html("Auf Lager - 2 Tage Lieferzeit nach Zahlungseingang");
+   $("#deliveryTime").css("color","black");
+   $("#deliveryTime").css("padding","13px");
+   $(".options-box h3").css("padding","0px");
+}
+else if(data.slavePid && data.qty==0  && ((data.options !=null && data.options.length ==2)|| data.options == null)){
+    $("#deliveryTime").html("Leider nicht auf Lager, bitte Lieferzeit unter <a style=color:red;text-decoration:underline; href=/de/Kontakt> Kontakt</a> erfragen.");$("#deliveryTime").css("color","red");
+   $("#deliveryTime").css("padding","13px");
+   $(".options-box h3").css("padding","0px");
+}
+else{
+$("#deliveryTime").html("");
+   $("#deliveryTime").css("padding","0px");
+   $(".options-box h3").css("padding","12px 13px");
+}
+
+if (data.options){
+$(".varianten-options option").attr("disabled", "disabled");
+$("option[value=0]").removeAttr("disabled");
+jQuery.each(data.options, function(i, val) {
+$("option[value="+val.attributes_id+"]").removeAttr("disabled");
+});
+}else{
+$(".varianten-options option").removeAttr("disabled");
+}			
+	}
+
+	});}}
+
+function getSlave(product , option , optionParent){
+$("#slave-submit").attr("disabled", "disabled");
+$("div[parent_id="+optionParent+"]").removeAttr("selected");
+$("div[value="+option+"]").attr("selected", "selected");
+var arr = new Array();
+jQuery.each(jQuery("div[selected=selected]"),function(index,value){
+arr.push($(this).attr("value"));
+});
+jQuery.each(jQuery("div[singleoption=SingleOption]"),function(index,value){
+arr.push($(this).attr("value"));
+});
+
+jQuery.ajax({
+		type: "POST",
+		url: "/index.php?page=VARIANTEN_CONTROLLER", 
+		async: true,
+                dataType: "json",   
+		data: "id="+product+"&varianten="+arr,
+		
+		success: function(data){	
+                        if(data.slavePid && data.qty >0){
+	         		$("#slave-product-id").val(data.slavePid);
+                                $("#slave-submit").removeAttr("disabled"); 
+                                $(".options-box h3").hide();                             
+           	         }else{
+                                $("#slave-submit").attr("disabled", "disabled");
+                                $(".options-box h3").show();
+                         }
+if(data.slavePid && data.qty>0){
+var productsArray = new Array();
+jQuery.each(jQuery("div[singleoption=SingleOption]"),function(index,value){
+productsArray.push($(this).html());
+});
+jQuery.each(jQuery("div[selected=selected]"),function(index,value){
+productsArray.push($(this).html());
+});
+products = productsArray.join(" - ");
+   $("#deliveryTime").html(products+"<br/>Auf Lager - 2 Tage Lieferzeit nach Zahlungseingang");
+   $("#deliveryTime").css("color","black");
+   $("#deliveryTime").css("padding","13px");
+   $(".options-box h3").css("padding","0px");
+}
+else if(data.slavePid && data.qty==0){
+var productsArray = new Array();
+jQuery.each(jQuery("div[singleoption=SingleOption]"),function(index,value){
+productsArray.push($(this).html());
+});
+jQuery.each(jQuery("div[selected=selected]"),function(index,value){
+productsArray.push($(this).html());
+});
+products = productsArray.join(" - ");
+    $("#deliveryTime").html(products +"<br/>Leider nicht auf Lager, bitte Lieferzeit unter <a style=color:red;text-decoration:underline; href=/de/Kontakt> Kontakt</a> erfragen.");$("#deliveryTime").css("color","red");
+   $("#deliveryTime").css("padding","13px");
+   $(".options-box h3").css("padding","0px");
+   $(".options-box h3").hide(); 
+}
+else{
+$("#deliveryTime").html("");
+   $("#deliveryTime").css("padding","0px");
+   $(".options-box h3").css("padding","12px 13px");
+}
+
+if((jQuery("div[selected=selected]")).size()==2 && data.slavePid==null){
+       $(".options-box h3").html("Ihre gew&auml;hlte Variante ist nicht lieferbar. Bitte w&auml;hlen Sie ein gr&uuml;n unterlegtes Feld.");
+}
+
+if (data.options){
+$(".varianten-options div").attr("notavailable", "notavailable");
+jQuery.each(data.options, function(i, val) {
+$(".varianten-options div[value="+val.attributes_id+"]").removeAttr("notavailable");
+});
+}else{
+$(".varianten-options div").removeAttr("notavailable");
+}		
+	}
+
+	});
+}//]]>
+</script><script type="text/javascript">
+	var count;var position=0;var timer;$(document).ready(function(){window.setTimeout(function(){timer=window.setTimeout("Farbe()",5000);count=$("a[id^=slide-element-]").length;width=($("#wsmc-gallery").css("width")).slice(0,-2);$("#gallery-body").css("width",count*width+"px");$("#gallery-body li").css("width",width+"px");$(".gallery-button").click(function(){Switch(this);});$("#gallery-body").hover(function(){window.clearTimeout(timer);},function(){Farbe();});},200);});function Switch(data){var n=$(data).attr("id").replace("button-","");window.clearTimeout(timer);position=n;$(".gallery-button").removeClass("active");$("#button-"+position).addClass("active");$("#gallery-body").animate({"margin-left":(-(position)*width)},1000);timer=window.setTimeout("Farbe()",5000);}
+function Farbe(){if(position==count-1){$("#button-0").addClass("active");position=0;$("#gallery-body").css("margin-left",0);Farbe();}else{$("#gallery-body").animate({"margin-left":(-((position++)+1)*width)},1000);$("#button-"+(position-1)).removeClass("active");$("#button-"+position).addClass("active");if(position==count-1){$("#button-0").addClass("active");}
+timer=window.setTimeout("Farbe()",10000);}}
+
+	 </script><script type="text/javascript" src="plugins/wsmc_top_categories/js/wsmc-top-categories.js"> </script>
+   
+        <script type="text/javascript">//<![CDATA[
+        
+             (function(){
+                     
+                var initDB ="_INIT";             
+                var xmlHttp = null;
+                // Mozilla,Chorme, Opera, Safari and IE 7
+                if (typeof XMLHttpRequest != "undefined") {
+                    xmlHttp = new XMLHttpRequest();
+                }
+                if (!xmlHttp) {
+                    // IE 6 and older
+                    try {
+                        xmlHttp  = new ActiveXObject("Msxml2.XMLHTTP");
+                    } catch(e) {
+                        try {
+                            xmlHttp  = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch(e) {
+                            xmlHttp  = null;
+                        }
+                    }
+                }
+                // If xmlHttp object successfully created   
+                      
+                if (xmlHttp) {
+                    var params = "ajax_search_getDbData="+initDB;
+                    //var url = "plugins/wsmc_livesuche/pages/wsmc_livesuche_ajax.php";
+                   var url = "index.php?page=WESOMA_LIVESUCHE_AJAX";
+                    
+                
+                    xmlHttp.open("POST", url, true);
+                
+                
+                    //Headerinformation for POST request
+                    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xmlHttp.setRequestHeader("Content-length", params.length);
+                    xmlHttp.setRequestHeader("Connection", "close");    
+                    
+                              
+                    xmlHttp.send(params);
+                }                                  
+              })();  
+              
+        
+        
+             var timer;
+             function cashAjaxRequest(req){
+
+                  clearTimeout(timer);
+                  timer=setTimeout(function validate(){ajaxSearch(req)},1000);
+             }
+                    
+                               
+            function ajaxSearch(ajaxkey){
+                    
+                var wait = new Image(); 
+                wait.src = "plugins/wsmc_livesuche/images/wait.gif"; 
+                            
+                var xmlHttp = null;
+                // Mozilla,Chorme, Opera, Safari and IE 7
+                if (typeof XMLHttpRequest != "undefined") {
+                    xmlHttp = new XMLHttpRequest();
+                }
+                if (!xmlHttp) {
+                    // IE 6 and older
+                    try {
+                        xmlHttp  = new ActiveXObject("Msxml2.XMLHTTP");
+                    } catch(e) {
+                        try {
+                            xmlHttp  = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch(e) {
+                            xmlHttp  = null;
+                        }
+                    }
+                }
+                // If xmlHttp object successfully created   
+                
+               //Anzeigen des Ajax Wartekreises
+                 document.getElementById("_ajaxSearch").innerHTML = "<div id=\"_ajaxSearch_inner\"><div class=\"_ajaxSearchBarTop\"><input type=\"button\" class=\"closeButton\" onClick=\"closeAjaxSearch()\"></div><span style=\"margin-left:45%\"><img src="+wait.src+" /></span></div></div>";
+                    
+                      
+                if (xmlHttp) {
+                    var params = "ajax_search="+ajaxkey;
+                    //var url = "plugins/wsmc_livesuche/pages/wsmc_livesuche_ajax.php";
+                     var url = "index.php?page=wesoma_livesuche_ajax";
+                
+                    xmlHttp.open("POST", url, true);
+                
+                
+                    //Headerinformation for POST request
+                    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xmlHttp.setRequestHeader("Content-length", params.length);
+                    xmlHttp.setRequestHeader("Connection", "close");                    
+            
+                    xmlHttp.onreadystatechange = function () {
+                        
+                        
+                        if (xmlHttp.readyState == 4) {
+                                                      
+                            // Response value of the ajax query will be written in the div container "result"
+                             document.getElementById("_ajaxSearch").style.visibility  = "visible";
+             				 document.getElementById("_ajaxSearch_inner").style.visibility  = "visible";
+                            document.getElementById("_ajaxSearch").innerHTML = xmlHttp.responseText;
+                        }
+                    };              
+                    xmlHttp.send(params);
+                }  
+                    
+            }
+            
+            
+            function closeAjaxSearch(){
+                           
+             document.getElementById("_ajaxSearch");
+             document.getElementById("_ajaxSearch_inner");
+             
+             document.getElementById("_ajaxSearch").style.visibility  = "hidden";
+             document.getElementById("_ajaxSearch_inner").visibility  = "hidden";
+                       
+            }
+            //]]>
+        </script>
+        <script type="text/javascript" src="plugins/wsmc_specsheet_print/js/ajax.js"></script><script type="text/javascript" src="plugins/wsmc_specsheet_print/js/panel.js"></script><link rel="canonical" href="http://www.the-orange-horse.com/"><link rel="stylesheet" type="text/css" href="https://www.the-orange-horse.com/cache/style_1wsmc_horse.css?7d6a84bd2d14926a272898252e958e86">
+<script src="https://www.the-orange-horse.com/cache/javascript_1wsmc_horse.js?bd980f1181aadcf753a5633fec4ce0e7"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+<link rel="icon" href="https://www.the-orange-horse.com/media/logo/favicon2.png" type="image/png">
+<script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"></script></head>
+<body class="unix safari webkit sf9"><noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-PBP6VN"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBP6VN');</script>
+
+<meta class="avWidget" data-jsonp="//www.echte-bewertungen.com/avis-clients/widget/d/1/6/d165151f-c40b-37b4-b9cd-2b1b02d22f87/widget3/widget04-205_jsonp.php" isloaded="isLoaded"><script src="//www.echte-bewertungen.com/js/widget_js/widget3.js"></script>
+
+<div class="header-background"></div>
+<div id="page">					
+	<div id="header" class="row">
+		<div class="column xt-grid-6">
+			<div id="branding">
+				<p id="logo"><a href="https://www.the-orange-horse.com/"><img height="160" style="padding-left:50px;padding-top:10px" src="https://www.the-orange-horse.com/templates/wsmc_horse/img/Logo_shop3.png" alt="Reitartikel | Reitsport Zubehör | Reitsport Onlineshop"></a></p><!-- #logo -->			
+			</div><!-- #branding -->
+		</div><!-- .column .xt-grid-6 -->				
+		<div id="topmenu">
+			<ul>				
+												<li><a href="https://www.the-orange-horse.com/de/customer/login">Anmelden</a></li>
+												
+				<li><a href="https://www.the-orange-horse.com/de/checkout/shipping">Kasse</a></li>				
+								<li><a href="https://www.the-orange-horse.com/de/customer">Ihr Konto</a></li>
+								<li><a href="https://www.the-orange-horse.com/de/cart">Warenkorb</a></li>
+				<li><a href="http://39111.seu.cleverreach.com/f/39111-61215/%22" target="_blank">Newsletter</a></li>
+						                <li><img src="https://www.the-orange-horse.com/media/flags/de.gif" alt="Deutsch"></li>
+        		                        <li><a href="https://www.the-orange-horse.com/index?action=change_lang&amp;new_lang=en&amp;"><img src="https://www.the-orange-horse.com/media/flags/en.gif" alt="English"></a></li>
+                							
+			</ul>
+		</div><!-- #topmenu -->	
+				<div id="outlet" style="float: right;margin-right: 120px;margin-top: 33px;">
+			<a href="/de/outlet-sale" style="text-decoration: none;font-size:25px;color:#fff;font-weight:bold;"><img height="100" src="/templates/wsmc_horse/img/Outletbutton_neu.png" alt="Outlet"></a>
+		</div>
+				<div class="fb-like" style=" bottom: 16px;    display: inline;    float: left;    left: 22%;    position: absolute;" data-href="https://www.facebook.com/cause.I.love.my.horse?fref=ts" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+	</div><!-- .row .header -->
+	<div style="margin: 0 auto; width: 960px;">
+		<div class="column xt-grid-16" id="menu-column">
+			<div id="wsmc_search">
+<form name="search_box91" action="https://www.the-orange-horse.com/de/search" method="get">
+<input type="hidden" name="page" value="search" id="page322">
+<input type="hidden" name="page_action" value="query" id="page_action392">
+<input type="hidden" name="desc" value="on" id="desc321">
+<input type="hidden" name="sdesc" value="on" id="sdesc430">   
+<input id="text-search" type="text" name="keywords" onkeyup="cashAjaxRequest(this.value)" value="Finde Produkte, Artikelnummern" onfocus="if(this.value == 'Finde Produkte, Artikelnummern') this.value='';" onblur="if (this.value=='') this.value='Finde Produkte, Artikelnummern';" autocomplete="off">
+  <input type="submit" title="" value=""> 
+    <!-- Version 4.0 <input type="image" src="https://www.the-orange-horse.com/templates/wsmc_horse/img/buttons/de/button_quick_find.gif" alt="BUTTON_QUICK_FIND"  />   -->
+  	<div style="position: absolute!important; z-index: 99999!important;right: 20px;" id="_ajaxSearch"></div>
+</form>
+</div>
+			 <div id="box-wsmc-top-categories">
+		<ul class="top-categories-list">     
+					<li id="categories-categorie-361" class="top-categories"><a href="de/winterkollektionen-2017-2018">Winterkollektionen 2017 - 2018</a>	</li>			
+					<li id="categories-categorie-89" class="top-categories"><a href="de/alles-fuer-den-reiter">Alles für den Reiter </a>	</li>			
+					<li id="categories-categorie-71" class="top-categories"><a href="de/alles-fuer-das-pferd">Alles für das Pferd</a>	</li>			
+			</ul>
+		<div id="clear"></div>
+	
+	<div class="categorie-children" id="categorie-361-children">
+		<div style="width:30%;float:left;">
+			<ul> 				
+						
+				<li id="children-categorie-362"><a href="de/winterkollektionen-2017-2018/hv-polo-winter-2017-2018">HV Polo Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-363"><a href="de/winterkollektionen-2017-2018/schockemoehle-sports-winter-2017-2018">Schockemöhle Sports Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-365"><a href="de/winterkollektionen-2017-2018/eskadron-winter-2017-2018">Eskadron Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-370"><a href="de/winterkollektionen-2017-2018/eurostar-winter-2017-2018">Eurostar Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-371"><a href="de/winterkollektionen-2017-2018/kingsland-winter-2017-2018">Kingsland Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-373"><a href="de/winterkollektionen-2017-2018/mountain-horse-winter-2017-2018">Mountain Horse Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-375"><a href="de/winterkollektionen-2017-2018/esperado-winter-2017-2018">Esperado Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-376"><a href="de/winterkollektionen-2017-2018/qhp-winter-2017-2018">QHP Winter 2017 - 2018</a></li>
+						
+				<li id="children-categorie-364"><a href="de/winterkollektionen-2017-2018/pikeur-winter-2017-2018">Pikeur Winter 2017 - 2018</a></li>
+						</ul>
+		</div>
+		<div style="width:32%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Neue Produkte</h3>				
+			<ul> 				
+						
+				<li id="children-products-361-156217" style="height:100px;"><a href="de/eskadron-21792w17ppm_eskadron-schabracke-big-square-glossy-heritage-2017/18"><img src="/media/images/thumb/ESKADRON-21792W17PPM000prorose-konv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Eskadron Schabracke Big Square Glossy Heritage 2017/18">Eskadron Schabracke Big Square Glossy Heritage 2017/18</a></li>
+						
+				<li id="children-products-361-156211" style="height:100px;"><a href="de/eskadron-13392-w17ppm_eskadron-abschwitzdecke-dralon-trademark---heritage-hw-17"><img src="/media/images/thumb/ESKADRON-13392-W17PPM000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Eskadron Abschwitzdecke Dralon Trademark - Heritage HW 17">Eskadron Abschwitzdecke Dralon Trademark - Heritage HW 17</a></li>
+						
+				<li id="children-products-361-156173" style="height:100px;"><a href="de/eskadron-13391-28k-w17ppm_eskadron-abschwitzdecke-dralon-check---classic-sports-hw-17"><img src="/media/images/thumb/ESKADRON-13391-28K-W17PPM000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17">Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17</a></li>
+						</ul>
+		</div>
+		<div style="width:30%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Bestseller</h3>
+			<ul> 				
+						
+				<li id="children-products-361-154577" style="height:100px;"><a href="de/busse-781113w17rom_busse-jacke-spirit---funktionelle-reitjacke"><img src="/media/images/thumb/BUSSE-781113W17ROM000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Busse Jacke Spirit - funktionelle Reitjacke">Busse Jacke Spirit - funktionelle Reitjacke</a></li>
+						
+				<li id="children-products-361-155851" style="height:100px;"><a href="de/busse-781122w17roo_busse-winterhandschuh-3-in-1---hoch-funktionell"><img src="/media/images/thumb/BUSSE-781122W17ROO000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Busse Winterhandschuh 3 in 1 - hoch funktionell">Busse Winterhandschuh 3 in 1 - hoch funktionell</a></li>
+						
+				<li id="children-products-361-153634" style="height:100px;"><a href="de/eskadron-41891w17ppm_eskadron-halfter-dornschnalle-fauxfur-hw-2017"><img src="/media/images/thumb/ESKADRON-41891W17PPM000proorchidma-konv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Eskadron Halfter Dornschnalle Fauxfur HW 2017">Eskadron Halfter Dornschnalle Fauxfur HW 2017</a></li>
+						</ul>
+		</div>
+	</div>
+	
+	<div class="categorie-children" id="categorie-89-children">
+		<div style="width:30%;float:left;">
+			<ul> 				
+						
+				<li id="children-categorie-3"><a href="de/alles-fuer-den-reiter/reitbekleidung">Reitbekleidung</a></li>
+						
+				<li id="children-categorie-49"><a href="de/alles-fuer-den-reiter/reitschuhe-chaps">Reitschuhe &amp; Chaps</a></li>
+						
+				<li id="children-categorie-55"><a href="de/alles-fuer-den-reiter/kopfbedeckung">Kopfbedeckung</a></li>
+						
+				<li id="children-categorie-56"><a href="de/alles-fuer-den-reiter/reithandschuhe">Reithandschuhe</a></li>
+						
+				<li id="children-categorie-88"><a href="de/alles-fuer-den-reiter/sicherheitswesten">Sicherheitswesten</a></li>
+						
+				<li id="children-categorie-106"><a href="de/alles-fuer-den-reiter/turnierbedarf">Turnierbedarf</a></li>
+						</ul>
+		</div>
+		<div style="width:32%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Neue Produkte</h3>				
+			<ul> 				
+						
+				<li id="children-products-89-156307" style="height:100px;"><a href="de/busse-reithelm-700319_busse-reithelm-calais---modernes-design"><img src="/media/images/thumb/BUSSE-REITHELM-700319000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Busse Reithelm Calais - modernes Design">Busse Reithelm Calais - modernes Design</a></li>
+						
+				<li id="children-products-89-156249" style="height:100px;"><a href="de/cavallo-24000_cavallo-winterstiefel-polar---lederstiefel"><img src="/media/images/thumb/CAVALLO-24000000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Cavallo Winterstiefel Polar - Lederstiefel">Cavallo Winterstiefel Polar - Lederstiefel</a></li>
+						
+				<li id="children-products-89-156243" style="height:100px;"><a href="de/sprenger-47525.000.55_sprenger-sporen-ultra-fit-extra-grip---25mm"><img src="/media/images/thumb/SPRENGER-47525.000.55000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Sprenger Sporen Ultra Fit Extra Grip - 25mm">Sprenger Sporen Ultra Fit Extra Grip - 25mm</a></li>
+						</ul>
+		</div>
+		<div style="width:30%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Bestseller</h3>
+			<ul> 				
+						
+				<li id="children-products-89-22601" style="height:100px;"><a href="de/busse-726314_busse-thermostiefel-helsinki--warm-gefutterter-winterstiefel"><img src="/media/images/thumb/BUSSE-726314000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Busse Thermostiefel Helsinki -warm gefütterter Winterstiefel">Busse Thermostiefel Helsinki -warm gefütterter Winterstiefel</a></li>
+						
+				<li id="children-products-89-16947" style="height:100px;"><a href="de/euroriding-430240_euroriding-jodhpur-stiefelette-ep"><img src="/media/images/thumb/EURORIDING-430240000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Jodhpur-Stiefelette EP">Euroriding Jodhpur-Stiefelette EP</a></li>
+						
+				<li id="children-products-89-133202" style="height:100px;"><a href="de/euroriding-43017_euroriding-jodhpur-stiefelette-classic"><img src="/media/images/thumb/EURORIDING-43017000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Jodhpur-Stiefelette Classic">Euroriding Jodhpur-Stiefelette Classic</a></li>
+						</ul>
+		</div>
+	</div>
+	
+	<div class="categorie-children" id="categorie-71-children">
+		<div style="width:30%;float:left;">
+			<ul> 				
+						
+				<li id="children-categorie-19"><a href="de/alles-fuer-das-pferd/pferdedecken">Pferdedecken</a></li>
+						
+				<li id="children-categorie-22"><a href="de/alles-fuer-das-pferd/hilfszuegel">Hilfszügel</a></li>
+						
+				<li id="children-categorie-31"><a href="de/alles-fuer-das-pferd/halfter-stricke">Halfter &amp; Stricke</a></li>
+						
+				<li id="children-categorie-42"><a href="de/alles-fuer-das-pferd/gebisse">Gebisse</a></li>
+						
+				<li id="children-categorie-53"><a href="de/alles-fuer-das-pferd/longierbedarf">Longierbedarf</a></li>
+						
+				<li id="children-categorie-61"><a href="de/alles-fuer-das-pferd/trensen-kandaren">Trensen &amp; Kandaren</a></li>
+						
+				<li id="children-categorie-120"><a href="de/alles-fuer-das-pferd/beinschutz">Beinschutz</a></li>
+						
+				<li id="children-categorie-124"><a href="de/alles-fuer-das-pferd/sonstiges">Sonstiges</a></li>
+						</ul>
+		</div>
+		<div style="width:32%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Neue Produkte</h3>				
+			<ul> 				
+						
+				<li id="children-products-71-156364" style="height:100px;"><a href="de/euroriding-10194_euroriding-lederzugel---einseitig-gummiert,-schmal"><img src="/media/images/thumb/EURORIDING-10194000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Lederzügel - einseitig gummiert, schmal">Euroriding Lederzügel - einseitig gummiert, schmal</a></li>
+						
+				<li id="children-products-71-156361" style="height:100px;"><a href="de/euroriding-101130_euroriding-stirnband-clincher---british-line"><img src="/media/images/thumb/EURORIDING-101130000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Stirnband Clincher - British Line">Euroriding Stirnband Clincher - British Line</a></li>
+						
+				<li id="children-products-71-156338" style="height:100px;"><a href="de/euroriding-13083_euroriding-zugel-anti-slip---gummierung-eingearbeitet"><img src="/media/images/thumb/EURORIDING-13083000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Zügel Anti-Slip - Gummierung eingearbeitet">Euroriding Zügel Anti-Slip - Gummierung eingearbeitet</a></li>
+						</ul>
+		</div>
+		<div style="width:30%;float:left;border-left:1px solid white;min-height:170px">
+			<h3>Bestseller</h3>
+			<ul> 				
+						
+				<li id="children-products-71-155199" style="height:100px;"><a href="de/scan-horse-458_scan-horse-horseguard-gamaschen-mit-imitiertem-lammfell"><img src="/media/images/thumb/SCAN-HORSE-458000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Scan-Horse HorseGuard Gamaschen mit imitiertem Lammfell">Scan-Horse HorseGuard Gamaschen mit imitiertem Lammfell</a></li>
+						
+				<li id="children-products-71-150403" style="height:100px;"><a href="de/euroriding-20245_euroriding-fliegendecke-zebra---halsteil-abnehmbar"><img src="/media/images/thumb/EURORIDING-20245000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Fliegendecke Zebra - Halsteil abnehmbar">Euroriding Fliegendecke Zebra - Halsteil abnehmbar</a></li>
+						
+				<li id="children-products-71-137183" style="height:100px;"><a href="de/euroriding-192920_euroriding-gamaschen-teddyfutter"><img src="/media/images/thumb/EURORIDING-192920000prokonv.jpg" style="float: left;    max-height: 90px;    max-width: 75px;    padding-right: 10px;" alt="Euroriding Gamaschen Teddyfutter">Euroriding Gamaschen Teddyfutter</a></li>
+						</ul>
+		</div>
+	</div>
+</div>
+		</div><!-- .column xt-grid-16  -->
+	</div><!-- .row  -->
+	<div id="content-wrap" class="row">
+											<div class="column xt-grid-10  index">
+									 <div id="box-wsmc-collection-categories">
+	<h2>Was gibt es interessantes?</h2>
+		<ul class="collection-categories-list">     
+					<li><a href="de/winterkollektionen-2017-2018">Winterkollektionen 2017 - 2018</a><br></li>
+					<li><a href="de/outlet-sale">OUTLET - SALE</a><br></li>
+					<li><a href="de/eskadron-kollektionen">Eskadron Kollektionen</a><br></li>
+					<li><a href="de/artikel-2-wahl">Artikel - 2. Wahl</a><br></li>
+					<li><a href="de/hundeartikel">Hundeartikel</a><br></li>
+			</ul>
+	</div>
+
+				 				
+				<div id="wsmc-gallery">
+<ul id="gallery-body" style="width: 2560px; margin-left: 0px;">
+ 
+<li style="width: 640px;">
+<a id="slide-element-0" href="">
+<img title="Lieferanten" alt="Lieferanten" src="/media/images/gallery/hersteller_625.jpg">
+</a></li>
+ 
+<li style="width: 640px;">
+<a id="slide-element-1" href="/de/alles-fuer-das-pferd/pferdedecken">
+<span class="gallery-left"><img title="Pferdedecken zu günstigen Preisen" alt="Pferdedecken zu günstigen Preisen" src="/media/images/gallery/pferdedecken_sommer.jpg"></span>
+<span class="gallery-right"></span></a></li>
+ 
+<li style="width: 640px;">
+<a id="slide-element-2" href="">
+<span class="gallery-left"><img title="Versandkostenfrei" alt="Versandkostenfrei" src="/media/images/gallery/versandfrei_625.jpg"></span>
+<span class="gallery-right"></span></a></li>
+<li style="width: 640px;">
+<a id="slide-element-2" href="">
+<img title="Lieferanten" alt="Lieferanten" src="/media/images/gallery/hersteller_625.jpg">
+</a></li>
+</ul>
+<div id="image-button">
+<div class="gallery-button" id="button-0">1</div>
+<div class="gallery-button  active" id="button-1">2</div>
+<div class="gallery-button " id="button-2">3</div>
+</div>
+</div>
+
+						
+					
+				<div class="startpage-products-teaser" style="clear:both;position:relative;height:130px;overflow:hidden;border-top:1px solid grey;border-bottom:1px solid grey;padding-top:5px;">
+					<h2><a href="/de/xt_new_products">Was gibt es neues?</a></h2><div class="back" style="position:absolute;left:0;width:70px;height:105px;background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(34%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+"><div id="new-back-button" style="text-align:left;margin-top:30px;cursor:pointer"><img height="35" alt="previous" src="/templates/wsmc_horse/img/arrow-left.png"></div></div>	
+<div class="next" style="position:absolute;right:0;width:70px;height:105px;background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(66%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+"><div id="new-next-button" style="text-align:right;margin-top:30px;cursor:pointer"><img height="35" alt="previous" src="/templates/wsmc_horse/img/arrow-right.png"></div></div>
+<div id="new-startpage-product-teaser" data-elements="100" style="margin-left:45px;width:10010px;">
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-dpas4c_horseware-schabracke-rambo-pad">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-DPAS4C000prokonv.jpg" class="productImageBorder" alt="Horseware Schabracke Rambo Pad" width="80" height="44"></span>
+				<span class="startpage-product-description">Horseware Schabracke Rambo Pad <br> <span class="product-price"> 38,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-10194_euroriding-lederzugel---einseitig-gummiert,-schmal">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-10194000prokonv.jpg" class="productImageBorder" alt="Euroriding Lederzügel - einseitig gummiert, schmal" width="80" height="78"></span>
+				<span class="startpage-product-description">Euroriding Lederzügel - einseitig gummiert, schmal <br> <span class="product-price"> 43,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-101130_euroriding-stirnband-clincher---british-line">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-101130000prokonv.jpg" class="productImageBorder" alt="Euroriding Stirnband Clincher - British Line" width="80" height="64"></span>
+				<span class="startpage-product-description">Euroriding Stirnband Clincher - British Line <br> <span class="product-price"> 23,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-13083_euroriding-zugel-anti-slip---gummierung-eingearbeitet">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-13083000prokonv.jpg" class="productImageBorder" alt="Euroriding Zügel Anti-Slip - Gummierung eingearbeitet" width="80" height="50"></span>
+				<span class="startpage-product-description">Euroriding Zügel Anti-Slip - Gummierung eingearbeitet <br> <span class="product-price"> 16,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/effol_112600_effol-mahnen-schweif-liquid--500ml--12,95€-/-1l-25,90€">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EFFOL_112600000prokonv.jpg" class="productImageBorder" alt="Effol Mähnen-Schweif-Liquid  500ml  12,95€ / 1L 25,90€" width="80" height="80"></span>
+				<span class="startpage-product-description">Effol Mähnen-Schweif-Liquid  500ml  12,95€ / 1L 25,90€ <br> <span class="product-price"> 12,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/effol-116815_effol-melkfett-lsf-8---150-ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EFFOL-116815000prokonv.jpg" class="productImageBorder" alt="Effol Melkfett LSF 8 - 150 ml" width="80" height="80"></span>
+				<span class="startpage-product-description">Effol Melkfett LSF 8 - 150 ml <br> <span class="product-price"> 6,96 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-15606_waldhausen-leckstein-likit---250g">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-15606000prokonv.jpg" class="productImageBorder" alt="Waldhausen Leckstein Likit - 250g" width="76" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Leckstein Likit - 250g <br> <span class="product-price"> 3,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-v-rivieraw16rom_tom-joule---joules-damen-jerseykleid-riviera">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-V-RIVIERAW16ROM000prokonv.jpg" class="productImageBorder" alt="Tom Joule - Joules Damen Jerseykleid Riviera" width="63" height="80"></span>
+				<span class="startpage-product-description">Tom Joule - Joules Damen Jerseykleid Riviera <br> <span class="product-price"> 42,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-457_scan-horse-horseguard-airflow-gamasche---neopren">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-457000prokonv.jpg" class="productImageBorder" alt="Scan-Horse HorseGuard Airflow Gamasche - Neopren" width="31" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse HorseGuard Airflow Gamasche - Neopren <br> <span class="product-price"> 33,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-541w15_pikeur-mutze-mit-bommel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-541W15000prokonv.jpg" class="productImageBorder" alt="Pikeur Mütze mit Bommel" width="54" height="80"></span>
+				<span class="startpage-product-description">Pikeur Mütze mit Bommel <br> <span class="product-price"> 27,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-reithelm-700319_busse-reithelm-calais---modernes-design">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-REITHELM-700319000prokonv.jpg" class="productImageBorder" alt="Busse Reithelm Calais - modernes Design" width="71" height="80"></span>
+				<span class="startpage-product-description">Busse Reithelm Calais - modernes Design <br> <span class="product-price"> 132,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/mm-3251_mm-cosmetic-bremsenbremse-proaktiv-gel-tube---250-ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MM-3251000prokonv.jpg" class="productImageBorder" alt="MM Cosmetic BremsenBremse proaktiv Gel Tube - 250 ml" width="29" height="80"></span>
+				<span class="startpage-product-description">MM Cosmetic BremsenBremse proaktiv Gel Tube - 250 ml <br> <span class="product-price"> 11,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-49105v11-81_pikeur-damenreithose-lucinda-softshell-kontrast">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-49105V11-81000prokonv.jpg" class="productImageBorder" alt="Pikeur Damenreithose Lucinda Softshell Kontrast" width="65" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damenreithose Lucinda Softshell Kontrast <br> <span class="product-price"> 179,08 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/louven-06719_louven-eggersmann-leckerlies-lecker-bricks---1-kg">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/LOUVEN-06719000proLakritz-konv.jpg" class="productImageBorder" alt="Louven Eggersmann Leckerlies Lecker Bricks - 1 kg" width="80" height="42"></span>
+				<span class="startpage-product-description">Louven Eggersmann Leckerlies Lecker Bricks - 1 kg <br> <span class="product-price"> 3,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-50137_euroriding-transportgamaschen-4er-set">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-50137000prokonv.jpg" class="productImageBorder" alt="Euroriding Transportgamaschen 4er-Set" width="75" height="80"></span>
+				<span class="startpage-product-description">Euroriding Transportgamaschen 4er-Set <br> <span class="product-price"> 49,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-19308_euroriding-fesselkopfgamaschen-neopren---2er-set">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-19308000proweiß-konv.jpg" class="productImageBorder" alt="Euroriding Fesselkopfgamaschen Neopren - 2er Set" width="80" height="32"></span>
+				<span class="startpage-product-description">Euroriding Fesselkopfgamaschen Neopren - 2er Set <br> <span class="product-price"> 23,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-19294_euroriding-anbindestrick-comfort---panikhaken">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-19294000prosch_w_he-konv.jpg" class="productImageBorder" alt="Euroriding Anbindestrick Comfort - Panikhaken" width="80" height="80"></span>
+				<span class="startpage-product-description">Euroriding Anbindestrick Comfort - Panikhaken <br> <span class="product-price"> 6,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/cavallo-24000_cavallo-winterstiefel-polar---lederstiefel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/CAVALLO-24000000prokonv.jpg" class="productImageBorder" alt="Cavallo Winterstiefel Polar - Lederstiefel" width="40" height="80"></span>
+				<span class="startpage-product-description">Cavallo Winterstiefel Polar - Lederstiefel <br> <span class="product-price"><span class="price-new"> 220,15 EUR</span>
+<span class="price-old">UVP  259,00 EUR</span>
+<span class="price-discount">Sie sparen 15%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-62285w16ppm_eskadron-bandagen-fleece-pony---classic-sports-hw-2016">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-62285W16PPM000prosangria-konv.jpg" class="productImageBorder" alt="Eskadron Bandagen Fleece PONY - Classic Sports HW 2016" width="80" height="60"></span>
+				<span class="startpage-product-description">Eskadron Bandagen Fleece PONY - Classic Sports HW 2016 <br> <span class="product-price"> 22,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-47515.000.55_sprenger-sporen-ultra-fit-extra-grip---1,5-cm,-abgerundet">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-47515.000.55000prokonv.jpg" class="productImageBorder" alt="Sprenger Sporen Ultra Fit extra Grip - 1,5 cm, abgerundet" width="80" height="40"></span>
+				<span class="startpage-product-description">Sprenger Sporen Ultra Fit extra Grip - 1,5 cm, abgerundet <br> <span class="product-price"> 43,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-47525.000.55_sprenger-sporen-ultra-fit-extra-grip---25mm">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-47525.000.55000prokonv.jpg" class="productImageBorder" alt="Sprenger Sporen Ultra Fit Extra Grip - 25mm" width="80" height="36"></span>
+				<span class="startpage-product-description">Sprenger Sporen Ultra Fit Extra Grip - 25mm <br> <span class="product-price"> 42,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-47421_sprenger-sporen-ultra-fit---2-cm-mit-kugel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-47421000prokonv.jpg" class="productImageBorder" alt="Sprenger Sporen Ultra Fit - 2 cm mit Kugel" width="80" height="39"></span>
+				<span class="startpage-product-description">Sprenger Sporen Ultra Fit - 2 cm mit Kugel <br> <span class="product-price"> 29,79 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-13383s16ppm_eskadron-abschwitzdecke-dralon-check---fruhjahr-sommer-2016">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-13383S16PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Abschwitzdecke Dralon Check - Frühjahr Sommer 2016" width="80" height="64"></span>
+				<span class="startpage-product-description">Eskadron Abschwitzdecke Dralon Check - Frühjahr Sommer 2016 <br> <span class="product-price"> 118,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-45259_sprenger-power-lochzange---70%-kraftersparnis">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-45259000prokonv.jpg" class="productImageBorder" alt="Sprenger Power Lochzange - 70% Kraftersparnis" width="80" height="36"></span>
+				<span class="startpage-product-description">Sprenger Power Lochzange - 70% Kraftersparnis <br> <span class="product-price"> 39,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-8075602_waldhausen-lammfell-einlegesohlen---natur">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-8075602000prokonv.jpg" class="productImageBorder" alt="Waldhausen Lammfell-Einlegesohlen - natur" width="80" height="76"></span>
+				<span class="startpage-product-description">Waldhausen Lammfell-Einlegesohlen - natur <br> <span class="product-price"> 12,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-21792w17ppm_eskadron-schabracke-big-square-glossy-heritage-2017/18">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-21792W17PPM000prorose-konv.jpg" class="productImageBorder" alt="Eskadron Schabracke Big Square Glossy Heritage 2017/18" width="80" height="76"></span>
+				<span class="startpage-product-description">Eskadron Schabracke Big Square Glossy Heritage 2017/18 <br> <span class="product-price"> 69,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/effol-11070000_effol-pinsel-fix---adapterplattform-inkl.-pinsel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EFFOL-11070000000prokonv.jpg" class="productImageBorder" alt="Effol Pinsel Fix - Adapterplattform inkl. Pinsel" width="77" height="80"></span>
+				<span class="startpage-product-description">Effol Pinsel Fix - Adapterplattform inkl. Pinsel <br> <span class="product-price"> 3,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-13392-w17ppm_eskadron-abschwitzdecke-dralon-trademark---heritage-hw-17">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-13392-W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Abschwitzdecke Dralon Trademark - Heritage HW 17" width="80" height="54"></span>
+				<span class="startpage-product-description">Eskadron Abschwitzdecke Dralon Trademark - Heritage HW 17 <br> <span class="product-price"> 129,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/back-on-track-49100_back-on-track-reithelm-eq3-smooth-shell---vg1-norm">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BACK-ON-TRACK-49100000prokonv.jpg" class="productImageBorder" alt="Back on Track Reithelm EQ3 Smooth shell - VG1 Norm" width="67" height="80"></span>
+				<span class="startpage-product-description">Back on Track Reithelm EQ3 Smooth shell - VG1 Norm <br> <span class="product-price"> 174,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-50081_euroriding-sprungglocke---mit-doppeltem-klettverschluss">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-50081000prokonv.jpg" class="productImageBorder" alt="Euroriding Sprungglocke - mit doppeltem Klettverschluss" width="80" height="70"></span>
+				<span class="startpage-product-description">Euroriding Sprungglocke - mit doppeltem Klettverschluss <br> <span class="product-price"> 14,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-50065_euroriding-hufschuh---gummihufschuh">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-50065000prokonv.jpg" class="productImageBorder" alt="Euroriding Hufschuh - Gummihufschuh" width="80" height="54"></span>
+				<span class="startpage-product-description">Euroriding Hufschuh - Gummihufschuh <br> <span class="product-price"> 38,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/hobo-63226106w15_hobo-reitstiefel-robin-cool-gefuttert-mit-naturfell">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HOBO-63226106W15000prokonv.jpg" class="productImageBorder" alt="HOBO Reitstiefel Robin Cool-gefüttert mit Naturfell" width="80" height="48"></span>
+				<span class="startpage-product-description">HOBO Reitstiefel Robin Cool-gefüttert mit Naturfell <br> <span class="product-price"> 238,89 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-13391-28k-w17ppm_eskadron-abschwitzdecke-dralon-check---classic-sports-hw-17">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-13391-28K-W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17" width="80" height="65"></span>
+				<span class="startpage-product-description">Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17 <br> <span class="product-price"> 124,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bucas-683_bucas-irish-combi-neck-(halsteil)">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUCAS-683000pronavy-konv.jpg" class="productImageBorder" alt="Bucas Irish Combi Neck (Halsteil)" width="80" height="46"></span>
+				<span class="startpage-product-description">Bucas Irish Combi Neck (Halsteil) <br> <span class="product-price"> 53,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horka-10800_horka-dressur-reitkappe---zweite-wahl">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORKA-10800000proschwarz-konv.jpg" class="productImageBorder" alt="Horka Dressur Reitkappe - Zweite Wahl" width="80" height="38"></span>
+				<span class="startpage-product-description">Horka Dressur Reitkappe - Zweite Wahl <br> <span class="product-price"> 29,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-185600_waldhausen-lpo-ringbuch-2013---mit-inhalt,-stand-juni-2016">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-185600000prokonv.jpg" class="productImageBorder" alt="Waldhausen LPO Ringbuch 2013 - mit Inhalt, Stand Juni 2016" width="68" height="80"></span>
+				<span class="startpage-product-description">Waldhausen LPO Ringbuch 2013 - mit Inhalt, Stand Juni 2016 <br> <span class="product-price"> 19,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kieffer-548_kieffer-dressur-hundeleine-ultra-soft---rundgenaht">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KIEFFER-548000prokonv.jpg" class="productImageBorder" alt="Kieffer Dressur-Hundeleine Ultra Soft - rundgenäht" width="80" height="45"></span>
+				<span class="startpage-product-description">Kieffer Dressur-Hundeleine Ultra Soft - rundgenäht <br> <span class="product-price"> 38,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schumacher-3137_schumacher-stirnband---tiffany-crystals">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHUMACHER-3137000prokonv.jpg" class="productImageBorder" alt="Schumacher Stirnband - Tiffany Crystals" width="80" height="61"></span>
+				<span class="startpage-product-description">Schumacher Stirnband - Tiffany Crystals <br> <span class="product-price"> 127,98 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-152-fw-176-s15_kingsland-sneakers-merrit">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-152-FW-176-S15000prokonv.jpg" class="productImageBorder" alt="Kingsland Sneakers-Merrit" width="80" height="71"></span>
+				<span class="startpage-product-description">Kingsland Sneakers-Merrit <br> <span class="product-price"> 57,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kieffer-675_kieffer-steigbugel-edelstahl---gerade-form">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KIEFFER-675000prokonv.jpg" class="productImageBorder" alt="Kieffer Steigbügel Edelstahl - gerade Form" width="80" height="80"></span>
+				<span class="startpage-product-description">Kieffer Steigbügel Edelstahl - gerade Form <br> <span class="product-price"> 26,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-afrrov_horseware-fliegendecke--amigo-bug-buster-vamoose">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-AFRROV000prosil_w_na-konv.jpg" class="productImageBorder" alt="Horseware Fliegendecke  Amigo Bug Buster Vamoose" width="40" height="80"></span>
+				<span class="startpage-product-description">Horseware Fliegendecke  Amigo Bug Buster Vamoose <br> <span class="product-price"> 111,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-aara31_horseware-amigo-hero,-600-d,-50g">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-AARA31000prosilv_bl-konv.jpg" class="productImageBorder" alt="Horseware Amigo Hero, 600 D, 50g" width="76" height="80"></span>
+				<span class="startpage-product-description">Horseware Amigo Hero, 600 D, 50g <br> <span class="product-price"> 79,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eurostar-9334-4001_euro-star-damen-turniershirt-donna---2.wahl">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EUROSTAR-9334-4001000prokonv.jpg" class="productImageBorder" alt="Euro-Star Damen Turniershirt Donna - 2.Wahl" width="77" height="80"></span>
+				<span class="startpage-product-description">Euro-Star Damen Turniershirt Donna - 2.Wahl <br> <span class="product-price"> 24,89 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-43103_euroriding-treckingschuh-granada---reitschuh">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-43103000prokonv.jpg" class="productImageBorder" alt="Euroriding Treckingschuh Granada - Reitschuh" width="80" height="56"></span>
+				<span class="startpage-product-description">Euroriding Treckingschuh Granada - Reitschuh <br> <span class="product-price"> 98,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-10057_euroriding-trense-seattle---hannov.-reithalfter">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-10057000prokonv.jpg" class="productImageBorder" alt="Euroriding Trense Seattle - hannov. Reithalfter" width="75" height="80"></span>
+				<span class="startpage-product-description">Euroriding Trense Seattle - hannov. Reithalfter <br> <span class="product-price"> 89,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-10043_euroriding-vorderzeug-bradford---british-line">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-10043000proschw_ede-konv.jpg" class="productImageBorder" alt="Euroriding Vorderzeug Bradford - British Line" width="79" height="80"></span>
+				<span class="startpage-product-description">Euroriding Vorderzeug Bradford - British Line <br> <span class="product-price"> 84,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/masta-r550nb_masta-fliegendecke-vorne-geschlossen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MASTA-R550NB000prokonv.jpg" class="productImageBorder" alt="Masta Fliegendecke-vorne geschlossen" width="80" height="50"></span>
+				<span class="startpage-product-description">Masta Fliegendecke-vorne geschlossen <br> <span class="product-price"><span class="price-new"> 22,87 EUR</span>
+<span class="price-old">UVP  26,91 EUR</span>
+<span class="price-discount">Sie sparen 15%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/mattes--6056-35-65-70-75_mattes-mondgurt---kurzgurt---mit-abnehmbarem-lammfellbezug">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MATTES- 6056-35-65-70-75000prokonv.jpg" class="productImageBorder" alt="Mattes Mondgurt - Kurzgurt - mit abnehmbarem Lammfellbezug" width="80" height="31"></span>
+				<span class="startpage-product-description">Mattes Mondgurt - Kurzgurt - mit abnehmbarem Lammfellbezug <br> <span class="product-price"> 132,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-62192w17ppm_eskadron-4er-set-bandagen-fleece---heritage-2017/18">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-62192W17PPM000promilitary-konv.jpg" class="productImageBorder" alt="Eskadron 4er-Set Bandagen Fleece - Heritage 2017/18" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron 4er-Set Bandagen Fleece - Heritage 2017/18 <br> <span class="product-price"> 24,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/aigle-p0077_aigle---gore-tex-(r)-freizeitschuh-bellegrave">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/AIGLE-P0077000prokonv.jpg" class="productImageBorder" alt="Aigle - GORE-TEX (R) Freizeitschuh Bellegrave" width="80" height="47"></span>
+				<span class="startpage-product-description">Aigle - GORE-TEX (R) Freizeitschuh Bellegrave <br> <span class="product-price"><span class="price-new"> 111,92 EUR</span>
+<span class="price-old">UVP  139,90 EUR</span>
+<span class="price-discount">Sie sparen 20%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/.aigle-a5850_aigle-bluse-geita">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/.AIGLE-A5850000prokonv.jpg" class="productImageBorder" alt="Aigle Bluse Geita" width="72" height="80"></span>
+				<span class="startpage-product-description">Aigle Bluse Geita <br> <span class="product-price"> 49,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-1530009_eskadron-hundedecke-softshell,-braun">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-1530009000prokonv.jpg" class="productImageBorder" alt="Eskadron Hundedecke Softshell, braun" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron Hundedecke Softshell, braun <br> <span class="product-price"> 43,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/cavallo-2204_cavallo-schnurstiefelette-paddock-comfort---leisten-e">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/CAVALLO-2204000prokonv.jpg" class="productImageBorder" alt="Cavallo Schnürstiefelette Paddock Comfort - Leisten E" width="80" height="80"></span>
+				<span class="startpage-product-description">Cavallo Schnürstiefelette Paddock Comfort - Leisten E <br> <span class="product-price"> 154,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/ariat-10004724_ariat-damenstiefelette-heritage-sport-zip-paddock">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ARIAT-10004724000prokonv.jpg" class="productImageBorder" alt="Ariat Damenstiefelette Heritage Sport Zip Paddock" width="80" height="79"></span>
+				<span class="startpage-product-description">Ariat Damenstiefelette Heritage Sport Zip Paddock <br> <span class="product-price"> 94,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/ariat-10000799_ariat-damenstiefelette---heritage-iii-zip-paddock">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ARIAT-10000799000prokonv.jpg" class="productImageBorder" alt="Ariat Damenstiefelette - Heritage III Zip Paddock" width="80" height="78"></span>
+				<span class="startpage-product-description">Ariat Damenstiefelette - Heritage III Zip Paddock <br> <span class="product-price"> 144,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/aigle-p431c_aigle-damen-freizeitschuh-americasual-w">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/AIGLE-P431C000prokonv.jpg" class="productImageBorder" alt="Aigle Damen Freizeitschuh Americasual W" width="80" height="44"></span>
+				<span class="startpage-product-description">Aigle Damen Freizeitschuh Americasual W <br> <span class="product-price"><span class="price-new"> 69,30 EUR</span>
+<span class="price-old">UVP  99,00 EUR</span>
+<span class="price-discount">Sie sparen 30%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/mm-3501_mm-cosmetic-bremsenbremse-ultrafresh---750-ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/templates/wsmc_horse/img/no_image.png" alt="MM Cosmetic BremsenBremse ultrafresh - 750 ml"></span>
+				<span class="startpage-product-description">MM Cosmetic BremsenBremse ultrafresh - 750 ml <br> <span class="product-price"> 28,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-aarn42_horseware-amigo-halsteil---150g-fullung">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-AARN42000prokonv.jpg" class="productImageBorder" alt="Horseware Amigo Halsteil - 150g-Füllung" width="73" height="80"></span>
+				<span class="startpage-product-description">Horseware Amigo Halsteil - 150g-Füllung <br> <span class="product-price"> 64,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2410-00001_schockemohle-sports-tonics-stiefelette-space---wasserdicht">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2410-00001000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Tonics Stiefelette Space - wasserdicht" width="70" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Tonics Stiefelette Space - wasserdicht <br> <span class="product-price"> 257,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/hobo-304401061003s15_hobo-stiefelette-batavia-hg/-reissverschluss">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HOBO-304401061003S15000prokonv.jpg" class="productImageBorder" alt="HOBO Stiefelette Batavia HG/ Reißverschluß" width="80" height="64"></span>
+				<span class="startpage-product-description">HOBO Stiefelette Batavia HG/ Reißverschluß <br> <span class="product-price"> 139,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-35500_eskadron-bandagentasche">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-35500000prokonv.jpg" class="productImageBorder" alt="Eskadron Bandagentasche" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron Bandagentasche <br> <span class="product-price"> 15,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-20491w17ppm_eskadron-classic-schabracke-cotton-hw-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-20491W17PPM000proorchidma-konv.jpg" class="productImageBorder" alt="Eskadron Classic Schabracke Cotton HW 2017" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron Classic Schabracke Cotton HW 2017 <br> <span class="product-price"> 29,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-705225_busse-winterhandschuhe-classic-winter">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-705225000prokonv.jpg" class="productImageBorder" alt="Busse Winterhandschuhe-Classic Winter" width="70" height="80"></span>
+				<span class="startpage-product-description">Busse Winterhandschuhe-Classic Winter <br> <span class="product-price"> 24,89 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bucas-629_bucas-multi-power---leichte-turnout--u.-mittlere-stalldecke">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUCAS-629000prokonv.jpg" class="productImageBorder" alt="Bucas Multi Power - leichte Turnout- u. mittlere Stalldecke" width="70" height="80"></span>
+				<span class="startpage-product-description">Bucas Multi Power - leichte Turnout- u. mittlere Stalldecke <br> <span class="product-price"> 295,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-781124w17roo_busse-winterhandschuh-jasper---wasserdicht,-atmungsaktiv">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-781124W17ROO000prokonv.jpg" class="productImageBorder" alt="Busse Winterhandschuh Jasper - wasserdicht, atmungsaktiv" width="80" height="68"></span>
+				<span class="startpage-product-description">Busse Winterhandschuh Jasper - wasserdicht, atmungsaktiv <br> <span class="product-price"> 33,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-781122w17roo_busse-winterhandschuh-3-in-1---hoch-funktionell">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-781122W17ROO000prokonv.jpg" class="productImageBorder" alt="Busse Winterhandschuh 3 in 1 - hoch funktionell" width="80" height="50"></span>
+				<span class="startpage-product-description">Busse Winterhandschuh 3 in 1 - hoch funktionell <br> <span class="product-price"> 43,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-20492w17ppm_eskadron-schabracke-cotton---heritage-2017/18">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-20492W17PPM000promilitary-konv.jpg" class="productImageBorder" alt="Eskadron Schabracke Cotton - Heritage 2017/18" width="67" height="80"></span>
+				<span class="startpage-product-description">Eskadron Schabracke Cotton - Heritage 2017/18 <br> <span class="product-price"> 29,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/hobo-334401061003_hobo-stiefelette-batavia-nf-hg-reissverschluss,-mit-lammfell">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HOBO-334401061003000prokonv.jpg" class="productImageBorder" alt="HOBO Stiefelette Batavia NF HG Reißverschluss, mit Lammfell" width="80" height="68"></span>
+				<span class="startpage-product-description">HOBO Stiefelette Batavia NF HG Reißverschluss, mit Lammfell <br> <span class="product-price"> 159,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-62292w17ppm_eskadron-4er-set-bandagen-fleece-pony---heritage-2017/18">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-62292W17PPM000promilitary-konv.jpg" class="productImageBorder" alt="Eskadron 4er-Set Bandagen Fleece Pony - Heritage 2017/18" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron 4er-Set Bandagen Fleece Pony - Heritage 2017/18 <br> <span class="product-price"> 22,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-21192w17ppm_eskadron-schabracke-performance-cotton---heritage-2017/18">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-21192W17PPM000promilitary-konv.jpg" class="productImageBorder" alt="Eskadron Schabracke Performance Cotton - Heritage 2017/18" width="80" height="68"></span>
+				<span class="startpage-product-description">Eskadron Schabracke Performance Cotton - Heritage 2017/18 <br> <span class="product-price"> 59,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-42891w17ppm_eskadron-halfter-dornschnalle-lammfell---classic-sports-hw">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-42891W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Halfter Dornschnalle Lammfell - Classic Sports HW" width="62" height="80"></span>
+				<span class="startpage-product-description">Eskadron Halfter Dornschnalle Lammfell - Classic Sports HW <br> <span class="product-price"> 49,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-83387s17rom_eskadron-equestrian-fanatics-damen-hoodie-bella--sommer-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-83387S17ROM000propeppe_me-konv.jpg" class="productImageBorder" alt="Eskadron Equestrian Fanatics Damen Hoodie Bella -Sommer 2017" width="80" height="40"></span>
+				<span class="startpage-product-description">Eskadron Equestrian Fanatics Damen Hoodie Bella -Sommer 2017 <br> <span class="product-price"> 59,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-62191w17ppm_eskadron-4er-set-bandagen-fleece---classic-sports-hw-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-62191W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron 4er-Set Bandagen Fleece - Classic Sports HW 2017" width="80" height="65"></span>
+				<span class="startpage-product-description">Eskadron 4er-Set Bandagen Fleece - Classic Sports HW 2017 <br> <span class="product-price"> 24,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-21791w17ppm_eskadron-schabracke-big-square-glossy-hw-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-21791W17PPM000proorchidma-konv.jpg" class="productImageBorder" alt="Eskadron Schabracke Big Square Glossy HW 2017" width="80" height="65"></span>
+				<span class="startpage-product-description">Eskadron Schabracke Big Square Glossy HW 2017 <br> <span class="product-price"> 69,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-20487s17ppm_eskadron-schabracke-cotton---classic-sports-fs-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-20487S17PPM000propowderos-konv.jpg" class="productImageBorder" alt="Eskadron Schabracke Cotton - Classic Sports FS 2017" width="65" height="80"></span>
+				<span class="startpage-product-description">Eskadron Schabracke Cotton - Classic Sports FS 2017 <br> <span class="product-price"> 29,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/cavallo-194000_cavallo-reitstiefel-linus---ohne-schnurung">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/CAVALLO-194000000proschwarz-konv.jpg" class="productImageBorder" alt="Cavallo Reitstiefel Linus - ohne Schnürung" width="80" height="74"></span>
+				<span class="startpage-product-description">Cavallo Reitstiefel Linus - ohne Schnürung <br> <span class="product-price"> 298,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-173-sf-119w17rom_kingsland-damen-fleecejacke-koschuta---ohne-kapuze">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-173-SF-119W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Fleecejacke Koschuta - ohne Kapuze" width="80" height="45"></span>
+				<span class="startpage-product-description">Kingsland Damen Fleecejacke Koschuta - ohne Kapuze <br> <span class="product-price"> 99,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-171-pt-928s17roo_kingsland-damen-t-shirt-trainingsshirt-monterosso">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-171-PT-928S17ROO000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen T-Shirt Trainingsshirt Monterosso" width="80" height="48"></span>
+				<span class="startpage-product-description">Kingsland Damen T-Shirt Trainingsshirt Monterosso <br> <span class="product-price"> 59,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-66791w17ppm_eskadron-sprungglocke-fauxfur---herbst/winter-2017-2018">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-66791W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Sprungglocke Fauxfur - Herbst/Winter 2017-2018" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron Sprungglocke Fauxfur - Herbst/Winter 2017-2018 <br> <span class="product-price"> 34,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-sw-272w17rom_kingsland-damen-sweatjacke-jocelyn---mit-abnehmbarer-kapuze">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-SW-272W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Sweatjacke Jocelyn - mit abnehmbarer Kapuze" width="80" height="49"></span>
+				<span class="startpage-product-description">Kingsland Damen Sweatjacke Jocelyn - mit abnehmbarer Kapuze <br> <span class="product-price"> 118,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-ss-218w17rom_kingsland-damen-turniershirt-june---langarmshirt">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-SS-218W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Turniershirt June - Langarmshirt" width="80" height="45"></span>
+				<span class="startpage-product-description">Kingsland Damen Turniershirt June - Langarmshirt <br> <span class="product-price"> 99,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-sf-270w17rom_kingsland-damen-fleecejacke-jamie---mit-kapuze">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-SF-270W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Fleecejacke Jamie - mit Kapuze" width="80" height="48"></span>
+				<span class="startpage-product-description">Kingsland Damen Fleecejacke Jamie - mit Kapuze <br> <span class="product-price"> 118,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-pt-260-931w17rom_kingsland-damen-langarmshirt-trainingsshirt-jasmine">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-PT-260-931W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Langarmshirt Trainingsshirt Jasmine" width="74" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damen Langarmshirt Trainingsshirt Jasmine <br> <span class="product-price"> 79,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-hc-228w17rom_kingsland-damen-stirnband-jessie---innen-fleece">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-HC-228W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Stirnband Jessie - innen Fleece" width="59" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damen Stirnband Jessie - innen Fleece <br> <span class="product-price"> 54,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-174-hc-224w17rom_kingsland-mutze-james---innen-fleece,-fur-damen-und-herren">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-174-HC-224W17ROM000prokonv.jpg" class="productImageBorder" alt="Kingsland Mütze James - innen Fleece, für Damen und Herren" width="63" height="80"></span>
+				<span class="startpage-product-description">Kingsland Mütze James - innen Fleece, für Damen und Herren <br> <span class="product-price"> 49,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-32900-96_eskadron-sattelunterlage-gel-anti-slip">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-32900-96000prokonv.jpg" class="productImageBorder" alt="Eskadron Sattelunterlage Gel Anti Slip" width="80" height="56"></span>
+				<span class="startpage-product-description">Eskadron Sattelunterlage Gel Anti Slip <br> <span class="product-price"> 66,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/effol-11861000_effol-friend-snacks---banana-sticks">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EFFOL-11861000000prokonv.jpg" class="productImageBorder" alt="Effol Friend-Snacks - Banana Sticks" width="55" height="80"></span>
+				<span class="startpage-product-description">Effol Friend-Snacks - Banana Sticks <br> <span class="product-price"> 4,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-aara16_horseware-amigo-bravo-12-original---100g-fullung">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-AARA16000prokonv.jpg" class="productImageBorder" alt="Horseware Amigo Bravo 12 Original - 100g-Füllung" width="80" height="40"></span>
+				<span class="startpage-product-description">Horseware Amigo Bravo 12 Original - 100g-Füllung <br> <span class="product-price"> 127,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/hobo-231130061008w15_hobo-stiefelette-frosty-nf---schnur/-reissverschluss-gefuttert">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HOBO-231130061008W15000prokonv.jpg" class="productImageBorder" alt="HOBO Stiefelette Frosty NF - Schnür/ Reißverschluß gefüttert" width="80" height="67"></span>
+				<span class="startpage-product-description">HOBO Stiefelette Frosty NF - Schnür/ Reißverschluß gefüttert <br> <span class="product-price"> 134,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-4066s16pdo_scan-horse-horseguard-fliegendecke/abschwitzdecke">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-4066S16PDO000prokonv.jpg" class="productImageBorder" alt="Scan-Horse HorseGuard Fliegendecke/Abschwitzdecke" width="80" height="43"></span>
+				<span class="startpage-product-description">Scan-Horse HorseGuard Fliegendecke/Abschwitzdecke <br> <span class="product-price"> 34,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-162-163w16roo_scan-horse-equipage-winter-handschuhe-bremen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-162-163W16ROO000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Equipage Winter Handschuhe Bremen" width="69" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse Equipage Winter Handschuhe Bremen <br> <span class="product-price"> 23,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-1569_scan-horse-equipage-stallschuh-alba---warm-gefuttert">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-1569000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Equipage Stallschuh Alba - warm gefüttert" width="80" height="69"></span>
+				<span class="startpage-product-description">Scan-Horse Equipage Stallschuh Alba - warm gefüttert <br> <span class="product-price"> 32,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-6188_scan-horse-equipage-kinderhandschuh-candy---fleecefutter">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-6188000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Equipage Kinderhandschuh Candy - Fleecefutter" width="79" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse Equipage Kinderhandschuh Candy - Fleecefutter <br> <span class="product-price"> 18,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-1452_scan-horse-junior-stiefelette-jodhpur,-zugstiefelette-kinder">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-1452000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Junior Stiefelette Jodhpur, Zugstiefelette Kinder" width="80" height="72"></span>
+				<span class="startpage-product-description">Scan-Horse Junior Stiefelette Jodhpur, Zugstiefelette Kinder <br> <span class="product-price"> 37,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-4182w17pdo_scan-horse-outdoordecke-wetherbeeta---regendecke-1200-denier">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-4182W17PDO000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Outdoordecke Wetherbeeta - Regendecke 1200 Denier" width="80" height="65"></span>
+				<span class="startpage-product-description">Scan-Horse Outdoordecke Wetherbeeta - Regendecke 1200 Denier <br> <span class="product-price"><span class="price-new"> 98,10 EUR</span>
+<span class="price-old">UVP  109,00 EUR</span>
+<span class="price-discount">Sie sparen 10%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-5204_scan-horse-steigbugel-kunststoff-" carbon"---10-cm,-12-cm"="">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-5204000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Steigbügel Kunststoff &quot;carbon&quot; - 10 cm, 12 cm" width="80" height="56"></span>
+				<span class="startpage-product-description">Scan-Horse Steigbügel Kunststoff "carbon" - 10 cm, 12 cm <br> <span class="product-price"> 28,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-4542_scan-horse-stallgamaschen---1-paar-=-2-stuck">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-4542000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Stallgamaschen - 1 Paar = 2 Stück" width="34" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse Stallgamaschen - 1 Paar = 2 Stück <br> <span class="product-price"> 32,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-453_scan-horse-stallgamaschen---4-stuck">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-453000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Stallgamaschen - 4 Stück" width="80" height="76"></span>
+				<span class="startpage-product-description">Scan-Horse Stallgamaschen - 4 Stück <br> <span class="product-price"> 93,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-138-139_scan-horse-kinder/damenreithose-andorra---ganzbesatz">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-138-139000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Kinder/Damenreithose Andorra - Ganzbesatz" width="63" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse Kinder/Damenreithose Andorra - Ganzbesatz <br> <span class="product-price"><span class="price-new"> 98,10 EUR</span>
+<span class="price-old">UVP  109,00 EUR</span>
+<span class="price-discount">Sie sparen 10%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-12s16rho_scan-horse-kinderreithose-vollbesatz">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-12S16RHO000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Kinderreithose-Vollbesatz" width="36" height="80"></span>
+				<span class="startpage-product-description">Scan-Horse Kinderreithose-Vollbesatz <br> <span class="product-price"> 43,49 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	jQuery('.startpage-product').hover(function(){
+		jQuery('#startpage-product-details').fadeOut();jQuery('#startpage-product-details').remove();
+		position = jQuery(this).offset();
+		html = jQuery(this).html();
+		jQuery('#page').append('<div id="startpage-product-details" style="display:none;z-index:20000;position:absolute; width: 135px; height:200px;background-color:white;top:'+(parseInt(position.top)-20)+'px;left:'+(parseInt(position.left)-36)+'px;">'+html+'</div>');
+		jQuery('#startpage-product-details').fadeIn();
+		jQuery('#startpage-product-details').hover(function(){},function(){jQuery('#startpage-product-details').fadeOut();jQuery('#startpage-product-details').remove();})
+	},function(){	
+	});
+	jQuery(document).ready(function(){
+		var newposition = 0;
+		var newwidth = parseInt(jQuery("#new-startpage-product-teaser .startpage-product .product-image").css("width"),10);
+		var newcount = jQuery("#new-startpage-product-teaser .startpage-product").length;
+		jQuery("#new-next-button").click(function(){
+			if((newposition+1)*newwidth*4+45 < newcount*100-400){
+				jQuery("#new-startpage-product-teaser").animate({marginLeft: ++newposition*-newwidth*4+45+"px"},1000);
+			}else if (jQuery("#new-startpage-product-teaser").css("margin-left") != -newcount*100+400+"px"){
+				newposition++;
+				jQuery("#new-startpage-product-teaser").animate({marginLeft: -newcount*100+900+"px"},1000);
+			}
+		});		
+		jQuery("#new-back-button").click(function(){
+			if ((newposition-1)*newwidth*4+45 > 45){
+				jQuery("#new-startpage-product-teaser").animate({marginLeft: --newposition*-newwidth*4+45+"px"},1000);
+			}else if (jQuery("#new-startpage-product-teaser").css("margin-left") != "45px"){
+				newposition--;
+				jQuery("#new-startpage-product-teaser").animate({marginLeft:"45px"},1000);
+			}
+		});
+	});
+//]]>	
+</script>
+
+				</div>
+				<div id="startpage-categories">
+	 
+	<a style="padding:5px" href="http://www.the-orange-horse.com/de/alles-fuer-das-pferd/pferdedecken">
+		<img alt="Pferdedecken" src="/media/images/teaser/decken-sommer.jpg" style="width: 31.5%;">
+	</a>
+	 
+	<a style="padding:5px" href="http://www.the-orange-horse.com/de/alles-fuer-den-reiter">
+		<img alt="Alles für den Reiter" src="/media/images/teaser/reiter_2.jpg" style="width: 31.5%;">
+	</a>
+	 
+	<a style="padding:5px" href="http://www.the-orange-horse.com/de/alles-fuer-das-pferd">
+		<img alt="Alles fürs Pferd" src="/media/images/teaser/pferdebedarf_2.jpg" style="width: 31.5%;">
+	</a>
+	</div>
+				<div class="startpage-products-teaser" style="clear:both;position:relative;height:130px;overflow:hidden;border-top:1px solid grey;border-bottom:1px solid grey;padding-top:5px;">
+					<h2>Was gibt es sonst?</h2><div class="back" style="position:absolute;left:0;width:70px;height:105px;background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(34%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+"><div id="random-back-button" style="text-align:left;margin-top:30px;cursor:pointer"><img height="35" alt="previous" src="/templates/wsmc_horse/img/arrow-left.png"></div></div>	
+<div class="next" style="position:absolute;right:0;width:70px;height:105px;background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(66%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+"><div id="random-next-button" style="text-align:right;margin-top:30px;cursor:pointer"><img height="35" alt="previous" src="/templates/wsmc_horse/img/arrow-right.png"></div></div>
+<div id="random-startpage-product-teaser" data-elements="100" style="margin-left:45px;width:10010px;">
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tomjoule-s-jnrburt-s15_tomjoule-joules-jungen-weste-jnrburt">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TOMJOULE-S-JNRBURT-S15000prokonv.jpg" class="productImageBorder" alt="Tomjoule-Joules Jungen Weste JNRBURT" width="56" height="80"></span>
+				<span class="startpage-product-description">Tomjoule-Joules Jungen Weste JNRBURT <br> <span class="product-price"><span class="price-new"> 29,63 EUR</span>
+<span class="price-old">UVP  39,50 EUR</span>
+<span class="price-discount">Sie sparen 25%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/stuebben-31132011_stubben-glycerin-lederseife---sattelseife---fest,-250ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/STUEBBEN-31132011000prokonv.jpg" class="productImageBorder" alt="Stübben Glycerin Lederseife - Sattelseife - fest, 250ml" width="80" height="57"></span>
+				<span class="startpage-product-description">Stübben Glycerin Lederseife - Sattelseife - fest, 250ml <br> <span class="product-price"> 8,07 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/trust-500007_trust-gebiss-sweet-iron-loose-ring-joint---einfach-gebrochen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TRUST-500007000prokonv.jpg" class="productImageBorder" alt="Trust Gebiss Sweet Iron loose ring joint - einfach gebrochen" width="80" height="17"></span>
+				<span class="startpage-product-description">Trust Gebiss Sweet Iron loose ring joint - einfach gebrochen <br> <span class="product-price"> 73,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kingsland-142-ss-508_kingsland-damen-turniershirt-almira---mit-kurzem--arm--">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KINGSLAND-142-SS-508000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Turniershirt Almira - mit kurzem  Arm -" width="57" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damen Turniershirt Almira - mit kurzem  Arm - <br> <span class="product-price"><span class="price-new"> 50,15 EUR</span>
+<span class="price-old">UVP  59,00 EUR</span>
+<span class="price-discount">Sie sparen 15%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/joules-2811-00415_joules-kinder-poloshirt---jnrjenny">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/JOULES-2811-00415000prokonv.jpg" class="productImageBorder" alt="Joules Kinder Poloshirt - JnrJenny" width="67" height="80"></span>
+				<span class="startpage-product-description">Joules Kinder Poloshirt - JnrJenny <br> <span class="product-price"> 43,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-1103-00010_schockemohle-sports-trensenzugel,-auch-fur-kandare---leder">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-1103-00010000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Trensenzügel, auch für Kandare - Leder" width="60" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Trensenzügel, auch für Kandare - Leder <br> <span class="product-price"> 45,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-703501s17rom_pikeur-damen-softshelljacke-canberra,-mit-abnehmbarer-kapuze">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-703501S17ROM000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Softshelljacke Canberra, mit abnehmbarer Kapuze" width="54" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Softshelljacke Canberra, mit abnehmbarer Kapuze <br> <span class="product-price"> 149,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/hvpolo-0403092934w17rom_hv-polo-funktions-langarmshirt-edith---half-zip">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HVPOLO-0403092934W17ROM000prokonv.jpg" class="productImageBorder" alt="HV Polo Funktions-Langarmshirt Edith - half zip" width="75" height="80"></span>
+				<span class="startpage-product-description">HV Polo Funktions-Langarmshirt Edith - half zip <br> <span class="product-price"> 59,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-142_pikeur-damen-softshell-sakko-kanita---premium-kollektion">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-142000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Softshell Sakko Kanita - Premium Kollektion" width="75" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Softshell Sakko Kanita - Premium Kollektion <br> <span class="product-price"><span class="price-new"> 359,09 EUR</span>
+<span class="price-old">UVP  399,00 EUR</span>
+<span class="price-discount">Sie sparen 10%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-152-fw-176-s15_kingsland-sneakers-merrit">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-152-FW-176-S15000prokonv.jpg" class="productImageBorder" alt="Kingsland Sneakers-Merrit" width="80" height="71"></span>
+				<span class="startpage-product-description">Kingsland Sneakers-Merrit <br> <span class="product-price"> 57,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-1100-00067s17ppo_schockemohle-sports-trense-stockholm---mit-zugel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-1100-00067S17PPO000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Trense Stockholm - mit Zügel" width="42" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Trense Stockholm - mit Zügel <br> <span class="product-price"> 119,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-408_pikeur-damen-turniershirt">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-408000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Turniershirt" width="59" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Turniershirt <br> <span class="product-price"> 48,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-3185513-k_waldhausen-kinder-reithose-galaxy">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-3185513-K000prokonv.jpg" class="productImageBorder" alt="Waldhausen Kinder Reithose Galaxy" width="52" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Kinder Reithose Galaxy <br> <span class="product-price"><span class="price-new"> 59,96 EUR</span>
+<span class="price-old">UVP  74,95 EUR</span>
+<span class="price-discount">Sie sparen 20%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/roeckl-3301-576_roeckl-reithandschuhe-willow---winterhandschuh">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ROECKL-3301-576000prokonv.jpg" class="productImageBorder" alt="Roeckl Reithandschuhe Willow - Winterhandschuh" width="40" height="80"></span>
+				<span class="startpage-product-description">Roeckl Reithandschuhe Willow - Winterhandschuh <br> <span class="product-price"> 43,49 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-aara72_horseware-amigo-hero-6-original,-medium-(200g-fullung)">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-AARA72000prokonv.jpg" class="productImageBorder" alt="Horseware Amigo Hero 6 Original, medium (200g-Füllung)" width="80" height="23"></span>
+				<span class="startpage-product-description">Horseware Amigo Hero 6 Original, medium (200g-Füllung) <br> <span class="product-price"> 96,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/mountainhorse-02021_mountain-horse-nordic-light-high-rider---winterstiefel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MOUNTAINHORSE-02021000prokonv.jpg" class="productImageBorder" alt="Mountain Horse Nordic Light High Rider - Winterstiefel" width="78" height="80"></span>
+				<span class="startpage-product-description">Mountain Horse Nordic Light High Rider - Winterstiefel <br> <span class="product-price"> 344,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eurostar-09127-4111w15_euro-star-unisex-kniestrumpfe---kariert">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EUROSTAR-09127-4111W15000prokonv.jpg" class="productImageBorder" alt="euro-star unisex Kniestrümpfe - kariert" width="80" height="80"></span>
+				<span class="startpage-product-description">euro-star unisex Kniestrümpfe - kariert <br> <span class="product-price"> 7,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schockemoehle-2812-00560_schockemohle-damen-turniershirt-amilia">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHOCKEMOEHLE-2812-00560000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Damen Turniershirt Amilia" width="58" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Damen Turniershirt Amilia <br> <span class="product-price"><span class="price-new"> 51,21 EUR</span>
+<span class="price-old">UVP  56,91 EUR</span>
+<span class="price-discount">Sie sparen 10%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-1100-00039_schockemohle-sports-trense-basic-chester">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-1100-00039000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Trense Basic Chester" width="50" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Trense Basic Chester <br> <span class="product-price"> 118,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-20691w17ppm_eskadron-classic-schabracke-big-square-hw-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-20691W17PPM000proorchidma-konv.jpg" class="productImageBorder" alt="Eskadron Classic Schabracke Big Square HW 2017" width="80" height="62"></span>
+				<span class="startpage-product-description">Eskadron Classic Schabracke Big Square HW 2017 <br> <span class="product-price"> 69,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/leovet_190321_leovet-milton-schimmel-striegel---500ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/LEOVET_190321000prokonv.jpg" class="productImageBorder" alt="Leovet Milton Schimmel Striegel - 500ml" width="70" height="80"></span>
+				<span class="startpage-product-description">Leovet Milton Schimmel Striegel - 500ml <br> <span class="product-price"> 13,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-reithelm-700319_busse-reithelm-calais---modernes-design">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-REITHELM-700319000prokonv.jpg" class="productImageBorder" alt="Busse Reithelm Calais - modernes Design" width="71" height="80"></span>
+				<span class="startpage-product-description">Busse Reithelm Calais - modernes Design <br> <span class="product-price"> 132,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/polosylt-bl41001_polo-sylt-damenbluse-langarm---2.wahl">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/POLOSYLT-BL41001000prokonv.jpg" class="productImageBorder" alt="Polo Sylt Damenbluse Langarm - 2.Wahl" width="47" height="80"></span>
+				<span class="startpage-product-description">Polo Sylt Damenbluse Langarm - 2.Wahl <br> <span class="product-price"> 25,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-60002w16rom_pikeur-damen-sweatjacke-zoe---mit-stehkragen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-60002W16ROM000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Sweatjacke Zoe - mit Stehkragen" width="54" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Sweatjacke Zoe - mit Stehkragen <br> <span class="product-price"> 89,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-o-2031-00066s13rom_tom-joule---joules-damen-poloshirt-just-joule---sommer-2013">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-O-2031-00066S13ROM000prokonv.jpg" class="productImageBorder" alt="Tom Joule - Joules Damen Poloshirt Just Joule - Sommer 2013" width="76" height="80"></span>
+				<span class="startpage-product-description">Tom Joule - Joules Damen Poloshirt Just Joule - Sommer 2013 <br> <span class="product-price"><span class="price-new"> 33,53 EUR</span>
+<span class="price-old">UVP  47,90 EUR</span>
+<span class="price-discount">Sie sparen 30%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-13086_euroriding-schlaufzugel-garizelle---gurtzugel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-13086000prokonv.jpg" class="productImageBorder" alt="Euroriding Schlaufzügel Garizelle - Gurtzügel" width="80" height="74"></span>
+				<span class="startpage-product-description">Euroriding Schlaufzügel Garizelle - Gurtzügel <br> <span class="product-price"> 19,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/roeckl-3301-624_roeckl-winterhandschuh-warwick---polartec">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ROECKL-3301-624000prokonv.jpg" class="productImageBorder" alt="Roeckl Winterhandschuh Warwick - Polartec" width="56" height="80"></span>
+				<span class="startpage-product-description">Roeckl Winterhandschuh Warwick - Polartec <br> <span class="product-price"> 28,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sergio-grasso-260_sergio-grasso-chaps,-torino-(260),-schlanke-form">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SERGIO-GRASSO-260000prokonv.jpg" class="productImageBorder" alt="Sergio Grasso Chaps, Torino (260), schlanke Form" width="47" height="80"></span>
+				<span class="startpage-product-description">Sergio Grasso Chaps, Torino (260), schlanke Form <br> <span class="product-price"> 141,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eurostar-n78844_euro-star-damensakko-carmen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EUROSTAR-N78844000prokonv.jpg" class="productImageBorder" alt="euro-star Damensakko Carmen" width="55" height="80"></span>
+				<span class="startpage-product-description">euro-star Damensakko Carmen <br> <span class="product-price"><span class="price-new"> 110,42 EUR</span>
+<span class="price-old">UVP  129,90 EUR</span>
+<span class="price-discount">Sie sparen 15%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bucas-423_bucas-smartex-medium---150g-fullung-(magnet-anstatt-klett)">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUCAS-423000problue_inn-konv.jpg" class="productImageBorder" alt="Bucas Smartex Medium - 150g-Füllung (Magnet anstatt Klett)" width="54" height="80"></span>
+				<span class="startpage-product-description">Bucas Smartex Medium - 150g-Füllung (Magnet anstatt Klett) <br> <span class="product-price"> 210,89 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-20239_euroriding-regendecke-stormy---mit-fleecefutter">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-20239000prokonv.jpg" class="productImageBorder" alt="Euroriding Regendecke Stormy - mit Fleecefutter" width="80" height="80"></span>
+				<span class="startpage-product-description">Euroriding Regendecke Stormy - mit Fleecefutter <br> <span class="product-price"> 58,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-622_pikeur-reitsakko-epsom---klassische-form,-100-pro.-polyester">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-622000prokonv.jpg" class="productImageBorder" alt="Pikeur Reitsakko Epsom - klassische Form, 100 Pro. Polyester" width="80" height="68"></span>
+				<span class="startpage-product-description">Pikeur Reitsakko Epsom - klassische Form, 100 Pro. Polyester <br> <span class="product-price"><span class="price-new"> 135,20 EUR</span>
+<span class="price-old">UVP  169,00 EUR</span>
+<span class="price-discount">Sie sparen 20%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/mountainhorse-770222_mountainhorse-herren-fleecejacke-barnaby">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MOUNTAINHORSE-770222000prokonv.jpg" class="productImageBorder" alt="Mountainhorse Herren Fleecejacke Barnaby" width="59" height="80"></span>
+				<span class="startpage-product-description">Mountainhorse Herren Fleecejacke Barnaby <br> <span class="product-price"><span class="price-new"> 44,93 EUR</span>
+<span class="price-old">UVP  59,90 EUR</span>
+<span class="price-discount">Sie sparen 25%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-trense-t40588_sprenger-gebiss---wassertrense-turnado-tc">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-TRENSE-T40588000prokonv.jpg" class="productImageBorder" alt="Sprenger Gebiss - Wassertrense Turnado TC" width="80" height="77"></span>
+				<span class="startpage-product-description">Sprenger Gebiss - Wassertrense Turnado TC <br> <span class="product-price"> 82,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-43071_euroriding-jodhpur-stiefelette-kids">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-43071000prokonv.jpg" class="productImageBorder" alt="Euroriding Jodhpur-Stiefelette Kids" width="72" height="80"></span>
+				<span class="startpage-product-description">Euroriding Jodhpur-Stiefelette Kids <br> <span class="product-price"> 45,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-8024_waldhausen-thermostiefel---wasserdichtes-fussteil">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-8024000prokonv.jpg" class="productImageBorder" alt="Waldhausen Thermostiefel - wasserdichtes Fußteil" width="63" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Thermostiefel - wasserdichtes Fußteil <br> <span class="product-price"> 42,70 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kingsland-133-sb-128_kingsland-damen-vollbesatzreithose-kelly">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KINGSLAND-133-SB-128000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Vollbesatzreithose Kelly" width="53" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damen Vollbesatzreithose Kelly <br> <span class="product-price"> 255,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schockemoehle-1311-00010_schockemoehle-sports-nylonhalfter-tennessee">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHOCKEMOEHLE-1311-00010000prokonv.jpg" class="productImageBorder" alt="Schockemoehle Sports Nylonhalfter Tennessee" width="51" height="80"></span>
+				<span class="startpage-product-description">Schockemoehle Sports Nylonhalfter Tennessee <br> <span class="product-price"> 16,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2800-00233s17rom_schockemohle-sports-damen-steppweste-paloma">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2800-00233S17ROM000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Damen Steppweste Paloma" width="43" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Damen Steppweste Paloma <br> <span class="product-price"> 104,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-t-brackenw15_tomjoule-joules-damen-schal-bracken">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-T-BRACKENW15000prokonv.jpg" class="productImageBorder" alt="Tomjoule-Joules Damen Schal-Bracken" width="80" height="69"></span>
+				<span class="startpage-product-description">Tomjoule-Joules Damen Schal-Bracken <br> <span class="product-price"> 19,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-6050w16rom_pikeur-damen-unterziehrolli-sina---baumwoll-/elasthan-ware">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-6050W16ROM000proolive-konv.jpg" class="productImageBorder" alt="Pikeur Damen Unterziehrolli Sina - Baumwoll-/Elasthan-Ware" width="80" height="77"></span>
+				<span class="startpage-product-description">Pikeur Damen Unterziehrolli Sina - Baumwoll-/Elasthan-Ware <br> <span class="product-price"> 33,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-w-jnractiveg-s17roo_tom-joule---joules-tasche---buchtasche,-turnbeutel">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-W-JNRACTIVEG-S17ROO000prokonv.jpg" class="productImageBorder" alt="Tom Joule - Joules Tasche - Buchtasche, Turnbeutel" width="80" height="78"></span>
+				<span class="startpage-product-description">Tom Joule - Joules Tasche - Buchtasche, Turnbeutel <br> <span class="product-price"> 17,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bts-9260_bts-abschwitzdecke---fleece">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BTS-9260000prokonv.jpg" class="productImageBorder" alt="BTS Abschwitzdecke - Fleece" width="80" height="39"></span>
+				<span class="startpage-product-description">BTS Abschwitzdecke - Fleece <br> <span class="product-price"> 26,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-13391-28k-w17ppm_eskadron-abschwitzdecke-dralon-check---classic-sports-hw-17">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-13391-28K-W17PPM000prokonv.jpg" class="productImageBorder" alt="Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17" width="80" height="65"></span>
+				<span class="startpage-product-description">Eskadron Abschwitzdecke Dralon Check - Classic Sports HW 17 <br> <span class="product-price"> 124,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/greenlife-01123_greenlife-warmies-bar-kuschel-warmestofftier">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/GREENLIFE-01123000prokonv.jpg" class="productImageBorder" alt="Greenlife Warmies Bär Kuschel-Wärmestofftier" width="72" height="80"></span>
+				<span class="startpage-product-description">Greenlife Warmies Bär Kuschel-Wärmestofftier <br> <span class="product-price"> 19,99 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-3149_waldhausen-reitersocken-karo">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-3149000prokonv.jpg" class="productImageBorder" alt="Waldhausen Reitersocken Karo" width="80" height="69"></span>
+				<span class="startpage-product-description">Waldhausen Reitersocken Karo <br> <span class="product-price"> 5,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-8851_pikeur-reithose-lugana---vollbesatz---kariert-vi">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-8851000prokonv.jpg" class="productImageBorder" alt="Pikeur Reithose Lugana - Vollbesatz - kariert VI" width="80" height="43"></span>
+				<span class="startpage-product-description">Pikeur Reithose Lugana - Vollbesatz - kariert VI <br> <span class="product-price"><span class="price-new"> 92,34 EUR</span>
+<span class="price-old">UVP  153,90 EUR</span>
+<span class="price-discount">Sie sparen 40%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kingsland-142-sbl-844_kingsland-damenreithose-kelly---vollbesatz">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KINGSLAND-142-SBL-844000prokonv.jpg" class="productImageBorder" alt="Kingsland Damenreithose Kelly - Vollbesatz" width="41" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damenreithose Kelly - Vollbesatz <br> <span class="product-price"><span class="price-new"> 150,40 EUR</span>
+<span class="price-old">UVP  188,00 EUR</span>
+<span class="price-discount">Sie sparen 20%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2032-00143_schockemohle-poloshirt---emma">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2032-00143000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Poloshirt - Emma" width="73" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Poloshirt - Emma <br> <span class="product-price"> 55,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-a00202030036_euroriding-fliegendecke---weiss">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-A00202030036000prokonv.jpg" class="productImageBorder" alt="Euroriding Fliegendecke - weiß" width="80" height="66"></span>
+				<span class="startpage-product-description">Euroriding Fliegendecke - weiß <br> <span class="product-price"><span class="price-new"> 42,46 EUR</span>
+<span class="price-old">UVP  49,94 EUR</span>
+<span class="price-discount">Sie sparen 15%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-781049w15_busse-mutze-tech-beanie----zum-tragen-unter-dem-reithelm">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-781049W15000prokonv.jpg" class="productImageBorder" alt="Busse Mütze Tech Beanie -  zum Tragen unter dem Reithelm" width="80" height="62"></span>
+				<span class="startpage-product-description">Busse Mütze Tech Beanie -  zum Tragen unter dem Reithelm <br> <span class="product-price"> 14,49 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-52000_eskadron-neopren-gamaschen---vorne">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-52000000prokonv.jpg" class="productImageBorder" alt="Eskadron Neopren Gamaschen - vorne" width="80" height="78"></span>
+				<span class="startpage-product-description">Eskadron Neopren Gamaschen - vorne <br> <span class="product-price"> 41,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-704001s17rom_pikeur-damen-fleecejacke-djuli---mit-stehkragen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-704001S17ROM000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Fleecejacke Djuli - mit Stehkragen" width="57" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Fleecejacke Djuli - mit Stehkragen <br> <span class="product-price"> 119,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-128101_busse-ausbindezugel-basic">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-128101000prokonv.jpg" class="productImageBorder" alt="Busse Ausbindezügel Basic" width="80" height="66"></span>
+				<span class="startpage-product-description">Busse Ausbindezügel Basic <br> <span class="product-price"> 26,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bucas-627_bucas-smartex-rain-big-neck---light-(ohne-fullung)">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUCAS-627000prokonv.jpg" class="productImageBorder" alt="Bucas Smartex Rain Big Neck - light (ohne Füllung)" width="80" height="77"></span>
+				<span class="startpage-product-description">Bucas Smartex Rain Big Neck - light (ohne Füllung) <br> <span class="product-price"> 208,01 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-dmrf60_horseware-amigo-fly-mask---fliegenmaske-mit-ohren">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-DMRF60000prokonv.jpg" class="productImageBorder" alt="Horseware Amigo Fly Mask - Fliegenmaske mit Ohren" width="70" height="80"></span>
+				<span class="startpage-product-description">Horseware Amigo Fly Mask - Fliegenmaske mit Ohren <br> <span class="product-price"> 20,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/br-622012w15_br-damen-softshellreithose-kniebesatz-ishim,-wintersoftshell">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BR-622012W15000prokonv.jpg" class="productImageBorder" alt="BR Damen Softshellreithose Kniebesatz Ishim, Wintersoftshell" width="33" height="80"></span>
+				<span class="startpage-product-description">BR Damen Softshellreithose Kniebesatz Ishim, Wintersoftshell <br> <span class="product-price"> 85,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-206201_waldhausen-stallschuh--dusty---gefuttert">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-206201000prokonv.jpg" class="productImageBorder" alt="Waldhausen Stallschuh  Dusty - gefüttert" width="80" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Stallschuh  Dusty - gefüttert <br> <span class="product-price"> 38,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-ckhhgzw15_horseware-fleece-pullover-fiona">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-CKHHGZW15000prokonv.jpg" class="productImageBorder" alt="Horseware Fleece Pullover Fiona" width="80" height="80"></span>
+				<span class="startpage-product-description">Horseware Fleece Pullover Fiona <br> <span class="product-price"> 38,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schockemoehle-1103-00009_schockemohle-kandarenzugel-sports---leder">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHOCKEMOEHLE-1103-00009000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Kandarenzügel SPORTS - Leder" width="80" height="53"></span>
+				<span class="startpage-product-description">Schockemöhle Kandarenzügel SPORTS - Leder <br> <span class="product-price"> 48,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-180502_waldhausen-buch-fn-lehren-und-lernen-im-pferdesport">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-180502000prokonv.jpg" class="productImageBorder" alt="Waldhausen Buch FN Lehren und Lernen im Pferdesport" width="65" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Buch FN Lehren und Lernen im Pferdesport <br> <span class="product-price"> 24,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/equiline-142mt11063w14_equiline-herren-wintermutze-cage">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EQUILINE-142MT11063W14000prokonv.jpg" class="productImageBorder" alt="Equiline Herren Wintermütze Cage" width="80" height="74"></span>
+				<span class="startpage-product-description">Equiline Herren Wintermütze Cage <br> <span class="product-price"> 23,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/cavallo-003315w17rom_cavallo-damen-mutze-judith">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/CAVALLO-003315W17ROM000prokonv.jpg" class="productImageBorder" alt="Cavallo Damen Mütze Judith" width="80" height="68"></span>
+				<span class="startpage-product-description">Cavallo Damen Mütze Judith <br> <span class="product-price"> 29,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kl-171-hc-954s17roo_kingsland-damen-cap-helsinki---one-size">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KL-171-HC-954S17ROO000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Cap Helsinki - one size" width="80" height="65"></span>
+				<span class="startpage-product-description">Kingsland Damen Cap Helsinki - one size <br> <span class="product-price"> 35,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-w-coast-s17rom_tom-joule---joules-damen-regenjacke-coast---wasserdicht">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-W-COAST-S17ROM000procerise_p-konv.jpg" class="productImageBorder" alt="Tom Joule - Joules Damen Regenjacke Coast - wasserdicht" width="57" height="80"></span>
+				<span class="startpage-product-description">Tom Joule - Joules Damen Regenjacke Coast - wasserdicht <br> <span class="product-price"> 96,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/scan-horse-529_scan-horse-steigbugel-schutz---2-stuck">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCAN-HORSE-529000prokonv.jpg" class="productImageBorder" alt="Scan-Horse Steigbügel-Schutz - 2 Stück" width="80" height="45"></span>
+				<span class="startpage-product-description">Scan-Horse Steigbügel-Schutz - 2 Stück <br> <span class="product-price"> 9,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-acrk24_horseware-amigo-all-in-1-fleecedecke---polyester">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-ACRK24000prokonv.jpg" class="productImageBorder" alt="Horseware Amigo All in 1 Fleecedecke - Polyester" width="46" height="80"></span>
+				<span class="startpage-product-description">Horseware Amigo All in 1 Fleecedecke - Polyester <br> <span class="product-price"> 94,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-50339_eskadron-gamasche-flexisoft-air-easy---ton-in-ton---vorne">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-50339000prowhite-konv.jpg" class="productImageBorder" alt="Eskadron Gamasche Flexisoft Air Easy - ton-in-ton - vorne" width="72" height="80"></span>
+				<span class="startpage-product-description">Eskadron Gamasche Flexisoft Air Easy - ton-in-ton - vorne <br> <span class="product-price"> 86,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eurostar-9405_euro-star-fleecejacke-miranda">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EUROSTAR-9405000prokonv.jpg" class="productImageBorder" alt="euro-star Fleecejacke Miranda" width="60" height="80"></span>
+				<span class="startpage-product-description">euro-star Fleecejacke Miranda <br> <span class="product-price"><span class="price-new"> 44,20 EUR</span>
+<span class="price-old">UVP  68,00 EUR</span>
+<span class="price-discount">Sie sparen 35%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/eskadron-20491w17ppm_eskadron-classic-schabracke-cotton-hw-2017">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/ESKADRON-20491W17PPM000proorchidma-konv.jpg" class="productImageBorder" alt="Eskadron Classic Schabracke Cotton HW 2017" width="80" height="80"></span>
+				<span class="startpage-product-description">Eskadron Classic Schabracke Cotton HW 2017 <br> <span class="product-price"> 29,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-568355_waldhausen-buch-reiten-im-gelande">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-568355000prokonv.jpg" class="productImageBorder" alt="Waldhausen Buch Reiten im Gelände" width="67" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Buch Reiten im Gelände <br> <span class="product-price"> 9,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2800-00236w17rom_schockemohle-sports-damen-steppweste-payton-style">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2800-00236W17ROM000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Damen Steppweste Payton Style" width="46" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Damen Steppweste Payton Style <br> <span class="product-price"> 99,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/equest-225002_equest-heunetz-mini,-5-x-5-cm-lochabstand">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EQUEST-225002000prokonv.jpg" class="productImageBorder" alt="Equest Heunetz Mini, 5 x 5 cm Lochabstand" width="56" height="80"></span>
+				<span class="startpage-product-description">Equest Heunetz Mini, 5 x 5 cm Lochabstand <br> <span class="product-price"> 21,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/br-684084w15_br-damenjacke-bira---gestrickt">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BR-684084W15000prokonv.jpg" class="productImageBorder" alt="BR Damenjacke Bira - gestrickt" width="42" height="80"></span>
+				<span class="startpage-product-description">BR Damenjacke Bira - gestrickt <br> <span class="product-price"> 55,89 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schumacher-3137d_schumacher-stirnband---tiffany-crystals,-6mm">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHUMACHER-3137D000prokonv.jpg" class="productImageBorder" alt="Schumacher Stirnband - Tiffany Crystals, 6mm" width="80" height="13"></span>
+				<span class="startpage-product-description">Schumacher Stirnband - Tiffany Crystals, 6mm <br> <span class="product-price"> 148,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-608502.021_busse-anbinder-elastik---60-cm">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-608502.021000prokonv.jpg" class="productImageBorder" alt="Busse Anbinder ELASTIK - 60 cm" width="80" height="67"></span>
+				<span class="startpage-product-description">Busse Anbinder ELASTIK - 60 cm <br> <span class="product-price"> 14,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroriding-10095_euroriding-zugel-anti-slip---british-line">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORIDING-10095000proschw_ede-konv.jpg" class="productImageBorder" alt="Euroriding Zügel Anti Slip - British Line" width="80" height="76"></span>
+				<span class="startpage-product-description">Euroriding Zügel Anti Slip - British Line <br> <span class="product-price"> 27,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-1322-56_pikeur-damensakko-diana---schurwolle">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-1322-56000prokonv.jpg" class="productImageBorder" alt="Pikeur Damensakko Diana - Schurwolle" width="79" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damensakko Diana - Schurwolle <br> <span class="product-price"><span class="price-new"> 175,20 EUR</span>
+<span class="price-old">UVP  219,00 EUR</span>
+<span class="price-discount">Sie sparen 20%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-703401s17rom_pikeur-damen-fleecejacke-pagena---mit-fester-kapuze">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-703401S17ROM000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Fleecejacke Pagena - mit fester Kapuze" width="35" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Fleecejacke Pagena - mit fester Kapuze <br> <span class="product-price"> 98,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/kingsland-131-fl-704_kingsland-damen-fleecejacke-lobelia">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/KINGSLAND-131-FL-704000prokonv.jpg" class="productImageBorder" alt="Kingsland Damen Fleecejacke Lobelia" width="61" height="80"></span>
+				<span class="startpage-product-description">Kingsland Damen Fleecejacke Lobelia <br> <span class="product-price"><span class="price-new"> 67,46 EUR</span>
+<span class="price-old">UVP  89,95 EUR</span>
+<span class="price-discount">Sie sparen 25%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sprenger-40406.s_sprenger-gebiss-dynamic-rs---sensogan">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SPRENGER-40406.S000prokonv.jpg" class="productImageBorder" alt="Sprenger Gebiss Dynamic RS - Sensogan" width="80" height="48"></span>
+				<span class="startpage-product-description">Sprenger Gebiss Dynamic RS - Sensogan <br> <span class="product-price"> 145,45 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/horseware-cjhbdaw15_horseware-kinder-langarmshirt-top">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/HORSEWARE-CJHBDAW15000prokonv.jpg" class="productImageBorder" alt="Horseware Kinder Langarmshirt Top" width="80" height="71"></span>
+				<span class="startpage-product-description">Horseware Kinder Langarmshirt Top <br> <span class="product-price"> 26,91 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-680503.021.989_busse-startnummern,-oval,-4-stellig">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-680503.021.989000prokonv.jpg" class="productImageBorder" alt="Busse Startnummern, oval, 4-stellig" width="59" height="80"></span>
+				<span class="startpage-product-description">Busse Startnummern, oval, 4-stellig <br> <span class="product-price"> 9,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-jnrgirlswly_tomjoule---joules-kinder-gummistiefel---pferdemotiv">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-JNRGIRLSWLY000prokonv.jpg" class="productImageBorder" alt="Tomjoule - Joules Kinder Gummistiefel - Pferdemotiv" width="80" height="71"></span>
+				<span class="startpage-product-description">Tomjoule - Joules Kinder Gummistiefel - Pferdemotiv <br> <span class="product-price"> 28,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-199.6042_pikeur-damen-freizeitbluse---gestreift-2.wahl">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-199.6042000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Freizeitbluse - gestreift-2.Wahl" width="79" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Freizeitbluse - gestreift-2.Wahl <br> <span class="product-price"><span class="price-new"> 15,00 EUR</span>
+<span class="price-old">UVP  20,00 EUR</span>
+<span class="price-discount">Sie sparen 25%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2813-00022s15_schockemohle-damen-softshelljacke-shannon">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2813-00022S15000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Damen Softshelljacke Shannon" width="58" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Damen Softshelljacke Shannon <br> <span class="product-price"><span class="price-new"> 83,27 EUR</span>
+<span class="price-old">UVP  118,95 EUR</span>
+<span class="price-discount">Sie sparen 30%</span></span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-680111_busse-mahneneinnah-set-profi">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-680111000prokonv.jpg" class="productImageBorder" alt="Busse Mähneneinnäh-Set PROFI" width="80" height="59"></span>
+				<span class="startpage-product-description">Busse Mähneneinnäh-Set PROFI <br> <span class="product-price"> 23,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/bucas-632_bucas-abschwitzdecke-power-cooler-full-neck---mit-halsteil">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUCAS-632000prokonv.jpg" class="productImageBorder" alt="Bucas Abschwitzdecke Power Cooler Full Neck - mit Halsteil" width="60" height="80"></span>
+				<span class="startpage-product-description">Bucas Abschwitzdecke Power Cooler Full Neck - mit Halsteil <br> <span class="product-price"> 87,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/sm-2813-00028w16rom_schockemohle-sports-damen-fleecejacke-britany">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SM-2813-00028W16ROM000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Damen Fleecejacke Britany" width="62" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Damen Fleecejacke Britany <br> <span class="product-price"> 118,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/montar-2078-41_montar-damenreithose-schwarz---mit-monogram">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/MONTAR-2078-41000prokonv.jpg" class="productImageBorder" alt="Montar Damenreithose Schwarz - mit Monogram" width="77" height="80"></span>
+				<span class="startpage-product-description">Montar Damenreithose Schwarz - mit Monogram <br> <span class="product-price"> 109,94 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/cavallo-176500_cavallo-reitstiefel-junior-jump-xl---schlanke-karreeform">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/CAVALLO-176500000prokonv.jpg" class="productImageBorder" alt="Cavallo Reitstiefel Junior Jump XL - schlanke Karreeform" width="54" height="80"></span>
+				<span class="startpage-product-description">Cavallo Reitstiefel Junior Jump XL - schlanke Karreeform <br> <span class="product-price"> 279,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/busse-726320_busse-kinder-thermoschuh-verona">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/BUSSE-726320000prokonv.jpg" class="productImageBorder" alt="Busse Kinder Thermoschuh Verona" width="80" height="67"></span>
+				<span class="startpage-product-description">Busse Kinder Thermoschuh Verona <br> <span class="product-price"> 52,96 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/aigle-317544rsms16_aigle-damen-freizeitschuh-beaucens">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/AIGLE-317544RSMS16000prokonv.jpg" class="productImageBorder" alt="Aigle Damen Freizeitschuh Beaucens" width="80" height="63"></span>
+				<span class="startpage-product-description">Aigle Damen Freizeitschuh Beaucens <br> <span class="product-price"> 92,90 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/equiline-e11082w16ppo_equiline-fliegenohren-rosy---equiline-emblem">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EQUILINE-E11082W16PPO000prokonv.jpg" class="productImageBorder" alt="Equiline Fliegenohren Rosy - Equiline Emblem" width="80" height="59"></span>
+				<span class="startpage-product-description">Equiline Fliegenohren Rosy - Equiline Emblem <br> <span class="product-price"> 51,00 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/euroring-19279_euroriding-fliegenmaske---mit-ohren-ohne-nasenteil">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/EURORING-19279000prokonv.jpg" class="productImageBorder" alt="Euroriding Fliegenmaske - mit Ohren ohne Nasenteil" width="64" height="80"></span>
+				<span class="startpage-product-description">Euroriding Fliegenmaske - mit Ohren ohne Nasenteil <br> <span class="product-price"> 16,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/leovet-192031_leovet-5-sterne-striegel---750ml">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/LEOVET-192031000prokonv.jpg" class="productImageBorder" alt="Leovet 5-Sterne Striegel - 750ml" width="61" height="80"></span>
+				<span class="startpage-product-description">Leovet 5-Sterne Striegel - 750ml <br> <span class="product-price"> 14,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/pikeur-300201s15_pikeur-damen-steppweste-cyra,-kapuze-am-rucken-zu-befestigen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/PIKEUR-300201S15000prokonv.jpg" class="productImageBorder" alt="Pikeur Damen Steppweste Cyra, Kapuze am Rücken zu befestigen" width="64" height="80"></span>
+				<span class="startpage-product-description">Pikeur Damen Steppweste Cyra, Kapuze am Rücken zu befestigen <br> <span class="product-price"> 118,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/schockemoehle-1320-00005_schockemohle-sports-strick-panikhaken">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/SCHOCKEMOEHLE-1320-00005000prokonv.jpg" class="productImageBorder" alt="Schockemöhle Sports Strick Panikhaken" width="25" height="80"></span>
+				<span class="startpage-product-description">Schockemöhle Sports Strick Panikhaken <br> <span class="product-price"> 9,50 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/waldhausen-285500_waldhausen-buch---das-kleine-und-das-grosse-hufeisen">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/WALDHAUSEN-285500000prokonv.jpg" class="productImageBorder" alt="Waldhausen Buch - Das Kleine und das Große Hufeisen" width="60" height="80"></span>
+				<span class="startpage-product-description">Waldhausen Buch - Das Kleine und das Große Hufeisen <br> <span class="product-price"> 14,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+	<div class="startpage-product" style="float:left;width:98px;height:100px;">
+		<a href="https://www.the-orange-horse.com/de/tj-w-wellyprint-s17rso_tom-joule---joules-gummistiefel-wellyprint---neue-farben">
+				<span class="product-image"><img src="https://www.the-orange-horse.com/media/images/facebook/TJ-W-WELLYPRINT-S17RSO000prooli_ho_r-konv.jpg" class="productImageBorder" alt="Tom Joule - Joules Gummistiefel Wellyprint - neue Farben" width="80" height="59"></span>
+				<span class="startpage-product-description">Tom Joule - Joules Gummistiefel Wellyprint - neue Farben <br> <span class="product-price"> 64,95 EUR</span></span>
+		</a>
+	</div><!-- .column .four -->
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	jQuery('.startpage-product').hover(function(){
+		jQuery('#startpage-product-details').fadeOut();jQuery('#startpage-product-details').remove();
+		position = jQuery(this).offset();
+		html = jQuery(this).html();
+		jQuery('#page').append('<div id="startpage-product-details" style="display:none;z-index:20000;position:absolute; width: 135px; height:200px;background-color:white;top:'+(parseInt(position.top)-20)+'px;left:'+(parseInt(position.left)-36)+'px;">'+html+'</div>');
+		jQuery('#startpage-product-details').fadeIn();
+		jQuery('#startpage-product-details').hover(function(){},function(){jQuery('#startpage-product-details').fadeOut();jQuery('#startpage-product-details').remove();})
+	},function(){	
+	});
+	jQuery(document).ready(function(){
+		var randomposition = 0;
+		var randomwidth = parseInt(jQuery("#random-startpage-product-teaser .startpage-product .product-image").css("width"),10);
+		var randomcount = jQuery("#random-startpage-product-teaser .startpage-product").length;
+		jQuery("#random-next-button").click(function(){
+			if((randomposition+1)*randomwidth*4+45 < randomcount*100-400){
+				jQuery("#random-startpage-product-teaser").animate({marginLeft: ++randomposition*-randomwidth*4+45+"px"},1000);
+			}else if (jQuery("#random-startpage-product-teaser").css("margin-left") != -randomcount*100+400+"px"){
+				randomposition++;
+				jQuery("#random-startpage-product-teaser").animate({marginLeft: -randomcount*100+900+"px"},1000);
+			}
+		});		
+		jQuery("#random-back-button").click(function(){
+			if ((randomposition-1)*randomwidth*4+45 > 45){
+				jQuery("#random-startpage-product-teaser").animate({marginLeft: --randomposition*-randomwidth*4+45+"px"},1000);
+			}else if (jQuery("#random-startpage-product-teaser").css("margin-left") != "45px"){
+				randomposition--;
+				jQuery("#random-startpage-product-teaser").animate({marginLeft:"45px"},1000);
+			}
+		});
+	});
+//]]>	
+</script>
+
+				</div>
+									
+			<div id="content">
+				
+<hr style="border: 0px; border-bottom: 1px solid #DDDDDD;margin-top:0;">
+<h1 style="margin:18px 0;padding:0;">Nur das Beste für Sie und Ihr Pferd - Reitartikel von Markenherstellern bei the-orange-horse</h1>
+<div id="startpage" class="textstyles"><!-- 2d4i1 --><div id="startseitentext"><p>Im Reitsport sind höchste Professionalität und exzellente Ausrüstung entscheidend. Nicht nur für Sie, sondern auch ganz besonders für Ihr Pferd! In unserem <strong>Reitsport-Onlineshop</strong> führen wir deshalb hochwertige Reitartikel von etablierten und erfahrenen Herstellern in Top-Qualität und zu attraktiven Preisen. Nur zu, stöbern Sie in unserem Angebot und finden Sie genau die Reithose und Stiefeletten, die Sie sich wünschen!</p><h2>Große Auswahl in Ihrem Reitsport-Onlineshop</h2><p>Bei uns gibt es fast alles, was die Herzen von Reiter und Pferd höher schlagen lässt. Ob tolle Turnierreithosen von <a href="../de/pikeur" title="Pikeur" data-mce-href="../de/pikeur">Pikeur</a>, attraktive <a href="../de/equiline" title="Equiline" data-mce-href="../de/equiline">Equiline</a> Turnierblusen oder die Lederzügel aus dem Sortiment von <a href="../de/euroriding" title="Euroriding" data-mce-href="../de/euroriding">Euroriding</a> hier werden Sie bestimmt fündig. Entscheiden Sie sich zum Beispiel für <a href="../de/horseware" title="Horseware" data-mce-href="../de/horseware">Horseware</a> Outdoordecken sowie für die passende Abschwitzdecke von <a href="../de/eskadron" title="Eskadron" data-mce-href="../de/eskadron">Eskadron</a> bzw. Ekzemerdecken aus der <a href="../de/bucas" title="Bucas" data-mce-href="../de/bucas">Bucas</a> Kollektion. Legen Sie dagegen Wert auf eine <a href="../de/alles-fuer-das-pferd/trensen-&amp;-kandaren/trensen" title="Schumacher Trense" data-mce-href="../de/alles-fuer-das-pferd/trensen-&amp;-kandaren/trensen">Schumacher Trense</a> oder auch schicke <a href="../de/ariat" title="Ariat Stiefeletten" data-mce-href="../de/ariat">Ariat Stiefeletten</a>, dann wählen Sie einfach Ihr favorisiertes Modell aus.</p><h3>Bestellen Sie hier Reitartikel und Reitsport-Zubehör ganz nach Ihrem Geschmack!</h3><p>Auch anspruchsvolle Reiter kommen bei uns voll auf ihre Kosten. Wie wäre es etwa mit bezaubernden Damenblusen und Turnierblusen aus der Palette von <a href="../de/fior-da-liso" title="Fior da Liso" data-mce-href="../de/fior-da-liso">Fior da Liso</a> oder nützliche, hochwertige <a href="../de/veredus" title="Veredus Gamaschen" data-mce-href="../de/veredus">Veredus Gamaschen</a>? Und auch mit den Reitsakkos und Turniershirts von <a href="../de/kingsland" title="Kingsland" data-mce-href="../de/kingsland">Kingsland</a> machen Sie garantiert eine gute Figur. Nicht weniger reizvoll sind auch unsere <a href="../de/cavallo" title="Cavallo Stiefel" data-mce-href="../de/cavallo">Cavallo Stiefel</a> aus verschiedenen, edlen Lederarten. Mit robustem Edelstahl, Aurigan oder Sensogan überzeugen hingegen die Gebisse von <a href="../de/sprenger" title="Sprenger" data-mce-href="../de/sprenger">Sprenger</a>, lieferbar in vielen verschiedenen Modellen. Und das ist noch lange nicht alles, denn außerdem gibt es bei uns:</p><ul><li>Helme und Reithandschuhe</li><li>Sättel und Sattelzubehör</li><li>Pflegebedarf</li><li>Schabracken und Bandagen</li><li>und vieles mehr.</li></ul><h2>Ausgezeichneter Service mit Ihrem Reitsportgeschäft bei Oldenburg</h2><p>the-orange-horse bietet Ihnen nicht nur eine hervorragende Auswahl an erstklassigem und praktischem <strong>Reitsport-Zubehör</strong>, sondern verspricht Ihnen auch eine überaus kompetente Beratung. Seit über elf Jahren sind wir deshalb als Ihr Reitsport-Onlineshop der Ansprechpartner Nummer eins, wenn es um die optimale Ausrüstung von Pferd und Reiter geht. Überzeugen Sie sich selbst von unserem großartigen Sortiment oder machen Sie einen Abstecher nach Jade und besuchen Sie unser <strong>Reitsportgeschäft</strong> bei <strong>Oldenburg</strong>.</p><p>Reithosen, Trensen und Abschwitzdecken bestellen Sie hier einfach und direkt Ihre Wunsch-Reitartikel. Natürlich von namhaften Markenherstellern und das immer zu fairen Preisen. Das Team von the-orange-horse freut sich auf Sie!<br></p></div><!-- /2d4i1 -->
+</div>
+			</div><!-- #content -->			
+		</div><!-- .column .xt-grid-13 or xt-grid-16 -->
+	</div><!-- #content-wrap .row -->
+	<div id="footer" class="row"><br>
+		<img style="float:right;clear:both;margin:10px" src="/templates/wsmc_horse/img/zahlung_klein.jpg" alt="Zahlungswege">		
+		<div class="column footer-right">
+			
+<p class="headline">Informationen</p>
+<ul>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/kontakt">Kontakt</a></li>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/liefer-versandkosten">Liefer- und Versandkosten</a></li>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/unsere-agb">Unsere AGB</a></li>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/impressum">Impressum</a></li>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/privatsphaere-datenschutz">Privatsphäre und Datenschutz</a></li>
+        <li class="level1"><a href="https://www.the-orange-horse.com/de/widerrufsrecht">Widerrufsrecht</a></li>
+    </ul>
+
+		</div><!-- .column .xt-grid-3 -->
+		<div class="column footer-right">
+            <p class="headline">Inhalt</p>
+
+
+		</div><!-- .column .xt-grid-3 -->	
+		<img src="https://knowledge.rapidssl.com/library/VERISIGN/ALL_OTHER/Frank/RapidSSL_SEAL-90x50.gif" alt="SSL zertifiziert"><br>		
+		<div class="column xt-grid-2">			
+			
+		</div><!-- .column .xt-grid-2 -->		
+        <div id="mobile_link" class="row">
+            <div class="mobile">
+                
+            </div>
+        </div>
+		</div><!-- #footer .row -->
+	<div id="copyright" class="row">	
+		<div class="column copyright">
+			<!-- #copyright -->
+		</div><!-- .column .xt-grid-16 -->
+	</div><!-- #copyright .row -->
+</div><!-- #page -->
+
+<img src="cronjob.php" width="1" height="1" alt="">
+
+<script type="text/javascript">
+adroll_adv_id = "2I4327WBQRHW3OVD3QNPOF";
+adroll_pix_id = "GWFCLMR5JJDNLANYA5IKBX";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+__adroll_loaded=true;
+var scr = document.createElement("script");
+var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+scr.setAttribute('async', 'true');
+scr.type = "text/javascript";
+scr.src = host + "/j/roundtrip.js";
+((document.getElementsByTagName('head') || [null])[0] ||
+document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+if(oldonload){oldonload()}};
+}());
+</script>
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; height: 0px !important; min-height: 0px !important;"></textarea><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

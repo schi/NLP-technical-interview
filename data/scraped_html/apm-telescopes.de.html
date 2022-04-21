@@ -1,0 +1,1929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+<base href="http://www.apm-telescopes.de/">
+<title>APM Telescopes</title>
+<meta name="robots" content="index,follow">
+<meta name="language" content="de">
+<meta name="company" content="APM Telescopes">
+<meta name="author" content="APM Telescopes">
+<meta name="publisher" content="APM Telescopes">
+<meta name="page-topic" content="shopping">
+<meta name="reply-to" content="info@apm-telescopes.de">
+<meta name="revisit-after" content="7">
+<meta name="generator" content="xt:Commerce 4 - 4.1.00">
+
+<link rel="shortcut icon" href="http://www.apm-telescopes.de/templates/apm2011_2/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="http://www.apm-telescopes.de/xtFramework/library/jquery/thickbox.css">
+<link rel="stylesheet" type="text/css" href="http://www.apm-telescopes.de/xtFramework/library/highslide/highslide.css">
+
+	<!-- standalone page styling (can be removed) -->
+
+	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/scrollable-horizontal.css">
+	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/scrollable-buttons.css">
+	
+	
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!--
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/jquery/jquery-1.2.6.min.js"></script>  
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/jquery/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/jquery/thickbox-compressed.js"></script>
+-->
+
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/highslide/highslide-full.js"></script>
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/highslide/highslide.config.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/jquery/jquery.address-1.4.min.js"></script>
+<script type="text/javascript" src="http://www.apm-telescopes.de/xtFramework/library/jquery/deserialize.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+
+
+
+	
+
+
+
+
+    <script type="text/javascript">
+   
+
+     
+function search(all) {
+    
+    $(".productPreviewBox").css('opacity', 0.3); 
+    if(all == 1) {
+    setTimeout(loadsearch(1),800);
+    } else {
+    setTimeout(loadsearch(0),800);
+    }
+
+}      
+      
+        
+function loadsearch(all) {
+  text = document.getElementById("keyword").value;
+  text = escape(text);
+  
+  
+  var desc = $("#desc").is(':checked'); 
+  var anzahl_erg = $('#anzahl-erg').val();
+  var search_manu = $('#search_manu').val();
+  var search_cat = $('#search_cat').val();
+  
+  
+  var lang = getlang();
+  
+  laenge = document.getElementById('keyword').value.length;
+
+  if(laenge > 2) {
+         
+     $("#keyword").addClass("load");
+    
+    if(all == 1) {
+    var url = '?key='+text+'\u0026lang='+lang+'\u0026desc='+desc+'\u0026anzahl=0\u0026manu='+search_manu+'\u0026cat='+search_cat;
+    } else {
+    var url = '?key='+text+'\u0026lang='+lang+'\u0026desc='+desc+'\u0026anzahl='+anzahl_erg+'\u0026manu='+search_manu+'\u0026cat='+search_cat;
+    }
+    
+
+    $("#content").load("search.php"+url, function() {
+        $("#search2").fadeIn("slow"); 
+        $("#keyword").removeClass("load");
+        
+        //setTimeout(window.location.hash=url,5000);
+	 setTimeout(history.pushState(null, "APM Suche", "http://www.apm-telescopes.de/index.html" + url),5000);
+
+
+
+//history.pushState(null, "APM Suche", "http://www.apm-telescopes.de/index.html" + url);
+     
+
+        
+    });
+    
+
+    
+  }
+
+  if(laenge <= 2) {
+    $("#search2").fadeOut("slow");
+  }
+
+}
+   
+ 
+function slideUp() {
+  $("#search2").fadeOut("slow");
+}
+
+
+
+
+// 1200, 1050, 1024, 900, 768, 720 
+
+    function background() {
+      
+      var x = screen.height;
+      
+      if(x <= 720) {
+        $("body").addClass("background720");
+      } else {
+      
+          if (x <= 1050)
+          {
+            $("body").addClass("background1050");
+          } else {
+              if (x <= 1200)
+              {
+                $("body").addClass("background1200");
+              }
+          } 
+      }  
+    } 
+  
+  xx = document.URL.split("?key");
+  //alert(xx[1]);
+  
+  var contentstring = "?key" + xx[1];
+var suchstring = /(key)/g;
+ 
+
+
+var suchergebnis = suchstring.test( document.URL);
+
+if (suchergebnis != false) {
+    jQuery(document).ready(function() {  
+      $("#content").load("search.php?key"+xx[1], function() {
+        //$("#search2").slideDown("slow"); 
+        //$("#keyword").removeClass("load");
+        //window.location.hash=url;
+        //alert('Das Suchwort ist im Text vorhanden!');
+    });
+     }); 
+  
+}
+ 
+ 
+    
+</script>
+
+
+
+
+        
+    <link rel="stylesheet" href="/nivo-slider.css" type="text/css" media="screen">    
+    <script type="text/javascript" src="/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+          $('#slider').nivoSlider({
+              effect:'sliceUpDown', //Specify sets like: 'fold,fade,sliceDown'
+              slices:9,
+              animSpeed:500, //Slide transition speed
+              pauseTime:4000,
+              startSlide:1, //Set starting Slide (0 index)
+              directionNav:false, //Next  Prev
+              directionNavHide:false, //Only show on hover
+              controlNav:true, //1,2,3...
+              controlNavThumbs:false, //Use thumbnails for Control Nav
+              controlNavThumbsFromRel:false, //Use image rel for thumbs
+              controlNavThumbsSearch: '.jpg', //Replace this with...
+              controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+              keyboardNav:true, //Use left u right arrows
+              pauseOnHover:true, //Stop animation while hovering
+              manualAdvance:false, //Force manual transitions
+              captionOpacity:0.8, //Universal caption opacity
+              beforeChange: function(){},
+              afterChange: function(){},
+              slideshowEnd: function(){} //Triggers after all slides have been shown
+          });
+    });
+    </script>
+        
+        
+        
+     
+        
+
+<script type="text/javascript">
+
+function scrollto(pos) {
+ $('html, body').animate({ scrollTop: $('#'+pos).offset().top }, 1000);
+} 
+
+</script> 
+
+<script type="text/javascript" src="/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+</script>
+
+        
+<script type="text/javascript">
+function selectWert(sObj) {
+    with (sObj) return x = options[selectedIndex].value;   
+    
+  }
+
+function selectWert2(sObj) {
+    with (sObj) var x = options[selectedIndex].value;   
+    if(x != 0) { document.location.href = x; }
+  
+  }
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.apm-telescopes.de/cache/style_1apm2011_2.css?803c4e33888de955fe49a768a86b122c">
+<script type="text/javascript" src="http://www.apm-telescopes.de/cache/javascript_1apm2011_2.js?803c4e33888de955fe49a768a86b122c"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+<style type="text/css">.highslide img {cursor: url(/xtFramework/library/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+<body class="unix safari webkit sf9">
+             <div id="contentheader" class="searchbar" style="border:0px solid #ff0000">
+             <div style="margin:0 auto; width:980px;">
+	           <div id="search"><script type="text/javascript">
+
+function getlang() {
+
+  var lang = 'de';
+  return lang;
+
+}
+
+
+</script>
+
+
+<!--
+<form name="search_box430" action="http://www.apm-telescopes.de/de/search.html" method="get" >
+<input type="hidden" name="page" value="search" id="page77"  />
+<input type="hidden" name="page_action" value="query" id="page_action358"  />
+<input type="hidden" name="desc" value="on" id="desc125"  />
+<input type="hidden" name="sdesc" value="on" id="sdesc487"  />   
+-->
+
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>Suche</td>
+<td style="padding-right:0;"> 
+
+<input class="" type="text" id="keyword" name="keywords" onkeyup="search();" autocomplete="off">
+<!--<input id="keyword" type="text" name="keywords"  />
+    -->
+    
+    
+    
+    <div id="results">
+       
+    <a onclick="fadeOut();" style="cursor:pointer; text-decoration:none; color:#fff;">[schließen]</a> <br>   <br>
+      <div id="result_items"></div>
+    </div>
+    
+</td> 
+
+<!--<td style="padding-left:5px;"><input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_quick_find.png" alt="BUTTON_QUICK_FIND"  /></td>
+<td><a href="http://www.apm-telescopes.de/de/search.html">erweiterte Suche</a></td>
+-->
+</tr>
+</tbody></table>
+
+	   <div id="search2" style="height:99px;">
+	    <div onclick="slideUp();" style="position:absolute; margin:0 0 0 950px;font-weight:bold;cursor:pointer;">X</div>
+	   <table style="position:absolute;" cellpadding="5" width="950px">
+	   <tbody><tr>
+	     <td>Beschreibung durchsuchen:</td>
+       <td> <input onclick="search();" id="desc" name="desc" value="1" type="checkbox"> </td>
+	     <td>Anzahl der Ergebnisse:</td> 
+        <td>     
+     <select onchange="search()" id="anzahl-erg">
+	   <option value="20">20</option>
+	   <option value="50">50</option>
+	   <option value="50">100</option>
+	   <option value="0">alle</option>
+	   </select></td>
+	    </tr>
+	    
+	    <tr>   <td>Kategorien:</td><td> 
+<select id="search_cat" onchange="search()">
+<option value="0">alle Kategorien</option>
+<option value="2">Ferngläser</option>
+<option value="1">Teleskope</option>
+<option value="590">Sonnenbeobachtung</option>
+<option value="3">Montierung &amp; Stative</option>
+<option value="4">Okulare</option>
+<option value="1287">CCD / Astrofotografie</option>
+<option value="5">Optisches Zubehör</option>             
+<option value="1198">Mechanisches Zubehör</option>
+<option value="1197">Sonstiges Zubehör</option>
+<option value="583">Kuppeln</option>
+<!--
+<option value="6">Secondhand</option>
+<option value="7">Sonderangebote</option>
+-->
+</select>
+
+</td>
+       <td>Hersteller:</td><td> <select id="search_manu" onchange="search()">
+<option value="0">alle Hersteller</option>
+<option value="1248">Akku-King</option>
+<option value="1254">Altair Astro</option>
+<option value="70">Antares</option>
+<option value="4">APM</option>
+<option value="69">APM - LOMO Apo-Refraktoren</option>
+<option value="61">APM - LZOS Apos</option>
+<option value="6">APM Prof. Telesk. / Montier.</option>
+<option value="1180">APM-Riccardi</option>
+<option value="1249">APM-TSE</option>
+<option value="1179">ASA Astro Systeme Austria</option>
+<option value="1250">Astro Devices</option>
+<option value="1184">Astro Physics</option>
+<option value="74">AstroGizmos</option>
+<option value="79">Astrolumina</option>
+<option value="8">Astronomik</option>
+<option value="1242">Astronscientific</option>
+<option value="1195">Astroshell</option>
+<option value="100">AstroTrac</option>
+<option value="9">ATiK Instuments</option>
+<option value="1166">Baader Planetarium</option>
+<option value="1187">Basler</option>
+<option value="96">Berlebach</option>
+<option value="1177">Brandon Vernonscope</option>
+<option value="14">Bresser</option>
+<option value="63">Bücher </option>
+<option value="15">BW-Optik</option>
+<option value="76">Celestron</option>
+<option value="18">CORONADO</option>
+<option value="3">DayStar</option>
+<option value="87">Dew Not</option>
+<option value="91">Docter</option>
+<option value="1176">euro EMC astro division</option>
+<option value="93">Explore Scientific</option>
+<option value="86">Farpoint</option>
+<option value="1186">FLI Finger Lake Instruments</option>
+<option value="21">Fujinon</option>
+<option value="80">Geoptik</option>
+<option value="24">GSO</option>
+<option value="1205">Gutekunst Optiksysteme</option>
+<option value="25">Howie Glatter</option>
+<option value="28">Intes Micro</option>
+<option value="1183">iOptron</option>
+<option value="1175">Kokusai Kohki</option>
+<option value="94">Lacerta</option>
+<option value="36">Leica</option>
+<option value="38">Losmandy</option>
+<option value="1201">Lunt Engineering</option>
+<option value="81">Lunt Solar Systems</option>
+<option value="1241">Masuyama</option>
+<option value="39">Meade</option>
+<option value="1192">Meopta</option>
+<option value="41">MoonLite</option>
+<option value="1200">Moravian Instruments</option>
+<option value="1193">Neuerer</option>
+<option value="90">Nikon</option>
+<option value="1247">Officina Stellare</option>
+<option value="78">Omegon</option>
+<option value="45">Optec/USA</option>
+<option value="1197">Opticron</option>
+<option value="95">Orion UK</option>
+<option value="2">Orion/USA</option>
+<option value="46">Pentax</option>
+<option value="1251">Pierro Astro</option>
+<option value="1204">PrimaLuceLab</option>
+<option value="48">Questar</option>
+<option value="1244">Shelyak Instruments</option>
+<option value="1253">Sirius Observatories</option>
+<option value="50">Sky-Watcher</option>
+<option value="51">Solarscope / UK</option>
+<option value="53">Starlight Instruments</option>
+<option value="97">Steiner</option>
+<option value="84">Swarovski</option>
+<option value="1178">Takahashi</option>
+<option value="57">TAL</option>
+<option value="1194">TecnoSky</option>
+<option value="59">Tele-Optic</option>
+<option value="60">Telegizmos </option>
+<option value="1181">The Imaging Source</option>
+<option value="1245">ToupTec</option>
+<option value="62">TS Optics</option>
+<option value="1">Universal</option>
+<option value="65">Vixen</option>
+<option value="64">WatchDesign</option>
+<option value="66">William Optics</option>
+<option value="75">Zambuto Carl</option>
+<option value="1246">ZWO</option>
+</select>
+
+
+
+</td>
+	     
+	     </tr>
+
+	    </tbody></table>
+	   
+
+     
+	   
+	   </div>
+	 
+<!--
+</form>
+--></div>
+              <div id="hotline">Infotelefon: +49(0) 681 - 954 303 2-0 <span>(Mo-Fr 9-17 Uhr, Do. bis 18Uhr)</span> </div>
+            	        	 <div id="languages">
+
+&nbsp;
+
+<a href="http://www.apm-telescopes.de/de/index.html?action=change_lang&amp;new_lang=de&amp;">
+<img src="http://www.apm-telescopes.de/media/flags/de.png" alt="Deutsch"></a>
+&nbsp;
+
+<a href="http://www.apm-telescopes.de/de/index.html?action=change_lang&amp;new_lang=en&amp;">
+<img src="http://www.apm-telescopes.de/media/flags/en.png" alt="English"></a>
+
+</div>
+             <div id="facebook"> 
+             <a style="background:none; padding:0" target="_blank" href="http://www.facebook.com/#!/pages/APM-Telescopes/138428192896386" title="Werden Sie Fan von APM Telescopes bei Facebook ...">
+              <img src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/facebook.png" alt="Werden Sie Fan von APM Teleskopes bei Facebook ...">
+	        </a>
+	        </div>
+          </div>
+	   </div>
+  <div id="header">
+		
+    
+    <div id="logo"><a href="index.php"><img src="http://www.apm-telescopes.de/templates/apm2011_2/img/apm-telescopes-logo.jpg" alt=""></a></div>
+	
+		
+	<div id="boxtop">	
+	<div id="topmenuwrap">
+	<ul id="topmenu">
+
+						<li><a href="http://www.apm-telescopes.de/de/customer.html">Ihr Konto</a>&nbsp;&nbsp;&nbsp;|</li>
+						<li><a href="http://www.apm-telescopes.de/de/checkout/shipping.html">Kasse</a>&nbsp;&nbsp;&nbsp;| </li>
+									<li><a href="http://www.apm-telescopes.de/de/customer/login.html">Anmelden</a>&nbsp;&nbsp;&nbsp;|</li>
+						      <li><a href="http://www.apm-telescopes.de/de/cart.html">Warenkorb</a></li>
+
+		</ul> 
+		<!--
+    <div id="currencies"></div>
+		    -->
+    
+		
+	   </div>   	 
+		   
+		
+			<div class="boxcartbody">
+	
+    
+		   
+		    <a style="color:#fff;" href="http://www.apm-telescopes.de/de/cart.html"> Der Warenkorb enthält <b>0</b> Artikel für <b>0,00 EUR</b></a>
+		<!--	
+	<br />inkl. MwSt. <a href="" target="_blank"> zzgl. Versandkosten</a>
+		    -->
+	
+			
+	
+      <!--
+    	<a href="http://www.apm-telescopes.de/de/cart.html"><img src="templates/xt_default/img/icon_cart.jpg"></a>
+			-->
+      
+      
+			
+		</div>
+
+    </div> 
+       
+       	    <div id="link1">
+       <a href="http://www.apm-siriuskuppeln.de/index.php" target="_blank">
+	     <img class="round-top" src="/templates/apm2011_2/img/apm-observatory-domes_.jpg" onmouseover="this.src='/templates/apm2011_2/img/apm-observatory-domes.jpg';" onmouseout="this.src='/templates/apm2011_2/img/apm-observatory-domes_.jpg';" alt="">
+	     </a>
+       </div>
+              
+       <div id="link2">
+	     <a href="http://www.apm-apo.com/" target="_blank">
+       <img class="round-top" src="/templates/apm2011_2/img/apm-apo-lzos_.jpg" onmouseover="this.src='/templates/apm2011_2/img/apm-apo-lzos.jpg';" onmouseout="this.src='/templates/apm2011_2/img/apm-apo-lzos_.jpg';" alt="">
+       </a>
+       </div>
+       
+       
+       
+       <div id="link3">
+       <a href="http://www.professional-telescopes.net/" target="_blank">
+	     <img class="round-top" src="/templates/apm2011_2/img/apm-professional-telescopes_.jpg" onmouseover="this.src='/templates/apm2011_2/img/apm-professional-telescopes.jpg';" onmouseout="this.src='/templates/apm2011_2/img/apm-professional-telescopes_.jpg';" alt="">
+	     </a>
+       </div>
+       
+       
+       <div id="link4">
+       <a href="http://www.luntsolarsystems-by-apmtelescopes.com/" target="_blank" title="Lunt Solar Systems by APM Telescopes">
+	     <img class="round-top" src="/templates/apm2011_2/img/lunt-logo-link.png" alt="Lunt Solar Systems by APM Telescopes">
+	     </a>
+       </div>
+     
+	 
+   <!--
+	 <div id="zahlungbuttons">
+	
+   <a href="/de/Bezahlungsarten-So-koennen-Sie-bei-uns-bezahlen.html">
+	 <img src="/media/sicher-zahlen.png" alt="So k&ouml;nnen Sie bei uns sicher und bequem zahlen." title="So k&ouml;nnen Sie bei uns sicher und bequem zahlen."/>
+	 </a>
+
+   </div>
+    	 -->
+	
+	</div>
+	
+	
+
+<div id="wrap"><div style="padding:5px;border-radius:5px;background-color:#ffffff;text-align:center;color:#ffffff"><img src="./wi_daten/apm_weihnachten.jpg"></div>
+
+<!--<DiV style="padding:5px;border-radius:5px;background-color:#17573c;text-align:center;color:#ffffff"><a href="http://www.apm-nature.de" style="color:#ffffff;font-weight:bold">Besuchen Sie auch APM Nature</A></DiV>-->   	   
+	
+		<div id="breadcrumb">
+		
+		 
+		 
+<ul>
+<li>» <a class="pathway" href="http://www.apm-telescopes.de/de/index.html" title="Startseite">Startseite</a></li>
+</ul> 
+	</div>
+	
+  
+  <div id="contentwrap">
+	
+
+	
+				<div id="leftcol">
+		
+     <h2 class="boxheader" style="margin-top:0;">
+<a style="color:#fff;" href="http://www.apm-telescopes.de/de/xt_new_products.html">Neu bei APM Telescopes</a></h2>
+<div class="boxbody">
+		<p class="center"><a href="http://www.apm-telescopes.de/de/sonstiges-zubehoer/buecher-karten-kalender.../buecher-poster-das-astronomische-jahr-2017.html"><img src="http://www.apm-telescopes.de/media/images/thumb/Poster2018_v7_small.jpg" class="productImageBorder" alt="Bücher - Poster: Das Astronomische Jahr 2018" width="100" height="68"></a></p>	<p class="center"><a href="http://www.apm-telescopes.de/de/sonstiges-zubehoer/buecher-karten-kalender.../buecher-poster-das-astronomische-jahr-2017.html"><strong>Bücher - Poster: Das Astronomische Jahr 2018</strong></a><br> 14,90 EUR</p>
+		
+	 <a href="http://www.apm-telescopes.de/de/xt_new_products.html">» mehr Neuheiten anzeigen</a>
+</div>
+		
+		
+    <h2 class="categoryheader">Kategorien</h2>
+<ul id="categorymenu">
+<li style="margin-bottom:5px;margin-top:5px;text-align:center"><a href="http://www.apm-telescopes.de/de/sitemap.html">Sitemap</a></li><li>
+	</li><li class="level1"><a href="http://www.apm-telescopes.de/de/bmehr-27-jahre-apm-b.html" title="Mehr als 27 Jahre APM"><b>Mehr als 27 Jahre APM</b></a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/aktionen.html" title="APM Aktionen">APM Aktionen</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/weihnachtsaktionen-2016.html" title="">Weihnachtsaktionen 2017</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/apm-highlights.html" title="APM Highlights">APM Highlights</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/fernglaeser.html" title="Ferngläser">Ferngläser</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/teleskope.html" title="Teleskope">Teleskope</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/sonnenbeobachtung.html" title="Sonnenbeobachtung">Sonnenbeobachtung</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/montierungen--stative.html" title="Montierungen &amp; Stative">Montierungen &amp; Stative</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/okulare.html" title="Okulare">Okulare</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/ccd-astrofotografie.html" title="CCD / Astrofotografie">CCD / Astrofotografie</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/optisches-zubehoer.html" title="Optisches Zubehör">Optisches Zubehör</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/mechanisches-zubehoer.html" title="Mechanisches Zubehör">Mechanisches Zubehör</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/sonstiges-zubehoer.html" title="Sonstiges Zubehör">Sonstiges Zubehör</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/kuppeln-sternwarten.html" title="Kuppeln Sternwarten">Kuppeln Sternwarten</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/stative.html" title="Stative">Stative</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/lagerliste.html" title="">Lagerliste</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/secondhand.html" title="">Secondhand</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/gebrauchte-zeiss-produkte.html" title="">gebrauchte Zeiss Produkte</a></li>
+	<li class="level1"><a href="http://www.apm-telescopes.de/de/oldtimer--antik.html" title="">Oldtimer &amp; Antik</a></li>
+</ul>
+    
+    		
+
+<ul id="categorymenu" class="categorymenu2">
+<li class="level1"><a href=""></a></li>
+</ul>
+    
+    <h2 class="boxmanufacturerheader">Hersteller</h2>
+
+
+
+<div class="boxbody">
+<form name="manuswitch">
+<select name="manuswitch2" onchange="javascript:document.location.href = selectWert(document.manuswitch.manuswitch2);">
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/akku-king.html'" value="http://www.apm-telescopes.de/de/akku-king.html">Akku-King</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/altair-astro.html'" value="http://www.apm-telescopes.de/de/altair-astro.html">Altair Astro</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Antares.html'" value="http://www.apm-telescopes.de/de/Antares.html">Antares</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/APM.html'" value="http://www.apm-telescopes.de/de/APM.html">APM</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/APM-LOMO-Apo-Refraktoren.html'" value="http://www.apm-telescopes.de/de/APM-LOMO-Apo-Refraktoren.html">APM - LOMO Apo-Refraktoren</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/APM-LZOS-Apo-Refraktoren.html'" value="http://www.apm-telescopes.de/de/APM-LZOS-Apo-Refraktoren.html">APM - LZOS Apos</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/APM-Prof-Telesk/Montier.html'" value="http://www.apm-telescopes.de/de/APM-Prof-Telesk/Montier.html">APM Prof. Telesk. / Montier.</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Riccardi.html'" value="http://www.apm-telescopes.de/de/Riccardi.html">APM-Riccardi</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/apm-tse.html'" value="http://www.apm-telescopes.de/de/apm-tse.html">APM-TSE</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/ASA.html'" value="http://www.apm-telescopes.de/de/ASA.html">ASA Astro Systeme Austria</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/astro-devices.html'" value="http://www.apm-telescopes.de/de/astro-devices.html">Astro Devices</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Astro-Physics.html'" value="http://www.apm-telescopes.de/de/Astro-Physics.html">Astro Physics</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/AstroGizmos.html'" value="http://www.apm-telescopes.de/de/AstroGizmos.html">AstroGizmos</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Astrolumina.html'" value="http://www.apm-telescopes.de/de/Astrolumina.html">Astrolumina</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Astronomik.html'" value="http://www.apm-telescopes.de/de/Astronomik.html">Astronomik</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/astronscientific.html'" value="http://www.apm-telescopes.de/de/astronscientific.html">Astronscientific</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Astroshell.html'" value="http://www.apm-telescopes.de/de/Astroshell.html">Astroshell</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/AstroTrac1.html'" value="http://www.apm-telescopes.de/de/AstroTrac1.html">AstroTrac</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/ATiK-Instuments.html'" value="http://www.apm-telescopes.de/de/ATiK-Instuments.html">ATiK Instuments</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Baader-Planetarium.html'" value="http://www.apm-telescopes.de/de/Baader-Planetarium.html">Baader Planetarium</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Basler.html'" value="http://www.apm-telescopes.de/de/Basler.html">Basler</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Berlebach1.html'" value="http://www.apm-telescopes.de/de/Berlebach1.html">Berlebach</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Brandon-Vernonscope.html'" value="http://www.apm-telescopes.de/de/Brandon-Vernonscope.html">Brandon Vernonscope</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Bresser.html'" value="http://www.apm-telescopes.de/de/Bresser.html">Bresser</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Buecher-.html'" value="http://www.apm-telescopes.de/de/Buecher-.html">Bücher </option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/BW-Optik.html'" value="http://www.apm-telescopes.de/de/BW-Optik.html">BW-Optik</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Celestron.html'" value="http://www.apm-telescopes.de/de/Celestron.html">Celestron</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/CORONADO.html'" value="http://www.apm-telescopes.de/de/CORONADO.html">CORONADO</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/DayStar.html'" value="http://www.apm-telescopes.de/de/DayStar.html">DayStar</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Dew-Not.html'" value="http://www.apm-telescopes.de/de/Dew-Not.html">Dew Not</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Docter.html'" value="http://www.apm-telescopes.de/de/Docter.html">Docter</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/euro-EMC-astro-division.html'" value="http://www.apm-telescopes.de/de/euro-EMC-astro-division.html">euro EMC astro division</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Explorer-Scientific1.html'" value="http://www.apm-telescopes.de/de/Explorer-Scientific1.html">Explore Scientific</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Farpoint.html'" value="http://www.apm-telescopes.de/de/Farpoint.html">Farpoint</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/FLI-Finger-Lake-Instruments.html'" value="http://www.apm-telescopes.de/de/FLI-Finger-Lake-Instruments.html">FLI Finger Lake Instruments</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Fujinon.html'" value="http://www.apm-telescopes.de/de/Fujinon.html">Fujinon</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Geoptik.html'" value="http://www.apm-telescopes.de/de/Geoptik.html">Geoptik</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/GSO-.html'" value="http://www.apm-telescopes.de/de/GSO-.html">GSO</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/gutekunst-optiksysteme.html'" value="http://www.apm-telescopes.de/de/gutekunst-optiksysteme.html">Gutekunst Optiksysteme</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Howie-Glatter.html'" value="http://www.apm-telescopes.de/de/Howie-Glatter.html">Howie Glatter</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Intes-Micro.html'" value="http://www.apm-telescopes.de/de/Intes-Micro.html">Intes Micro</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/iOptron.html'" value="http://www.apm-telescopes.de/de/iOptron.html">iOptron</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Kokusai-Kohki.html'" value="http://www.apm-telescopes.de/de/Kokusai-Kohki.html">Kokusai Kohki</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Lacerta1.html'" value="http://www.apm-telescopes.de/de/Lacerta1.html">Lacerta</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Leica.html'" value="http://www.apm-telescopes.de/de/Leica.html">Leica</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Losmandy.html'" value="http://www.apm-telescopes.de/de/Losmandy.html">Losmandy</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Explore-Scientific.html'" value="http://www.apm-telescopes.de/de/Explore-Scientific.html">Lunt Engineering</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/LuntSolarSystems.html'" value="http://www.apm-telescopes.de/de/LuntSolarSystems.html">Lunt Solar Systems</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/masuyama.html'" value="http://www.apm-telescopes.de/de/masuyama.html">Masuyama</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Meade.html'" value="http://www.apm-telescopes.de/de/Meade.html">Meade</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Meopta.html'" value="http://www.apm-telescopes.de/de/Meopta.html">Meopta</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/MoonLite.html'" value="http://www.apm-telescopes.de/de/MoonLite.html">MoonLite</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Moravian-Instruments.html'" value="http://www.apm-telescopes.de/de/Moravian-Instruments.html">Moravian Instruments</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Neuerer.html'" value="http://www.apm-telescopes.de/de/Neuerer.html">Neuerer</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Nikon.html'" value="http://www.apm-telescopes.de/de/Nikon.html">Nikon</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/officina-stellare.html'" value="http://www.apm-telescopes.de/de/officina-stellare.html">Officina Stellare</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Omegon.html'" value="http://www.apm-telescopes.de/de/Omegon.html">Omegon</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Optec/USA.html'" value="http://www.apm-telescopes.de/de/Optec/USA.html">Optec/USA</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Opticron.html'" value="http://www.apm-telescopes.de/de/Opticron.html">Opticron</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Orion-UK1.html'" value="http://www.apm-telescopes.de/de/Orion-UK1.html">Orion UK</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Orion/USA.html'" value="http://www.apm-telescopes.de/de/Orion/USA.html">Orion/USA</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Pentax.html'" value="http://www.apm-telescopes.de/de/Pentax.html">Pentax</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/pierro-astro.html'" value="http://www.apm-telescopes.de/de/pierro-astro.html">Pierro Astro</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/primalucelab.html'" value="http://www.apm-telescopes.de/de/primalucelab.html">PrimaLuceLab</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Questar.html'" value="http://www.apm-telescopes.de/de/Questar.html">Questar</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/shelyak-instruments.html'" value="http://www.apm-telescopes.de/de/shelyak-instruments.html">Shelyak Instruments</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/sirius-observatories.html'" value="http://www.apm-telescopes.de/de/sirius-observatories.html">Sirius Observatories</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Sky-Watcher.html'" value="http://www.apm-telescopes.de/de/Sky-Watcher.html">Sky-Watcher</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Solarscope/UK.html'" value="http://www.apm-telescopes.de/de/Solarscope/UK.html">Solarscope / UK</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Starlight-Instruments.html'" value="http://www.apm-telescopes.de/de/Starlight-Instruments.html">Starlight Instruments</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Steiner1.html'" value="http://www.apm-telescopes.de/de/Steiner1.html">Steiner</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Swarovski.html'" value="http://www.apm-telescopes.de/de/Swarovski.html">Swarovski</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Takahashi.html'" value="http://www.apm-telescopes.de/de/Takahashi.html">Takahashi</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/TAL.html'" value="http://www.apm-telescopes.de/de/TAL.html">TAL</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/TecnoSky.html'" value="http://www.apm-telescopes.de/de/TecnoSky.html">TecnoSky</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Tele-Optic.html'" value="http://www.apm-telescopes.de/de/Tele-Optic.html">Tele-Optic</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Telegizmos-.html'" value="http://www.apm-telescopes.de/de/Telegizmos-.html">Telegizmos </option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/The-Imaging-Source.html'" value="http://www.apm-telescopes.de/de/The-Imaging-Source.html">The Imaging Source</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/touptec.html'" value="http://www.apm-telescopes.de/de/touptec.html">ToupTec</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/TS.html'" value="http://www.apm-telescopes.de/de/TS.html">TS Optics</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Sirius-Observatories.html'" value="http://www.apm-telescopes.de/de/Sirius-Observatories.html">Universal</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Vixen.html'" value="http://www.apm-telescopes.de/de/Vixen.html">Vixen</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/WatchDesign.html'" value="http://www.apm-telescopes.de/de/WatchDesign.html">WatchDesign</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/William-Optics.html'" value="http://www.apm-telescopes.de/de/William-Optics.html">William Optics</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/Zambuto-Carl.html'" value="http://www.apm-telescopes.de/de/Zambuto-Carl.html">Zambuto Carl</option>
+<option onclick="javascript:document.location.href = 'http://www.apm-telescopes.de/de/zwo.html'" value="http://www.apm-telescopes.de/de/zwo.html">ZWO</option>
+</select>
+
+
+
+</form>
+</div>
+
+
+
+    
+<h2 class="categoryheader">Produktseiten</h2>	
+<ul id="categorymenu">
+<li class="level1"><a target="_blank" href="http://www.luntsolarsystems-europe.com/">Lunt Solar Systems</a></li>
+<li class="level1"><a target="_blank" href="http://www.professional-telescopes.net/">Professional Telescopes</a></li>
+<li class="level1"><a target="_blank" href="http://www.apm-apo.com/">APOS · LZOS Design</a></li>
+<!--<li class="level1"><a target="_blank" href="http://www.meadeshop.de/ludes/">MEADE</a></li>-->
+<li class="level1"><a target="_blank" href="http://www.apm-siriuskuppeln.de/">Sternwarten Kuppeln</a></li>
+<li class="level1"><a target="_blank" href="http://www.tse17.com/">Total Solar Eclipse 2017</a></li>
+</ul>
+    
+    
+
+
+		
+		
+
+  
+          
+       
+        
+   
+
+
+<h2 class="boxheader">Login / Anmeldung</h2>
+<div class="boxbody">
+<form name="create_account303" action="http://www.apm-telescopes.de/de/customer/login.html" method="post">
+<input type="hidden" name="action" value="login" id="action133">
+<input type="hidden" name="link_target" value="index" id="link_target79">
+
+E-Mail-Adresse:
+<input type="text" name="email" maxlength="50" style="width:150px;" id="email207">
+<br>
+Passwort:<br>
+<input type="password" name="password" maxlength="30" style="width:150px;" id="password471">
+<br>
+<input class="round" type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/login.png" alt="Anmelden">
+
+<br>
+<a href="http://www.apm-telescopes.de/de/customer/password_reset.html">Passwort vergessen?</a>
+
+</form>
+</div>
+
+
+
+
+<h2 class="boxheader">Software-Tipp: Aberator</h2>
+<div class="boxbody" style="text-align:justify;">
+<br>
+<a href="http://aberrator.astronomy.net/" target="_blank">Download für Windows-Systeme</a><br>
+<a href="http://www.mediafire.com/?fizpk24jrflt18e" target="_blank">Download für Mac OS-Systeme</a>
+</div>
+
+
+
+
+		</div>
+		
+	   
+		     <div id="content">	
+	
+	   
+	
+  
+  	
+	<div id="slider-wrapper" style="height:350px;">      
+        <div id="slider" class="nivoSlider" style="position: relative; height: 350px; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A1_apm_slider_gross_de.jpg); background-position: initial initial; background-repeat: no-repeat no-repeat;">
+
+        
+        
+	<a href="" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/2017-12-A3_apm_slider_gross_de.jpg" alt="" style="display: none;"></a>	<a href="" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/2017-12-A3_apm_slider_gross_de.jpg" alt="" style="display: none;"></a>	<a href="" title="" class="nivo-imageLink" style="display: block;"><img class="round" src="/wi_daten/slider2/2017-12-A1_apm_slider_gross_de.jpg" alt="" style="display: none;"></a>	<a href="" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg" alt="" style="display: none;"></a>	<a href="http://www.apm-telescopes.de/index.php?page=product&amp;info=3765" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/apm-152-1200-dt3495.jpg" alt="" style="display: none;"></a>	<a href="http://www.apm-telescopes.de/index.php?page=product&amp;info=9762" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/riccardi669.jpg" alt="" style="display: none;"></a>	<a href="http://www.apm-telescopes.de/de/teleskope/linsenteleskope-optik-tubus/apochromaten/apm-teleskop-super-ed-apo-astrograph-107-700-mm-3-auszug.html?info=3088" title="" class="nivo-imageLink" style="display: none;"><img class="round" src="/wi_daten/slider2/rahmen mit 107 APO.jpg" alt="" style="display: none;"></a>  
+
+
+
+
+	     <div class="nivo-caption" style="display: none; opacity: 0.8;"><p></p></div><div class="nivo-controlNav"><a class="nivo-control" rel="0">1</a><a class="nivo-control" rel="1">2</a><a class="nivo-control" rel="2">3</a><a class="nivo-control active" rel="3">4</a><a class="nivo-control" rel="4">5</a><a class="nivo-control" rel="5">6</a><a class="nivo-control" rel="6">7</a></div><div class="nivo-slice" style="left: 0px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); top: 0px; background-position: 0px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 62px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); bottom: 0px; background-position: -62px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 124px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); top: 0px; background-position: -124px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 186px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); bottom: 0px; background-position: -186px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 248px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); top: 0px; background-position: -248px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 310px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); bottom: 0px; background-position: -310px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 372px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); top: 0px; background-position: -372px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 434px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); bottom: 0px; background-position: -434px 0%; background-repeat: no-repeat no-repeat;"></div><div class="nivo-slice" style="left: 496px; width: 62px; height: 0px; opacity: 0; background-image: url(http://www.apm-telescopes.de/wi_daten/slider2/2017-12-A4_apm_slider_gross_de.jpg); top: 0px; background-position: -496px 0%; background-repeat: no-repeat no-repeat;"></div></div>
+        </div>
+
+                  
+    
+<div style="clear: both;"></div>
+              
+ 
+
+  <noscript>   
+  &lt;ul class='info_error'&gt; 
+ &lt;li class='infoError'&gt; Um eine korrekte Darstellung zu erhalten und alle Funktionen nutzen zu k&amp;ouml;nnen, aktivieren Sie bitte Javascript.&lt;/li&gt;
+ &lt;/ul&gt;  
+  </noscript>
+      
+
+
+<div class="text"></div>
+ <br>           
+ 
+
+     
+  
+      
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="clear:both;"></div>
+
+
+
+
+<div style="margin:0 0 0 0px;">
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/sonnenbeobachtung/optisches-zubehoer/herschelkeile/lunt-herschelkeil-sonnenprisma-1-1-4.html"><img src="http://www.apm-telescopes.de/media/images/thumb/LuntHerschel_1-25B.jpg" class="productImageBorder" alt="APM/Lunt - Herschelkeil / Sonnenprisma 1 1/4''" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/sonnenbeobachtung/optisches-zubehoer/herschelkeile/lunt-herschelkeil-sonnenprisma-1-1-4.html" title="APM/Lunt - Herschelkeil / Sonnenprisma 1 1/4" ''="">APM/Lunt - Herschelkeil / Sonnenprisma 1 ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: 0558211OF<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 149,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/sonnenbeobachtung/optisches-zubehoer/herschelkeile/lunt-herschelkeil-sonnenprisma-1-1-4.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product166" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action436">
+
+		<input type="hidden" name="product" value="3177">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitspiegel-schnellverschluss-99--di-elektrischer-verspiegelung.html"><img src="http://www.apm-telescopes.de/media/images/thumb/apmspiegblau3.jpg" class="productImageBorder" alt="APM 2-Zoll-Zenitspiegel  mit Schnellverschluss und 99 % di-elektrischer  Verspiegelung" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitspiegel-schnellverschluss-99--di-elektrischer-verspiegelung.html" title="APM 2-Zoll-Zenitspiegel  mit Schnellverschluss und 99 % di-elektrischer  Verspiegelung">APM 2-Zoll-Zenitspiegel  mit ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-2-diag-DX-FL<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 145,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitspiegel-schnellverschluss-99--di-elektrischer-verspiegelung.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product378" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action171">
+
+		<input type="hidden" name="product" value="361361">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/fernglaeser/fernglaeser-90mm-oeffnung/apm-82-mm-45-ed-apo-fernglas-125-wechselokularaufnahme2.html"><img src="http://www.apm-telescopes.de/media/images/thumb/APM-82-SD-Bino45.jpg" class="productImageBorder" alt="APM 82 mm 45° ED-Apo-Fernglas mit 1,25" wechselokularaufnahme"="" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/fernglaeser/fernglaeser-90mm-oeffnung/apm-82-mm-45-ed-apo-fernglas-125-wechselokularaufnahme2.html" title="APM 82 mm 45° ED-Apo-Fernglas mit 1,25&quot; Wechselokularaufnahme">APM 82 mm 45° ED-Apo-Fernglas mit 1,25" ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-82-SD-Bino45<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 2.229,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/fernglaeser/fernglaeser-90mm-oeffnung/apm-82-mm-45-ed-apo-fernglas-125-wechselokularaufnahme2.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product281" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action221">
+
+		<input type="hidden" name="product" value="361358">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/fernglaeser/fernglas-zubehoer/apm-gabelmontierung-amt-encoder-nexus-controller-grossfernglaeser.html"><img src="http://www.apm-telescopes.de/media/images/thumb/IMG_0943.jpg" class="productImageBorder" alt="APM Gabelmontierung mit AMT Encoder und Nexus Controller- für Großferngläser" width="100" height="75"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/fernglaeser/fernglas-zubehoer/apm-gabelmontierung-amt-encoder-nexus-controller-grossfernglaeser.html" title="APM Gabelmontierung mit AMT Encoder und Nexus Controller- für Großferngläser">APM Gabelmontierung mit AMT Encoder und ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APMGabel-AMT-Nexus<br>Lieferzeit:
+
+    
+      3-7 Tage
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 1.995,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/fernglaeser/fernglas-zubehoer/apm-gabelmontierung-amt-encoder-nexus-controller-grossfernglaeser.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product270" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action291">
+
+		<input type="hidden" name="product" value="361688">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-60-mm-deluxe-sucher.html"><img src="http://www.apm-telescopes.de/media/images/thumb/APM-60-GUIDE.jpg" class="productImageBorder" alt="APM Image Master Mini Leitrohr 60 mm - Deluxe Sucher" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-60-mm-deluxe-sucher.html" title="APM Image Master Mini Leitrohr 60 mm - Deluxe Sucher">APM Image Master Mini Leitrohr 60 mm - ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-60-GUIDE<br>Lieferzeit:
+
+    
+      1-4 Tage
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 175,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-60-mm-deluxe-sucher.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product66" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action344">
+
+		<input type="hidden" name="product" value="9957">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-50-mm-deluxe-sucher.html"><img src="http://www.apm-telescopes.de/media/images/thumb/APM-50-GUIDE.jpg" class="productImageBorder" alt="APM Image Master Mini Leitrohr 50 mm - Deluxe Sucher" width="100" height="58"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-50-mm-deluxe-sucher.html" title="APM Image Master Mini Leitrohr 50 mm - Deluxe Sucher">APM Image Master Mini Leitrohr 50 mm - ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-50-GUIDE<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 129,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/teleskope/leitrohre/apm-image-master-mini-leitrohr-50-mm-deluxe-sucher.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product17" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action19">
+
+		<input type="hidden" name="product" value="9956">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/fernglaeser/grossfernglaeser-ab-100mm-oeffnung/apm-120-mm-45-sd-apo-fernglas-125-wechselokularaufnahme.html"><img src="http://www.apm-telescopes.de/media/images/thumb/120-45side.jpg" class="productImageBorder" alt="APM 120 mm 45° SD-Apo Fernglas mit 1,25" wechselokularaufnahme"="" width="100" height="66"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/fernglaeser/grossfernglaeser-ab-100mm-oeffnung/apm-120-mm-45-sd-apo-fernglas-125-wechselokularaufnahme.html" title="APM 120 mm 45° SD-Apo Fernglas mit 1,25&quot; Wechselokularaufnahme">APM 120 mm 45° SD-Apo Fernglas mit 1,25" ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-SD-120-Bino45<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 4.299,00 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/fernglaeser/grossfernglaeser-ab-100mm-oeffnung/apm-120-mm-45-sd-apo-fernglas-125-wechselokularaufnahme.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product202" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action63">
+
+		<input type="hidden" name="product" value="306999">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitprisma-schnellverschluss-ultrabreitband-verguetung.html"><img src="http://www.apm-telescopes.de/media/images/thumb/apmspiegweiss1.jpg" class="productImageBorder" alt="APM 2 Zoll Zenitprisma mit Schnellverschluss und Ultrabreitband-Vergütung" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitprisma-schnellverschluss-ultrabreitband-verguetung.html" title="APM 2 Zoll Zenitprisma mit Schnellverschluss und Ultrabreitband-Vergütung">APM 2 Zoll Zenitprisma mit ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-2-diag-PR-FL<br>Lieferzeit:
+
+    
+      auf Lager
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"> 195,01 EUR</div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/optisches-zubehoer/zenitspiegel-prismen/apm-2-zoll-zenitprisma-schnellverschluss-ultrabreitband-verguetung.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product205" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action426">
+
+		<input type="hidden" name="product" value="268346">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+<div class="productPreviewBox2">
+
+
+
+
+
+    <div class="productPreviewImage2"><a href="http://www.apm-telescopes.de/de/teleskope/linsenteleskope-optik-tubus/apochromaten/apm-teleskop-super-ed-apo-astrograph-107-700-mm-3-auszug.html"><img src="http://www.apm-telescopes.de/media/images/thumb/APM-107-700-T-3ZTA-20.jpg" class="productImageBorder" alt="APM - Teleskop Super ED Apo Astrograph 107/700 mm - 3" auszug"="" width="100" height="100"></a></div>
+<div class="productPreviewContent2">
+
+  <div class="title">
+
+    <a href="http://www.apm-telescopes.de/de/teleskope/linsenteleskope-optik-tubus/apochromaten/apm-teleskop-super-ed-apo-astrograph-107-700-mm-3-auszug.html" title="APM - Teleskop Super ED Apo Astrograph 107/700 mm - 3&quot; Auszug">APM - Teleskop Super ED Apo Astrograph ...</a>
+
+</div>		
+
+		<div class="beschreibung2"></div>     
+
+
+
+
+
+		<div class="artikelnummer2">Artikelnr.: APM-107-700-T-3ZTA<br>Lieferzeit:
+
+    
+      1-2 Wochen
+
+      
+    </div>
+
+
+
+ 
+
+		
+		<div class="price2"><span class="productOldPrice"> 
+<!--Statt-->  2.149,00 EUR
+</span>
+      &nbsp;&nbsp;&nbsp;
+<!--Nur-->  1.999,00 EUR
+<br>
+<!--
+Sie sparen 7 %
+    --></div>
+
+		<div class="taxandshippinginfo2"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html?coID=1" target="_blank" rel="nofollow">inkl. 19 % MwSt.<br> zzgl. Versandkosten</a></div>     
+
+		
+		
+		
+
+    	
+
+		 
+
+		
+
+        <div class="addtobasketlisting2">
+
+        
+
+        <a class="details2" href="http://www.apm-telescopes.de/de/teleskope/linsenteleskope-optik-tubus/apochromaten/apm-teleskop-super-ed-apo-astrograph-107-700-mm-3-auszug.html"><img style="float:left;" src="templates/apm2011_2/img/buttons/de/button_details_start.png" alt=""></a>
+
+        
+		<form name="product340" action="http://www.apm-telescopes.de/de/index.html" method="post">
+
+		<input type="hidden" name="action" value="add_product" id="action311">
+
+		<input type="hidden" name="product" value="3088">
+
+		<input type="hidden" name="qty" value="1" style="width:50px;">
+
+    		<input type="image" src="http://www.apm-telescopes.de/templates/apm2011_2/img/buttons/de/button_buy_now_start.png" alt="In den Warenkorb">
+
+            </form>
+
+		
+		</div>
+
+	 </div>	
+
+<div class="productPreviewFooter2"></div>
+
+	
+
+</div>
+
+
+
+
+ <div style="clear:both;"></div>
+
+</div>
+
+
+
+
+
+
+
+
+    
+ <!--   --> 
+
+		
+		</div>
+     
+
+	
+
+<div id="rightcol">
+
+
+<!--
+	<h2 class="boxmanufacturerheader">Sonderangebote</h2>
+	<div class="boxbody">
+	
+		<a href="http://www.apm-telescopes.de/index.php?page=product&info=9964"><img src="http://www.apm-telescopes.de/wi_daten/mini_slider/apm_slider_klein_fernglas_v3.jpg" border=0></A>	</div>	
+		
+	
+
+
+
+
+
+
+
+-->
+
+		
+	<h2 class="boxmanufacturerheader">APM Adventskalender</h2>
+	<div class="boxbody">
+	
+	<div id="kcontent"><div style="float:left"><img src="./wi_daten/kalender/1_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/2_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/3_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/4_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/5_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/6_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/7_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/8_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/9_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/10_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/11_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/12_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/13_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/14_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/15_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/16_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/17_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/18_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/19_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/20_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/21_open.gif" border="0" onclick="fader()"></div><div style="float:left"><img src="./wi_daten/kalender/22_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/23_closed.gif" border="0"></div><div style="float:left"><img src="./wi_daten/kalender/24_closed.gif" border="0"></div></div>
+	 <a style="font-weight:bold" href="javascript:kalenderhinweis()">Informationen zum Weihnachtskalender</a>
+	<div style="clear:both;"></div>
+	<div id="test1"></div>
+	</div>	
+	<script>
+	function kalenderhinweis()
+		{
+		window1=window.open("http://www.apm-telescopes.de/wi_daten/kalender_hinweis.html","Detail","width=700,height=550,left=180,top=100,scrollbars=YES");
+		window1.focus();
+		location.href="http://www.apm-telescopes.de/index.php?page=product&info=1812";
+		}
+	</script>
+	
+
+
+
+
+
+<script>
+
+
+
+function createRequestObject() {
+    var ro;
+    var browser = navigator.appName;
+    if(browser == "Microsoft Internet Explorer"){
+        ro = new ActiveXObject("Microsoft.XMLHTTP");
+    }else{
+        ro = new XMLHttpRequest();
+    }
+    return ro;
+}
+
+var http = createRequestObject();
+
+function handleResponse() 
+	{
+    if(http.readyState == 4){
+        var response = http.responseText;
+        //document.getElementById('test1').innerHTML=response
+    }
+	}
+    
+function fader()
+{
+	
+		jQuery( "#kcontent" ).fadeOut( "7000", function() {
+		// Animation complete
+		
+		document.getElementById("kcontent").innerHTML="<a href=\"javascript:kalenderhinweis()\"><img src=\"http://www.apm-telescopes.de/wi_daten/kalender/products/21_apm_slider_klein_de.jpg\"></A>";
+		jQuery( "#kcontent" ).fadeIn( "7000", function() {
+		// Animation complete
+		
+		http.open('GET', 'http://www.apm-telescopes.de/index.php?action=xmas');
+    	http.onreadystatechange = handleResponse;
+    	http.send(null);
+    
+		});
+		});
+		
+}
+
+</script>
+
+
+
+
+
+<!--
+<h2 class="boxheader" style="margin-top:0px;">Merkurtransit 09.Mai</h2>
+<div class="boxbody" style='text-align:center'>
+<a href="http://sternwarte-peterberg.de/livestream/" target=_blank><img src="./wi_daten/transit.jpg"></A>
+
+</div>
+-->
+
+
+<h2 class="boxmanufacturerheader">Zahlungsarten</h2>
+<div class="boxbody">
+<!-- PayPal Logo --><table border="0" width="100%" cellpadding="10" cellspacing="0" align="center"><tbody><tr><td align="center"></td></tr>
+<tr><td align="center"><a href="index.php?page=content&amp;coID=28"><img src="https://www.paypal.com/de_DE/DE/i/logo/lockbox_150x47.gif" border="0" alt="PayPal-Bezahlmethoden-Logo"></a></td></tr></tbody></table><!-- PayPal Logo -->
+
+
+<br>       <center>
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/sofortueberweisung.jpg" alt="Sofortueberweisung">
+</a>
+<br><br>
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/kreditkarten.jpg" alt="Kreditkarten" width="110">
+</a>
+
+   <!--                                
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/ideal.jpg" alt="Ideal" />
+</a>
+                     &nbsp;&nbsp;&nbsp;
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/mistercash.jpg" alt="mistercash" />
+</a>
+   &nbsp;&nbsp;&nbsp;
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/kbc.jpg" alt="kbc" />
+</a>
+<br /><br />
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/ing.jpg" alt="ing" />
+</a>    <br /><br />
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/belfius.jpg" alt="belfius" />
+</a>-->
+
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/Logo_Ratepay_Ratenzahlung.png" style="width:110px;padding-top:10px;" alt="ratepay">
+</a>
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/Logo_Ratepay_Rechnung.png" style="width:110px;padding-top:10px;" alt="ratepay">
+</a>
+
+<a href="index.php?page=content&amp;coID=28">
+<img src="/media/images/Logo_Ratepay_Lastschrift.png" style="width:110px;padding-top:10px;" alt="ratepay">
+</a> 
+
+
+
+
+</center>
+
+
+
+
+
+</div>
+
+<h2 class="boxheader">Sicher einkaufen bei APM!</h2>
+<div class="boxbody" style="text-align:center">
+
+<a onclick="window.open('', 'popup', 'width=780,height=600,scrollbars=no, toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,top=10,left=10')" href="https://www.internet-siegel.net/siegel/info.php?webkey=2b89a4404e094686e92be4c6244a7985" target="popup"><img alt="http://www.internetsiegel.net" src="https://www.internet-siegel.net/siegel/bild.php?webkey=2b89a4404e094686e92be4c6244a7985" border="0" \=""></a>
+
+
+</div>
+
+
+
+            
+	<h2 class="categoryheader">Informationen</h2>	
+		
+
+<ul id="categorymenu">
+<li class="level1"><a href="http://www.apm-telescopes.de/de/Ladenlokal.html">Ladenlokal</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/Secondhand1.html">BLOG</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/APM-Firmengeschichte.html">APM Firmengeschichte</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html">Liefer- und Versandkosten</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/sitemap.html">Sitemap</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/forum.html">Interessante Links</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/Partner.html">Internationale Partner</a></li>
+<li class="level1"><a href="http://www.apm-telescopes.de/de/eBay.html">eBay</a></li>
+</ul>
+
+<h2 class="boxheader"> Kontakt</h2>
+<div class="boxbody">
+<b>APM Telescopes</b><br>
+<b>Service &amp; Logistik Center</b><br>
+Goebenstrasse 35<br>
+66117 Saarbruecken<br>
+GERMANY<br><br>
+
+
+Phone: +49- 681- 954 303 2-0<br>
+Fax: +49 -681- 954 303 2-9<br>
+E-Mail: <a href="mailto:info@apm-telescopes.de">info@apm-telescopes.de</a>
+<br><br>
+<a href="http://www.apm-telescopes.de/index.php?page=content&amp;coID=6">»  Kontaktformular</a><br>
+<a href="http://www.apm-telescopes.de/index.php?page=content&amp;coID=17">»  Anfahrt</a>  <br><br>
+<b> Öffnungszeiten</b><br><br>
+Montag - Freitag:<br>
+9:00 Uhr - 17:00 Uhr<br><br>
+Donnerstag: <br>9:00 Uhr - 18:00 Uhr
+<br><br>
+Samstag: <br>
+nach Vereinbarung. 
+<br><br>
+
+
+</div>
+
+</div>
+
+<div style="clear:both;height:0px;"></div>
+
+
+</div> 
+
+</div>
+
+
+<div id="footer-bar">
+<div style="margin:0 auto; width:980px;">
+
+<div id="footer1">
+
+
+<a href="http://www.apm-telescopes.de/de/Liefer-und-Versandkosten.html">Liefer- und Versandkosten</a>
+<a href="http://www.apm-telescopes.de/de/Zahlungsarten.html">Zahlungsarten</a>
+<a href="http://www.apm-telescopes.de/de/Privatsphaere-und-Datenschutz.html">Privatsphäre und Datenschutz</a>
+<a href="http://www.apm-telescopes.de/de/Unsere-AGB.html">Unsere AGB</a>
+<a href="http://www.apm-telescopes.de/de/Widerrufsrecht.html">Widerrufsrecht</a>
+<a href="http://www.apm-telescopes.de/de/Altbatterie-Entsorgung-.html">Altbatterie-Entsorgung</a>
+<a href="http://www.apm-telescopes.de/de/Kontakt.html">Kontakt</a>
+<a href="http://www.apm-telescopes.de/de/Impressum.html">Impressum</a>
+<a href="http://www.apm-telescopes.de/de/Anfahrt.html">Anfahrt</a>
+</div>
+
+<!--
+<div id="footer2">
+<b>APM Telescopes</b><br />
+Poststrasse 79<br />
+667800 Rehlingen<br />
+GERMANY
+<br /><br />
+Telefon +49(0) 6835 - 923 949-0<br />
+Telefax +49(0) 6835 - 923 949-9<br />
+eMail <a style="background:none;padding:0;" href="mailto:info@apm-telescopes.de">info@apm-telescopes.de</a>
+</div>
+
+ 
+<div id="footer3">
+
+<b>Ladenöffnungszeiten:</b><br />
+Montag - Freitag<br />9:00 - 18:00 Uhr<br />
+Samstag<br />10:00 Uhr - 14:00 Uhr
+
+</div>
+
+-->
+ 
+<div id="footer3">
+
+<!--<div style="">
+<b>vCard:</b><br />                                         
+<img width=150 src="/media/images/apmvcard.png" />
+<br /><a target="_blank" href="http://itunes.apple.com/de/app/i-nigma-4-qr-datamatrix-barcode/id388923203?mt=8">Barcode Reader</a>
+</div>
+-->
+
+
+ </div> 
+     
+<div style="clear:both;"></div>
+
+
+
+
+
+
+  <div class="copyright">xt:Commerce 4.1 © 2017 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce</a></div> 
+  <center>techn. Betreuung  <a href="http://www.winges.de" target="_blank" title="Winges EDV Services">Winges EDV Services</a><br><br></center>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-21520224-1");
+pageTracker._initData();
+_gat._anonymizeIp();
+pageTracker._trackPageview();
+</script>
+    
+  
+  </div>
+  </div>
+
+<script type="text/javascript" src="http://www.apm-telescopes.de/wi_daten/produktmanager.js"></script>
+
+
+
+<script type="text/javascript" src="http://www.apm-telescopes.de/wi_daten/popup.js"></script>
+<link rel="stylesheet" href="http://www.apm-telescopes.de/wi_daten/popup.css" type="text/css">
+
+<div>
+<div id="popupContact" style="width:820px;height:590px;text-align:center;color:#244061;font-size:17px">
+
+
+
+<!--
+<img src="./wi_daten/Weihnachtskarte_de.jpg">-->
+
+</div>
+<div id="backgroundPopup"></div> 
+</div>
+
+<!--<script language="JavaScript">popupstart();</script>-->
+
+
+
+
+
+
+
+<!--<script type="text/javascript" src="http://www.apm-telescopes.de/wi_daten/popup.js"></script>
+<link rel="stylesheet" href="http://www.apm-telescopes.de/wi_daten/popup.css" type="text/css" />
+
+<div>
+	<div id="popupContact" style="text-align:center;color:#244061;font-size:17px">
+
+	<img src="./wi_daten/popup.jpg">
+	</div>
+
+<div id="backgroundPopup"></div> 
+</div>
+
+
+<script language="JavaScript">popupstart();</script>
+-->
+
+
+
+	
+
+
+
+
+
+
+<div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;"><a class="highslide-loading" title="Klick zum Abbrechen" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;">Lade...</a><div style="display: none;"></div><div class="highslide-viewport highslide-viewport-size" style="padding: 0px; border: none; margin: 0px; visibility: hidden;"></div><table cellspacing="0" style="padding: 0px; border: none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;"><tbody style="padding: 0px; border: none; margin: 0px;"><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: 0px 0px; background-repeat: initial initial;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: 0px -52px; background-repeat: initial initial;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: -26px 0px; background-repeat: initial initial;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: 0px -104px; background-repeat: initial initial;"></td><td class="custom highslide-outline" style="padding: 0px; border: none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: -26px -104px; background-repeat: initial initial;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: 0px -26px; background-repeat: initial initial;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: 0px -78px; background-repeat: initial initial;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background-image: url(http://www.apm-telescopes.de/xtFramework/library/highslide/graphics/outlines/custom.png); height: 26px; width: 26px; background-position: -26px -26px; background-repeat: initial initial;"></td></tr></tbody></table><img src="/xtFramework/library/highslide/graphics/outlines/custom.png" style="padding: 0px; border: none; margin: 0px; position: absolute; top: -9999px;"></div></body></html>

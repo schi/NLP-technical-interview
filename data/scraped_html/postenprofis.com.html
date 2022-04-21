@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html dir="ltr" lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<!--
+	This OnlineStore is brought to you by XT-Commerce, Community made shopping
+	XTC is a free open source e-Commerce System
+	created by Mario Zanier & Guido Winger and licensed under GNU/GPL.
+	Information and contribution at http://www.xt-commerce.com
+-->
+<meta name="generator" content="(c) by xt:Commerce v3.0.4 SP2.1 , http://www.xt-commerce.com">
+
+<title>Trendshop Remscheid</title> 
+
+<meta http-equiv="content-language" content="de"> 
+<meta http-equiv="cache-control" content="no-cache"> 
+<meta name="keywords" content="Trendshop, Remscheid, aqua clean, waescheduft, microban, schneidebrett, Mikrofaserdecken"> 
+<meta name="description" content="TRENDSHOP Remscheid, Reinigungsbedarf &amp; viele weitere nÃ¼tzliche Helfer"> 
+<meta name="robots" content="index,follow">
+<meta name="language" content="de">
+<meta name="author" content="Andre Link">
+<meta name="publisher" content="Andre Link">
+<meta name="company" content="Trendshop Ltd">
+<meta name="page-topic" content="shopping, katalog">
+<meta name="reply-to" content="webmaster@postenprofis.com">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="7">
+<meta name="GoogleBot" content="noOdp">
+<base href="https://www.postenprofis.com/">
+<link rel="stylesheet" type="text/css" href="templates/i24-css-red-SEO/stylesheet.css">
+<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.lyon4aDFbFk.O/m=auth/exm=page,plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w/cb=gapi.loaded_1" async=""></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.lyon4aDFbFk.O/m=page,plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script id="sessionfix" type="text/javascript" src="https://payments.amazon.de/gp/widgets/sessionstabilizer"></script><script type="text/javascript"><!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+//--></script>
+<script type="text/javascript"><!--
+
+  getStyle: function(element, style) {
+    element = $(element);
+    var value = element.style[style.camelize()];
+    if (!value) {
+      if (document.defaultView && document.defaultView.getComputedStyle) {
+        var css = document.defaultView.getComputedStyle(element, null);
+        value = css ? css.getPropertyValue(style) : null;
+      } else if (element.currentStyle) {
+        value = element.currentStyle[style.camelize()];
+      }
+    }
+  }
+
+
+//--></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><link rel="stylesheet" href="templates/i24-css-red-SEO/amazon-checkout.css" type="text/css"><script type="text/javascript" src="AmazonAdvancedPayment/js/static.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.buyProductWithAmazonButton').click(function(e){
+        e.preventDefault();
+        var form = $(this).closest('form');
+        var url = form.attr('action');
+        var t = url.split('?');
+        var qs = '';
+        if(t[1]){
+            qs = t[1];
+        }
+        var baseUrl = 'https://www.postenprofis.com/checkout_amazon_handler.php';
+        baseUrl = baseUrl.replace('https:', '').replace('http:', '');
+        if(qs){
+            var connector = (baseUrl.indexOf('?')==-1?'?':'&');
+        }
+        $(this).replaceWith('<img src="https://images-na.ssl-images-amazon.com/images/G/01/cba/images/global/Loading._V192259297_.gif" />');
+        $.post(baseUrl+connector+qs, form.serialize(), function(){
+            $('#payWithAmazonDiv > img').click();
+        })
+    });
+    $('#logoff_link, a[href*="logoff.php"]').click(function() {
+		amazonLogout();
+	});
+    });
+
+
+function initAmazon(){
+    var amazonOrderReferenceId;
+
+
+            //PAY ONLY
+ new OffAmazonPayments.Widgets.Button ({
+   sellerId: 'A2Z2HL2WICJUER',
+   buttonSettings: {color:'orange', size:'medium'},
+      onSignIn: function(orderReference) {
+     amazonOrderReferenceId = orderReference.getAmazonOrderReferenceId();
+
+    $('#payWithAmazonDiv').html('<img src="https://images-na.ssl-images-amazon.com/images/G/01/cba/images/global/Loading._V192259297_.gif" /> Bitte warten Sie, Sie werden gleich weitergeleitet');
+    $.ajax({
+            type: 'GET',
+            url: 'https://www.postenprofis.com/checkout_amazon_handler.php',
+            data: 'handleraction=setsession&amazon_id=' + amazonOrderReferenceId,
+            success: function(htmlcontent){
+               window.location = 'https://www.postenprofis.com/checkout_amazon.php';
+            }
+    });
+   },
+   onError: function(error) {
+    // your error handling code
+   }
+ }).bind("payWithAmazonDiv");
+
+  if($('#payWithAmazonDiv_Top').length > 0){
+
+  new OffAmazonPayments.Widgets.Button ({
+   sellerId: 'A2Z2HL2WICJUER',
+   buttonSettings: {color:'orange', size:'medium'},
+      onSignIn: function(orderReference) {
+     amazonOrderReferenceId = orderReference.getAmazonOrderReferenceId();
+
+    $('#payWithAmazonDiv_Top').html('<img src="https://images-na.ssl-images-amazon.com/images/G/01/cba/images/global/Loading._V192259297_.gif" /> Bitte warten Sie, Sie werden gleich weitergeleitet');
+    $.ajax({
+            type: 'GET',
+            url: 'https://www.postenprofis.com/checkout_amazon_handler.php',
+            data: 'handleraction=setsession&amazon_id=' + amazonOrderReferenceId,
+            success: function(htmlcontent){
+               window.location = 'https://www.postenprofis.com/checkout_amazon.php';
+            }
+    });
+   },
+   onError: function(error) {
+    // your error handling code
+   }
+ }).bind("payWithAmazonDiv_Top");
+
+
+ }
+
+
+ if($('#amazon_checkout_button_cart').length > 0){
+
+  new OffAmazonPayments.Widgets.Button ({
+   sellerId: 'A2Z2HL2WICJUER',
+   buttonSettings: {color:'orange', size:'medium'},
+      onSignIn: function(orderReference) {
+     amazonOrderReferenceId = orderReference.getAmazonOrderReferenceId();
+
+    $('#amazon_checkout_button_cart').html('<img src="https://images-na.ssl-images-amazon.com/images/G/01/cba/images/global/Loading._V192259297_.gif" /> Bitte warten Sie, Sie werden gleich weitergeleitet');
+    $.ajax({
+            type: 'GET',
+            url: 'https://www.postenprofis.com/checkout_amazon_handler.php',
+            data: 'handleraction=setsession&amazon_id=' + amazonOrderReferenceId,
+            success: function(htmlcontent){
+               window.location = 'https://www.postenprofis.com/checkout_amazon.php';
+            }
+    });
+   },
+   onError: function(error) {
+    // your error handling code
+   }
+ }).bind("amazon_checkout_button_cart");
+
+
+ }
+}
+</script>
+<script type="text/javascript" src="https://static-eu.payments-amazon.com/OffAmazonPayments/de/js/Widgets.js?sellerId=A2Z2HL2WICJUER"></script><style type="text/css"> .auorg-widget a.auorg-link, .auorg-widget a.auorg-link span, .auorg-widget a.auorg-link:hover, .auorg-widget a.auorg-link:hover span, .auorg-widget a.auorg-link:visited, .auorg-widget a.auorg-link:visited span, .auorg-widget a.auorg-link:link,. .auorg-widget a.auorg-link:link span { text-decoration: none;color:#000;float:none;border:none;margin:0;padding:0; font-family:Arial ;font-weight:normal;font-style:normal ;font-size: 13px ; line-height: 100% ; } .auorg-widget img { clear:none; float:none; border:none; margin:0; padding:0; background:transparent; max-height:none; max-width:none; min-height:0; min-width:0; display: inline; } .auorg-widget { letter-spacing: normal !important; } .auorg-widget div { height:auto; } .auorg-widget span { vertical-align: baseline !important; } @media (max-Width: 0px) { #auorg-responsive-top-widget { display: block !important; } #auorg-bg { display: none !important; } } </style><link rel="stylesheet" type="text/css" href="https://images-eu.ssl-images-amazon.com/images/G/01/EP/offAmazonPayments/common/de/prod/css/donations.css"></head>
+<body>
+<!--
+*****************************************************************
+Template Name: i24-css-red-seo
+Version:     1.0
+
+Description: Template für XT-Commerce V3.04sp2.1
+
+Author:      Oliver Förster
+Contact:     http://www.install24.com
+Es ist untersagt den Copyrighthinweis im Template zu entferner.
+*****************************************************************
+-->
+
+
+<div id="wrap">
+
+	<div id="content_wrap">
+		<div><img src="templates/i24-css-red-SEO/img/outer-top.jpg" alt="Trendshop Remscheid"></div>
+					<div id="contentbereich">
+			<div class="position">
+
+
+
+<h2></h2>
+
+<p>&nbsp;</p>
+<p style="font-family: Arial; text-align: left;">&nbsp;</p>
+<p style="font-family: Arial; text-align: left;"><a href="https://www.postenprofis.com/Garantiebedingungen-_-15.html"><img alt="Microfaser, Reinigungsmittel und Pflegemittel günstig kaufen" src="/images/logo-startseite.jpg"><br>
+</a></p>
+<p><br>
+<a href="https://www.postenprofis.com/Waescheduft---85.html"><input type="image" alt="Magic Bamboo Geschirrtücher" src="/images/werb-start-bamboo-sg.jpg"></a>&nbsp;&nbsp; <a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz---262.html"><input type="image" src="/images/werbe-start-alfaras.jpg" alt="Microfaser TS24Direkt Kristall-Glanz"></a></p>
+<h1>TRENDSHOP Remscheid, Reinigungsbedarf &amp; viele weitere nützliche Helfer</h1>
+<h3>&nbsp;</h3>
+<p><span style="font-family: Arial;"><br>
+Reinigen und Pflegen mit guten Produkten von Bambus-Kristall, Wäscheduft, Genius, </span><span style="font-family: Arial;"><span style="font-family: Arial;">Aqua Clean</span> und vielem mehr - Unser großer Onlineshop ist Ihr Partner für professionelle Reiniger, Reinigungsprodukte, Microfaser, Pflegemittel &amp; Haushaltshelfer bekannt aus der TV-Werbung, damit es bei Ihnen auch bald heisst "</span><span style="font-weight: bold; font-family: Arial;">Sauber macht glücklich</span><span style="font-family: Arial;">"</span>. <span style="font-family: Arial;">Zusätzlich haben wir zwischenzeitlich unser Sortiment mit dem Bereich Fahnen &amp; Flaggen (Fanartikel) und um Duftöle, Keramik Pfannen Premium Plus und Räucherstäbchen (Küche/Haushalt/Wohnen) sowie vielen weiteren Helfern für Ihr Zuhause erweitert. Wir sind immer auf der Suche nach innovativen und guten Produkt rund um Ihr Zuhause.</span></p>
+<p style="font-family: Arial;"><br style="font-family: Arial;">
+Ihre Vorteile bei uns im Online Versand: Top Qualität - freundlicher Service - Aqua Clean <a href="https://www.postenprofis.com/Garantiebedingungen-_-15.html">Zufriedenheitsgarantie</a> - Reinigungsmittel für fast jedes Anwendungsgebiet - Haushaltshelfer, die vieles einfacher machen - im Grundsatz einfach alles aus einer Hand zum fairen Preis <br>
+<br>
+Wir hoffen Ihnen mit unserem ausgewählten Produktsortiment, wie z.B. die Produkte zum Reinigen und Pflegen von Aqua-Clean, Wäscheduft, <span style="font-weight: bold;">Bambus-Kristall</span>, Pastaclean und den tollen Haushaltshelfern, den Alltag etwas zu erleichtern und denken das auch die vielen anderen innovativen Produkte das versprechen, was man von ihnen erwartet, in diesem Sinne wünschen wir Ihnen einen angenehmen Aufenthalt in unserem Online Shop. <br>
+<br>
+Sie erhalten in unserem Shop alle Produkte zum günstigen Preis, jedes Produkt wird (insbesondere die Reiniger, Microfaser und Pflegemittel), bevor wir es in den Shop aufnehmen, erst einmal auf Herz und Nieren getestet, so das Sie sich darauf verlassen können eine gute Qualität zu erhalten. Für das neue Bambus-Kristall Tücher Set haben wir mittlerweile eine eigene Kategorie angelegt, diese Tücher sind in unseren externen Produkttests (über 800 verschiedene Tester) als durchschnittlich "SEHR GUT" bewertet worden. Zu den kompletten Testergebnissen dieser und weiterer Produkte gelangt man hier: <a target="_blank" href="http://www.facebook.com/Postenprofis.com.Produkttester">Postenprofis.com Produkttester</a><br>
+<br>
+Die Versandkosten betragen in Deutschland pauschal 4,95 € und durch die positive Resonanz auf unsere Aktion (jetzt nochmal für kurze Zeit verlängert) ab 33,33 € Bestellwert in Deutschland Versandkostenfrei.<br>
+<br>
+<span style="font-weight: bold;">Aqua Clean</span>, das Orginal mit dem Seepferdchen. Unsere Fenstertücher eine besondere Empfehlung für streifenfreies Fensterputzen, seid über 1 Jahr sind die <span style="font-weight: bold;">Bambus-Kristall</span>, Zauberglanz und Koi Linien unsere Top-Seller, dazu wir haben bisher sehr viele zufriedene Kunden. Reinigen und Pflegen leicht gemacht mit guten Helfern für Haus, Freizeit, Auto und Garten.<br>
+<br>
+<span style="font-weight: bold;">Wir wachsen nur mit Ihrer Hilfe, empfehlen Sie daher Postenprofis.com Ihren Freunden und Bekannten weiter - Günstig kaufen - Qualität und Service bekommen - Vielen Dank</span></p>
+<p style="font-family: Arial;"><span style="font-weight: bold;"><br>
+</span></p>
+<p style="font-family: Arial;"><span style="font-style: italic;">Neu im Sortiment: Bambus-Kristall Geschirrtücher, Fasertücher, Bodentücher, <a href="https://www.postenprofis.com/Kueche-Haushalt-Wohnen/Keramik-Pfannen-Toepfe/Pfannen-Sets---64_185_201.html">Premium Plus Keramik Pfannen</a>, Räucherstäbchen, Bambus-Kristall Hochleistungsreiniger, Bambus-Kristall Tücher, Hochglanz-Spiegeltücher, Microfaser Bodentücher, regionale Flaggen, <a href="https://www.postenprofis.com/Fanartikel-und-Flaggen/historische-Flaggen---154_240.html">historische Fahnen</a>, Fanartikel für Fussballfans, <a href="https://www.postenprofis.com/Kueche-Haushalt-Wohnen/Mikrofaser-Decken---64_190.html">Mikrofaserdecken</a> (Zottel/Fluffy, Cashmere Touch, XXL-Decken, Zick-Zack Decken, Rankendesign), .<br>
+</span></p>
+<p style="font-family: Arial;"><span style="font-style: italic;"><br>
+</span></p>
+<p style="font-family: Arial;">&nbsp;</p>
+<p style="font-family: Arial;">Beachten Sie unsere Produktneuheiten von Aqua Clean und allen anderen Kategorien über den Button Neuheiten oben in der Leiste, ein Blick in den Bereich Unsere Empfehlung, Restposten und Spar Spezial kann das eine oder andere Schnäppchen bringen.</p>	
+
+<br>
+
+ 
+
+<h2>Neue Artikel</h2>
+
+
+<div id="produktlisting">
+<ul>
+     <li class="links">
+<h2><a href="https://www.postenprofis.com/Aqua-Clean/Aqua-Clean-Rain-Devil-5-x-250ml--209.html">Aqua-Clean Rain-Devil 5 x 250ml</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/Aqua-Clean/Aqua-Clean-Rain-Devil-5-x-250ml--209.html"><img class="max" src="images/product_images/thumbnail_images/209_0.jpg" alt="Aqua-Clean Rain-Devil 5 x 250ml"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 26.95 EUR</strong> <br><span class="klein">( 21.56 EUR pro Liter)<br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/Aqua-Clean/Aqua-Clean-Rain-Devil-5-x-250ml--209.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=209"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Aqua-Clean Rain-Devil 5 x 250ml' bestellen" title=" 1 x 'Aqua-Clean Rain-Devil 5 x 250ml' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="mitte">
+<h2><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/TS24Direkt-Microfaser-Kosmetiktuecher-9er-Set--2034.html">TS24Direkt Microfaser Kosmetiktücher 9er Set</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/TS24Direkt-Microfaser-Kosmetiktuecher-9er-Set--2034.html"><img class="max" src="images/product_images/thumbnail_images/2034_0.JPG" alt="TS24Direkt Microfaser Kosmetiktücher 9er Set"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 18.95 EUR</strong> <br><span class="klein"><br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/TS24Direkt-Microfaser-Kosmetiktuecher-9er-Set--2034.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=2034"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'TS24Direkt Microfaser Kosmetiktücher 9er Set' bestellen" title=" 1 x 'TS24Direkt Microfaser Kosmetiktücher 9er Set' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="mitte">
+<h2><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Reinigungstuecher-9er--2035.html">Kristall-Glanz Reinigungstücher 9er</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Reinigungstuecher-9er--2035.html"><img class="max" src="images/product_images/thumbnail_images/2035_0.JPG" alt="Kristall-Glanz Reinigungstücher 9er"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 18.95 EUR</strong> <br><span class="klein"><br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Reinigungstuecher-9er--2035.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=2035"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Kristall-Glanz Reinigungstücher 9er' bestellen" title=" 1 x 'Kristall-Glanz Reinigungstücher 9er' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="rechts">
+<h2><a href="https://www.postenprofis.com/Bambus-Kristall/Bambus-Kristall-5er-Set-mit-Vorreinigungstuechern--624.html">Bambus-Kristall 5er Set mit Vorreinigungstüchern</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/Bambus-Kristall/Bambus-Kristall-5er-Set-mit-Vorreinigungstuechern--624.html"><img class="max" src="images/product_images/thumbnail_images/624_0.jpg" alt="Bambus-Kristall 5er Set mit Vorreinigungstüchern"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 20.00 EUR</strong> <br><span class="klein"><br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/Bambus-Kristall/Bambus-Kristall-5er-Set-mit-Vorreinigungstuechern--624.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=624"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Bambus-Kristall 5er Set mit Vorreinigungstüchern' bestellen" title=" 1 x 'Bambus-Kristall 5er Set mit Vorreinigungstüchern' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+  </ul><div class="dummy"> </div><ul>     <li class="links">
+<h2><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Oxipur-Sauerstoffreiniger-5000gr--2019.html">Oxipur Sauerstoffreiniger 5000gr</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Oxipur-Sauerstoffreiniger-5000gr--2019.html"><img class="max" src="images/product_images/thumbnail_images/2019_0.jpg" alt="Oxipur Sauerstoffreiniger 5000gr"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 20.95 EUR</strong> <br><span class="klein">( 4.19 EUR pro Kilogramm)<br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Oxipur-Sauerstoffreiniger-5000gr--2019.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=2019"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Oxipur Sauerstoffreiniger 5000gr' bestellen" title=" 1 x 'Oxipur Sauerstoffreiniger 5000gr' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="mitte">
+<h2><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Universal-Reinigungsstein-700gr--597.html">Kristall-Glanz Universal Reinigungsstein 700gr</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Universal-Reinigungsstein-700gr--597.html"><img class="max" src="images/product_images/thumbnail_images/597_0.jpg" alt="Kristall-Glanz Universal Reinigungsstein 700gr"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 8.95 EUR</strong> <br><span class="klein">( 11.19 EUR pro Kilogramm)<br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz/Kristall-Glanz-Universal-Reinigungsstein-700gr--597.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=597"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Kristall-Glanz Universal Reinigungsstein 700gr' bestellen" title=" 1 x 'Kristall-Glanz Universal Reinigungsstein 700gr' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="mitte">
+<h2><a href="https://www.postenprofis.com/Bambus-Kristall/Kristallglanz-Glasreiniger-Konzentrat-200ml--1754.html">Kristallglanz Glasreiniger Konzentrat 200ml</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/Bambus-Kristall/Kristallglanz-Glasreiniger-Konzentrat-200ml--1754.html"><img class="max" src="images/product_images/thumbnail_images/1754_0.JPG" alt="Kristallglanz Glasreiniger Konzentrat 200ml"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 5.00 EUR</strong> <br><span class="klein">( 2.50 EUR pro 100ml)<br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/Bambus-Kristall/Kristallglanz-Glasreiniger-Konzentrat-200ml--1754.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=1754"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Kristallglanz Glasreiniger Konzentrat 200ml' bestellen" title=" 1 x 'Kristallglanz Glasreiniger Konzentrat 200ml' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+       <li class="rechts">
+<h2><a href="https://www.postenprofis.com/Fanartikel-und-Flaggen/Deutschland-Fahnen/Deutschland-Fahne-Entschuldigung--2196.html">Deutschland Fahne Entschuldigung</a></h2>
+<div class="produktlisting_bild"><a href="https://www.postenprofis.com/Fanartikel-und-Flaggen/Deutschland-Fahnen/Deutschland-Fahne-Entschuldigung--2196.html"><img class="max" src="images/product_images/thumbnail_images/2196_0.jpg" alt="Deutschland Fahne Entschuldigung"></a></div>	
+<div class="produktlisting_preis">
+
+<strong> 7.95 EUR</strong> <br><span class="klein"><br>(incl. 19 % UST<br> exkl.<script type="text/javascript">document.write('<a class="shippinglink" href="javascript:newWin=void(window.open(\'https://www.postenprofis.com/popup_content.php?coID=1\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400\'))">Versandkosten</a>');</script><a class="shippinglink" href="javascript:newWin=void(window.open('https://www.postenprofis.com/popup_content.php?coID=1', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=600, width=400'))">Versandkosten</a>)</span>
+<br><br><a href="https://www.postenprofis.com/Fanartikel-und-Flaggen/Deutschland-Fahnen/Deutschland-Fahne-Entschuldigung--2196.html"><img style="padding-right:5px;" src="templates/i24-css-red-SEO/buttons/german/button-details.gif" alt="mehr zum Produkt" border="0"></a><a href="https://www.postenprofis.com/index.php?action=buy_now&amp;BUYproducts_id=2196"><img src="templates/i24-css-red-SEO/buttons/german/button_buy_now.gif" alt="1 x 'Deutschland Fahne Entschuldigung' bestellen" title=" 1 x 'Deutschland Fahne Entschuldigung' bestellen " width="115" height="25"></a>
+</div>
+
+ </li>
+  </ul><div class="dummy"> </div><ul>    
+</ul></div><br>
+<br><br>
+			</div>
+			</div>
+			<div id="sidebar-left">
+			
+
+
+  
+
+<div><img src="templates/i24-css-red-SEO/img/box-header.jpg" alt=""></div>
+<div id="leftbox-cat">
+<div class="sbl">Kategorien</div>
+<ul>
+<li class="main_submenu"><a href="https://www.postenprofis.com/Fanartikel-und-Flaggen---154.html" id="normal">Fanartikel und Flaggen</a></li>
+
+<li class="main_normal"><a href="https://www.postenprofis.com/Bambus-Kristall---169.html" id="normal">Bambus-Kristall</a></li>
+
+<li class="main_normal"><a href="https://www.postenprofis.com/TS24-Direkt-Kristall-Glanz---262.html" id="normal">TS24 Direkt - Kristall-Glanz</a></li>
+
+<li class="main_submenu"><a href="https://www.postenprofis.com/Waescheduft---85.html" id="normal">Wäscheduft</a></li>
+
+<li class="main_normal"><a href="https://www.postenprofis.com/HiGloss---252.html" id="normal">HiGloss</a></li>
+
+<li class="main_submenu"><a href="https://www.postenprofis.com/Mikrofaser-Decken---190.html" id="normal">Mikrofaser Decken</a></li>
+
+<li class="main_submenu"><a href="https://www.postenprofis.com/Kueche-Haushalt-Wohnen---64.html" id="normal">Küche-Haushalt-Wohnen</a></li>
+
+<li class="main_submenu"><a href="https://www.postenprofis.com/Aqua-Clean---63.html" id="normal">Aqua Clean</a></li>
+
+<li class="main_submenu"><a href="https://www.postenprofis.com/Genius---170.html" id="normal">Genius</a></li>
+
+<li class="main_normal"><a href="https://www.postenprofis.com/Reste-Lagerraeumung---132.html" id="normal">Reste-Lagerräumung</a></li></ul>
+</div>
+<div><img src="templates/i24-css-red-SEO/img/box-footer.jpg" alt=""></div>
+<br>
+<div><img src="templates/i24-css-red-SEO/img/box-header.jpg" alt=""></div>
+<div id="leftbox">
+<div class="sbl"></div>
+<center>
+<!-- kaeufersiegel rating widget  - please do not change the code  -->
+<div id="kaeufersiegel_widget"><a id="ks_rating_link" href="https://www.kaeufersiegel.de/bewertung/shop/postenprofis-com" title="Kundenbewertung einsehen" target="_blank">
+
+<img src="http://www.kaeufersiegel.de/bewertung/widgets/3f67fd97162d20e6fe27748b5b372509/1.png?1513868613511" alt="Käufersiegel Kundenbewertung" width="180" height="142" style="border: none;">
+
+</a></div>
+<script type="text/javascript">
+var ksId = '3f67fd97162d20e6fe27748b5b372509';
+var ksDomain = 'postenprofis-com';
+var ksWidgetDesign = 1;
+</script>
+<script type="text/javascript" src="https://www.kaeufersiegel.de/bewertung/widgetCore/get-widget.js"></script>
+<!-- /kaeufersiegel rating widget  -->
+</center><br><center><a href="https://www.shopinfo.net/zertifizierte-shops/zertifikat/index.html?memberkey=EHI&amp;shopurl=www.postenprofis.com" target="blank"><img src="/images/euro_label_ehi.gif" alt="EHI Shopsiegel" title="EHI Shopsiegel"></a></center>
+<br>
+<center><a href="http://www.it-recht-kanzlei.de/Service/pruefzeichen.php?sid=1e270-d461"><img src="https://www.postenprofis.com/images/shop-gold3.png" title="IT-Recht Kanzlei Prüfzertifikat"></a><br><br>
+<!-- Beginn des Händlerbund HTML-Code -->
+<!-- Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! -->
+<a href="https://logo.haendlerbund.de/show.php?mid=13046A5BAE9" onclick="window.open(this.href,'_blank'); return false;">
+<img src="https://www.haendlerbund.de/images/mglogo/hbm80.png" title="Händlerbund Mitglied" alt="Mitglied im Händlerbund" width="80" height="80" hspace="5" vspace="5" border="0">
+</a>
+<!-- Ende des Händlerbund HTML-Code -->
+<a href="https://www.facebook.com/Postenprofis "><img src="/images/facebook-logo.jpg" alt="Postenprofis.com bei Facebook" title="Postenprofis.com bei Facebook"></a> 
+<br><br><!-- Fügen Sie dieses Tag an der Stelle ein, an der die Widget erscheinen soll. -->
+<div id="___page_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 180px; height: 282px; background-position: initial initial; background-repeat: initial initial;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 180px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 282px;" tabindex="0" vspace="0" width="100%" id="I0_1513868614294" name="I0_1513868614294" src="https://apis.google.com/_/widget/render/page?usegapi=1&amp;width=180&amp;href=%2F%2Fplus.google.com%2F112987641591284885948&amp;rel=publisher&amp;hl=de&amp;origin=http%3A%2F%2Fwww.postenprofis.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.lyon4aDFbFk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1513868614294&amp;_gfid=I0_1513868614294&amp;parent=http%3A%2F%2Fwww.postenprofis.com&amp;pfname=&amp;rpctoken=13963007" data-gapiattached="true" title="+Badge"></iframe></div>
+</center>
+</div>
+<div><img src="templates/i24-css-red-SEO/img/box-footer.jpg" alt=""></div>
+<br>
+
+
+<div><img src="templates/i24-css-red-SEO/img/box-header.jpg" alt=""></div>
+<div id="leftbox-zahl">
+<div class="sbl">Ihre Zahlungsmöglichkeiten</div>
+<br>
+<center>
+<!-- PayPal Logo --><a href="http://www.postenprofis.com/Liefer-und-Versandkosten-_-1.html" onclick="javascript:window.open('https://www.paypal.com/de/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=500');"><img src="https://www.postenprofis.com/images/logo-paypal-150x41.gif" border="0" alt="Bezahlen per PayPal"></a><!-- PayPal Logo --> 
+<br>
+<a href="http://www.postenprofis.com/Zahlung-Amazon-Payments-_-903.html">
+<img border="0" src="https://www.postenprofis.com/images/amazon.gif" height="104" width="162" alt="Amazon Payments" title="Jetzt auch Amazon Payments"></a>
+<br><br>
+<a href="http://www.postenprofis.com/Liefer-und-Versandkosten-_-1.html">
+<img border="0" src="https://www.postenprofis.com/images/zahlweise.png" alt="Unsere Zahlungsweisen" title="Unsere Zahlungsweisen"></a><br>
+<a href="https://www.billpay.de" onclick="window.open(this.href,'_blank'); return false;"><img src="https://www.billpay.de/wp-content/uploads/2011/03/produkt_rechnung.png" height="157" width="175" style="border:0" alt="Kauf auf Rechnung mit Billpay.de" title="Zahlungsmethode für Ihren Online Shop  billpay.de"></a> <br>
+<a href="https://www.billpay.de" onclick="window.open(this.href,'_blank'); return false;"><img src="https://www.billpay.de/wp-content/uploads/2011/03/produkt_lastschrift.png" height="157" width="175" style="border:0" alt="Lastschrift mit Billpay.de" title="Kauf auf Lastschrift mit Billpay.de"></a> 
+</center> 
+</div>
+
+<div><img src="templates/i24-css-red-SEO/img/box-footer.jpg" alt=""></div>
+<br>
+
+
+<div><img src="templates/i24-css-red-SEO/img/box-header.jpg" alt=""></div>
+<div id="leftbox">
+<div class="sbl">Bewertungen</div>
+<center><p></p><div><a href="https://www.postenprofis.com/product_reviews_info.php?products_id=624&amp;reviews_id=1897"><img src="images/product_images/thumbnail_images/624_0.jpg" alt="Bambus-Kristall 5er Set mit Vorreinigungstüchern" title=" Bambus-Kristall 5er Set mit Vorreinigungstüchern " width="133" height="100"></a></div><a href="https://www.postenprofis.com/product_reviews_info.php?products_id=624&amp;reviews_id=1897">Alles super gelaufen. Top Produkt. Werde ich gerne wieder ka ..</a><br><div><img src="templates/i24-css-red-SEO/img/stars_5.gif" alt="5 von 5 Sternen!" title=" 5 von 5 Sternen! " width="43" height="14"></div><p></p></center>
+</div>
+<div><img src="templates/i24-css-red-SEO/img/box-footer.jpg" alt=""></div>
+<br>
+
+
+			</div>
+
+					
+
+
+	</div>
+
+	<div id="top">
+		<div id="header">
+			<div id="logo"><a href="https://www.postenprofis.de"><img src="templates/i24-css-red-SEO/img/logo.png" alt="Trendshop Remscheid"></a></div>
+			<div id="language"></div>
+			<div id="search">
+<form id="quick_find" action="https://www.postenprofis.com/advanced_search_result.php" method="get"><input type="hidden" name="XTCsid" value="bd4ffb936f367fed383e600abc800fb4">
+
+<input type="text" name="keywords" value="Suchbegriff eingeben" onfocus="this.value='';" size="24" maxlength="24">
+
+
+
+</form></div>
+			<div id="header-footer"><img src="templates/i24-css-red-SEO/img/header-bottom.jpg" alt="Trendshop Remscheid"></div>
+		
+			<div id="menu"><a href="https://www.postenprofis.com/"><img src="templates/i24-css-red-SEO/img/german/topnavi_01.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_01.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_01.jpg'" alt="Trendshop Remscheid"></a><a href="https://www.postenprofis.com/products_new.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_02.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_02.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_02.jpg'" alt=""></a><a href="https://www.postenprofis.com/create_account.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_03.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_03.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_03.jpg'" alt=""></a><a href="https://www.postenprofis.com/login.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_04.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_04.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_04.jpg'" alt=""></a><a href="https://www.postenprofis.com/account.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_05.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_05.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_05.jpg'" alt=""></a><a href="https://www.postenprofis.com/checkout_shipping.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_06.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_06.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_06.jpg'" alt=""></a><a href="https://www.postenprofis.com/shop_content.php?coID=4"><img src="templates/i24-css-red-SEO/img/german/topnavi_07.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_07.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_07.jpg'" alt=""></a><a href="https://www.postenprofis.com/shop_content.php?coID=7"><img src="templates/i24-css-red-SEO/img/german/topnavi_08.jpg" onmouseover="src='templates/i24-css-red-SEO/img/german/topnavi2_08.jpg'" onmouseout="src='templates/i24-css-red-SEO/img/german/topnavi_08.jpg'" alt=""></a><a href="https://www.postenprofis.com/shopping_cart.php"><img src="templates/i24-css-red-SEO/img/german/topnavi_09.jpg" alt="Trendshop Remscheid"></a></div>
+		</div>
+	</div>
+</div>
+			<div id="footer-header"><img src="templates/i24-css-red-SEO/img/footer-top.jpg" alt=""></div>
+			<div id="footer-boxen">
+			<div class="float-box">
+
+<div class="sbl">Service und Bestell-Info</div>
+<br>
+
+		<a href="https://www.postenprofis.com/Zahlungs-und-Versandbedingungen-_-1.html">Zahlungs- und Versandbedingungen</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Privatsphaere-Datenschutz-_-2.html">Privatsphäre / Datenschutz</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/AGB-_-3.html">AGB</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Impressum-Kontakt-_-4.html">Impressum / Kontakt</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Widerrufsrecht-_-9.html">Widerrufsrecht</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Batterieverodnung-_-222.html">Batterieverodnung</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Garantiebedingungen-_-15.html">Garantiebedingungen</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Inhaltsstoffe-_-14.html">Inhaltsstoffe</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Zahlung-Amazon-Payments-_-903.html">Zahlung Amazon Payments</a><div class="hr"></div>
+	
+<br></div><div class="float-box">
+
+<div class="sbl2">Informationen</div>
+<br>
+
+		<a href="https://www.postenprofis.com/Sitemap-_-8.html">Sitemap</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Wir-sind-gelistet-bei-_-200.html">Wir sind gelistet bei...</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Unsere-Partner-im-Netz-_-10.html">Unsere Partner im Netz</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Bonuspunkte-sammeln-_-12.html">Bonuspunkte sammeln</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Produkt-Tester-_-510.html">Produkt-Tester</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Unser-Beitrag-zum-Umweltschutz-_-499.html">Unser Beitrag zum Umweltschutz</a><div class="hr"></div>
+		<a href="https://www.postenprofis.com/Lagerverkauf-Outlet-_-1313.html">Lagerverkauf / Outlet</a><div class="hr"></div>
+	</div><div class="float-box">
+
+<div class="sbl2">Beliebte Suchanfragen</div>
+<br>
+<p>
+	</p><ul class="contentlist">
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Reinigungsmittel/">Reinigungsmittel</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Fahne-USA/">Fahne USA</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/info/Aqua-Clean-Fenstertuecher/">Aqua-Clean Fenstertücher</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Flagge-Deutsches-Kaiserreich/">Flagge Deutsches Kaiserreich</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Geschirrtuecher-bunt/">Geschirrtücher bunt</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/produkte/Geschirrtuecher-Gastro/">Geschirrtücher Gastro</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Bodenreinigung/">Bodenreinigung</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/produkte/Kuscheldecke-Cashmere/">Kuscheldecke Cashmere</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/produkte/Kuscheldecke-xxl/">Kuscheldecke xxl</a>
+				<div class="hr"></div>				
+			</li>
+
+					
+			<li>
+				<a href="https://www.postenprofis.com/tag/Bambus-Kristall/">Bambus-Kristall</a>
+				<div class="hr"></div>				
+			</li>
+
+			
+	</ul>
+
+<p></p></div>
+
+			</div>
+			<div id="footer">
+			
+			<p>*Gilt für Lieferungen nach Deutschland. Lieferzeiten für andere Länder und Informationen zur Berechnung des Liefertermins siehe hier <a target="_blank" href="https://www.postenprofis.com/Zahlungs-und-Versandbedingungen-_-1.html">Lieferzeiten</a><br>
+			<a target="new" href="http://www.xt-commerce.com">xt:Commerce</a> | Template by
+			<a target="_blank" href="http://www.install24.com">install24.com</a></p> 
+			</div>
+
+<center>
+<div style="border-top-style:solid; padding-top:3px; border-top-width: 1px; border-top-color: #2A4956; float: center;">
+                
+<center><div><script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6126964-1']);
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js" gapi_processed="true">
+	{ lang: 'de' }</script>
+</center>
+<br>
+<!-- Ausgezeichnet.org-Siegel: Anfang -->
+<div id="auorg-bg" style="margin: 0px; border: 0px; padding: 0px; position: relative; width: 100%; min-width: 150px; height: 159px;"><style> #auorg-1513868614 { width:150px;height:141px;; position:absolute; text-transform: initial; background-size: 150px; left:50%; margin-left:-75px; padding:0; border:0; text-align:left; background-image:url(https://siegel.ausgezeichnet.org/asset/images/widgets/bg-embed-m.png); background-repeat:no-repeat; -moz-hyphens:auto; -ms-hyphens:auto; -webkit-hyphens:auto; hyphens:auto; word-wrap:break-word; } #auorg-1513868614 .auorg-widget-header{ width: 150px; height: 27px! important; margin:0; padding:0; border:0; } #auorg-1513868614 .aus-header-image { padding:0; margin:0; border:0; display:inline; } #auorg-1513868614 .link-to-aus-org-homepage { padding:0; margin:0; border:0; line-height:0px ! important; text-decoration:none ! important; color:#000 ! important; background-color:transparent ! important; } #auorg-1513868614 .aus-widget-score-container { width:139px;height:106px;margin:0 0 0 11px;border:0;padding:0 5px 2px 5px; text-align:center ! important; line-height:0px ! important; } #auorg-1513868614 .aus-link-to-customer-homepage { border:0; margin:0; padding:0; text-align:center ! important; text-decoration:none ! important; color:#000 ! important; background-color:transparent ! important; } #auorg-1513868614 .aus-widget-score { padding:0; font-family:Arial ! important; font-weight:normal ! important; font-size: 13px ! important; line-height:18px ! important; color:#000 ! important; background-color:transparent ! important; } #auorg-1513868614 .aus-rating-score { padding:0; font-family:Arial ! important; font-weight:bold ! important; font-size: 13px ! important; line-height:20px ! important; color:#000 ! important; background-color:transparent ! important; } #auorg-1513868614 .aus-number-of-review { font-family:Arial ! important; font-weight:normal ! important; font-size:9px ! important; line-height:9px ! important; color:#000 ! important; background-color:transparent ! important; } </style><div itemscope="itemscope" itemtype="http://schema.org/LocalBusiness" class="auorg-widget" id="auorg-1513868614"><meta itemprop="name" content="Trendshop Ltd"><meta itemprop="url" content="www.postenprofis.com"><div class="auorg-widget-header"><a class="link-to-aus-org-homepage" href="https://www.ausgezeichnet.org" target="_blank" rel="nofollow" title="Unabhängige Bewertungen, Kundenbewertungen und Gütesiegel von Ausgezeichnet.org"><img class="aus-header-image" src="https://siegel.ausgezeichnet.org/asset/images/widgets/logo-embed-m.png" width="150px" height="27px" title="Unabhängige Bewertungen, Kundenbewertungen und Gütesiegel von Ausgezeichnet.org" alt="Ausgezeichnet.org"></a></div><div class="aus-widget-score-container" itemprop="aggregateRating" itemscope="itemscope" itemtype="http://schema.org/AggregateRating"><meta itemprop="worstRating" content="1"><meta itemprop="bestRating" content="5"><meta itemprop="ratingCount" content="4253"><a href="https://www.ausgezeichnet.org/bewertungen-postenprofis.com-65C0Z9" target="_blank" class="auorg-link aus-link-to-customer-homepage"><img src="https://siegel.ausgezeichnet.org/asset/images/widgets/rating-5-cent-m.png" style="width:100px;height:32px;margin:26px 0 0 0;padding:0;border:0;display:inline;" alt="sehr gut"><br><span class="aus-widget-score"><span class="aus-rating-score" itemprop="ratingValue">4.91</span>/5.00</span><br><span class="aus-number-of-review">4.253 Bewertungen<br>von hier, amazon.de, kaeufersiegel.de, ebay.de</span></a></div></div></div>
+<script type="text/javascript" src="//siegel.ausgezeichnet.org/widgets/js/536a4c190cf2950d140aca55/widget.js"></script>
+<!-- Ausgezeichnet.org-Siegel: Ende -->
+
+ 
+<div style="font-size:9px; text-align:center;">Trendshop Remscheid</div><br>
+
+</div>
+</center>
+
+
+<center><a target="_blank" href="http://www.postenprofis.com/rss-news.php">RSS-Feed Produktneuheiten</a></center>
+
+<center><img src="/images/ssl-logo.jpg" alt="NEU - 128 bit SSL-Verschlüsselung"><br>
+RC4 128 bit SSL<br>
+</center>
+<br> 
+
+<iframe name="oauth2relay802055650" id="oauth2relay802055650" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fwww.postenprofis.com&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.lyon4aDFbFk.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOKMiz7gIVCZ62llAJ83SLnLLBl4w#rpctoken=473906586&amp;forcesecure=1" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><script id="1513868619823" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=undefined&amp;data=%7B'counters'%3A%5B%5D%2C'timings'%3A%5B%7B'name'%3A'session-stabilizer-time'%2C'time'%3A6319%2C'tags'%3A%5B%5D%7D%5D%2C'info'%3A%5B%5D%2C'entries'%3A%5B%5D%7D"></script><script id="1513868619825" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=undefined&amp;data=%7B'counters'%3A%5B%5D%2C'timings'%3A%5B%7B'name'%3A'waiting-session-stabalizer'%2C'time'%3A4527%2C'tags'%3A%5B%5D%7D%5D%2C'info'%3A%5B%5D%2C'entries'%3A%5B%5D%7D"></script><iframe id="OffAmazonPaymentsBridgeIframe" name="OffAmazonPaymentsBridgeIframe" src="https://static-eu.payments-amazon.com/de/live/bridge.html" style="margin: 0px; padding: 0px; border-width: 0px; overflow: hidden; display: none; visibility: visible;" frameborder="no" scrolling="no" allowtransparency="true" width="1px" height="1px" onload="OffAmazonPayments.Widgets.Utilities.show('OffAmazonPaymentsBridgeIframe')" ;=""></iframe><script id="1513868615293" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=undefined&amp;data=%7B'counters'%3A%5B%7B'name'%3A'image-added-by-js'%2C'tags'%3A%5B%5D%7D%5D%2C'timings'%3A%5B%5D%2C'info'%3A%5B%5D%2C'entries'%3A%5B%5D%7D"></script><script id="1513868613502" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=undefined&amp;data=%7B'counters'%3A%5B%7B'name'%3A'_V1510620883_'%2C'tags'%3A%5B%5D%7D%5D%2C'timings'%3A%5B%7B'name'%3A'js-loaded'%2C'time'%3A14%2C'tags'%3A%5B%5D%7D%5D%2C'info'%3A%5B%5D%2C'entries'%3A%5B%5D%7D"></script><script id="1513868620408" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=A2Z2HL2WICJUER&amp;data=%7B'counters'%3A%5B%5D%2C'timings'%3A%5B%7B'name'%3A'apa-button-loading'%2C'time'%3A578%2C'tags'%3A%5B%5D%7D%5D%2C'info'%3A%5B%7B'name'%3A'sub-page-type'%2C'value'%3A'apa'%7D%2C%7B'name'%3A'page-action'%2C'value'%3A'buttonrender'%7D%2C%7B'name'%3A'page-type-id'%2C'value'%3A'paymentsonlyproduct'%7D%2C%7B'name'%3A'merchant-id'%2C'value'%3A'A2Z2HL2WICJUER'%7D%2C%7B'name'%3A'additional-request-data'%2C'value'%3A'%7Ccolor%3Aorange%7Csize%3Amedium'%7D%5D%2C'entries'%3A%5B%5D%7D"></script><script id="1513868627924" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=A2Z2HL2WICJUER&amp;data=%7B'counters'%3A%5B%7B'name'%3A'lpa-buttonrender-metric'%2C'tags'%3A%5B%5D%7D%5D%2C'timings'%3A%5B%7B'name'%3A'amazon-pay-js-abtesting'%2C'time'%3A8091%2C'tags'%3A%5B'BUTTON_REBRANDING'%5D%7D%5D%2C'info'%3A%5B%7B'name'%3A'weblab-name'%2C'value'%3A'button_rebranding'%7D%2C%7B'name'%3A'weblab-treatment'%2C'value'%3A't4'%7D%2C%7B'name'%3A'merchant-id'%2C'value'%3A'A2Z2HL2WICJUER'%7D%5D%2C'entries'%3A%5B%5D%7D"></script><script id="1513868628141" type="text/javascript" src="https://payments.amazon.de/gp/apa/csm/jsonp?sellerId=A2Z2HL2WICJUER&amp;data=%7B'counters'%3A%5B%5D%2C'timings'%3A%5B%7B'name'%3A'apa-button-loading'%2C'time'%3A8311%2C'tags'%3A%5B%5D%7D%5D%2C'info'%3A%5B%7B'name'%3A'sub-page-type'%2C'value'%3A'apa'%7D%2C%7B'name'%3A'page-action'%2C'value'%3A'buttonrender'%7D%2C%7B'name'%3A'page-type-id'%2C'value'%3A'paymentsonlyproduct'%7D%2C%7B'name'%3A'merchant-id'%2C'value'%3A'A2Z2HL2WICJUER'%7D%2C%7B'name'%3A'additional-request-data'%2C'value'%3A'%7Ccolor%3Aorange%7Csize%3Amedium'%7D%5D%2C'entries'%3A%5B%5D%7D"></script></body></html>

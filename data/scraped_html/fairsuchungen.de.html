@@ -1,0 +1,1273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" dir="ltr" lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<!--
+	This OnlineStore is brought to you by XT-Commerce, Community made shopping
+	XTC is a free open source e-Commerce System
+	created by Mario Zanier & Guido Winger and licensed under GNU/GPL.
+	Information and contribution at http://www.xt-commerce.com
+-->
+<meta name="generator" content="(c) by xt:Commerce v3.0.4 SP2.1 , http://www.xt-commerce.com">
+<meta name="robots" content="index, follow">
+<meta name="language" content="de">
+<meta name="author" content="Fairsuchungen - Silberschmuck">
+<meta name="publisher" content="Fairsuchungen - Silberschmuck">
+<meta name="company" content="Fairsuchungen e. K.">
+<meta name="page-topic" content="handgefertigter Silberschmuck und mehr">
+<meta name="reply-to" content="info@fairsuchungen.de">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="14">
+<meta name="description" content="Fairsuchungen, Silberschmuck Innovationen in modernen Designs. Gute Qualit�t, erstklassiger Kundenservice und faire Preise werden bei uns gro� geschrieben.">
+<meta name="keywords" content="silberschmuck,handgefertigt,handgefertigter,silber, schmuck, shop, ringe, ketten, armband, armreif, hochwertig, preiswert, qualit�t">
+<title>Fairsuchungen</title>
+<base href="http://fairshop.surfpilot.de/">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="templates/fair_black/stylesheet.css">
+
+<script type="text/javascript" charset="utf-8" src="//widgets.trustedshops.com/js/XA7A40B5CE907D177A7066B22FC132420.js"></script><script type="text/javascript">
+	<!--
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+//--></script>
+<!--[if lte IE 7]>
+<link href="templates/fair_black/css/patches/patch_3col_fixed.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+<script type="text/javascript"><!--
+
+PopUp = function(autoapply){
+	this.types = [];
+	this.defaults = {
+		width:800,
+		height:600,
+		top:0,
+		left:0,
+		location:false,
+		resizable:false,
+		scrollbars:false,
+		status:false,
+		toolbar:false,
+		menubar:false,
+		center:true,
+		title:"Dieser Link wird in einem neuen Fenster ge�ffnet"
+	}
+	this.addType({
+		name:"standard",
+		location:true,
+		resizable:true,
+		scrollbars:true,
+		status:true,
+		toolbar:true,
+		menubar:true
+	});
+	if(autoapply) this.apply();
+}
+o = PopUp.prototype;
+o.apply = function(){
+	var links = document.getElementsByTagName("a");
+	if(!links) return;
+	for(var i=0;i<links.length;i++){
+		var l = links[i];
+		if(l.className.indexOf("popup") > -1){
+			this.attachBehavior(l,this.getType(l));
+		}
+	}
+}
+o.addType = function(type){
+	for(var prop in this.defaults){
+		if(type[prop] == undefined) type[prop] = this.defaults[prop];
+	}
+	this.types[type.name] = type;
+}
+o.getType = function(l){
+	for(var type in this.types){
+		if(l.className.indexOf(type) > -1) return type;
+	}
+	return "standard";
+}
+o.attachBehavior = function(l,type){
+	var t = this.types[type];
+	l.title = t.title;
+	l.popupProperties = {
+		type: type,
+		ref: this
+	};
+	l.onclick = function(){
+		this.popupProperties.ref.open(this.href,this.popupProperties.type);
+		return false;
+	}
+}
+o.booleanToWord = function(bool){
+	if(bool) return "yes";
+	return "no";
+}
+o.getTopLeftCentered = function(typeObj){
+	var t = typeObj;
+	var r = {left:t.left, top:t.top};
+	var sh = screen.availHeight-20;
+	var sw = screen.availWidth-10;
+	if(!sh || !sw) return r;
+	r.left = (sw/2)-(t.width/2);
+	r.top = (sh/2)-(t.height/2);
+	return r;
+}
+o.getParamsOfType = function(typeObj){
+	var t = typeObj;
+	var c = this.booleanToWord;
+	if(t.center){
+		var tc = this.getTopLeftCentered(typeObj);
+		t.left = tc.left;
+		t.top = tc.top;
+	}
+	var p = "width="+t.width;
+	p+=",height="+t.height;
+	p+=",left="+t.left;
+	p+=",top="+t.top;
+	p+=",location="+c(t.location);
+	p+=",resizable="+c(t.resizable);
+	p+=",scrollbars="+c(t.scrollbars);
+	p+=",status="+c(t.status);
+	p+=",toolbar="+c(t.toolbar);
+	p+=",menubar="+c(t.menubar);
+	return p;
+}
+o.open = function(url,type){
+	if(!type) type = "standard";
+	var t = this.types[type];
+	var p = this.getParamsOfType(t);
+	var w = window.open(url,t.name,p);
+	if(w) w.focus();
+	return false;
+}
+//--></script>
+<link type="text/css" rel="stylesheet" href="http://widgets.trustedshops.com//css/style.css?version=2017-07-20-WEB&amp;tsId=XA7A40B5CE907D177A7066B22FC132420&amp;sourceUrl=&amp;yOffset=0&amp;variant=reviews&amp;customElementId=&amp;trustcardDirection=&amp;customBadgeWidth=&amp;customBadgeHeight=&amp;disableResponsive=&amp;disableTrustbadge=&amp;customCheckoutElementId=&amp;channel=" class="trustbadgeStyleSheet" id="trustbadgeStyleSheetstyle"><link type="text/css" rel="stylesheet" href="//widgets.trustedshops.com//css/tbAuthenticReviews.css?version=2017-07-20-WEB&amp;tsId=XA7A40B5CE907D177A7066B22FC132420" class="trustbadgeStyleSheet" id="trustbadgeStyleSheettbAuthenticReviews"></head>
+<body><div id="tsbadgeResponsiveTop_db8d3657bdbe440c985ae127463eaad4" class="" style="display: none;"><div class="responsiveBadge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews "><div class="responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><span>&nbsp;</span></div><div class="responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block--authentic-reviews "><div class="responsiveBadgeBlockStars_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4__block-stars"><div class="responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div class="responsiveBadgeBlockStarsReviewCount_db8d3657bdbe440c985ae127463eaad4"><span>Sehr gut</span><div class="responsiveBadgeAverageRating_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></div></div><div class="responsive-badge-review-block_db8d3657bdbe440c985ae127463eaad4__certified-text hide_db8d3657bdbe440c985ae127463eaad4">Zertifiziert seit 20.07.2009</div></div><div class="responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4--authentic-reviews">×</div><span class="trustCardC_db8d3657bdbe440c985ae127463eaad4"></span></div><div class="bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__sub-text">Zertifizierter Shop</div><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-custom-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon" style="font-size:100%;"></span></div><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#ffffff" stroke-width="0" points="0,1.8 0,0 10,0 16,0"></polygon></svg></div></div><div class="triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"></div></div><div id="MobileCoveringLayer_db8d3657bdbe440c985ae127463eaad4" style="display: none;"></div>
+<script type="text/javascript">
+    (function () { 
+    var _tsid = 'XA7A40B5CE907D177A7066B22FC132420'; 
+    _tsConfig = { 
+        'yOffset': '0', //offset from page bottom
+        'variant': 'reviews' //text, default, small, reviews
+    };
+    var _ts = document.createElement('script');
+    _ts.type = 'text/javascript'; 
+    _ts.charset = 'utf-8'; 
+    _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js'; 
+    var __ts = document.getElementsByTagName('script')[0];
+    __ts.parentNode.insertBefore(_ts, __ts);
+    })();
+</script>
+
+
+<div id="page_margins">
+	<div id="page">
+
+    <div id="header">
+  		<div id="topnav">
+			 			 <a class="skip" href="#navigation" title="Direkt zur Navigation springen">Zur Navigation springen</a><span class="hideme">.</span>
+			 <a class="skip" href="#content" title="Direkt zum Inhalt springen">Zum Inhalt springen</a><span class="hideme">.</span>
+			 			 </div>
+	     <a href="http://fairshop.surfpilot.de/index.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="templates/fair_black/img/fair_logo.gif" alt="Fairsuchungen" id="companyLogo"></a>
+    </div>
+
+        <div id="nav">
+      <a id="navigation" name="navigation"></a>
+            <div id="nav_main">
+        <ul>
+          <li id="current"><a href="http://fairshop.surfpilot.de/index.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><span>Home</span></a></li>
+		      		        		      		                  <li><a href="http://fairshop.surfpilot.de/account.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><span>Ihr Konto</span></a></li>
+		      			     <li><a href="http://fairshop.surfpilot.de/shopping_cart.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><span>Warenkorb</span></a></li>
+			     <li><a href="http://fairshop.surfpilot.de/checkout_shipping.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><span>Kasse</span></a></li>
+		    </ul>
+      </div>
+    </div>
+            <div id="main">
+      <div id="teaser" class="clearfix">
+        <a href="http://fairshop.surfpilot.de" class="headerNavigation">Startseite</a> » <a href="http://fairshop.surfpilot.de/index.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5" class="headerNavigation">Katalog</a>
+      </div>
+
+
+            <div id="col1">
+        <div id="col1_content" class="clearfix">
+          
+<div class="boxInfoLS" id="box_categories">
+	<h4>Kategorien</h4>
+	<div class="catListBody">
+		<ul><li id="cidsilberschmuck"><a href="http://fairshop.surfpilot.de/index.php?cPath=5&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><h5 style="font-weight:normal;">Silberschmuck</h5></a></li><li id="cidfairtradeschmuck"><a href="http://fairshop.surfpilot.de/index.php?cPath=43&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><h5 style="font-weight:normal;">Fair Trade Schmuck</h5></a></li><li id="cidgeschenkgutscheine"><a href="http://fairshop.surfpilot.de/index.php?cPath=26&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><h5 style="font-weight:normal;">Geschenkgutscheine</h5></a></li><li id="cidgeschenkverpackungen"><a href="http://fairshop.surfpilot.de/index.php?cPath=16&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><h5 style="font-weight:normal;">Geschenkverpackungen ...</h5></a></li></ul>
+	</div>
+</div>
+          
+<div class="boxInfoLS" id="box_content">
+	<h4>Mehr über...</h4>
+	<div class="boxInfoBodyLS">
+		<img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=7&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Kontakt</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Liefer- und Versandkosten</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=12&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Zahlungsmethoden</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=6&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Gutscheine</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=2&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Datenschutz</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=3&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">AGB</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=4&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Impressum</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=9&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Gesetzliche Informationen</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=22&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Widerrufsrecht</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=25&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Umtausch</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=21&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">R�cksendung</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=29&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Service</a><br>
+	</div>
+</div>
+          
+<div class="boxInfoRS" id="box_whatsnew">
+	<h4><a href="http://fairshop.surfpilot.de/products_new.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Neue Artikel</a></h4>
+	<div class="boxInfoBodyRS">
+			<p class="centerContent"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=644&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/644_0.jpg" alt="Unisex Silberarmspange No. 2" class="imgCenter"></a></p>
+		<h1><a href="http://fairshop.surfpilot.de/product_info.php?products_id=644&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Unisex Silberarmspange No. 2</a></h1>
+	<p class="boxTxtInd"> 119,00 EUR
+	</p>
+	<p class="boxTxtInd">incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+	</div>
+</div>
+          
+          
+          
+
+<div class="boxInfoLS" id="box_search">
+	<h4>Suche</h4>
+	<div class="boxInfoBodyLS">
+	<form id="quick_find" action="http://fairshop.surfpilot.de/advanced_search_result.php" method="get"><input type="hidden" name="XTCsid" value="i9je8tma29nl6ahmr9eet4hvl5">
+	<p><input type="text" name="keywords" size="13" maxlength="30"><input type="image" src="templates/fair_black/buttons/german/button_quick_find.gif" alt="Suchen" title=" Suchen "></p>
+	
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+							
+					<tbody><tr>
+				<td align="center" class="boxText">
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=armreif" style="font-size:19px; font-weight:900; color:#B3EF3A;">armreif</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=armspange" style="font-size:17px; font-weight:800; color:#B6F33B;">armspange</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=bandring" style="font-size:13px; font-weight:600; color:#BBF93C;">bandring</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=big" style="font-size:13px; font-weight:500; color:#BCFA3C;">big</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=dreier" style="font-size:15px; font-weight:700; color:#B9F63B;">dreier</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=eau" style="font-size:17px; font-weight:700; color:#B7F33B;">eau</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=edele" style="font-size:13px; font-weight:600; color:#BBF93C;">edele</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=fl" style="font-size:10px; font-weight:400; color:#C0FF3E;">fl</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=fl%FCssiges" style="font-size:15px; font-weight:600; color:#B9F63C;">fl�ssiges</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=fl%FCssiges+silber" style="font-size:13px; font-weight:600; color:#BBF93C;">fl�ssiges silber</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=geb" style="font-size:11px; font-weight:500; color:#BEFC3D;">geb</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=geb%FCrstet" style="font-size:19px; font-weight:900; color:#B3EE3A;">geb�rstet</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=geb%FCrstete" style="font-size:18px; font-weight:800; color:#B5F13A;">geb�rstete</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=geflochtene" style="font-size:19px; font-weight:800; color:#B4F03A;">geflochtene</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=geh%E4mmerte" style="font-size:20px; font-weight:900; color:#B3EE3A;">geh�mmerte</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=konkav" style="font-size:14px; font-weight:600; color:#BAF83C;">konkav</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=ring" style="font-size:17px; font-weight:700; color:#B7F33B;">ring</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=schwarzem" style="font-size:15px; font-weight:700; color:#B9F63B;">schwarzem</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=silberarmreif" style="font-size:19px; font-weight:800; color:#B4EF3A;">silberarmreif</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=silberband" style="font-size:19px; font-weight:900; color:#B3EF3A;">silberband</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=silberohrringe" style="font-size:19px; font-weight:900; color:#B3EF3A;">silberohrringe</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=silbers" style="font-size:20px; font-weight:900; color:#B3EE3A;">silbers</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=spange" style="font-size:14px; font-weight:600; color:#BAF83C;">spange</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=verhakten" style="font-size:15px; font-weight:700; color:#B9F53B;">verhakten</a>&nbsp;
+											<a href="http://fairshop.surfpilot.de/advanced_search_result.php?searchTagCloud=1&amp;keywords=viereckig" style="font-size:20px; font-weight:900; color:#B3EE3A;">viereckig</a>&nbsp;
+									</td>
+			</tr>
+			
+			</tbody></table>
+	<div style="text-align: center;">
+					<a href="http://www.suchmaschinenoptimierung-hamburg.de/xtc-modules/german/tag-cloud.html" target="_blank" style="font-size:8pt;">Wortwolken</a>
+			</div>
+	</form>
+	
+	
+	
+
+
+</div>
+</div>
+          
+<div class="boxInfoLS" id="box_information">
+	<h4>Mehr über...</h4>
+	<div class="boxInfoBodyLS">
+		<img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=20&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Anfertigung auf Wunsch</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=26&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberschmuck Pflege</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=23&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberschmuck Reinigung</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=18&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Ringgr��en-Tabelle</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=19&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Ringma�band</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=24&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Pressemeldungen</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=16&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Empfehlungen</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=30&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberpreisentwicklung</a><br><img src="templates/fair_black/img/icon_arrow.jpg" alt=""> <a href="http://fairshop.surfpilot.de/shop_content.php?coID=31&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Schmucklexikon</a><br>
+	</div>
+</div>
+
+		    </div>
+      </div>
+      
+			      <div id="col2">
+        <div id="col2_content" class="clearfix">
+
+		
+				
+<!-- cart has no content -->
+<div class="boxInfoRS" id="box_cart">
+<h4><a href="http://fairshop.surfpilot.de/shopping_cart.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Warenkorb</a></h4>
+  <div class="boxInfoBodyRS">
+	<p>Sie haben noch keine Artikel in Ihrem Warenkorb.</p>
+	</div>
+</div>
+
+
+		
+<div class="boxInfoRS" id="box_login">
+  <h4>Willkommen</h4>
+	<div class="boxInfoBodyRS">
+	<form id="loginbox" method="post" action="http://fairshop.surfpilot.de/login.php?action=process&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">
+		<p>eMail-Adresse:
+		<input type="text" name="email_address" size="20" maxlength="50" id="email_address1"></p>
+		<p><input type="password" name="password" size="10" maxlength="30" id="password1"><input type="image" src="templates/fair_black/buttons/german/button_login_small.gif" alt="Anmelden" title=" Anmelden ">&nbsp;<span style="position:relative;top:-10px"><a href="http://fairshop.surfpilot.de/create_account.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Registrieren</a></span></p>
+		<p><a href="http://fairshop.surfpilot.de/password_double_opt.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Passwort vergessen?</a></p>
+	</form>
+	</div>
+</div>
+<div class="boxInfoRS" id="box_newsletter">
+<h4>Newsletter</h4>
+  <div class="boxInfoBodyRS">
+	<form id="sign_in" action="http://fairshop.surfpilot.de/newsletter.php?XTCsid=i9je8tma29nl6ahmr9eet4hvl5" method="post">
+	<p>eMail-Adresse<input type="text" name="email" size="20" maxlength="50"></p>
+	<p><input type="image" src="templates/fair_black/buttons/german/button_login_small.gif" alt="Anmelden" title=" Anmelden "></p>
+
+	</form>
+	</div>
+</div>
+		
+		
+		<p><br>
+		</p><div style="vertical-align:middle; text-align:center">
+			<a href="https://pci.usd.de/compliance/2970-BB57-9CF0-A755-BB60-F466/details_de.html" target="_blank" onclick="window.open(this.href, '', 'width = 600, height = 615, left = 100, top = 200'); return false;"><img src="https://pci.usd.de/compliance/2970-BB57-9CF0-A755-BB60-F466/seal_ctv_80.png"></a>
+			<br><br>
+		</div>
+		<p>
+		
+		</p><div style="vertical-align:middle; text-align:center">
+			<a href="http://www.paypal.de" target="_blank&quot;"><img src="./images/banner/paypal.gif" width="175" border="0"></a>
+		</div>
+		<br><br><p>
+		</p><div style="vertical-align:middle; text-align:center">
+			<a href="https://payment-network.com/sue_de/landing/b2c/kundeninformationen" target="_blank&quot;"><img src="./images/banner/sofortueberweisung.gif" border="0" width="175"></a><br><br>
+		</div>
+		
+		
+					
+					
+
+          
+<div class="boxInfoRS" id="box_best_sellers">
+  <h4>Bestseller</h4>
+  <div class="boxInfoBodyRS">
+				  <h1>01. <a href="http://fairshop.surfpilot.de/product_info.php?products_id=368&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Designerring unisex</a></h1>
+		  <p class="boxTxtInd">    59,00 EUR<br>incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+		  <div class="hrDiv">&nbsp;</div>
+				  <h1>02. <a href="http://fairshop.surfpilot.de/product_info.php?products_id=192&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Ring *Fl�ssiges Silber*</a></h1>
+		  <p class="boxTxtInd">    45,50 EUR<br>incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+		  <div class="hrDiv">&nbsp;</div>
+				  <h1>03. <a href="http://fairshop.surfpilot.de/product_info.php?products_id=427&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberring "Rondo"</a></h1>
+		  <p class="boxTxtInd">    44,90 EUR<br>incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+		  <div class="hrDiv">&nbsp;</div>
+				  <h1>04. <a href="http://fairshop.surfpilot.de/product_info.php?products_id=113&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberring *Dreier*</a></h1>
+		  <p class="boxTxtInd">    235,00 EUR<br>incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+		  <div class="hrDiv">&nbsp;</div>
+				  <h1>05. <a href="http://fairshop.surfpilot.de/product_info.php?products_id=428&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberring konvex "Business"</a></h1>
+		  <p class="boxTxtInd">    198,73 EUR<br>incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript></p>
+		  <div class="hrDiv">&nbsp;</div>
+			 </div>
+</div>
+  
+		  <br>
+        			
+			<div style="horizontal-align:middle; text-align:center">
+				<a target="_new" href="http://willyfogg.com/e60498/Fairsuchungen/"><img src="http://willyfogg.com/images/b/willy34.gif" border="0" alt="Included in WillyFogg.com"></a>			
+			</div>
+                </div>
+      </div>
+      
+			      <div id="col3">
+				  <div id="col3_content" class="clearfix">
+                        <a id="content" name="content"></a>
+            
+
+<h2></h2>
+<p><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:HyphenationZone>21</w:HyphenationZone>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>DE</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="--" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><u><strong><span style="font-size: small;"><span style="font-family: Verdana;">WICHTIGE MITTEILUNG:</span></span></strong></u><strong><span style="font-size: small;"><span style="font-family: Verdana;"> Liebe Kunden, unsere Webpräsenz wurde von unserem alten Provider völlig unerwartet und zwei Monate vor dem uns bekannten Termin abgeschaltet. Die modernen technischen Vorraussetzungen des neuen Providers lassen es leider nicht zu, dass unser Shopsystem dort läuft; der neue Shop ist in Arbeit, braucht aber seine Zeit. Die einzig praktikable Möglichkeit, dass Fairsuchungen auch zwischenzeitlich online und erreichbar ist, war die Weiterleitung auf eine andere Domain. Es geht also alles mit rechten Dingen zu, auch wenn Sie z. Zt. oben in der Adresszeile nicht </span></span></strong><strong><a href="http://www.fairsuchungen.de"><span style="font-size: small;"><span style="font-family: Verdana;">www.fairsuchungen.de</span></span></a><span style="font-size: small;"><span style="font-family: Verdana;"> lesen. <br>
+</span></span></strong></p>
+<p><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Normale Tabelle";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->    <!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:HyphenationZone>21</w:HyphenationZone>
+<w:PunctuationKerning />
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>DE</w:LidThemeOther>
+<w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:DontVertAlignCellWithSp />
+<w:DontBreakConstrainedForcedTables />
+<w:DontVertAlignInTxbx />
+<w:Word11KerningPairs />
+<w:CachedColBalance />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="--" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+{mso-style-name:"Normale Tabelle";
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-style-noshow:yes;
+mso-style-priority:99;
+mso-style-qformat:yes;
+mso-style-parent:"";
+mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+mso-para-margin-top:0cm;
+mso-para-margin-right:0cm;
+mso-para-margin-bottom:10.0pt;
+mso-para-margin-left:0cm;
+line-height:115%;
+mso-pagination:widow-orphan;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><span style="font-size: small;"><span style="font-family: Verdana;"><strong><span style="color: rgb(153, 204, 0);">15% Rabatt auf den "Ring des Monats"</span>. In regelmässigen Abständen, etwa 4x pro Jahr suchen wir aus den beliebtesten Silberringen ein anderes Model für Sie aus. Unser Newsletter wird Sie über jedes neue Model informieren. "Wer zuerst kommt, ..."; um unseren Silberschmuck zu gewohnt günstigen Preisen anbieten zu können, müssen wir unsere Bestände klein halten. Bitte haben Sie Verständnis, wenn es im Rahmen dieser Rabatt-Aktion zu Engpässen kommen kann. Wir bemühen uns umgehend um Nachschub!!</strong></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Fairsuchungen bietet Ihnen den Silberschmuck, den Sie bisher vergeblich gesucht haben! Unser Kundenservice macht fast alles möglich, bitte scheuen Sie sich nicht, einfach einmal nach zu fragen. Im Shop finden Sie fast ausschließlich gerade Ringgrößen, aber auch Zwischengrößen sind i. d. R. kein Problem. Außerdem lassen wir nicht verfügbare oder nicht im Shop angebotene Ringgrößen gerne für Sie anfertigen. Und sollten Sie einmal die falsche Größe bestellt haben, ist ein Umtausch kein Problem!</strong></span></span></p>
+<p><span style="color: rgb(153, 204, 0);"><u><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Ladys-XL-Silberringe:</strong></span></span></u></span><span style="font-size: small;"><span style="font-family: Verdana;"><strong> Bei uns finden Sie Ringmodelle für Frauen auch in wirklich großen Größen, abhängig vom Model bis ca. Größe 70. Endlich keine Unisex-Ringe und Verlegenheitskäufe mehr!!<br>
+</strong></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Sie kennen Ihre Ringgröße nicht, kein Problem! Gerne lassen wir Ihnen ein <a href="http://fairsuchungen.de/Ringmassband:_:19.html?XTCsid=bbac58c1eef4478fc268ab76301659b7"><span style="color: rgb(153, 204, 0);">kostenloses Ringmaßband</span></a> </strong></span></span><span style="font-size: small;"><span style="font-family: Verdana;"><strong><span style="font-size: small;"><span style="font-family: Verdana;"><strong>zukommen</strong></span></span></strong></span><strong>. </strong></span><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Einzelne Modelle können wir bis Größe 70 anfertigen lassen; bitte sprechen Sie uns an! Alles selbstverständlich, ohne Aufpreis!! Widerrufsrecht bei "Anfertigungen auf Kundenwunsch" ab Größe 66 ausgeschlossen!<br>
+</strong></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Unsere&nbsp;</strong></span></span><span style="font-size: small;"><span style="font-family: Verdana;"><a href="http://fairsuchungen.de/Geschenkgutscheine:::26.html" target="_blank"><span style="color: rgb(153, 204, 0);"><strong><span style="font-family: Verdana;">Geschenkgutscheine</span></strong></span></a><span style="color: rgb(102, 204, 0);"><strong> </strong></span><strong> sind genau das Richtige, wenn Sie sich nicht entscheiden können!</strong></span></span><span style="font-size: small;"><span style="font-family: Verdana;"><strong><br>
+</strong></span></span><span style="font-size: small;"><span style="font-family: Verdana;"><strong><br>
+<strong>Unser Schmuck ist seinen Preis wert!</strong> Wir achten stets auf ein gutes Preis-Leistungsverhältnis, verzichten auf mässige Qualität zu scheinbar günstigen Preisen.</strong></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: Verdana;"><strong><br>
+Silberschmuck ist heute längst nicht mehr "das Gold des kleines Mannes". Im Gegenteil, Silberschmuck ist heute mehr als gesellschaftsfähig. Viele große Designer fertigen regelmässig Silberschmuck Kollektionen, die sich zunehmender Beliebheit erfreuen. Unvergleichbar ist vor allem die Kombinationsfähigkeit des Silberschmucks. Keine Farbe, kein Material mit dem sich Silberschmuck nicht kombinieren ließe. Dieser Schmuck hat tausend Gesichter.<br style="font-family: Verdana;">
+Ein Silberring, der tagsüber als Accessoire Ihre Bürogarderobe pimpt, wird abends in Kombination mit einem passenden Silberarmreif zu einem echten Highlight und Hingucker; Ihr Outfit so zu einem echten Unikat. Seit Menschengedenken hat Schmuck sowohl eine psychologische als auch symbolische Bedeutung. Schmuck hebt nicht nur das Selbstwertgefühl, Schmuck drückt auch Lebensfreude aus. Er pimpt also in doppelter Hinsicht.<br style="font-family: Verdana;">
+Silberschmuck zieht sich als modisches Accessoire und Ausdruck der Persönlichkeit durch alle Altersstufen. Silber zählt weltweit zu den meistgetragenen Edelmetallen. Bereits 3000 Jahre vor Chr. konnte Silber von Blei getrennt, Silberschmuck und Münzen hergestellt werden. Angefangen bei ganz einfachen Schmuckstücken für Kinder, über elegante mit Edelsteinen besetzte Colliers, bis hin zum aktuellen Gothic Style, Silberschmuck ist in allen Variationen möglich - Ketten, Ringe, Ohrringe, Creolen, Arm- und Fußschmuck, Broschen, Anhänger, Kopfschmuck und trendige Piercings.<br style="font-family: Verdana;">
+Viele Edelsteine harmonieren besonders gut mit Silber, z. B. Onyx oder Perlmutt. Silber kann z. B. glänzend, gebürstet oder mattiert verarbeitet werden. Gerade die Männerwelt schätzt die schlichte Eleganz des Silberschmucks. Schmuckdesigner und Schmuckmanufakturen verwenden Silber nicht nur wegen seiner sagenhaften Lichtreflexion, sondern auch wegen hervorragenden Verarbeitungseigenschaften. Außerdem ist der Luxus eines Silberschmuckstücks, gerade im Vergleich mit anderen Edelmetallen, durchaus erschwinglich.<br>
+Der niedrige Preis ist jedoch Segen und Fluch zugleich! Aufgrund dieses niedrigen Preises wird Silberschmuck häufig als Massenware produziert und das gleiche Silberschmuckstück hundertausendfach verkauft. Gerade im Internet findet man eine große Auswahl an Shops, die Silberschmuck zum Kauf anbieten. Leider handelt es sich dabei häufig um die ewig gleiche, als Massenprodukt hergestellte Ware. Das muss nicht sein! Silberschmuck ist auch als handgefertigte Designerware durchaus erschwinglich. Einige wenige Onlineshops verkaufen lieber "Klasse statt Masse"; exklusive und innovative Silberschmuckstücke, die viel Freude bereiten.<br>
+<br>
+Neben Silberschmuck hat sich gerade bei jungen Menschen wieder die Wunsch nach</strong><strong> </strong></span></span><span style="font-size: small;"><span style="font-family: Verdana;"><a target="_blank" href="http://www.schmuck-trauringe-shop.de/"><strong><span style="text-decoration: underline;">günstigen Trauringen</span></strong></a><strong> durchgesetzt. Gründe hierfür sind der extrem günstige Preis und die Hautverträglichkeit. Es können also auch Menschen mit Hautunverträglichkeit gegenüber bestimmten Materialien diesen Schmuck auf der Haut tragen.<br>
+</strong></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: Verdana;"><strong>Im Bereich Schmuck nehmen die </strong></span></span><strong><font size="1"><span style="font-family: Verdana;"><span style="font-family: Verdana;"><a href="http://www.schmuck-trauringe-shop.de" target="_blank"><span style="font-size: small;"><span style="font-family: Verdana;">Ringe</span></span></a></span><span style="font-size: small;"><span style="font-family: Verdana;"> eine besondere Stellung ein. Diese haben auch verschiedene Bedeutungen, zum einen sind sie ein Schmuckstück, zum anderen trägt man sie als Zeichen der Verbundenheit und Zuneigung in seiner Beziehung zum Partner.<br>
+<br>
+Hier können Sie Ihren hochwertigen </span></span><span style="font-family: Verdana;"><font size="1"><span style="font-family: Verdana;"><font size="1"><a href="http://www.schmuck-boerse.com" target="_blank"><span style="font-size: small;"><span style="font-family: Verdana;">Schmuck kaufen-Schmuck verkaufen</span></span></a></font><span style="font-size: small;"><span style="font-family: Verdana;">.<br style="font-family: Verdana;">
+<br style="font-family: Verdana;">
+<span style="text-decoration: underline;"><br>
+</span></span></span></span></font></span></span></font></strong></p>
+
+
+
+<h2>Neue Artikel</h2>
+  <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=44&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Armreif "Gegens�tze"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=44&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/44_0.jpg" alt="Armreif " gegens�tze""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Dieser  Armreif&nbsp;ist wahlweise&nbsp;in glänzend/gebürstet oder vollständig glänzend  erhältlich!</p><br>						    119,90 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=410&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Kostenlose Geschenkverpackung</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=410&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/410_0.jpg" alt="Kostenlose Geschenkverpackung"></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					
+Nutzen Sie unseren kostenlosen 
+Geschenklverpackungsservice!<br>						 0,00 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=418&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Halsreif geb�rstet</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=418&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/418_0.jpg" alt="Halsreif geb�rstet"></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Schlichter, offener Halsreif mit  gebürsteter Oberfläche.</p><br>						 99,90 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=427&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberring "Rondo"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=427&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/427_0.jpg" alt="Silberring " rondo""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Zeitloser und dabei zeitgerechter Silberring  für viele Gelegenheiten. Dieser Ring wird von Frauen und Männern gleichermaßen  gern getragen.</p><br>						    44,90 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=443&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberanh�nger "Aztekenkalender"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=443&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/443_0.jpg" alt="Silberanh�nger " aztekenkalender""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Der Aztekenkalender als  Silberanhänger/-amulette.</p><br>						 54,50 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=445&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Silberring "Aztekenkalender"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=445&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/445_0.jpg" alt="Silberring " aztekenkalender""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Siegelring mit  Aztekenkalender.</p><br>						    78,75 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=465&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Bandring geh�mmert</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=465&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/465_0.jpg" alt="Bandring geh�mmert"></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Schlichter, gehämmerter Bandring für Sie und  ihn.</p><br>						    54,00 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=502&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Kordelring "New York"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=502&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/502_0.jpg" alt="Kordelring " new="" york""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Unisex Kordelring in zwei Varianten, oxidiert  oder glänzend.</p><br>						    109,00 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=548&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Geb�rsteter Halsreifen aus Silber</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=548&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/548_0.jpg" alt="Geb�rsteter Halsreifen aus Silber"></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Eleganter, gebürsteter  Silberhalsreifen für besondere Anlässe.</p><br>						 229,00 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+   <h1 class="newProdIndexName"><a href="http://fairshop.surfpilot.de/product_info.php?products_id=626&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5">Creolen mit Stecker "Light"</a></h1>
+  <div class="containerNewProd">
+    			<div class="subcolumns">
+  				<div class="c25l">
+    				<div class="subcl">
+      					<a href="http://fairshop.surfpilot.de/product_info.php?products_id=626&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"><img src="images/product_images/thumbnail_images/626_0.jpg" alt="Creolen mit Stecker " light""=""></a>
+				    </div>
+  				</div>
+  				<div class="c75r">
+    				<div class="subcr">
+    					<p>Glänzende, große Silber-Creolen mit Stecker aus 925 Silber.</p><br>						 111,25 EUR<br>						incl. 19 % MwSt exkl.<script language="javascript">document.write('<a href="javascript:newWin=void(window.open(\'http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5\', \'popup\', \'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400\'))">Versandkosten</a>');</script><a href="javascript:newWin=void(window.open('http://fairshop.surfpilot.de/popup_content.php?coID=1&XTCsid=i9je8tma29nl6ahmr9eet4hvl5', 'popup', 'toolbar=0, scrollbars=yes, resizable=yes, height=400, width=400'))">Versandkosten</a><noscript>&lt;a href="http://fairshop.surfpilot.de/popup_content.php?coID=1&amp;XTCsid=i9je8tma29nl6ahmr9eet4hvl5"target=_blank"&gt;Versandkosten&lt;/a&gt;</noscript>
+     				</div>
+  				</div>
+			</div>
+			  </div>
+ 
+
+          </div>
+          				<div id="ie_clearing">&nbsp;</div>
+      </div>
+      
+    </div>
+				
+
+    <div id="footer">
+    		
+	<a href="http://www.findashop.de" target="_blank">Preisvergleich</a>
+	&nbsp;-&nbsp;
+	<a href="http://www.uhren-onlineshop.com" target="_blank" title="Uhren Shop">Uhren Shop</a>	
+	
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="copyright">eCommerce Engine © 2006 <a href="http://www.xt-commerce.com" target="_blank">xt:Commerce Shopsoftware</a></div><div id="tsbadge4_db8d3657bdbe440c985ae127463eaad4" data-shopname="Fairsuchungen" style="display: block; cursor: pointer; bottom: 0px;"><div id="BadgeContainer_db8d3657bdbe440c985ae127463eaad4" class="" data-tb-element="trustbadge_minimised_container"><div id="MenuDotsBadge_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--badge menu-button_db8d3657bdbe440c985ae127463eaad4--left" data-menu="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" target="_blank" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MaximizeBadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_maximise"><span>+</span>Maximieren</a><a href="javascript:void(null);" id="RemoveTrustbadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_remove"><span>×</span>Schließen</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="BadgeContent_db8d3657bdbe440c985ae127463eaad4" class="badge-content_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge_db8d3657bdbe440c985ae127463eaad4__top"><div id="TrustmarkBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge_db8d3657bdbe440c985ae127463eaad4__logo trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark--50" data-tb-element="trustbadge_minimised_trustmark"></div></div><div class="dash_db8d3657bdbe440c985ae127463eaad4 trustbadge_db8d3657bdbe440c985ae127463eaad4__dash" id="dash-review-separator_db8d3657bdbe440c985ae127463eaad4"></div><div id="ReviewsContainerBadge_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div><div id="MarkInWordsBadge_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="MarkBadge_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></div></div><div id="BadgeFooter_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4 trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__certified"><div id="TriangleBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__triangle"></div><div id="BottomSlantBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant-container"><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant"><polygon fill="#ffffff" stroke-width="0" points="0,1.5 0,0 10,0 16,0 "></polygon></svg></div><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container--authentic-reviews"><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text--authentic-reviews">Zertifizierter Shop</div></div><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon"></span></div></div></div></div></div></div><div id="tscard4_db8d3657bdbe440c985ae127463eaad4" style="display: none; bottom: 0px;"><div id="Container_db8d3657bdbe440c985ae127463eaad4" class="tscard__container_db8d3657bdbe440c985ae127463eaad4"><div id="TopSlant_db8d3657bdbe440c985ae127463eaad4"><svg id="svgTop_db8d3657bdbe440c985ae127463eaad4" width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#fff" stroke-width="0" points="0,10 0,5 0,5 25,0"></polygon></svg></div><div id="MenuDotsCard_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--card " data-menu="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/PROTECTION_TERMS_COMPLETE_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MinimizeCardLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon"><span>–</span>Minimieren</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="Content_db8d3657bdbe440c985ae127463eaad4" class="content_db8d3657bdbe440c985ae127463eaad4 content_db8d3657bdbe440c985ae127463eaad4--trustbadge"><div id="ShopName_db8d3657bdbe440c985ae127463eaad4" title="Fairsuchungen">Fairsuchungen</div><div id="TrustmarkProtectionInfoLayer_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i><div id="CloseTrustmarkInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="headline_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><p>Sie können sich nach dem Einkauf für die kostenlose Trusted Shops Mitgliedschaft Basic anmelden, inkl. Käuferschutz bis je 100 € für den aktuellen Einkauf sowie für Ihre weiteren Einkäufe in deutschen Shops mit dem Trusted Shops Gütesiegel.</p><br><p>Mit <b>Trusted Shops</b><i style="color:#0DBEDC;font-weight:bold;">  PLUS</i> (inkl. Garantie) werden Ihre Einkäufe sogar bis je 20.000 € durch den Käuferschutz (inkl. Garantie) abgesichert, für 9,90 € pro Jahr inkl. MwSt. bei einer Mindestvertragslaufzeit von 1 Jahr. Die Absicherungsdauer des Käuferschutzes pro Einkauf beträgt in beiden Fällen 30 Tage.</p><br><p>Es gelten die <a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" target="_blank"> Mitgliedschafts- und Käuferschutzbedingungen</a>.</p></div><div class="table_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 "><a href=" https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=TrustmarkCellNo1__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class=" blockLink_db8d3657bdbe440c985ae127463eaad4 " target="_blank"><div id="TrustmarkImage_db8d3657bdbe440c985ae127463eaad4"></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Zertifiziert</div><div class="center_db8d3657bdbe440c985ae127463eaad4">seit 20.07.2009</div></a></div><div id="TrustmarkCellNo2_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4  hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="TrustmarkLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ProtectionImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><div id="ProtectionLimit_db8d3657bdbe440c985ae127463eaad4">bis zu 20.000&nbsp;€</div></a></div></div><div style="display:none;" id="ReviewsInfoLayer_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4 reviews-info-layer_db8d3657bdbe440c985ae127463eaad4 "><div id="CloseReviewsInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="tableCell_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i><p class="headline_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</p><p class="reviews-info-layer_db8d3657bdbe440c985ae127463eaad4__description">Die Note „Sehr gut“ berechnet sich aus den 5 Trusted Shops Bewertungen der letzten 12 Monate, die im <a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html&amp;utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsInfoLayer__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" target="_blank">Bewertungsprofil</a> eingesehen werden können.</p></div></div><div id="ReviewsRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="ReviewsLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsBubbleImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i></div><div id="ReviewsRatingCount_db8d3657bdbe440c985ae127463eaad4"><span class="counter_db8d3657bdbe440c985ae127463eaad4">51</span><span id="commentText_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</span></div></a></div><div id="ReviewsCellNo2_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 "><a href="https://www.trustedshops.de/bewertung/info_XA7A40B5CE907D177A7066B22FC132420.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsCellNo2__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class="blockLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"><div id="Stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div id="MarkInWords_db8d3657bdbe440c985ae127463eaad4" class="largeFontSize_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="Mark_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></a></div></div></div><div id="ReviewComments_db8d3657bdbe440c985ae127463eaad4"><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">17.04.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Trotz eines anfänglichen Problems hat Fr. Teltz-Jödicke sich um eine schnelle Lösung bemüht. Man wird gut betreut.  Gerne wieder</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Bärbel M</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">01.04.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Habe mir den Silberring Business II bestellt und bin total begeistert.  Er ist wunderschön, ich mag große Silberring und groß ist er definitiv :-)  Auch war die Lieferung sehr schnell und Kundenservice wird groß geschrieben   Ist schon mein 3ter Silberring von Fairsuchungen.....Und es werden bestimmt noch mehr :o)</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Ute L</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">04.03.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">DANKE Ich bin super zufrieden - in jeder Hinsicht</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div id="ReviewSlideControls_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><div><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a></div></div></div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div><svg id="svgBottom_db8d3657bdbe440c985ae127463eaad4" width="100%" height="10" viewBox="0 0 9.9 5" preserveAspectRatio="none"><polygon fill="#FFDC0F" stroke-width="0" points="0,5 10,10 10,0 10,0"></polygon></svg><div id="Triangle_db8d3657bdbe440c985ae127463eaad4"></div><div id="TrustedShopsLogo_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-e-trustedshops"></i></div><div id="Footer_db8d3657bdbe440c985ae127463eaad4"></div><div class="rotate-screen_db8d3657bdbe440c985ae127463eaad4 rotate-screen_db8d3657bdbe440c985ae127463eaad4--full "></div></div></div></body></html>

@@ -1,0 +1,2061 @@
+<!DOCTYPE html><html lang="de"><head>
+    <link rel="preconnect" href="//bergemeer.global.ssl.fastly.net">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script async="" src="//connect.facebook.net/en_US/fbds.js"></script><script async="" src="https://tracking.bd4travel.com/tag/t.js?c=g15272&amp;p=generic"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K4GSWW"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"76bea59de2","applicationID":"6219817","transactionName":"IVYLRhQJWFhTExcWXg1NSlsIAlFM","queueTime":0,"applicationTime":386,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw8GUFBaGwUCVVhaBgY="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" value="-6">
+    <meta name="google-site-verification" content="nEL3H_GCJxXGasxbEgpYmjDKaxYOKFuJe2wJetiOZtc">
+<meta name="description" content="Ob Sie für Ihren Urlaub Städtereisen &amp; Kurzreisen planen oder sich für günstige Rundreisen interessieren - bei Berge &amp; Meer finden Sie das passende Angebot.">
+    
+    <title>Rundreisen, Kreuzfahrten und Städtereisen von Berge &amp; Meer - Berge &amp; Meer</title>
+    <meta name="twitter:card" content="summery">
+<meta name="twitter:site" content="@bergeundmeer">
+<meta name="twitter:title" content="Berge &amp; Meer | Günstige Rundreisen und Städtereisen - Kurzreisen - Deutschland">
+<meta name="twitter:description" content="Ob Sie für Ihren Urlaub Städtereisen, Kurzreisen durch Deutschland planen oder sich für günstige Rundreisen interessieren - bei Berge &amp; Meer finden Sie das passende Angebot.">
+<meta name="twitter:creator" content="@bergeundmeer">
+    
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="QDRtJye3lQWWN4me01dPDdqK51FyULCLOARWUYvovnZGviQdyleEFeJEmkyQy/SRh0vbsPUHsKgjmqskg/ORiw==">
+
+    <link rel="stylesheet" media="all" href="//bergemeer.global.ssl.fastly.net/assets/application-828cee502cff25da50723c1b1f2c34580f954933ca785322a64454b13f2a0adf.css">
+    
+    
+    <noscript>
+  &lt;iframe
+    src="//www.googletagmanager.com/ns.html?id=GTM-K4GSWW"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden;"
+  &gt;
+  &lt;/iframe&gt;
+</noscript>
+<script>
+  (
+    function(w,d,s,l,i) {
+      w[l] = w[l] || [];
+      w[l].push(
+        {
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        }
+      );
+      var f = d.getElementsByTagName(s)[0];
+      var j = d.createElement(s);
+      var dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j,f);
+    }
+  )(window, document, 'script', 'dataLayer', 'GTM-K4GSWW');
+</script>
+
+    <script src="//bergemeer.global.ssl.fastly.net/assets/emstrack-0b667939108f67179b636c302b9641e7331a2b5fb85c5f254bed376a7c2225aa.js"></script>
+    <script>
+//<![CDATA[
+
+  /* Data container; leave empty for basic (URL only) tracking */
+  var bd4t = [];
+  /* Generic page view for basic tracking; replace for    advanced tracking   */
+  bd4t.push(["view", "page", {"type": "generic", "label": "generic"}]);
+  /*** bd4travel tracking tag ***/
+  (function(b,d,t,r,a,v,e,l) {
+      t[v]=t[v]||[];t[v].ts=1*new Date();
+      e=d.createElement(b);
+      e.async=1;
+      e.src='https://tracking.bd4travel.com/tag/t.js?c='+r+'&p='+a;
+      l=d.getElementsByTagName(b)[0];
+      l.parentNode.insertBefore(e,l);
+  })
+  ('script',document,window,'g15272','generic','bd4t');
+
+//]]>
+</script>
+        <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) { var fbds = document.createElement('script'); fbds.async = true; fbds.src = '//connect.facebook.net/en_US/fbds.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s); _fbq.loaded = true; }
+  _fbq.push(['addPixelId', '472969776211738']);
+  })();
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', 'PixelInitialized', {}]);
+  </script>
+  <noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=472969776211738&amp;ev=PixelInitialized" /&gt;</noscript>
+
+      
+    <!--[if lt IE 9]>
+       <script src="//bergemeer.global.ssl.fastly.net/assets/application-ie-3acff8c1e3161bf09b8875115c541775d73c6336da00afc447387fe1a9912102.js"></script>
+       <link href="//bergemeer.global.ssl.fastly.net/assets/ie/respond-proxy-01a9062d1871d9d3494628b0c4341018d4787a1ab26835bfbe8cfae4d2656e7b.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/ie/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/ie/respond.proxy.js"></script>
+    <![endif]-->
+    <!--[if !IE]>
+       <link rel="stylesheet" media="all" href="//bergemeer.global.ssl.fastly.net/assets/ie_overrides-0bb5f0c2ab525810f417f0a0f785ed3c3dc90d795aa843d177f885c7b689f797.css" />
+    <![endif]-->
+
+      <!-- Start Visual Website Optimizer Asynchronous Code -->
+  <script type="text/javascript">
+    var _vwo_code=(function(){
+    var account_id=269106,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    // DO NOT EDIT BELOW THIS LINE
+    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script><script src="//dev.visualwebsiteoptimizer.com/j.php?a=269106&amp;u=https%3A%2F%2Fwww.berge-meer.de%2F&amp;r=0.7374086823616413" type="text/javascript"></script>
+  <!-- End Visual Website Optimizer Asynchronous Code -->
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="//bergemeer.global.ssl.fastly.net/assets/favicon-5b1d7b094e94506e53e5b709c9bc96d8d8161f7e13607eee89f9e77c79e9dd18.ico">
+  <link rel="apple-touch-icon" sizes="16x16" href="/apple-touch-icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="32x32" href="/apple-touch-icon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="/apple-touch-icon-64x64.png">
+  <link rel="apple-touch-icon" sizes="70x70" href="/apple-touch-icon-70x70.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/apple-touch-icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="150x150" href="/apple-touch-icon-150x150.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="160x160" href="/apple-touch-icon-160x160.png">
+  <link rel="apple-touch-icon" sizes="196x196" href="/apple-touch-icon-196x196.png">
+  <link rel="apple-touch-icon" sizes="310x310" href="/apple-touch-icon-310x310.png">
+
+
+    <meta name="generator" content="Scrivito by Infopark AG (scrivito.com)">
+  <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070017076/?random=1513868148574&amp;cv=8&amp;fst=1513868148574&amp;num=1&amp;label=JqaaCJag-AMQtNSc_gM&amp;guid=ON&amp;eid=659238991&amp;u_h=768&amp;u_w=1024&amp;u_ah=768&amp;u_aw=1024&amp;u_cd=24&amp;u_his=1&amp;u_tz=0&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;frm=0&amp;url=https%3A%2F%2Fwww.berge-meer.de%2F&amp;tiba=Rundreisen%2C%20Kreuzfahrten%20und%20St%C3%A4dtereisen%20von%20Berge%20%26%20Meer%20-%20Berge%20%26%20Meer&amp;rfmt=3&amp;fmt=4"></script><script src="//dev.visualwebsiteoptimizer.com/2.0/va-294a5320be8a2b644967e4ae0a85162a.js" type="text/javascript"></script></head>
+
+  <body data-target="affixed" data-spy="scroll" data-spinner-image="//bergemeer.global.ssl.fastly.net/assets/spinners/spinner-a0badd14e636b2321c77661e24d96e8fab93631e028cfd1fd9ac8e51702cd8d8.gif" data-availability-spinner-image="//bergemeer.global.ssl.fastly.net/assets/spinners/room_availability_check_spinner-c6bba2559eeddb971d5d33ef6bdeb25939e33731c86ac41b35a53deb71d67bed.gif">
+    
+    <div id="datepicker-overlay"></div>
+    <div class="sidebar_container">
+      <div class="sidebar_container_padding">
+        <a href="#content" class="sr-only">Zum Hauptinhalt springen.</a>
+        <a id="top"></a>
+        
+
+
+<div class="topnav hidden-xs hidden-print hidden">
+  <div class="container">
+      <div class="login pull-right hidden-lg hidden-md">
+        <a class="btn btn-primary" href="/users/login">
+          <i class="glyphicon glyphicon-log-in"></i>
+</a>      </div>
+    <span class="login-status pull-right hidden-sm hidden-xs">
+        <a class="btn btn-primary" href="/users/login">
+          Anmelden <i class="fa fa-sign-in"></i>
+</a>    </span>
+  </div>
+</div>
+
+
+<div class="container hidden-print">
+  <div id="header" role="banner">
+    <div class="ci hidden-xs hidden-sm">
+      <a id="bm_logo" href="/"><img alt="Berge&amp;nbsp;&amp;amp;&amp;nbsp;Meer – Reisen für Entdecker" src="//bergemeer.global.ssl.fastly.net/assets/logos/berge_und_meer_logo-f51343e51de9a3946c41450fa7aaa1c250d27532dbdf1fa93d04e3e99fede65e.png"></a>
+      
+      <ul class="vorteile">
+        <li class="img">
+          <a target="_blank" href="http://www.safer-shopping.de/zertifikat/berge-meer-de.html"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/tuv_logo-a04f51956c4443ccb5e3a7084e12c1724db203e73a1c5987b79d21d8ed38de51.png" alt="Tuv logo"></a>
+        </li>
+
+          <li class="text">
+            <a href="/info/reisefinanzierung">
+              NEU
+              <em>Finanzierung möglich</em>
+</a>          </li>
+
+          <li class="text">
+            <a href="/hilfe-faq#Fragen_zur_Zahlung">
+              Zahlung auf
+              <em>Rechnung</em>
+</a>          </li>
+
+          <li class="text">
+            <a href="/info/jubilaeumsangebote/">
+              40 Jahre
+              <em>Erfahrung</em>
+</a>          </li>
+        <li class="text first">
+          <a class="phone" href="tel:+4926349626099">
+            Täglich von 8-22 Uhr
+            <em>
+              <i class="fa fa-phone"></i>&nbsp;
+              02634 962 6099
+            </em>
+            <small>24.12. bis 12 Uhr, 31.12. bis 16 Uhr</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="navbar-bg hidden-xs hidden-sm hidden-print">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="/">Startseite</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Start</a></li>
+<li><a href="/reisen"><i class="fa fa-search"></i> Suche</a></li>
+<li><a href="/reiseziele">Reiseziele</a></li>
+<li><a href="/themen">Reisethemen</a></li>
+<li><a href="/hotelschaetze">Hotelschätze</a></li>
+<li><a href="/thema/familienreisen">Familien</a></li>
+<li><a href="/unterthema/schnaeppchen">Schnäppchen</a></li>
+<li><a href="/thema/kurzfrist-reisen">Lastminute</a></li>
+<li><a href="/service">Service</a></li>
+
+
+          
+
+          
+
+              <li class="pull-right">
+                <a title="Anmelden" class="btn btn-primary" id="user_login" href="/users/login">
+                  <i class="fa fa-sign-in"></i> <span class="small">Mein Berge&nbsp;&amp;&nbsp;Meer</span>
+</a>              </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  
+</div>
+
+
+
+
+        <div class="container">
+          <div id="content" role="main">
+            <div class="fadeMe" style="display: none"></div>
+            
+              <script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "url" : "https://www.berge-meer.de/",
+    "logo": "//bergemeer.global.ssl.fastly.net/assets/logos/berge_und_meer_logo-f51343e51de9a3946c41450fa7aaa1c250d27532dbdf1fa93d04e3e99fede65e.png",
+    "contactPoint" : [{
+      "@type" : "ContactPoint",
+      "telephone" : "+4926349626099",
+      "contactType" : "customer service",
+      "availableLanguage" : "German"
+    }],
+    "sameAs" : [
+      "https://www.facebook.com/BergeundMeer",
+      "https://twitter.com/bergeundmeer",
+      "https://plus.google.com/+bergeundmeer"
+    ]
+  }
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "WebSite",
+  "name" : "Berge & Meer",
+  "url" : "https://www.berge-meer.de/"
+}
+</script>
+
+
+
+
+
+<div></div>
+<h1></h1>
+<div><div><div class="theme_name_teasers_widget">
+<div class="hidden-print">
+<div class="subs clearfix visible-md visible-lg">
+<div class="sub" id="nav_themen">
+<div class="row sameheight">
+<div class="bm-reisethema bm-reisethema-rundreisen col-sm-2">
+<a class="main" id="home_navigation_rundreisen_image" href="/thema/rundreisen"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/1/sm_rundreisen.jpg" alt="Sm rundreisen">
+<em class="hidden-sm">Rundreisen</em>
+<em class="visible-sm">
+<small>Rundreisen</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_rundreisen_1" class="list-group-item rundreisen" href="/thema/rundreisen+gefuehrte-rundreisen"><span>Geführte Rundreisen</span>
+</a><a id="home_navigation_rundreisen_2" class="list-group-item rundreisen" href="/thema/rundreisen+kleingruppen-rundreisen"><span>Kleingruppen</span>
+</a><a id="home_navigation_rundreisen_3" class="list-group-item rundreisen" href="/thema/rundreisen+aerztlich-begleitete-rundreisen"><span>Ärztlich begleitet</span>
+</a><a class="list-group-item all rundreisen" id="home_navigation_rundreisen" href="/thema/rundreisen"><span>Alle Reisen...</span>
+</a></div>
+</div>
+<div class="bm-reisethema bm-reisethema-erlebnisreisen col-sm-2">
+<a class="main" id="home_navigation_erlebnisreisen_image" href="/thema/erlebnisreisen"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/2/sm_20171025_KW44_Banner2_Erlebnisreisen.jpg" alt="Sm 20171025 kw44 banner2 erlebnisreisen">
+<em class="hidden-sm">Erlebnisreisen</em>
+<em class="visible-sm">
+<small>Erlebnisreisen</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_erlebnisreisen_1" class="list-group-item erlebnisreisen" href="/thema/erlebnisreisen+aktivreisen"><span>Aktivreisen</span>
+</a><a id="home_navigation_erlebnisreisen_2" class="list-group-item erlebnisreisen" href="/thema/erlebnisreisen+abenteuerreisen"><span>Abenteuerreisen</span>
+</a><a id="home_navigation_erlebnisreisen_3" class="list-group-item erlebnisreisen" href="/thema/erlebnisreisen+grenzenlos"><span>Grenzenlos</span>
+</a><a class="list-group-item all erlebnisreisen" id="home_navigation_erlebnisreisen" href="/thema/erlebnisreisen"><span>Alle Reisen...</span>
+</a></div>
+</div>
+<div class="bm-reisethema bm-reisethema-eigene_anreise col-sm-2">
+<a class="main" id="home_navigation_eigeneanreise_image" href="/thema/eigene-anreise"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/3/sm_eigene-anreise.jpg" alt="Sm eigene anreise">
+<em class="hidden-sm">Eigene Anreise</em>
+<em class="visible-sm">
+<small>Eigene Anreise</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_eigeneanreise_1" class="list-group-item eigene_anreise" href="/thema/eigene-anreise+aktiv-wellnessreisen"><span>Aktiv- &amp; Wellnessreisen</span>
+</a><a id="home_navigation_eigeneanreise_2" class="list-group-item eigene_anreise" href="/thema/eigene-anreise+staedte-eventreisen"><span>Städte- &amp; Eventreisen</span>
+</a><a id="home_navigation_eigeneanreise_3" class="list-group-item eigene_anreise" href="/thema/eigene-anreise+familienreisen"><span>Familienreisen</span>
+</a><a class="list-group-item all eigene_anreise" id="home_navigation_eigeneanreise" href="/thema/eigene-anreise"><span>Alle Reisen...</span>
+</a></div>
+</div>
+<div class="bm-reisethema bm-reisethema-kombinationsreisen col-sm-2">
+<a class="main" id="home_navigation_kombinationsreisen_image" href="/thema/kombinationsreisen"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/4/sm_kombinationsreisen.jpg" alt="Sm kombinationsreisen">
+<em class="hidden-sm">Kombinationsreisen</em>
+<em class="visible-sm">
+<small>Kombinationsreisen</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_kombinationsreisen_1" class="list-group-item kombinationsreisen" href="/thema/kombinationsreisen+rundreise-badeurlaub"><span>Rundreise &amp; Badeurlaub</span>
+</a><a id="home_navigation_kombinationsreisen_2" class="list-group-item kombinationsreisen" href="/thema/kombinationsreisen+laenderkombinationen"><span>Länderkombinationen</span>
+</a><a id="home_navigation_kombinationsreisen_3" class="list-group-item kombinationsreisen" href="/thema/kombinationsreisen+rundreise-kreuzfahrt"><span>Rundreise &amp; Kreuzfahrt</span>
+</a><a class="list-group-item all kombinationsreisen" id="home_navigation_kombinationsreisen" href="/thema/kombinationsreisen"><span>Alle Reisen...</span>
+</a></div>
+</div>
+<div class="bm-reisethema bm-reisethema-flugreisen col-sm-2">
+<a class="main" id="home_navigation_flugreisen_image" href="/thema/flugreisen"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/5/sm_flugreisen.jpg" alt="Sm flugreisen">
+<em class="hidden-sm">Flugreisen</em>
+<em class="visible-sm">
+<small>Flugreisen</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_flugreisen_1" class="list-group-item flugreisen" href="/thema/flugreisen+langzeit-urlaub"><span>Langzeit-Urlaub</span>
+</a><a id="home_navigation_flugreisen_2" class="list-group-item flugreisen" href="/thema/flugreisen+mietwagenreisen"><span>Mietwagenreisen</span>
+</a><a id="home_navigation_flugreisen_3" class="list-group-item flugreisen" href="/thema/flugreisen+badeurlaub"><span>Badeurlaub</span>
+</a><a class="list-group-item all flugreisen" id="home_navigation_flugreisen" href="/thema/flugreisen"><span>Alle Reisen...</span>
+</a></div>
+</div>
+<div class="bm-reisethema bm-reisethema-kreuzfahrten col-sm-2">
+<a class="main" id="home_navigation_kreuzfahrten_image" href="/thema/kreuzfahrten"><img src="//bergemeer.global.ssl.fastly.net/uploads/theme_name/picture/6/sm_kreuzfahrten.jpg" alt="Sm kreuzfahrten">
+<em class="hidden-sm">Kreuzfahrten</em>
+<em class="visible-sm">
+<small>Kreuzfahrten</small>
+</em>
+</a><div class="list-group">
+<a id="home_navigation_kreuzfahrten_1" class="list-group-item kreuzfahrten" href="/thema/kreuzfahrten+flusskreuzfahrten"><span>Flusskreuzfahrten</span>
+</a><a id="home_navigation_kreuzfahrten_2" class="list-group-item kreuzfahrten" href="/thema/kreuzfahrten+hochseekreuzfahrten"><span>Hochseekreuzfahrten</span>
+</a><a id="home_navigation_kreuzfahrten_3" class="list-group-item kreuzfahrten" href="/thema/kreuzfahrten+mini-kreuzfahrt"><span>Mini-Kreuzfahrt</span>
+</a><a class="list-group-item all kreuzfahrten" id="home_navigation_kreuzfahrten" href="/thema/kreuzfahrten"><span>Alle Reisen...</span>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="list-group visible-xs visible-sm">
+<a class="list-group-item rundreisen" href="/thema/rundreisen"><span>Rundreisen</span>
+</a><a class="list-group-item erlebnisreisen" href="/thema/erlebnisreisen"><span>Erlebnisreisen</span>
+</a><a class="list-group-item eigene_anreise" href="/thema/eigene-anreise"><span>Eigene Anreise</span>
+</a><a class="list-group-item kombinationsreisen" href="/thema/kombinationsreisen"><span>Kombinationsreisen</span>
+</a><a class="list-group-item flugreisen" href="/thema/flugreisen"><span>Flugreisen</span>
+</a><a class="list-group-item kreuzfahrten" href="/thema/kreuzfahrten"><span>Kreuzfahrten</span>
+</a></div>
+</div>
+
+</div>
+</div><div><div class="cms-carousel-lg" data-pause-switching="0">
+<div class="topteasers-search-form">
+<div class="box allow-overflow">
+<h3>Reisen entdecken</h3>
+<form id="search-home" class="offer-search ajax-submit allow-overflow" role="form" data-api-path="/api/list_page_urls" action="/reisen" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><div class="form-group">
+<label class="inline-icon" for="autocomplete">
+Wohin?
+<input type="text" name="autocomplete" id="autocomplete" class="form-control col-md-12 input typeahead ui-autocomplete-input" placeholder="Reiseziel oder Reisecode" autocomplete="off">
+</label>
+</div>
+
+<input type="hidden" name="selector" id="selector">
+
+<div class="form-group">
+<label class="inline-icon" for="travel_period">
+Wann?
+<div class="">
+<input type="text" name="travel_period" id="travel_period" value="" class="form-control input-sm list-page-datepicker" readonly="readonly" placeholder="Reisezeitraum wählen">
+<input type="hidden" name="start_date" id="start_date">
+<input type="hidden" name="end_date" id="end_date">
+</div>
+
+</label>
+</div>
+<div class="hidden search-inputs">
+<div class="">
+<select name="cruise_area" id="cruise_area" class="form-control input-sm"><option value="">beliebiges Fahrgebiet</option></select>
+</div>
+
+<div class="">
+<select name="destination" id="destination" class="form-control input-sm"><option value="">beliebiges Reiseziel</option></select>
+</div>
+
+<select name="hotel" id="hotel" class="form-control input-sm"><option value="">beliebig</option></select>
+
+<select name="search_attribute" id="search_attribute"><option value="">beliebig</option></select>
+
+<input type="text" name="search_query" id="search_query">
+
+<div class="">
+<select name="ship_owner" id="ship_owner" class="form-control input-sm"><option value="">beliebige Reederei</option></select>
+</div>
+
+<div class="">
+<select name="ship" id="ship" class="form-control input-sm"><option value="">beliebiges Schiff</option></select>
+</div>
+
+<div class="">
+<select name="theme_name" id="theme_name" class="form-control input-sm"><option value="">beliebiges Reisethema</option></select>
+</div>
+
+<div class="">
+<select name="theme_type" id="theme_type" class="form-control input-sm"><option value="">beliebiges Unterthema</option></select>
+</div>
+
+
+</div>
+<button class="btn btn-primary btn-lg btn-block" id="home_search_button_click">
+<span class="offer-count">1555</span>
+<span class="hidden singular">Reise</span>
+<span class="plural">Reisen</span>
+anzeigen &nbsp;
+<i class="fa fa-search"></i>
+</button>
+<p class="text-primary text-right" id="click_home_search_details"><a href="/reisen">Zur Detailsuche</a></p>
+
+</form>
+</div>
+</div>
+<div class="cms-teaser-slides">
+<ul class="cms-carousel-objects">
+<li class="cms-carousel-object" data-index="0">
+<a class="img-teaser-lg" href="/suche/A5K002"><div class="cms-teaser-copyright unselectable">©frazao</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/952a86edfbf553b3/05c5f852ddbc/v/e027fff129c6/TopTeaser-1140x335_Kolumbien_Frau.jpg">
+</div>
+</div>
+<div class="text hidden-xs hidden-sm">
+<div class="h3">Kolumbien-Erlebnisreise um 350 € reduziert.</div>
+<div class="h4">SUPER-Angebot nur diesen Monat buchbar.</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="text">
+<div class="h3">Kolumbien-Erlebnisreise um 350 € reduziert.</div>
+<div class="h4">SUPER-Angebot nur diesen Monat buchbar.</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object" data-index="1" style="opacity: 1;">
+<a class="img-teaser-lg" href="/angebote/kreuzfahrt-des-monats-donau-mit-a-rosa-unterwegs-auf-der-donau-von-passau-nach-oesterreich"><div class="cms-teaser-copyright unselectable">©A-ROSA Flussschiff GmbH</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/6ce30d82c8a7f4de/8a22eae4cefa/v/d33a2cacd6cd/TopTeaser-1140x335_Donau_Arosa.jpg">
+
+</div>
+</div>
+<div class="hidden-sm hidden-xs kreuzfahrten text">
+<div class="h3">Kreuzfahrt des Monats - Donau.</div>
+<div class="h4">Kurztrip mit A-ROSA von Passau bis Wien.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+259 €
+</span>
+<i class="notes">3 Nächte, Vollpension Plus, 2er Außenkabine Kat. S, bei Belegung mit 2 Personen</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="kreuzfahrten text">
+<div class="h3">Kreuzfahrt des Monats - Donau.</div>
+<div class="h4">Kurztrip mit A-ROSA von Passau bis Wien.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+259 €
+</span>
+<i class="notes">3 Nächte, Vollpension Plus, 2er Außenkabine Kat. S, bei Belegung mit 2 Personen</i>
+</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object active" data-index="2" style="opacity: 0;">
+<a class="img-teaser-lg" href="/angebote/kuba-die-zuckerinsel-der-antillen-von-havanna-bis-guama-entdecken-3kr40x0-1"><div class="cms-teaser-copyright unselectable">©simonovstas</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/4cca413dc445ce91/2bfa891190cd/v/460a32c7ed26/TopTeaser-1140x335_Kuba_Havanna_Oldtimer.jpg">
+
+</div>
+</div>
+<div class="hidden-sm hidden-xs kombinationsreisen text">
+<div class="h3">Kuba - Rundreise &amp; Baden.</div>
+<div class="h4">Koloniales Erbe &amp; karibisches Flair.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+1.999 €
+</span>
+<i class="notes">14 Nächte, Verpflegung lt. Ausschreibung, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="kombinationsreisen text">
+<div class="h3">Kuba - Rundreise &amp; Baden.</div>
+<div class="h4">Koloniales Erbe &amp; karibisches Flair.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+1.999 €
+</span>
+<i class="notes">14 Nächte, Verpflegung lt. Ausschreibung, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object" data-index="3">
+<a class="img-teaser-lg" href="/angebote/asien-mit-der-mein-schiff-3-von-dubai-nach-singapur"><div class="cms-teaser-copyright unselectable">©tanatat - fotolia.com</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/8178c83dfef0bddf/c72262db105d/v/aa3baa19d8da/TopTeaser-1140x335_Singapur.jpg">
+<img class="stopper-top stopper-right stopper-shadow tip visible-lg" alt="Premium Alles Inklusive Logo" data-placement="left" title="" src="//bergemeer.global.ssl.fastly.net/uploads/logo/picture/3/Premium_Alles_Inklusive_TUI_Plakette.png" data-original-title="* Im Reisepreis enthalten sind ganztägig in den meisten Bars und Restaurants ein vielfältiges kulinarisches Angebot und Markengetränke in Premium-Qualität sowie Zutritt zum Bereich SPA &amp; Sport, Kinderbetreuung, Entertainment und Trinkgelder."><img class="stopper-top stopper-right stopper-shadow tip visible-sm visible-md" alt="Premium Alles Inklusive Logo" data-placement="left" title="" src="//bergemeer.global.ssl.fastly.net/uploads/logo/picture/3/large_Premium_Alles_Inklusive_TUI_Plakette.png" data-original-title="* Im Reisepreis enthalten sind ganztägig in den meisten Bars und Restaurants ein vielfältiges kulinarisches Angebot und Markengetränke in Premium-Qualität sowie Zutritt zum Bereich SPA &amp; Sport, Kinderbetreuung, Entertainment und Trinkgelder."><img class="stopper-top stopper-right stopper-shadow tip visible-xs" alt="Premium Alles Inklusive Logo" data-placement="left" title="" src="//bergemeer.global.ssl.fastly.net/uploads/logo/picture/3/half_Premium_Alles_Inklusive_TUI_Plakette.png" data-original-title="* Im Reisepreis enthalten sind ganztägig in den meisten Bars und Restaurants ein vielfältiges kulinarisches Angebot und Markengetränke in Premium-Qualität sowie Zutritt zum Bereich SPA &amp; Sport, Kinderbetreuung, Entertainment und Trinkgelder.">
+</div>
+</div>
+<div class="hidden-sm hidden-xs kreuzfahrten text">
+<div class="h3">Asien - Kreuzfahrt.</div>
+<div class="h4">Mit der Mein Schiff 3 von Dubai nach Singapur.&nbsp;</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+2.899 €
+</span>
+<i class="notes">20 Nächte, Verpflegung lt. Ausschreibung, 2er Innenkabine Spezial, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="kreuzfahrten text">
+<div class="h3">Asien - Kreuzfahrt.</div>
+<div class="h4">Mit der Mein Schiff 3 von Dubai nach Singapur.&nbsp;</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+2.899 €
+</span>
+<i class="notes">20 Nächte, Verpflegung lt. Ausschreibung, 2er Innenkabine Spezial, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object" data-index="4">
+<a class="img-teaser-lg" href="/angebote/italien-golf-von-neapel-kleingruppen-rundreise"><div class="cms-teaser-copyright unselectable">©Maugli/Shotshop.com</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/fcf28fd3d6b900ca/4316ea6ea971/v/a3a8337554e2/TopTeaser-1140x335_Capri_Italien.jpg">
+
+</div>
+</div>
+<div class="hidden-sm hidden-xs rundreisen text">
+<div class="h3">Italien - Golf von Neapel.</div>
+<div class="h4">Kleingruppen-Rundreise an der Amalfiküste &amp; auf Capri.&nbsp;</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+1.399 €
+</span>
+<i class="notes">7 Nächte, Halbpension, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="rundreisen text">
+<div class="h3">Italien - Golf von Neapel.</div>
+<div class="h4">Kleingruppen-Rundreise an der Amalfiküste &amp; auf Capri.&nbsp;</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+1.399 €
+</span>
+<i class="notes">7 Nächte, Halbpension, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object" data-index="5">
+<a class="img-teaser-lg" href="/angebote/kroatien-badeurlaub-in-baska-voda"><div class="cms-teaser-copyright unselectable">©markus6318</div>
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/53325ebea730292b/de174a293919/v/e1471f6494b2/TopTeaser-1140x335_Kroatien_Dalmatien.jpg">
+
+</div>
+</div>
+<div class="flugreisen hidden-sm hidden-xs text">
+<div class="h3">Kroatien - Dalmatien.</div>
+<div class="h4">Badeurlaub an der sonnenverwöhnten Adria-Küste.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+599 €
+</span>
+<i class="notes">7 Nächte, Halbpension, Appartement, 2 Personen, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="flugreisen text">
+<div class="h3">Kroatien - Dalmatien.</div>
+<div class="h4">Badeurlaub an der sonnenverwöhnten Adria-Küste.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+599 €
+</span>
+<i class="notes">7 Nächte, Halbpension, Appartement, 2 Personen, bei Belegung mit 2 Personen, inkl. Flug</i>
+</div>
+</div>
+</div>
+</li>
+
+<li class="cms-carousel-object" data-index="6">
+<a class="img-teaser-lg" href="/angebote/kuehlungsborn-wellness-fuer-alle-sinne-an-der-ostsee-dm016x5">
+<div class="img">
+<div class="relative">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/2d8c0e3d136efad9/b72e098f04e8/v/bb69deae1e74/TopTeaser-1140x335_Ostsee_Kuehlungsborn.jpg">
+
+</div>
+</div>
+<div class="eigene-anreise hidden-sm hidden-xs text">
+<div class="h3">Ostsee - Kühlungsborn.</div>
+<div class="h4">Wohlfühlmomente im exquisiten Hotel Vier Jahreszeiten.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+269 €
+</span>
+<i class="notes">3 Nächte, Halbpension, Appartement, 2 Erw., bei Belegung mit 2 Personen</i>
+</div>
+</div>
+</a><div class="container-sm-max visible-xs visible-sm">
+<div class="eigene-anreise text">
+<div class="h3">Ostsee - Kühlungsborn.</div>
+<div class="h4">Wohlfühlmomente im exquisiten Hotel Vier Jahreszeiten.</div>
+<div class="clearfix">
+<span class="price">
+<i>p.P. ab</i>
+269 €
+</span>
+<i class="notes">3 Nächte, Halbpension, Appartement, 2 Erw., bei Belegung mit 2 Personen</i>
+</div>
+</div>
+</div>
+</li>
+
+</ul>
+</div>
+<ul class="cms-carousel-nav-texts hidden-xs hidden-sm">
+<li class="cms-carousel-nav-text" style="width: 14%">
+<a data-index="0" href="/suche/A5K002"><p><strong>SUPER des Monats.</strong></p>Kolumbien um 350 € reduziert.</a>
+</li>
+
+<li class="cms-carousel-nav-text  kreuzfahrten" style="width: 14%">
+<a data-index="1" href="/angebote/kreuzfahrt-des-monats-donau-mit-a-rosa-unterwegs-auf-der-donau-von-passau-nach-oesterreich"><p><strong>Kreuzfahrt des Monats - Donau.</strong></p>Mit A-ROSA von Passau bis Wien.</a>
+</li>
+
+<li class="cms-carousel-nav-text  kombinationsreisen active" style="width: 14%">
+<a data-index="2" href="/angebote/kuba-die-zuckerinsel-der-antillen-von-havanna-bis-guama-entdecken-3kr40x0-1"><p><strong>Kuba.</strong></p>Kultur-Rundreise &amp; Baden am Karibikstrand.</a>
+</li>
+
+<li class="cms-carousel-nav-text  kreuzfahrten" style="width: 14%">
+<a data-index="3" href="/angebote/asien-mit-der-mein-schiff-3-von-dubai-nach-singapur"><p><strong>Asien-Kreuzfahrt.</strong></p>Von Dubai nach Singapur mit der Mein Schiff 3.&nbsp;</a>
+</li>
+
+<li class="cms-carousel-nav-text  rundreisen" style="width: 14%">
+<a data-index="4" href="/angebote/italien-golf-von-neapel-kleingruppen-rundreise"><p><strong>Italien.</strong></p>Kleingruppen-Rundreise am Golf von Neapel.&nbsp;</a>
+</li>
+
+<li class="cms-carousel-nav-text  flugreisen" style="width: 14%">
+<a data-index="5" href="/angebote/kroatien-badeurlaub-in-baska-voda"><p><strong>Dalmatien.&nbsp;</strong></p>Badeurlaub an der kroatischen Adria-Küste.</a>
+</li>
+
+<li class="cms-carousel-nav-text  eigene-anreise" style="width: 14%">
+<a data-index="6" href="/angebote/kuehlungsborn-wellness-fuer-alle-sinne-an-der-ostsee-dm016x5"><p><strong>Kühlungsborn.</strong></p>Exquisite Verwöhnmomente an der Ostsee.</a>
+</li>
+
+</ul>
+<ul class="cms-carousel-nav-dots">
+<li class="arrow cms-carousel-prev">
+<i class="fa fa-chevron-left"></i>
+</li>
+<li class="cms-carousel-nav-dot">
+<a data-index="0" href="/suche/A5K002"></a>
+</li>
+
+<li class="cms-carousel-nav-dot">
+<a data-index="1" href="/angebote/kreuzfahrt-des-monats-donau-mit-a-rosa-unterwegs-auf-der-donau-von-passau-nach-oesterreich"></a>
+</li>
+
+<li class="cms-carousel-nav-dot active">
+<a data-index="2" href="/angebote/kuba-die-zuckerinsel-der-antillen-von-havanna-bis-guama-entdecken-3kr40x0-1"></a>
+</li>
+
+<li class="cms-carousel-nav-dot">
+<a data-index="3" href="/angebote/asien-mit-der-mein-schiff-3-von-dubai-nach-singapur"></a>
+</li>
+
+<li class="cms-carousel-nav-dot">
+<a data-index="4" href="/angebote/italien-golf-von-neapel-kleingruppen-rundreise"></a>
+</li>
+
+<li class="cms-carousel-nav-dot">
+<a data-index="5" href="/angebote/kroatien-badeurlaub-in-baska-voda"></a>
+</li>
+
+<li class="cms-carousel-nav-dot">
+<a data-index="6" href="/angebote/kuehlungsborn-wellness-fuer-alle-sinne-an-der-ostsee-dm016x5"></a>
+</li>
+
+<li class="arrow arrow-right cms-carousel-next">
+<i class="fa fa-chevron-right"></i>
+</li>
+</ul>
+</div>
+
+</div><div><div><div><div class="list">
+<div class="teaser">
+<div class="img" style="background-position: right top; background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/9a79ecf10f4aa2ac/94e4f829df9c/v/8664864f4713/sonderbanner1200x235_Weltwunderreise_neu.jpg)">
+
+<div class="bg">
+<a class="size-1-0" href="/angebote/weltwunder-reise-einmal-um-die-welt-in-24-tagen-im-bann-der-wunderwerke-der-menschheit"><span class="header">Einmal im Leben … Traumreise zu 8 Weltwundern der Menschheit</span>
+<span class="footer"></span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a><span class="offers hidden-xs hidden-sm"><div><span class="offer">
+<a href="/angebote/weltwunder-reise-einmal-um-die-welt-in-24-tagen-im-bann-der-wunderwerke-der-menschheit"><strong>In 24 Tagen um die Welt</strong>
+<div><p>Von Rom über Kairo bis nach Rio</p></div>
+<span class="price">
+<i>p. P. ab</i>
+12.999 €
+</span>
+</a></span>
+
+</div></span>
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<div><div><div class="image-text-widget list">
+<div class="teaser sameheight_col">
+<div class="img" style="background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/8fd02da60a05ab72/7d30004bb1a3/v/a237f797c8ea/Banner-600x400_Erlebnisreisen.jpg)">
+
+<a class="bg size-3-2" href="/thema/erlebnisreisen"><span class="header">Erlebnisreisen</span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a></div>
+</div>
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<div><div><div class="image-text-widget list">
+<div class="teaser sameheight_col">
+<div class="img" style="background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/2b4534fd85aadf17/db707b8f2df6/v/4ca5926249ed/Banner-600x400_Adventskalender.jpg)">
+
+<a class="bg size-3-2" target="_blank" href="https://www.app-online.site/#/app/view/christmasCalendar/7925"><span class="header">Adventskalender</span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a></div>
+</div>
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<div><div><div class="image-text-widget list">
+<div class="teaser sameheight_col">
+<div class="img" style="background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/809710ae3f53185b/e1b951ba1109/v/25a28d2b03fc/20171218_KW51_Banner3_Xmas_Geschenkideen2.jpg)">
+<div class="cms-teaser-copyright unselectable">©drubig-photo-stock.adobe.com</div>
+<a class="bg size-3-2" href="/kategorie/geschenkidee"><span class="header">Geschenkideen für Weihnachten</span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a></div>
+</div>
+</div>
+
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div><div><div class="list">
+<div class="teaser">
+<div class="img" style="background-position: right top; background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/b43c1eccf1c4ef7e/9f777a424954/v/8cb6cca4ebd7/ADAC-Banner-Dezember.jpg)">
+
+<div class="bg">
+<a class="size-1-0" href="/highlights/adac-motorwelt"><span class="header">Aktuelle Angebote ADAC Motorwelt</span>
+<span class="footer"></span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a><span class="offers hidden-xs hidden-sm"><div><span class="offer">
+<a href="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line"><strong>Mini-Kreuzfahrt nach Norwegen</strong>
+<div><p>2 Nächte, Color Fantasy/Magic,</p><p>inklusive Frühstück</p></div>
+<span class="price">
+<i>p. P. ab</i>
+119 €
+</span>
+</a></span>
+
+</div><div><span class="offer">
+<a href="/angebote/ostsee-mit-der-msc-preziosa-kopenhagen-sotckholm-tallinn-st-petersburg-kennenlernen"><strong>Fjordzauber oder Zarenstadt</strong>
+<div><p>7 Nächte, MSC Preziosa inkl. VP,</p><p>3 Routen zur Auswahl</p></div>
+<span class="price">
+<i>p. P. ab</i>
+799 €
+</span>
+</a></span>
+
+</div><div><span class="offer">
+<a href="/angebote/italien-sizilien-kleingruppen-rundreise"><strong>Kleingruppen-Rundreise nach Sizilien</strong>
+<div><p>8-tägig inkl. Flug, 4-Sterne-Hotel,</p><p>inkl. Halbpension &amp; max. 16 Teilnehmern<br></p></div>
+<span class="price">
+<i>p. P. ab</i>
+1.699 €
+</span>
+</a></span>
+
+</div></span>
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
+</div><div><div id="offer-teasers" style="">
+  <div class="row">
+    <h2 class="col-sm-12">Unsere Reise-Empfehlungen für Sie</h2>
+  </div>
+
+
+
+    <div class="list sameheight">
+      <div class="row">
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="PIN026X0-1">
+    <div class="teaser bm-reisethema bm-reisethema-flugreisen">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="Sardinien. Entspannen auf der Sonnen-Insel." data-id="c2fa1fd3-b402-41d9-b7ae-06857682e518" data-price="499.0" data-brand="bm" data-source="bm" data-category="Flugreisen" data-variant="7" data-url="/angebote/sardinien-entspannen-auf-der-sonnen-insel" href="/angebote/sardinien-entspannen-auf-der-sonnen-insel">
+                      <div class="teaser-copyright">©ThePhotos-fotolia.com</div>
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1191698/md_BM_120425_Fotolia_41141464_L_1_export_600_800.jpg" alt="Md bm 120425 fotolia 41141464 l 1 export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>Kein Zuschlag Einzelzimmer</p></div></div>
+  
+  <div class="stopper-stripes"><div class="visible-lg"><div class="tip" title="" data-placement="left" data-original-title=""><img class="icon-hotelschatz" alt="Hotelschatz" src="//bergemeer.global.ssl.fastly.net/uploads/eye_catcher/picture/1/bum_Icon_Hotelschatz_40_40.png"> <span>Hotelschatz</span></div></div><div class="hidden-lg"><div class="tip" title="" data-placement="left" data-original-title=""><img class="icon-hotelschatz" alt="Hotelschatz" src="//bergemeer.global.ssl.fastly.net/uploads/eye_catcher/picture/1/bum_Icon_Hotelschatz_40_40.png"> <span>Hotelschatz</span></div></div></div>
+</div>
+
+</a>                    <em>Flugreisen</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="Sardinien. Entspannen auf der Sonnen-Insel." data-id="c2fa1fd3-b402-41d9-b7ae-06857682e518" data-price="499.0" data-brand="bm" data-source="bm" data-category="Flugreisen" data-variant="7" data-url="/angebote/sardinien-entspannen-auf-der-sonnen-insel" id="" href="/angebote/sardinien-entspannen-auf-der-sonnen-insel">
+                  Sardinien.
+</a>              </h4>
+              <h5>Entspannen auf der Sonnen-Insel.</h5>
+              <ul>
+                <li>Inkl. Flug</li>
+                  <li>8-/15-tägig
+</li>
+                  <li>4-Sterne-Hotel Horse Country Resort Congress &amp; Spa
+</li>
+                  <li>Inkl. Vollpension-Plus
+</li>
+                  <li>Vorteil für Alleinreisende: kein Zuschlag Einzelzimmer
+</li>
+              </ul>
+
+              
+
+                <div class="dates">Termine: <em>Mrz - Okt 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>HIN001</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>499 €</em>
+                  <i class="notes">7 Nächte, Vollpension Plus, Doppelzimmer Superior Typ A, bei Belegung mit 2 Personen, inkl. Flug</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="Sardinien. Entspannen auf der Sonnen-Insel." data-id="c2fa1fd3-b402-41d9-b7ae-06857682e518" data-price="499.0" data-brand="bm" data-source="bm" data-category="Flugreisen" data-variant="7" data-url="/angebote/sardinien-entspannen-auf-der-sonnen-insel" id="" href="/angebote/sardinien-entspannen-auf-der-sonnen-insel">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_IN026X0-1" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/sardinien-entspannen-auf-der-sonnen-insel/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="PURPBA-1">
+    <div class="teaser bm-reisethema bm-reisethema-rundreisen">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="Südafrika. Garden Route, Krüger Nationalpark &amp; Durban." data-id="78326efd-eaa8-48e1-b13e-fcd7bc4bcd11" data-price="2214.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="16" data-url="/angebote/suedafrika-garden-route-krueger-nationalpark-durban" href="/angebote/suedafrika-garden-route-krueger-nationalpark-durban">
+                      <div class="teaser-copyright">©demerzel21-stock.adobe.com</div>
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1197271/md_AdobeStock_55279257_export_600_800.jpg" alt="Md adobestock 55279257 export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>Ausflug zum Kap der Guten Hoffnung</p></div></div>
+  
+  
+</div>
+
+</a>                    <em>Rundreisen</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="Südafrika. Garden Route, Krüger Nationalpark &amp; Durban." data-id="78326efd-eaa8-48e1-b13e-fcd7bc4bcd11" data-price="2214.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="16" data-url="/angebote/suedafrika-garden-route-krueger-nationalpark-durban" id="" href="/angebote/suedafrika-garden-route-krueger-nationalpark-durban">
+                  Südafrika.
+</a>              </h4>
+              <h5>Garden Route, Krüger Nationalpark &amp; Durban.</h5>
+              <ul>
+                <li>Inkl. Flug</li>
+                  <li>18-tägig
+</li>
+                  <li>Mittelklassehotels/Lodges
+</li>
+                  <li>5-Sterne-Hotel Beverly Hills
+</li>
+                  <li>Inkl. Frühstück
+</li>
+              </ul>
+
+                <div class="booking_tip">
+    <span class="info tip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bei Buchung bis 30.09.17 erhalten Sie für die Anreisen bis Ende April 2018 einen Rabatt in Höhe von 50 € pro Person. Für die Anreisen von Mai bis Oktober 2018 gilt der Frühbucherrabatt in Höhe von 50 € pro Person bei Buchung bis 28.02.18. Der jeweils gültige Rabatt ist bereits im angezeigten Preis enthalten.">
+      <i class="fa fa-info-circle"></i> Frühbucher-Vorteil
+    </span>
+  </div>
+
+
+                <div class="dates">Termine: <em>Apr - Okt 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>RUR041</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>2.214 €</em>
+                  <i class="notes">16 Nächte, Frühstück, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="Südafrika. Garden Route, Krüger Nationalpark &amp; Durban." data-id="78326efd-eaa8-48e1-b13e-fcd7bc4bcd11" data-price="2214.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="16" data-url="/angebote/suedafrika-garden-route-krueger-nationalpark-durban" id="" href="/angebote/suedafrika-garden-route-krueger-nationalpark-durban">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_URPBA-1" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/suedafrika-garden-route-krueger-nationalpark-durban/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="P4WR02XB">
+    <div class="teaser bm-reisethema bm-reisethema-rundreisen">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="USA - Westen. Ab/an Los Angeles - Zwischen Meer, Wüste &amp; Glitzerstadt." data-id="d1d0bd69-5b40-4d5a-b87a-911388909e1e" data-price="1999.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="11" data-url="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt" href="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt">
+                      <div class="teaser-copyright">©Andy-stock.adobe.com</div>
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1188843/md_AdobeStock_40603639_Andy_export_600_800.jpg" alt="Md adobestock 40603639 andy export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>4 Nationalparks inklusive</p></div></div>
+  
+  
+</div>
+
+</a>                    <em>Rundreisen</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="USA - Westen. Ab/an Los Angeles - Zwischen Meer, Wüste &amp; Glitzerstadt." data-id="d1d0bd69-5b40-4d5a-b87a-911388909e1e" data-price="1999.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="11" data-url="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt" id="" href="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt">
+                  USA - Westen.
+</a>              </h4>
+              <h5>Ab/an Los Angeles - Zwischen Meer, Wüste &amp; Glitzerstadt.</h5>
+              <ul>
+                <li>Inkl. Flug</li>
+                  <li>13-tägig
+</li>
+                  <li>Mittelklassehotels
+</li>
+                  <li>Selbstverpflegung
+</li>
+                  <li>Vorteil für Alleinreisende: halbes Doppelzimmer buchbar
+</li>
+              </ul>
+
+              
+
+                <div class="dates">Termine: <em>Apr - Okt 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>R4W024</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>1.999 €</em>
+                  <i class="notes">11 Nächte, Ohne Verpflegung, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="USA - Westen. Ab/an Los Angeles - Zwischen Meer, Wüste &amp; Glitzerstadt." data-id="d1d0bd69-5b40-4d5a-b87a-911388909e1e" data-price="1999.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="11" data-url="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt" id="" href="/angebote/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_4WR02XB" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/usa-westen-ab-an-los-angeles-zwischen-meer-wueste-glitzerstadt/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+    </div>
+    <div class="list sameheight">
+      <div class="row">
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="PURPBV">
+    <div class="teaser bm-reisethema bm-reisethema-kombinationsreisen">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="Südafrika, Simbabwe &amp; Botswana. Rundreise Deluxe." data-id="84cd4a2b-4586-4d3e-bdee-a937bc6b177f" data-price="2999.0" data-brand="bm" data-source="bm" data-category="Kombinationsreisen" data-variant="11" data-url="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe" href="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe">
+                      <div class="teaser-copyright">©Lmspencer-stock.adobe.com</div>
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1193725/md_AdobeStock_90739058_export_600_800.jpg" alt="Md adobestock 90739058 export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>Safari im Chobe NP inklusive</p></div></div>
+  
+  
+</div>
+
+</a>                    <em>Kombinationsreisen</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="Südafrika, Simbabwe &amp; Botswana. Rundreise Deluxe." data-id="84cd4a2b-4586-4d3e-bdee-a937bc6b177f" data-price="2999.0" data-brand="bm" data-source="bm" data-category="Kombinationsreisen" data-variant="11" data-url="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe" id="" href="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe">
+                  Südafrika, Simbabwe &amp; Botswana.
+</a>              </h4>
+              <h5>Rundreise Deluxe.</h5>
+              <ul>
+                <li>Inkl. Flug</li>
+                  <li>13-tägig
+</li>
+                  <li>4-/5-Sterne-Hotel/Lodge/Komfortlodge
+</li>
+                  <li>Inkl. Verpflegung
+</li>
+              </ul>
+
+              
+
+                <div class="dates">Termine: <em>Mai - Nov 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>TUC002</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>2.999 €</em>
+                  <i class="notes">11 Nächte, Verpflegung lt. Ausschreibung, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="Südafrika, Simbabwe &amp; Botswana. Rundreise Deluxe." data-id="84cd4a2b-4586-4d3e-bdee-a937bc6b177f" data-price="2999.0" data-brand="bm" data-source="bm" data-category="Kombinationsreisen" data-variant="11" data-url="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe" id="" href="/angebote/suedafrika-simbabwe-botswana-rundreise-deluxe">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_URPBV" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/suedafrika-simbabwe-botswana-rundreise-deluxe/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="PPLR11X0">
+    <div class="teaser bm-reisethema bm-reisethema-rundreisen">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="Portugal. Vielfältiges Portugal von Lissabon bis Lagoa." data-id="7e820d45-bc84-4489-894a-cdb3dd21443f" data-price="1199.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="7" data-url="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa" href="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa">
+                      
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1188009/md_BM_120305_panthermedia_A11010366_3621x2405_1_export_600_800.jpg" alt="Md bm 120305 panthermedia a11010366 3621x2405 1 export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>Alle Eintrittsgelder inklusive</p></div></div>
+  
+  
+</div>
+
+</a>                    <em>Rundreisen</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="Portugal. Vielfältiges Portugal von Lissabon bis Lagoa." data-id="7e820d45-bc84-4489-894a-cdb3dd21443f" data-price="1199.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="7" data-url="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa" id="" href="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa">
+                  Portugal.
+</a>              </h4>
+              <h5>Vielfältiges Portugal von Lissabon bis Lagoa.</h5>
+              <ul>
+                <li>Inkl. Flug</li>
+                  <li>8-tägig
+</li>
+                  <li>4-Sterne-Hotels
+</li>
+                  <li>Inkl. Verpflegung
+</li>
+              </ul>
+
+              
+
+                <div class="dates">Termine: <em>Mai - Okt 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>RPL011</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>1.199 €</em>
+                  <i class="notes">7 Nächte, Verpflegung lt. Ausschreibung, Doppelzimmer, bei Belegung mit 2 Personen, inkl. Flug</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="Portugal. Vielfältiges Portugal von Lissabon bis Lagoa." data-id="7e820d45-bc84-4489-894a-cdb3dd21443f" data-price="1199.0" data-brand="bm" data-source="bm" data-category="Rundreisen" data-variant="7" data-url="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa" id="" href="/angebote/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_PLR11X0" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/portugal-vielfaeltiges-portugal-von-lissabon-bis-lagoa/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+          
+  <div class="product col-md-4 col-sm-4 sameheight_col linked" id="P8W065X0">
+    <div class="teaser bm-reisethema bm-reisethema-kreuzfahrten">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="header">
+            <div class="gallery_position">
+              <div class="carousel-detail">
+                <div class="carousel-objects">
+                  <div class="img">
+                    <a data-name="Kiel - Oslo - Kiel. Ostsee - Mini-Kreuzfahrt mit Color Line." data-id="ff4842cb-6a9e-462a-8695-26c9d7b5c938" data-price="119.0" data-brand="bm" data-source="bm" data-category="Kreuzfahrten" data-variant="2" data-url="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line" href="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line">
+                      
+                      <img id="" src="//bergemeer.global.ssl.fastly.net/uploads/image/photo/1199657/md_BM_080419_CM_Exterior_021_312875_1_export_600_800.jpg" alt="Md bm 080419 cm exterior 021 312875 1 export 600 800">
+                      <div class="stoppers">
+  <div class="stopper"><div><p>Innenkabine = Außenkabine</p></div></div>
+  
+  
+</div>
+
+</a>                    <em>Kreuzfahrten</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max">
+            <div class="sameheight_row">
+              <h4>
+                <a data-name="Kiel - Oslo - Kiel. Ostsee - Mini-Kreuzfahrt mit Color Line." data-id="ff4842cb-6a9e-462a-8695-26c9d7b5c938" data-price="119.0" data-brand="bm" data-source="bm" data-category="Kreuzfahrten" data-variant="2" data-url="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line" id="" href="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line">
+                  Kiel - Oslo - Kiel.
+</a>              </h4>
+              <h5>Ostsee - Mini-Kreuzfahrt mit Color Line.</h5>
+              <ul>
+                
+                  <li>2 Nächte
+</li>
+                  <li>Premium-Schiff Color Fantasy/Magic
+</li>
+                  <li>Inkl. Frühstück an Bord
+</li>
+              </ul>
+
+              
+
+                <div class="dates">Termine: <em>Dez 2017 - Jun 2018</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="padding padding-left-lg-max text-right">
+            <div class="sameheight_row">
+              <div class="code">Reisecode: <em>K8W134</em></div>
+                <div class="price">
+                  <i>p. P. ab</i>
+                  <em>119 €</em>
+                  <i class="notes">2 Nächte, Frühstück, 2er Innenkabine, bei Belegung mit 2 Personen</i>
+                  
+                </div>
+
+            </div>
+            <div class="action">
+              <a class="btn btn-primary link" data-name="Kiel - Oslo - Kiel. Ostsee - Mini-Kreuzfahrt mit Color Line." data-id="ff4842cb-6a9e-462a-8695-26c9d7b5c938" data-price="119.0" data-brand="bm" data-source="bm" data-category="Kreuzfahrten" data-variant="2" data-url="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line" id="" href="/angebote/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line">
+                <i class="fa fa-arrow-right"></i> Details
+</a>
+                <span class="watch_list_action">
+      <a class="btn-icon note" id="bookmark-button_8W065X0" title="Zum Merkzettel hinzufügen" data-remote="true" href="/merkzettel/kiel-oslo-kiel-ostsee-mini-kreuzfahrt-mit-color-line/toggle"><i class="fa fa-thumb-tack icon"></i>
+</a>
+  </span>
+
+
+                            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+    </div>
+</div>
+
+</div><div><div class="list">
+<div class="teaser">
+<div class="img" style="background-position: right top; background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/d513b8c17bfe7752/e13afce0995c/v/3f4f10161900/sonderbanner1200x235-Entdeckerliste)">
+
+<div class="bg">
+<a class="size-1-0" href="https://www.berge-meer.de/entdeckerliste"><span class="header">NEU: Unsere Entdecker-Liste</span>
+<span class="footer"></span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a><span class="offers hidden-xs hidden-sm"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div><div><div><div><div class="common-teaser-widget list">
+<div class="teaser sameheight_col linked">
+<div class="sameheight_row img">
+<a target="_blank" href="/gutschein/steigenberger"><img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/8f0647864e042420/c1f2da7fdc55/v/de76a71a89d7/Teaserbox400x250_SteigenbergerGutschein_Weihnachten.jpg" alt="" class="img-responsive link teaser_box_img" id="home_teaserbox_small_1_img">
+
+</a></div>
+<div class="main">
+<div class="padding padding-left-lg-max">
+<div class="sameheight_row">
+<h3 class="first">Steigenberger Gutschein: Luxustrip zu zweit für 222 €</h3>
+<p class="visible-lg">In Kooperation mit Steigenberger Hotels and Resorts bieten wir Ihnen einen exklusiven Kurzurlaub für Zwei in einem von 26 Hotels in Deutschland und weiteren drei Ländern. Ideal zum Verschenken!</p>
+</div>
+<div class="sameheight_row"></div>
+<div class="sameheight_row">
+<a target="_blank" class="btn btn-default btn-block" id="home_teaserbox_small_1_btn" href="/gutschein/steigenberger"><i class="fa fa-arrow-right"></i>
+Gutschein kaufen
+</a></div>
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div><div><div><div><div class="common-teaser-widget list">
+<div class="teaser sameheight_col linked">
+<div class="sameheight_row img">
+<a href="/kataloge"><img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/300d2b7278cd44f9/13947083b826/v/899195d664f4/Teaserbox400x250_Paar_Weltkugel_Globus_Katalogwelt.jpg" alt="" class="img-responsive link teaser_box_img" id="home_teaserbox_small_2_img">
+
+</a></div>
+<div class="main">
+<div class="padding padding-left-lg-max">
+<div class="sameheight_row">
+<h3 class="first">Unsere Kataloge</h3>
+<p class="visible-lg">In der Berge&nbsp;&amp;&nbsp;Meer Katalogwelt finden Sie unsere aktuellen Kataloge zum Herunterladen - als PDF oder per Katalog-App für Ihr Smartphone oder Tablet.</p>
+</div>
+<div class="sameheight_row"></div>
+<div class="sameheight_row">
+<a class="btn btn-default btn-block" id="home_teaserbox_small_2_btn" href="/kataloge"><i class="fa fa-arrow-right"></i>
+Zur Katalogwelt
+</a></div>
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div><div><div class="list" id="newsletter-box">
+<div class="teaser sameheight_col linked">
+<div class="img sameheight_row" style="height: auto; ">
+<a href="/newsletter?source=1763"><img id="home_teaserbox_small_3_img" class="img-responsive teaser_box_img" src="//bergemeer.global.ssl.fastly.net/assets/layout/shared/newsletter_new-146046ede12b3e61c4bc80d015177d1d9dd7d6aa9e02d4f54704940a612d218c.jpg" alt="Newsletter new">
+<img class="img-responsive newsletter_gutschein visible-lg" src="//bergemeer.global.ssl.fastly.net/assets/layout/shared/newsletter_gutschein-831c63ff4c7ad891a6984eb9afabe97f137d6fae36a956d5a852e51472d97a68.png" alt="Newsletter gutschein">
+</a></div>
+<div class="main">
+<div class="padding padding-left-lg-max">
+<div class="sameheight_row" style="height: auto;">
+<h3 class="first">
+<i class="fa fa-envelope hidden-xs hidden-sm"></i>
+Newsletter
+</h3>
+<p class="visible-lg">
+Melden Sie sich hier für den Berge&nbsp;&amp;&nbsp;Meer Reise-Newsletter an und wir informieren
+Sie regelmäßig und aktuell über Neues zu Angeboten und Traumreisen.
+</p>
+<a class="duty_of_secrecy" href="/datenschutz#newsletter"><i class="fa fa-arrow-circle-right"></i>
+&nbsp;
+<b>
+Datenschutz
+</b>
+</a></div>
+<div class="sameheight_row" style="height: auto;"></div>
+<form action="newsletter" class="link hidden-xs sameheight_row" method="get" style="height: auto;">
+<div class="input-group">
+<input name="source" type="hidden" value="1763">
+<input class="form-control" id="newsletter_email" name="email" placeholder="E-Mail" type="text">
+<span class="input-group-btn">
+<button class="btn btn-default" id="home_teaserbox_small_3_btn" type="submit">
+<i class="fa fa-arrow-right"></i>
+</button>
+</span>
+</div>
+</form>
+<div class="visible-xs">
+<div class="sameheight_row" style="height: auto;"></div>
+<div class="sameheight_row" style="height: auto;">
+<a class="btn btn-default btn-block" href="/newsletter?source=1763"><i class="fa fa-arrow-right"></i>
+Zum Newsletter
+</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div><div><div><div><div class="common-teaser-widget list">
+<div class="teaser sameheight_col linked">
+<div class="sameheight_row img">
+<a target="_blank" href="/fotokalender-bestellen"><img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/78e8e117b9220d66/6c2829be4e80/v/c6e50ac47d94/Teaserbox400x250_Fotokalender_2018.jpg" alt="" class="img-responsive link teaser_box_img" id="home_teaserbox_small_4_img">
+
+</a></div>
+<div class="main">
+<div class="padding padding-left-lg-max">
+<div class="sameheight_row">
+<h3 class="first">Fotokalender 2018</h3>
+<p class="visible-lg">Der neue Berge &amp; Meer-Fotokalender ist da! Wir haben für Sie die schönsten und spannendsten Bilder aus dem Fotowettbewerb zusammen gestellt. Reisen Sie mit uns in zwölf Monaten um die Welt.</p>
+</div>
+<div class="sameheight_row"></div>
+<div class="sameheight_row">
+<a target="_blank" class="btn btn-default btn-block" id="home_teaserbox_small_4_btn" href="/fotokalender-bestellen"><i class="fa fa-arrow-right"></i>
+Jetzt bestellen
+</a></div>
+</div>
+</div>
+</div>
+</div>
+
+</div></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div><div><div class="image-text-widget list">
+<div class="teaser sameheight_col">
+<div class="img" style="background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/ddecc6fddd2dace9/2b54fd912c1c/v/7b11496468fb/Banner-600x400_Paar_Feuerwerk.jpg)">
+<div class="cms-teaser-copyright unselectable">©drubig-photo</div>
+<a class="bg size-3-2" target="_blank" href="/newsletter"><span class="header">Silvester-Knaller - unser Feuerwerk beginnt schon am 25.12.</span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a></div>
+<div class="text"><p>Zwischen den Tagen wird es garantiert nicht langweilig. Denn exklusiv für Newsletter-Leser zünden wir unser Feuerwerk schon ab dem 25.12.2017. Melden Sie sich schnell an und staunen Sie über bunt schillernde <b>Preis-Raketen bis zu 500 Euro Rabatt</b> - von den Malediven über Ischia bis hin nach Island. Die funkelnden <b>Streichpreise </b>oder auch ein <b>Gratis-Ausflug</b> zu den Nordlichtern bringen Ihre Augen zum Leuchten. </p><p>Sie möchten dieses Feuerwerk nicht verpassen? Dann lassen Sie sich verzaubern und melden Sie sich gleich hier zum <b><a href="/newsletter" target="_blank" rel="noopener noreferrer">Newsletter </a></b>an. Es warten bei Anmeldung zusätzlich ein 30-Euro-Gutschein für Ihre Buchung und eine monatliche Gewinnchance auf einen 500-Euro-Reisegutschein auf Sie.&nbsp;</p></div>
+</div>
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div><div><div class="image-text-widget list">
+<div class="teaser sameheight_col">
+<div class="img" style="background-image: url(https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/1de7dacf797d6cc1/170a9cdc96a6/v/0447ceb2f2a9/Banner-600x400_Brueckentage.jpg)">
+
+<a class="bg size-3-2" href="/kategorie/brueckentage"><span class="header">Urlaub über die Brückentage</span>
+<span class="right-bottom">
+<i class="icon fa fa-arrow-right"></i>
+</span>
+</a></div>
+<div class="text"><p>2018 wird ein Superjahr für alle Brückenurlaubsbauer. Es fällt nämlich kein beweglicher Feiertag auf Samstag oder Sonntag. Wenn Sie Ihre Feiertage 2018 also clever nutzen, können Sie mit wenigen Urlaubstagen eine Extra-Portion Entspannung, Erlebnis und Entdeckerfreude genießen.</p><p>Unser Angebot ist vielfältig: Einfach mal ein paar Tage raus in die Berge, an den Strand, auf eine Mini-Kreuzfahrt oder übers verlängerte Wochenende zum Städtetrip in eine europäische Metropole. Zum Beispiel in Deutschlands <b><a href="/angebote/hamburg-die-perle-an-der-elbe-dh001xl">Trend-City Hamburg</a></b>. Mit der neuen Elbphilharmonie, dem Miniatur Wunderland und Weltklasse-Musicals hat die Hansestadt für jeden etwas zu bieten. Wer länger weg möchte, entspannt am besten im <b><a href="/angebote/korsika-entspannte-auszeit-im-ferienhotel-maristella">Ferienhotel Maristella auf Korsika.</a></b></p></div>
+</div>
+</div>
+
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+<div><div><h3 class="cms-headline text-center" id="Erfahrung_seit_ueber_35_Jahren">Erfahrung seit über 35 Jahren</h3>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight hidden-xs hidden-sm"><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-4 col-xs-12">
+<div><div><div class="image-widget">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/72c79ee1fac9802c/822de7efb81e/v/ace2aee1df2e/tuv_logo-a04f51956c4443ccb5e3a7084e12c1724db203e73a1c5987b79d21d8ed38de51.png" class="img-responsive">
+
+
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-9 col-md-9 col-sm-8 col-xs-12">
+<div><div><div data-scrivito-editors-filter-context="{&quot;_pdf&quot;:true}" class="text-widget"><p><b>Vertrauenswürdig</b></p><p>Objektiv geprüfte Qualität, Sicherheit und Transparenz.<br></p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-4 col-xs-12">
+<div><div><div class="image-widget">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/1e2eeb34dac9b6b7/2bea7e136635/v/81d1402ff266/siegel_attraktiver_arbeitgeber-5bcd3a7d8642a86f54dde1062ab6f497494b2301c9e25b710bd86a715d905462.jpg" class="img-responsive">
+
+
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-9 col-md-9 col-sm-8 col-xs-12">
+<div><div><div data-scrivito-editors-filter-context="{&quot;_pdf&quot;:true}" class="text-widget"><p><b>Attraktiver Arbeitgeber</b></p><p>Ausgezeichnet vom Wirtschaftsministerium und der ISB Rheinland-Pfalz.<br></p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight hidden-xs hidden-sm"><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-4 col-xs-12">
+<div><div><div class="image-widget">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/ce63a8606f3e8e8e/1eb3def04e5f/v/22396d92dace/handelsbaltt_siegel-b1594cd6f573779967aa38b391ad935ea3f67b9e37900de4456be924b98b9f3f.png" class="img-responsive">
+
+
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-9 col-md-9 col-sm-8 col-xs-12">
+<div><div><div data-scrivito-editors-filter-context="{&quot;_pdf&quot;:true}" class="text-widget"><p><b>Best Preis-Leistungsverhältnis</b></p><p>Platz 3 in der Kategorie "Reiseanbieter und Buchungsseiten" im YouGov BrandIndex 2017.<br></p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-3 col-md-3 col-sm-4 col-xs-12">
+<div><div><div class="image-widget">
+<img src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/6541866bf05c39ec/6b30a62507aa/v/930f080b6675/toggolino_stopper-c0b61f8ea036647f7fff1e77602fb0c165c224bb578a31110c32ebb8d5d70b0e.jpg" class="img-responsive">
+
+
+</div>
+
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-column-widget col-lg-9 col-md-9 col-sm-8 col-xs-12">
+<div><div><div data-scrivito-editors-filter-context="{&quot;_pdf&quot;:true}" class="text-widget"><p><b>Toggolino Gütesiegel</b></p><p>Erleben Sie rundum gelungenen Familienurlaub.</p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div><div><div class="bootstrap-grid-row-widget">
+<div class="row list sameheight"><div><div class="bootstrap-grid-column-widget col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+<div><div><h3 class="cms-headline text-center" id="Reisen_fuer_Entdecker_von_Berge_und_Meer">Reisen für Entdecker von Berge und Meer</h3>
+</div><div><div data-scrivito-editors-filter-context="{&quot;_pdf&quot;:true}" class="text-widget"><p class="highlights-list">Wissen Sie schon, wie Sie Ihren nächsten Urlaub verbringen möchten? Bei Berge &amp; Meer kommen Erlebnishungrige ebenso auf ihre Kosten wie Erholungsuchende. Neben den klassischen <a href="/thema/rundreisen" style="background-color: rgb(255, 255, 255);"><b>Rundreisen</b> </a>bieten wir auch <a href="/thema/rundreisen+aerztlich-begleitete-rundreisen" style="background-color: rgb(255, 255, 255);"><b>ärztlich begleitete Rundreisen</b></a>, <a href="/thema/rundreisen+kleingruppen-rundreisen"><b>Rundreisen in Kleingruppen</b></a> und <a href="/thema/rundreisen+rundreisen-deluxe"><b>Rundreisen Deluxe</b> an</a>, die sich durch hochwertige Hotels auszeichnen.<br></p><p>Ein Land ist Ihnen nicht genug? Dann empfehlen wir Ihnen unsere <a href="/thema/kombinationsreisen"><b>Kombinationsreisen</b></a>, auf denen Sie mehrere Länder in einem Urlaub erkunden. Oder aber Sie ergänzen Ihre Rundreise um eine Kreuzfahrt oder einen Badeaufenthalt. Noch intensiver erleben Sie die Welt mit unseren <a href="/thema/erlebnisreisen"><b>Erlebnisreisen</b></a>: Blicken Sie zum Beispiel bei Dorfübernachtungen, Wanderungen und Radtouren hinter die Kulissen Ihres Reiselandes. Genießen Sie auf einer Kreuzfahrt das Flair Ihres Kreuzfahrtschiffes und die Weite der Weltmeere. Auf unseren Kreuzfahrten mit Berge &amp; Meer-Reiseleitung an Bord stehen Ihnen unsere ausgewählten Reiseleiter während Ihres Abenteuers mit Rat und Tat zur Seite.</p><p>Für alle, die sich einfach nur erholen möchten, sind unsere <a href="/hotelschaetze"><b>Hotelschätze</b> </a>auf Zypern, Korsika, Sardinien, Sizilien und im Bayerischen Wald ideal. Unsere Hotelschätze sind besondere Hotels, die Berge &amp; Meer® zum Teil exklusiv vermarktet. Sie überzeugen durch ein attraktives Preis-/Leistungsverhältnis, eine außergewöhnliche Lage und ein breites Angebot an Aktivitäten.</p><p>Daneben beinhaltet unser Portfolio <a href="/thema/eigene-anreise"><b>Urlaub mit eigener Anreise</b></a>. Die Spanne reicht hier von <a href="/thema/eigene-anreise+staedte-eventreisen"><b>Städte- und Eventreisen</b></a> über <a href="/thema/eigene-anreise+aktivreisen"><b>Aktivreisen</b> </a>mit Wanderungen und Radtouren bis hin zu <a href="/thema/eigene-anreise+familienreisen"><b>Familienreisen</b></a>. Mit diesen Reisen steht einer Auszeit vom Alltag nichts mehr im Weg. Worauf warten Sie noch? Profitieren Sie von über 35 Jahren Erfahrung im Reise-Direktvertrieb.</p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div></div>
+
+
+          </div>
+        </div>
+        <div class="hidden-print">
+          
+<div id="footer" role="contentinfo">
+  <div class="footer-section footer-links">
+  <div class="container">
+    <div class="row sameheight sameheight_mobile">
+        <div class="col-xs-6 col-sm-4 col-md-2 sameheight_col">
+          <div class="sameheight_row">
+            <h5>
+              <a href="/kataloge">Kataloge</a>
+            </h5>
+            <div>
+              <p>
+                <a href="/kataloge"><img class="img-responsive" src="//bergemeer.global.ssl.fastly.net/assets/layout/shared/kataloge-footer-d1575da3a9157eebae90868cdcd567ac999cd8980c22850baca4cbeb9c0ef55a.png" alt="Kataloge footer"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="col-xs-6 col-sm-4 col-md-2 sameheight_col">
+        <div class="sameheight_row">
+          <h5><a href="/themen">Top-Themen</a></h5>
+          <ul>
+            <li><a href="/thema/rundreisen">Rundreisen</a></li>
+            <li><a href="/thema/kombinationsreisen">Kombinationen</a></li>
+            <li><a href="/thema/erlebnisreisen">Erlebnisreisen</a></li>
+            <li><a href="/thema/kreuzfahrten">Kreuzfahrten</a></li>
+            <li><a href="/suche/hotelschätze">Hotelschätze</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-2 sameheight_col">
+        <div class="sameheight_row">
+          <h5><a href="/reiseziele">Top-Länder</a></h5>
+          <ul>
+            <li><a href="/ziel/kuba">Kuba</a></li>
+            <li><a href="/ziel/suedafrika">Südafrika</a></li>
+            <li><a href="/ziel/vietnam">Vietnam</a></li>
+            <li><a href="/ziel/irland">Irland</a></li>
+            <li><a href="/ziel/zypern">Zypern</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-2 sameheight_col">
+        <div class="sameheight_row">
+          <h5><a href="/reiseziele">Top-Regionen</a></h5>
+          <ul>
+            <li><a href="/ziel/korsika">Korsika</a></li>
+            <li><a href="/ziel/sardinien">Sardinien</a></li>
+            <li><a href="/ziel/sizilien">Sizilien</a></li>
+            <li><a href="/ziel/ischia">Ischia</a></li>
+            <li><a href="/ziel/madeira">Madeira</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-8 col-md-4 sameheight_col">
+        <div class="sameheight_row">
+          <h5><a href="/service">Info &amp; Service</a></h5>
+          <div class="row">
+            <div class="col-xs-6">
+              <ul>
+                <li><a href="/info/gutscheine">Gutscheine</a></li>
+                <li><a href="/vorteilswelt">Vorteilswelt</a></li>
+                <li><a href="/zug-zum-flug">Zug zum Flug</a></li>
+                <li><a href="/gruppenreisen">Gruppenreisen</a></li>
+                <li><a href="/reiseversicherung">Reiseversicherung</a></li>
+                <li><a href="/visum-beantragen">Visum beantragen</a></li>
+                <li><a href="/info/reisefinanzierung">Reisefinanzierung</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6">
+              <ul>
+                <li><a target="_blank" href="https://entdeckerpuzzle.berge-meer.de/login">Entdecker-Puzzle</a></li>
+                <li><a href="/reiseberichte">Reiseberichte</a></li>
+                <li><a href="/hilfe-faq">Hilfe &amp; FAQ</a></li>
+                <li><a href="/unternehmen">Unternehmen</a></li>
+                <li><a href="/freunde-werben-freunde">Freunde werben Freunde</a></li>
+                <li><a href="/partnerprogramm">Partnerprogramm</a></li>
+                <li><a href="/presse">Presse</a></li>
+                <li><a href="/stellenangebote">Stellenangebote</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer-section">
+    <div class="container">
+        <div class="newsletter-ad">
+    <form action="/newsletter" method="get">
+      <div class="row" style="background-image: url(//bergemeer.global.ssl.fastly.net/assets/layout/shared/newsletter_footer-83b8649f5efa086baf5ed62c30f3d28abde7f0f8e26567eac4764d1c898d558a.png)">
+        <img class="img-responsive newsletter_gutschein visible-lg" src="//bergemeer.global.ssl.fastly.net/assets/layout/shared/newsletter_gutschein-831c63ff4c7ad891a6984eb9afabe97f137d6fae36a956d5a852e51472d97a68.png" alt="Newsletter gutschein">
+        <div class="newsletter-ad-main">
+          <h3 class="col-xs-10 col-md-9 col-xs-offset-2 col-md-offset-3"><i class="fa fa-envelope"></i>Newsletter</h3>
+          <div class="form-inline">
+            <div class="col-sm-6 col-md-5 col-lg-4 col-sm-offset-2 col-md-offset-3">
+              <div class="hidden-xs">
+                <input type="hidden" name="source" value="1767">
+                <input class="form-control col-xs-8" type="text" name="email" value="" placeholder="E-Mail Adresse" id="newsletter_email_footer">
+              </div>
+            </div>
+            <div class="hidden-xs col-xs-6 col-sm-1 col-md-3 col-lg-2 no-padding">
+              <button class="btn btn-block btn-primary form-group" type="submit">
+                <i class="fa fa-arrow-right"></i> <span class="hidden-sm">Jetzt anmelden</span>
+              </button>
+            </div>
+            <div class="visible-xs col-xs-offset-2 col-xs-6 no-padding">
+              <button class="btn btn-block btn-primary form-group" type="submit">
+                <i class="fa fa-arrow-right"></i> <span class="hidden-sm">Jetzt anmelden</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="duty_of_secrecy" href="/datenschutz#newsletter">
+          <i class="fa fa-arrow-circle-right"></i>&nbsp;<b>Datenschutz</b>
+</a>      </div>
+    </form>
+  </div>
+
+    </div>
+  </div>
+  <div class="footer-section">
+  <div class="container">
+    <ul class="logos">
+      <li>
+        <a target="_blank" href="http://www.safer-shopping.de/zertifikat/berge-meer-de.html"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/tuv_logo-a04f51956c4443ccb5e3a7084e12c1724db203e73a1c5987b79d21d8ed38de51.png" alt="Tuv logo"></a>
+      </li>
+      <li>
+        <a class="tip" title="" href="/info/jubilaeumsangebote/" data-original-title="Seit 40 Jahren um die Welt"><img alt="40 Jahre Erfahrung" src="//bergemeer.global.ssl.fastly.net/assets/icons/erfahrung_40_jahre-f3f0a6b8acbf78a1dbde173bf3619467b652bcd99f0097d7141a6cf079e350db.jpg"></a>
+      </li>
+      <li>
+        <a class="ekomi tip pull-left" title="" href="/bewertungen" data-original-title="Echte Kundenbewertungen von eKomi"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/zerti_silber-5d1095fac155c3a111ac385b7861699749f1fa1d413c5bfd9ce4ce03f734da67.png" alt="Zerti silber"></a>
+      </li>
+
+      <li><a href="/hilfe-faq#Fragen_zur_Zahlung"><img src="//bergemeer.global.ssl.fastly.net/assets/icons/rechnung-328895583e8d473aa2559a2f5ef232f1dd47a75fe7045c5ce592db890c6f0008.png" alt="Rechnung"></a></li>
+
+      <li><a href="/hilfe-faq#Fragen_zur_Zahlung"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/paypal_logo-1d7c22310f19dd3a49bc0b27d59b25885a652b69f5b0698efd339f3cf26566bd.png" alt="Paypal logo"></a></li>
+
+      <li><a href="/hilfe-faq#Fragen_zur_Zahlung"><img src="//bergemeer.global.ssl.fastly.net/assets/icons/kreditkarten-daf64b9829c8962d2b8a97ec3bcc307e86ffc52525545e0fec7c5f8ec92d8d13.png" alt="Kreditkarten"></a></li>
+
+      <li><a href="/info/reisefinanzierung"><img title="Consors Finanz - BNP Paribas" alt="Consors Finanz - BNP Paribas" src="//bergemeer.global.ssl.fastly.net/assets/logos/consors_finanz_logo_footer-d47f547598321118543b08e8c73f9585890105162409cc661849723af351875d.png"></a></li>
+
+      <li><a target="_blank" href="http://www.v-i-r.de"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/vir_logo-6a3f4a9457e8302fd9bcd625fc5113db1c15b195033a08214a541d1f74c0f18a.png" alt="Vir logo"></a></li>
+      <li><a target="_blank" href="http://www.drv.de"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/drv_logo-39c578f01735b9e797d6737d2b6e099db73c184a251c4b873a3349eabba14862.png" alt="Drv logo"></a></li>
+    </ul>
+  </div>
+</div>
+
+  <div class="footer-copyright">
+  <div class="container">
+    <ul>
+      <li>© Berge&nbsp;&amp;&nbsp;Meer 2017</li>
+      <li><a href="/impressum">Impressum</a></li>
+      <li><a href="/datenschutz">Datenschutz</a></li>
+      <li><a href="/agb">AGB</a></li>
+      <li><a href="/hilfe-faq">FAQ</a></li>
+      <li><a href="/kontakt">Kontakt</a></li>
+      <li><a target="_blank" href="/info/os-plattform">Streitbeilegung und Europäische OS-Plattform</a></li>
+    </ul>
+  </div>
+  <div class="container">
+<ul class="pull-right">
+<a target="_blank" rel="nofollow" href="https://itunes.apple.com/de/app/berge-meer-kataloge/id389147755?mt=8&amp;ign-mpt=uo%3D4"><img src="//bergemeer.global.ssl.fastly.net/assets/buttons/app_apple-9ba15e0ebb87a629aed470a684611ae2351daf4cefe743e8d7df0d07050ed513.png" alt="App apple">
+</a><a target="_blank" rel="nofollow" href="https://play.google.com/store/apps/details?id=de.hpm.bum"><img src="//bergemeer.global.ssl.fastly.net/assets/buttons/app_google-5d94ff0fcba0e5d180a447528af10038e970eae2a0301e2d6d8fdb3c361ca20f.png" alt="App google">
+</a></ul>
+</div>
+
+</div>
+
+    <div id="footer-bar" class="footer-inverted hidden-xs">
+  <div id="footer-sliders" style="display:none">
+    <div class="container">
+      <div class="slider" id="social-facebook" style="display:none">
+        <a rel="nofollow" target="_blank" class="btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-facebook"></i> Seite auf facebook teilen
+</a>        <a target="_blank" class="btn" href="https://www.facebook.com/BergeundMeer">
+          <i class="fa fa-facebook-square"></i> Berge&nbsp;&amp;&nbsp;Meer bei facebook
+</a>      </div>
+      <div class="slider" id="social-twitter" style="display:none">
+        <a rel="nofollow" target="_blank" class="btn" href="https://twitter.com/home?status=%0ARundreisen%2C%20Kreuzfahrten%20und%20St%C3%A4dtereisen%20von%20Berge%20%26%20Meer%20-%20Berge%20%26%20Meer%3A%20https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-twitter"></i> Seite auf twitter teilen
+</a>        <a target="_blank" class="btn" href="https://twitter.com/BergeundMeer">
+          <i class="fa fa-twitter-square"></i> Berge&nbsp;&amp;&nbsp;Meer bei twitter
+</a>      </div>
+      <div class="slider" id="social-googleplus" style="display:none">
+        <a rel="nofollow" target="_blank" class="btn" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-google-plus"></i> Seite auf google+ teilen
+</a>        <a target="_blank" class="btn" href="https://plus.google.com/+bergeundmeer">
+          <i class="fa fa-google-plus-square"></i> Berge&nbsp;&amp;&nbsp;Meer bei Google+
+</a>      </div>
+      <div class="slider" id="social-pinterest" style="display:none">
+        <a target="_blank" class="btn btn-icon" data-show="#social-googleplus" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-pinterest-p"></i> Bilder auf Pinterest pinnen
+</a>        <a target="_blank" class="btn" href="https://de.pinterest.com/bergeundmeer/">
+          <i class="fa fa-pinterest-square"></i> Berge&nbsp;&amp;&nbsp;Meer bei Pinterest
+</a>      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="btn-group">
+      <div class="btn-icons">
+        <a target="_blank" class="btn btn-icon btn-facebook toggle-footer-slider" data-show="#social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-facebook"></i>
+</a>        <a target="_blank" class="btn btn-icon btn-twitter toggle-footer-slider" data-show="#social-twitter" href="https://twitter.com/home?status=%0ARundreisen%2C%20Kreuzfahrten%20und%20St%C3%A4dtereisen%20von%20Berge%20%26%20Meer%20-%20Berge%20%26%20Meer%3A%20https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-twitter"></i>
+</a>        <a target="_blank" class="btn btn-icon btn-google-plus toggle-footer-slider" data-show="#social-googleplus" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-google-plus"></i>
+</a>        <a target="_blank" class="btn btn-icon btn-pinterest toggle-footer-slider" data-show="#social-pinterest" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.berge-meer.de%2F">
+          <i class="fa fa-pinterest-p"></i>
+</a>        <a target="_blank" class="btn btn-icon btn-youtube tip" title="" href="https://www.youtube.com/user/BergeUndMeerChannel/featured" data-original-title="Berge&amp;nbsp;&amp;amp;&amp;nbsp;Meer bei YouTube">
+          <i class="fa fa-youtube"></i>
+</a>        <a target="_blank" class="btn btn-icon btn-instagram tip" title="" href="https://www.instagram.com/meinbergeundmeer/" data-original-title="Berge&amp;nbsp;&amp;amp;&amp;nbsp;Meer bei Instagram">
+          <i class="fa fa-instagram"></i>
+</a>        <a target="_blank" class="btn btn-icon tip" title="" href="mailto:?subject=Berge%20%26%20Meer&amp;body=https%3A%2F%2Fwww.berge-meer.de%2F" data-original-title="Seite per E-Mail teilen">
+          <i class="fa fa-envelope-o"></i>
+</a>      </div>
+      <div class="btn-group">
+                <a class="btn btn-primary" href="/newsletter?source=1764">
+          <i class="fa fa-suitcase"></i> Newsletter
+</a>        <a class="btn btn-primary" href="/kataloge">
+          <i class="fa fa-gift"></i> Kataloge
+</a>        <a class="btn btn-primary" href="/info/reisemagazin">
+          <i class="fa fa-globe"></i> Reisemagazin
+</a>        <a class="btn btn-primary" href="/info/gutscheine">
+          <i class="fa fa-money"></i> Gutscheine
+</a>        <a class="btn btn-primary" href="/info/feedback">
+          <i class="fa fa-star"></i> Feedback
+</a>        <a class="btn btn-primary" href="#top"><i class="fa fa-chevron-up"></i> nach oben</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="mobile-navigation-overlay"></div>
+<div class="nav-footer-inverted visible-xs visible-sm hidden-print" id="header-mobile">
+  <div class="container header-mobile-top">
+    <div class="clearfix">
+      <a class="visible-xs visible-sm pull-left logo" href="/"><img src="//bergemeer.global.ssl.fastly.net/assets/logos/berge_und_meer_logo_no_slogan-4206aed7b45145cc28cc352bb7059fb9a8582712d67ae2d55e636bf4e20ee8fd.png" alt="Berge und meer logo no slogan"></a>
+      <a data-toggle="#nav-xs" data-more=".nav-xs-toggle .more" data-less=".nav-xs-toggle .less" class="btn btn-primary pull-right toggle-slide-left nav-xs-toggle" id="toggle-mobile-menu" href="#">
+        <i class="fa fa-bars more"></i> <i class="fa fa-bars less" style="display:none"></i> Menü
+</a>    </div>
+    <div class="partner">
+    </div>
+  </div>
+  <div id="nav-xs" style="display:none">
+    <ul>
+      <li class="search">
+        <div class="padding">
+          <form id="search-footer" action="/reisen" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+            <div class="input-group input-group-sm">
+              <input type="text" name="search" id="search" class="form-control" placeholder="Reisecode, Reiseziel, Reisethema...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+</form>        </div>
+</li>      <li class=""><a href="/reisen">Detailsuche</a></li>
+      <li>
+  <a href="tel:+4926349626099"><i class="fa fa-phone"></i> 02634 962 6099 anrufen</a>
+</li>
+<li class="active"><a href="/">Startseite</a></li>
+<li><a href="/reiseziele">Reiseziele</a></li>
+<li><a href="/themen">Reisethemen</a></li>
+<li><a href="/hotelschaetze">Hotelschätze</a></li>
+<li><a href="/thema/familienreisen">Familien</a></li>
+<li><a href="/thema/kurzfrist-reisen">Lastminute</a></li>
+<li><a href="/service">Service</a></li>
+
+<li><a href="/newsletter?source=1764">Newsletter</a></li>
+<li><a href="/kataloge">Kataloge</a></li>
+
+        <li><a title="Anmelden" id="user_login_mobile" href="/users/login"><i class="fa fa-sign-in"></i> Mein Berge&nbsp;&amp;&nbsp;Meer</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    
+<div class="newsletter-overlay">
+  <div class="newsletter-overlay-modal">
+    <a class="newsletter-overlay-closebutton" href="#" id="newsletter-overlay-close-button"></a>
+
+    <div class="newsletter-overlay-headline">
+      Newsletter
+    </div>
+
+    <div class="newsletter-overlay-teasertext">
+      Neueste Traumreisen &amp; aktuelle<br>
+      Reise-Highlights direkt per E-Mail
+    </div>
+
+    <form action="/newsletter" method="get">
+      <input type="hidden" name="source" value="1801">
+      <input class="newsletter-overlay-input" type="text" name="email" value="" placeholder="E-Mail Adresse">
+      <button class="btn newsletter-overlay-button" type="submit" id="newsletter-overlay-anmelde-button">
+        <i class="fa fa-arrow-right"></i> Jetzt anmelden
+      </button>
+    </form>
+
+    <a class="newsletter-overlay-privacylink" href="/datenschutz#newsletter">
+      <i class="fa fa-arrow-circle-right"></i>&nbsp;Datenschutz
+</a>
+    <i class="fa fa-envelope newsletter-overlay-infoicon" aria-hidden="true"></i>
+    <div class="newsletter-overlay-infotext">
+      Kostenlos &amp;<br>
+      jederzeit kündbar
+    </div>
+
+    <div class="newsletter-overlay-eyecatcher"></div>
+  </div>
+</div>
+
+    <div class="newsletter-sidepeel newsletter-sidepeel-closed" style="overflow: hidden; width: 45px;">
+<div class="newsletter-sidepeel-border">
+<h3>Newsletter</h3>
+<span class="fa fa-envelope"></span>
+</div>
+<div class="newsletter-sidepeel-content">
+<a class="newsletter-sidepeel-closebutton" href="#" id="newsletter-sidepeel-close-button">
+<i class="fa fa-times"></i>
+</a>
+<p>
+Erfahren Sie schon früher
+von neuen Angeboten und
+sichern Sie sich 30 Euro für
+Ihre Reise.
+</p>
+<a class="btn btn-block newsletter-sidepeel-button" href="/newsletter?source=3197">
+<i class="fa fa-arrow-right"></i>
+Jetzt anmelden
+</a>
+</div>
+</div>
+
+
+    <script src="//bergemeer.global.ssl.fastly.net/assets/application-2a4b5b054846b4c03ddf7d37d20ec160b631d8dff92c3877d27be8e1de87917a.js"></script>
+    <script src="//bergemeer.global.ssl.fastly.net/assets/bm-inline-validations-4cd8d4e683c31a5ba90bcc23d65741611e95ec76261de594bbcd4b369707ec44.js"></script>
+    <script>
+window.SliderCarousel = new SliderCarousel();
+new window.BM.StartPageSearch("#search-home");
+</script><div class="daterangepicker dropdown-menu ltr show-calendar opensright"><div class="calendar left"><label for="daterangepicker_start">Früheste Anreise</label><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><label for="daterangepicker_end">Späteste Rückreise</label><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><div class="range_inputs"><button class="applyBtn btn btn-sm" disabled="disabled" type="button">Übernehmen</button> <button class="cancelBtn btn btn-sm" type="button">Zurücksetzen</button></div></div></div>
+<script>
+//<![CDATA[
+window.BM.travel_recommendation = new BM.TravelRecommendation().start_page();
+
+//]]>
+</script><ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>  <script>
+//<![CDATA[
+
+    window.BM.newsletter_overlay = new BM.NewsletterOverlay();
+
+//]]>
+</script><script>
+//<![CDATA[
+window.BM.newsletter_sidepeel = new BM.NewsletterSidepeel();
+
+//]]>
+</script>
+    
+  <script type="text/javascript" language="JavaScript">
+    // <!--
+      var showTrackingPixel = true;
+    // -->
+  </script>
+
+
+  <!-- Google Code for All website visitors -->
+  <!-- Remarketing tags may not be associated with personally identifiable
+  information or placed on pages related to sensitive categories. For
+  instructions on adding this tag and more information on the above
+  requirements, read the setup guide: google.com/ads/remarketingsetup -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1070017076;
+    var google_conversion_label = "JqaaCJag-AMQtNSc_gM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+  <noscript>
+    &lt;div style="display:inline;"&gt;
+      &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070017076/?value=0&amp;label=JqaaCJag-AMQtNSc_gM&amp;guid=ON&amp;script=0" /&gt;
+    &lt;/div&gt;
+  </noscript>
+
+
+    
+    
+
+    
+    <script src="//maps.googleapis.com/maps/api/js?client=gme-tuitravelplc&amp;v=3&amp;callback=google_map_initializer" async="" defer=""></script>
+  
+
+<ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><iframe name="tracking-client" style="width: 0px; height: 0px; border: 0px; display: none; z-index: 9999999;"></iframe></body></html>

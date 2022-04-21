@@ -1,0 +1,316 @@
+<html class=""><head><base href="http://webbuilder-stuff.de/">
+<title>Webbuilder-Stuff, Templates, Extension, WWB, Webdesign</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Ihr Text zu Kurzbeschreibung Ihres Shops">
+<meta name="keywords" lang="de" content="&lt;p&gt;Webshop, SimpelWebShop, STS Software, PHP-Scripte, Programmierung, Webdesign, WWB-Extension, Extension, WYSIWYG Web Builder Erweiterungen, Templates, WYSIWYG Web Builder&lt;/p&gt;">
+<meta name="keywords" lang="en" content="&lt;p&gt;Webshop, SimpelWebShop, STS Software, PHP-Scripte, Programmierung, Webdesign, WWB-Extension, Extension, WYSIWYG Web Builder Erweiterungen, Templates, WYSIWYG Web Builder&lt;/p&gt;">
+<meta name="keywords" lang="en-us" content="&lt;p&gt;Webshop, SimpelWebShop, STS Software, PHP-Scripte, Programmierung, Webdesign, WWB-Extension, Extension, WYSIWYG Web Builder Erweiterungen, Templates, WYSIWYG Web Builder&lt;/p&gt;">
+<meta name="keywords" lang="fr" content="&lt;p&gt;Webshop, SimpelWebShop, STS Software, PHP-Scripte, Programmierung, Webdesign, WWB-Extension, Extension, WYSIWYG Web Builder Erweiterungen, Templates, WYSIWYG Web Builder&lt;/p&gt;">
+<meta name="content-Language" content="de">
+<meta name="content-Language" content="en">
+<meta name="content-Language" content="en-us">
+<meta name="content-Language" content="fr">
+<meta http-equiv="Author" content="STS Software http://www.stssoftware.de">
+<meta name="Copyright" content="STS Software http://www.stssoftware.de">
+<meta name="Publisher" content="STS Software">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="./admin/fancybox/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./admin/fancybox/carouseller.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			carouseller = new carousel('.carouseller',  5000);
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			carouseller = new carousel('.carouseller2',  7000);
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			carouseller = new carousel('.carouseller3',  7000);
+		});
+	</script>
+<script src="./admin/fancybox/zoomple.js"></script>
+<script>
+   	$(document).ready(function() {
+   	$('#stszoom1').zoomple({
+   		blankURL : './admin/fancybox/blank.gif',
+   		loaderURL : './admin/fancybox/fancybox_loading.gif',
+   		bgColor : '#FFFFFF',
+   		showOverlay : false,
+   		offset : {x:0,y:0},
+   		zoomWidth : 300,
+   		zoomHeight : 300,
+   		roundedCorners : true,
+   		showCursor : true,
+   		delay : 0,
+   		attachWindowToMouse : true,
+   		windowPosition : {x:'right',y:'top'}
+   	});
+    });
+</script>
+<script type="text/javascript" src="./admin/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="./admin/fancybox/jquery.fancybox.js?v=2.0.6"></script>
+<link rel="stylesheet" type="text/css" href="./admin/fancybox/jquery.fancybox.css?v=2.0.6" media="screen">
+<link rel="stylesheet" type="text/css" href="./admin/fancybox/jquery.fancybox-buttons.css?v=1.0.2">
+<script type="text/javascript" src="./admin/fancybox/jquery.fancybox-buttons.js?v=1.0.2"></script>
+<link rel="stylesheet" type="text/css" href="./admin/fancybox/jquery.fancybox-thumbs.css?v=1.0.2">
+<link rel="stylesheet" type="text/css" href="./style.php">
+<style>.fluid_container {	margin: 0 auto;	max-width: 2000px; }</style>
+<script type="text/javascript" src="./admin/fancybox/jquery.fancybox-thumbs.js?v=1.0.2"></script>
+<script type="text/javascript" src="./admin/fancybox/jquery.fancybox-media.js?v=1.0.0"></script>
+<script type="text/javascript" src="./admin/fancybox/jquery.marquee.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('.derlink').fancybox({
+  'hideOnContentClick' : false,
+  'width' : '98%',
+  'height' : '98%',
+  topRatio : 0.2,
+  'autoScale' : false,
+  'type' : 'iframe',
+  'padding' : 5,
+  helpers : {
+  overlay : {
+    css : { 'overflow' : 'hidden' }
+  }
+},
+  'onComplete' : function() {
+    $('#fancybox-frame').load(function() { // wait for frame to load and then gets it's height
+      $('#fancybox-content').height($(this).contents().find('body').height()+10);
+    });
+  }
+});
+});
+$(document).ready(function() {
+$('.der1link').fancybox({
+   fitToView: false,
+   autoSize: false,
+   autoDimensions: false,
+   title: null,
+   width: '98%',
+   height: '98%',
+  'type' : 'iframe',
+  'padding' : 5,
+  helpers : {
+  overlay : {
+    css : { 'overflow' : 'hidden' }
+  }
+},   
+  'onComplete' : function() {
+    $('#fancybox-frame').load(function() { // wait for frame to load and then gets it's height
+      $('#fancybox-content').height($(this).contents().find('body').height()+10);
+    });
+  }
+});
+});
+
+$(document).ready(function() {
+$('.der2link').fancybox({
+  'hideOnContentClick' : true,
+  'type' : 'image',
+  'padding' : 2,
+  helpers : {
+  overlay : {
+    css : { 'overflow' : 'hidden' }
+  }
+},   
+  'onComplete' : function() {
+    $('#fancybox-frame').load(function() { // wait for frame to load and then gets it's height
+      $('#fancybox-content').height($(this).contents().find('body').height()+10);
+    });
+  }
+});
+});
+
+$(document).ready(function() {
+$('.der3link').fancybox({
+  'type' : 'iframe',
+  'width' : '98%',
+  'height' : '100%',
+  'autoScale' : false,
+  'padding' : 5,
+  helpers : {
+  overlay : {
+    css : { 'overflow' : 'hidden' }
+  }
+}
+});
+});
+
+//Hinweise
+$(document).ready(function(){
+  	$('#div_id').delay(100).fadeIn(250).delay(2000).fadeOut(250);
+});
+
+//Laufschrift
+$(document).ready(function(){
+  $('.marquee').marquee({
+    duration: 10000,
+    startVisible: true,
+    pauseOnHover: true,
+    duplicated: true,
+    gap: 50
+  });
+});
+
+
+//Jugendschutz
+$(document).ready(function() {
+$('#hidden').fancybox({'modal':true, helpers : {
+  overlay : {css : { 'overflow' : 'hidden'}}
+}}).click();
+});
+</script>
+
+<script type="text/javascript">
+function show_preis(){
+document.getElementById('msg').innerHTML= document.getElementById('farbe').value;
+document.getElementById('msg2').innerHTML= document.getElementById('s2').value;
+return true;
+}
+function goToAnchor(elem)
+{
+	if ( elem.selectedIndex != 0 )
+	{
+		top = elem.options[elem.selectedIndex].value;
+	}
+}
+$(document).ready(function(){
+$('#menu-wrap').prepend('<div id="menu-trigger">&#9776; Hauptmenü</div>');
+$('#menu-trigger').on('click', function(){
+$('#menu').slideToggle();
+});
+});
+</script>
+<script type="text/javascript" src="./admin/fancybox/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="./admin/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="./admin/fancybox/camera.js"></script>
+<script>
+jQuery(function(){
+jQuery('#shopslider').camera({
+height: '300 px',
+loader: 'pie',  // bar, pie
+pagination: false,
+slideOn: 'next',	//next, prev, random
+time: 5000,
+transPeriod: 500,
+//cols: 4,
+//slicedCols: 0,
+//slicedRows: 0,
+navigation: true,
+playPause: false,
+pauseOnClick: false,
+portrait: true,  // true, false
+loaderColor: '#b7b7b7', // Farbe des Loaders
+loaderBgColor: 'transparent',
+thumbnails: false
+});
+});
+</script>
+<script language="javascript">
+// Prüfung das cookie verwendet werden wenn ja 1 Monat gültig
+function checkok() {
+var jetzt = new Date();
+var lebensdauer = jetzt.getTime();
+var verfall = lebensdauer + 2592000000;
+jetzt.setTime(verfall);
+var enddate = jetzt.toUTCString();
+document.cookie = 'shopfuckeu = set;expires=' + enddate;
+document.getElementById('eu_cookiebox').style.display = 'none';
+window.location.reload();
+}
+// Prüfung ob 18 wenn ja 1 Tag gültig
+function achtzehn() {
+$.fancybox.close();
+document.getElementById('hidden').style.display = 'none';
+var jetzt1 = new Date();
+var lebensdauer1 = jetzt1.getTime();
+var verfall1 = lebensdauer1 + 86400000;
+jetzt1.setTime(verfall1);
+var enddate1 = jetzt1.toUTCString();
+document.cookie = 'shopachtzehn = set;expires=' + enddate1;
+window.location.reload();
+}
+// Prüfung ob 18 wenn nein gehe zu google
+function closeFBShop() {
+$.fancybox.close();
+document.getElementById('hidden').style.display = 'none';
+window.open('http://www.google.de/','_parent');
+}
+</script>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+<center>
+<table id="gesamt" border="0" cellpadding="0" cellspacing="0" style="padding-left:10px; padding-right:10px">
+<tbody><tr><td valign="top">
+<table id="gesamt1" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td>
+<table border="0" cellpadding="0" cellspacing="0">
+</table><table id="gesamt11" width="100%" border="0"><tbody><tr><td style="padding-left: 0px; padding-top: 10px;"><a href="index.php?session=4ee9777ed3696db5ad0acae11c121d6c"><img src="img/1492584256.png" id="daslogo" border="0" title="" alt=""></a>
+</td><th align="right" style="padding-top: 5px; padding-right: 10px;">
+<a href="warenkorb.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none" title="Hier gehts zu Ihrem Einkauf!">IHR WARENKORB<br>0 Artikel<br>0.00 EUR <br></a><a href="warenkorb.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">&nbsp;<img src="img/tascheb.png" width="60" border="0" title="Hier gehts zu Ihrem Einkauf!"></a>
+</th></tr>
+<tr><td colspan="4" align="right" style="padding-top: 5px; padding-bottom: 5px; padding-right:10px">
+<form action="search.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;action=1" method="POST">
+<input title="Geben Sie Ihren Suchbegriff ein und klicken Sie auf die Lupe um die Suche zu starten!" type="text" name="suchbegriff" value="" placeholder="&nbsp;&nbsp;Artikel suchen" id="formsuche" style="vertical-align:middle;"><input title="Artikel suchen" type="image" src="img/suche.png" height="18" style="margin-left:-20px; vertical-align:middle;" name="register">
+</form></td></tr></tbody></table><nav id="menu-wrap"><div id="menu-trigger">☰ Hauptmenü</div><ul id="menu"><li><a href="index.php?session=4ee9777ed3696db5ad0acae11c121d6c">Startseite</a></li><li></li><li><a href="#">Unsere Artikel</a><ul><li><a class="derlink" id="fancybox1" href="preisliste.php?session=4ee9777ed3696db5ad0acae11c121d6c">Produktkatalog drucken</a></li><li><a href="#">SimpelWebshop</a><ul><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=12&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">SimpelWebshop für WWB  <font size="2">(1)</font></a></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=13&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">SimpelWebshop Standalone  <font size="2">(1)</font></a></li></ul></li><li><a href="#">SimpelWebshop Module</a><ul><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=3&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Shop Module für Webbuilder  <font size="2">(13)</font></a></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=4&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Shop Module für Standalone  <font size="2">(13)</font></a></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=10&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Shop Service  <font size="2">(2)</font></a></li></ul></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=15&amp;next=0&amp;page=1&amp;action=100">Webhosting <font size="2">(3)</font></a></li><li><a href="#">WWB Extension</a><ul><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=6&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Free Extension für den WWB  <font size="2">(20)</font></a></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=7&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Pay Extension für den WWB  <font size="2">(26)</font></a></li></ul></li><li><a href="#">WWB Templates</a><ul><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=8&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Free Templates für den WWB  <font size="2">(0)</font></a></li><li><a href="content.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;kat=9&amp;ugruppe=1&amp;next=0&amp;page=1&amp;action=100">Pay Templates für den WWB  <font size="2">(6)</font></a></li></ul></li></ul></li><li><a href="gutschein.php?session=4ee9777ed3696db5ad0acae11c121d6c">Gutschein</a></li><li></li><li><a href="#">Kundenlogin</a><ul>
+<li><a href="register.php?session=4ee9777ed3696db5ad0acae11c121d6c">als Neukunde registrieren</a></li>
+<li><a href="myaccount.php?session=4ee9777ed3696db5ad0acae11c121d6c">Kundenlogin</a></li></ul></li><li><a href="warenkorb.php?session=4ee9777ed3696db5ad0acae11c121d6c">Warenkorb</a></li><li></li><li><a href="#">Hinweise</a><ul>
+                  <li><a href="kontakt.php?session=4ee9777ed3696db5ad0acae11c121d6c">Kontakt</a></li>
+                  <li><a href="impressum.php?session=4ee9777ed3696db5ad0acae11c121d6c">Impressum</a></li><li><a class="derlink" id="fancybox1" href="agb_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c">AGB</a></li><li><a href="lieferung.php?session=4ee9777ed3696db5ad0acae11c121d6c">Lieferung und Leistung</a></li>
+									<li><a href="lizenzarten_menue.php?session=4ee9777ed3696db5ad0acae11c121d6c">Versandkosten</a></li><li><a class="derlink" id="fancybox1" href="widerruf_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c">Widerrufsbelehrung</a></li><li><a class="derlink" id="fancybox1" href="dschutz_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c">Datenschutzbestimmungen</a></li></ul></li><li><a href="news.php?session=4ee9777ed3696db5ad0acae11c121d6c">News</a></li><li><a href="http://www.simpelwebshop.de/">Homepage</a></li><li></li></ul></nav>  <div id="eu_cookiebox"><center>Cookies erleichtern die Benutzung unseres Webshops. Mit der Nutzung unseres Shops erklären Sie sich hiermit einverstanden!<br><br><a class="derlink" id="fancybox1" href="dschutz_gelesen.php?session=$session"><button id="button2" style="width:230px;height:30px">Datenschutzbestimmungen</button></a> <button id="button2" style="width:60px;height:30px" onclick="checkok()">OK</button></center></div>
+  </td></tr><tr><td id="space" height="20">&nbsp;</td></tr>
+  <tr><td style="padding-left: 0px; padding-right: 2px;"><div class="fluid_container">
+  <div class="camera_wrap camera_black_skin" id="shopslider" style="display: block; height: 300px;"><div class="camera_fakehover"><div class="camera_src camerastarted"><div data-thumb="./admin/fotos/1496501673.jpeg" data-src="./admin/fotos/1496501673.jpeg"></div><div data-thumb="./admin/fotos/1496999452.jpeg" data-src="./admin/fotos/1496999452.jpeg"></div><div data-thumb="./admin/fotos/1498051698.jpeg" data-src="./admin/fotos/1498051698.jpeg"></div></div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0 cameracurrent" style="visibility: visible; display: block; z-index: 999;"><img src="./admin/fotos/1496501673.jpeg?1513868880001" class="imgLoaded" data-alignment="" data-portrait="" width="540" height="300" style="visibility: visible; height: 300px; margin-left: 226px; margin-right: 226px; margin-top: 0px; position: absolute; width: 540px;"><div class="camerarelative" style="width: 992px; height: 300px;"></div></div><div class="cameraSlide cameraSlide_1 cameranext" style="display: none;"><img src="./admin/fotos/1496999452.jpeg?1513868881809" class="imgLoaded" data-alignment="" data-portrait="" width="647" height="300" style="visibility: visible; height: 300px; margin-left: 172.5px; margin-right: 172.5px; margin-top: 0px; position: absolute; width: 647px;"><div class="camerarelative" style="width: 992px; height: 300px;"></div></div><div class="cameraSlide cameraSlide_2"><div class="camerarelative" style="width: 992px; height: 300px;"></div></div><div class="cameraSlide cameraSlide_3" style="z-index: 1; display: none;"><div class="camerarelative" style="width: 992px; height: 300px;"></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent cameracurrent" style="display: block;"></div><div class="cameraContent"></div><div class="cameraContent"></div></div></div><div class="camera_pie"><canvas id="pie_0" width="38" height="38" style="position: absolute; z-index: 1002; right: 0px; top: 0px; display: block; opacity: 0.8;"></canvas></div><div class="camera_prev" style="opacity: 0;"><span></span></div><div class="camera_next" style="opacity: 0;"><span></span></div></div><div class="camera_loader" style="display: none;"></div></div></div></td></tr>
+<tr><td><p class="p1"></p></td></tr><tr><td height="20">&nbsp;</td></tr>
+<tr><td id="space" height="15">&nbsp;</td></tr>
+<tr><th style="padding-left: 15px; padding-right: 10px;"><p style="text-align: center;"><span style="font-size: 14pt; font-family: arial,helvetica,sans-serif;"><span style="font-size: 18pt;"><strong><span style="color: #339966;">Herzlich willkommen im Shopsystem von Webbuilder-Stuff!</span></strong></span><br></span></p>
+<p style="text-align: center;"><span style="font-family: arial,helvetica,sans-serif;">&nbsp;<span style="font-size: 10pt;"><span style="font-size: 14pt;"><strong><span style="color: #ff0000;">Gestalten Sie Ihre Webseiten noch professioneller</span></strong></span><br><span style="font-size: 14pt;"><strong><span style="color: #ff0000;">mit Extensionen, Templates und Grafiken</span></strong></span><br><span style="font-size: 14pt;"><strong><span style="color: #ff0000;">von Webbuilder-Stuff!</span></strong></span><br><br><span style="color: #808080;"><strong><span style="font-size: 12pt;">Sie benötigen eine Extension, ein einzigartiges Template</span></strong></span><br><span style="color: #808080;"><strong><span style="font-size: 12pt;">oder eine atemberaubende Grafik?</span></strong></span><br><br><span style="color: #008000;"><strong><span style="font-size: 12pt;">Kein Problem,</span></strong></span><br><span style="color: #008000;"><strong><span style="font-size: 12pt;">wir machen das für Sie zu festen und fairen Preisen! </span></strong></span><br></span></span></p>
+<p style="text-align: center;"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 8pt;"><span style="color: #ff0000;"><strong>Wichtiger Hinweis:</strong> </span><br>Auf Grund der Umsatzsteuer-Regelungen für elektronische Leistungen ab 2015, bieten wir zur Zeit unsere Produkte nur Kunden an, die in Deutschland ihren Wohnsitz&nbsp;oder gewöhnlichen Aufenthalt haben!</span></span></p></th></tr><tr><td id="space" height="20">&nbsp;</td></tr>
+<tr><th colspan="6" id="space" height="25">&nbsp;</th></tr>
+<tr><th id="tabneueartikel" style="padding-left: 15px; padding-right: 0px;">Unsere TOP-Artikel</th></tr>
+<tr><th colspan="6" id="space" height="25">&nbsp;</th></tr>
+<tr><th>
+</th></tr><tr><th valign="top" style="padding-left: 0px; padding-right: 0px;">
+<table id="content" align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><th align="middle"><div class="works_item alignleft clear"><div class="carouseller3 row-fluid for-car"><div class="carousel-wrapper"><div class="carousel-items" style="height: 270px; left: 0px;"><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu DownloadShop-Modul Stand-Alone klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=39&amp;kat=4&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1446042592.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=DownloadShop-Modul Stand-Alone&amp;artnr=39&amp;artbild=artikel/1446042592.png"><img src="img/45star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  55.00 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="39" title="Für weitere Infos zu DownloadShop-Modul Stand-Alone klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=39&amp;kat=4&amp;next=0&amp;page=1&amp;back=index&amp;anker=39&amp;ugruppe=4&amp;action=100" style="width: 100%;"><div style="width: 100%;">DownloadShop-Modul Stand-Alone</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu STS Lastmodified klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=96&amp;kat=7&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1507122526.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=STS Lastmodified&amp;artnr=96&amp;artbild=artikel/1507122526.png"><img src="img/4star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  2.50 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="96" title="Für weitere Infos zu STS Lastmodified klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=96&amp;kat=7&amp;next=0&amp;page=1&amp;back=index&amp;anker=96&amp;ugruppe=7&amp;action=100" style="width: 100%;"><div style="width: 100%;">STS Lastmodified</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu Gutschein-Modul für WWB klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=18&amp;kat=3&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1411628178.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=Gutschein-Modul für WWB&amp;artnr=18&amp;artbild=artikel/1411628178.png"><img src="img/5star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  52.00 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="18" title="Für weitere Infos zu Gutschein-Modul für WWB klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=18&amp;kat=3&amp;next=0&amp;page=1&amp;back=index&amp;anker=18&amp;ugruppe=3&amp;action=100" style="width: 100%;"><div style="width: 100%;">Gutschein-Modul für WWB</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu Katalog-Modul für WWB klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=27&amp;kat=3&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1411743522.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=Katalog-Modul für WWB&amp;artnr=27&amp;artbild=artikel/1411743522.png"><img src="img/00star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  15.00 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="27" title="Für weitere Infos zu Katalog-Modul für WWB klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=27&amp;kat=3&amp;next=0&amp;page=1&amp;back=index&amp;anker=27&amp;ugruppe=3&amp;action=100" style="width: 100%;"><div style="width: 100%;">Katalog-Modul für WWB</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu SimpelWebshop Ver. 5.9.6 klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=85&amp;kat=12&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1493806973.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=SimpelWebshop Ver. 5.9.6&amp;artnr=85&amp;artbild=artikel/1493806973.png"><img src="img/5star.png"></a></div><br><div align="center" style="height: 10px;"><font color="#C60808">kostenloser Download</font></div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="85" title="Für weitere Infos zu SimpelWebshop Ver. 5.9.6 klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=85&amp;kat=12&amp;next=0&amp;page=1&amp;back=index&amp;anker=85&amp;ugruppe=12&amp;action=100" style="width: 100%;"><div style="width: 100%;">SimpelWebshop Ver. 5.9.6</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu Updateservice Ihres SimpelWebshops klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=92&amp;kat=10&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1497942297.png" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=Updateservice Ihres SimpelWebshops&amp;artnr=92&amp;artbild=artikel/1497942297.png"><img src="img/00star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  65.00 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="92" title="Für weitere Infos zu Updateservice Ihres SimpelWebshops klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=92&amp;kat=10&amp;next=0&amp;page=1&amp;back=index&amp;anker=92&amp;ugruppe=10&amp;action=100" style="width: 100%;"><div style="width: 100%;">Updateservice Ihres SimpelWebshops</div></a></div></div></div><div class="span3 carousel-block" style="height: 270px; overflow:hidden; "><div id="anzeigeartikel" style="height: 210px; width:240px; overflow:hidden; display: table-cell; vertical-align:top; padding:5px;"><a title="Für weitere Infos zu STS OMS-System klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=52&amp;kat=7&amp;back=index&amp;action=100"><div style="height: 130px; display:table-cell; vertical-align:middle; text-align:center;"><img src="wz.php?bild=artikel/1476340824.jpeg" style="max-height: 130px; max-width: 230px;"></div></a><br><br><div align="center"><a title="Kundenbewertung anzeigen" class="der3link" href="bewertung-zeigen.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;sterne=&amp;artikel=STS OMS-System&amp;artnr=52&amp;artbild=artikel/1476340824.jpeg"><img src="img/5star.png"></a></div><br><div align="center" style="height: 10px;">Preis:  24.95 EUR</div><br><div id="button55" align="center" style="text-align: center; vertical-align: middle; margin:-4px; padding-top:8px; height: 25px; position: static; bottom: 5px; overflow: hidden;"><a name="52" title="Für weitere Infos zu STS OMS-System klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=52&amp;kat=7&amp;next=0&amp;page=1&amp;back=index&amp;anker=52&amp;ugruppe=7&amp;action=100" style="width: 100%;"><div style="width: 100%;">STS OMS-System</div></a></div></div></div></div></div><div class="carousel-control-block"><div class="carousel-button-left shadow" style="height:150px;"><a href="javascript:void(0)">❮</a></div><div class="carousel-button-right shadow" style="height:150px;"><a href="javascript:void(0)">❯</a></div></div></div></div></th></tr></tbody></table></th></tr><tr><th id="space" height="20">&nbsp;</th></tr><tr><td id="space" height="20">&nbsp;</td></tr>
+<tr><td colspan="6" id="space" height="25">&nbsp;</td></tr>
+<tr><td id="tabneueartikel" style="padding-left: 15px; padding-right: 10px;">Unsere neuen Artikel</td></tr>
+<tr><td colspan="6" id="space" height="25">&nbsp;</td></tr>
+<tr><td>
+</td></tr><tr><td valign="top" style="padding-left: 0px; padding-right: 0px;">
+<table id="content" align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><th align="middle"><div class="works_item alignleft clear"><div class="carouseller row-fluid for-car"><div class="carousel-wrapper"><div class="carousel-items" style="height: 140px; left: 0px;"><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu STS OMS-System klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=52&amp;kat=7&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1476340824.jpeg" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu STS Panoramaviewer klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=103&amp;kat=7&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1512900103.png" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template Babysitter klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=100&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1510909938.jpeg" width="76"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template Ferienplaner klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=98&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1509698120.jpeg" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template ONE SITE No. 1 klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=97&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1507620495.jpeg" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template PhotoMedia klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=102&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1511874292.jpeg" width="132"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template Restaurant klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=99&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1510310107.png" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Template Webseite mit Benutzerverwaltung klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=101&amp;kat=9&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1511340513.png" width="120"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Webseite &amp; Webshop Basic klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=93&amp;kat=15&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1501247272.png" width="92"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Webseite &amp; Webshop Gold klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=95&amp;kat=15&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1501247371.png" width="92"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu Webseite &amp; Webshop Profi klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=94&amp;kat=15&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1501239247.png" width="102"></a></div></div><div class="span3 carousel-block" style="height: 140px; overflow:hidden; vertical-align:middle;"><div id="anzeigeartikel" style="height: 120px; max-width:150px; overflow:hidden; display: table-cell; vertical-align:middle;  padding:5px;"><a title="Für weitere Infos zu STS Lastmodified klicken Sie bitte hier!" href="details.php?session=4ee9777ed3696db5ad0acae11c121d6c&amp;art=96&amp;kat=7&amp;back=index&amp;action=100"><img style="vertical-align:middle;" src="wz.php?bild=artikel/1507122526.png" width="120"></a></div></div></div></div><div class="carousel-control-block"><div class="carousel-button-left shadow" style="max-height:140px;"><a href="javascript:void(0)">❮</a></div><div class="carousel-button-right shadow" style="max-height:140px;"><a href="javascript:void(0)">❯</a></div></div></div></div></th></tr></tbody></table></td></tr><tr><th id="space" height="20">&nbsp;</th></tr><tr><td id="space" height="60">&nbsp;</td></tr>
+<tr><td><table id="footer" valign="middle" border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: auto;">
+<tbody><tr><td></td></tr><tr><td valign="top">
+<table><tbody><tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody><tbody>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><b>UNSER SERVICE</b></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a href="lieferung.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">Lieferung und Leistung</a></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a href="lizenzarten_menue.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">Versandkosten</a></td></tr><tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a href="myaccount.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">Kundenlogin</a></td></tr><tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a target="_blank" href="admin/index.php" style="text-decoration: none"></a></td></tr>
+<tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody></table></td><td valign="top"><table><tbody><tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody><tbody>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><b>KONTAKT</b></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a href="kontakt.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">Kontaktformular</a></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;">Telefon: +49 (2741) 93 11 30</td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;">Telefax: +49 (2741) 93 11 31</td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"></td></tr>
+<tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody></table></td><td valign="top"><table><tbody><tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody><tbody>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><b>RECHTLICHE HINWEISE</b></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a href="impressum.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">Impressum</a></td></tr><tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a class="derlink" id="fancybox1" href="agb_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c" style="text-decoration: none">AGB</a></td></tr><tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a class="derlink" id="fancybox1" href="widerruf_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c">Widerrufsbelehrung</a></td></tr><tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><a class="derlink" id="fancybox1" href="dschutz_gelesen.php?session=4ee9777ed3696db5ad0acae11c121d6c">Datenschutzbestimmungen</a></td></tr>
+<tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody></table></td><td valign="top"><table><tbody><tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody><tbody>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><b>SICHER EINKAUFEN MIT</b></td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;"><img src="img/paypal.png" width="65" border="0" title="Wir akzeptieren Zahlungen mit PayPal" alt="PayPal">  <img src="img/vorkasse.png" width="65" border="0" title="Wir akzeptieren Zahlungen mit Vorkasse-Überweisung" alt="Vorkasse-Überweisung"> </td></tr>
+<tr><td style="vertical-align: middle; text-align: left; padding-left:10px;">  </td></tr>
+<tr><td id="space" height="4">&nbsp;</td></tr>
+</tbody></table></td></tr>
+
+</tbody></table>
+</td></tr><tr><td height="5">&nbsp;</td></tr><tr><td height="5"><center><a title="© by SimpelWebshop Version 5.9.4" href="http://www.simpelwebshop.de" class="a2" target="_blank">SimpelWebShop © 2013 - 2017 by STS Software<br>Ver.5.9.4 All Rights Reserved</a></center></td></tr><tr></tr><tr><td height="5">&nbsp;</td></tr></tbody></table></td></tr></tbody></table></center></body></html>

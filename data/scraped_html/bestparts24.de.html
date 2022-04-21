@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>bestparts24 - Ihr Online Shop für Auto und Motorrad Zubehör sowie Ersatzteile</title> 
+
+<meta http-equiv="content-language" content="de"> 
+<meta http-equiv="cache-control" content="no-cache"> 
+
+<meta name="keywords" content=""> 
+<meta name="description" content=""> 
+
+<meta name="robots" content="index,follow">
+<meta name="language" content="de">
+<meta name="author" content="">
+<meta name="publisher" content="">
+<meta name="company" content="">
+<meta name="page-topic" content="shopping">
+<meta name="reply-to" content="xx@xx.com">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="5">
+
+<link rel="stylesheet" type="text/css" href="templates/bp24/javascript/css/superfish.css">
+
+<script type="text/javascript" charset="utf-8" async="" src="//widgets.trustedshops.com/js/XC4A9A549F90D842EFE023917495DF106.js"></script><script src="templates/bp24/javascript/jquery.js" type="text/javascript"></script>
+<script src="templates/bp24/javascript/superfish.js" type="text/javascript"></script>
+<script src="templates/bp24/javascript/supersubs.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="http://www.bestparts24.de/templates/bp24/favicon.ico" type="image/x-icon">
+
+<!--
+	This OnlineStore is brought to you by XT-Commerce, Community made shopping
+	XTC is a free open source e-Commerce System
+	created by Mario Zanier & Guido Winger and licensed under GNU/GPL.
+	Information and contribution at http://www.xt-commerce.com
+-->
+<meta name="generator" content="(c) by xtcModified -----|-- http://www.xtc-modified.org-">
+<base href="http://www.bestparts24.de/">
+<link rel="stylesheet" href="templates/bp24/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="templates/bp24/css/thickbox.css" type="text/css" media="screen">
+
+<script type="text/javascript"><!--
+var hexa = new Array(16);
+for (var i = 0; i < 10; i++) {
+    hexa[i] = i;
+}
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+var http = null;
+
+if (typeof XMLHttpRequest != "undefined") {
+    http = new XMLHttpRequest();
+}
+
+if (!http && typeof ActiveXObject != "undefined") {
+    try {
+        http = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+        try {
+            http = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e2) {
+            try {
+                http = new ActiveXObject("Msxml2.XMLHTTP.4.0");
+            } catch (e3) {
+                http = null;
+            }
+        }
+    }
+}
+
+function addCart(form) {
+    var post = '';
+    for (i = 0; i < form.elements.length; i++) {
+        if (form.elements[i].type != 'radio' || form.elements[i].checked == true) {
+            if (i > 0) { post += '&'; }
+            post += form.elements[i].name + '=' + encodeURIComponent(form.elements[i].value);
+        }
+    }
+    post += '&XTCsid=65938adb8fe3a5367ead535c6d4601e9';
+    showAddCart(post);
+    return false;
+}
+
+function showAddCart(post) {
+    if (http != null) {
+        //http.abort();
+        http.open("POST", 'ajaxAddCart.php', true);
+        http.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+        //http.overrideMimeType("text/xml; charset=ISO-8859-15");
+        http.onreadystatechange = function() {
+            if (!http) {
+                return;
+            }
+            if (http.readyState == 4) {
+                var response = http.responseText;
+                var amp = new RegExp("&amp;", "g");
+                document.getElementById("warenkorb").innerHTML = response.replace(amp, '&');
+				alert('Der Artikel wurde in den Warenkorb gelegt.');
+                setColor(255, 255, 0, 'new_in_cart')
+                setTimeout("fade(255, 255, 0, 204, 204, 204, 50, 'new_in_cart');", 2000);
+            }
+        }
+        http.send(post);
+    }
+}
+
+function setColor(r, g, b, element_name) {
+    var hr = hex(r); var hg = hex(g); var hb = hex(b);
+    element = document.getElementById(element_name);
+    element.style.backgroundColor = "#"+hr+hg+hb;
+    //console.log("#"+hr+hg+hb);
+}
+
+function hex(i) {
+    if (i < 0)
+    return "00";
+    else if (i > 255)
+    return "ff";
+    else
+    return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function fade(sr, sg, sb, er, eg, eb, step, element) {
+    for(var i = 0; i <= step; i++) {
+        setTimeout("setColor(Math.floor(" + sr + " + ((( " + er + " - " + sr + " )/ " + step + ") * " + i + ")), Math.floor(" + sg + " + ((( " + eg + " - " + sg + " )/ " + step + ") * " + i + ")), Math.floor(" + sb + " + ((( " + eb + " - " + sb + " )/ " + step + ") * " + i + ")), '" + element + "');", i * step);
+
+    }
+}
+//-->
+</script>
+<script type="text/javascript">
+
+<!--
+
+var selected;
+var submitter = null;
+
+function submitFunction() {
+    submitter = 1;
+}
+function popupWindow(url) {
+  window.open(url,'popupWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}  
+
+function selectRowEffect(object, buttonSelect) {
+  if (!selected) {
+    if (document.getElementById) {
+      selected = document.getElementById('defaultSelected');
+    } else {
+      selected = document.all['defaultSelected'];
+    }
+  }
+
+  if (selected) selected.className = 'moduleRow';
+  object.className = 'moduleRowSelected';
+  selected = object;
+
+// one button is not an array
+  if (document.getElementById('payment'[0])) {
+    document.getElementById('payment'[buttonSelect]).checked=true;
+  } else {
+    //document.getElementById('payment'[selected]).checked=true;
+  }
+}
+
+function rowOverEffect(object) {
+  if (object.className == 'moduleRow') object.className = 'moduleRowOver';
+}
+
+function rowOutEffect(object) {
+  if (object.className == 'moduleRowOver') object.className = 'moduleRow';
+}
+
+function popupImageWindow(url) {
+  window.open(url,'popupImageWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=100,height=100,screenX=150,screenY=150,top=150,left=150')
+}
+
+//--></script>
+
+<script type="text/javascript">
+
+
+
+var down = false;
+var overLayer = false; 
+var overMenu = false;
+var layer = null;
+
+$(function() 
+{ 
+  
+  $("body").on("click", "#box_cart", function()
+  {
+
+    $('.boxcartbody').stop().slideToggle('fast');
+
+  });
+
+  $('.boxcartbody').hover( function () { down=true; }, function () { down=false; } );
+
+  $("body").click(function(e)
+  {
+    if( !$('.boxcartbody').is(':animated') && !down) 
+    {
+    
+      $('.boxcartbody').stop().slideUp('fast');
+
+    }
+  });
+
+  $('#kategorien a').each(function()
+  {
+      var position = $(this).position();
+  
+      $(this).next().css('left', Math.floor(position.left));    
+  });
+/*
+  $('#kategorien a').on('mouseover', function() 
+  {
+    overMenu = true;
+    layer = $(this).next();
+    window.setTimeout(checkLayer,60);
+  });
+
+  $('#kategorien a').on('mouseleave', function() 
+  {
+    overMenu = false;
+    layer = $(this).next();
+    window.setTimeout(checkLayer,60);
+  });
+*/
+  $("#kategorien .contain").hover(
+  
+  function() 
+  {
+    $(this).find('.sub').show();
+    //$(this).find('.sub').stop().slideDown('fast');
+  }, 
+  function () {
+    $(this).find('.sub').hide();
+   // $(this).find('.sub').stop().slideUp('fast');
+  });
+
+ 
+
+}); 
+
+function startWebElekat(p_ZPNB,p_WKPON)
+{
+	if (p_ZPNB) t_ZPNB=p_ZPNB;
+	else t_ZPNB="";
+	if (p_ZPNB) t_WKPON=p_WKPON;
+	else t_WKPON="";
+	var WEK_path='https://webkat2012.elekatshop.net/webkatserv/';
+	
+	var WEK_url=WEK_path+"webkat?WSYD_EVENT=extS4TShop&externalKey=65938adb8fe3a5367ead535c6d4601e9&weshopname=bestparts24&WSYD_SID=&WKPON="+t_WKPON+"&ZPNB="+t_ZPNB+"&DBipA=";
+
+	window.setTimeout("getCartInfo()",3000); // involke ajax cart refresh
+	tb_show("bestparts24 Autoteilesuche", WEK_url+'&TB_iframe=true&KeepThis=true&height=700&width=1280');
+	
+}
+
+function getCartInfo()
+{
+	var url='wek_request.php?params={"action":"getCartInfo","xtcsid":"65938adb8fe3a5367ead535c6d4601e9"}';
+	var xhr; 
+	try {  xhr = new ActiveXObject('Msxml2.XMLHTTP');xhr2 = new ActiveXObject('Msxml2.XMLHTTP');   }
+	catch (e) 
+	{
+		try {   xhr = new ActiveXObject('Microsoft.XMLHTTP');xhr2 = new ActiveXObject('Microsoft.XMLHTTP');    }
+		catch (e2) 
+		{
+		  try {  xhr = new XMLHttpRequest();xhr2 = new XMLHttpRequest();     }
+		  catch (e3) {  xhr = false;xhr2 = false;   }
+		}
+	 }
+	xhr.open('get', url); 
+	xhr.onreadystatechange  = function()
+	{ 
+		 if(xhr.readyState  == 4)
+		 { 
+			  var response = xhr.responseText;
+		//
+			//document.getElementById('dyn_cart').innerHTML = response;
+			window.setTimeout("getCartInfo()",3000);
+			if (response.indexOf("AddCart")>0) {
+				showAddCart(response);
+				//xhr2.open('get', response); 
+				//xhr2.send(null); 
+				//var amp = new RegExp("&amp;", "g");
+				//document.getElementById("box_cart").innerHTML = response.replace(amp, '&');
+				/*setColor(255, 255, 0, 'new_in_cart')
+				setTimeout("fade(255, 255, 0, 204, 204, 204, 50, 'new_in_cart');", 2000);
+				*/
+			}
+		 }
+	}; 
+   xhr.send(null); 
+}
+
+</script>
+
+
+
+
+<script src="templates/bp24/javascript/thickbox.js" type="text/javascript"></script>
+<script src="templates/bp24/javascript/jquery.flexslider.js" type="text/javascript"></script>
+
+<link type="text/css" rel="stylesheet" href="http://widgets.trustedshops.com//css/style.css?version=2017-07-20-WEB&amp;tsId=XC4A9A549F90D842EFE023917495DF106&amp;sourceUrl=&amp;yOffset=0&amp;variant=reviews&amp;customElementId=&amp;trustcardDirection=&amp;customBadgeWidth=&amp;customBadgeHeight=&amp;disableResponsive=false&amp;disableTrustbadge=false&amp;customCheckoutElementId=&amp;channel=" class="trustbadgeStyleSheet" id="trustbadgeStyleSheetstyle"><link type="text/css" rel="stylesheet" href="//widgets.trustedshops.com//css/tbAuthenticReviews.css?version=2017-07-20-WEB&amp;tsId=XC4A9A549F90D842EFE023917495DF106" class="trustbadgeStyleSheet" id="trustbadgeStyleSheettbAuthenticReviews"></head>
+<body><div id="tsbadgeResponsiveTop_db8d3657bdbe440c985ae127463eaad4" class="" style="display: none;"><div class="responsiveBadge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews "><div class="responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><span>&nbsp;</span></div><div class="responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block--authentic-reviews "><div class="responsiveBadgeBlockStars_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4__block-stars"><div class="responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div class="responsiveBadgeBlockStarsReviewCount_db8d3657bdbe440c985ae127463eaad4"><span>Sehr gut</span><div class="responsiveBadgeAverageRating_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></div></div><div class="responsive-badge-review-block_db8d3657bdbe440c985ae127463eaad4__certified-text hide_db8d3657bdbe440c985ae127463eaad4">Zertifiziert seit 17.09.2008</div></div><div class="responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4--authentic-reviews">×</div><span class="trustCardC_db8d3657bdbe440c985ae127463eaad4"></span></div><div class="bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__sub-text">Zertifizierter Shop</div><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-custom-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon" style="font-size:100%;"></span></div><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#ffffff" stroke-width="0" points="0,1.8 0,0 10,0 16,0"></polygon></svg></div></div><div class="triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"></div></div><div id="MobileCoveringLayer_db8d3657bdbe440c985ae127463eaad4" style="display: none;"></div>
+
+<script type="text/javascript">
+
+$(function () {
+    
+    $('#kategoriens ul:nth-child(1)').addClass('sf-menu');
+    $('#kategoriens ul:nth-child(1)').supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    30,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();
+    $('#kategoriens').css('visibility', 'visible');
+})
+
+</script>
+
+<div id="head_wrap">
+    <div id="header">
+        <div id="header_links">
+            <a href="http://www.bestparts24.de/index.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9">Startseite</a> | <a href="https://www.bestparts24.de/login.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9">Login</a> | <a href="shop_content.php?coID=7">Kontakt</a> | <a href="shop_content.php?coID=4">Impressum</a>
+        </div>
+        <div id="logo"><a href="http://www.bestparts24.de/index.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9"><img src="templates/bp24/img/spacer.gif" width="400" alt="bestparts24 - Ihr Online Shop für Auto und Motorrad Zubehör sowie Ersatzteile"></a></div>
+        <div id="fonfrau"></div>
+                <div id="navleiste">
+            <div id="kategoriens" style="visibility: visible;">
+
+<ul class="sf-menu sf-js-enabled sf-shadow"><li><a href="http://www.bestparts24.de/index.php?cPath=80241&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="haupt sf-with-ul">Auto<span class="sf-sub-indicator"> »</span></a><ul style="float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Autoersatzteile<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 15.25em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75689&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Angebote</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75673&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Beleuchtung<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.25em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75673_75678&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Hella</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75673_75674&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Osram</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75673_75676&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Philips</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75673_75679&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_152359&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Elektronik</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75671&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Filter<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.25em; float: none; width: 12.083333333333334em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75671_75644&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">ECO Innenraumfilter</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_919338&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Flexrohre</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_594568&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gasfeder Koffer-/Laderaum</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Kabelbaum - Reparatursatz<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.25em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75685&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Audi</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75681&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">BMW</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75683&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Daimler Benz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75688&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ford</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75687&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Opel</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75686&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Seat</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75682&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Skoda</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75680_75684&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">VW</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Scheibenwischer <span class="sf-sub-indicator"> »</span></a><ul style="left: 15.25em; float: none; width: 13em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75664&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">BOSCH<span class="sf-sub-indicator"> »</span></a><ul style="left: 13em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75664_75665&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PKW-Aerotwin</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75664_122101&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PKW-Twin</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75663&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ersatzgummi Aerotwin</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75666&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">SWF<span class="sf-sub-indicator"> »</span></a><ul style="left: 13em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75666_75669&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">LKW/NKW</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75666_75670&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PKW-Standard</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75666_75668&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PKW-Visioflex</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75661_75662_75666_75667&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PKW-VisioNEXT</a></li></ul></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Innenausstattung<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Fussmatten<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75725&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Audi</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75727&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">BMW</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75730&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Fiat</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75719&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ford</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75722&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Mercedes Benz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75728&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Opel</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75721&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Peugeot</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75723&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Renault</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75729&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Seat</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75726&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Skoda</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75720&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Universal</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75718_75724&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">VW</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75717&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Schaltknauf</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75716&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sitzbezüge</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75712&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonnenschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75709_75733&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstiges</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Ladegeräte<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75764&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Absaar</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75763&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">CTEK</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75765&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">GYS</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75761&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Hella</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75762&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75759_75760&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Starthilfekabel</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_110159&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Lager-Abverkauf<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_110159_110160&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Katalysator</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_110159_110161&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Rußpartikel-Filter</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_110159_110162&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Scheinwerfer</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Pflege &amp; Wartung<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 14.25em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645_75649&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Armor All</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645_75648&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Dr.O.K.Wack</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645_117240&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">PETEC Kleben + Dichten</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645_75650&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">SONAX</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75645_75647&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Saisonprodukte<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_83473&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Sommerartikel<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_83473_83476&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Aufkleber &amp; Folien</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_83473_83478&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kühlboxen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_83473_83501&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonnenschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_83473_83502&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ventilatoren</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Winterartikel<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75825&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Eiskratzer</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_137403&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Frostschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83477&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Halb-/Vollgaragen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Radkappen<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83506&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">12 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83507&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">13 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83508&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">14 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83509&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">15 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83510&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">16 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_83505_83511&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">17 Zoll</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75821&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Reifen Zubehör</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Schneeketten<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75834&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">12 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75837&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">13 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75828&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">14 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75829&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">15 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75836&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">16 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75835&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">17 Zoll / 17.5 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75831&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">18 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75830&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">19 Zoll / 19.5 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75839&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">20 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75833&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Alpin</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75832&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">RUD</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75827_75838&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sondergrößen</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75826&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sitzheizung</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75822&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Skiträger</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75823&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstiges</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75754_75820_75824&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Winter-Sets</a></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75815&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sicherheitszubehör</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Transportsysteme<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75748&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">THULE<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 16.166666666666664em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_107634&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Adapter &amp; Montage Kits</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75747&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Dachboxen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_112710&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ersatzschlüssel</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75740&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Fahrradträger</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75745&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Fußsätze</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_107635&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Professional</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_349648&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Rucksäcke</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75741&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Skiträger</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75743&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Surfbrett &amp; Kanu-Halterungen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75746&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Trägerrohre</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75738_75739_75742&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Zubehör</a></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80241_75804&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Werkzeug</a></li></ul></li><li><a href="http://www.bestparts24.de/index.php?cPath=80240&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="haupt sf-with-ul">Motorrad<span class="sf-sub-indicator"> »</span></a><ul style="float: none; width: 15.083333333333334em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Motorradteile<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.083333333333334em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Beleuchtung<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636_75639&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Hella</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636_75637&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Osram<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636_75637_75638&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorradlampen</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636_75640&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Philips<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75636_75640_75641&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorradlampen</a></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Motorrad Ölfilter <span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75619&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Aprilia</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75624&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Arctic Cat</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75617&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Benelli</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75630&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Betamotor</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75609&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Bimota</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75615&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">BMW</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75634&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Buell</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75632&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Cagiva</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75611&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Derbi</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75623&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">DICHTUNGEN</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75622&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ducati</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75608&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gas Gas</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75618&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gilera</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75607&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Harley Davidson</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75620&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Honda</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75633&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Husaberg</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75613&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Husqvarna</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75625&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Italjet</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75621&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kawasaki</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75629&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">KTM</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75612&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Moto Guzzi</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75627&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">MV Augusta</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75626&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">MZ</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75616&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Peugeot</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75614&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Piaggio</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75610&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Polaris</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75628&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75606&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Suzuki</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75635&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Triumph</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75605_75631&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Yamaha</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75603_75604&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorradbatterien</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Pflege &amp; Wartung Motorrad<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.083333333333334em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75850&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Pflegemittel<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75850_75853&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Dr.O.K.Wack</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75850_75851&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">SONAX</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75850_75852&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Schmierstoffe<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75846&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">ADDITIVE</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75849&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gabelöle</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75845&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Getriebeöle</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75844&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorenöle 2-TAKT</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75848&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorenöle 4-TAKT</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75842_75843_75847&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Zubehör Motorrad<span class="sf-sub-indicator"> »</span></a><ul style="left: 15.083333333333334em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75659&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Abdeckung</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Ladegeräte<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653_75656&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Absaar</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653_75658&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">CTEK</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653_75654&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">GYS</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653_75657&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Hella</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75653_75655&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75652&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sicherheitszubehör</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80240_75651_75660&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Werkzeug</a></li></ul></li></ul></li><li><a href="http://www.bestparts24.de/index.php?cPath=80242&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="haupt sf-with-ul">Zubehör<span class="sf-sub-indicator"> »</span></a><ul style="float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_316674&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Anhängerzubehör</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75766&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Aufkleber &amp; Folien</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_115363&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Benzinkanister</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_284462&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Geräte-Batterien</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75841&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Halb-/Vollgaragen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Kindersitze<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75807&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Cybex</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75806&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">KidsimSitz - Nania</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Römer<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 13.75em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75811&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Fahrradsitze</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75814&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gruppe 0+/Geburt-13kg</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75810&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gruppe 1-2-3/9-36kg</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75812&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gruppe 1/9-18kg</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75809&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Gruppe 2-3/15-36kg</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75805_75808_75813&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kinderwagen &amp; Zubehör</a></li></ul></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_115888&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kofferraummatten</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75734&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kühlboxen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75755&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Lacke<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75755_75757&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Bremssattellack</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75755_75756&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75737&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Marderschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Radkappen<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75802&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">12 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75800&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">13 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75801&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">14 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75803&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">15 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75799&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">16 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75797_75798&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">17 Zoll</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75840&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Reiseküche</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_162266&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Schmierstoffe<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_162266_162267&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Boot</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_162266_163388&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Kettensäge</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_162266_162268&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Motorrad</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_162266_162269&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Rasenmäher</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75816&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Schnäppchen</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75750&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Sitzheizungen<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75750_75751&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75750_75752&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">WAECO</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75758&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonnenschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75690&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Sonstiges<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 13.083333333333334em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75690_75691&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Spezial Akku / Batterie</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_75735&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Ventilatoren</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83503&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Werkzeug</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Winterartikel<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83480&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Eiskratzer</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_137404&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Frostschutz</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83483&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Reifen Zubehör</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Schneeketten<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83485&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">12 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83486&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">13 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83487&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">14 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83488&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">15 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83489&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">16 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83490&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">17 Zoll / 17.5 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83491&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">18 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83492&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">19 Zoll / 19.5 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83493&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">20 Zoll</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83494&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Alpin</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83495&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">RUD</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83484_83496&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sondergrößen</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83512&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" class="sf-with-ul" style="float: none; width: auto;">Sitzheizungen<span class="sf-sub-indicator"> »</span></a><ul style="left: 12em; float: none; width: 12em; display: none; visibility: hidden;"><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83512_83515&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Sonstige</a></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83512_83514&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">WAECO</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_83475_83498&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Skiträger</a></li></ul></li><li style="white-space: normal; float: left; width: 100%;"><a href="http://www.bestparts24.de/index.php?cPath=80242_137372&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9" style="float: none; width: auto;">Zubehör</a></li></ul></li></ul></div>
+            
+
+            <div id="search">
+<form id="quick_find" action="http://www.bestparts24.de/advanced_search_result.php" method="get"><input type="hidden" name="XTCsid" value="65938adb8fe3a5367ead535c6d4601e9">
+<input type="text" name="keywords" value="Suchtext eingeben" style="width:160px;" maxlength="30" onfocus="if(this.value==this.defaultValue) this.value=''; $(this).css('color', 'black');" onblur="if(this.value=='') this.value=this.defaultValue;"><input type="image" src="templates/bp24/buttons/german/head_such.png" alt="Suchen" title=" Suchen ">
+</form> </div>
+            <div id="warenkorb">
+<div id="box_cart">
+	<div class="wk_content">
+		<h2 class="boxcartheader">Warenkorb</h2>
+		keine Artikel		<div class="wk_knopf"></div>
+	</div>
+	<img class="wk_img" src="templates/bp24/img/einkaufswagen.png">
+	<div class="boxcartbody" style="display:none">
+		 <!-- cart has no content -->
+		<p>keine Artikel</p>
+			</div>
+</div></div>
+        </div>
+    </div>
+</div>        
+<div id="wrap">
+    <div id="inner">
+        <!--<div class="stoerer"></div>-->
+                <div id="contentwrap">             <div id="leftcol">
+
+<h2 class="boxheader">Zahlungsarten</h2>
+<div class="boxbody"><center><img src="templates/bp24/img/zahlarten.jpg"></center></div>
+<div class="boxShadow"></div>
+<h2 class="boxheader">Versand</h2>
+<div class="boxbody" style="padding:25px 0px"><center><img src="templates/bp24/img/dhl_logo.png"></center></div>
+<div class="boxShadow"></div>
+<h2 class="boxheader">Informationen</h2>
+<div class="boxbody"><ul class="contentlist"><li><a href="http://www.bestparts24.de/shop_content.php?coID=8&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Sitemap</strong></a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=10&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Über uns</strong></a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=13&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Kundeninfo</strong></a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=200&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Zahlungsinformationen</strong></a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=16&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Muster-Widerrufsformular</strong></a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=0&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9"><strong>Online-Streitschlichtungsplattform</strong></a></li></ul></div>
+<div class="boxShadow"></div></div>
+                        <div id="contentwide">
+                                                                            
+            
+            
+
+<div><div class="startOben">
+<div class="flexslider">
+
+<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" id="slider_outer" style="width: 1000%; -webkit-transition: 0.6s; transition: 0.6s; transform: translate3d(-1707px, 0px, 0px);"><li class="clone" style="width: 569px; float: left; display: block;">
+    <div><a href=""><img alt="" src="images/content/Banner_Gepaecktraeger.png"></a></div>
+    </li>
+    <li style="width: 569px; float: left; display: block;" class="">
+    <div><a href=""><img alt="" src="images/content/start1.jpg"></a></div>
+    </li>
+    <li class="" style="width: 569px; float: left; display: block;">
+    <div><a href=""><img alt="" src="images/content/Banner_Motorradteile.png"></a></div>
+    </li>
+    <li class="flex-active-slide" style="width: 569px; float: left; display: block;">
+    <div><a href=""><img alt="" src="images/content/Banner_Gepaecktraeger.png"></a></div>
+    </li>
+<li style="width: 569px; float: left; display: block;" class="clone">
+    <div><a href=""><img alt="" src="images/content/start1.jpg"></a></div>
+    </li></ul></div><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
+<script type="text/javascript">
+$(".flexslider").flexslider({animation:"slide", slideshowSpeed: 5000, pausePlay: false, directionNav: true, controlNav: false});
+</script>
+<div id="start1" class="start2">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=51431&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>Marder Abwehr Mardersc...</h2>
+				<img alt="" src="images/product_images/info_images/51431_0.jpeg">
+			</a>
+		</div>
+		<div align="right" class="text"> 21,50 EUR</div>
+	</div>
+</div>
+<div id="start2" class="start2">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=365017&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>Eiskratzer Schneebesen...</h2>
+				<img alt="" src="images/product_images/info_images/365017_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 7,50 EUR</div>
+	</div>
+</div>
+</div>
+<div style="clear:both; height: 1px">&nbsp;</div>
+<div class="ht eins">
+<div class="heading "><a href="index.php?cPath=80241_75661">
+<h2>Autoersatzteile</h2>
+<img src="images/content/ht1.jpg" alt=""></a></div>
+<div align="center" class="text"><a href="index.php?cPath=80241_75661_75671">Innenraumfilter</a>&nbsp; 
+<a href="index.php?cPath=80241_75661_75662">Scheibenwischer</a>&nbsp; 
+<a href="index.php?cPath=80241_75661">Seitenspiegel</a>&nbsp; 
+<a href="index.php?cPath=80241_75661_75673">Autolampen</a>&nbsp; 
+<a href="index.php?cPath=80241_75661">Luftfilter</a>&nbsp; 
+<a href="index.php?cPath=80241_75661">Ölfilter</a>&nbsp; 
+<a href="index.php?cPath=80241_75661">Inspektion</a>&nbsp; 
+<a href="index.php?cPath=80241_75661">Zündkerzen</a>&nbsp; 
+<a href="index.php?cPath=80241_110159">Lager-Abverkauf&nbsp;</a></div>
+</div>
+<div class="ht">
+<div class="heading "><a href="index.php?cPath=80240_75603">
+<h2>Motorradteile</h2>
+<img src="images/content/ht2.jpg" alt=""></a></div>
+<div align="center" class="text"><a href="index.php?cPath=80240_75603_75605">Ölfilter</a>&nbsp; <a href="index.php?cPath=80240_75603_75604">Batterien</a>&nbsp; <a href="index.php?cPath=80240_75651_75653">Ladegeräte</a>&nbsp; <a href="index.php?cPath=80240_75651_75652">Sicherheitszubehör</a>&nbsp; <a href="index.php?cPath=80240_75651_75660">Werkzeug</a>&nbsp; <a href="index.php?cPath=80240_75603_75636">Motorradlampen</a>&nbsp; <a href="index.php?cPath=80240_75842_75850">Pflegemittel</a>&nbsp; <a href="index.php?cPath=80240_75842_75843">Schmierstoffe</a></div>
+</div>
+<div style="clear:both;">&nbsp;</div>
+<div style="margin-left:0px;" class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75738">
+<h2>Transport</h2>
+<img alt="" src="images/content/hl1.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80241_75738_75739">Thule</a>&nbsp; <a href="index.php?cPath=80241_75738_107637">Übler</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_75741">Skiträger</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_75747">Dach- boxen</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_75740">Fahrradträger</a>&nbsp; <a href="index.php?cPath=80241_75738_75739">Träger</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_107634">Kits</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_107634">Adapter</a>&nbsp; <a href="index.php?cPath=80241_75738_75739_75745">Fußsatz</a></div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75645">
+<h2>Pflege &amp; Wartung</h2>
+<img alt="" src="images/content/hl2.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80241_75645_75646_75648">Dr. Wack</a>&nbsp; <a href="index.php?cPath=80241_75645_75646_75650">Sonax</a>&nbsp; <a href="index.php?cPath=80241_75645_75646_75648">Innen- reinigung</a>&nbsp; <a href="index.php?cPath=80241_75645_75646_75648">Felgenreinigung</a>&nbsp; <a href="index.php?cPath=80241_75645_75646_75648">Autopflege</a>&nbsp; <a href="index.php?cPath=80241_75645_75646_75648">Lederpflege</a></div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75759">
+<h2>Ladegeräte &amp; Batterien</h2>
+<img alt="" src="images/content/hl3.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80241_75759_75763">CTEK</a>&nbsp; <a href="index.php?cPath=80241_75759_75761">Hella</a>&nbsp; <a href="index.php?cPath=80241_75759_75765">Gys</a>&nbsp; <a href="index.php?cPath=80241_75759_75760">Starthilfe</a>&nbsp; <a href="index.php?cPath=80241_75759_75764">Absaar</a>&nbsp; <a href="index.php?cPath=80241_75759">Batterieladegeräte</a>&nbsp; <a href="index.php?cPath=80241_75759_75762">Akkus</a>&nbsp; <a href="index.php?cPath=80241_75759">Exide</a>&nbsp; <a href="index.php?cPath=80241_75759">Landport</a>&nbsp; <a href="index.php?cPath=80241_75759">Varta</a></div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75709">
+<h2>Innenausstattung</h2>
+<img alt="" src="images/content/hl4.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80241_75709_75716">Sitzbezüge</a>&nbsp; <a href="index.php?cPath=80241_75709_75718">Fußmatten</a>&nbsp; <a href="index.php?cPath=80241_75709_75711">Gurtpolster</a>&nbsp; <a href="index.php?cPath=80241_75709_75713">Lenkradschoner</a>&nbsp; <a href="index.php?cPath=80241_75709_75732">Decken</a></div>
+</div>
+<div style="clear:both;">&nbsp;</div>
+<div style="margin-left:0px;" class="hl">
+<div class="heading"><a href="index.php?cPath=80242">
+<h2>Zubehör</h2>
+<img alt="" src="images/content/hl5.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80242_75737">Marder</a>&nbsp; <a href="index.php?cPath=80242_75797">Radkappen</a>&nbsp; <a href="index.php?cPath=80242_75805">Kindersitze</a>&nbsp; <a href="index.php?cPath=80242_75734">Kühlboxen</a>&nbsp; <a href="index.php?cPath=80242_75840">Reiseküche</a>&nbsp; <a href="index.php?cPath=80242_75755">Lack</a>&nbsp;</div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75815">
+<h2>Sicherheitszubehör</h2>
+<img alt="" src="images/content/hl6.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80241_75815">Verbandkasten</a>&nbsp; <a href="index.php?cPath=80241_75815">Starthilfe</a>&nbsp; <a href="index.php?cPath=80241_75815">Abschleppseil</a>&nbsp; <a href="index.php?cPath=80241_75815">Warnleuchte</a>&nbsp; <a href="index.php?cPath=80241_75815">Warndreieck</a>&nbsp; <a href="index.php?cPath=80241_75815">Warnweste</a>&nbsp;</div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75804">
+<h2>Werkzeug</h2>
+<img alt="" src="images/content/hl7.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80242_83503">Schraubenschlüssel</a>&nbsp; <a href="index.php?cPath=80242_83503">Drehmomentschlüssel</a>&nbsp; <a href="index.php?cPath=80242_83503">Vigor</a>&nbsp; <a href="index.php?cPath=80242_83503">Hazet</a>&nbsp; <a href="index.php?cPath=80242_83503">Schraubenzieher</a></div>
+</div>
+<div class="hl">
+<div class="heading"><a href="index.php?cPath=80241_75754">
+<h2>Saisonartikel</h2>
+<img alt="" src="images/content/hl8.jpg"></a></div>
+<div class="text"><a href="index.php?cPath=80242_75750">Sitzheizung</a>&nbsp; <a href="index.php?cPath=80241_75754_75820_75827">Schneeketten</a>&nbsp; <a href="index.php?cPath=80241_75754_75820_75822">Skiträger</a>&nbsp; <a href="index.php?cPath=80241_75754_75820_75825">Eiskratzer</a>&nbsp; <a href="index.php?cPath=80241_75754_75820_83505">Radkappen</a>&nbsp; <a href="index.php?cPath=80241_75754_75820_83477">Stoffgaragen</a>&nbsp;</div>
+</div></div>
+<div> 
+
+<div style="display:none">
+
+<div id="copyMe_0">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=869571&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>HÜNERSDORFF 811486 Kra...</h2>
+				<img alt="" src="images/product_images/info_images/869571_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 3,99 EUR</div>
+	</div>
+</div>
+
+<div id="copyMe_1">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=21960&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>ALBRECHT Radblende Rad...</h2>
+				<img alt="" src="images/product_images/info_images/21960_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 25,20 EUR</div>
+	</div>
+</div>
+
+<div id="copyMe_2">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=51431&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>Marder Abwehr Mardersc...</h2>
+				<img alt="" src="images/product_images/info_images/51431_0.jpeg">
+			</a>
+		</div>
+		<div align="right" class="text"> 21,50 EUR</div>
+	</div>
+</div>
+
+<div id="copyMe_3">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=917093&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>HÜNERSDORFF 811486 Kra...</h2>
+				<img alt="" src="images/product_images/info_images/917093_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 3,99 EUR</div>
+	</div>
+</div>
+
+<div id="copyMe_4">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=365017&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>Eiskratzer Schneebesen...</h2>
+				<img alt="" src="images/product_images/info_images/365017_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 7,50 EUR</div>
+	</div>
+</div>
+
+<div id="copyMe_5">
+	<div class="startrnd2">
+		<div class="heading">
+			<a href="http://www.bestparts24.de/product_info.php?products_id=917119&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">
+				<h2>HÜNERSDORFF 811486 Kra...</h2>
+				<img alt="" src="images/product_images/info_images/917119_0.jpg">
+			</a>
+		</div>
+		<div align="right" class="text"> 3,99 EUR</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+
+function getRandom(min, max) {
+ if(min > max) {
+  return -1;
+ }
+ 
+ if(min == max) {
+  return min;
+ }
+ 
+ var r;
+ 
+do {
+  r = Math.random();
+ }
+ while(r == 1.0);
+ 
+ return min + parseInt(r * (max-min+1));
+}
+
+$(function() 
+{
+	var s1 = getRandom(0, 5);
+	var s2 = getRandom(0, 5);
+	while(s1 == s2) s2 = getRandom(0,5);
+
+	//console.log(s1 + ' - '+s2);
+
+	$('#start1').html($('#copyMe_'+s1).html());
+	$('#start2').html($('#copyMe_'+s2).html());
+});
+
+
+</script></div>
+</div>
+             </div>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <table width="965" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+                <td><h2>Bookmarks</h2>Diese Website bookmarken bei:<br><img src="templates/bp24/img/social_sprite.png"></td>
+                <td><h2>Unsere Partner</h2>
+                    <ul>
+                        <li><a href="http://www.speed4trade.com" target="_blank">Speed4Trade GmbH</a></li>
+                        <li><a href="http://de.computop.com/" target="_blank">Computop</a></li>
+                        <li><a href="http://www.trustedshops.de" target="_blank">Trusted Shops</a></li>
+                        <li><a href="http://www.szymanski-rechtsanwaelte.de" target="_blank">Szymanski &amp; Partner</a></li>
+                        <li><a href="http://www.miltenberger-autoteile.de" target="_blank">Miltenberger</a></li>
+                    </ul>
+                </td>
+                <td>
+<h2>Sicher Einkaufen</h2><ul><li><a href="http://www.bestparts24.de/shop_content.php?coID=1&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Lieferung und Versand</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=14&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Hinweise</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=11&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Retoure</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=9&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Widerrufsrecht</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=3&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">AGB</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=2&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Datenschutz</a></li><li><a href="http://www.bestparts24.de/shop_content.php?coID=4&amp;XTCsid=65938adb8fe3a5367ead535c6d4601e9">Impressum</a></li></ul></td>
+                <td><h2>Service</h2><ul><li><a href="https://www.bestparts24.de/account.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9">Ihr Konto</a></li><li><a href="http://www.bestparts24.de/shopping_cart.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9">Warenkorb</a></li><li><a href="https://www.bestparts24.de/checkout_shipping.php?XTCsid=65938adb8fe3a5367ead535c6d4601e9">Kasse</a></li><li><a href="advanced_search.php">Erweiterte Suche</a></li><li><a href="shop_content.php?coID=24">Anfahrt</a></li><li><a href="shop_content.php?coID=10">Über uns</a></li><li><a href="http://stores.ebay.de/autoteile-miltenberger/" target="_blank">eBay Shop</a></li></ul></td>
+                <td><h2>Copyright</h2>© 2012 bestparts24.de<br>Alle Rechte vorbehalten.<br><img src="templates/bp24/img/copy_right.png"></td>
+            </tr>
+        </tbody></table>
+        <br>
+        <center><img src="templates/bp24/img/footer_trenner.png"></center><br>
+        bestparts24 - Ihr Online Shop für Auto und Motorrad Zubehör sowie Ersatzteile © 2017 | Konzept &amp; Design Speed4Trade GmbH
+        <br>
+        <a style="text-decoration:none;" href="http://www.modified-shop.org" target="_blank"><span style="color:#B0347E;">mod</span><span style="color:#6D6D6D;">ified eCommerce Shopsoftware</span></a><span style="color:#555555;">&nbsp;©2017&nbsp;provides no warranty and is redistributable under the </span><a style="color:#555555;text-decoration:none;" href="http://www.fsf.org/licensing/licenses/gpl.txt" target="_blank">GNU General Public License</a>
+        <br>&nbsp;
+    </div>
+
+<script type="text/javascript">
+  (function () { 
+    var _tsid = 'XC4A9A549F90D842EFE023917495DF106'; 
+    _tsConfig = { 
+      'yOffset': '0', /* offset from page bottom */
+      'variant': 'reviews', /* text, default, small, reviews, custom, custom_reviews */
+      'customElementId': '', /* required for variants custom and custom_reviews */
+      'trustcardDirection': '', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+      'customBadgeWidth': '', /* for custom variants: 40 - 90 (in pixels) */
+      'customBadgeHeight': '', /* for custom variants: 40 - 90 (in pixels) */
+      'disableResponsive': 'false', /* deactivate responsive behaviour */
+      'disableTrustbadge': 'false', /* deactivate trustbadge */
+      'trustCardTrigger': 'mouseenter' /* set to 'click' if you want the trustcard to be opened on click instead */
+    };
+    var _ts = document.createElement('script');
+    _ts.type = 'text/javascript'; 
+    _ts.charset = 'utf-8'; 
+    _ts.async = true; 
+    _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js'; 
+    var __ts = document.getElementsByTagName('script')[0];
+    __ts.parentNode.insertBefore(_ts, __ts);
+  })();
+</script>
+<div class="parseTime">Parse Time: 0.291s</div><div id="tsbadge4_db8d3657bdbe440c985ae127463eaad4" data-shopname="bestparts24" style="display: block; cursor: pointer; bottom: 0px;"><div id="BadgeContainer_db8d3657bdbe440c985ae127463eaad4" class="" data-tb-element="trustbadge_minimised_container"><div id="MenuDotsBadge_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--badge menu-button_db8d3657bdbe440c985ae127463eaad4--left" data-menu="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" target="_blank" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MaximizeBadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_maximise"><span>+</span>Maximieren</a><a href="javascript:void(null);" id="RemoveTrustbadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_remove"><span>×</span>Schließen</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="BadgeContent_db8d3657bdbe440c985ae127463eaad4" class="badge-content_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge_db8d3657bdbe440c985ae127463eaad4__top"><div id="TrustmarkBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge_db8d3657bdbe440c985ae127463eaad4__logo trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark--50" data-tb-element="trustbadge_minimised_trustmark"></div></div><div class="dash_db8d3657bdbe440c985ae127463eaad4 trustbadge_db8d3657bdbe440c985ae127463eaad4__dash" id="dash-review-separator_db8d3657bdbe440c985ae127463eaad4"></div><div id="ReviewsContainerBadge_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div><div id="MarkInWordsBadge_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="MarkBadge_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></div></div><div id="BadgeFooter_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4 trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__certified"><div id="TriangleBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__triangle"></div><div id="BottomSlantBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant-container"><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant"><polygon fill="#ffffff" stroke-width="0" points="0,1.5 0,0 10,0 16,0 "></polygon></svg></div><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container--authentic-reviews"><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text--authentic-reviews">Zertifizierter Shop</div></div><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon"></span></div></div></div></div></div></div><div id="tscard4_db8d3657bdbe440c985ae127463eaad4" style="display: none; bottom: 0px;"><div id="Container_db8d3657bdbe440c985ae127463eaad4" class="tscard__container_db8d3657bdbe440c985ae127463eaad4"><div id="TopSlant_db8d3657bdbe440c985ae127463eaad4"><svg id="svgTop_db8d3657bdbe440c985ae127463eaad4" width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#fff" stroke-width="0" points="0,10 0,5 0,5 25,0"></polygon></svg></div><div id="MenuDotsCard_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--card " data-menu="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/PROTECTION_TERMS_COMPLETE_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MinimizeCardLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon"><span>–</span>Minimieren</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="Content_db8d3657bdbe440c985ae127463eaad4" class="content_db8d3657bdbe440c985ae127463eaad4 content_db8d3657bdbe440c985ae127463eaad4--trustbadge"><div id="ShopName_db8d3657bdbe440c985ae127463eaad4" title="bestparts24">bestparts24</div><div id="TrustmarkProtectionInfoLayer_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i><div id="CloseTrustmarkInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="headline_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><p>Sie können sich nach dem Einkauf für die kostenlose Trusted Shops Mitgliedschaft Basic anmelden, inkl. Käuferschutz bis je 100 € für den aktuellen Einkauf sowie für Ihre weiteren Einkäufe in deutschen Shops mit dem Trusted Shops Gütesiegel.</p><br><p>Mit <b>Trusted Shops</b><i style="color:#0DBEDC;font-weight:bold;">  PLUS</i> (inkl. Garantie) werden Ihre Einkäufe sogar bis je 20.000 € durch den Käuferschutz (inkl. Garantie) abgesichert, für 9,90 € pro Jahr inkl. MwSt. bei einer Mindestvertragslaufzeit von 1 Jahr. Die Absicherungsdauer des Käuferschutzes pro Einkauf beträgt in beiden Fällen 30 Tage.</p><br><p>Es gelten die <a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" target="_blank"> Mitgliedschafts- und Käuferschutzbedingungen</a>.</p></div><div class="table_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 "><a href=" https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=TrustmarkCellNo1__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class=" blockLink_db8d3657bdbe440c985ae127463eaad4 " target="_blank"><div id="TrustmarkImage_db8d3657bdbe440c985ae127463eaad4"></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Zertifiziert</div><div class="center_db8d3657bdbe440c985ae127463eaad4">seit 17.09.2008</div></a></div><div id="TrustmarkCellNo2_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4  hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="TrustmarkLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ProtectionImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><div id="ProtectionLimit_db8d3657bdbe440c985ae127463eaad4">bis zu 20.000&nbsp;€</div></a></div></div><div style="display:none;" id="ReviewsInfoLayer_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4 reviews-info-layer_db8d3657bdbe440c985ae127463eaad4 "><div id="CloseReviewsInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="tableCell_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i><p class="headline_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</p><p class="reviews-info-layer_db8d3657bdbe440c985ae127463eaad4__description">Die Note „Sehr gut“ berechnet sich aus den 3 Trusted Shops Bewertungen der letzten 12 Monate, die im <a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html&amp;utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsInfoLayer__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" target="_blank">Bewertungsprofil</a> eingesehen werden können.</p></div></div><div id="ReviewsRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="ReviewsLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsBubbleImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i></div><div id="ReviewsRatingCount_db8d3657bdbe440c985ae127463eaad4"><span class="counter_db8d3657bdbe440c985ae127463eaad4">94</span><span id="commentText_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</span></div></a></div><div id="ReviewsCellNo2_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 "><a href="https://www.trustedshops.de/bewertung/info_XC4A9A549F90D842EFE023917495DF106.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsCellNo2__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class="blockLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"><div id="Stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div id="MarkInWords_db8d3657bdbe440c985ae127463eaad4" class="largeFontSize_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="Mark_db8d3657bdbe440c985ae127463eaad4">5.00/5.00</div></a></div></div></div><div id="ReviewComments_db8d3657bdbe440c985ae127463eaad4"><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Daniel M</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">21.03.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Super schnell Sonntag Abend bestellt Dienstag Vormittag da und passt wie angegossen super Lieferung super Service blitzschnell</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Günther F</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">06.03.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Die Bestellabwicklung lief sehr gut. Hervorzuheben: kompetente telefonische Beratung im Vorfeld der Bestellung. Danke</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Alexander S</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">25.07.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Sehr schnelle Lieferung.</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div id="ReviewSlideControls_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><div><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a></div></div></div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div><svg id="svgBottom_db8d3657bdbe440c985ae127463eaad4" width="100%" height="10" viewBox="0 0 9.9 5" preserveAspectRatio="none"><polygon fill="#FFDC0F" stroke-width="0" points="0,5 10,10 10,0 10,0"></polygon></svg><div id="Triangle_db8d3657bdbe440c985ae127463eaad4"></div><div id="TrustedShopsLogo_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-e-trustedshops"></i></div><div id="Footer_db8d3657bdbe440c985ae127463eaad4"></div><div class="rotate-screen_db8d3657bdbe440c985ae127463eaad4 rotate-screen_db8d3657bdbe440c985ae127463eaad4--full "></div></div></div></body></html>

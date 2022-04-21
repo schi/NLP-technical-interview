@@ -1,0 +1,840 @@
+<!DOCTYPE html><html lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<base href="https://www.beerenweine.eu/">
+<title>Beerenweine Shop | Das Portal der Weinkutschen</title>
+<link rel="canonical" href="https://www.beerenweine.eu/">
+<meta name="robots" content="index,follow">
+<meta name="description" content="Riesige Auswahl ✓ über 150 Sorten Weine, Met, Schnäpse &amp; Liköre ✓ viele Vegane Sorten und vieles mehr ✓ Komm zu uns und erlebe das Mittelalter!">
+<meta name="generator" content="xt:Commerce 5 - 5.0.07">
+<link rel="apple-touch-icon" href="templates/xt_responsive/bw-img/meta/apple-touch-icon.png">
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script type="text/javascript" charset="utf-8" async="" src="//widgets.trustedshops.com/js/X6F143F56F983758E95EC13DDAF870AC1.js"></script><script type="text/javascript" async="" defer="" src="//www.beerenweine.eu/bwPiwik/piwik.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20171212152908/recaptcha__de.js"></script><script src="https://www.google.com/recaptcha/api.js?hl=de"></script>
+
+
+
+<!-- HTML5 shiv IE8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="templates/xt_responsive/components/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- jQuery independent load -->
+<script type="text/javascript" src="templates/xt_responsive/components/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+
+// toggle
+(function($){
+$.fn.clickToggle = function(func1, func2) {
+var funcs = [func1, func2];
+this.data('toggleclicked', 0);
+this.click(function() {
+var data = $(this).data();
+var tc = data.toggleclicked;
+$.proxy(funcs[tc], this)();
+data.toggleclicked = (tc + 1) % 2;
+});
+return this;
+};
+}(jQuery));
+
+
+$(".bw-nav-m-bt-lg").clickToggle(function() {   
+$(".bw-co-us").css({"height":"auto"});
+},
+function() {
+$(".bw-co-us").css({"height":"5px"});
+});
+
+$(".bw-nav-m-bt-lg").css({"display":"inline-block"});
+$(".bw-co-us").css({"height":"5px"});
+
+//$("#testimg").css({"width":"100px"}).delay(600).animate({"width":"0px"}, 1000, "easeInBack");
+//$(".zzz").delay(1000).animate({"margin-left":"-180px"}, 1500, "swing").animate({"margin-left":"0px"}, 1500, "swing");
+
+/*
+var BaseURL = document.location.host;
+var extern = \'<i class="fa fa-external-link" style="font-size:14px"></i>\';
+$("body a").each(function() {
+var LinkURL = $(this).attr("href");
+var LinkText = $(this).html();
+var LinkClass = $(this).attr("class");
+if(LinkURL.indexOf("http") != -1) {
+if(LinkURL.indexOf(""+BaseURL+"") == -1) {
+if(LinkClass != undefined){
+if(LinkClass.indexOf("no-extern") == -1) {
+$(this).attr("target", "_blank");
+$(this).html(""+LinkText+" "+extern+"");
+} } else {
+$(this).attr("target", "_blank");
+$(this).html(""+LinkText+" "+extern+"");
+} } }
+});
+*/
+
+
+var extern = '<i class="fa fa-external-link" style="font-size:14px"></i>';
+$("body a").each(function(){
+var LinkText = $(this).html();
+var Target = $(this).attr("target");
+if(Target == "_blank")
+$(this).append(" "+extern+"");
+});
+
+$(".bw-scroll").click(function(event){
+event.preventDefault();
+var ScrollPos = $(this).attr("data-scroll");
+$("html, body").animate({scrollTop:$("#"+ScrollPos+"").offset().top}, 'slow');
+}); 
+
+if(document.cookie.indexOf("euCookie=1") != -1){
+$("#BWeuCookie").hide();
+} else {
+$("#BWeuCookie").hide();
+$("#BWeuCookie").delay(100).fadeIn(500);
+}
+
+$("#CloseCookieInfo").click(function(event){
+event.preventDefault();
+document.cookie="euCookie=1;max-age=+31536000;path=/"; 
+$("#BWeuCookie").fadeOut(500);
+});
+
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/css/bw-style.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/css/bw-navigation.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/css/Template.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/plugins/xt_paypal_plus/css/xt_paypal_plus.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/lightgallery/dist/css/lg-transitions.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/OwlCarousel/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/OwlCarousel/owl-carousel/owl.transitions.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/plugins/xt_master_slave/css/master_slave.css">
+<link rel="stylesheet" type="text/css" href="https://www.beerenweine.eu/templates/xt_responsive/components/OwlCarousel/owl-carousel/owl.theme.css">
+<link rel="shortcut icon" href="https://www.beerenweine.eu/media/logo/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.beerenweine.eu/media/logo/favicon.png" type="image/png">
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.beerenweine.eu/bwPiwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<link type="text/css" rel="stylesheet" href="https://widgets.trustedshops.com//css/style.css?version=2017-07-20-WEB&amp;tsId=X6F143F56F983758E95EC13DDAF870AC1&amp;sourceUrl=&amp;yOffset=0&amp;variant=default&amp;customElementId=MyCustomTrustbadge&amp;trustcardDirection=topLeft&amp;customBadgeWidth=90&amp;customBadgeHeight=45&amp;disableResponsive=false&amp;disableTrustbadge=false&amp;customCheckoutElementId=&amp;channel=" class="trustbadgeStyleSheet" id="trustbadgeStyleSheetstyle"><link type="text/css" rel="stylesheet" href="//widgets.trustedshops.com//css/tbAuthenticReviews.css?version=2017-07-20-WEB&amp;tsId=X6F143F56F983758E95EC13DDAF870AC1" class="trustbadgeStyleSheet" id="trustbadgeStyleSheettbAuthenticReviews"></head>
+<body><div id="tsbadgeResponsiveTop_db8d3657bdbe440c985ae127463eaad4" class="" style="display: none;"><div class="responsiveBadge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews "><div class="responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockLogo_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><span>&nbsp;</span></div><div class="responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block responsive-badge_db8d3657bdbe440c985ae127463eaad4__review-block--authentic-reviews "><div class="responsiveBadgeBlockStars_db8d3657bdbe440c985ae127463eaad4 responsive-badge_db8d3657bdbe440c985ae127463eaad4__block-stars hide_db8d3657bdbe440c985ae127463eaad4"><div class="responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockStarsStars_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:98.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div class="responsiveBadgeBlockStarsReviewCount_db8d3657bdbe440c985ae127463eaad4"><span>Sehr gut</span><div class="responsiveBadgeAverageRating_db8d3657bdbe440c985ae127463eaad4">4.92/5.00</div></div></div><div class="responsive-badge-review-block_db8d3657bdbe440c985ae127463eaad4__certified-text">Zertifiziert seit 08.09.2017</div></div><div class="responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4 responsiveBadgeBlockClose_db8d3657bdbe440c985ae127463eaad4--authentic-reviews">×</div><span class="trustCardC_db8d3657bdbe440c985ae127463eaad4"></span></div><div class="bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 bottomSlantResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__sub-text">Zertifizierter Shop</div><div class="trustbadge-responsive-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-custom-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon" style="font-size:100%;"></span></div><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#ffffff" stroke-width="0" points="0,1.8 0,0 10,0 16,0"></polygon></svg></div></div><div class="triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4 triangleResponsiveBadge_db8d3657bdbe440c985ae127463eaad4--authentic-reviews"></div></div><div id="MobileCoveringLayer_db8d3657bdbe440c985ae127463eaad4" style="display: none;"></div><div class="loader_white" id="loader_white"></div><div class="cart_ajax_box" id="cart_ajax_box"></div><div id="BWeuCookie" style="display: block;"><div><span>Diese Website verwendet Cookies um dir die bestmögliche Bedienbarkeit bieten zu können. Mit dem Benutzen dieser Seite erklärst du dich mit der Nutzung von Cookies einverstanden.</span><a id="CloseCookieInfo" href="#" class="td-n"><button>ok</button></a></div></div>
+
+    
+
+
+<!-- Respond.js IE8 support of media queries -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="templates/xt_responsive/components/Respond/dest/respond.min.js"></script>
+<![endif]-->
+
+<div class="bw-bg-002"><div class="bw-main">
+
+
+<div id="detectTouch"></div>
+<div id="header-top">
+<a href="https://www.beerenweine.eu">
+<img id="headerbild" src="templates/xt_responsive/bw-img/header/beerenweine-header-xmas.jpg" alt="Startseite" title="Startseite">
+</a>
+</div>
+
+<script type="text/javascript" src="templates/xt_responsive/bw-js/snow/canvas.js"></script>
+<script type="text/javascript" src="templates/xt_responsive/bw-js/snow/snow.js"></script>
+<script type="text/javascript" src="templates/xt_responsive/bw-js/snow/values.js"></script>
+
+
+
+<div class="bw-nav-m clearfix">
+<div class="bw-nav-m-bts-main">
+<div class="bw-nav-m-bts clearfix">
+<span><a class="bw-nav-m-bt bw-nav-m-bt-lg" href="#" onclick="return false;" style="display: inline-block;"><i class="fa fa-user" aria-hidden="true"></i></a></span>
+<span><a class="bw-nav-m-bt bw-nav-m-bt-hl" href="de/shop/sale"><i class="fa fa-star-o bw-fa-sale"></i> Sale <i class="fa fa-star-o bw-fa-sale"></i></a></span>
+<span><a class="bw-nav-m-bt bw-nav-m-bt-hl" href="de/beerenweinewelt/weihnachtswelt"><i class="fa fa-tree bw-fa-sale"></i> Weihnachtswelt <i class="fa fa-tree bw-fa-sale"></i></a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/weinsorten">Weine</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/metsorten">Met</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/editionen">Editionen</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/spirituosen">Spirituosen</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/bier">Bier</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/sonstiges">Sonstiges</a></span>
+<span><a class="bw-nav-m-bt" href="de/shop/zum-verschenken">Zum Verschenken</a></span>
+<span><a class="bw-nav-m-bt" href="de/beerenweinewelt">Beerenweinewelt</a></span>
+</div>
+</div>
+</div>
+
+<div id="navigation-md">
+ 
+
+<div id="main-sub-menu">
+
+<!-- Mainmenü -->
+<div class="mainmenu">
+
+<ul>
+<li class="tog-sub-master tt1" data-substatus="false" data-sub="sub1"><a href="#" onclick="return false;">Produkte</a></li>
+<li class=" tt2" data-substatus="false" data-sub=""><a href="de/shop/sale"><i class="fa fa-tree fa-lg bw-fa-sale"></i> Sale <i class="fa fa-tree bw-fa-sale"></i></a></li>
+<li class="tog-sub-master tt3" data-substatus="false" data-sub="sub3"><a href="#" onclick="return false;">Beerenweinewelt</a></li>
+</ul>
+
+<!-- Search & Login -->
+<div class="mainmenu-right">
+
+<a href="https://www.trustedshops.com/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html" target="blank" title="Trusted Shops"><div class="mainmenu-trusted-shops"></div></a>
+
+<div class="mainmenu-wk"><div class="mainmenu-wk-status"><a href="de/cart" title="Zum Warenkorb"></a></div></div>
+
+<form class="search-box-form" name="search_box8" action="https://www.beerenweine.eu/de/search" method="get" role="form">
+
+<div class="mainmenu-search">
+<input type="hidden" name="page" value="search" id="page">
+<input type="hidden" name="page_action" value="query" id="page_action">
+<input type="hidden" name="desc" value="on" id="desc">
+<input type="hidden" name="sdesc" value="on" id="sdesc">
+<div class="bw-input-group input-group">
+<input type="text" name="keywords" class="bw-search-input" value="" placeholder="Shop durchsuchen">
+</div>
+</div>
+
+<div class="mainmenu-searchicon">
+<button type="submit" class="bw-btn-search submit-button btn btn-primary" title="Suchen" data-toggle="tooltip" data-placement="auto">
+<i class="fa fa-search fa-lg"></i>
+<span class="sr-only">Suchen</span>
+</button>
+</div>
+
+</form>
+
+<div class="mainmenu-custom">
+<a class="bw-login" href="de/customer/login" data-toggle="modal" data-target="#loginModal" data-remote="false"><i class="fa fa-lock"></i> Login</a>
+<br>
+<a class="bw-login" href="de/customer/login?form=register"><i class="fa fa-pencil-square-o"></i> Registrieren</a>
+</div>
+
+
+</div>
+</div><!-- Mainmenü End -->
+
+<!-- Submenü -->
+<div id="submenu">
+
+
+<!-- Submenü :: Produkte -->
+<div class="submenu sub1" style="display: none;">
+
+
+<!-- Submenü Master :: Produkte -->
+<div class="submenu-master">
+<ul>
+<li class="tog-sub-slave first" data-submenu-slave="weinsorten"><a href="de/shop/weinsorten">Weinsorten</a></li>
+<li class="tog-sub-slave" data-submenu-slave="metsorten"><a href="de/shop/metsorten">Metsorten</a></li>
+<li class="tog-sub-slave" data-submenu-slave="editionen"><a href="de/shop/editionen">Editionen</a></li>
+<li class="tog-sub-slave" data-submenu-slave="spirituosen"><a href="de/shop/spirituosen">Spirituosen</a></li>
+<li class="tog-sub-slave" data-submenu-slave="bier"><a href="de/shop/bier">Bier &amp; mehr</a></li>
+<li class="tog-sub-slave" data-submenu-slave="sonstiges"><a href="de/shop/sonstiges">Sonstiges</a></li>
+<li class="tog-sub-slave" data-submenu-slave="boxen"><a href="de/shop/zum-verschenken">Geschenksets <i class="fa fa-gift" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+<div class="submenu-slave weinsorten"><ul><li><a href="de/shop/weinsorten"><b>Weinsorten</b></a></li><li><a href="de/shop/weinsorten/aroniabeerwein">Aroniabeerwein</a></li><li><a href="de/shop/weinsorten/blaubeerwein">Blaubeerwein</a></li><li><a href="de/shop/weinsorten/bratapfelwein">Bratapfelwein</a></li><li><a href="de/shop/weinsorten/brombeerwein">Brombeerwein</a></li><li><a href="de/shop/weinsorten/cannabis-pflaumwein">Cannabis-Pflaumwein</a></li><li><a href="de/shop/weinsorten/cannabis-suedfruchtwein">Cannabis-Südfruchtwein</a></li><li><a href="de/shop/weinsorten/cannabis-wildapfelwein">Cannabis-Wildapfelwein</a></li><li><a href="de/shop/weinsorten/elfentau">Elfentau</a></li><li><a href="de/shop/weinsorten/erdbeerwein">Erdbeerwein</a></li><li><a href="de/shop/weinsorten/feengold">Feengold</a></li><li><a href="de/shop/weinsorten/gewuerzwein">Gewürzwein</a></li></ul></div><div class="submenu-slave weinsorten"><ul><li>   </li><li><a href="de/shop/weinsorten/granatapfelwein">Granatapfelwein</a></li><li><a href="de/shop/weinsorten/hanf-kirschwein">Hanf-Kirschwein</a></li><li><a href="de/shop/weinsorten/hanf-wildrosenwein">Hanf-Wildrosenwein</a></li><li><a href="de/shop/weinsorten/hexengalle">Hexengalle</a></li><li><a href="de/shop/weinsorten/himbeerwein">Himbeerwein</a></li><li><a href="de/shop/weinsorten/holunderbluetenwein">Holunderblütenwein</a></li><li><a href="de/shop/weinsorten/holunderwein">Holunderwein</a></li><li><a href="de/shop/weinsorten/ingwer-chiliwein">Ingwer-Chiliwein</a></li><li><a href="de/shop/weinsorten/ingwerwein">Ingwerwein</a></li><li><a href="de/shop/weinsorten/johannisbeerwein-rot">Johannisbeerwein rot</a></li><li><a href="de/shop/weinsorten/johannisbeerwein-schwarz">Johannisbeerwein schwarz</a></li></ul></div><div class="submenu-slave weinsorten"><ul><li>   </li><li><a href="de/shop/weinsorten/kirschwein-herb">Kirschwein herb</a></li><li><a href="de/shop/weinsorten/kirschwein-suess">Kirschwein süß</a></li><li><a href="de/shop/weinsorten/kiwiwein">Kiwiwein</a></li><li><a href="de/shop/weinsorten/koboldfeuer-wildrosenwein">Koboldfeuer / Wildrosenwein</a></li><li><a href="de/shop/weinsorten/moosbeerwein">Moosbeerwein</a></li><li><a href="de/shop/weinsorten/pfirsichwein">Pfirsichwein</a></li><li><a href="de/shop/weinsorten/pflaumenwein">Pflaumenwein</a></li><li><a href="de/shop/weinsorten/quittenwein">Quittenwein</a></li><li><a href="de/shop/weinsorten/samthauch">Samthauch</a></li><li><a href="de/shop/weinsorten/schlehenwein">Schlehenwein</a></li><li><a href="de/shop/weinsorten/wildapfelwein">Wildapfelwein</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave weinsorten"><ul><li><a href="de/shop/sonstiges/geschirr"><b>Zubehör</b></a></li><a href="de/shop/sonstiges/geschirr"><img class="submenu-img" src="media/images/bw-submenu/27a.jpg" alt="Beerenweine Kategorie Geschirr"></a><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-02-l">Ton Trinkbecher 0,02 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-04-l">Ton Trinkbecher 0,04 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-05-l">Ton Trinkbecher 0,05 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-burg">Ton Trinkbecher 0,25 l Burg</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-logo">Ton Trinkbecher 0,25 l Logo</a></li><li class="submenu-slave-br">   </li><ul><li><a href="de/shop/editionen/elfentau-alkoholfrei"><b>Lust auf Erfrischung?</b></a></li><li><a href="de/shop/editionen/elfentau-alkoholfrei"><img class="submenu-img" src="media/images/bw-submenu/11-elfentau.jpg" alt="Beerenweine Kategorie Geschirr"><br>Elfentau Biolimonade. Alkoholfrei und Vegan!</a></li></ul></ul></div><div class="submenu-slave metsorten"><ul><li><a href="de/shop/metsorten"><b>Metsorten</b></a></li><li><a href="de/shop/metsorten/drachenglut">Drachenglut</a></li><li><a href="de/shop/metsorten/honig-ananas-kokos">Honig-Ananas-Kokos</a></li><li><a href="de/shop/metsorten/honig-apfel">Honig-Apfel</a></li><li><a href="de/shop/metsorten/honig-blaubeere">Honig-Blaubeere</a></li><li><a href="de/shop/metsorten/honig-bratapfel">Honig-Bratapfel</a></li><li><a href="de/shop/metsorten/honig-brombeere">Honig-Brombeere</a></li><li><a href="de/shop/metsorten/honig-cassis">Honig-Cassis</a></li><li><a href="de/shop/metsorten/honig-chili">Honig-Chili</a></li><li><a href="de/shop/metsorten/honig-erdbeer">Honig-Erdbeer</a></li><li><a href="de/shop/metsorten/honig-gewuerze-mild">Honig-Gewürze mild</a></li><li><a href="de/shop/metsorten/honig-hanf">Honig-Hanf</a></li><li><a href="de/shop/metsorten/honig-himbeer">Honig-Himbeer</a></li></ul></div><div class="submenu-slave metsorten"><ul><li>   </li><li><a href="de/shop/metsorten/honig-holunder">Honig-Holunder</a></li><li><a href="de/shop/metsorten/honig-holunderbluete">Honig-Holunderblüte</a></li><li><a href="de/shop/metsorten/honig-kaktus">Honig-Kaktus</a></li><li><a href="de/shop/metsorten/honig-karamell">Honig-Karamell</a></li><li><a href="de/shop/metsorten/honig-kirsch">Honig-Kirsch</a></li><li><a href="de/shop/metsorten/honig-kirsch-leicht">Honig-Kirsch leicht</a></li><li><a href="de/shop/metsorten/honig-kraeuter">Honig-Kräuter</a></li><li><a href="de/shop/metsorten/honig-vanille">Honig-Vanille</a></li><li><a href="de/shop/metsorten/honig-waldbeer">Honig-Waldbeer</a></li><li><a href="de/shop/metsorten/honig-waldmeister">Honig-Waldmeister</a></li><li><a href="de/shop/metsorten/honig-walnuss">Honig-Walnuss</a></li><li><a href="de/shop/metsorten/honig-wildrose">Honig-Wildrose</a></li></ul></div><div class="submenu-slave metsorten"><ul><li>   </li><li><a href="de/shop/metsorten/lindenbluetenmet">Lindenblütenmet</a></li><li><a href="de/shop/metsorten/love-met">Love Met</a></li><li><a href="de/shop/metsorten/met-halbtrocken">Met halbtrocken</a></li><li><a href="de/shop/metsorten/met-lieblich">Met lieblich</a></li><li><a href="de/shop/metsorten/met-suess">Met süß</a></li><li><a href="de/shop/metsorten/met-trocken">Met trocken</a></li><li><a href="de/shop/metsorten/schwarzer-met">Schwarzer Met</a></li><li><a href="de/shop/metsorten/viking-met">Viking-Met</a></li><li><a href="de/shop/metsorten/vonig-veganer-honigwein">Vonig - veganer "Honigwein"</a></li><li><a href="de/shop/metsorten/waldlaeufer-met">Waldläufer-Met</a></li><li><a href="de/shop/metsorten/zaubertrank">Zaubertrank</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave metsorten"><ul><li><a href="de/shop/sonstiges/geschirr"><b>Zubehör</b></a></li><a href="de/shop/sonstiges/geschirr"><img class="submenu-img" src="media/images/bw-submenu/27a.jpg" alt="Beerenweine Kategorie Geschirr"></a><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-02-l">Ton Trinkbecher 0,02 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-04-l">Ton Trinkbecher 0,04 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-05-l">Ton Trinkbecher 0,05 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-burg">Ton Trinkbecher 0,25 l Burg</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-logo">Ton Trinkbecher 0,25 l Logo</a></li><li class="submenu-slave-br">   </li><ul><li><a href="de/shop/editionen/elfentau-alkoholfrei"><b>Lust auf Erfrischung?</b></a></li><li><a href="de/shop/editionen/elfentau-alkoholfrei"><img class="submenu-img" src="media/images/bw-submenu/11-elfentau.jpg" alt="Beerenweine Kategorie Geschirr"><br>Elfentau Biolimonade. Alkoholfrei und Vegan!</a></li></ul></ul></div><div class="submenu-slave editionen"><ul><li><a href="de/shop/editionen/spritzen"><b>Spritzen</b></a></li><a href="de/shop/editionen/spritzen"><img class="submenu-img" src="media/images/bw-submenu/30.jpg" alt="Beerenweine Kategorie Spritzen"></a><li><a href="de/shop/editionen/spritzen/spritze-absinth-blueberry">Spritze Absinth Blueberry</a></li><li><a href="de/shop/editionen/spritzen/spritze-absinth-habanero">Spritze Absinth Habanero</a></li><li><a href="de/shop/editionen/spritzen/spritze-absinth-honey">Spritze Absinth Honey</a></li><li><a href="de/shop/editionen/spritzen/spritze-absinth-marula">Spritze Absinth Marula</a></li><li><a href="de/shop/editionen/spritzen/spritze-knochenshot">Spritze Knochenshot</a></li><li><a href="de/shop/editionen/spritzen/spritzen-set-absinth">Spritzen-Set Absinth</a></li><li><a href="de/shop/editionen/spritzen/spritzen-set-knochenshot">Spritzen-Set Knochenshot</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/editionen/blood-bags"><b>Blood Bag´s</b></a></li><a href="de/shop/editionen/blood-bags"><img class="submenu-img" src="media/images/bw-submenu/33.jpg" alt="Beerenweine Kategorie Blood Bag´s"></a><li><a href="de/shop/editionen/blood-bags/blood-bag-met">Blood Bag Met</a></li><li><a href="de/shop/editionen/blood-bags/bloodsuckers-bag">Bloodsucker´s Bag</a></li><li><a href="de/shop/editionen/blood-bags/trinkschlauch-bloodsucker">Trinkschlauch Bloodsucker</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave editionen"><ul><li><a href="de/shop/editionen/metal"><b>METAL</b></a></li><a href="de/shop/editionen/metal"><img class="submenu-img" src="media/images/bw-submenu/31.jpg" alt="Beerenweine Kategorie METAL"></a><li><a href="de/shop/editionen/metal/black-met">Black Met</a></li><li><a href="de/shop/editionen/metal/death-met">Death Met</a></li><li><a href="de/shop/editionen/metal/doom-met">Doom Met</a></li><li><a href="de/shop/editionen/metal/folk-met">Folk Met</a></li><li><a href="de/shop/editionen/metal/heavy-met">Heavy Met</a></li><li><a href="de/shop/editionen/metal/pirate-met">Pirate Met</a></li><li><a href="de/shop/editionen/metal/power-met">Power Met</a></li><li><a href="de/shop/editionen/metal/thrash-met">Thrash Met</a></li><li><a href="de/shop/editionen/metal/viking-met">Viking Met</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/editionen/wacken"><b>Wacken</b></a></li><li><a href="de/shop/editionen/wacken/wacken-blut">Wacken-Blut</a></li><li><a href="de/shop/editionen/wacken/wacken-met">Wacken-Met</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave editionen"><ul><li><a href="de/shop/editionen/tee"><b>Tee</b></a></li><a href="de/shop/editionen/tee"><img class="submenu-img" src="media/images/bw-submenu/67.jpg" alt="Beerenweine Kategorie Tee"></a><li><a href="de/shop/editionen/tee/drachenzauber">Drachenzauber Tee</a></li><li><a href="de/shop/editionen/tee/feenzauber">Feenzauber Tee</a></li><li><a href="de/shop/editionen/tee/fruechtetraum">Früchtetraum Tee</a></li><li><a href="de/shop/editionen/tee/holundertraum">Holundertraum Tee</a></li><li><a href="de/shop/editionen/tee/traumapfel">Traumapfel Tee</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/editionen/schimmer"><b>Schimmer</b></a></li><a href="de/shop/editionen/schimmer"><img class="submenu-img" src="media/images/bw-submenu/65.gif" alt="Beerenweine Kategorie Schimmer"></a><li><a href="de/shop/editionen/schimmer/blauer-schimmer">Blauer Schimmer</a></li><li><a href="de/shop/editionen/schimmer/lila-schimmer">Lila Schimmer</a></li><li><a href="de/shop/editionen/schimmer/roter-schimmer">Roter Schimmer</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave editionen"><ul><li><a href="de/shop/editionen/perlwein"><b>Perlwein</b></a></li><li><a href="de/shop/editionen/perlwein/granatapfel-perlwein">Granatapfel-Perlwein</a></li><li><a href="de/shop/editionen/perlwein/heidelbeer-perlwein">Heidelbeer-Perlwein</a></li><li><a href="de/shop/editionen/perlwein/kirsch-perlwein">Kirsch-Perlwein</a></li><li><a href="de/shop/editionen/perlwein/met-perlwein">Met-Perlwein</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/editionen/andre-striewski"><b>André Striewski</b></a></li><li><a href="de/shop/editionen/andre-striewski/merlins-waldbeer-apfel">"Merlins" Waldbeer Apfel</a></li><li><a href="de/shop/editionen/andre-striewski/alien-braeu">Alien-Bräu</a></li><li><a href="de/shop/editionen/andre-striewski/chivan">Chivan</a></li><li><a href="de/shop/editionen/andre-striewski/elfenzauber">Elfenzauber</a></li><li><a href="de/shop/editionen/andre-striewski/erdbeerkoenigin">Erdbeerkönigin</a></li><li><a href="de/shop/editionen/andre-striewski/feuriger-drache">Feuriger Drache</a></li><li><a href="de/shop/editionen/andre-striewski/fuerst-finsternis">Fürst der Finsternis</a></li><li><a href="de/shop/editionen/andre-striewski/geistertrunk">Geistertrunk</a></li><li><a href="de/shop/editionen/andre-striewski/hexenelixier">Hexenelixier</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-classic">Honig-Met "Classic"</a></li></ul></div><div class="submenu-slave editionen"><ul><li>   </li><li><a href="de/shop/editionen/andre-striewski/honig-met-kastanienhonig">Honig-Met "Kastanienhonig"</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-lindenhonig">Honig-Met "Lindenhonig"</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-orangenhonig">Honig-Met "Orangenhonig"</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-tannenhonig">Honig-Met "Tannenhonig"</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-feinherb">Honig-Met "feinherb"</a></li><li><a href="de/shop/editionen/andre-striewski/honig-met-lieblich">Honig-Met "lieblich"</a></li><li><a href="de/shop/editionen/andre-striewski/normannentrunk">Normannentrunk</a></li><li><a href="de/shop/editionen/andre-striewski/piratenblut">Piratenblut</a></li><li><a href="de/shop/editionen/andre-striewski/wikinger-blut">Wikinger-Blut</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/editionen/das-schwarze-auge"><b>Das Schwarze Auge</b></a></li><li><a href="de/shop/editionen/das-schwarze-auge/dsa-meskinnes-honigschnaps">DSA - Meskinnes Honigschnaps</a></li><li><a href="de/shop/editionen/das-schwarze-auge/dsa-premer-feuer">DSA - Premer Feuer</a></li><li><a href="de/shop/editionen/das-schwarze-auge/dsa-sewerischer-met">DSA - Sewerischer Met</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave spirituosen"><ul><li><a href="de/shop/spirituosen/sahenlikoere"><b>Sahneliköre</b></a></li><li><a href="de/shop/spirituosen/sahenlikoere/cappuccino-sahnelikoer">Cappuccino Sahnelikör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/erdbeer-sahne-likoer">Erdbeer-Sahne Likör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/haselnuss-sahne-likoer">Haselnuss-Sahne Likör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/orangencreme-sahnelikoer">Orangencreme Sahnelikör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/pistazien-sahnelikoer">Pistazien Sahnelikör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/schokoladen-sahnelikoer">Schokoladen Sahnelikör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/vanillekipferl-sahnelikoer">Vanillekipferl Sahnelikör</a></li><li><a href="de/shop/spirituosen/sahenlikoere/waldmeister-sahnelikoer">Waldmeister Sahnelikör</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave spirituosen"><ul><li><a href="de/shop/spirituosen/likoere"><b>Liköre</b></a></li><li><a href="de/shop/spirituosen/likoere/coconut-rum-likoer">Coconut-Rum Likör</a></li><li><a href="de/shop/spirituosen/likoere/cranberry-likoer">Cranberry Likör</a></li><li><a href="de/shop/spirituosen/likoere/dattelcreme-likoer">Dattelcreme Likör</a></li><li><a href="de/shop/spirituosen/likoere/heidelbeer-vanille-likoer">Heidelbeer-Vanille Likör</a></li><li><a href="de/shop/spirituosen/likoere/mango-habanero-likoer">Mango Habanero Likör</a></li><li><a href="de/shop/spirituosen/likoere/marillenlikoer">Marillenlikör</a></li><li><a href="de/shop/spirituosen/likoere/melonen-likoer">Melonen Likör</a></li><li><a href="de/shop/spirituosen/likoere/schlehe-rum-likoer">Schlehe-Rum Likör</a></li><li><a href="de/shop/spirituosen/likoere/schokolade-chili-likoer">Schokolade-Chili Likör</a></li><li><a href="de/shop/spirituosen/likoere/walnuss-cognac-likoer">Walnuss-Cognac Likör</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave spirituosen"><ul><li><a href="de/shop/spirituosen/schnaps"><b>Schnaps</b></a></li><li><a href="de/shop/spirituosen/schnaps/alte-marille-schnaps">Alte Marille Schnaps</a></li><li><a href="de/shop/spirituosen/schnaps/druidenfeuer-kraeuterschnaps">Druidenfeuer Kräuterschnaps</a></li><li><a href="de/shop/spirituosen/schnaps/haselnuss-schnaps">Haselnuss Schnaps</a></li><li><a href="de/shop/spirituosen/schnaps/honig-schnaps">Honig Schnaps</a></li><li><a href="de/shop/spirituosen/schnaps/honig-whisky-schnaps">Honig-Whisky Schnaps</a></li><li><a href="de/shop/spirituosen/schnaps/honig-willi-schnaps">Honig-Willi Schnaps</a></li><li><a href="de/shop/spirituosen/schnaps/kehlenschneider">Kehlenschneider</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave spirituosen"><ul><li><a href="de/shop/spirituosen/rum-whisky-und-co"><b>Rum, Whisky &amp; Co.</b></a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/barbados-rum">Barbados Rum</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/cuba-rum">Cuba Rum</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/dominikanischer-rum">Dominikanischer Rum</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/goettertrank">Göttertrank</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/honig-whisky">Honig Whisky</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/kirsche-rum">Kirsche mit Rum</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/koenigsmet">Königsmet</a></li><li><a href="de/shop/spirituosen/rum-whisky-und-co/pina-colada-whisky">Pina Colada Whisky</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave spirituosen"><ul><li><a href="de/shop/spirituosen/absinth"><b>Absinth</b></a></li><li><a href="de/shop/spirituosen/absinth/absinth-blaue-fee">Absinth "Blaue Fee"</a></li><li><a href="de/shop/spirituosen/absinth/absinth-gruene-fee">Absinth "Grüne Fee"</a></li><li><a href="de/shop/spirituosen/absinth/absinth-rote-fee">Absinth "Rote Fee"</a></li><li><a href="de/shop/spirituosen/absinth/absinth-schwarze-witwe">Absinth "Schwarze Witwe"</a></li><li><a href="de/shop/spirituosen/absinth/absinth-elixier-damiana">Absinth-Elixier "Damiana"</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave bier"><ul><li><a href="de/shop/bier"><b>Bier</b></a></li><a href="de/shop/bier"><img class="submenu-img" src="media/images/bw-submenu/10.jpg" alt="Beerenweine Kategorie Bier"></a><li><a href="de/shop/bier/barbaren-gold">Barbaren Gold</a></li><li><a href="de/shop/bier/mjedpiir">Mjedpiir</a></li><li><a href="de/shop/bier/pirates">Pirates</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave bier"><ul><li><a href="de/shop/sonstiges/geschirr"><b>Zubehör</b></a></li><a href="de/shop/sonstiges/geschirr"><img class="submenu-img" src="media/images/bw-submenu/27.jpg" alt="Beerenweine Kategorie Geschirr"></a><li><a href="de/shop/sonstiges/geschirr/bierkrug-barbarengold">Bierkrug Barbarengold</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-knasterbart">Bierkrug Knasterbart</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-krieger">Bierkrug Krieger</a></li></ul></div><div class="submenu-slave bier"><ul><li>   </li><li><a href="de/shop/sonstiges/geschirr/bierkrug-mps">Bierkrug MPS</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-rapalje">Bierkrug Rapalje</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-saltatio-mortis">Bierkrug Saltatio Mortis</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-saor-patrol">Bierkrug Saor Patrol</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-versengold">Bierkrug Versengold</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-wikinger">Bierkrug Wikinger</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-ohne-aufdruck-braun">Bierkrug ohne Aufdruck braun</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-ohne-aufdruck-hell">Bierkrug ohne Aufdruck hell</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave sonstiges"><ul><li><a href="de/shop/sonstiges/geschirr/tongeschirr-handgemacht"><b>Tongeschirr</b></a></li><a href="de/shop/sonstiges/geschirr/tongeschirr-handgemacht"><img class="submenu-img" src="media/images/bw-submenu/61.jpg" alt="Beerenweine Kategorie Tongeschirr Handgemacht"></a><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-02-l">Ton Trinkbecher 0,02 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-04-l">Ton Trinkbecher 0,04 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-05-l">Ton Trinkbecher 0,05 l</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-burg">Ton Trinkbecher 0,25 l Burg</a></li><li><a href="de/shop/sonstiges/geschirr/ton-trinkbecher-0-25-l-logo">Ton Trinkbecher 0,25 l Logo</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/sonstiges/geschirr/absinthzubehoer"><b>Absinthzubehör </b></a></li><li><a href="de/shop/sonstiges/geschirr/absinthglas-absinthe">Absinthglas "Absinthe"</a></li><li><a href="de/shop/sonstiges/geschirr/absinthglas-lyonnais">Absinthglas "Lyonnais"</a></li><li><a href="de/shop/sonstiges/geschirr/absinthloeffel-antique">Absinthlöffel "Antique"</a></li><li><a href="de/shop/sonstiges/geschirr/absinthloeffel-losanges">Absinthlöffel "Losanges"</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave sonstiges"><ul><li><a href="de/shop/sonstiges/geschirr/bierkruege"><b>Bierkrüge</b></a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-barbarengold">Bierkrug Barbarengold</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-knasterbart">Bierkrug Knasterbart</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-krieger">Bierkrug Krieger</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-mps">Bierkrug MPS</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-rapalje">Bierkrug Rapalje</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-saltatio-mortis">Bierkrug Saltatio Mortis</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-saor-patrol">Bierkrug Saor Patrol</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-versengold">Bierkrug Versengold</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-wikinger">Bierkrug Wikinger</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-ohne-aufdruck-braun">Bierkrug ohne Aufdruck braun</a></li><li><a href="de/shop/sonstiges/geschirr/bierkrug-ohne-aufdruck-hell">Bierkrug ohne Aufdruck hell</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/sonstiges/geschirr/totenkoepfe"><b>Totenköpfe</b></a></li><li><a href="de/shop/editionen/totenkopf/limitierte-totenkopfedition">Limitierte Totenkopfedition</a></li><li><a href="de/shop/sonstiges/geschirr/totenkopf-set">Totenkopf-Set</a></li><li><a href="de/shop/sonstiges/geschirr/totenkopfglas">Totenkopfglas</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave sonstiges"><ul><li><a href="de/shop/sonstiges/geschirr/weiteres"><b>Weiteres</b></a></li><li><a href="de/shop/sonstiges/geschirr/brennkopf">Brennkopf</a></li><li><a href="de/shop/sonstiges/geschirr/ersatzkorken">Ersatzkorken</a></li><li><a href="de/shop/sonstiges/geschirr/ersatzkorken-ton-0-2-l">Ersatzkorken für Ton 0,2 l</a></li><li><a href="de/shop/sonstiges/geschirr/trinkhorn">Trinkhorn</a></li><li><a href="de/shop/sonstiges/geschirr/weinfaesschen-beerenweine">Weinfässchen "Beerenweine"</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/sonstiges/flaschenhalter"><b>Flaschenhalter</b></a></li><li><a href="de/shop/sonstiges/flaschenhalter/6er-flaschentraeger">6er Flaschenträger</a></li><li><a href="de/shop/sonstiges/flaschenhalter/6er-flaschentraeger-leer">6er Flaschenträger leer</a></li><li><a href="de/shop/sonstiges/flaschenhalter/leder-guerteltasche-gross">Leder Gürteltasche groß</a></li><li><a href="de/shop/sonstiges/flaschenhalter/leder-guerteltasche-klein">Leder Gürteltasche klein</a></li><li><a href="de/shop/sonstiges/flaschenhalter/lederhalter-hell">Lederhalter hell</a></li><li><a href="de/shop/sonstiges/flaschenhalter/lederhalter-schwarz">Lederhalter schwarz</a></li><li><a href="de/shop/sonstiges/flaschenhalter/trinkhorn-lederhalter">Trinkhorn Lederhalter</a></li><li class="submenu-slave-br">   </li></ul></div><div class="submenu-slave sonstiges"><ul><li><a href="de/shop/shirts"><b>Shirts</b></a></li><li><a href="de/shop/shirts/t-shirt-bloodsucker">T-Shirt Bloodsucker</a></li><li><a href="de/shop/shirts/t-shirt-elixier">T-Shirt Elixier</a></li><li><a href="de/shop/shirts/t-shirt-kehlenschneider">T-Shirt Kehlenschneider</a></li><li><a href="de/shop/shirts/t-shirt-metal">T-Shirt METAL</a></li><li class="submenu-slave-br">   </li><li><a href="de/shop/sonstiges/patches"><b>Patches</b></a></li><li><a href="de/shop/sonstiges/patches/patch-beerenweine">Patch Beerenweine</a></li><li><a href="de/shop/sonstiges/patches/patch-kehlenschneider">Patch Kehlenschneider</a></li><li class="submenu-slave-br">   </li></ul></div>
+<!-- Submenü Slave :: Geschenkboxen ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center boxen">
+<a href="de/shop/zum-verschenken"><img class="submenu-img" src="media/images/bw-submenu/12.jpg" alt="Beerenweine Kategorie Geschenkboxen"><br>
+Auf der Suche nach einem passendem Geschenk, Gutschein oder Präsent?<br>Mit unseren Gutscheinen und Überraschungsboxen finden Sie zu jedem Anlass<br>immer das richtige Geschenk!
+<br>   <br>
+</a>
+</div>
+
+</div><!-- Submenü-Slave End -->
+
+
+
+<div class="submenu sub3" style="display: none;">
+
+<!-- Submenü Master :: Beerenweinewelt -->
+<div class="submenu-master sub-small">
+<ul>
+<li class="tog-sub-slave first" data-submenu-slave="Shopinfo"><a href="#">Shopinfos</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Adventskalender"><a href="de/beerenweinewelt/adventskalender">Adventskalender</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Weihnachtswelt"><a href="de/beerenweinewelt/weihnachtswelt">Weihnachtswelt</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Team"><a href="de/beerenweinewelt/team">Das Team</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Termine"><a href="de/beerenweinewelt/termine-deutschland">Termine</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Veranstalter"><a href="de/beerenweinewelt/veranstaltung-eintragen">Für Veranstalter</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Muenzen"><a href="de/beerenweinewelt/muenzen">Münzen/Prämien</a></li>
+<li class="tog-sub-slave" data-submenu-slave="Wunschetikett"><a href="de/beerenweinewelt/wunschetikett-informationen">Wunschetikett</a></li>
+</ul>
+</div>
+
+
+<!-- Submenü Slave :: Shopinfos ::  -->
+<div class="submenu-slave submenu-slave-infotext-ul Shopinfo">
+<ul>
+<li><a href="de/liefer-und-versandkosten">Versandkosten</a></li>
+<li><a href="de/impressum">Impressum</a></li>
+<li><a href="de/agb">Unsere AGB</a></li>
+<li><a href="de/privatsphaere-und-datenschutz">Datenschutz</a></li>
+<li><a href="de/widerrufsrecht">Widerrufsbelehrung</a></li>
+</ul>
+</div>
+
+<!-- Submenü Slave :: Adventskalender ::  -->
+<div class="submenu-slave submenu-slave-infotext Adventskalender">
+  Der Original Beerenweine-Adventskalender...  jeden Tag eine kostenlose Überraschung!<br></div>
+
+<!-- Submenü Slave :: Adventskalender ::  -->
+<div class="submenu-slave submenu-slave-infotext Weihnachtswelt">
+  Mit heißen Beerenweinen durch die kalte Jahreszeit... <br>  dazu tolle Geschenkideen, unser Adventskalender und vieles mehr!<br>
+</div>
+
+<!-- Submenü Slave :: Adventskalender ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center Team">
+Die Feen &amp; Kobolde aus der Beerenweinewelt.
+</div>
+
+<!-- Submenü Slave :: Veranstaltungen ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center Termine">
+Auf folgenden Veranstaltungen findet Ihr unsere Beerenweine-Kutschen!
+</div>
+
+<!-- Submenü Slave :: Veranstalter ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center Veranstalter">
+Für alle Veranstalter die sich für Ihr Stadtfest oder historischen Markt eine unserer Kutschen wünschen.
+</div>
+
+<!-- Submenü Slave :: Münzen ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center Muenzen">
+Die Münzen der Weinhändlerzunft... hol sie Dir!
+</div>
+
+<!-- Submenü Slave :: Münzen ::  -->
+<div class="submenu-slave submenu-slave-infotext bw-center Wunschetikett">
+Ob Grußbotschaft oder Liebeserklärung: versehe unsere Flaschen mit Deinem individuellen Text!
+</div>
+
+</div><!-- Submenü-Slave End -->
+
+</div><!-- Submenü End -->
+
+</div><!-- bw-navigation End -->
+	
+<script type="text/javascript" src="plugins/bw_plugin/js/jquery.external.min.js"></script>
+<script type="text/javascript" src="plugins/bw_plugin/js/bw-navigation-md.js"></script>
+
+
+</div>
+
+<div id="site-wrap" class="index-wrap">
+    
+        <header id="header">
+            <div class="meta-navigation bw-me-na">
+                <div class="container clearfix bw-co-us" style="height: 5px;">
+                    <ul class="user list-inline">
+                        
+                        <li><a href="https://www.beerenweine.eu/de/checkout/shipping">Kasse</a></li>
+                                                    <li><a href="https://www.beerenweine.eu/de/customer">Mein Konto</a></li>
+							<li><a href="de/beerenweinewelt/meine-merkliste">Merkliste</a></li>
+                                                            <li><a href="https://www.beerenweine.eu/de/customer/login" data-toggle="modal" data-target="#loginModal" data-remote="false">Login</a></li>
+                                                                            
+                    </ul>
+                </div>
+            </div><!-- .meta-navigation -->
+            
+			<div class="header-top">
+                <div class="container" style="display:none !important;">
+				    
+                    <div class="row text-center-xs hidden-xs hidden-sm">
+                        <div class="col col-sm-4 col-md-5 col-logo">
+                            <div class="inner branding">
+							
+                               
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+						<div class="col col-sm-4 col-md-3 hidden-xs">
+                        <div class="inner top-cart text-right">
+                            <div class="bw-cart-bottom-2 box-cart">
+        <div class="bw-cart-bottom-3 inner btn-group" role="group" aria-label="Warenkorb">
+
+                <div class="btn-group">
+				    <a href="https://www.beerenweine.eu/de/cart" title="Warenkorb" data-toggle="tooltip" data-placement="auto">
+                    <button type="button" class="btn btn-cart btn-left">
+                        <i class="fa fa-shopping-basket"></i> <span class="text-uppercase hidden-xs">Warenkorb:</span>
+                        0 Artikel
+                    </button>
+					</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://www.beerenweine.eu/de/cart">
+                                <strong class="text-uppercase">Zwischensumme:</strong>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .header-top -->
+			
+			
+            <div class="bw-main-navigation main-navigation navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <div class="navbar-search visible-float-breakpoint">
+                            <div class="box-search box-search-sm">
+    <form class="search-box-form" name="search_box1" action="https://www.beerenweine.eu/de/search" method="get">
+        <input type="hidden" name="page" value="search" id="page2">
+        <input type="hidden" name="page_action" value="query" id="page_action3">
+        <input type="hidden" name="desc" value="on" id="desc4">
+        <input type="hidden" name="sdesc" value="on" id="sdesc5">
+        <div class="bw-input-group input-group">
+            <input type="text" name="keywords" class="bw-search-input" value="" placeholder="Shop durchsuchen">
+            <span class="input-group-btn">
+                <button type="submit" class="submit-button btn btn-primary" title="Suchen">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">Suchen</span>
+                </button>
+            </span>
+        </div>
+    </form>
+</div>
+
+<div class="box-search box-search-md">
+    <form class="search-box-form" name="search_box6" action="https://www.beerenweine.eu/de/search" method="get" role="form">
+        <input type="hidden" name="page" value="search" id="page7">
+        <input type="hidden" name="page_action" value="query" id="page_action8">
+        <input type="hidden" name="desc" value="on" id="desc9">
+        <input type="hidden" name="sdesc" value="on" id="sdesc10">
+        <div class="input-group">
+            <input type="text" name="keywords" class="form-control keywords" value="" placeholder="Shop durchsuchen">
+            <span class="input-group-btn">
+                <button type="submit" class="submit-button btn btn-primary" title="Suchen" data-toggle="tooltip" data-placement="auto">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">Suchen</span>
+                </button>
+            </span>
+        </div>
+    </form>
+</div>							
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .main-navigation -->
+<div class="bw-space"></div>			
+        </header><!-- #header -->
+
+        
+        <noscript>
+            &lt;div class="container"&gt;
+                &lt;div class="alert alert-danger text-center"&gt;
+                    &lt;p&gt;&lt;i class="fa fa-3x fa-exclamation-triangle"&gt;&lt;/i&gt;&lt;/p&gt;
+                    TEXT_JS_DISABLED_WARNING
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </noscript>
+
+		<div id="navContainer" class="container">
+			<ul class="navbar-mega hidden hidden-float-breakpoint with-backdrop-shadow"></ul>
+		</div>
+
+		
+
+		        <div id="container" class="container">
+            
+	
+	
+
+
+
+
+
+
+
+<div class="carousel-outer-wrap">
+<div class="teaser picture-slider owl">
+<div class="pictureCarousel-1 owl-carousel owl-theme" style="opacity: 1; display: block;">
+
+<div class="owl-wrapper-outer autoHeight" style="height: 323px;"><div class="owl-wrapper" style="width: 7520px; left: 0px; display: block; -webkit-transition: all 800ms ease; transition: all 800ms ease; transform: translate3d(-940px, 0px, 0px);"><div class="owl-item" style="width: 940px;"><div class="image image-0"><a href="de/beerenweinewelt/weihnachtswelt"><img class="img-responsive lazyOwl" src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-xmas.jpg" data-src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-xmas.jpg" alt="Mit heißen Beerenweinen durch die kalte Jahreszeit. Wir zeigen Dir wie."></a></div></div><div class="owl-item active" style="width: 940px;"><div class="image image-1"><a href="de/beerenweinewelt"><img class="img-responsive lazyOwl" src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-beerenweinewelt.jpg" data-src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-beerenweinewelt.jpg" alt="Worauf wartest Du? Komm, und tritt ein in die Beerenweinewelt..."></a></div></div><div class="owl-item" style="width: 940px;"><div class="image image-2"><a href="de/shop/editionen/totenkopf/limitierte-totenkopfedition"><img class="img-responsive lazyOwl" src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-totenkopf-edition.jpg" data-src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-totenkopf-edition.jpg" alt="Nur für kurze Zeit... unsere Totenkopf Edition"></a></div></div><div class="owl-item" style="width: 940px;"><div class="image image-3"><a href="de/shop/spirituosen/schnaps/kehlenschneider"><img class="img-responsive lazyOwl" src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-kehlenschneider.jpg" data-src="templates/xt_responsive/bw-img/slideshow/beerenweine-slider-kehlenschneider.jpg" alt="Kehlenschneider... hol Dir das Feuer"></a></div></div></div></div><div class="owl-controls"><div class="owl-buttons"><div class="owl-prev"></div><div class="owl-next"></div></div></div></div>
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+	var teaserElement = jQuery('.pictureCarousel-1');
+	if (teaserElement.length != 0) {
+    	teaserElement.owlCarousel({
+        	singleItem: true,
+        	navigation: true,
+      	  	pagination: false,
+       	 	slideSpeed: 800,
+        	paginationSpeed: 800,
+        	scrollPerPage: true,
+        	autoPlay: 7000,
+        	stopOnHover: true,
+        	autoHeight: true,
+        	lazyLoad: false,
+        	addClassActive: true,
+        	navigationText: ['', '']
+    	});
+	}
+});
+</script>
+
+	
+
+<div class="col-md-8" style="margin:0px; padding:0px;">
+ 
+
+<style>
+.elastic-video {
+margin-left:0px;
+margin-right:0px;
+	position: relative;
+	padding-bottom: 55%;
+	padding-top: 15px;
+	height: 0;
+	overflow: visible;
+	border:1px solid #453623;
+}
+.elastic-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+
+<div class="imagefilm">
+<iframe src="https://www.youtube.com/embed/IuRdZEjviR8?rel=0&amp;vq=hd720&amp;showinfo=0" frameborder="0"></iframe>
+</div>
+
+<div class="bw-clear"></div>	
+ 
+</div>			
+			
+<div class="col-md-4">
+Wir bieten Euch<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Über 150 Sorten Weine, Met und Liköre<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Großartige Geschmackserlebnisse<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Schnelle, Versicherte Lieferung<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Persönliche Kundenberatung<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> 14 Tage Widerrufsrecht<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Angebote und Aktionen<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Nur 5.95 € Versandkosten (für Deutschland)<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Tolle Geschenkideen<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> Individuelle Etikettengestaltung<br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i> und vieles mehr ...<br>
+</div>	
+
+<div class="bw-hr"></div>
+	
+<h2>Tierisch unbelastet: Veganer Wein</h2>
+<div class="img-100 hidden-xs hidden-sm">
+<div class="col-md-12 bw-panel-index"><a href="de/beerenweinewelt/veganer-wein"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-vegan.jpg" alt="Erfahre mehr über unseren Veganen Wein" title="Erfahre mehr über unsere Veganen Produkte" data-toggle="tooltip" data-placement="auto"><br><br></a></div>
+</div>
+<div class="img-100 visible-xs visible-sm">
+<div class="col-md-12 bw-panel-index"><a href="de/beerenweinewelt/veganer-wein"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-vegan-xs.jpg" alt="Erfahre mehr über unseren Veganen Wein" title="Erfahre mehr über unsere Veganen Produkte" data-toggle="tooltip" data-placement="auto"><br><br></a></div>
+</div>
+<br><br>
+
+<div class="bw-hr"></div>
+
+<h2>Kollektionen, Editionen &amp; mehr</h2>
+<div>
+<div class="col-md-6 bw-panel-index"><a href="de/shop/spirituosen/sahenlikoere"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-sahnelikoer.jpg" alt="Sahnelikör Kollektion" title="Sahnelikör Kollektion" data-toggle="tooltip" data-placement="auto"></a></div>
+<div class="col-md-6 bw-panel-index"><a href="de/shop/editionen/spritzen"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-spritzen.jpg" alt="Spritzen-Edition" title="Spritzen-Edition" data-toggle="tooltip" data-placement="auto"></a></div>
+<div class="col-md-6 bw-panel-index"><a href="de/beerenweinewelt/absinth"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-absinth.jpg" alt="Absinth" title="Absinth" data-toggle="tooltip" data-placement="auto"></a></div>
+<div class="col-md-6 bw-panel-index"><a href="de/shop/editionen/blood-bags"><img class="bw-zoom-095" src="templates/xt_responsive/bw-img/teaser-beerenweine-bloodbag.jpg" alt="Bloodbag's" title="Bloodbags's" data-toggle="tooltip" data-placement="auto"></a></div>
+</div>
+
+<div class="bw-hr"></div>
+
+Willkommen auf dem Mittelaltermarkt des 21. Jahrhunderts!  Schön, dass dich deine Reise zu uns geführt hat. Sicher kannst du eine Stärkung vertragen. Damit bist du bei uns goldrichtig. Hier erfährst du, wieso veganer Wein keine Selbstverständlichkeit ist und warum wir in einem aufwendigen Herstellungsverfahren darauf setzen, dir etwas Besonderes zu bieten. Wenn du durch unseren digitalen Marktplatz streifst, wird dir auch ein ganz besonderer Gefährte begegnen: der <a class="td-u" href="de/shop/spirituosen/schnaps/kehlenschneider">Kehlenschneider</a>. Doch keine Angst, wenn du ihm mit Respekt gegenübertrittst, kannst du dich auf freudvolle Stunden mit ihm einstellen, denn dieser extravagante Chili Schnaps besitzt ein unverkennbar scharfes Aroma und ist mit 80 Prozent Alkohol ein Longdrink, der dem Namen wirklich gerecht wird. Doch das ist bei Weitem nicht alles…
+<br><br>
+<h2>Unser Name ist Programm</h2>
+„Beerenweine“ ist natürlich keine Floskel, sondern beschreibt den Kern unserer Leidenschaft und unserer Produktvielfalt. Dabei setzen wir neben Bewährtem auch auf das Außergewöhnliche: Unser Sortiment beinhaltet <a class="td-u" href="de/shop/weinsorten/erdbeerwein">Erdbeer</a>- und <a class="td-u" href="de/shop/weinsorten/himbeerwein">Himbeerwein</a>, aber auch <a class="td-u" href="de/shop/weinsorten/holunderwein">Holunder</a>- und <a class="td-u" href="de/shop/weinsorten/johannisbeerwein-schwarz">Johannisbeere</a> sowie <a class="td-u" href="de/shop/weinsorten/schlehenwein">Schlehenwein</a> und <a class="td-u" href="de/shop/weinsorten/aroniabeerwein">Aronia</a>. Doch wir verstehen uns nicht nur auf Beeren, sondern bieten darüber hinaus Fruchtweine aus den unterschiedlichsten Obstsorten. Viele unserer Produkte können mit <a class="td-u" href="de/beerenweinewelt/wunschetikett-informationen">individuellen Etiketten</a> bestückt werden und eignen sich deshalb hervorragend als Geschenk für Geburtstage und Jubiläen. Damit nicht genug: <a class="td-u" href="de/shop/zum-verschenken">Unsere Geschenkboxen</a> sind das passende Präsent für jede Gelegenheit und werden auf spezielle Anlässe wie Hochzeiten und das Weihnachtsfest zugeschnitten. Ab einem Bestellwert von 40 EUR erhaltet ihr als besondere Zugabe eine <a class="td-u" href="de/beerenweinewelt/muenzen">Sammelmünze</a> mit individueller Prägung, die ihr gegen Prämien eintauschen könnt oder aber ihr behaltet die seltenen Stücke für euch. Die zuverlässigen Boten liefern dir unsere Spezialitäten dann bis an die Haustür, sodass du dich ganz auf das konzentrieren kannst, was schon im Mittelalter am schönsten war: genießen.
+<br><br>
+<h2>Das Mittelalter hautnah erleben</h2>
+Natürlich kannst du uns auch in der analogen Welt antreffen. Wir sind in ganz Deutschland auf über 300 Märkten vertreten. Dabei bieten wir nicht nur unser außergewöhnliches Sortiment feil, sondern begeistern das Publikum auch mit historischen Darbietungen in eigens dafür errichteten Tavernen und Kutschen. Wir verstehen uns auf Steampunk, Piraten- und Wikingerdarstellungen sowie authentischen Inszenierungen im Barock- und Jugendstil. Unsere geübten Darsteller erfüllen jedes Szenario mit Leben und bieten eine realistische Performance mit den passenden Kostümen und Requisiten. Auch auf lokale Mythen und historische Ereignisse der Region lassen wir uns dabei ein. 18 Meter lange Nachbauten von Piraten- und Wikingerschiffen dienen als Taverne und bieten eine realistische Kulisse für unser Spiel.
+<br><br>
+Hier erfahrt ihr unsere aktuellen Termine. Besucht uns auf Märkten und Festivals, vielerorts bieten wir unsere Waren im Direktverkauf aus selbstgebauten Kutschen heraus an, die vom Seniorchef unseres <a class="td-u" href="de/beerenweinewelt/team">Familienunternehmens</a> nicht nur geplant, sondern auch eigenhändig gebaut werden.
+<br><br><br><br>
+
+<div class="bw-hr"></div>
+
+
+<font style="font-size:0.85em;">
+
+</font>
+
+			
+            <div id="content" class="row">
+                <div class="col primary col-sm-12">
+                                            
+
+                    				
+				
+    <div id="startpage-content" class="text-word-wrap">
+        <div class="row">
+                                </div>
+    </div>
+
+					
+                </div>
+                            </div><!-- #content -->
+            
+        </div><!-- #container -->
+		
+        
+
+		
+		
+		
+		
+		
+<div class="bw-za">
+<div>
+<img class="bw-za-md" src="templates/xt_responsive/bw-img/zahlungsarten.jpg" alt="Beerenweine Zahlungsarten">
+</div>
+</div>
+			
+		
+		
+		
+		
+        <footer id="footer">
+            <div class="container">
+                <div id="footer-cols">
+                    <div class="row">
+                        <div class="col col-sm-4">
+                            
+    <div class="contact">
+        <p class="headline">Kontakt</p>
+        
+                    <p><a href="https://www.beerenweine.eu/de/kontakt"><i class="fa fa-envelope-o"></i> Kontaktformular</a></p>
+            </div>
+
+<div class="footer-tel">0571 - 93 42 91 15</div>
+<div class="footer-oz">Mo.-Fr. 8:00 - 17:00 Uhr</div>
+                        </div>
+                        <div class="col col-sm-4">
+                            
+    <div class="info">
+        <p class="headline">Informationen</p>
+        <ul>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/liefer-und-versandkosten">Lieferinformationen</a></li>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/privatsphaere-und-datenschutz">Privatsphäre und Datenschutz</a></li>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/agb">Unsere AGB</a></li>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/impressum">Impressum</a></li>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/kontakt">Kontakt</a></li>
+                            <li class="level1"><a href="https://www.beerenweine.eu/de/widerrufsrecht">Widerrufsbelehrung</a></li>
+                    </ul>
+    </div>
+
+                        </div>
+<div class="col col-sm-4">					
+
+<div class="info">
+<p class="headline">Zahlungsweisen</p>
+<ul>
+<li class="level1">Paypal</li>
+<li class="level1">Kreditkarte</li>
+<li class="level1">Lastschrift</li>
+<li class="level1">Rechnung</li>
+<li class="level1">Barzahlung</li>
+<li class="level1">Vorkasse</li>
+</ul>
+
+
+
+
+</div>	
+</div>
+
+
+<script type="text/javascript">
+  (function () { 
+    var _tsid = 'X6F143F56F983758E95EC13DDAF870AC1'; 
+    _tsConfig = { 
+      'yOffset': '0', /* offset from page bottom */
+      'variant': 'default', /* reviews, default, custom, custom_reviews */
+      'customElementId': 'MyCustomTrustbadge', /* required for variants custom and custom_reviews */
+      'trustcardDirection': 'topLeft', /* for custom variants: topRight, topLeft, bottomRight, bottomLeft */
+      'customBadgeWidth': '90', /* for custom variants: 40 - 90 (in pixels) */
+      'customBadgeHeight': '45', /* for custom variants: 40 - 90 (in pixels) */
+      'disableResponsive': 'false', /* deactivate responsive behaviour */
+      'disableTrustbadge': 'false', /* deactivate trustbadge */
+    };
+    var _ts = document.createElement('script');
+    _ts.type = 'text/javascript'; 
+    _ts.charset = 'utf-8'; 
+    _ts.async = true; 
+    _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js'; 
+    var __ts = document.getElementsByTagName('script')[0];
+    __ts.parentNode.insertBefore(_ts, __ts);
+  })();
+</script>
+<style>
+
+.circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle { color:#2a231e !important; }
+#MenuDotsBadge_db8d3657bdbe440c985ae127463eaad4 a:hover { color:#d15a02 !important; }
+
+.menu_db8d3657bdbe440c985ae127463eaad4__container a { color:#2a231e !important; }
+.menu_db8d3657bdbe440c985ae127463eaad4__container a:hover { color:#d15a02 !important; }
+
+</style>
+<div id="MyCustomTrustbadge" class="mycustomtrustbadge" style="width:160px; height:80px;"></div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-4">
+                            
+                        </div>
+                        <div class="col col-sm-4">
+                            
+                            
+                        </div>
+                        <div class="col col-sm-4">
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+					
+                </div>
+                <div id="footer-meta" class="text-center text-muted">
+                    
+                    
+                    
+                    <img src="cronjob.php" width="1" height="1" alt="">
+					
+                </div>
+            </div>		
+        </footer><!-- #footer -->
+        <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="bw-login-popup modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <p class="h3 modal-title">LOGIN</p>
+                    </div>
+                    <div class="modal-body">
+                        <div id="box-loginbox" class="clearfix">
+    <form name="create_account11" action="https://www.beerenweine.eu/de/customer/login" method="post">
+        <input type="hidden" name="action" value="login" id="action12">
+        <input type="hidden" name="link_target" value="index" id="link_target13">
+        <div class="form-group">
+            <label for="login_email" class="control-label">E-Mail-Adresse<span class="required">*</span></label>
+            <input type="text" id="login_email" name="email" maxlength="50" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="login_password" class="control-label">Passwort<span class="required">*</span></label>
+            <input type="password" id="login_password" name="password" maxlength="30" class="form-control">
+            <p class="bw-loginbox-lostpw help-block"><a href="https://www.beerenweine.eu/de/customer/password_reset"><i class="fa fa-envelope"></i> Passwort vergessen?</a></p>
+        </div>
+        
+        
+        
+        <p class="pull-left pull-none-xs">
+            <button type="submit" class="btn btn-success">
+                <i class="fa fa-sign-in"></i>
+                LOGIN
+            </button>   			
+            <a href="https://www.beerenweine.eu/de/customer/login?form=register" class="bw-btn-default btn btn-default">
+            <span class="">Registrieren</span>
+            </a>
+
+        </p>
+    </form>
+</div><!-- #box-loginbox -->
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- #loginModal -->
+        
+        <a id="back-to-top" class="hidden-xs affix-top" href="%2F#top">
+            <i class="fa fa-3x fa-arrow-circle-o-up"></i>
+            <span class="sr-only">Back to Top</span>
+        </a>
+
+                    <div class="bw-cart-bottom-1 xbottom-cart">
+                    <div class="bw-cart-bottom-2 box-cart">
+        <div class="bw-cart-bottom-3 inner btn-group" role="group" aria-label="Warenkorb">
+
+                <div class="btn-group">
+				    <a href="https://www.beerenweine.eu/de/cart" title="Warenkorb" data-toggle="tooltip" data-placement="auto">
+                    <button type="button" class="btn btn-cart btn-left">
+                        <i class="fa fa-shopping-basket"></i> <span class="text-uppercase hidden-xs">Warenkorb:</span>
+                        0 Artikel
+                    </button>
+					</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://www.beerenweine.eu/de/cart">
+                                <strong class="text-uppercase">Zwischensumme:</strong>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+            </div>
+        
+    </div><!-- #site-wrap -->
+<div class="footer-end">
+Konzeption, Design &amp; Programmierung <a class="footer-end-a no-extern" href="http://www.aspectum.de" target="_blank">www.aspectum.de <i class="fa fa-external-link" style="font-size:14px"></i></a>
+</div>
+<div class="clearfix"></div>
+</div></div><script src="https://www.beerenweine.eu/templates/xt_responsive/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/moment/min/moment-with-locales.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/jquery-breakpoint-check/js/jquery-breakpoint-check.min.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/components/limit.js/limit.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/javascript/Helper.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/javascript/ListingSwitch.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/javascript/MegaMenu.js"></script>
+<script src="https://www.beerenweine.eu/templates/xt_responsive/javascript/Template.js"></script>
+<script src="https://www.beerenweine.eu/plugins/xt_cart_popup/js/ajax_cart.js"></script>
+
+<a title="Startseite" href="https://www.beerenweine.eu" id="div-snow"><div id="snow-div" style="position: absolute; left: 1px; top: 0px; width: 1022px; height: 0px;"><canvas width="1022" height="0"></canvas></div></a><div id="tsbadge4_db8d3657bdbe440c985ae127463eaad4" data-shopname="beerenweine.eu" style="display: block; cursor: pointer; bottom: 0px;"><div id="BadgeContainer_db8d3657bdbe440c985ae127463eaad4" class="" data-tb-element="trustbadge_minimised_container"><div id="MenuDotsBadge_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--badge menu-button_db8d3657bdbe440c985ae127463eaad4--left" data-menu="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuWrapperBadge_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" target="_blank" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_minimised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MaximizeBadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_maximise"><span>+</span>Maximieren</a><a href="javascript:void(null);" id="RemoveTrustbadgeLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon" data-tb-element="trustbadge_minimised_menu_remove"><span>×</span>Schließen</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="BadgeContent_db8d3657bdbe440c985ae127463eaad4" class="badge-content_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge_db8d3657bdbe440c985ae127463eaad4__top"><div id="TrustmarkBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge_db8d3657bdbe440c985ae127463eaad4__logo trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark trustbadge_db8d3657bdbe440c985ae127463eaad4__logo--trustmark--50 trustmarkOnly_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_trustmark"></div></div><div class="dash_db8d3657bdbe440c985ae127463eaad4 trustbadge_db8d3657bdbe440c985ae127463eaad4__dash" id="dash-review-separator_db8d3657bdbe440c985ae127463eaad4" style="display: none;"></div><div id="ReviewsContainerBadge_db8d3657bdbe440c985ae127463eaad4" data-tb-element="trustbadge_minimised_reviews" style="display: none;"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:98.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div><div id="MarkInWordsBadge_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="MarkBadge_db8d3657bdbe440c985ae127463eaad4">4.92/5.00</div></div></div><div id="BadgeFooter_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4 trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__certified"><div id="TriangleBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__triangle"></div><div id="BottomSlantBadge_db8d3657bdbe440c985ae127463eaad4" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant-container"><svg width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none" class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__bottom-slant"><polygon fill="#ffffff" stroke-width="0" points="0,1.5 0,0 10,0 16,0 "></polygon></svg></div><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__container--authentic-reviews"><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__sub-text--authentic-reviews">Zertifizierter Shop</div></div><div class="ts-col_db8d3657bdbe440c985ae127463eaad4"><div class="trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo"><span class="icon_db8d3657bdbe440c985ae127463eaad4 icon_db8d3657bdbe440c985ae127463eaad4-e-logo trustbadge-footer_db8d3657bdbe440c985ae127463eaad4__logo-icon"></span></div></div></div></div></div></div><div id="tscard4_db8d3657bdbe440c985ae127463eaad4" style="display: none; bottom: 0px;"><div id="Container_db8d3657bdbe440c985ae127463eaad4" class="tscard__container_db8d3657bdbe440c985ae127463eaad4"><div id="TopSlant_db8d3657bdbe440c985ae127463eaad4"><svg id="svgTop_db8d3657bdbe440c985ae127463eaad4" width="100%" height="20" viewBox="0 0 10 5" preserveAspectRatio="none"><polygon fill="#fff" stroke-width="0" points="0,10 0,5 0,5 25,0"></polygon></svg></div><div id="MenuDotsCard_db8d3657bdbe440c985ae127463eaad4" class="menu-button_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4--card " data-menu="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4"><a href="javascript:void(null);" class="menu-button_db8d3657bdbe440c985ae127463eaad4__link"><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div><div class="circle_db8d3657bdbe440c985ae127463eaad4 menu-button_db8d3657bdbe440c985ae127463eaad4__circle"></div></a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4" id="MenuContainerMain_db8d3657bdbe440c985ae127463eaad4" style="visibility: hidden"><div class="menu_db8d3657bdbe440c985ae127463eaad4__container "><a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_check_certificate__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Zertifikat prüfen</a><a href="http://www.trustedshops.de/tsdocument/PROTECTION_TERMS_COMPLETE_de.pdf" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Käuferschutzbedingungen</a><a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=menu_all_reviews__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank">Alle Bewertungen</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_imprint__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Impressum</a><a href="//www.trustedshops.de/impressum?utm_content=menu_all_dataprotection__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" class="menu_db8d3657bdbe440c985ae127463eaad4__link trustbadgeMenuExternalLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"> Datenschutz</a><div class="menu_db8d3657bdbe440c985ae127463eaad4__dash"></div><a href="javascript:void(null);" id="MinimizeCardLink_db8d3657bdbe440c985ae127463eaad4" class="menu_db8d3657bdbe440c985ae127463eaad4__link menu_db8d3657bdbe440c985ae127463eaad4__link--icon"><span>–</span>Minimieren</a></div><div class="menu_db8d3657bdbe440c985ae127463eaad4__triangle"></div></div><div id="Content_db8d3657bdbe440c985ae127463eaad4" class="content_db8d3657bdbe440c985ae127463eaad4 content_db8d3657bdbe440c985ae127463eaad4--trustbadge"><div id="ShopName_db8d3657bdbe440c985ae127463eaad4" title="beerenweine.eu">beerenweine.eu</div><div id="TrustmarkProtectionInfoLayer_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i><div id="CloseTrustmarkInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="headline_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><p>Sie können sich nach dem Einkauf für die kostenlose Trusted Shops Mitgliedschaft Basic anmelden, inkl. Käuferschutz bis je 100 € für den aktuellen Einkauf sowie für Ihre weiteren Einkäufe in deutschen Shops mit dem Trusted Shops Gütesiegel.</p><br><p>Mit <b>Trusted Shops</b><i style="color:#0DBEDC;font-weight:bold;">  PLUS</i> (inkl. Garantie) werden Ihre Einkäufe sogar bis je 20.000 € durch den Käuferschutz (inkl. Garantie) abgesichert, für 9,90 € pro Jahr inkl. MwSt. bei einer Mindestvertragslaufzeit von 1 Jahr. Die Absicherungsdauer des Käuferschutzes pro Einkauf beträgt in beiden Fällen 30 Tage.</p><br><p>Es gelten die <a href="http://www.trustedshops.de/tsdocument/CONSUMER_MEMBERSHIP_TERMS_de.pdf" target="_blank"> Mitgliedschafts- und Käuferschutzbedingungen</a>.</p></div><div class="table_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="TrustmarkCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 "><a href=" https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=TrustmarkCellNo1__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class=" blockLink_db8d3657bdbe440c985ae127463eaad4 " target="_blank"><div id="TrustmarkImage_db8d3657bdbe440c985ae127463eaad4"></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Zertifiziert</div><div class="center_db8d3657bdbe440c985ae127463eaad4">seit 08.09.2017</div></a></div><div id="TrustmarkCellNo2_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4  hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="TrustmarkLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ProtectionImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-shield"></i></div><div class="headline_db8d3657bdbe440c985ae127463eaad4 largeFontSize_db8d3657bdbe440c985ae127463eaad4">Käuferschutz</div><div id="ProtectionLimit_db8d3657bdbe440c985ae127463eaad4">bis zu 20.000&nbsp;€</div></a></div></div><div style="display:none;" id="ReviewsInfoLayer_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4 reviews-info-layer_db8d3657bdbe440c985ae127463eaad4 "><div id="CloseReviewsInfoLayerButton_db8d3657bdbe440c985ae127463eaad4" class="closeIcon_db8d3657bdbe440c985ae127463eaad4">×</div><div class="tableCell_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i><p class="headline_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</p><p class="reviews-info-layer_db8d3657bdbe440c985ae127463eaad4__description">Die Note „Sehr gut“ berechnet sich aus den 182 Trusted Shops Bewertungen der letzten 12 Monate, die im <a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html&amp;utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsInfoLayer__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" target="_blank">Bewertungsprofil</a> eingesehen werden können.</p></div></div><div id="ReviewsRow_db8d3657bdbe440c985ae127463eaad4" class="tableRow_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsCellNo1_db8d3657bdbe440c985ae127463eaad4" class=" tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4   borderRight_db8d3657bdbe440c985ae127463eaad4 hover_db8d3657bdbe440c985ae127463eaad4 "><a href="javascript:void(null);" id="ReviewsLayerLink_db8d3657bdbe440c985ae127463eaad4" class="blockLink_db8d3657bdbe440c985ae127463eaad4"><div id="ReviewsBubbleImage_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-comments-o"></i></div><div id="ReviewsRatingCount_db8d3657bdbe440c985ae127463eaad4"><span class="counter_db8d3657bdbe440c985ae127463eaad4">182</span><span id="commentText_db8d3657bdbe440c985ae127463eaad4">Kundenbewertungen</span></div></a></div><div id="ReviewsCellNo2_db8d3657bdbe440c985ae127463eaad4" class="tableCell_db8d3657bdbe440c985ae127463eaad4 width50_db8d3657bdbe440c985ae127463eaad4 "><a href="https://www.trustedshops.de/bewertung/info_X6F143F56F983758E95EC13DDAF870AC1.html?utm_source=shop&amp;utm_medium=link&amp;utm_content=ReviewsCellNo2__trustmark_and_reviews&amp;utm_campaign=trustbadge_maximised" id="" class="blockLink_db8d3657bdbe440c985ae127463eaad4" target="_blank"><div id="Stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:98.4%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div><div id="MarkInWords_db8d3657bdbe440c985ae127463eaad4" class="largeFontSize_db8d3657bdbe440c985ae127463eaad4">Sehr gut</div><div id="Mark_db8d3657bdbe440c985ae127463eaad4">4.92/5.00</div></a></div></div></div><div id="ReviewComments_db8d3657bdbe440c985ae127463eaad4"><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">16.11.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Lieferung kam schnell an und sehr gut verpackt.</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="name_db8d3657bdbe440c985ae127463eaad4">Angelika P</div><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">10.10.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">Wie immer sehr gute Qualität, sehr gute Kommunikation und schnelle Lieferung. Immer wieder gerne.</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewContainer_db8d3657bdbe440c985ae127463eaad4"><div class="avatar_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4 icon-ts-avatar_db8d3657bdbe440c985ae127463eaad4"></i></div><div class="reviewContent_db8d3657bdbe440c985ae127463eaad4"><div class="header_db8d3657bdbe440c985ae127463eaad4"><div class="left_db8d3657bdbe440c985ae127463eaad4"><div class="stars_db8d3657bdbe440c985ae127463eaad4"><div class="ts-stars-wrapper"><div class="ts-stars-emptyBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-empty"></i></div><div class="ts-stars-fullBar" style="width:100%;"><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i><i class="icon_db8d3657bdbe440c985ae127463eaad4-star-full"></i></div></div></div></div><div class="right_db8d3657bdbe440c985ae127463eaad4"><div class="date_db8d3657bdbe440c985ae127463eaad4">20.11.2017</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div class="reviewText_db8d3657bdbe440c985ae127463eaad4">alles bestens schneller versandt immer wieder gerne</div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div></div><div id="ReviewSlideControls_db8d3657bdbe440c985ae127463eaad4" style="display:none;"><div><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a><a class="control_db8d3657bdbe440c985ae127463eaad4" href="javascript:void(null);"></a></div></div></div></div><div class="clear_db8d3657bdbe440c985ae127463eaad4"></div><svg id="svgBottom_db8d3657bdbe440c985ae127463eaad4" width="100%" height="10" viewBox="0 0 9.9 5" preserveAspectRatio="none"><polygon fill="#FFDC0F" stroke-width="0" points="0,5 10,10 10,0 10,0"></polygon></svg><div id="Triangle_db8d3657bdbe440c985ae127463eaad4"></div><div id="TrustedShopsLogo_db8d3657bdbe440c985ae127463eaad4"><i class="icon_db8d3657bdbe440c985ae127463eaad4-e-trustedshops"></i></div><div id="Footer_db8d3657bdbe440c985ae127463eaad4"></div><div class="rotate-screen_db8d3657bdbe440c985ae127463eaad4 rotate-screen_db8d3657bdbe440c985ae127463eaad4--full "></div></div></div></body></html>

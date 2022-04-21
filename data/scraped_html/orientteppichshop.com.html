@@ -1,0 +1,961 @@
+<!--?xml version="1.0" ?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="#IndexMetaAuthor#">
+<meta name="copyright" content="Copyright by Koncepts - Shop-Agentur">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="15 days">
+<meta name="keywords" content="#IndexMetaKeywordsStandard#">
+<meta name="description" content="Herzlich willkommen bei OrientTeppichShop.com, Ihrem Spezialhaus für Orientteppiche! Seit 1986 finden Sie uns im Herzen Hafen City Hamburgs. wir präsentieren Ihnen ein umfangreiches Sortiment ausschließlich handgeknüpfter Orientteppiche: Von antiken Kostbarkeiten bis zum modernen und feine Seiden&nbsp;">
+<link rel="shortcut icon" href="/templates/ranjkardar/frontend/_resources/favicon.ico" type="image/x-icon">
+<meta name="msapplication-navbutton-color" content="#dd4800">
+<meta name="application-name" content="Orientteppich Shop">
+<meta name="msapplication-starturl" content="http://www.orientteppichshop.com/">
+<meta name="msapplication-window" content="width=1024;height=768">
+<title>Orientteppich Shop</title>
+<link type="text/css" media="all" rel="stylesheet" href="/templates/ranjkardar/frontend/_resources/styles/framework.css">
+<link type="text/css" media="screen, projection" rel="stylesheet" href="/templates/ranjkardar/frontend/_resources/styles/style.css">
+<link type="text/css" media="screen, projection" rel="stylesheet" href="/templates/ranjkardar/frontend/_resources/styles/colors.css">
+<link type="text/css" media="screen, projection" rel="stylesheet" href="/templates/ranjkardar/frontend/_resources/styles/plugins.css">
+<link type="text/css" media="screen, projection" rel="stylesheet" href="/templates/ranjkardar/frontend/_resources/styles/enrichments.css">
+<link href="http://fonts.googleapis.com/css?family=Philosopher&amp;subset=latin" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" media="print" href="/templates/ranjkardar/frontend/_resources/styles/print.css">
+<link type="text/css" media="screen, projection" rel="stylesheet" href="http://www.orientteppichshop.com/engine/Shopware/Plugins/Community/Frontend/PiKlarnaPayment/css/klarnastyles.css">
+<script type="text/javascript" src="/templates/ranjkardar/frontend/_resources/javascript/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	
+	var compareCount = '0';
+	var compareMaxCount = '5';
+
+	jQuery(document).ready(function() {
+		jQuery.compare.setup();
+	});
+
+
+		var timeNow = 1513868574;
+	
+		jQuery.controller =  {
+			'ajax_cart': 'http://www.orientteppichshop.com/shopware.php/sViewport,checkout?sCoreId=8204e3f532ca44062db4dac9e005edc0',
+			'ajax_search': '/shopware.php/sViewport,ajax_search',
+			'ajax_login': 'http://www.orientteppichshop.com/shopware.php/sViewport,account/sAction,ajax_login',
+			'register': 'http://www.orientteppichshop.com/shopware.php/sViewport,register?sCoreId=8204e3f532ca44062db4dac9e005edc0',
+			'checkout': 'http://www.orientteppichshop.com/shopware.php/sViewport,checkout?sCoreId=8204e3f532ca44062db4dac9e005edc0',
+			'ajax_logout': 'http://www.orientteppichshop.com/shopware.php/sViewport,account/sAction,ajax_logout?sCoreId=8204e3f532ca44062db4dac9e005edc0',
+			'ajax_validate': 'http://www.orientteppichshop.com/shopware.php/sViewport,register?sCoreId=8204e3f532ca44062db4dac9e005edc0'
+		};
+	
+	//]]>
+	</script>
+<script type="text/javascript" src="/templates/ranjkardar/frontend/_resources/javascript/jquery.shopware.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function($) {
+					$('.slider').ajaxSlider('ajax', {
+				'url': unescape('http%3A%2F%2Fwww.orientteppichshop.com%2Fshopware.php%2FsViewport%2Crecommendation%2FsAction%2Cnew%2Fcategory%2C3'),
+				'title': 'Neu im Sortiment:',
+				'headline': true,
+				'navigation': false,
+				'scrollSpeed': 800,
+				'rotate': false,
+				'width':628,
+				'containerCSS': { 'marginTop': '0px', 'marginBottom': '15px' }
+			});
+							$('.slider2').ajaxSlider('ajax', {
+				'url': unescape('http%3A%2F%2Fwww.orientteppichshop.com%2Fshopware.php%2FsViewport%2Crecommendation%2FsAction%2CsimilaryViewed%2Fcategory%2C3'),
+				'title': 'Ähnliche Artikel wie die, die Sie sich angesehen haben:',
+				'headline': true,
+				'navigation': false,
+				'scrollSpeed': 800,
+				'rotate': false,
+				'width':628,
+				'containerCSS': { 'marginTop': '12px', 'marginBottom': '15px' }
+			});
+							$('.slider_banner').ajaxSlider('locale', {
+				'width':630,
+				'height':330,
+				'scrollWidth': 630,
+				'containerClass': 'bannerSlider',
+				'outer': false,
+				'headline': false,
+				'rotate': true,
+				'scrollSpeed': 600,
+				'containerCSS': { 'marginBottom': '0'}
+			});
+					});
+	//]]>
+	</script>
+<script type="text/javascript" src="https://static.klarna.com/external/js/klarnainvoice.js"></script>
+<script type="text/javascript" src="https://static.klarna.com/external/js/klarnapart.js"></script>
+<script type="text/javascript">
+		        addKlarnaInvoiceEvent(function(){
+		             InitKlarnaInvoiceElements('klarna_invoice', 16876, 'de','');
+		        });
+		        				    addKlarnaPartPaymentEvent(function(){
+		                InitKlarnaPartPaymentElements('klarna_partpayment', 16876, 'de', '');
+		            });
+						    </script>
+<!--[if lte IE 8]>
+<style type="text/css" media="screen, projection">
+.viewlast .article_image, #detail #detailinfo .similar .artbox .artbox_thumb,.table_premium div.body div.article, div.table_foot input.button_tablefoot, .button-left, .button-middle, .button-right, #trustedShopsLogo .inner_container, #paypalLogo .inner_container, #paypalLogo_noborder .inner_container, #basketButton,.small_green, #basket .actions a,#content #buybox .basketform .accessory_overlay,#registerbutton {
+behavior: url("/templates/ranjkardar/frontend/_resources/PIE.htc");
+}
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/templates/ranjkardar/frontend/_resources/styles/ie6.css" />
+<![endif]-->
+
+
+</script></head>
+<body class="ctl_index">
+<noscript>
+&lt;div class="notice bold center noscript_notice"&gt;
+Um Orientteppich Shop in vollen Umfang nutzen zu k&amp;ouml;nnen, empfehlen wir Ihnen Javascript in Ihren Browser zu aktiveren.
+&lt;/div&gt;
+</noscript>
+<div id="top"></div>
+<div class="container_20">
+<div id="header">
+<div id="topbar">
+<img class="flag" src="/engine/backend/img/default/icons/flags/de.png" alt="">
+<form method="post" action="http://www.orientteppichshop.com/?sCoreId=8204e3f532ca44062db4dac9e005edc0"><input type="hidden" name="sCoreId" value="8204e3f532ca44062db4dac9e005edc0">
+<select name="sLanguage" class="lang_select auto_submit">
+<option value="1" selected="selected">
+Deutsch
+</option>
+<option value="11">
+Englisch
+</option>
+</select>
+</form>
+</div>		
+<div id="logo" class="grid_5">
+<a href="http://www.orientteppichshop.com/?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Orientteppich Shop - zur Startseite wechseln">Orientteppich Shop</a>
+</div>
+<div class="my_options">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,account?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Mein Konto" class="account">
+Mein Konto
+</a>
+<a href="http://www.orientteppichshop.com/merkzettel?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Merkzettel" class="note">
+Merkzettel (0)
+</a>
+<div class="clear">&nbsp;</div>
+</div>
+<div id="shopnavi">
+<div class="grid_6 newbasket">
+<div class="grid_2 first icon">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,checkout?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Warenkorb">
+Warenkorb				</a>
+</div>
+<div class="grid_5 first last display">
+<div class="top">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,checkout/sAction,cart?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Warenkorb" class="uppercase bold">Warenkorb</a>
+<div class="display_basket">
+<span class="quantity">0 Artikel</span>
+<span class="sep">|</span>
+<span class="amount">0,00&nbsp;€*</span>
+</div>
+</div>
+<div class="ajax_basket_container">
+<div class="ajax_basket">
+Positionen anzeigen
+<div class="ajax_loader">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+</div>		
+<div id="compareContainerAjax">
+</div>
+</div>
+<div id="mainNavigation" class="grid_20">
+<ul>
+<li class=" active">
+<a href="http://www.orientteppichshop.com/?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Home" class="first active">
+<span class="frontend_index_categories_top shopware_studio_snippet">Home</span>
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Teppiche nach Maß">
+Teppiche nach Maß
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/exklusive-teppiche?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Exklusive Teppiche">
+Exklusive Teppiche
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/laeufer?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Läufer">
+Läufer
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/kelim?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Kelim">
+Kelim
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/bilderteppiche?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="BilderTeppiche">
+BilderTeppiche
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/antik-und-halbantike?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Antik und Halbantike">
+Antik und Halbantike
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/sondermasse?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Sondermaße">
+Sondermaße
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/uebermass?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Übermaß">
+Übermaß
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/zweite-wahl?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Zweite Wahl">
+Zweite Wahl
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/sonderpreis?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Sonderpreis">
+Sonderpreis
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/accessoires?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Accessoires">
+Accessoires
+</a>
+</li>
+</ul>
+</div>	
+<div id="searchcontainer" class="grid_20">
+<div class="inner_searchcontainer">
+<form action="/shopware.php/sViewport,search" method="get" id="searchform"><input type="hidden" name="sCoreId" value="8204e3f532ca44062db4dac9e005edc0">
+<input type="text" name="sSearch" id="searchfield" value="Suche:" maxlength="30" autocomplete="off">
+<input type="submit" id="submit_search" value="">
+</form>
+<div class="ajax_loader">&nbsp;</div>
+</div>
+</div>
+<div id="breadcrumb">
+<span class="frontend_index_breadcrumb shopware_studio_snippet">Sie sind hier:</span>
+<a href="http://www.orientteppichshop.com/?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Orientteppich Shop
+</a>
+</div>	
+<div id="content">
+<div class="inner">
+<div id="left" class="grid_4 first">
+<ul class="categories level0">
+<li class="heading"><span class="frontend_index_categories_left shopware_studio_snippet">Sortiment</span></li>    
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Teppiche nach Maß
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/exklusive-teppiche?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Exklusive Teppiche
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/laeufer?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Läufer
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/kelim?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Kelim
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/bilderteppiche?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+BilderTeppiche
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/antik-und-halbantike?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Antik und Halbantike
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/sondermasse?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Sondermaße
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/uebermass?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Übermaß
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/zweite-wahl?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Zweite Wahl
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/sonderpreis?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Sonderpreis
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/accessoires?sCoreId=8204e3f532ca44062db4dac9e005edc0">
+Accessoires
+</a>
+</li>
+<li class="footer"></li>        
+</ul>
+<div id="paypalLogo">
+<div class="inner_container">
+<a href="https://logo.haendlerbund.de/show.php?mid=1372BF81C53" target="_blank" rel="nofollow">
+<img src="https://www.haendlerbund.de/images/mglogo/hbm80.png" title="Händlerbund Mitglied" alt="Mitglied im Händlerbund" width="80" height="80" hspace="5" vspace="5" border="0">
+</a>
+</div>
+</div>
+<div id="kaeufersiegel_widget"><a id="ks_rating_link" href="https://www.kaeufersiegel.de/bewertung/shop/orientteppichshop-com" title="Kundenbewertung einsehen" target="_blank">
+
+<img src="http://www.kaeufersiegel.de/bewertung/widgets/9e3cfc48eccf81a0d57663e129aef3cb/1.png?1513868574630" alt="Käufersiegel Kundenbewertung" width="180" height="142" style="border: none;">
+
+</a></div>
+<script type="text/javascript">
+var ksId = '9e3cfc48eccf81a0d57663e129aef3cb';
+var ksDomain = 'orientteppichshop-com';
+var ksWidgetDesign = 1;
+</script>
+<script type="text/javascript" src="https://www.kaeufersiegel.de/bewertung/widgetCore/get-widget.js"></script>
+<ul id="servicenav">
+<li class="heading"><span class="frontend_index_menu_left shopware_studio_snippet">Informationen</span></li>
+<li>
+<a href="http://www.orientteppichshop.com/ueber-uns?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Über uns">
+Über uns
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/newsletter?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Newsletter">
+Newsletter
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/kontaktformular?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Kontakt" target="_self">
+Kontakt
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/zahlung-und-versand?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Zahlung und Versand">
+Zahlung und Versand
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/widerrufsrecht?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Widerrufsrecht">
+Widerrufsrecht
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/datenschutz?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Datenschutz">
+Datenschutz
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/agb?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="AGB">
+AGB
+</a>
+</li>
+<li>
+<a href="http://www.orientteppichshop.com/impressum?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Impressum">
+Impressum
+</a>
+</li>
+<li class="footer"></li>
+</ul>
+<ul id="servicenav">
+<li class="heading">
+<span class="frontend_index_menu_left shopware_studio_snippet">Flexibel bezahlen</span>
+</li>
+<li>
+<a href="https://klarna.com/de/privat/unsere-dienstleistungen/klarna-rechnung" title="Mehr Infos zum Klarna Rechnungskauf" target="_blank" rel="nofollow">
+<img src="http://www.orientteppichshop.com/engine/Shopware/Plugins/Community/Frontend/PiKlarnaPayment/img/de/KlarnaInvoiceLogo.png" class="KlarnaLeftSidebarInvoiceImg">
+</a>
+</li>
+<li>
+<a href="https://klarna.com/de/privat/unsere-dienstleistungen/klarna-ratenkauf" title="Mehr Infos zum Klarna Ratenkauf" target="_blank" rel="nofollow">
+<img src="http://www.orientteppichshop.com/engine/Shopware/Plugins/Community/Frontend/PiKlarnaPayment/img/de/KlarnaRatepayLogo.png" class="KlarnaLeftSidebarRatepayImg">
+</a>
+</li>
+</ul><br>
+<a href="https://klarna.com/de/privat/unsere-dienstleistungen" title="Mehr Infos zu den Klarna Zahlungslösungen" target="_blank" rel="nofollow">
+<img src="http://www.orientteppichshop.com/engine/Shopware/Plugins/Community/Frontend/PiKlarnaPayment/img/de/KlarnaBanner.png" class="KlarnaBannerBothLeft">
+</a>
+<div id="paypalLogo">
+<div class="inner_container">
+<a href="http://stores.ebay.de/Perser-Teppiche-321" target="_blank" rel="nofollow">
+<img src="/templates/ranjkardar/frontend/_resources/images/logo_ebay.gif" border="0" alt="Unser Ebay Profil">
+</a>
+<p>
+<span class="frontend_plugins_ebay_logo shopware_studio_snippet">Unser Ebay Profil</span>
+</p>
+</div>
+</div>
+<div class="clear">&nbsp;</div>
+</div>			
+<div id="center" class="grid_13 home">
+<div class="slider_banner horizontal_slider" style="width: 630px;">
+
+
+
+
+
+<div class="bannerSlider" style="width: 630px; height: 330px; position: relative; margin-bottom: 0px;"><div class="slide_navigation"><a class="point" id="slideNavigation1" href="#slide1">1</a><a class="point" id="slideNavigation2" href="#slide2">2</a><a class="point" id="slideNavigation3" href="#slide3">3</a><a class="point active" id="slideNavigation4" href="#slide4">4</a><a class="point" id="slideNavigation5" href="#slide5">5</a></div><a class="leftArrow" title="Slide left" href="#slideLeft" style="display: block;">Slide left</a><a class="rightArrow" title="Slide right" href="#slideRight" style="display: block;">Slide right</a><div class="sliding_outer" style="position: relative; overflow: hidden; left: 0px; width: 630px; height: 330px;"><div class="sliding_container" style="display: block; width: 3150px; left: -1890px;"><div class="slide">
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="banner" target="_parent" title="Exklusive handgeknüpfte Originale">
+<img src="http://www.orientteppichshop.com/images/ayww/bannermoudmedalion-3765.jpg" alt="Exklusive handgeknüpfte Originale" title="Exklusive handgeknüpfte Originale">
+</a>
+</div><div class="slide">
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="banner" target="_parent" title="Exklusive handgeknüpfte Originale">
+<img src="http://www.orientteppichshop.com/images/ayww/bannernain6la-37760.jpg" alt="Exklusive handgeknüpfte Originale" title="Exklusive handgeknüpfte Originale">
+</a>
+</div><div class="slide">
+<a href="http://www.orientteppichshop.com/xklusive-teppiche/nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="banner" target="_parent" title="Exklusive handgeknüpfte Originale">
+<img src="http://www.orientteppichshop.com/images/ayww/bannertaebrizmahi50-39187.jpg" alt="Exklusive handgeknüpfte Originale" title="Exklusive handgeknüpfte Originale">
+</a>
+</div><div class="slide">
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/taebriz?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="banner" target="_parent" title="Exklusive handgeknüpfte Originale">
+<img src="http://www.orientteppichshop.com/images/ayww/bannertaebrizfloral50-35159.jpg" alt="Exklusive handgeknüpfte Originale" title="Exklusive handgeknüpfte Originale">
+</a>
+</div><div class="slide">
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="banner" target="_parent" title="Exklusive handgeknüpfte Originale">
+<img src="http://www.orientteppichshop.com/images/ayww/bannerisfahanmedalion-31290.jpg" alt="Exklusive handgeknüpfte Originale" title="Exklusive handgeknüpfte Originale">
+</a>
+</div></div></div></div></div>
+<div class="slider2 horizontal_slider" style="width: 628px;"><div class="ajaxSlider" style="width: 628px; height: 220px; position: relative; margin-top: 12px; margin-bottom: 15px; display: none;"><h2 class="headingbox">Ähnliche Artikel wie die, die Sie sich angesehen haben:</h2><a class="leftArrow" title="Slide left" href="#slideLeft" style="display: none;">Slide left</a><a class="rightArrow" title="Slide right" href="#slideRight" style="display: none;">Slide right</a><div class="sliding_outer" style="position: relative; overflow: hidden;"><div class="sliding_container" style="display: none;"></div></div><div class="loader" style="display: none;">Loading...</div></div></div>
+<div class="cat_text">
+<div class="inner_container">
+<h1>OrientTeppichShop.com</h1>
+<h3>Herzlich willkommen bei OrientTeppichShop.com, Ihrem Spezialhaus für Orientteppiche!</h3>
+<p>Seit 1986 finden Sie uns im Herzen Hafen City Hamburgs. wir präsentieren Ihnen ein umfangreiches Sortiment ausschließlich handgeknüpfter Orientteppiche: Von antiken Kostbarkeiten bis zum modernen und feine Seiden&nbsp;</p>
+</div>
+</div>
+<div class="promotion listing" id="listing-3col">
+<div class="artbox">
+<div class="inner">
+<div class="ico_new"><span class="frontend_listing_box_article shopware_studio_snippet">NEU</span></div>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4705-4355Kashan" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/499f3ca8a9e9436cffdcd551b927601a_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4705-4355Kashan">4705-4355Kashan</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 40 kg</p>
+<p class="price">
+<span class="price">899,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1685?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4705-4355Kashan" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+<div class="artbox">
+<div class="inner">
+<div class="ico_new"><span class="frontend_listing_box_article shopware_studio_snippet">NEU</span></div>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4706-4356Kaschan" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/1c95aee9004b869ad5c762c002656a3d_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4706-4356Kaschan">4706-4356Kaschan</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 25 kg</p>
+<p class="price">
+<span class="price">729,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1682?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4706-4356Kaschan" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+<div class="artbox">
+<div class="inner">
+<div class="ico_tipp"><span class="frontend_listing_box_article shopware_studio_snippet">TIPP!</span></div>
+<div class="ico_new"><span class="frontend_listing_box_article shopware_studio_snippet">NEU</span></div>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4709-4359Isfahan" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/a459f5e064e36bbc1ee4b49c1e08a1a6_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4709-4359Isfahan">4709-4359Isfahan</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 35 kg</p>
+<p class="pseudoprice">
+<span class="pseudo">Unser bisheriger Preis: 1.299,00&nbsp;€ Jetzt nur:</span>
+<span class="price">1.099,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1684?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4709-4359Isfahan" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+<div class="artbox">
+<div class="inner">
+<a href="http://www.orientteppichshop.com/laeufer/bis-3m-lang/1646/4735-4385kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4735-4385Kaschmar" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/477f04ddbc5762871de01e4a729b1310_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/laeufer/bis-3m-lang/1646/4735-4385kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4735-4385Kaschmar">4735-4385Kaschmar</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 12 kg</p>
+<p class="price">
+<span class="price">449,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1646?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/laeufer/bis-3m-lang/1646/4735-4385kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4735-4385Kaschmar" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+<div class="artbox">
+<div class="inner">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1629/4637-4293maschad?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4637-4293Maschad" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/4c609e8d23b0659225e8f2eb8fd404bf_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1629/4637-4293maschad?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4637-4293Maschad">4637-4293Maschad</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 45 kg</p>
+<p class="price">
+<span class="price">749,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1629?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1629/4637-4293maschad?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4637-4293Maschad" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+<div class="artbox">
+<div class="inner">
+<a href="http://www.orientteppichshop.com/sonderpreis/1601/4328-4027kerman?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4328-4027Kerman" class="artbox_thumb" style="background: url(http://www.orientteppichshop.com/images/articles/f50cc697cdba2a525a2865bb1c207758_3.jpg) no-repeat center center">
+</a>
+<a href="http://www.orientteppichshop.com/sonderpreis/1601/4328-4027kerman?sCoreId=8204e3f532ca44062db4dac9e005edc0" class="title" title="4328-4027Kerman">4328-4027Kerman</a>
+<p class="desc">			Sonstiges: Der Teppich erhielt eine Fachmännische...
+</p>
+<p class="weight"><span class="frontend_listing_box_article shopware_studio_snippet">Gewicht:</span> 30 kg</p>
+<p class="pseudoprice">
+<span class="pseudo">Unser bisheriger Preis: 1.999,00&nbsp;€ Jetzt nur:</span>
+<span class="price">1.399,00&nbsp;€</span>
+</p>
+<div class="actions">
+<a href="http://www.orientteppichshop.com/shopware.php/sViewport,compare/sAction,add_article/articleID,1601?sCoreId=8204e3f532ca44062db4dac9e005edc0" rel="nofollow" title="vergleichen" class="compare_add_article"><span class="frontend_plugins_compare_index shopware_studio_snippet">vergleichen</span></a>
+<a href="http://www.orientteppichshop.com/sonderpreis/1601/4328-4027kerman?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4328-4027Kerman" class="more">Zum Produkt</a>
+</div>
+</div>
+</div>					
+</div>
+<div class="slider horizontal_slider" style="width: 628px;"><div class="ajaxSlider" style="width: 628px; height: 220px; position: relative; margin-top: 0px; margin-bottom: 15px;"><h2 class="headingbox">Neu im Sortiment:</h2><div class="slide_numbers">Seite 1 von 7</div><a class="leftArrow" title="Slide left" href="#slideLeft" style="display: none;">Slide left</a><a class="rightArrow" title="Slide right" href="#slideRight" style="display: block;">Slide right</a><div class="sliding_outer" style="position: relative; overflow: hidden; left: 26px; width: 576px; height: 190px;"><div class="sliding_container" style="display: block;"><div class="slide">
+					<div class="article_box">
+		<!-- article 1 -->
+				<a style="background: url(http://www.orientteppichshop.com/images/articles/499f3ca8a9e9436cffdcd551b927601a_2.jpg) no-repeat scroll center center transparent;" class="artbox_thumb" title="4705-4355Kashan" href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan">
+		</a>
+				<a title="4705-4355Kashan" class="title" href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan">4705-4355Kashan</a>
+		
+				
+		<p class="price">
+			<span class="price">899,00&nbsp;€ *</span>
+		</p>
+		</div>
+					<div class="article_box">
+		<!-- article 1 -->
+				<a style="background: url(http://www.orientteppichshop.com/images/articles/a459f5e064e36bbc1ee4b49c1e08a1a6_2.jpg) no-repeat scroll center center transparent;" class="artbox_thumb" title="4709-4359Isfahan" href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan">
+		</a>
+				<a title="4709-4359Isfahan" class="title" href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan">4709-4359Isfahan</a>
+		
+				
+		<p class="price">
+			<span class="price">1.099,00&nbsp;€ *</span>
+		</p>
+		</div>
+					<div class="article_box">
+		<!-- article 1 -->
+				<a style="background: url(http://www.orientteppichshop.com/images/articles/1c95aee9004b869ad5c762c002656a3d_2.jpg) no-repeat scroll center center transparent;" class="artbox_thumb" title="4706-4356Kaschan" href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan">
+		</a>
+				<a title="4706-4356Kaschan" class="title" href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan">4706-4356Kaschan</a>
+		
+				
+		<p class="price">
+			<span class="price">729,00&nbsp;€ *</span>
+		</p>
+		</div>
+	</div>
+</div></div><div class="loader" style="display: none;">Loading...</div></div></div>
+<div class="doublespace">&nbsp;</div>
+<h2 class="headingbox_nobg">Tagwolke</h2>
+<div class="tagcloud">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/2/208-10ghom-seide?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="208-10Ghom Seide" class="tag3">
+208-10Ghom
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1684/4709-4359isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4709-4359Isfahan" class="tag0">
+4709-4359Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1044/3607-688nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3607-688Nain" class="tag1">
+3607-688Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1685/4705-4355kashan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4705-4355Kashan" class="tag0">
+4705-4355Kashan
+</a> 
+<a href="http://www.orientteppichshop.com/3875-3543Nain_detail_1235.html?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3875-3543Nain" class="tag3">
+3875-3543Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1629/4637-4293maschad?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4637-4293Maschad" class="tag2">
+4637-4293Mascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1626/4638-4294kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4638-4294Kaschmar" class="tag3">
+4638-4294Kaschm
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1365/4039-3751isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4039-3751Isfahan" class="tag3">
+4039-3751Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/laeufer/bis-3m-lang/1583/5274hamedan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="5274Hamedan" class="tag2">
+5274Hamedan
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1669/4723-4373isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4723-4373Isfahan" class="tag3">
+4723-4373Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x250/777/3188-3069moud?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3188-3069Moud" class="tag2">
+3188-3069Moud
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1080/3591-590nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3591-590Nain" class="tag1">
+3591-590Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1673/4628-4284isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4628-4284Isfahan" class="tag1">
+4628-4284Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1679/4716-4366kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4716-4366Kaschan" class="tag2">
+4716-4366Kascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1040/3600-659nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3600-659Nain" class="tag1">
+3600-659Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1382/4138-3837sarugh?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4138-3837Sarugh" class="tag1">
+4138-3837Sarugh
+</a> 
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/nain/1039/3602-668nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3602-668Nain" class="tag1">
+3602-668Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1068/3614-104kelim?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3614-104Kelim" class="tag0">
+3614-104Kelim
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1472/4341-4040yalameh?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4341-4040Yalameh" class="tag2">
+4341-4040Yalame
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/ab-400x300/1455/4248-3947kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4248-3947Kaschan" class="tag2">
+4248-3947Kascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x150/950/3440-3202nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3440-3202Nain" class="tag2">
+3440-3202Nain
+</a> 
+<a href="http://www.orientteppichshop.com/sonderpreis/1294/4069-3781sarugh?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4069-3781Sarugh" class="tag3">
+4069-3781Sarugh
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1632/4563-4219kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4563-4219Kaschan" class="tag1">
+4563-4219Kascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1650/4759-4409kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4759-4409Kaschmar" class="tag2">
+4759-4409Kaschm
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1290/4017-3729isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4017-3729Isfahan" class="tag2">
+4017-3729Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/laeufer-bis-3m/1186/3927-3639ardebil?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3927-3639Ardebil" class="tag2">
+3927-3639Ardebi
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1084/3604-675nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3604-675Nain" class="tag1">
+3604-675Nain
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/681/2679-2491kerman?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="2679-2491Kerman" class="tag2">
+2679-2491Kerman
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/ab-400x300/291/221-240heriz?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="221-240Heriz" class="tag1">
+221-240Heriz
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1682/4706-4356kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4706-4356Kaschan" class="tag0">
+4706-4356Kascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1602/4596-4252kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4596-4252Kaschan" class="tag1">
+4596-4252Kascha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/laeufer-ab-4m/1624/4573-4229hamedan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4573-4229Hamedan" class="tag2">
+4573-4229Hameda
+</a> 
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/isfahan/13/296-219isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="296-219Isfahan" class="tag2">
+296-219Isfahan
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/914/3078-2859isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3078-2859Isfahan" class="tag1">
+3078-2859Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/432/2264-2076isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="2264-2076Isfahan" class="tag3">
+2264-2076Isfaha
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1066/2878gabbeh?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="2878Gabbeh" class="tag0">
+2878Gabbeh
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/1141/3626-3585nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3626-3585Nain" class="tag3">
+3626-3585Nain
+</a> 
+<a href="http://www.orientteppichshop.com/laeufer/bis-3m-lang/1514/4434-4127schiraz?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4434-4127Schiraz" class="tag2">
+4434-4127Schira
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1597/4608-4264moud?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4608-4264Moud" class="tag1">
+4608-4264Moud
+</a> 
+<a href="http://www.orientteppichshop.com/exklusive-teppiche/nain/1095/3608-758nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3608-758Nain" class="tag1">
+3608-758Nain
+</a> 
+<a href="http://www.orientteppichshop.com/kelim/1334/84449kelim?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="84449Kelim" class="tag0">
+84449Kelim
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/laeufer-bis-3m/415/2245-2057yazd?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="2245-2057Yazd" class="tag2">
+2245-2057Yazd
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/1029/3586-1013roudbar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3586-1013Roudbar" class="tag1">
+3586-1013Roudba
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/350x250/358/12979nain-6la?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="12979Nain 6La" class="tag2">
+12979Nain 6La
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/400x300/1681/4686-4336kaschmar?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4686-4336Kaschmar" class="tag0">
+4686-4336Kaschm
+</a> 
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/100x70/1102/3601-660nain?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="3601-660Nain" class="tag1">
+3601-660Nain
+</a> 
+</div>
+</div>
+<div id="right" class="grid_3 last">
+<h2 class="headingbox"><span class="frontend_plugins_index_topseller shopware_studio_snippet">Topseller</span></h2>
+<div class="topseller">
+<ul class="accordion" style="width: 150px; height: 617px;">
+<li class="active" style="top: 0px; height: 149px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/180x120/40/241-264isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="241-264Isfahan">
+<img src="http://www.orientteppichshop.com/images/articles/bc28f55eb49305b1a9ba9a2066db37d2_2.jpg" alt="241-264Isfahan" title="241-264Isfahan" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/180x120/40/241-264isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="241-264Isfahan">
+241-264Isfahan
+</a>
+<span class="number">
+1
+</span>
+</div>
+</li>
+<li style="top: 149px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/50/253-278isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="253-278Isfahan">
+<img src="http://www.orientteppichshop.com/images/articles/cb3293265cc2ac56dc392ea23b52d2d9_2.jpg" alt="253-278Isfahan" title="253-278Isfahan" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/50/253-278isfahan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="253-278Isfahan">
+253-278Isfahan
+</a>
+<span class="number">
+2
+</span>
+</div>
+</li>
+<li style="top: 201px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1566/4529-4199kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4529-4199Kaschan">
+<img src="http://www.orientteppichshop.com/images/articles/8a11fddff8dc4fd7aba1e437f05f69e5_2.jpg" alt="4529-4199Kaschan" title="4529-4199Kaschan" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/1566/4529-4199kaschan?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4529-4199Kaschan">
+4529-4199Kaschan
+</a>
+<span class="number">
+3
+</span>
+</div>
+</li>
+<li style="top: 253px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/83/270-200taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="270-200Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/9f57e40156961c7f4b8dddf6813d3b87_2.jpg" alt="270-200Täbriz 50Raj" title="270-200Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/83/270-200taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="270-200Täbriz 50Raj">
+270-200Täbriz 50Raj
+</a>
+<span class="number">
+4
+</span>
+</div>
+</li>
+<li style="top: 305px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/91/280-139taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="280-139Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/6338b0281e3a281b325e9b0ce12c98f6_2.jpg" alt="280-139Täbriz 50Raj" title="280-139Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/91/280-139taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="280-139Täbriz 50Raj">
+280-139Täbriz 50Raj
+</a>
+<span class="number">
+5
+</span>
+</div>
+</li>
+<li style="top: 357px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/100/308-193taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="308-193Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/118e5685739fc7c60ba9f9140336ebe2_2.jpg" alt="308-193Täbriz 50Raj" title="308-193Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/300x200/100/308-193taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="308-193Täbriz 50Raj">
+308-193Täbriz 50Raj
+</a>
+<span class="number">
+6
+</span>
+</div>
+</li>
+<li style="top: 409px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/200x150/108/265-168taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="265-168Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/eac8059583278e50d22d252fe39dea9b_2.jpg" alt="265-168Täbriz 50Raj" title="265-168Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/200x150/108/265-168taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="265-168Täbriz 50Raj">
+265-168Täbriz 50Raj
+</a>
+<span class="number">
+7
+</span>
+</div>
+</li>
+<li style="top: 461px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/117/272-198taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="272-198Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/58ba1963f9f86ec2c80b3a4991fde05b_2.jpg" alt="272-198Täbriz 50Raj" title="272-198Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/150x100/117/272-198taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="272-198Täbriz 50Raj">
+272-198Täbriz 50Raj
+</a>
+<span class="number">
+8
+</span>
+</div>
+</li>
+<li style="top: 513px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/126/56-56taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="56-56Täbriz 50Raj">
+<img src="http://www.orientteppichshop.com/images/articles/658ce102d3a90ca202e3a50f1b0bb217_2.jpg" alt="56-56Täbriz 50Raj" title="56-56Täbriz 50Raj" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/teppiche-nach-mass/130x80/126/56-56taebriz-50raj?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="56-56Täbriz 50Raj">
+56-56Täbriz 50Raj
+</a>
+<span class="number">
+9
+</span>
+</div>
+</li>
+<li style="bottom: 0px; height: 52px; margin: 0px; position: absolute;">
+<ul class="image">
+<li>
+<a href="http://www.orientteppichshop.com/sondermasse/extra-breite-laeufer/1436/4189-3888meschkin?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4189-3888Meschkin">
+<img src="http://www.orientteppichshop.com/images/articles/75210d3ec832f21167229ed5349cc659_2.jpg" alt="4189-3888Meschkin" title="4189-3888Meschkin" border="0">
+</a>
+</li>
+</ul>
+<div class="detail">
+<a href="http://www.orientteppichshop.com/sondermasse/extra-breite-laeufer/1436/4189-3888meschkin?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="4189-3888Meschkin">
+4189-3888Meschkin
+</a>
+<span class="number">
+10
+</span>
+</div>
+</li>
+</ul>
+</div>    
+<p class="footer"></p>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+</div>
+<div id="footer" class="first last">
+<div class="footer_menu">
+<p>
+<a href="http://www.orientteppichshop.com/kontaktformular?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Kontakt" target="_self">
+Kontakt
+</a>
+|			<a href="http://www.orientteppichshop.com/zahlung-und-versand?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Zahlung und Versand">
+Zahlung und Versand
+</a>
+|			<a href="http://www.orientteppichshop.com/widerrufsrecht?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Widerrufsrecht">
+Widerrufsrecht
+</a>
+|			<a href="http://www.orientteppichshop.com/agb?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="AGB">
+AGB
+</a>
+|			<a href="http://www.orientteppichshop.com/impressum?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Impressum">
+Impressum
+</a>
+</p>
+<p>
+<a href="http://www.orientteppichshop.com/ueber-uns?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Über uns">
+Über uns
+</a>
+|			<a href="http://www.orientteppichshop.com/aktuelles?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Aktuelles">
+Aktuelles
+</a>
+|			<a href="http://www.orientteppichshop.com/datenschutz?sCoreId=8204e3f532ca44062db4dac9e005edc0" title="Datenschutz">
+Datenschutz
+</a>
+</p>
+</div>	
+<div class="bottom">
+<div class="grid_5 border">
+Copyright © 2011 <a href="http://www.koncepts.de">Online-Shop Agentur</a> - Internetagentur Hamburg
+</div>
+<div class="grid_14">
+<p><strong>* Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. <span style="text-decoration: underline;"><a title="Versandkosten" href="http://www.orientteppichshop.com/zahlung-und-versand?sCoreId=8204e3f532ca44062db4dac9e005edc0">Versandkosten</a></span></strong></p>
+</div>
+</div>
+</div>	
+</div>
+<div class="shopware_footer">
+Realisiert von <a href="http://www.koncepts.de" target="_blank" title="Online-Shop Agentur">Agentur Koncepts Hamburg</a>
+</div>
+<script src="http://static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66365045); }catch(err){}</script>
+<noscript>&lt;p&gt;&lt;img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/66365045ns.gif" /&gt;&lt;/p&gt;</noscript>
+<div id="compare_bigbox"></div>
+
+<div id="searchresults" style="display: none;"></div><div id="lbOverlay" style="display: none;"></div><div id="lbCenter" style="display: none;"><div id="lbImage"><div style="position: relative;"><a id="lbPrevLink" href="#"></a><a id="lbNextLink" href="#"></a></div></div><div id="lbThumbs"></div></div><div id="lbBottomContainer" style="display: none;"></div><div id="lbCloser" style="display: none;"></div></body></html>
