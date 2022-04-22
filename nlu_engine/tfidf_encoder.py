@@ -1,37 +1,46 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-import pandas as pd
+import numpy as np
 
 class TfidfEncoder:
     @staticmethod
-    def encode_vectors(data, tfidf_vectorizer):
+    def get_vectors(text_data, tfidf_vectorizer):
         """
-        Create a tfidf vectorizer.
-        :param data: pandas dataframe (for training a model), utterance list (for running inference of trained model)
-        :return: tfidf vectorized utterances
+        Get tfidf vectors.
+        :param text_data: pandas dataframe column of text
+        :param tfidf_vectorizer: tfidf vectorizer
+        :return: tfidf vectorized text
         """
-
-        if isinstance(data, pd.DataFrame):
-            data_df = data
-            tfidf_utterance_vectors = tfidf_vectorizer.fit_transform(
-                data_df['text'].values)
-
-        elif isinstance(data, str):
-            tfidf_utterance_vectors = tfidf_vectorizer.transform([data])
+        tfidf_utterance_vectors = tfidf_vectorizer.transform(text_data.values)
 
         return tfidf_utterance_vectors
 
 
     @staticmethod
-    def encode_training_vectors(data_df):
+    def create_vectorizer(text_data):
         """
-        Create a tfidf vectorizer.
-        :param data_df: pandas dataframe (for training a model)
-        :return: tfidf vectorized utterances
+        Create a tfidf vectorizer and get the vectors of the text.
+        :param text_data: pandas dataframe column of text
+        :return: tfidf vectorized utterances and the vectorizer
         """
 
         tfidf_vectorizer = TfidfVectorizer()
 
         tfidf_utterance_vectors = tfidf_vectorizer.fit_transform(
-            data_df['text'].values)
+            text_data.values)
 
         return tfidf_utterance_vectors, tfidf_vectorizer
+
+
+    @staticmethod
+    def get_top_n_features(tfidf_vectorizer, tfidf_vectors, n):
+        """
+        Get the top n features from text data with the tfidf vectorizer.
+        :param tfidf_vectorizer: tfidf vectorizer
+        :param n: number of features to return
+        :return: top n features
+        """
+        #TODO: I think this is right, but I'm not sure. I need to follow this up
+        feature_names = np.array(tfidf_vectorizer.get_feature_names())
+        sorted_features = np.argsort(tfidf_vectors.data)[:-(n+1):-1]
+        top_n_features = feature_names[tfidf_vectors.indices[sorted_features]]
+        return top_n_features

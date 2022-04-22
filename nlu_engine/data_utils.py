@@ -57,7 +57,8 @@ class DataUtils:
         :return: tfidf dense numpy array
         """
 
-        if classifier is NB:
+        if classifier == NB:
+            print(f'{NB} has been detected, switching to a dense array.')
             x_train = x_train.todense()
         else:
             pass
