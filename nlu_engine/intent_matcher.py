@@ -1,5 +1,3 @@
-from .data_utils import DataUtils
-from .entity_extractor import EntityExtractor
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
@@ -8,6 +6,9 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
+
+from .data_utils import DataUtils
+from .entity_extractor import EntityExtractor
 
 from .label_encoder import LabelEncoder
 from .tfidf_encoder import TfidfEncoder
@@ -33,10 +34,25 @@ NB = GaussianNB()
 class IntentMatcher:
 
     @staticmethod
+    def get_dense_array(classifier, x_train):
+        """
+        When using NB classifier, convert the utterances to a dense array.
+        :param x_train: tfidf numpy array
+        :return: tfidf dense numpy array
+        """
+
+        if classifier is NB:
+            print(f'{NB} has been detected, switching to a dense array.')
+            x_train = x_train.todense()
+        else:
+            pass
+        return x_train
+
+    @staticmethod
     def train_classifier(classifier, x_train, y_train):
         # TODO: add in training time
         print(f'Training {str(classifier)}')
-        x_train = DataUtils.get_dense_array(classifier, x_train)
+        x_train = IntentMatcher.get_dense_array(classifier, x_train)
         return classifier.fit(x_train, y_train)
 
     @staticmethod
@@ -49,7 +65,7 @@ class IntentMatcher:
         :return: predictions
         """
         print('Predicting labels')
-        dense_array = DataUtils.get_dense_array(classifier_model, text_vectors)
+        dense_array = IntentMatcher.get_dense_array(classifier_model, text_vectors)
         predictions = classifier_model.predict(dense_array)
         return predictions
     

@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_predict
 from sklearn_crfsuite.metrics import flat_classification_report
 
-from .data_utils import DataUtils
+from .intent_matcher import IntentMatcher
 
 class Analytics:
     @staticmethod
@@ -13,7 +13,7 @@ class Analytics:
         start = time.time()
         print(f'Cross validating with {str(classifier)}')
 
-        x_train = DataUtils.get_dense_array(classifier, x_train)
+        x_train = IntentMatcher.get_dense_array(classifier, x_train)
         
         prediction = cross_val_predict(
             estimator=classifier,

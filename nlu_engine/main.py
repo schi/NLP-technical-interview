@@ -17,7 +17,8 @@ class NLUEngine:
     def evaluate_intent_classifier(
         tfidf_vectors,
         labels,
-        classifier
+        classifier,
+        encoding
     ):
         """
         Evaluates a classifier and generates a report
@@ -39,15 +40,15 @@ class NLUEngine:
         report_df = Analytics.convert_report_to_df(
             classifier=classifier,
             report=report,
-            encoding='tfidf'
+            encoding=encoding
         )
         return report_df
 
     @staticmethod
-    def evaluate_all_classifiers(classifiers, x_train, y_train):
+    def evaluate_all_classifiers(classifiers, x_train, y_train, encoding):
         for count, classifier in enumerate(classifiers):
             df = NLUEngine.evaluate_intent_classifier(
-                x_train, y_train, classifier)
+                x_train, y_train, classifier, encoding)
             if count is 0:
                 concat_df = df
             else:
