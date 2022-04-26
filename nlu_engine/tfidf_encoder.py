@@ -51,7 +51,7 @@ class TfidfEncoder:
         :param n: number of features to return
         :return: top n features
         """
-        #TODO: I think this is right, but I'm not sure. I need to follow this up
+        
         feature_names = np.array(tfidf_vectorizer.get_feature_names())
         sorted_features = np.argsort(tfidf_vectors.data)[:-(n+1):-1]
         top_n_features = feature_names[tfidf_vectors.indices[sorted_features]]

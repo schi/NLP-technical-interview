@@ -63,7 +63,6 @@ class DataUtils:
         for file in file_list:
             soup = DataUtils.load_html(directory + '/' + file)
             file_text = strip_tags(soup)
-            #file_text = DataUtils.extract_text_from_html(directory + '/' + file)
             file_domain = file.replace('.html', '')
             df = df.append({'domain': file_domain, 'text': file_text}, ignore_index=True)
         return df

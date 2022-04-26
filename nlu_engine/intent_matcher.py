@@ -48,7 +48,6 @@ class IntentMatcher:
 
     @staticmethod
     def train_classifier(classifier, x_train, y_train):
-        # TODO: add in training time
         print(f'Training {str(classifier)}')
         x_train = IntentMatcher.get_dense_array(classifier, x_train)
         return classifier.fit(x_train, y_train)

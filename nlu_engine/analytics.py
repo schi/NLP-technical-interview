@@ -40,7 +40,7 @@ class Analytics:
     @staticmethod
     def convert_report_to_df(classifier, report, encoding):
         """
-        converts reports to a dataframe and adds the label of the prediction (i.e. intents or domains), encoding of the utterances (i.e. tfidf or word2vec), and the classifier used.
+        Converts reports to a dataframe and adds the label of the prediction (i.e. intents or domains), encoding of the utterances (i.e. tfidf or word2vec), and the classifier used.
         """
         df = pd.DataFrame(report).transpose()
         df['classifier'] = str(classifier)
