@@ -1,12 +1,12 @@
 from operator import index
 import pandas as pd
 import pickle
-from .entity_extractor import EntityExtractor
+
 import json
 
 class DataUtils:
     """
-    This class handles basic data functions like loading, converting, saving, etc.
+    This class handles basic data functions for the NLU Engine like loading, converting, saving, etc.
     """
 
     @staticmethod
@@ -27,25 +27,6 @@ class DataUtils:
             data_df = data
         return data_df.dropna(axis=0, how='any', subset=['answer_annotation', 'scenario'])
     
-
-    @staticmethod
-    def convert_annotated_utterances_to_normalised_utterances(data):
-        """
-        Convert the annotated utterances to normalized utterances.
-        :param data: annotated utterance string or pandas dataframe
-        :return: string or pandas dataframe
-        """
-
-        if isinstance(data, str):
-            normalised_data = EntityExtractor.normalise_utterance(utterance=data)
-
-        elif isinstance(data, pd.DataFrame):
-            data_df = data
-            data_df['answer_normalised'] = data_df['answer_annotation'].apply(
-                EntityExtractor.normalise_utterance)
-            normalised_data = data_df
-        return normalised_data     
-
     @staticmethod
     def pickle_model(classifier, model_path):
         """

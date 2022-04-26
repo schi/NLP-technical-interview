@@ -1,8 +1,4 @@
-from .label_encoder import LabelEncoder
 from .analytics import Analytics
-from .intent_matcher import IntentMatcher
-from .entity_extractor import EntityExtractor, crf
-from .data_utils import DataUtils
 
 import pandas as pd
 

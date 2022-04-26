@@ -14,6 +14,18 @@ class TfidfEncoder:
 
         return tfidf_utterance_vectors
 
+    @staticmethod
+    def get_vectors_from_string(string, tfidf_vectorizer):
+        """
+        Get tfidf vectors.
+        :param string: string
+        :param tfidf_vectorizer: tfidf vectorizer
+        :return: tfidf vectorized string
+        """
+        tfidf_utterance_vectors = tfidf_vectorizer.transform([string])
+
+        return tfidf_utterance_vectors
+
 
     @staticmethod
     def create_vectorizer(text_data):

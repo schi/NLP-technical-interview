@@ -8,9 +8,7 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 
 from .data_utils import DataUtils
-from .entity_extractor import EntityExtractor
 
-from .label_encoder import LabelEncoder
 from .tfidf_encoder import TfidfEncoder
 
 LR = LogisticRegression(
@@ -68,14 +66,3 @@ class IntentMatcher:
         dense_array = IntentMatcher.get_dense_array(classifier_model, text_vectors)
         predictions = classifier_model.predict(dense_array)
         return predictions
-    
-    @staticmethod
-    def get_incorrect_predicted_labels(data_df, classifier_model, tfidf_vectorizer):
-        """
-        For a data set, get the incorrect predicted labels and return a dataframe.
-        """
-        #TODO: implement in the analytics class
-        output_df = data_df.copy()
-        output_df['predicted_label'] = output_df['answer_normalised'].apply(
-            lambda utterance:  IntentMatcher.predict_label(classifier_model, tfidf_vectorizer, utterance))
-        return output_df[output_df['intent'] != output_df['predicted_label']]

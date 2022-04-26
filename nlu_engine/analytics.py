@@ -3,7 +3,6 @@ import pandas as pd
 
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_predict
-from sklearn_crfsuite.metrics import flat_classification_report
 
 from .intent_matcher import IntentMatcher
 
